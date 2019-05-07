@@ -8,6 +8,8 @@
 
 ◊box["Zápisky (v1.0.0, poslední update 7. 5. 2019)"]{
     K dispozici je odkaz na ◊link["zaklady-bioinformatiky.html"]{webovou verzi}, a na ◊link["zaklady-bioinformatiky.md"]{verzi v markdownu} (textová verze v kódování UTF-8).
+
+    Řešení bonusových úkolů jsou k dispozici ◊link["tasks.html"]{zde}.
 }
 
 ◊section{Informace o zkoušce}
