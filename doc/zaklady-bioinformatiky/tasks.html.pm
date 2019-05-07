@@ -7,6 +7,57 @@
 
 Zde budou vypracované oba bonusové úkoly.
 
+◊section{Úkol #1}
+
+Vypracovaný podle ◊link["http://xray.bmc.uu.se/nisse/inlupp_DB_vt09/index.html"]{této stránky}.
+
+◊questions[1]{
+    ◊question{What protein does the sequence come from?}
+    ◊answer{Z lidské Tyrosin-protein kinázy BTK}
+
+    ◊question{How many amino acid residues does the full-length protein contain?}
+    ◊answer{659}
+
+    ◊question{What kind of enzyme and what do they 'do'?}
+    ◊answer{Kináza; kinázy jsou enzymy katalyzující fosforylaci, což je proces, při kterém je na substrát přenášen fosfát z ATP (nebo jiné podobné molekuly)}
+
+    ◊question{What is the common substrate of such enzymes?}
+    ◊answer{Často jiné proteiny (je-li myšleno toto; pokud je otázka cílená spíše na donory fosfátové skupiny, těmi jsou většinou molekuly ATP).}
+
+    ◊question{Which residues in the protein are involved in substrate binding?}
+    ◊answer{Jediná AK v aktivím místě je Asp. Inositol-(1,3,4,5)-tetrakisphosphate reaguje s Lys, Arg a Tyr.}
+
+    ◊question{How many and what are they called? [Domains]}
+    ◊answer{Pět domén: PH, zinkový prst, SH3, SH2 a protein kinázová doména.}
+
+    ◊question{How many structure models of this protein can you find in the structure database, i.e. the PDB (give also the names of the pdb entries)?}
+    ◊answer{Je jich celkem 69, čili vypisovat je nebudu.}
+
+    ◊question{What/which experimental methods have been used?}
+    ◊answer{Krystalografie a NMR.}
+
+    ◊question{What are these structural models representing? (Hint: this question is connected to questions 5 and 6).}
+    ◊answer{Většinou jsou to modely významných částí proteinu. Zobrazují jeho (domnělou) 3D strukturu.}
+
+    ◊question{How many members does this "Family" of domains have in the SCOP classification?}
+    ◊answer{V protein kinázové doméně.}
+
+    ◊question{How many members does this "Family" of domains have in the SCOP classification?}
+    ◊answer{Rodina "Protein kinases, catalytic subunit" má 63 různých domén.}
+
+    ◊question{What is the disease called?}
+    ◊answer{X-linked agammaglobulinemia (XLA).}
+
+    ◊question{In the above case, what is the molecular cause of the disease?}
+    ◊answer{Téhle otázce bohužel moc nerozumím. Zdravá a nezdravá sekvence se liší na mnoha místech, pinpointovat nějaké konkrétní, které by za nemoc mohlo, se mi nepodařilo. Když se podívám, jak by vypadala translace, z obou sekvencí vylezou zcela odlišné proteiny. Předpokládám ale, že správná odpověď bude ještě o něco komplikovanější.}
+
+    ◊question{How can such a mutation, R->Q, look like on the genetic level?}
+    ◊answer{Napadá mě například nějaká chyba při translaci; kodon R je ◊code{C-G-[ACGT]}, zatímco kodon Q je ◊code{C-A-[AG]}. Protože A i G jsou oba puriny, myslím, že nějaká chyba typu ◊code{CGA} -> ◊code{CAA} je možná.}
+
+    ◊question{What is the functional effect of the R524->Q substitution? (An answer in general terms is OK but a detailed answer can be found in some databases).}
+    ◊answer{Taková substituce nějakým způsobem poškodí schopnost vázat ATP.}
+}
+
 ◊section{Úkol #2}
 
 Vypracovaný podle ◊link["https://web.natur.cuni.cz/~marian/pract4.html"]{této stránky}.
@@ -45,8 +96,7 @@ Vypracovaný podle ◊link["https://web.natur.cuni.cz/~marian/pract4.html"]{tét
     ◊question{How many different proteins are among the hits?}
     ◊answer{24 hitů, z toho 2 a 2 byly na jednom proteinu --- celkem tedy 22 různých proteinů.}
 
-    ◊question{What score is decisive for ordering the hits? What does it mean?
-Find the explanation for each column in the list.}
+    ◊question{What score is decisive for ordering the hits? What does it mean? Find the explanation for each column in the list.}
     ◊answer{Q-score, které reprezentuje kvalitu alignmentu ◊chem{C\alpha}. Kombinuje délku alignmentu (tj. počet matchnutých zbytků) a RMSD (tj. root mean square distance jednotlivých ◊chem{C\alpha}).}
 
     ◊question{What is the sequence identity between 1PO6 and the query?}
@@ -93,5 +143,4 @@ Find the explanation for each column in the list.}
 
     ◊question{Would you bet that our protein X could bind nucleic acid (please, motivate your answer)?}
     ◊answer{Ano, dle Clustalu ◊${\Omega} existuje jedna velká konzervovaná část, která je PrX i 1PO6 společná. Protože se jedná přibližně o celou první polovinu 1PO6, a dle PyMolu usuzuji, že právě tam se nachází AK interagující s RNA, dá se odhadnout, že by toho byl schopen i náš PrX.}
-
 }
