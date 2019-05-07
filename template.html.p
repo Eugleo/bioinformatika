@@ -73,7 +73,7 @@
         <div class="wrapper">
             <span class="page-title"><a class="no-style" href="/bioinformatika" title="Úvodní stránka">notes</a>:<a class="no-style" href=lecture-page.html title="◊(select-from-metas 'title "lecture-page.html")">◊|lecture-page|</a>:<strong>◊(select-from-metas 'header here)</strong></span>
             <span class="page-navigation">
-                &lt; &gt;
+                &lt;&gt;
             </span>
         </div>
     </div>
