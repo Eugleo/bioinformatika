@@ -12,7 +12,7 @@ Zatím jsou dostupné pouze zápisky ze základů bioinformatiky, zkusím ale v 
 ◊section{Zápisky}
 
 ◊ls{
-    - ◊link["/doc/zaklady-bioinformatiky/lecture-page.html"]{Základy bioinformatiky}
+    - ◊link["doc/zaklady-bioinformatiky/lecture-page.html"]{Základy bioinformatiky}
 }
 
 ◊section{Plán}
