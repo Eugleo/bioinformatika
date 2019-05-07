@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 ◊(define parent-page (make-relative-path (parent here)))
 ◊(define previous-page (make-relative-path (previous here)))
@@ -70,13 +71,9 @@
 <body>
     <div class="sticky-header" id="sticky-header">
         <div class="wrapper">
-            <span class="page-title"><a class="no-style" href="/Notes" title="Úvodní stránka">notes</a>:<a class="no-style" href=lecture-page.html title="◊(select-from-metas 'title "lecture-page.html")">◊|lecture-page|</a>:<strong>◊(select-from-metas 'header here)</strong></span>
+            <span class="page-title"><a class="no-style" href="/bioinformatika" title="Úvodní stránka">notes</a>:<a class="no-style" href=lecture-page.html title="◊(select-from-metas 'title "lecture-page.html")">◊|lecture-page|</a>:<strong>◊(select-from-metas 'header here)</strong></span>
             <span class="page-navigation">
-                &lt;◊when/splice[show-prev]{
-                    <a class="no-style" href=◊|previous-page| title="◊(select-from-metas 'title previous-page)">–</a>
-                }◊when/splice[(and show-prev show-next)]{/}◊when/splice[show-next]{
-                     <a class="no-style" href=◊|next-page| title="◊(select-from-metas 'title next-page)">+</a>
-                }&gt;
+                &lt;&gt;
             </span>
         </div>
     </div>

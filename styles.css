@@ -232,6 +232,32 @@ p + ol {
   margin-top: -1.6rem;
 }
 
+q-body {
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+
+q-label {
+  margin-right: 1rem;
+}
+
+question {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+   margin-bottom: 0;
+}
+
+a-label {
+  margin-right: 1rem;
+  color: rgb(194, 194, 194);
+}
+
+answer {
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
 /* Boxes
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -369,12 +395,12 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .wrapper {
-  width: 90%;
   margin-left: 100px;
   display: flex;
   align-items: center;
   height: 100%;
   justify-content: space-between;
+  max-width: 690px;
 }
 
 .sticky-header {
@@ -396,19 +422,6 @@ a:hover {
 .page-navigation {
   font-family: "IBM Plex Mono";
   color: rgb(48, 48, 48);
-}
-
-@media (min-width: 400px) {
-  .wrapper {
-    width: 85%;
-  }
-}
-
-@media (min-width: 550px) {
-  .wrapper {
-    width: 80%;
-    max-width: 580px;
-  }
 }
 
 

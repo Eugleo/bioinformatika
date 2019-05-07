@@ -1,1 +1,0 @@
-#hasheq((doc . (pagetree-root (index.html (doc/zaklady-bioinformatiky/lecture-page.html doc/zaklady-bioinformatiky/tasks.html doc/zaklady-bioinformatiky/zaklady-bioinformatiky.poly)))) (metas . #hasheq((here-path . "/Users/eugen/Documents/bioinformatika/index.ptree"))))
