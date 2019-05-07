@@ -1,0 +1,5 @@
+#lang pollen
+
+◊(require "pagetree.rkt")
+
+◊(generate-pagetree)
