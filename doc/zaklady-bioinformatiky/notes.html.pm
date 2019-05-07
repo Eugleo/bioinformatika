@@ -140,7 +140,7 @@ Polární AK jsou hydrofilní, nepolární jsou hydrofobní.
 
         ◊term["alanin"]{ ◊slide[28 #:inline #t #:s 1] také velice častý, existuje i D forma (buněčná stěna, antibiotika), také velice malý a tedy dobře konzervovaný}
 
-        ◊term["valin"]{◊slide[48 #:inline #t #:s 1] často v helixech a listech}
+        ◊term["valin"]{◊slide[45 #:inline #t #:s 1] často v helixech a listech}
 
         ◊term["isoleucin"]{◊slide[35 #:inline #t #:s 1] má dva chirální atomy a tedy čtyři formy, je častý v helixech i listech}
 
