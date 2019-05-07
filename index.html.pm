@@ -5,7 +5,7 @@
 
 ◊title{Bioinformatika}
 
-Na této stránce budou postupně zveřejněnovány kompilované zápisky z bioinformatikcých předmětů letního semestru 2019/20.
+Na této stránce budou postupně zveřejněnovány kompilované zápisky z bioinformatických předmětů letního semestru 2019/20.
 
 Zatím jsou dostupné pouze zápisky ze základů bioinformatiky, zkusím ale v nejbližších týdnech přidat i další, aby se daly použít ještě před zkouškami.
 
