@@ -833,7 +833,7 @@ Aneb, ano, máme co dělat, i když nám MSA nic moc neprozradil.
 ◊ls[#:t "PROSITE"]{
     - databáze motivů spojená s databází Swissprot
     - motivy jsou kontrolovány ručně
-    - umožňuje hledání motivů v sekvenci, hledání sekvencí se specifickým motivem, vytvoření vlastního motivu
+    - umožňuje hledání motivů v sekvenci, hledání sekvencí se specifickým motivem, vytvoření vlastního motivu
 }
 
 ◊definitions{
@@ -1038,7 +1038,7 @@ Najít strukturní alignment je složité (NP-složité), navíc ani optimální
 
 kde ◊${d} je (Euklidovská) vzdálenost dvou atomů ◊chem{C\alpha} a ◊${N} je počet atomů ◊chem{C\alpha}.
 
-◊strong{ad 3)} RMSD je k hodnocení nevhodné, protože je to globální parametr citlivý na lokální změny a protože koreluje s délkou alignmentu. Existuje ale několik alternativ:
+◊strong{ad 3)} RMSD je k hodnocení nevhodné, protože je to globální parametr citlivý na lokální změny a protože koreluje s délkou alignmentu. Existuje ale několik alternativ:
 
 ◊slide[57 #:s 6]
 ◊ls{
