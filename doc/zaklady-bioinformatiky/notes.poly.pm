@@ -3,7 +3,6 @@
 ◊define-meta[title]{Základy bioinformatiky}
 ◊define-meta[header]{zápisy}
 
-
 ◊title{Struktura nukleových kyselin}
 ◊lecture[2]
 
@@ -213,9 +212,9 @@ Pro popis aminokyselin se někdy využívá i ◊em{B} (Asn/Asp) a ◊em{Z} (Gln
     ◊term["selenocystein"]{kódovaný UGA stop kodonem, využíván pro určení struktury proteinů, je v řadě enzymů}
 }
 
-◊section{Sekundární, terciární a kvarterní struktura}
+◊section{Další proteinové struktury}
 
-Sekundární struktura proteinu je určena lokálními konformacemi jeho částí.
+Kromě primární struktury proteinu rozlišujeme ještě sekundární, teriární a kvarterní. Sekundární struktura proteinu je určena lokálními konformacemi jeho částí.
 
 ◊slide[55 #:s 1]
 ◊ls[#:t "Důvody vzniku"]{
@@ -640,7 +639,7 @@ Při vyhledávání je nutno brát ohledy na selektivitu a senzitivitu: obě tyt
     }
 }
 
-◊section{Algoritmy pro hledání v databázích}
+◊section{Algoritmy}
 
 ◊ls{
     - tradiční algoritmy příliš pomalé, využívají se heuristiky
@@ -1075,7 +1074,7 @@ Jak je ze slidů vidět, skoro třetina známých super-rodin spadá do deseti f
 
 ◊lecture[8]
 
-◊section{Predikce proteinové struktury}
+◊section{Predikce struktury}
 
 Primární struktura (sekvence) proteinu bývá často určena experimentálně, můžeme se tedy pokusit predikovat vyšší struktury. Tato predikce nebývá příliš přesná, mívá tzv. ◊em{confidence level}, který udává, jak moc je odhad pravděpodobný.
 
@@ -1382,7 +1381,7 @@ Bohužel, hlavní paradigma ne vždy funguje; jeden protein (jedna struktura) m�
         - beta-lactamáza A a beta-lactamáza B
 }
 
-◊section{Zjišťování funkce proteinu}
+◊section{Hledání funkce}
 
 ◊ls{
     - analýza kvarterní struktury proteinu

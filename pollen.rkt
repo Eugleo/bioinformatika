@@ -30,7 +30,7 @@
 (define (lecture str)
   (case (current-poly-target)
     [(md) (em (format "<Přednáška č. ~a>" str))]
-    [(tex pdf) (apply string-append `("\\emph{" "Přednáška č. " ,(format "~a" str) "}"))]
+    [(tex pdf) (apply string-append `("\\marginline{" "Přednáška č. " ,(format "~a" str) "}"))]
     [else `(div [[class "lecture"]] (lecture ,(format "Přednáška ~a." str)))]))
 
 (define (slide #:inline [inline #f] #:t [title #f] #:s [source 1] . slides)
@@ -67,22 +67,22 @@
 (define (title . elements)
   (case (current-poly-target)
     [(md) `("# " ,@elements)]
-    [(tex pdf) (latexify "chapter" elements)]
+    [(tex pdf) (make-section-title-tex "chapter" elements)]
     [else (make-section-title 'h1 elements)]))
 (define (section . elements)
   (case (current-poly-target)
     [(md) `("## " ,@elements)]
-    [(tex pdf) (latexify "section" elements)]
+    [(tex pdf) (make-section-title-tex "section" elements)]
     [else (make-section-title 'h2 elements)]))
 (define (subsection . elements)
   (case (current-poly-target)
     [(md) `("### " ,@elements)]
-    [(tex pdf) (latexify "subsection" elements)]
+    [(tex pdf) (make-section-title-tex "subsection" elements)]
     [else (make-section-title 'h3 elements)]))
 (define (subsubsection . elements)
   (case (current-poly-target)
     [(md) `("#### " ,@elements)]
-    [(tex pdf) (latexify "subsubsection" elements)]
+    [(tex pdf) (make-section-title-tex "subsubsection" elements)]
     [else (make-section-title 'h4 elements)]))
 
 (define CURRENT-SECTION-TITLES (make-hash))
@@ -105,6 +105,10 @@
   `(,name [[id ,id]]
       (a [[class "internal-link"] [id ,id] [href ,(format "#~a" id)]]
        ,@elements)))
+
+(define (make-section-title-tex name elements)
+  (define normalized-content (apply string-append (filter string? elements)))
+  (apply string-append `("\\" ,name "{" ,@elements "} \\label{" ,@elements "}\n" )))
 
 (define link-svg
   `(svg [[class "link"] [xlmns "http://www.w3.org/2000/svg"] [viewBox "0 0 24 24"]]
@@ -298,7 +302,10 @@
           (format "~a \"~a\"" url title)
           url))
       `("[" ,description "]" "(" ,url+title ")")]
-    [(tex pdf) (apply string-append `("\\href{" ,url "}" "{" ,@description "}"))]
+    [(tex pdf)
+      (cond
+        [(string-prefix? url "#") (apply string-append `("\\hyperref[" ,(string-trim url "#" #:right? #f) "]" "{" ,@description "}"))]
+        [else (apply string-append `("\\href{" ,(string-trim url "#" #:right? #f) "}" "{" ,@description "}"))])]
     [else
       (define attr-list
         (if title
