@@ -79,9 +79,9 @@
     </div>
     <div class="container">
         ◊when/block[(select-from-metas 'toc here)]{
-            ◊section{Obsah}
+            ◊(->html ◊title{Obsah})
 
-            ◊(->html `(div (h2 "Obsah") ,@(select-from-doc 'toc-entries here)))
+            ◊(->html (select-from-doc 'toc-entries here))
         }
 ◊(map ->html (select-from-doc 'body here))
     </div>
