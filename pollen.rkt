@@ -14,7 +14,7 @@
   (require pollen/setup)
   (provide (all-defined-out))
 
-  (define poly-targets '(html md ltx))
+  (define poly-targets '(html md tex pdf))
 
   (define BLOCK-TAGS
   '(name li box lecture details summary list-title answer img question q-label q-body ql dl dt dd
@@ -24,23 +24,25 @@
 
 (provide slide lecture)
 
+(define (latexify id content)
+  (apply string-append `("\\" ,id "{" ,@(map (lambda (x) (format "~a" x)) content) "}")))
+
 (define (lecture str)
   (case (current-poly-target)
     [(md) (em (format "<Přednáška č. ~a>" str))]
-    [(ltx) `("\\marginnote{" ,str "}[3cm]")]
+    [(tex pdf) (apply string-append `("\\emph{" "Přednáška č. " ,(format "~a" str) "}"))]
     [else `(div [[class "lecture"]] (lecture ,(format "Přednáška ~a." str)))]))
 
 (define (slide #:inline [inline #f] #:t [title #f] #:s [source 1] . slides)
   (case (current-poly-target)
     [(md)
       (if (= (length slides) 1)
-          `("[Pr." ,source ", slide " ,@slides "]")
-          `("[Pr." ,source ", slidy: " ,(string-join (map ~v slides) ", ") "]"))]
-    [(ltx)
+          `("[Pr. " ,source ", slide " ,@slides "]")
+          `("[Pr. " ,source ", slidy: " ,(string-join (map ~v slides) ", ") "]"))]
+    [(tex pdf)
+    (apply string-append
       (for/list ([n (in-list slides)])
-        (append
-          `("\\hyperref[" ,(format "slides-~a-slide-~a" source n) "]{" ,(format "Slide ~a " n) "}\n")
-          (img (format "./resources/slides-~a/slide-~a.jpeg" source n)
+          (img (format "slides-~a/slide-~a.jpg" source n)
                (format "Prezentace č. ~a, slide č. ~a" source n)
                #:label (format "slides-~a-slide-~a" source n))))]
     [else
@@ -54,7 +56,7 @@
         ,@(for/list ([n (in-list slides)])
           `(img [[id ,(format "slides-~a-slide-~a" source n)]
                   [class "slide"]
-                  [src ,(format "resources/slides-~a/slide-~a.jpg" source n)]
+                  [src ,(format "resources/images/slides-~a/slide-~a.jpg" source n)]
                   [style "display: none; width: 100%; height: auto;"]]))))]))
 
 
@@ -65,22 +67,22 @@
 (define (title . elements)
   (case (current-poly-target)
     [(md) `("# " ,@elements)]
-    [(ltx) `("\\chapter{" ,@elements "}")]
+    [(tex pdf) (latexify "chapter" elements)]
     [else (make-section-title 'h1 elements)]))
 (define (section . elements)
   (case (current-poly-target)
     [(md) `("## " ,@elements)]
-    [(ltx) `("\\section{" ,@elements "}")]
+    [(tex pdf) (latexify "section" elements)]
     [else (make-section-title 'h2 elements)]))
 (define (subsection . elements)
   (case (current-poly-target)
     [(md) `("### " ,@elements)]
-    [(ltx) `("\\subsection{" ,@elements "}")]
+    [(tex pdf) (latexify "subsection" elements)]
     [else (make-section-title 'h3 elements)]))
 (define (subsubsection . elements)
   (case (current-poly-target)
     [(md) `("#### " ,@elements)]
-    [(ltx) `("\\subsubsection{" ,@elements "}")]
+    [(tex pdf) (latexify "subsubsection" elements)]
     [else (make-section-title 'h4 elements)]))
 
 (define CURRENT-SECTION-TITLES (make-hash))
@@ -116,19 +118,19 @@
 (define (definitions . elements)
   (case (current-poly-target)
     [(md) elements]
-    [(ltx) `("\\begin{description}\n" ,@elements "\n\\end{description}\n")]
+    [(tex pdf) (apply string-append `("\\begin{description}\n" ,@elements "\n\\end{description}\n"))]
     [else `(dl ,@elements)]))
 
 (define (term atom . body)
   (case (current-poly-target)
     [(md) `(,(strong atom) "\n" ,@body)]
-    [(ltx) `("\\item" "[" ,atom "]" "\\hfill \\\\\n" ,@body "\n")]
+    [(tex pdf) (apply string-append `("\\item" "[" ,atom "]" "\\hfill \\\\\n" ,@body "\n"))]
     [else `(@ (dt ,atom) (dd ,@body))]))
 
 (define (ls #:t [title #f] . elements)
   (case (current-poly-target)
     [(md) (ls-md title elements)]
-    [(ltx) (ls-ltx title elements)]
+    [(tex pdf) (ls-tex title elements)]
     [else (ls-html title elements)]))
 
 (define (ls-md title elements)
@@ -142,7 +144,7 @@
     `(,title "\n" ,@dehashed)
     dehashed))
 
-(define (ls-ltx title elems)
+(define (ls-tex title elems)
   (define (go acc prev lvl xs)
     (cond
       [(null? xs)
@@ -154,7 +156,7 @@
          [(< lvl new-lvl)
           (define ord (bullet-ord? (first xs)))
           (define-values (subitems rst-lower) (go (list (first xs)) (first xs) new-lvl (rest xs)))
-          (define listed-subitems (make-list-ltx ord subitems))
+          (define listed-subitems (make-list-tex ord subitems))
           (cond
            [(null? rst-lower) (values (list (unbullet (cons listed-subitems acc))) '())]
            [else
@@ -169,14 +171,16 @@
 
   (define joined (indent-bullets elems))
   (define-values (items _) (go (list (first joined)) (first joined) 0 (rest joined)))
-  (define listed-items (make-list-ltx (bullet-ord? (first joined)) items))
+  (define listed-items (make-list-tex (bullet-ord? (first joined)) items))
 
-  listed-items)
+  (cond
+    [title (apply string-append `("\\paragraph{" ,title "}\n" ,listed-items "\n"))]
+    [else (format "~a\n" listed-items)]))
 
-(define (make-list-ltx ord items)
-  `(,(if ord "\\begin{enumerate}\n" "\\begin{itemize}\n")
-    ,@(map (lambda (s) `("\\item " ,s "\n")) items)
-    ,(if ord "\\end{enumerate}" "\\end{itemize}\n")))
+(define (make-list-tex ord items)
+  (apply string-append `(,(if ord "\\begin{enumerate}[nosep]\n" "\\begin{itemize}[nosep]\n")
+    ,@(map (lambda (s) (apply string-append `("    \\item " ,@s "\n"))) items)
+    ,(if ord "\\end{enumerate}\n" "\\end{itemize}\n"))))
 
 (define (elements-recurse f xs)
   (cond
@@ -266,20 +270,20 @@
 (define (newline? str)
   (and (string? str) (eq? str "\n")))
 
-#| Text formatting |#
+#| tex pdft formatting |#
 
 (provide em strong)
 
 (define (em . elements)
   (case (current-poly-target)
     [(md) `("_" ,@elements "_")]
-    [(ltx) `("\\emph{" ,@elements "}")]
+    [(tex pdf) (latexify "emph" elements)]
     [else `(em ,@elements)]))
 
 (define (strong . elements)
   (case (current-poly-target)
     [(md) `("**" ,@elements "**")]
-    [(ltx) `("\\textbf{" ,@elements "}")]
+    [(tex pdf) (latexify "textbf" elements)]
     [else `(strong ,@elements)]))
 
 #| Basic elements|#
@@ -294,7 +298,7 @@
           (format "~a \"~a\"" url title)
           url))
       `("[" ,description "]" "(" ,url+title ")")]
-    [(ltx) `("\\href{" ,url "}" "{" ,@description "}")]
+    [(tex pdf) (apply string-append `("\\href{" ,url "}" "{" ,@description "}"))]
     [else
       (define attr-list
         (if title
@@ -306,13 +310,13 @@
 (define ($ . elements)
   (case (current-poly-target)
     [(md) `("$" ,@elements "$")]
-    [(ltx) `("\\(" ,@elements "\\)")]
+    [(tex pdf) (apply string-append `("\\(" ,@elements "\\)"))]
     [else `(mathjax  ,(apply string-append `("\\(" ,@elements "\\)")))]))
 
 (define ($$ . elements)
   (case (current-poly-target)
     [(md) `("$$" ,@elements "$$")]
-    [(ltx) `("\\[" ,@elements "\\]")]
+    [(tex pdf) (apply string-append `("\\[" ,@elements "\\]"))]
     [else
       `(div [[class "scrollable"]]
         (mathjax ,(apply string-append `("\\[" ,@elements "\\]"))))]))
@@ -320,7 +324,7 @@
 (define (align$ . elements)
   (case (current-poly-target)
     [(md) `("$$" ,@elements "$$")]
-    [(ltx) `("\\begin{align*}" ,@elements "\\end{align*}\n")]
+    [(tex pdf) (apply string-append `("\\begin{align*}" ,@elements "\\end{align*}\n"))]
     [else `(mathjax ,(apply string-append `("\\begin{align*}" ,@elements "\\end{align*}")))]))
 
 (define (chem str)
@@ -330,12 +334,13 @@
   (define loc (string-append root link))
   (case (current-poly-target)
     [(md) `("![" ,@alt "]" "(" ,loc ")")]
-    [(ltx) `("\\begin{figure}[p]\n"
-                "\\caption{" ,@alt "}\n"
-                "\\includegraphics[width=\\textwidth]{" ,link "}\n"
-                "\\centering\n"
-                "\\label{" ,label "}\n"
-             "\\end{figure}\n")]
+    [(tex pdf) (apply string-append
+              `("\\begin{figure}\n"
+                "    \\caption{" ,@alt "}\n"
+                "    \\includegraphics[width=0.85\\textwidth]{" ,link "}\n"
+                "    \\centering\n"
+                "    \\label{" ,label "}\n"
+                "\\end{figure}\n"))]
     [else
       `(img [[src ,loc]
              [alt ,@alt]
@@ -347,13 +352,13 @@
 (define (highlight lang . elements)
   (case (current-poly-target)
     [(md) `("```" ,lang "\n" ,@elements "\n```")]
-    [(ltx) `("\\begin{lstlisting}\n" ,@elements "\\end{lstlisting}\n")]
+    [(tex pdf) (apply string-append `("\\begin{lstlisting}\n" ,@elements "\\end{lstlisting}\n"))]
     [else (pygments:highlight lang (string-join elements ""))]))
 
 (define (code . elements)
   (case (current-poly-target)
     [(md) `("`" ,@elements "`")]
-    [(ltx) `("\\inlinecode{" ,@elements "}")]
+    [(tex pdf) (latexify "inlinecode" elements)]
     [else `(code ,@elements)]))
 
 #| Common shortcuts |#
@@ -362,7 +367,7 @@
 
 (define deg
   (case (current-poly-target)
-    [(ltx) "\\$^{\\circ}$"]
+    [(tex pdf) "\\(^{\\circ}\\)"]
     [else "°"]))
 (define pi ($ "\\pi"))
 (define angs "Å")
@@ -406,8 +411,8 @@
 (define (internal-box title #:class [cl "plain"] body)
   (case (current-poly-target)
     [(md) `("###### " ,title "\n" ,@body)]
-    [(ltx)
-      `("\\mybox{" ,title "}{green!40}{green!10}{" ,@body "}\n")]
+    [(tex pdf)
+      (apply string-append `("\\mybox{" ,title "}{" ,@body "}\n"))]
     [else
       `(box [[class ,cl]]
         (div [[class "title"]] ,title)
@@ -483,11 +488,11 @@
     [title `(div [[class "list"]] (list-title ,title) (ul ,@elements))]
     [else `(ul ,@elements)]))
 
-;; Decode the text, fix hyphenation, dashes, quotes
+;; Decode the tex pdft, fix hyphenation, dashes, quotes
 (define (root . elements)
   (case (current-poly-target)
     [(md) elements]
-    [(ltx)
+    [(tex pdf)
       (define (depercent el)
         (cond
           [(string? el) (string-replace* el '("%" "\\%"))]
