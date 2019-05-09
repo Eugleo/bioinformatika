@@ -103,7 +103,7 @@
         normalized-content
         (format "~a-~a" normalized-content duplicate-titles-count)))
   `(,name [[id ,id]]
-      (a [[class "internal-link"] [id ,id] [href ,(format "#~a" id)]]
+      (a [[class "internal-link"] [href ,(format "#~a" id)]]
        ,@elements)))
 
 (define (make-section-title-tex name elements)
@@ -201,17 +201,26 @@
       [(and (newline? prev) (bullet-lvl (first xs)))
        (define new-lvl (bullet-lvl (first xs)))
        (cond
-         [(> lvl new-lvl) (values (list (unbullet acc)) xs)]
+         [(> lvl new-lvl)
+          (values (list (unbullet acc)) xs)]
          [(< lvl new-lvl)
           (define ord (bullet-ord? (first xs)))
           (define-values (subitems rst-lower) (go (list (first xs)) (first xs) new-lvl (rest xs)))
           (define listed-subitems (make-list ord subitems))
+          (println (list rst-lower subitems listed-subitems))
           (cond
            [(null? rst-lower) (values (list (unbullet (cons listed-subitems acc))) '())]
            [else
-             (define-values (elseitems rst-same)
-               (go (list (first rst-lower)) (first rst-lower) lvl (rest rst-lower)))
-             (values (cons (unbullet (cons listed-subitems acc)) elseitems) rst-same)])]
+              (define next-lvl (bullet-lvl (first rst-lower)))
+              (cond
+                [(> lvl next-lvl)
+                  (println (list "HERE" lvl next-lvl rst-lower (unbullet (cons listed-subitems acc))))
+                  (values (list (unbullet (cons listed-subitems acc))) rst-lower)]
+                [else
+                  (define-values (elseitems rst-same)
+                    (go (list (first rst-lower)) (first rst-lower) lvl (rest rst-lower)))
+                  (println (list "THERE" "SME-LVL" elseitems "RESULT" (cons (unbullet (cons listed-subitems acc)) elseitems) "REST" rst-same))
+                  (values (cons (unbullet (cons listed-subitems acc)) elseitems) rst-same)])])]
          [else
            (define-values (elseitems rst-same) (go (list (first xs)) (first xs) lvl (rest xs)))
            (values (cons (unbullet acc) elseitems) rst-same)])]
@@ -243,8 +252,8 @@
     [(null? elems) '()]
     [else (reverse (go (list (first elems)) (first elems) (rest elems)))]))
 
-(define u-lvls (vector "- " "    - " "        - " "            - "))
-(define o-lvls (vector "# " "    # " "        # " "            # "))
+(define u-lvls (vector "- " "    - " "        - " "            - " "                - "))
+(define o-lvls (vector "# " "    # " "        # " "            # " "                # "))
 (define (bullet-lvl str)
   (define (go n)
     (cond
@@ -253,7 +262,7 @@
       [(string-prefix? str (vector-ref u-lvls n)) n]
       [(string-prefix? str (vector-ref o-lvls n)) n]
       [else (go (sub1 n))]))
-  (go 3))
+  (go 4))
 
 (define (unbullet xs)
   (drop-bullet (reverse (drop-newlines xs))))
@@ -506,13 +515,16 @@
           [else el]))
       (elements-recurse depercent elements)]
     [(html)
-  ;; gather the headings (using `split-txexpr` utility function in txexpr library)
+
   (define-values (_ headings)
     (splitf-txexpr `(root ,@elements)
                    (λ(x) (and (txexpr? x) (member (car x) '(h1 h2 h3 h4 h5 h6 h7))))))
 
   ;; covert these headings into toc entries using helper function
-  (define toc-entries `(ol [[class "toc"]] ,@(map heading->toc-entry headings)))
+  (define toc-entries `(ol [[class "toc"]] ,(apply ls (apply append (map heading->toc-entry headings)))))
+
+  (pretty-print (map heading->toc-entry headings))
+
   ;; package the content into a `body` tag, and the toc-entries into a `toc-entries` tag
   `(root
     (body
@@ -532,6 +544,8 @@
 (define (decode-paras elements)
   (decode-paragraphs elements #:linebreak-proc (lambda (x) (decode-linebreaks x " "))))
 
+(define HDR-LVL (make-hash '((h1 . "# ") (h2 . "    - ") (h3 . "        - ") (h4 . "            - ") (h5 . "                - "))))
 (define (heading->toc-entry heading)
-  `(li [[class ,(string-replace (symbol->string (get-tag heading)) "h" "nav")]]
-       (a [[href ,(string-append "#" (attr-ref heading 'id))]] ,(first (get-elements heading)))))
+  (if (equal? (get-tag heading) 'h1)
+      `(,(hash-ref HDR-LVL (get-tag heading)) (strong ,@(get-elements heading)) "\n")
+      `(,(hash-ref HDR-LVL (get-tag heading)) ,@(get-elements heading) "\n")))
