@@ -1,5 +1,6 @@
 compiled
-*.html
 styles.css
+*.html
 *.md
 *.ltx
+*.pdf
