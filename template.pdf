@@ -1,7 +1,8 @@
 ◊(local-require racket/file racket/system)
 ◊(define latex-source ◊string-append{
-    \documentclass[DIV=8]{scrreprt}
+    \documentclass[DIV=9]{scrreprt}
     \usepackage[czech]{babel}
+    \addto\captionsczech{\renewcommand{\chaptername}{}}
 
     \usepackage{amsmath}
     \usepackage[version=4]{mhchem}
@@ -9,6 +10,10 @@
     \usepackage{hyperref}
     \newcommand{\inlinecode}{\texttt}
     \graphicspath{{./resources/images/}}
+
+    % Header
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
 
     %% Setup the fonts
     \usepackage{tgpagella}
@@ -46,7 +51,7 @@
     \maketitle
     \end{titlepage}
     \tableofcontents
-    ◊(apply string-append (cdr doc))
+    ◊(apply string-append doc)
     \end{document}})
 ◊(define working-directory
     (make-temporary-file "pollen-latex-work-~a" 'directory))

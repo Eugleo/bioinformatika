@@ -1,7 +1,17 @@
 \documentclass[DIV=8]{scrreprt}
+\usepackage[czech]{babel}
 
-%% Write cleaner and modern LaTeX
-\usepackage[l2tabu]{nag}
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{hyperref}
+\newcommand{\inlinecode}{\texttt}
+\graphicspath{{./resources/images/}}
+
+%% Setup the fonts
+\usepackage{tgpagella}
+\usepackage{ebgaramond-maths}
+\addtokomafont{labelinglabel}{\small\sffamily}
 
 %% Setup the page layout
 \usepackage{microtype} % micro adjustments to fonts
@@ -11,47 +21,28 @@
 \KOMAoptions{parskip=half} % no indentation of first lines, USA style
 \recalctypearea
 
-
-%% Setup the fonts
-\usepackage[urw-garamond]{mathdesign} % math font
-\usepackage[cmintegrals,cmbraces]{newtxmath}
-\usepackage{ebgaramond-maths}
-\addtokomafont{labelinglabel}{\small\sffamily}
-\addtokomafont{author}{\sffamily}
-\addtokomafont{date}{\sffamily}
-
-\usepackage{graphicx}
-\graphicspath{{./resources/images/}}
-
-\usepackage{amsmath}
-\usepackage[version=4]{mhchem}
-
-\usepackage{setspace}
-\usepackage{geometry}
-\usepackage{hyperref}
-\usepackage{listings}
-\usepackage{marginnote}
-
-\lstset{
-  basicstyle=\ttfamily,
-  columns=fixed
-}
-
-\newcommand{\inlinecode}{\texttt}
-
 \usepackage{tikz}
-\newcommand{\mybox}[4]{
-    \begin{figure}[h]
-        \centering
-    \begin{tikzpicture}
-        \node[anchor=text,text width=\columnwidth-1.2cm, draw, rounded corners, line width=1pt, fill=#3, inner sep=5mm] (big) {\\#4};
-        \node[draw, rounded corners, line width=.5pt, fill=#2, anchor=west, xshift=5mm] (small) at (big.north west) {#1};
-    \end{tikzpicture}
-    \end{figure}
+\newcommand{\mybox}[2]{
+    \paragraph{#1} #2
 }
+\lstset{
+    basicstyle=\ttfamily,
+    columns=fixed
+}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\scr@startchapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+\usepackage{enumitem}
+\title{◊(select-from-metas 'title (current-metas))}
+\author{Evžen Wybitul \and Kateřina Krausová}
 
 \begin{document}
-
-◊doc
-
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\tableofcontents
+◊(apply string-append (cdr doc))
 \end{document}
