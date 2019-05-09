@@ -160,13 +160,18 @@
          [(< lvl new-lvl)
           (define ord (bullet-ord? (first xs)))
           (define-values (subitems rst-lower) (go (list (first xs)) (first xs) new-lvl (rest xs)))
-          (define listed-subitems (make-list-tex ord subitems))
+          (define listed-subitems (make-list ord subitems))
           (cond
            [(null? rst-lower) (values (list (unbullet (cons listed-subitems acc))) '())]
            [else
-             (define-values (elseitems rst-same)
-               (go (list (first rst-lower)) (first rst-lower) lvl (rest rst-lower)))
-             (values (cons (unbullet (cons listed-subitems acc)) elseitems) rst-same)])]
+              (define next-lvl (bullet-lvl (first rst-lower)))
+              (cond
+                [(> lvl next-lvl)
+                  (values (list (unbullet (cons listed-subitems acc))) rst-lower)]
+                [else
+                  (define-values (elseitems rst-same)
+                    (go (list (first rst-lower)) (first rst-lower) lvl (rest rst-lower)))
+                  (values (cons (unbullet (cons listed-subitems acc)) elseitems) rst-same)])])]
          [else
            (define-values (elseitems rst-same) (go (list (first xs)) (first xs) lvl (rest xs)))
            (values (cons (unbullet acc) elseitems) rst-same)])]
