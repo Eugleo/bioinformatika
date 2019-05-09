@@ -1,15 +1,5 @@
 # Struktura nukleových kyselin
 _<Přednáška č. 2>_
-
-1. první
-    - druhý
-        - třetí
-1. první
-    - druhý
-    - druhý
-- první
-    - druhý
-
 Objev struktury DNA: Watson, Crick, Franklin (50. léta 20. století).
 
 Centrální dogma molekulární biologie
