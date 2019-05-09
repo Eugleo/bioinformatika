@@ -207,19 +207,16 @@
           (define ord (bullet-ord? (first xs)))
           (define-values (subitems rst-lower) (go (list (first xs)) (first xs) new-lvl (rest xs)))
           (define listed-subitems (make-list ord subitems))
-          (println (list rst-lower subitems listed-subitems))
           (cond
            [(null? rst-lower) (values (list (unbullet (cons listed-subitems acc))) '())]
            [else
               (define next-lvl (bullet-lvl (first rst-lower)))
               (cond
                 [(> lvl next-lvl)
-                  (println (list "HERE" lvl next-lvl rst-lower (unbullet (cons listed-subitems acc))))
                   (values (list (unbullet (cons listed-subitems acc))) rst-lower)]
                 [else
                   (define-values (elseitems rst-same)
                     (go (list (first rst-lower)) (first rst-lower) lvl (rest rst-lower)))
-                  (println (list "THERE" "SME-LVL" elseitems "RESULT" (cons (unbullet (cons listed-subitems acc)) elseitems) "REST" rst-same))
                   (values (cons (unbullet (cons listed-subitems acc)) elseitems) rst-same)])])]
          [else
            (define-values (elseitems rst-same) (go (list (first xs)) (first xs) lvl (rest xs)))
@@ -522,8 +519,6 @@
 
   ;; covert these headings into toc entries using helper function
   (define toc-entries `(ol [[class "toc"]] ,(apply ls (apply append (map heading->toc-entry headings)))))
-
-  (pretty-print (map heading->toc-entry headings))
 
   ;; package the content into a `body` tag, and the toc-entries into a `toc-entries` tag
   `(root
