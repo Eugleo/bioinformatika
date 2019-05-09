@@ -2,9 +2,21 @@
 
 ◊define-meta[title]{Základy bioinformatiky}
 ◊define-meta[header]{zápisy}
+◊(define-meta toc #t)
 
 ◊title{Struktura nukleových kyselin}
 ◊lecture[2]
+
+◊ls{
+# první
+    - druhý
+        - třetí
+# první
+    - druhý
+    - druhý
+- první
+    - druhý
+}
 
 Objev struktury DNA: Watson, Crick, Franklin (50. léta 20. století).
 
