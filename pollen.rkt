@@ -160,7 +160,7 @@
          [(< lvl new-lvl)
           (define ord (bullet-ord? (first xs)))
           (define-values (subitems rst-lower) (go (list (first xs)) (first xs) new-lvl (rest xs)))
-          (define listed-subitems (make-list ord subitems))
+          (define listed-subitems (make-list-tex ord subitems))
           (cond
            [(null? rst-lower) (values (list (unbullet (cons listed-subitems acc))) '())]
            [else
@@ -386,7 +386,7 @@
 (define deg
   (case (current-poly-target)
     [(tex pdf) "\\(^{\\circ}\\)"]
-    [else "°"]))
+    [else '(strong "°")]))
 (define pi ($ "\\pi"))
 (define angs "Å")
 (define alpha ($ "\\alpha"))
