@@ -4,129 +4,202 @@
 ◊define-meta[header]{zápisy}
 ◊(define-meta toc #t)
 
+◊title{Struktura DNA}
+
+◊todo{Doplnit informace o endo a exo konfiguracích, syn a antiklinální, levo a pravotočivé, Hoogsteenovo párování atd.}
+
+◊todo{Syn a anti konfigurace jsou na proteopedii. Jsou tam i další fajn věci.}
+
 ◊title{Polymorfismus DNA}
 
-Popisuje odchylky struktury DNA od její očekávané struktury
+◊todo{Eeeh, co je to ten polymorfismus?}
 
-◊todo{Doplnit informace o endo a exo konfiguracích, syn a antiklinální, levo a pravotočivé, Hoogstedovo párování atd.}
+◊ls[#:t "Vývoj znalostí o struktuře DNA"]{
+    - první pokusy vycházely z difrakcí rentgenového záření na částečně uspořádaných vláknech dsDNA
+        - zjistilo se, že difrakce jsou někdy velice odlišné - tím se pojmenovaly konformace A--Z
+    - později se zkoumal rozptyl na krystalech
+        - z genomové DNA nešlo udělat krystal -> krystalizovaly se oligonukleotidy, na které byla DNA rozlámaná ultrazvukem
+    - na těchto krystalech získáváme informace ještě podrobnější, než na vláknech
+        - objev sekvenčního polymorfismu (konkrétní páry bazí si vyžadují odchylky od ideálního strukturního modelu)
+}
 
-ds a ss zkratky
+Je ale třeba si uvědomit, že pokud využíváme k detekci anomálií protilátky, můžeme se nám stát, že danou strukturu naší protilátkou stabilizujeme v jedné konkrétní konformaci, i když přirozeně by ji často měnila. Protilátky tak nemusí vždy odrážet realitu.
 
-VÝVOJ ZNALOSTÍ dsDNA
-- první pokusy vycházely z difrakcí rentgenového záření na částečně uspořádaných vláknech dsDNA
-    - WC párování je v konformaci B
-    - zjistilo se, že difrakce jsou někdy velice odlišné - tím se pojmenovaly konformace A-Z • rozdělení do rodin podle směru vinutí a podle polohy párů bazí vůči ose řetězce
-- později se zkoumal rozptyl na krystalech
-    - nešlo z genomové DNA udělat krystal, a tak se krystalizovaly oligonukleotidy (rozlámané ultrazvukem)
-    - na těchto krystalech získáváme informace ještě podrobnější, než na vláknech - objev sekvenčního polymorfismu - konkrétní páry bazí si vyžadují odchylky od ideálního modelu
+◊box["Úhly a reakce"]{
+    Řekněme, že pozorujeme interakce dvou molekul v prostoru a vždy měříme úhly, pod kterými jsou spoliu ve styku, z čehož se poté snažíme vyvodit, jestli spolu reagují nějak specificky. Jaké úhly pro nás v tomto případě budou zajímavé?
 
+    Jendoduchým pozorováním lze dojít k závěru, že při náhodném umístění a orientaci molekul bude nejběžnější úhel mezi nimi 90◊|deg|, a obecně celé rozložení úhlů ude mít tvar sinusoidy.  Nejvzácnější bude tedy rovnoběžná orientace.
 
-◊todo{Doplnit slide uspořádání molekul v 3D prostoru.}
-ASIDE: REAKCE a úhly
- - při náhodném rozmístění moelkul ve 3D prostoru je nejčastější rozložení úhlu 90◊deg, nejvzácnější je rozložení rovnoběžné
-    - pokud se úhlový histogram interakcí dvou molekul bude lišit od sinu (který má peak v 90◊deg), můžeme zaujmout podezření, že spolu nějak reagují
+    Pokud se tedy naše naměřené úhly budou významně lišit od pravidelné sinusoidy, má cenu se tím dále zabývat.
+}
 
-◊section{Polymorfismus DNA}
+◊section{Konformační polymorfismus}
 
+Jedna molekula DNA bude mít v různých prostředích různou konformaci. Konformací existuje celá řada (A--Z, s různými indexy).
 
-- konformační, sekvencnčí, dynamický (neustálý pohyb), ohyby a zalomení, kondenzace
+◊ls[#:t "Faktory ovlivňující konformaci"]{
+    - humidita
+        - 100%: B konformace
+        - s ubývajícím množstvím vody -> DNA-A -> DNA-C
+    - přítomnost iontů
+        - více ◊chem{Mg^{2+}} znamená jednodušší metylaci C5' a supercoiling, což způsobuje Z konformaci
+    - zastoupení bazí
+        - poly-A úseky, poly-AT úseky, atp., mají roznídlné vlastnosti
+}
 
-◊subsection{Dynamický}
-
-◊slide[56 #:s 4]
-
-Záleží na sekvenci.
-
-◊slide[16 17 #:s 4] ◊slide[10 #:s 5] / konformace náhodného polyadenylylu a majoritní stabilní situace, oligo G, jsou tam tři stabilní místa
-Určité volné torní úhly, DNA se nesutále trochu mění.
-
-Každý vzorek DNA je dynamická soustava (neustálý pohyb). AT páry roztají první (méně H můstků). U konců molekuly tají rychleji.
-
-Denaturace DNA: rozvíjení DNA do jednotlivých řetězců. Pokud se DNA rychle ochladí, renaturace není úplně kvalitní. Denaturované DNA absorbuje mnohem více, než běžná (hyperchronní efekt).
-
-- DNA vazebné proteiny někdy lokálně měné konformaci DNA
-
-= RODINY =
-
-◊slide[20 22 #:s 4] / A, B, Z (v přítomnosti dvojmocných iontů)
-
-◊slide[69 #:s 4]
-- při palindromu, kde je jeden úsek DNA komplementární s nadcházejícícm úsekem na stejném vlákně, někdy na DNA vznikne kříž
-- kromě kříže vlásenky, bubliny
-- utajená přerušení: jedno vlákno je na kostře přerušené
-    - nejsou problém, vlákna u sebe drží velkou siloi
-    - začíná u nich denaturace
-- gap: chybí nějaká báze
-- zlom s adhezivními (lepivé) přeshujícími konci: strand se lepí na molekulu podobného tvaru, nezáleží ale na jejich původu; adhezivní konce umožňují vytvářet genetické změny v DNA, můžeme je míchat
-
-STUDIUM ANOMÁLIÍ
-- anomálie jsou hypersenzitivní k: nukleázy (S1, mikrokokální), chemické modifikace (glyoxal, chloracetaldehyd)
-- detekce checmikcy značených: elektronová mikroskopie, denaturační křivky, elektroforéza, sekvenocání, vazba protilátek
-- antigeny specializované na konformaci (DNA i proteinů) někdy danou strukturu stabilizují, když se na ni naváží, takže můžeme získat 70% B, 80% A
-
-◊todo{Přepsat tabulku místo obrázku.}
-
-◊slide[6 7 #:s 4] / velký a malý žlábek
-- B-DNA je šroubovice, watson-crickovské párování (schargaffova pravidla), 5' a 3' konce (prodlužování na 3' OH skupině)
-    - C1' uhlíky v rámci patra jsou vzdálené skoro stejně
-    - C2' na stejnou stranu, jako C5' (endo konfigurace)
-    - malký a velký žlábek
-        - důležitá pro vazby molekul
-        - bod A = průsečík osy šroubovice a patra bazí, polopřímka z A do C1' na obou bazích, místo, úhel pod 180◊deg je malý žlábek ◊slide[5 #:s 4]
-        - mnoho proteinů reagujících s DNA funguje jako homodimer (reagují s DNA na dvou místech), mívají kladný náboj (a jsou bazické)
-        - do malého žlábku se váže např. DAPI, která se používá k barvení ◊slide[9 #:s 4]
-    - pravotočivá (spirála, protože báze něchtějí být úplně přesně nad sebou, jiank by to vypadalo jako zip)
-    - patra vztálená 330~350pm, stacking interakce
-    - uprostřed není žádné místo
-    - tam, kde je voda, s nižší koncentrací vody -> A -> C -> Z
-    - patra otočená o 36◊deg
-    - fosfáty vzdálené kolem 9◊angs
-- jeden pár bazí má asi 660g/mol = 660Da
-
-◊slide[24 #:s 4]
-konformace A
-    - ribóza je C2' exo, C3' endo (naopak oproti C5')
-    - dutina bývá zaplněna vodou, někdy interagují dvě báze skrz molekulu vody
-    - pravotočivá
-
-konformace Z
-    - levotočivá
-    - zig-zag uspořádaná kostra
-    - střídá se purin-pyrimidin-purin...
-    - puriny jsou synklinální (na rozdíl od A a B)
-    - patra jsou si podobná ob jedno (v B jsou si podobná všechna), repetitivní je dvojice párů bazí nad sebou
-    - některé modifikace bazí (například methylace na C5) ji stabilizují (methyl se dobře schová mezi dvě patra)
-
-◊todo{Syn a anti konfigurace na proteopedii. Jsou tam i další fajn věci.}
-heterokomplex RNA
- - OH skupina na RNA musí čnít ven, proto C2' exo
- - struktura se podobá konformaci A
-
-OHYB VLÁKNA [MOODLE]
-◊slide[66 #:s 4]
- - způsoben AT páry bohatými oblastmi
-    - AT mohou reagovat napříč patry, čímž se DNA ohne
-    - dobře dostupné (DNA trochu rozpletená) => často v promotorových nebo regulačních oblastech
-
-◊slide[2 #:s 5]
-VLÁSENKA [MOODLE]
-- aminoskupina uracylu + fosfátová skupina
-- uracyl a cytosin s ničím neváží
-- cytosin stacking interaguje s párem pod sebou
-- G+U pár (atypické párování), U+U pár
-- G někdy H můstek s ribozou
-=> celkově tedy na vrchu hairpinu často UUCG
-
+◊todo{Přepsat tabulku srovnání místo obrázku slidu. + Jeden pár bazí má asi 660g/mol = 660Da + Hoogsteen a G-kvadruplex?
 ◊slide[38 #:s 4]
 Někdy se váží tři strandy DNA, dvě běžně v B konformaci, třetí CTCT (polypurinová část) úsek pomocí hoogstedova párování (<- H-DNA), puriny synklinální. Podobně se může vmezeřit i RNA.
+}
 
-= Vazby nukleotidů v RNA =
-tRNA: Někdy jsou vazby typu U+U stabilizovány přes vmezeřenou molekulu vody.
-rRNA: Někdy celé sítě interakcí. ◊slide[77 #:s 4]
-někdy vysoké pH (bazické!) -> deprotonace OH na ribóze -> fosfát z kostry se naváže na O -> vznik cyklického nukleotidu -> rozpad, nalézáme P navázaný na O.
-    - štěpící enzymy využívají stejný průběh
+◊slide[20 22 24 #:s 4] Existují tři hlavní rodiny konformací: ◊strong{A}, ◊strong{B} a ◊strong{Z}.
 
-párování v RNA je více druhů, ◊slide[4 #:s 5]
+◊subsection{Konformace B}
+
+◊ls{
+    - nejběžnější
+    - pravotočivá spirálovitá struktura
+        - spirálovitá proto, že jednotlivé báze vlastně nechtějí být přesně nad sebou
+    - patra jsou vzdálená 330~350pm, působí mezi nimi stacking interakce
+    - fosfáty vzdálené kolem 9◊angs
+    - C1' uhlíky v rámci patra jsou v každém patře skoro stejně daleko od sebe
+    - ribóza je C2' endo (C2' je na stejnou stranu jako C5')
+    - rozlišení velkého a malého žlábku
+        - důležité pro vazby molekul
+        - mnoho proteinů reagujících s DNA funguje jako homodimer reagují s DNA na dvou místech
+            - tyto proteiny kromě toho bývají bazické
+        - do malého žlábku se váže např. molekula DAPI, která se používá k barvení ◊slide[9 #:s 4 #:inline #t]
+    - uprostřed helixu není žádné místo
+}
+
+◊slide[6 7 #:s 4]
+◊box["Malý vs velký žlábek"]{
+    Malý a velký žlábek lze rozlišit i na jiných konformacích DNA, kde zpravidla nejdou poznat tak dobře. Způsob jejich určení je naštěstí přesně popsán.
+    ◊ls{
+        # najdeme průsečík osy helixu a nějakého patra DNA
+        # vedeme z tohoto bodu dvě polopřímky, každou do jednoho z C1' na obou bazích
+        # rozdělíme rovinu na dvě části: tam, kde je úhel menší než 180◊deg je malý žlábek, na opačné straně velký žlábek ◊slide[5 #:s 4 #:inline #t]
+    }
+}
+
+◊meta{Byly požadovány znalosti jednotlivých atomů, které se nacházejí ve velkém/malém žlábku.}
+
+◊subsection{Konformace A}
+
+◊ls{
+    - pravotočivá spirálovitá struktura
+    - ribóza je  C2' exo, C3' endo
+    - uprostřed helixu je dutina, která bývá vyplněna vodou
+        - někdy se stane, že dvě báze spolu interagují prostřednictvím molekuly vody
+}
+
+Podobnou konformaci zaujímá i heterokomlex DNA+RNA, protože OH skupina cukru z RNA musí čnít ven z helixu, tedy C2' musí být exo.
+
+◊subsection{Konformace Z}
+
+◊ls{
+    - levotočivá spirálovitá struktura
+    - kostra uspořádaná zig-zag
+        - v sekvenci se střídají puriny a pyrimidiny
+            - puriny jsou synklinální, jejich riboza je tedy přetočená a kostra vypadá zig-zag
+    - patra jsou si strukturou podobná ob jedno (v B jsou si podobná všechna), repetitivní je dvojice párů bazí nad sebou
+    - některé modifikace bazí (například methylace na C5') Z konformaci stabilizují (methyl se dobře schová mezi dvě patra)
+    - převládaají báze G a C
+}
+
+◊section{Sekvenční polymorfismus}
+
+◊slide[43 46 47 49 #:s 4] Báze v rámci patra nejsou v rovině, ale zaujímají tvar asymetrické vrtule. Stejně tak jednotlivá patra spolu nejsou rovnoběžná, ale různě nepravidelně natočená, protože si navzájem přkážejí.
+
+◊slide[52 54 #:s 4] Natočení a posun bazí je různý u různých konformací DNA, a závisí také na místním nukleotidovém složení. Zajímavě se například chovají poly-AT regiony. ◊slide[10 #:s 5 #:inline #t]
+
+◊slide[16 17 #:s 4] Se sekvencí se nemění pouze posun bazí, ale i možné torzní úhly. Na slidu jsou znázorněny torzní úhly dvou polyadenylylových úseků s různými majoritními nukleotidy.
+
+◊section{Dynamický polymorfismus}
+
+◊slide[56 #:s 4]
+DNA je neustále v pohybu. Jak moc a jakým způsobem záleží především na konkrétní sekvenci.
+
+◊ls{
+    - nedá se sledovat na krystalech, musíme použít NMR nebo například fluorescenci
+    - jedná se vlastně o časově a prostorově lokální denaturaci
+    - pokud například DNA-B přechází v DNA-Z, jedna báze se může vyklopit z řetězce (flipování)
+        - často proto, že reaguje s nějakým enzymem
+}
+
+◊ls[#:t "Denaturace"]{
+    - rozpad helikální struktury DNA, většinou způsobený teplem
+    - DNA se rozplétá od konců, nebo v sousedství utajených přerušení
+    - poly-AT úseky tají první, protože AT jsou spojeny jen dvěma vodíkovými můstky
+    - pokud k renaturaci dojde příliš rychle (např. prudkým ochlazením), ne všechny báze musí nutně skončit se svou komplentární dvojicí
+}
+
+◊section{Ohyby a zalomení}
+
+K ohybům dochází v DNA hlavně na základě sekvenčního polymorfismu a na hranici dvou konformací. Naopak k zalomení především v důsledku mechanického namáhání nebo při vazbě na zakřivený povrch.
+
+◊slide[66 #:s 4]
+◊ls[#:t "Ohyb vlákna"]{
+    - způsoben AT bohatými oblastmi
+    - A a T spolu mohou reagovat napříč patry, čímž se DNA ohne
+    - DNA se částečně rozplete a sekvence jsou dobře dostupné
+        - => často v promotorových nebo regulačních oblastech
+}
+
+◊section{Další konformační anomálie}
+
+◊slide[69 #:s 4]
+◊ls{
+    - lokální úseky Z-DNA, H-DNA, A-DNA, 4s DNA (uvnitř molekuly B-DNA)
+    - při výskytu palindromu, kde je jeden úsek DNA komplementární s nadcházejícícm úsekem na stejném vlákně, někdy na DNA vznikne kříž
+    - kromě kříže vlásenky, bubliny
+    - utajená přerušení: jedno vlákno je na kostře přerušené
+        - nejsou problém, vlákna u sebe drží velkou silou
+        - začíná u nich denaturace
+    - gapy: místa, kde chybí nějaká báze
+    - zlom s adhezivními (lepivými) přesahujícími konci: vlákno se lepí na vlákno podobného tvaru, nezáleží ale na jejich původu; adhezivní konce umožňují vytvářet genetické změny v DNA, můžeme je míchat
+}
+
+◊ls[#:t "Způsoby studia strukturních anomálií"]{
+    - můžeme využít hypersenzitivity anomálií
+        - nukleázy (S1, mikrokokální)
+        - chemické modifikace (glyoxal, chloracetaldehyd)
+    - můžeme detekovat chemicky značené anomlie
+        -  elektronová mikroskopie
+        - denaturační křivky
+        - elektroforéza
+        - sekvenování
+        - vazba protilátek
+}
+
+◊section{Vsuvka: konformace RNA}
+
+◊slide[2 #:s 5]
+◊ls[#:t "RNA vlásenka"]{
+    - často se objevují nezvyklá párování
+        - U + fosfátová skupina
+        - G+U, U+U a podobně
+            - někdy stabilizováno přes molekulu vody
+        - G někdy tvoří vodíkový můstek s ribozou
+    - uracyl a cytosin na špičce s ničím nepárují
+        - cytosin stacking interaguje s párem pod sebou
+        - uracyl ční do prostoru (nejspíš málo konzervovaná pozice)
+    - na špičce vlásenky často UUCG a podobné
+}
+
+◊ls[#:t "Bazická hydrolýza RNA"]{
+    # ve vysokém pH (silně zásadité) dojde k deprotonizaci ◊chem{OH} skupiny na ribóze
+    # kyslík z ribózy může nukleofilně reagovat s fosfátem z RNA kostry
+    # fosfát je en čtyřvazebný a tak jednu ze stávajících vazeb přeruší
+    # RNA se rozpadne
+    # fosfát posléze zůstane jen na C2' nebo C3'
+}
+
+Podobně fungují i enzymy štěpící RNA, je proto relativně složité je zastavit (např. u DNA stačí jen odebrat z roztoku kovy, které enzymy potřebují k rozložení DNA).
+
+◊slide[77 #:s 4] V ribozomálním RNA jsou někdy celé sítě různých interakcí mezi nukleotidy.
+
+◊slide[4 #:s 5] V RNA je možných mnoho různých druhů párování.
 
 ◊section{Topologie DNA}
 
@@ -168,6 +241,8 @@ DNA má strukturu dihelixu, viz výše. Topologie DNA se zabývá tím, jaký tv
     }
 }
 
+◊slide[29 #:s 5] Supercoilování, nebo obecně změna ◊${T} a ◊${W} čísel, může někdy způsobit (nebo alespoň podpořit) změnu konformace DNA, více viz slide.
+
 ◊subsection{Supercoil}
 
 DNA bývá velice dlouhé, buňka ho chce samozřejmě vměstnat na co nejmenší plochu --- s tou podmínkou, že bude stále možné čtení DNA kódu, případně replikace. A právě tento problém supercoil řeší. Supercoil se mimo to významně podílí i na procesech replikace a transkripce, protože usnadňuje přístup proteinů k sekvenci DNA (viz níže).
@@ -180,8 +255,6 @@ Velikost supercoilu (počet nadobrátek) se měří:
     \sigma &= \frac{\Delta L}{L_0},
 }
 kde ◊${L_0} je ◊${L} relaxované DNA. ◊${\sigma} se nazývá superhelikální hustota a představuje počet přidaných/ubraných nadotáček vzhledem k původnímu počtu nadotáček.
-
-◊todo{Některé kombinace W/T mění konformaci DNA, např. B -> Z. Vložit slide 29/5, na kterém to je, ale jako celý obrázek.}
 
 Víme, že DNA je ve své nejčastější konformaci pravotočivé. Nabízí se otázka: jak je to se superhelixem u bakterií?
 
