@@ -383,11 +383,130 @@ Enzymy ovlivňující topologii DNA.
         - většinou se jen posunují, někdy ale coil "přeskočí" kus sekvence (hopping)
 }
 
-◊section{Elektroforéza nukleových kyselin}
+◊title{Elektroforéza nukleových kyselin}
 
 ◊slide[20 21 #:s 5]
 stejné DNA strands se pohybují různě rychle podle tvaru
-- DNA vždy ke kladné elektrodě
-- OC forma = open circle
-    - gyráza vytvoří maximální počet nadobrátek
-    - topoisomeráza 1: ubírá 1 nadobrátku
+- DNA vždy ke kladné elektrodě (1 neg na bp)
+
+Na Každou molekula vystavená elek. poli působí F = q * E. Protože ale molekula není ve vakuu, působí na ni i F_v = f * v (třecí síla, f = frikční koeficient).
+
+◊slide[4 #:s 6]
+Po dosažení F = F_v = q * E = f * v => v = qE / f => pohyblivost mi = v / E = q / f. Poměr mezi mol. hmotsnotí a nábojem je konstaní, ale naštěstí mají menší molekuly menší koeficient tření. Závislost rychlosti putování na velikosti není lineární.
+
+Ovlivněna:
+- iontovou silou
+    - pokud budou v roztoku katyionty, mohou DNA obalit, ta bude poté putovat pomaleji
+- ekeltrolysou u elektrod
+    - může se měnit pH, což může mít vliv na stavbu DNA a RNA
+- elektroosmosou
+    - putování malých nabitých iontů a vody skrz gel, které může mít opačný směr než je směr putování DNA
+- tvorbou tepla
+    - viskozita, odpar, vodivost a denaturace ovlivněny teplem
+    - při některé ELFO se vzorek putováním zahřívá
+
+
+ELFO
+◊slide[7 9 #:s 6]
+- provádí se v kapilárních systémech gelů
+    - kapilární proto, aby vzorek nedifundoval do stran
+- agarosový gel (AG)
+    - složení
+        - lineární polysacharid z mořských řas
+        - D-galaktosa + 3,6-anhydro-L-galaktosa
+    - snadná příprava
+    - snadná manipulace v horizontálním uspořádání
+    - většinou pro DNA o velikosti 1000bp -- 50000bp, při pulzní ELFO až do 2Mbp
+
+◊slide[11 #:s 6]
+způsoby dělení molekul
+- molekula je velice malá
+    - bude procházet mezi molekulami gelu bez omezení ryhlosti
+- molekula je středně velká (entropická past)
+    - pohyblivost je nejvíce ovlivněna velikostí molekuly
+- molekula je lineární
+    - moekula se protáhne a provleče mezi molekulami gelu
+    - rychlost pohybu není závislá na délce
+    - například DNA (rozmotá se)
+
+Na obrázku lze vidět porovnání délky moelkuly a rychlosti, s jakou putuje v gelu. Snažíme se vždy, aby u námi pozorovaných molekul i malý rozdíl v déle způsobil velký rozdíl v rychlosti (a i málo rozdílné molekuly šly tím pádem dobře rozeznat).
+◊img["slides-6/slide-10.jpg"]{Dělení molekul při ELFO}
+
+◊ls[#:t "Faktory ovlivňující průběh"]{
+    - napětí
+        - při nízkém napětí je mobilita lineární DNA přímo úměrná napětí (což chceme)
+        - při zvýšeném napětí nad určitou mez (5 V/cm) se mění mobilita fragmentů různě v závislosti na jejich velikosti (což nechceme)
+    - směr elektrického pole
+        - někdy se používá pulzní ELFO, kde se periodicky mění směr elektrického pole
+    - složení bází a teplota
+        - nehrají velkou roli
+        - většinou pokojová teplota
+    - přítomnost interkalátorů
+        - EtBr snižuje mobilitu lineární DNA o 15%
+}
+
+
+Potřebujeme pufr, abychom měli homogenní elektrické pole přes celou délku. Zároveň ale moc pufru -> zahřívání gelu. Obecně je nejlepší dělat ELFO dlouho při malém napětí, než naopak.
+- různé druhy pufrů
+
+Gel může být různě koncentrovaný, více koncentrovaný gel se hodí pro práci s malými molekulami DNA. Konkrétně pro molekuly o velikosti 0.1--2kb se hodí asi 2% agaróza, na druhé straně spektra pro molekuly o velikost 5--60kb se hodí 0,3% agaróza.
+
+Vzorek se při nanášení do gelu míchá s nanášecím pufrem.
+- zvyšuje hustotu vzorku, který klesá dolů ke startu
+- barvou usnadňuje nanášecí proces
+    - většinou přidané barvivo
+        - BPB, která putuje přibližně jako 300bp dlouhá DNA
+        - XC jako 4kbp DNA
+
+Pro analýzu potřebujeme obarvit vzorek. Většinou se barví EtBr, které se interkaluje do helixu. Je to kancerogen (vmezeřuje se i do naší DNA). Alternativy: SYBR Green I (dražší, ale menší množství a není nutné proplachovat gel).
+
+DENATURAČNÍ GELY
+- někdy nechceme dělit DNA podle topologie, ale jen podle jejich velikosti
+- denaturační činidla: močovina, formamid (méně často)
+- vysoké napětí, gel se zahřívá (50◊|deg|C) => DNA je v lineární formě
+- vysoké rozlišení, lišící se i o pouze jeden nukleotid
+
+◊todo{Přidat slide 22}
+
+JAK DOSTAT DNA Z GELU (eluce NA z gelu)
+- zahřát agarózu (low melting AG)
+- elektroeluce (necháme DNA vyputovat z gelu do roztoku)
+- degaradace AG (jen málo enzymů, agaróza je odolná)
+
+2D ELFO
+◊slide[25 #:s 6]
+# normálně ELFO
+    - zauzlovaná DNA rychlejší než CO, lineární
+    - rozdělíme DNA podle topologie
+# přidáme EtBr (rozmotáme supercoily)
+# 90◊deg otočení a znovu ELFO
+    - rozmotané supercoily se v nové ose rozdělí podle délky
+
+◊slide[27 #:s 6]
+- někdy s EtBr, někdy druhá osa jen při vyšším napětí
+    - mobilita při vyšším napětí se liší podle topologie
+
+◊slide[28 30 #:s 6]
+Pulzní ELFO
+- používá se pro lepší rozlišení molekul podle délky, hlavně u delších molekul
+    - dráha, kterou molekuly ujdou, je mnohem delší (protože jdou cik-cak)
+    - molekuly jsou dobré v "zatáčení" v závislosti na své délce
+- periodicky se mění směr elektrického pole
+- jako reference se často používají konkatemery známých genomů bakteriofágů o určitých délkách, případně chromozovy S. cerevisae a S. pombe (druhy kvasinek)
+
+◊title{Sedimentační metody DNA}
+
+
+
+◊section{Analýza obrázků ELFO v praxi}
+
+◊meta{Tato sekce nebude u zkoušky, je zmíněna "jen pro naše dobro".}
+
+- software FIJI
+- vyplatí se rozložit obrázek do tří, R, G a B
+- obdélníkový výběr -> analyze -> plot profile
+    - profil světlosti, ze kterého jde zjistit, na jakých pixelech jsou peaky (tedy zvýšené koncentrace DNA)
+
+- FITYK
+    - otevřeme vyexportovaný intenzitogram z FIJI
+    - můžeme proložit fukncí, například gaussovská křivka automaticky rozpozná peaky
