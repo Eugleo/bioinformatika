@@ -494,9 +494,6 @@ Pulzní ELFO
 - periodicky se mění směr elektrického pole
 - jako reference se často používají konkatemery známých genomů bakteriofágů o určitých délkách, případně chromozovy S. cerevisae a S. pombe (druhy kvasinek)
 
-◊title{Sedimentační metody DNA}
-
-
 
 ◊section{Analýza obrázků ELFO v praxi}
 
@@ -510,3 +507,157 @@ Pulzní ELFO
 - FITYK
     - otevřeme vyexportovaný intenzitogram z FIJI
     - můžeme proložit fukncí, například gaussovská křivka automaticky rozpozná peaky
+
+◊title{Sedimentační metody DNA}
+
+- teorie sedmientace vypracována Svedbergem (Nobelovka)
+- předpoklady
+    - sedimentuje malé tělísko
+    - zadenbává se tepelný pohyb molekul
+    - jediná interakce mezi tělískem a roztokem je tření
+
+rozdělení molekul
+    - velikost
+    - tvar
+    - molekulová hmotnost
+    - hustota
+proč centrifugace
+    - analytická centrifugace, AUC (co máme ve vzorku, v jaké formě, s ajkými vazbami)
+    - preparativní centrifugace (chceme složky jen oddělit)
+
+
+PREPARATIVNÍ
+ROTORY
+◊slide[6 8 #:s 7]
+- různý tvar, u vertikálních ryhlejší sedimentace
+- při otáčení se rozdělí molekuly podle hmotnosti
+
+- problém s tím, že molekuly, které začnou u stěny zkumavky, jsou brzděny tření o zkumavku
+- odběr vzorků injekční stříkačkou
+
+◊todo{Izokinetická vz izopyknická.}
+- cheme oddělit DNA od DNA, DNA od rptoeinů atd
+    => izopyknická centrifugace = molekuly končí na stejné hustotě, jako je hustota okolí (dělíme vzorky podle vzbášivé hustoty)
+    dělení pouze podle velikosti
+    - velké partikule tvoří úzkou zónu
+- jinak izokinetická: každá molekula putuje nějakou konstantní rychlostí
+
+ANALYTICKÁ (AUC)
+
+FYZIKA
+- odstředivá síla F = ma = m omega^2 r, kde omega je úhlová rychlost
+    - molekuly dále od středu se pohybují rychleji
+    - relativní odtředivá síla (RCF) F / mg (násobky tíhového zrychlení)
+        - někdy stovky tisíc RCF
+- vztlaková síla F = m_k omega^2 r, kde m_k je tíha kapaliny, ktrou molekula vytlačila
+- odpor prostředí F = fv, kde f je frikční koeficient
+    - výpočet f ze Stokesova zákona (jen pro kulové molekuly)
+    - případně výpočet f z Einsteinova zákona f = (RT)/(ND)
+        - D je difúzní koeficient biomakromolekuly, který udává, ja kdobře molekuly difudnuje do prostředí (závisí na tvaru a objemu molekuly)
+- gravitační síla se může ignorovat
+
+SEDMINETAČN'9 KOEFICIENT
+když se vektorový součet všech tří sil rovná 0, nastane stacionární stav:
+F1 - F2 - F3 = 0
+V d r omega^2 - Vd'r omega^2 = f (dr/dt)
+V(d-d')/f = (dr/dt) / (r omega^2) in [s]
+výsledek bude konstantní, takzvaný sedimentační koeficient
+10^-13 s = 1 S (Svedberg)
+[objekt má 30 S, pak urazí 3um za s při  sedimentačním zrychlení 10^6ms^-2]
+
+s = (dr/dt) / (r omega^2)
+ln (r/r_0) = s omega^2 t
+
+sed. koeficient + korekce -> sedimentáční konstanta pro dané podmínky: S_(0, 20, w) s = v/omega^2r = M (1-Vd)/Nf, kde (1-Vd) je specifický parciální objem => tohle můžeme zjistit ze sedimentační konstanty
+- vhodná korekce na nulovou koncentraci (protože molekuly spolu interagují s čímž normálně nepočítáme: jak rychle by asi sedimentovala jedna molekula samotná)
+- korekce na tlakové rozdíly (extrapolace na hladinu, protože je velký hydrostatický tlak)
+
+VYUŽiTÍ
+- diferenciální funkce na dno
+- metoda ohyblivého rozhraní
+    - pro purifikovaný biopolymer stanovení sedimentačního koeficientu, kosntany, výpočet molární hmotnosti
+        - monodisperzní vzorek
+    - odhalení heterogenity vzorku
+- odhalení agregátů/komplexů i s jejich velikostí
+
+ANALYT: velká přesnot, absolutní vlastnosti molekuly, bez nutnosti standardů (X ELFO)
+
+IZOKINETICKÁ
+dr/dt = konstanta * S
+- běžně vzorky dál od osy putují rychleji
+- musíme vytvořit sacharozový gradient (5--15%, 15--30%)
+    - gradient nutné dělat ručně ◊slide[29 #:s 7] (podobně se dělají gradienty pro ELFO, když je potřebujeme)
+        - todo: popsat mechanismus
+◊slide[32 #:s 7]
+- charakterizace podjednotek ribosomů
+- záleží hlavně na hmotnosti, nezáleží na vzníšivé hustotě
+
+IZOPYKNICKÁ
+◊todo{Co je vznášivá hustota?}
+- gradient CsCl, dělení podle vznáš. hustoty
+- dvě komplemntární vlákna mohou mít různou vznášivou hustotu (GC páry těžší)
+ - satelitní DNA: velice odlišná vznáš. hustota => možná pocházejí z jiného organismu
+ ◊slide[34 35 #:s 7] (možná přímo IMG? T1)
+- hustota CsCl  by měla být mezi oběma strandy, aby se oddělily
+- šířka pásku (vit obrázek) se liší podle množstzví a velikosti molekul
+
+◊slide[41 #:s 7]
+VYUŽiTÍ UAC
+- jak funguje replikace u bakterií
+- e. ocli v N15 (těžký dusík), poté v normální atmosféře
+ -> DNA změnila svou vznášivou hustotu v průběhu generací
+    # homogenní, těžká
+    # hybrydní DNA, monodisperzní (těžká+lehká v jednom helixu)
+    # dva proužky, více lehké DNA
+=> repliakce je semikonzervativní
+
+◊todo{Přidat obrázek z odkazu}
+
+Když polymer dáme na hladinu a sedimentujeme, časem plyne zkumavkou ◊em{rozhraní}. Koukáme se na koncentrace v celé délce kyvety: na začátku bude koncentrace všude stejná, časem se koncenrace zvyšuje směrem ke konci kyvety. Když je látek více, vidíme několik rozhraní; na prvních derivacích křivek jde vidět peaky. Když látky smícháme a vidíme kromě původních dvou peaků i nějaký nový, tvoří naše látky nejspíše komplex. Dá se pozorovat difuzni koeficient (jak jsou peaky rozlité) i sedimentační konstanta.
+
+M = (SRT)/(D_0(1-rho V))
+
+◊todo{Doplnit informace o detekčním systému.}
+
+Sedimentace se dá měřit i absorpčně, hlavně proteiny a NA. Na rozhraní e však měnřit nedá, protože se světlo na rozhraní ohýbá a nedopadá do měřiče. Jsme proto schopni změřit pouze koncentraci před a za rozhraním, které je relativně stálá. Cukry ale úplně ne, to spíše interferenční měření (index lomu).
+
+◊title{Sekvenace DNA}
+
+Přečtení kódu DNA. Hlavně servisně, třeba i pouze ověření nějakého pokusu.
+
+# příprava krátkých kousků DNA
+    - štěpení
+    - PCR
+# příprava ssDNA
+# sekvenace úseků
+    - štěpíme stené sekvence v několika místech, jednotlivé fragmenty se překrývají, je poté možné je poskládat
+# dodatečné uspořádání a překryv částí
+
+KDYSI (RNA)
+- štěpení fosfodiesterázou hadího jedu (od 3' konce) nebo z hovězí sleziny (od 5' konce)
+- účinné látky se dá malé množství, dojde k částečnému natrávení
+    - vzniknou kousky RNA, které jsou všechny různě dlouhé
+- u jednotlivých fragmetnů zjistíme stechiometrické koeficienty jednotlivých bazí, začínáme od nejkratších a postupně se dozvídáme jednu AK (v dinukleotidu nebyla, v trinukleotidu je)
+    - podobně od druhého konce RNA, oba výsledky se dají dohromady
+
+◊todo{Co jsou restrikční endonuklézy.}
+KEVENACE DNA
+- příprava fragmentů stejné délky restrikčními endonukleázami
+- produkce a purifikace velkých množství konkrétních úseků DNA
+    - DNA je v jedné kopii, RNA v mnoha
+- jsou ale i nové sekvenační postupy, které přesně dlouhé fragmenty nepotřebují
+
+◊slide[9 #:s 8]
+ENDONUK.
+- homodimery
+    - vyžadujeme na DNA "palindromatickou" sekvenci (z 5' čarou konce ale vypadá vždy stejně), protože se na každé ze dvou vláken musí navázat jeden "prst" jedné části endonuk.
+    - palindromy někdy tvoří vlásenky/kříže (autokomplementárně), viz polymorf.
+- váží DNA na specifických mítech, malý i velký žlábek
+    - R smyčka: velký žlíbek
+    - Q smyčka: malý žlábek
+- rozpoznávaná místa jsou 4--8bp, stříhá DNA tak, že vytváří volné konce , které se mohou opět navázat
+- jak ovlivnit velikost DNA
+    - jak dlouhé části rozpoznává? na tom záleží pravděpodobnost toho, že se tyto nukleotidy vyskytnou za sebou a endonuk střihne
+- pocházejí z bakterií, které se jimi brání proti bateriofágům
+    - nametylovanou DNA neštípou, bakterie si svou DNA nametylují, a nemetylovanou štípou
+- RE často potřebují určité katyionty
