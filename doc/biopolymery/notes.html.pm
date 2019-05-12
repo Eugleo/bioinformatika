@@ -385,168 +385,231 @@ Enzymy ovlivňující topologii DNA.
 
 ◊title{Elektroforéza nukleových kyselin}
 
+◊i{ELFO se dělá jak pro DNA, tak pro RNA. V tomto textu se soustředíme sice pouze na popis DNA ELFO, ale pro RNA bude vše fungovat velice podobně.}
+
 ◊todo{Nalinkovat na ELFO proteinů.}
 
 Funkce podobná ELFO preoteinů, s tím rozdílem, že NA se dají rozdělit nejden podle velikosti (hmotnosti), ale také podle topologie. ◊slide[20 21 #:s 5 #:inline #t]
 
+◊section{Princip funkce pro DNA}
 
-stejné DNA strands se pohybují různě rychle podle tvaru
-- DNA vždy ke kladné elektrodě (1 neg na bp)
+◊ls{
+    - DNA má v neutrálním a bazickém prostředí záporný náboj
+        - konkrétně jeden záporný náboj na jeden bp
+    - DNA vždy míří ke kladné katodě, není potřeba žádná molekula SDS ani nic podobného
+}
 
-Na Každou molekula vystavená elek. poli působí F = q * E. Protože ale molekula není ve vakuu, působí na ni i F_v = f * v (třecí síla, f = frikční koeficient).
+Na každou molekulu DNA působí elektrická síla
+◊$${F = q \cdot E,}
+kde ◊${E} je intenzita elektrického pole a ◊${q} je náboj molekuly. Působí na nic však také třecí síla gelu
+◊$${F_t = f \cdot v,}
+kde ◊${v} je rychlost pohybu molekuly a ◊${f} je koeficient tření gelu a DNA. Po dosažení rovnovážného stavu tak platí
+◊$${F = F_t \implies v = q \frac{E}{f}.}
+Někdy se zavádí speciální veličina ◊em{pohyblivost}, pro kterou platí
+◊$${\mu = \frac{v}{E} = \frac{q}{f},}
+tedy dává do vztahu rychlost molekuly a sílu elektrického pole.
 
 ◊slide[4 #:s 6]
-Po dosažení F = F_v = q * E = f * v => v = qE / f => pohyblivost mi = v / E = q / f. Poměr mezi mol. hmotsnotí a nábojem je konstaní, ale naštěstí mají menší molekuly menší koeficient tření. Závislost rychlosti putování na velikosti není lineární.
+◊ls[#:t "Ovlivnění pohyblivosti"]{
+    - iontovou silou roztoku
+        - pokud budou v roztoku kationty, mohou DNA obalit a ta bude poté putovat pomaleji
+    - elektrolýzou u elektrod
+        - může se měnit pH, což může mít vliv na stavbu DNA a RNA
+    - elektroosmózou
+        - elektroosmóza je putování malých nabitých iontů a vody skrz gel, které může mít opačný směr než je směr putování DNA
+    - tvorbou tepla
+        - vlastnosti roztoku jako viskozita, odpar, vodivost a denaturace jsou ovlivněny teplem
+        - vzorek se může putováním zahřívat
+}
 
-Ovlivněna:
-- iontovou silou
-    - pokud budou v roztoku katyionty, mohou DNA obalit, ta bude poté putovat pomaleji
-- ekeltrolysou u elektrod
-    - může se měnit pH, což může mít vliv na stavbu DNA a RNA
-- elektroosmosou
-    - putování malých nabitých iontů a vody skrz gel, které může mít opačný směr než je směr putování DNA
-- tvorbou tepla
-    - viskozita, odpar, vodivost a denaturace ovlivněny teplem
-    - při některé ELFO se vzorek putováním zahřívá
+Protože má DNA jeden náboj na bp, je poměr mezi hmotností a nábojem DNA kostantní---to znamená, že větší DNA je sice těžší (což ji zpomaluje), ale je zároveň silněji přitahována k anodě (což ji zrychluje), čili výsledkem by mohla být konstantní rychlost putování pro všechny DNA. Naštěstí mají menší fragmenty DNA menší koeficient tření, takže se přeci jen dají na ELFO rozeznat.
 
+◊section{Příprava}
 
-ELFO
+ELFO se provádí v kapilárních systémech gelů, které částečně blokují difúzi do stran a zaručují tím, že nebudeme mít proužky příliš rozmazané. Nejčastejji se používá agarózový gel, popřípadě polyakrylamid.
+
 ◊slide[7 9 #:s 6]
-- provádí se v kapilárních systémech gelů
-    - kapilární proto, aby vzorek nedifundoval do stran
-- agarosový gel (AG)
-    - složení
-        - lineární polysacharid z mořských řas
-        - D-galaktosa + 3,6-anhydro-L-galaktosa
-    - snadná příprava
-    - snadná manipulace v horizontálním uspořádání
-    - většinou pro DNA o velikosti 1000bp -- 50000bp, při pulzní ELFO až do 2Mbp
+◊ls[#:t "Agarózový gel (AG)"]{
+    - agaróza je lineární polysacharid z mořských řas, složený z D-galaktózy a 3,6-anhydro-L-galaktózy
+    - snadno se připravuje a snadno se s ním manipuluje
+    - hodí se pro DNA o velikosti 1000bp -- 50000bp, při pulzní ELFO až do 2Mbp
+    - je to přírodní produkt (relativně drahý), takže jednotlivé šarže se mohou lišit, a to i od stejného výrobce
+    - více koncentrovaný gel se hodí pro práci s malými molekulami DNA
+        - pro 100bp--2kbp se hodí 2% agaróza
+        - 5kbp -- 50 kbp se hodí 0,3% agaróza
+        - zbytek mezi těmito hodnotami
+}
 
+◊ls[#:t "Pufry"]{
+    - ELFO mobilita DNA je ovlivněna složením a iontovou silou ELFO pufru
+        - v nepřítomnosti iontů je elektrická vodivost velmi nízká, DNA putuje velmi pomalu a pruhy jsou rozmazané
+    - abychom měli homogenní elektrické pole přes celou délku bloku, potřebujeme pufr
+    - pokud dáme pufru moc, bude elektrický proud silný až příliš a gel se jím bude zahřívat
+        - to může vést k rozkladu agarózy, denaturaci DNA a podobně
+        - obecně je lepší provádět ELFO dlouho při malém napětí, než naopak
+    - je mnoho druhů pufrů, nejčastěji se používá TAE (pak například TBE, TPE)
+}
+
+◊ls[#:t "Nanášecí pufry"]{
+    - vzorek se při nanášení do gelu míchá s nanášecím pufrem
+    - zvyšují hustotu vzorku, který poté klesá dolů ke startu bloku
+    - barvivo usnadňuje nanášecí proces
+}
+
+◊ls[#:t "Barviva"]{
+    - první druh barviva slouží jen k tomu, abychom viděli, v jaké fázi ELFO je
+        - přidáme ho na začátku ELFO
+        - BPB, které putuje přibližně jako 300bp dlouhá DNA
+        - XC, které putuje jako 4kbp DNA
+    - druhý druh se používá k odhalení míst, kam doputovalo DNA
+        - přidává se většinou až po ELFO
+        - EtBr, který se používá nejčastěji (interkaluje se do helixu)
+            - kancerogenní
+            - musí se proplachovat, protože se zachycuje i v gelu
+        - SYBR Green I
+            - dražší, ale nemusí se proplachovat a je mnohem citlivější
+            - není kancerogenní
+            - dá se přidat rovnou na začátku ELFO
+        - barvení stříbrem, hlavně pro polyakrylamidové gely
+            - nedá se z DNA dostat
+        - DNA může být místo barvení radioaktivně označeno
+        - obarvení kovalentně navázanými fluorescenčními sloučeninami
+}
+
+◊section{Průběh}
+
+Průběh ELFO záleží na velikosti molekul, které pozorujeme.
 ◊slide[11 #:s 6]
-způsoby dělení molekul
-- molekula je velice malá
-    - bude procházet mezi molekulami gelu bez omezení ryhlosti
-- molekula je středně velká (entropická past)
-    - pohyblivost je nejvíce ovlivněna velikostí molekuly
-- molekula je lineární
-    - moekula se protáhne a provleče mezi molekulami gelu
-    - rychlost pohybu není závislá na délce
-    - například DNA (rozmotá se)
+◊ls{
+    # molekula je velice malá (menší než 300bp -- 400bp, což je velikost molekuly agarózy): kategorie Ogstenova síta
+        - bude procházet mezi molekulami gelu bez omezení ryhlosti
+        - rychlost pohybu není závislá na délce
+    # molekula je středně velká: kategorie entropické pasti
+        - v této oblasti je závislost pohyblivosti na velikosti molekuly nejsilnější
+    # molekula je dlouhá, ale lineární
+        - molekula se protáhne a provleče mezi molekulami gelu
+        - rychlost pohybu opět není závislá na délce
+        - například denaturovaná a rozpletená DNA
+}
 
-Na obrázku lze vidět porovnání délky moelkuly a rychlosti, s jakou putuje v gelu. Snažíme se vždy, aby u námi pozorovaných molekul i malý rozdíl v déle způsobil velký rozdíl v rychlosti (a i málo rozdílné molekuly šly tím pádem dobře rozeznat).
+Na obrázku lze vidět porovnání délky molekuly a rychlosti, s jakou putuje v gelu. Snažíme se vždy, aby u námi pozorovaných molekul i malý rozdíl v déle způsobil velký rozdíl v rychlosti, protože poté i málo rozdílné molekuly půjdou dobře rozeznat. Vlevo na obrázku vidíme výsledek po 1D ELFO, kde nám spývají různé topoizomery. Po 2D ELFO jdou tyto topoizomery dobře rozlišit.
 ◊img["slides-6/slide-10.jpg"]{Dělení molekul při ELFO}
 
 ◊ls[#:t "Faktory ovlivňující průběh"]{
     - napětí
         - při nízkém napětí je mobilita lineární DNA přímo úměrná napětí (což chceme)
-        - při zvýšeném napětí nad určitou mez (5 V/cm) se mění mobilita fragmentů různě v závislosti na jejich velikosti (což nechceme)
+        - při zvýšeném napětí nad určitou mez (5V/cm) se mění mobilita fragmentů různě v závislosti na jejich velikosti (což nechceme)
     - směr elektrického pole
         - někdy se používá pulzní ELFO, kde se periodicky mění směr elektrického pole
     - složení bází a teplota
-        - nehrají velkou roli
+        - nehrají velkou roli (na rozdíl od PAGE)
         - většinou pokojová teplota
     - přítomnost interkalátorů
         - EtBr snižuje mobilitu lineární DNA o 15%
 }
 
+◊ls[#:t "Eluce NA z gelu"]{
+    - jinými slovy, když už máme vzorky rozděleny, jak je extrahovat
+    - zahřátím agarózy
+        - většinou se na to používá speciální low melting AG, aby se nám při zahřívání nerozpadlo i DNA
+    - elektroelucí
+        - kousek gelu vyřízneme a rozemeleme
+    - degaradací AG
+        - to mí jen málo enzymů, protože agaróza je odolná
+}
 
-Potřebujeme pufr, abychom měli homogenní elektrické pole přes celou délku. Zároveň ale moc pufru -> zahřívání gelu. Obecně je nejlepší dělat ELFO dlouho při malém napětí, než naopak.
-- různé druhy pufrů
+◊subsection{Rozdělení topoizomerů DNA}
 
-Gel může být různě koncentrovaný, více koncentrovaný gel se hodí pro práci s malými molekulami DNA. Konkrétně pro molekuly o velikosti 0.1--2kb se hodí asi 2% agaróza, na druhé straně spektra pro molekuly o velikost 5--60kb se hodí 0,3% agaróza.
+Rychlost putování DNA závisí kromě velikosti molekuly i na jejím tvaru.
 
-Vzorek se při nanášení do gelu míchá s nanášecím pufrem.
-- zvyšuje hustotu vzorku, který klesá dolů ke startu
-- barvou usnadňuje nanášecí proces
-    - většinou přidané barvivo
-        - BPB, která putuje přibližně jako 300bp dlouhá DNA
-        - XC jako 4kbp DNA
+◊ls{
+    - ocDNA se pohybuje vždy nejpomaleji
+    - relativní ryhlost cccDNA a lineární DNA závisí na hustotě gelu a napětí
+        - řídký gel + nízké napětí: více se uplaňuje kompaktnost cccDNA
+        - hustý gel + vysoké napětí: více se uplatní flexibilita lineární DNA
+        - pohyblivost cccDNA navíc závisí na její nadšroubovicové hustotě
+}
 
-Pro analýzu potřebujeme obarvit vzorek. Většinou se barví EtBr, které se interkaluje do helixu. Je to kancerogen (vmezeřuje se i do naší DNA). Alternativy: SYBR Green I (dražší, ale menší množství a není nutné proplachovat gel).
+Může se nám stát, že chceme rozdělit vzorky podle velikosti i podle topologie. Bohužel velká lineární DNA může putovat stejně rychle jako menší coDNA, obě by tudíž skončily na stejném místě a nebyly rozeznatené. Proto se někdy používá ◊strong{2D ELFO}.
 
-DENATURAČNÍ GELY
-- někdy nechceme dělit DNA podle topologie, ale jen podle jejich velikosti
-- denaturační činidla: močovina, formamid (méně často)
-- vysoké napětí, gel se zahřívá (50◊|deg|C) => DNA je v lineární formě
-- vysoké rozlišení, lišící se i o pouze jeden nukleotid
-
-◊todo{Přidat slide 22}
-
-JAK DOSTAT DNA Z GELU (eluce NA z gelu)
-- zahřát agarózu (low melting AG)
-- elektroeluce (necháme DNA vyputovat z gelu do roztoku)
-- degaradace AG (jen málo enzymů, agaróza je odolná)
-
-2D ELFO
 ◊slide[25 #:s 6]
-# normálně ELFO
-    - zauzlovaná DNA rychlejší než CO, lineární
-    - rozdělíme DNA podle topologie
-# přidáme EtBr (rozmotáme supercoily)
-# 90◊deg otočení a znovu ELFO
-    - rozmotané supercoily se v nové ose rozdělí podle délky
+◊ls[#:t "Průběh 2D ELFO"]{
+    # provedeme běžnou ELFO
+        - rozdělíme vzorky přibližně podle tepologie
+    # přidáme EtBr, čímž rozmotáme supercoily
+    # otočíme elektrické pole o 90◊|deg| a opět provedeme ELFO
+        - tentokrát se rozmotané supercoily rozdělí podle délky podél nové trajektorie
+}
 
-◊slide[27 #:s 6]
-- někdy s EtBr, někdy druhá osa jen při vyšším napětí
-    - mobilita při vyšším napětí se liší podle topologie
+Někdy ani nepoužijeme EtBr a druhou osu ELFO vytvoříme pouze aplikací vyššího napětí. Mobilita při vyšším napětí se liší podle topologie, což nám dovoluje jednotlivé topologie rozlišit. ◊img["slides-6/slide-27.jpg"]{2D ELFO pro sloužící k rozeznání topologie}
+
+Pokud nám naopak na rozdělení podle topologie nezáleží a chceme DNA dělit pouze podle velikosti, můžeme ji denaturovat.
+
+◊ls[#:t "Denaturační gely"]{
+    - hlavně polyakrylamidové, používají se při sekvenaci
+    - denaturační činidla: močovina, formamid (méně často)
+    - aplikujeme vysoké napětí, ELFO se provádí při zvýšené teplotě (50◊|deg|C)
+        - DNA se rozpadne na vlákna a zůstává v lineární formě
+    - poté můžeme dělit pouze podle velikosti molekul DNA, s vysokým rozlišením
+        - rozpoznáme od sebe i molekuly lišící se pouze o jeden nukleotid
+}
+
+◊subsection{Pulzní ELFO}
 
 ◊slide[28 30 #:s 6]
-Pulzní ELFO
-- používá se pro lepší rozlišení molekul podle délky, hlavně u delších molekul
-    - dráha, kterou molekuly ujdou, je mnohem delší (protože jdou cik-cak)
-    - molekuly jsou dobré v "zatáčení" v závislosti na své délce
-- periodicky se mění směr elektrického pole
-- jako reference se často používají konkatemery známých genomů bakteriofágů o určitých délkách, případně chromozovy S. cerevisae a S. pombe (druhy kvasinek)
+◊ls{
+    - elektrické pole se periodicky mění, molekuly neputují gelem přímo, ale cik-cak
+    - používá se pro lepší rozlišení molekul podle délky, hlavně u delších molekul
+        - dráha, kterou molekuly ujdou, je mnohem delší, takže i dorbné rozdíly v jejich rychlosti mají větší možnost se projevit
+        - molekuly se často musejí ◊em{reorientovat}, a jak rychle a dobře to zvládají závisí na jejich délce
+    - jako ◊strong{standardy} se často používají konkatemery známých genomů bakteriofágů o určitých délkách, případně chromozomy S. cerevisae a S. pombe (druhy kvasinek)
+}
 
-
-◊section{Analýza obrázků ELFO v praxi}
+◊section{Analýza ELFO}
 
 ◊meta{Tato sekce nebude u zkoušky, je zmíněna "jen pro naše dobro".}
 
-- software FIJI
-- vyplatí se rozložit obrázek do tří, R, G a B
-- obdélníkový výběr -> analyze -> plot profile
-    - profil světlosti, ze kterého jde zjistit, na jakých pixelech jsou peaky (tedy zvýšené koncentrace DNA)
+◊ls[#:t "FIJI"]{
+    - slouží k získání dat o tom, kde jsou proužky, jak jsou světlé atd.
+    - vyplatí se rozložit obrázek do tří barevných kanálů a studovat jen jeden z nich
+    - obdélníkový výběr -> analyze -> plot profile
+        - získáme profil světlosti, ze kterého jde zjistit, na jakých pixelech jsou peaky (tedy zvýšené koncentrace DNA)
+        - dá se vyexportovat do tabulky
+}
 
-- FITYK
+◊ls[#:t "FITYK"]{
+    - slouží k proložení peaků funkcemi a k přesnému zjištění velikosti a polohy peaků
     - otevřeme vyexportovaný intenzitogram z FIJI
-    - můžeme proložit fukncí, například gaussovská křivka automaticky rozpozná peaky
+    - ten můžeme proložit fukncí
+        - gaussovská křivka automaticky rozpozná peaky
+        - z tabulky napravo přečteme, kde se naše peaky nacházejí a jakou mají velikost
+}
 
-◊title{Sedimentační metody DNA}
+◊title{Sedimentační metody}
 
-- teorie sedmientace vypracována Svedbergem (Nobelovka)
-- předpoklady
-    - sedimentuje malé tělísko
-    - zadenbává se tepelný pohyb molekul
+Sedimentace slouží k analýze a případné separaci vzorků na základě jejich velikosti, molekulové hmotnosti, tvaru a hustotě. Funguje na principu odstředivé síly, jejíž velikost je závislá na hmotnosti každého ze vzorků---sedimentace tedy zpravidla probíhá v centrifuze. Teorie centrifugace byla vypracována Svedbergem.
+
+◊ls[#:t "Předpoklady"]{
+    - sedimentujeme pouze malé tělísko
+    - zanedbáváme tepelný pohyb molekul
     - jediná interakce mezi tělískem a roztokem je tření
+    - tyto předpoklady zjednoduší naše uvažování (a rovnice), někdy ale budeme muset přidat korekce, které odstraní vady způsobené těmito předpoklady
+}
 
-rozdělení molekul
-    - velikost
-    - tvar
-    - molekulová hmotnost
-    - hustota
-proč centrifugace
-    - analytická centrifugace, AUC (co máme ve vzorku, v jaké formě, s ajkými vazbami)
-    - preparativní centrifugace (chceme složky jen oddělit)
-
-
-PREPARATIVNÍ
-ROTORY
-◊slide[6 8 #:s 7]
-- různý tvar, u vertikálních ryhlejší sedimentace
-- při otáčení se rozdělí molekuly podle hmotnosti
+◊ls[#:t "Rozdělení centrifugace"]{
+    - podle účelu
+        - analytická (AUC): zjistíme, co máme ve vzorku, v jaké formě a s jakými vazbami
+        - preparativní: složí pouze k oddělení složek
+    - podle typu
+        - izopyknická: odděluje molekuly na základě jejich vznášivé hustoty
+        - izokinetická: odděluje molekuly na základě jejich hmotnosti
+}
 
 - problém s tím, že molekuly, které začnou u stěny zkumavky, jsou brzděny tření o zkumavku
 - odběr vzorků injekční stříkačkou
 
-◊todo{Izokinetická vz izopyknická.}
-- cheme oddělit DNA od DNA, DNA od rptoeinů atd
-    => izopyknická centrifugace = molekuly končí na stejné hustotě, jako je hustota okolí (dělíme vzorky podle vzbášivé hustoty)
-    dělení pouze podle velikosti
-    - velké partikule tvoří úzkou zónu
-- jinak izokinetická: každá molekula putuje nějakou konstantní rychlostí
+◊section{Fyzikální princip}
 
-ANALYTICKÁ (AUC)
 
 FYZIKA
 - odstředivá síla F = ma = m omega^2 r, kde omega je úhlová rychlost
@@ -576,15 +639,14 @@ sed. koeficient + korekce -> sedimentáční konstanta pro dané podmínky: S_(0
 - vhodná korekce na nulovou koncentraci (protože molekuly spolu interagují s čímž normálně nepočítáme: jak rychle by asi sedimentovala jedna molekula samotná)
 - korekce na tlakové rozdíly (extrapolace na hladinu, protože je velký hydrostatický tlak)
 
-VYUŽiTÍ
-- diferenciální funkce na dno
-- metoda ohyblivého rozhraní
-    - pro purifikovaný biopolymer stanovení sedimentačního koeficientu, kosntany, výpočet molární hmotnosti
-        - monodisperzní vzorek
-    - odhalení heterogenity vzorku
-- odhalení agregátů/komplexů i s jejich velikostí
+◊section{Izopyknická a izokinetická ultracentrifugace}
 
-ANALYT: velká přesnot, absolutní vlastnosti molekuly, bez nutnosti standardů (X ELFO)
+◊todo{Izokinetická vz izopyknická.}
+- cheme oddělit DNA od DNA, DNA od rptoeinů atd
+    => izopyknická centrifugace = molekuly končí na stejné hustotě, jako je hustota okolí (dělíme vzorky podle vzbášivé hustoty)
+    dělení pouze podle velikosti
+    - velké partikule tvoří úzkou zónu
+- jinak izokinetická: každá molekula putuje nějakou konstantní rychlostí
 
 IZOKINETICKÁ
 dr/dt = konstanta * S
@@ -605,15 +667,22 @@ IZOPYKNICKÁ
 - hustota CsCl  by měla být mezi oběma strandy, aby se oddělily
 - šířka pásku (vit obrázek) se liší podle množstzví a velikosti molekul
 
-◊slide[41 #:s 7]
-VYUŽiTÍ UAC
-- jak funguje replikace u bakterií
-- e. ocli v N15 (těžký dusík), poté v normální atmosféře
- -> DNA změnila svou vznášivou hustotu v průběhu generací
-    # homogenní, těžká
-    # hybrydní DNA, monodisperzní (těžká+lehká v jednom helixu)
-    # dva proužky, více lehké DNA
-=> repliakce je semikonzervativní
+◊section{Preparativní ultracentrifugace}
+
+Preparativní centrifugy slouží pouze k oddělení jednotlivých složek vzorku. Jednotlivé centrifugy se liší druhem rotorů, které mají různý tvar a různé naklonění zkumavek ◊slide[6 8 #:s 7 #:inline #t]
+
+
+◊section{Analytická ultracentrifugace}
+
+VYUŽiTÍ
+- diferenciální funkce na dno
+- metoda ohyblivého rozhraní
+    - pro purifikovaný biopolymer stanovení sedimentačního koeficientu, kosntany, výpočet molární hmotnosti
+        - monodisperzní vzorek
+    - odhalení heterogenity vzorku
+- odhalení agregátů/komplexů i s jejich velikostí
+
+ANALYT: velká přesnot, absolutní vlastnosti molekuly, bez nutnosti standardů (X ELFO)
 
 ◊todo{Přidat obrázek z odkazu}
 
@@ -624,6 +693,17 @@ M = (SRT)/(D_0(1-rho V))
 ◊todo{Doplnit informace o detekčním systému.}
 
 Sedimentace se dá měřit i absorpčně, hlavně proteiny a NA. Na rozhraní e však měnřit nedá, protože se světlo na rozhraní ohýbá a nedopadá do měřiče. Jsme proto schopni změřit pouze koncentraci před a za rozhraním, které je relativně stálá. Cukry ale úplně ne, to spíše interferenční měření (index lomu).
+
+◊section{Využití UAC}
+
+◊slide[41 #:s 7]
+- jak funguje replikace u bakterií
+- e. ocli v N15 (těžký dusík), poté v normální atmosféře
+ -> DNA změnila svou vznášivou hustotu v průběhu generací
+    # homogenní, těžká
+    # hybrydní DNA, monodisperzní (těžká+lehká v jednom helixu)
+    # dva proužky, více lehké DNA
+=> repliakce je semikonzervativní
 
 ◊title{Sekvenace DNA}
 
