@@ -687,7 +687,6 @@ U izopyknické UC záleží velice na hustotě CsCl, která by většinou být n
     - běžně vzorky putují tím rychleji, čím dál jsou od osy otáčení, musíme tedy vytvořit speciální "zpomalovací" gradient
         - používá se sacharózový gradient (nutrální, alkalický), 5%--15% nebo 15%--30%
         - gradient musíme vytvořit ručně
-    -
 }
 
 ◊ls[#:t "Využití izokinetické UC"]{
@@ -699,8 +698,10 @@ U izopyknické UC záleží velice na hustotě CsCl, která by většinou být n
 
 ◊slide[29 #:s 7]
 ◊ls[#:t "Tvorba gradientu sacharózy"]{
+    - v levé části máme málo koncentrovanou sacharózu, v právé více koncentrovanou
+    - když otevřeme kohoutek, nejprve se začne zkumavka plnit koncentrovanější sacharózou, časem se začnou obě konentrace mísit
+        - poměr míšení a hodnotu celkového gradientu můžeme ovlivnit šířkou dna první nádoby
     - podobně se tvoří i gradienty u ELFO, když nám nestačí normální gel
-    - v levé části
 }
 
 ◊section{Preparativní a analytická ultracentrifugace}
@@ -727,13 +728,13 @@ Analytické ultracentrifugy (AUC) mají kromě rotoru také zařízení, které 
     - není třeba kalibrace pomocí standardů
 }
 
-◊todo{Přidat obrázek z odkazu}
-
 ◊subsection{Průběh AUC}
 
 Když polymer dáme na hladinu a sedimentujeme, v průběhu centrifugace se pohybuje zkumavkou ke dnu takzvané ◊strong{rozhraní}. Pozorujeme koncentrace v celé délce kyvety: na začátku bude koncentrace všude stejná, ale časem se koncenrace zvyšuje směrem ke konci kyvety. Pokud bude látek více, uvidíme několik rozhraní.
 
 Na prvních derivacích koncentračních křivek jde vidět peaky. Nejprve můžeme pozorovat tyto peaky v čase pro jednu látku, pak pro druhou, a pak pro obě dohromady. Pokud v tomto případě vidíme kromě původních dvou peaků i nějaký nový, tvoří naše látky nějaký komplex. U tohoto komplexu můžeme pozorovat difúzní koeficient ("jak jsou peaky rozlité") i sedimentační konstantu.
+
+◊img["sedimentation.jpg"]{Ukázka analýzy sedimentace}
 
 ◊ls[#:t "Způsoby analýzy vzorku"]{
     - vzorky jsou v průhledných zkumavkách (na rozdíl od preparativní UC)
