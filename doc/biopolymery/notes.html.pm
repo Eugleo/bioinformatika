@@ -385,7 +385,11 @@ Enzymy ovlivňující topologii DNA.
 
 ◊title{Elektroforéza nukleových kyselin}
 
-◊slide[20 21 #:s 5]
+◊todo{Nalinkovat na ELFO proteinů.}
+
+Funkce podobná ELFO preoteinů, s tím rozdílem, že NA se dají rozdělit nejden podle velikosti (hmotnosti), ale také podle topologie. ◊slide[20 21 #:s 5 #:inline #t]
+
+
 stejné DNA strands se pohybují různě rychle podle tvaru
 - DNA vždy ke kladné elektrodě (1 neg na bp)
 
@@ -661,3 +665,170 @@ ENDONUK.
 - pocházejí z bakterií, které se jimi brání proti bateriofágům
     - nametylovanou DNA neštípou, bakterie si svou DNA nametylují, a nemetylovanou štípou
 - RE často potřebují určité katyionty
+- štěpení se dá pozorovat i na elektroforéze
+
+◊slide[19 20 22 23 #:s 8]
+CHEMICKÉ ŠTĚPENÍ
+- štěpíme náhodně, uprostřed DNA
+    - štěpení před G: přidáme dimethylsulfát, ten se naváže na N7 na G, N7 nemůže být čytřvazný a ta "pustí" ribozu, na tu navážeme piperidin, ten ji destabilizuje a odváží se od ní oba fosfáty -> DNA se přeruší
+    - štěpení před G + A
+    - před C + T: hydrazin, aminová skupina, stejný prlběh jinak
+- abychom mohli fragmenty pozorovat, původní strand označíme na 5' konci
+    - -fosfát, na volnou OH fosfátu navážeme gammafosfát, kde může být radioaktivní P32
+- dále pozorujeme pouze strandy, které začínají na tomto 5' konci
+    - rozdělíme na PA gelu (70 stupňů) -> jen podle velikosti
+    - dáme tam vzorky po každém ze štěpení ◊slide[26 #:s 8 #:inline #t]
+    - jen pár pásků bude radioaktivně označených
+
+METODA TERMINACE DNA (SANGER)
+- in vitro replikace pomocí DNA polymerázy
+- vhodné pro malé množství vzorky
+
+PCR (polymerase chain reaction)
+# denaturace dihelixu (-> dva strandy)
+# vytvoříme dva primery komplementární ze začátku a z konce k části, ktorou chceme zkoumat
+# přidání DNA polymerázy
+# DNA polymeráza syntetizuje od primeru až do "tam kde ji necháme"
+# vzinkou dvě vlákna začínající primerem
+# znovu ochladíme, navážeme primery...
+# začnou vznikat krátké sekvence, které jsou z obou stran omezeny primerem
+    - počet roste exponenciálně
+
+◊slide[30 #:s 8]
+sekvenační metody
+- ssDNA, DNA primer, DNA polymeráza, dNTP (deoxy trinukleotid), dideoxyNTP (příépadně značený)
+- ve směsi je malé množsví ddNTP, semtam se naváže; na ddNTP se ale nemůže navázat nic dalšího
+
+◊slide[34 35 #:s 8]
+- uděláme PCR, ale semtam se nám sekvence zakončí ddNTP
+    - začínáme primerem, ale nekončíme primerem => přírůstek jen lineární, ne exponenciální
+    - ddNTP je označená a víme, kde skončila, čili víme, že v daném místě má být odpovídající dNTP
+    - když postup zopakujeme pro všchny ddTNP, zjistíme časem ,kde je jaká dNTP
+
+- značíme terminátor (ddNTP), semtam i primer a dNTP, abychom poznali, která DNA je naše a která tam už byla
+
+pro primer je nutné znát okolí části, kterou chceme sekvenovat
+
+běžně se nedělá gelové ELFO, ale kapilární + chromatografie
+
+[MOODLE] SSB někdy váže DNA přes stacking interakce na Tyr nebo Trp
+
+
+SKUPINY SEKV. METOD (podle chyby)
+polymer se štěpí -> může se stát, že přílišdlouhé fragmenty nerozpoznáme
+    - v degradačních metodách nejsou problémy s repetitivními úseky, a krátkými úseky
+    - v syntetizačncích metodách je problém u velmi dlouhých fragmentů
+        - potřebujeme primer, čili i znát kousek sekvence kolem, dá se ale i přidat ne-zcela homologní primery
+
+HLEDÁNÍ ORF
+- zajímá nás, co jsou regulační oblasti a co jsou geny
+- kde začít "číst" trojice nukkleotid" <- čtexí rámec (open reading frame, orf)
+- v eukarytotech bývá často gen jen na jenom z vláken a na druhém není nic
+JAK?
+# podíváme se, kde dlouho nejsou stopkodony (délka 200--400 * 3)
+# ORF začíná na ATG (vzácně GTG, TTG) => podíváme se, jestli v podezřelých oblastech končících na stopkodon začínáme ATG
+
+Jak číst sekvence DNA?
+3 -> 5: antisense (templát pro transkripci mRNA), 5 -> 3 sense (komplementární, "kódující" mRNA), mRNA 5 -> 3 = DNA 5 -> 3
+- mohou vznikat i antisesne transkripty, které regulují
+
+◊slide[43 #:s 8]
+SHOTGUN SEKVENOVÁNÍ ?
+
+NEXT-GEN SEQ
+- dají se paralelizovat
+- syntetizační metody (jako Sanger)
+
+◊slide[47 #:s 8]
+PYROSEKVENOVÁNÍ
+- sledujeme produkci pyrofosfátu, který se uvolňujě při každém správném zapojení komplementárního nukleotidu do vlákna
+    - množství pyrofosfátu, detekovatelné uvolněné protony
+# ukotvená DNA
+# přidáme nukleotid, vždy víme, který
+    - zařazen -> pyrofosfát -> sulfuryláza + tvorba ATP  -> luciferáza + světlo
+        - problém s tím, pokud se zařadí více (8+) stejných za sebe, protože intenzita vyzářeného světla roste jen omezeně
+    - nezažazen -> žádné světlo, propláchneme, zkusíme znovu
+
+DNA_n + dNTP -> DNA_n+1 + PPi
+PPi + adedosin 5' fosfosulfát -(sulfuryláza)-> ATP + SO_4 -2
+ATP + luciferin + O2 -> AMP + PPi + CO2 + foton
+(ptrobém s tím, že PPi zase vzniká? Ne, jen získáme více než jeden foton)
+Luciferáza by mohla rozpoznat a zpracovat i náš dATP, proto se použí dATPalfaS, který má na alfaP síru
+
+MODIFIKACE PYROSEQ
+- u bakterií často methylace
+- u savčích často 5-methyl-cytosin, pouze v kombinaci s G (značení CpG)
+    - metyhly často umlčuje regulační oblasti genu
+    - můžeme si často myslet, že to není naše DNA, pokud není methylována -> rozpoznání tor-like receptory -> degradace
+- CpG by normálně mělo tvořit 1/16, je ale mnohem vzácnější (1%)
+- vliv CpG na buněčné dělení a tedy u rakoviny (5' CpG 3')
+- cPG často nahromaděný v regulačních místech (rpomotory)
+    - v důležitých místech není methylováno
+
+proč methylace?
+někdy probíhá deaminace; methylcytosin -> thymin, cytosin -> uracyl
+    - uracyl v DNA snadno opraven
+    - thymin může poškodit informační hodnotu DNA
+=> CpG se nachází v menší míře (nebezpečné)
+
+Zjištění methylace pomocí pyroseq
+- můžeme zjistit, že jeden CpG je methylován a druhý ne (v jednom strandu ano, ve druhém ne)
+- celou DNA můžeme změnit C->U (při PCR potom -> T), C-methylovaný->žádná změna
+    - změříme před i po změně
+
+PYROSEQ 454
+- paralelní pyroseq
+
+# štěpení na relativně krátké úseky (500bp)
+# PCR amiplifikace s adaptory (nemusíme znár místo pro primery)
+# uvolnění ssDNA, druhé vlákno zůstává s bioitinem
+# vazba ssDNA na mikrometrovou kuličku
+# kuličky do mikroreaktorů, mikrokontejnerů, probíhá běžné pyrosekvenování
+
+- sekvenace celých genomů
+- sekvenace celých bakteriálních spol.
+- detekce mutací ve směsi alel
+- SNP (single nucleotide polymophism)
+- sekvenace transkriptomu
+- objev nový genů
+
+
+ILLUMINA - SOLEXA
+# fiaxce ssDNA  + primer na sklíčko
+# aplifikace PCR -> vznik DNA kolonie
+# terminace řetěczce fluorescenčním analogem dNTP
+# detekce kamerou
+# odštěpení sondy, další dNTP
+
+ION SEMICONDUCTOR SEQ
+při inkorporaci se uvolňuje kromě PPi i proton
+- DNA přímo na křemíkovém čipu, který je ciltivý na protony (pH)
+- levná detekce, bez optických prvků
+- jen krátké fragmenty
+
+◊slide[63 #:s 8]
+SEKVENACE NANOPÓRY
+- bakteriální toxiny, dělají díry do membrán ,procházejí jimi ionty
+    - ale prochází jimi i DNA
+- využití nanopórů + brzdění DNA na začátku póru (jinak by byla moc ryhlá)
+- měříme čtveřice nukleotidů v nejužším místě póru podle měnícího se produ
+- nezávisí na délce DNA
+- můžeme do díry nechat projít oba strandy DNA, tj. osekvenujeme komplementární vlákno ve druhém směru
+- chybovost je kolem 10%
+- vytvoření fosfolipidové dvojvrstvy v nádobce
+    - dobře izoluje el. proud
+    - využití pro pozorování bakteriálních toxinů
+- pomocí nanopórů lze provádět "hmotností spektrometrii" roztoku
+    - pikoamperové proudy na membráně
+
+VŠEHOCHUŤ
+- hyperchronní efekt - ssDNA absorbuje více než dsDNA
+- nedělat blanky na pufry, kde je vysoká absorbance
+
+jak měit index lomu
+1) abbeho difraktometrie
+na spodní část hranolu kápneme naši látku, změříme úhel totálního odrazu, z toho index lomu
+2) interferenční měření
+- měří index lomu
+- z interferenčních obrazců na tenké vstvě můžeem zjistit, jak tlustý je nějaký materiál
+rayleigh inetrferometer - světlo prochází dvěma kyvetami (blank + náš vzorek), pozorujeme interference obou
