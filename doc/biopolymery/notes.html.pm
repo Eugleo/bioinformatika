@@ -598,112 +598,167 @@ Sedimentace slouží k analýze a případné separaci vzorků na základě jeji
 
 ◊ls[#:t "Rozdělení centrifugace"]{
     - podle účelu
-        - analytická (AUC): zjistíme, co máme ve vzorku, v jaké formě a s jakými vazbami
+        - analytická (AUC) zjistíme, co máme ve vzorku, v jaké formě a s jakými vazbami
         - preparativní: složí pouze k oddělení složek
     - podle typu
         - izopyknická: odděluje molekuly na základě jejich vznášivé hustoty
         - izokinetická: odděluje molekuly na základě jejich hmotnosti
 }
 
-- problém s tím, že molekuly, které začnou u stěny zkumavky, jsou brzděny tření o zkumavku
-- odběr vzorků injekční stříkačkou
+Zkumavku (kyvetu) se snažíme mít z nějakého odolného materiálu. Často se musíme vypořádat s tím, že molekuly u kraje kyvety o kyvetu třou a josu pomalejší.
 
 ◊section{Fyzikální princip}
 
+Na vzorek v kyvetě působí tři síly, ◊strong{odstředivá}
+◊$${F_o = m \cdot a = m \cdot \omega^2 \cdot r,}
+kde ◊${\omega} je úhlová rychlost, ◊${r} vzdálenost od osy otáčení a ◊${m} hmotnost tělíska; dále ◊strong{vztlaková}
+◊$${F_{vz} = m_k \cdot \omega^2 \cdot r,}
+kde ◊${m_k} je hmotnost kapaliny tělískem vytlačené; a konečně ◊strong{třecí}
+◊$${F_t = f \cdot v,}
+kde ◊${f} je frikční koeficient tělíska a kapaliny. ◊${f} se dá vypočítat s pomocí Stokesova zákona (pokud je tělísko kulové) nebo s pomocí Einsteinova zákona
+◊$${f = \frac{R \cdot T}{N_A \cdot D},}
+kde ◊${D} je difúzní koeficient biomakromolekuly. Pkud tedy známe ◊${D}, jsme schopni ◊${f} dopočítat, a ◊${D} se dá naštěstí zjistit experimentálně (závisí na tvaru a objemu molekuly).
 
-FYZIKA
-- odstředivá síla F = ma = m omega^2 r, kde omega je úhlová rychlost
-    - molekuly dále od středu se pohybují rychleji
-    - relativní odtředivá síla (RCF) F / mg (násobky tíhového zrychlení)
-        - někdy stovky tisíc RCF
-- vztlaková síla F = m_k omega^2 r, kde m_k je tíha kapaliny, ktrou molekula vytlačila
-- odpor prostředí F = fv, kde f je frikční koeficient
-    - výpočet f ze Stokesova zákona (jen pro kulové molekuly)
-    - případně výpočet f z Einsteinova zákona f = (RT)/(ND)
-        - D je difúzní koeficient biomakromolekuly, který udává, ja kdobře molekuly difudnuje do prostředí (závisí na tvaru a objemu molekuly)
-- gravitační síla se může ignorovat
+Pro přehlednost zavádíme také veličinu ◊strong{relativní odstředivá síla}
+◊$${\text{RCF} = \frac{F_o}{m \cdot g},}
+která udává, kolikrát je odstředivá síla na ultracentrifuze větší než tíhová síla. Gravitační (tíhovou) sílu můžeme zanedbat, protože RCF síla se pohybuje ve stovkách tisíc.
 
-SEDMINETAČN'9 KOEFICIENT
-když se vektorový součet všech tří sil rovná 0, nastane stacionární stav:
-F1 - F2 - F3 = 0
-V d r omega^2 - Vd'r omega^2 = f (dr/dt)
-V(d-d')/f = (dr/dt) / (r omega^2) in [s]
-výsledek bude konstantní, takzvaný sedimentační koeficient
-10^-13 s = 1 S (Svedberg)
-[objekt má 30 S, pak urazí 3um za s při  sedimentačním zrychlení 10^6ms^-2]
+◊subsection{Sedimentační koeficient}
 
-s = (dr/dt) / (r omega^2)
-ln (r/r_0) = s omega^2 t
+Pokud ◊${F_o = F_{vz} + F_t}, nastane ◊em{stacionární stav}.
 
-sed. koeficient + korekce -> sedimentáční konstanta pro dané podmínky: S_(0, 20, w) s = v/omega^2r = M (1-Vd)/Nf, kde (1-Vd) je specifický parciální objem => tohle můžeme zjistit ze sedimentační konstanty
-- vhodná korekce na nulovou koncentraci (protože molekuly spolu interagují s čímž normálně nepočítáme: jak rychle by asi sedimentovala jedna molekula samotná)
-- korekce na tlakové rozdíly (extrapolace na hladinu, protože je velký hydrostatický tlak)
+◊align${
+    F_o - F_{vz} &= F_t \\
+    V \rho r  \omega^2 - V  \rho_k  r  \omega^2 = f \cdot v &= f \cdot \frac{\text{d}v}{\text{d}t} \\
+    \frac{V (\rho - \rho_k)}{f} = \frac{1}{r \omega^2} \frac{\text{d}v}{\text{d}t} &= s
+}
+
+◊${s} se nazývá ◊strong{sedimentační koeficient} a udává se ve Svedberzích, ◊${[S] = 10^{-13}\text{s}}. Pokud má tělísko 30S, pak urazí 3◊${\mu \text{m}/\text{s}} při sedimentačním zrychlení ◊${10^6 \text{ms}^{-2}}. Sedimentační koeficient dává do souvislosti rychlost sedimentace se zrychlením, kterým na tělísko působila centrifuga.
+
+Pokud k ◊${s} přidáme korekce, získáme ◊strong{sedimentační konstantu}.
+◊ls{
+    # vhodná korekce na nulovou koncentraci biopolymeru
+        - molekuly spolu interagují s čímž normálně nepočítáme
+        - počítáme, jak rychle by asi sedimentovala jedna molekula samotná
+    # korekce na tlakové rozdíly
+        - extrapolace na hladinu, protože blíže ke dnu je velký hydrostatický tlak
+}
+Její hodnota zálěží na koncentraci biopolymeru, teplotě, a použité kapalině; značí se poté například ◊${S_{0, 20, \text{w}}}.
+
+◊box["Poznámka"]{
+    Následující odvození se vyskytuje v prezetacích, ale v přednáškách nebylo moc dobře okomentováno a v cizích zápisech není okomentováno vůbec. Nemyslím tedy, že je moc důležité, ale projistotu ho sem dávám.
+    ◊align${
+        s &= \frac{1}{r \omega^2} \frac{\text{d}v}{\text{d}t} \\
+        \log \frac{r}{r_0} &= s \omega^2 (t - t_0) \\
+        s & = \frac{\log \frac{r}{r_0}}{\omega^2 (t - t_0)},
+    }
+    kde ◊${\log} značí přirozený logaritmus.
+}
 
 ◊section{Izopyknická a izokinetická ultracentrifugace}
 
-◊todo{Izokinetická vz izopyknická.}
-- cheme oddělit DNA od DNA, DNA od rptoeinů atd
-    => izopyknická centrifugace = molekuly končí na stejné hustotě, jako je hustota okolí (dělíme vzorky podle vzbášivé hustoty)
-    dělení pouze podle velikosti
-    - velké partikule tvoří úzkou zónu
-- jinak izokinetická: každá molekula putuje nějakou konstantní rychlostí
+◊ls[#:t "Izopyknická UC"]{
+    - dělíme vzorky na základě jejich ◊em{vznášivé hustoty} (neboli: hustoty)
+    - ve zkumavce vytvoříme gradient soli, většinou ◊strong{CsCl}, do kterého se v průběhu centrifugace vzorky zařazují podle své vznášivé hustoty
+        - na velikosti tolik nezáleží
+        - vzorky se zastaví v hladině, kde se jejich hustota vyrovná s hustotou soli o dané koncentraci
+        - gradient se tvoří sám průběhem centrifugace, není nutné jej dělat ručně
+    - velké molekuly tvoří úzký přesně definovaný proužek, malé molekuly jsou více rozprostřené
+}
 
-IZOKINETICKÁ
-dr/dt = konstanta * S
-- běžně vzorky dál od osy putují rychleji
-- musíme vytvořit sacharozový gradient (5--15%, 15--30%)
-    - gradient nutné dělat ručně ◊slide[29 #:s 7] (podobně se dělají gradienty pro ELFO, když je potřebujeme)
-        - todo: popsat mechanismus
-◊slide[32 #:s 7]
-- charakterizace podjednotek ribosomů
-- záleží hlavně na hmotnosti, nezáleží na vzníšivé hustotě
+◊slide[35 #:s 7]
+◊ls[#:t "Využití izopyknické UC"]{
+    - rozdělení topoizomerů
+    - stanovení poměru GC párů
+        - GC páry jsou těžší než AT páry
+        - dvě komplemntární vlákna mohou mít různou vznášivou hustotu
+    - rozpoznání satelitních DNA
+        - pokud má jeden vzorek DNA velice odlišná vznášivou hustotu než zbytek, možná pochází z jiného organismu
+    - rozdělení dsNA a ssNA
+}
 
-IZOPYKNICKÁ
-◊todo{Co je vznášivá hustota?}
-- gradient CsCl, dělení podle vznáš. hustoty
-- dvě komplemntární vlákna mohou mít různou vznášivou hustotu (GC páry těžší)
- - satelitní DNA: velice odlišná vznáš. hustota => možná pocházejí z jiného organismu
- ◊slide[34 35 #:s 7] (možná přímo IMG? T1)
-- hustota CsCl  by měla být mezi oběma strandy, aby se oddělily
-- šířka pásku (vit obrázek) se liší podle množstzví a velikosti molekul
+◊img["slides-7/slide-34.jpg"]{Koncentrační rozložení CsCl a DNA před izopyknickou UC a po ní}
 
-◊section{Preparativní ultracentrifugace}
+U izopyknické UC záleží velice na hustotě CsCl, která by většinou být někdy mezi vzorky, aby se mohly lépe oddělit.
 
-Preparativní centrifugy slouží pouze k oddělení jednotlivých složek vzorku. Jednotlivé centrifugy se liší druhem rotorů, které mají různý tvar a různé naklonění zkumavek ◊slide[6 8 #:s 7 #:inline #t]
+◊ls[#:t "Izokinetická UC"]{
+    - každý vzorek je pohybuje (svou vlastní) kostantní rychlostí
+        ◊$${v = \text{konstanta} \cdot S}
+    - běžně vzorky putují tím rychleji, čím dál jsou od osy otáčení, musíme tedy vytvořit speciální "zpomalovací" gradient
+        - používá se sacharózový gradient (nutrální, alkalický), 5%--15% nebo 15%--30%
+        - gradient musíme vytvořit ručně
+    -
+}
 
+◊ls[#:t "Využití izokinetické UC"]{
+    - rozdělení topoizomerů
+    - výpočet ◊${s} a ◊${M}
+        - sedimentační konstanty odpovídají tvaru, velikosti a hustotě (např. sedimentační konstanty ribozomů)
+    - detekce komplexů
+}
 
-◊section{Analytická ultracentrifugace}
+◊slide[29 #:s 7]
+◊ls[#:t "Tvorba gradientu sacharózy"]{
+    - podobně se tvoří i gradienty u ELFO, když nám nestačí normální gel
+    - v levé části
+}
 
-VYUŽiTÍ
-- diferenciální funkce na dno
-- metoda ohyblivého rozhraní
-    - pro purifikovaný biopolymer stanovení sedimentačního koeficientu, kosntany, výpočet molární hmotnosti
-        - monodisperzní vzorek
-    - odhalení heterogenity vzorku
-- odhalení agregátů/komplexů i s jejich velikostí
+◊section{Preparativní a analytická ultracentrifugace}
 
-ANALYT: velká přesnot, absolutní vlastnosti molekuly, bez nutnosti standardů (X ELFO)
+Preparativní ultracentrifugy slouží pouze k oddělení jednotlivých složek vzorku. Jednotlivé centrifugy se liší druhem rotorů, které mají různý tvar a různé naklonění zkumavek ◊slide[6 8 #:s 7 #:inline #t]. Vzorky se z kyvet po separaci odebírají injekční stříkačkou.
+
+Analytické ultracentrifugy (AUC) mají kromě rotoru také zařízení, které v průběhu analýzy měří různé veličiny vzorku (koncentraci a podobně).
+
+◊ls[#:t "Využití AUC"]{
+    - pro purifikovaný biopolymer (tzv. ◊em{monodisperzní vzorek})
+        - stanovení sedimentačního koeficientu a sedimentační konstanty
+        - výpočet molární hmotnosti
+    - pro hetergoenní roztok
+        - složení, počet složek, analýza reakcí složek
+        - odhalení agregátů/komplexů i s jejich velikostí
+    - velká přesnost, zjistíme absolutní vlastnosti molekuly, nepotřebujeme standardy (na rozdíl od ELFO)
+}
+
+◊ls[#:t "Výhody AUC"]{
+    - stačí malé množství vzorku
+    - můžeme detekovat i kontaminaci
+    - můžeme detekovat interakce mezi látkami
+    - nedestruktivní metoda
+    - není třeba kalibrace pomocí standardů
+}
 
 ◊todo{Přidat obrázek z odkazu}
 
-Když polymer dáme na hladinu a sedimentujeme, časem plyne zkumavkou ◊em{rozhraní}. Koukáme se na koncentrace v celé délce kyvety: na začátku bude koncentrace všude stejná, časem se koncenrace zvyšuje směrem ke konci kyvety. Když je látek více, vidíme několik rozhraní; na prvních derivacích křivek jde vidět peaky. Když látky smícháme a vidíme kromě původních dvou peaků i nějaký nový, tvoří naše látky nejspíše komplex. Dá se pozorovat difuzni koeficient (jak jsou peaky rozlité) i sedimentační konstanta.
+◊subsection{Průběh AUC}
 
-M = (SRT)/(D_0(1-rho V))
+Když polymer dáme na hladinu a sedimentujeme, v průběhu centrifugace se pohybuje zkumavkou ke dnu takzvané ◊strong{rozhraní}. Pozorujeme koncentrace v celé délce kyvety: na začátku bude koncentrace všude stejná, ale časem se koncenrace zvyšuje směrem ke konci kyvety. Pokud bude látek více, uvidíme několik rozhraní.
 
-◊todo{Doplnit informace o detekčním systému.}
+Na prvních derivacích koncentračních křivek jde vidět peaky. Nejprve můžeme pozorovat tyto peaky v čase pro jednu látku, pak pro druhou, a pak pro obě dohromady. Pokud v tomto případě vidíme kromě původních dvou peaků i nějaký nový, tvoří naše látky nějaký komplex. U tohoto komplexu můžeme pozorovat difúzní koeficient ("jak jsou peaky rozlité") i sedimentační konstantu.
 
-Sedimentace se dá měřit i absorpčně, hlavně proteiny a NA. Na rozhraní e však měnřit nedá, protože se světlo na rozhraní ohýbá a nedopadá do měřiče. Jsme proto schopni změřit pouze koncentraci před a za rozhraním, které je relativně stálá. Cukry ale úplně ne, to spíše interferenční měření (index lomu).
+◊ls[#:t "Způsoby analýzy vzorku"]{
+    - vzorky jsou v průhledných zkumavkách (na rozdíl od preparativní UC)
+    - absorbance
+        - většinou u pozorování DNA
+        - měříme podle ní hlavně koncetraci v jednotlivých místech kyvety
+        - na rozhraní se světlo láme a nedopadá do měřiče, takže koncentraci jsme schopni určit pouze před rozhraním a za ním
+    - difrakce (interference)
+        - pozorování proteinů, cukrů
+}
 
-◊section{Využití UAC}
+Molární hmotnost můžeme vypočítat ze Svedbergovy rovnice
+◊$${M = \frac{S R T}{D_0 (1 - \rho_k V)}.}
+
+◊subsection{Praktické využití AUC}
+
+Zajímá nás, jakým způsobem funguje replikace u bakterií.
+
+◊ls{
+    # pěstujeme e. coli v atmosféře s těžkým dusíkem
+    # po čase ji přesuneme do běžné atmosféry
+}
 
 ◊slide[41 #:s 7]
-- jak funguje replikace u bakterií
-- e. ocli v N15 (těžký dusík), poté v normální atmosféře
- -> DNA změnila svou vznášivou hustotu v průběhu generací
-    # homogenní, těžká
-    # hybrydní DNA, monodisperzní (těžká+lehká v jednom helixu)
-    # dva proužky, více lehké DNA
-=> repliakce je semikonzervativní
+Když po každém kroku zjistíme sedimentační koeficienty DNA, zjistíme, že na začátku byl helix těžký, poté vykazoval známky hybridního složení, a časem byl spíše lehký. Z toho (hlavně z druhého měření) je možno odvodit, že je replikace u bakterií semikonzervativní.
 
 ◊title{Sekvenace DNA}
 
