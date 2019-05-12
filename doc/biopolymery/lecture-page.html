@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>notes:biopol</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../styles.css" />
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    <script type="text/javascript">
+        let h;
+
+        document.onreadystatechange = function () {
+            if (document.readyState == "interactive") {
+                h = document.getElementById('sticky-header');
+            }
+        }
+
+        let lastOffset = 10;
+        let first = true;
+        window.onscroll = function() {
+            var doc = document.documentElement;
+            var o = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+            if (o <= 8 && (lastOffset > 8 || first)) {
+                first = false;
+                h.style.boxShadow = 'none';
+                h.style.backgroundColor = 'rgb(255, 255, 255)';
+            } else if (o > 8 && (lastOffset <= 8 || first)) {
+                first = false;
+                h.style.boxShadow = '0px 1px 3px lightgrey';
+                h.style.backgroundColor = 'rgb(255, 255, 255)';
+            }
+            lastOffset = window.pageYOffset;
+        };
+    </script>
+</head>
+
+<body>
+    <div class="sticky-header" id="sticky-header">
+        <div class="wrapper">
+            <span class="page-title"><a class="no-style" href="/bioinformatika" title="Úvodní stránka">notes</a>:<strong>biopol</strong></span>
+        </div>
+    </div>
+    <div class="container">
+         <h1 id="Struktura a vlastnosti informačních biopolymerů"><a class="internal-link" href="#Struktura a vlastnosti informačních biopolymerů">Struk­tu­ra a vlast­nos­ti in­for­mačních biopoly­merů</a></h1><box class="plain"><div class="title">Zápisky</div><div class="body">K dis­pozi­ci je od­kaz na <a href="notes.html">we­bovou verzi</a>.</div></box><h2 id="Informace o předmětu"><a class="internal-link" href="#Informace o předmětu">In­for­ma­ce o před­mě­tu</a></h2><ul><li>zk­ouš­ka for­mou tes­tu (mu­ti­ple choice)</li><li>tři testy se píší v průběhu se­mes­tru, jsou do­bro­vol­né, za bonusové body, které se počí­ta­jí u zk­oušky
+         <ul><li>20 otázek, otázky na posled­ních pár před­nášek</li><li>nezachrání čtyřku, ale ji­nak mo­hou zlepšit až o stu­peň</li><li>zk­ouš­ka má ste­jný for­mát</li></ul></li><li>na cvikách řešení prob­lémů v Mood­lu, ode­vzdání se nekon­trolu­je
+         <ul><li>otázky navazu­jící na něk­teré z úkolů se rel­a­tivně čas­to vysky­tu­jí v bonusových testech</li></ul></li></ul><h2 id="Doporučená literatura"><a class="internal-link" href="#Doporučená literatura">Do­poručená lit­er­atu­ra</a></h2><ul><li>Voet</li><li>Gen­ové in­ženýrství, Von­drejs et al. (vy­brané kapi­toly)</li><li>Přehled stře­doškol­ské chemie, Vacík (nebo jakákoli učeb­nice chemie)</li></ul><h2 id="Doporučené nástroje"><a class="internal-link" href="#Doporučené nástroje">Do­poručené nástro­je</a></h2><ul><li>Py­Mol: vizual­izace molekul (pří­pad­ně JMol pro web)</li><li>Lig­and Ex­plor­er: prohlížeč lig­andů</li><li>Fold­It: hra</li><li>Roset­ta: sekvence \(\rightarrow\) mod­el struk­tu­ry (velké množství možných mod­elů)</li><li>práce větši­nou s PDB soubo­ry, na <a href="http://www.rcsb.org">stránce PDB data­báze</a></li></ul>
+    </div>
+</body>
+
+</html>

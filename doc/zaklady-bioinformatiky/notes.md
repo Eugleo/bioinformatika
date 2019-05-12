@@ -205,7 +205,7 @@ Důvody vzniku
 Vodíková vazba a stabilizace
 - síla vodíkové vazby závisí n atypu atomu a geometrii vazby
     - cca 1--60 kJ/mol, v proteinech většinou okolo 10 kJ/mol
-    - se zvětšujícím se úhlem vazby klesá její síla: odklon o 20° snižuje energii o 10%
+    - se zvětšujícím se úhlem vazby klesá její síla: odklon o 20strong° snižuje energii o 10%
 
 [Pr. 1, slide 57]
 Folding
