@@ -28,7 +28,7 @@ Objev struktury DNA: Watson, Crick, Franklin (50. léta 20. století).
     }
 
     ◊term["guanosin"]{
-        nukleosid guaninu, tj. guanin + cukr vázaná N-glykosidickou vazbou
+        nukleosid guaninu, tj. guanin + cukr vázaný N-glykosidickou vazbou
     }
 
     ◊term["guanosin trifosfát"]{
@@ -46,7 +46,7 @@ Objev struktury DNA: Watson, Crick, Franklin (50. léta 20. století).
 
 ◊slide[13 #:s 1]
 ◊ls[#:t "Párování"]{
-    - díky něj vzniká sekundární struktura
+    - díky němu vzniká sekundární struktura
     - A + T páruje dvěma ◊chem{H} můstky, C + G třemi ◊chem{H} můstky
     - AT bohaté úseky jsou tedy pružnější a GC úseky stabilnější
 }

@@ -799,19 +799,23 @@ Přečtení kódu DNA. Existuje mnoho různých metod, poslední dobou je sekven
 
 Většina sekvenačních postupů se liší už v provedení bodu 1: jak získat z dlouhého DNA kratší fragmenty. Rozlišujeme metody, při kterých už existující DNA štěpíme, a metody, kdy kratší kousky DNA  podle delší DNA sami syntetizujeme.
 
-◊subsection{Hledání ORF}
+◊ls[#:t "Hledání ORF"]{
+    - open reading frame (ORF) popisuje způsob, jakým čteme trojice nukleotidů při translaci (jsou tři různé ORF, polde toho, kde začneme)
+    - zajímá nás, co jsou regulační oblasti a co jsou geny
+        - v eukarytotech bývá často gen jen na jenom z vláken a na druhém není nic
+    - postup
+        # namapujeme stopkodony; tam, kde kde dlouho nejsou, bude pravděpodobně gen (délka 200bp--400bp * 3)
+        # podíváme se, jestli v podezřelých oblastech končících na stopkodon začínáme na ATG (vzácně GTG, TTG)
+}
 
-HLEDÁNÍ ORF
-- zajímá nás, co jsou regulační oblasti a co jsou geny
-- kde začít "číst" trojice nukkleotid" <- čtexí rámec (open reading frame, orf)
-- v eukarytotech bývá často gen jen na jenom z vláken a na druhém není nic
-JAK?
-# podíváme se, kde dlouho nejsou stopkodony (délka 200--400 * 3)
-# ORF začíná na ATG (vzácně GTG, TTG) => podíváme se, jestli v podezřelých oblastech končících na stopkodon začínáme ATG
-
-Jak číst sekvence DNA?
-3 -> 5: antisense (templát pro transkripci mRNA), 5 -> 3 sense (komplementární, "kódující" mRNA), mRNA 5 -> 3 = DNA 5 -> 3
-- mohou vznikat i antisesne transkripty, které regulují
+◊box["Poznámka"]{
+    Jak správně číst sekvence DNA?
+    ◊ls{
+        - 3' -> 5' je ◊strong{antisense} vlákno, slouží jako templát pro traskripci
+        - 5' -> 3' je ◊strong{sense} vlákno, nebo také ◊strong{kódující} -- výsledná mRNA má (až na uracyl) stejnou sekvenci jako toto vlákno
+        - někdy mohou vznikat i antisesne transkripty, které mají regulační funkci
+    }
+}
 
 ◊section{Metody se štěpením DNA}
 
