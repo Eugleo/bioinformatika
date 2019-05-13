@@ -289,7 +289,7 @@ Vazba je planární, protože dvojná vazba ◊chem{C=O} někdy přejde na vazbu
     - jsou povolené dvě konformace: ◊strong{cis} a ◊strong{trans}
         - zpravidla u všech proteinů se vyskytuje konformace trans
         - cis konformace jen výjimenčně u prolinu
-    - torzní úhly: ◊${\varphi} značí úhel ◊${C-N}, ◊${\psi} značí úhel ◊${C-C}
+    - torzní úhly: ◊${\varphi} značí úhel ◊chem{C-N}, ◊${\psi} značí úhel ◊chem{C-C}
         - povolené hodnoty těchto úhlů můžeme zanést do tzv. ◊em{Ramachandranova grafu}
         - v Ramachandranově grafu nejprve vypíšeme oblasti pravděpodobných hodnot, teoreticky možných hodnot a nepravděpodobných hodnot, poté srovnáma naměřená data s těmito zónami
         - určité oblasti odpovídají určitým sekundárním strukturů, viz slide ◊slide[53 #:s 1 #:inline #t]
@@ -299,7 +299,7 @@ Vazba je planární, protože dvojná vazba ◊chem{C=O} někdy přejde na vazbu
 
 ◊slide[57 #:s 1]
 ◊ls[#:t "Helikální"]{
-    - ◊alfa helix
+    - ◊alpha helix
         - pravotočivá šroubovice
         - stabilizován vodíkovými můstky mezi vodíkem aminoskupiny a kyslíkem karbonylu
         - vzálenost vodíkových můstků je 4AK
