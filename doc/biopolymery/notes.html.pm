@@ -934,10 +934,6 @@ ddNTP máme čtyři druhy, a ty jsou buďto fyzicky oddělené v nádobách, neb
 
 Délku jednotlivých fragmentů zjistíme pomocí ELFO --- běžně se nedělá gelová ELFO, ale kapilární ELFO doplněná chromatografií. Semtam kromě terminátoru (ddNTP) značíme i primer nebo běžné dNTP, abychom poznali, která DNA je naše nově polymerovaná a která je ta původní templátová.
 
-◊todo{Co je shotgun sekvenování?}
-
-◊todo{Co je to next-gen sequencing?}
-
 ◊subsection{Pyrosekvenování}
 
 Při syntéze DNA (konkrétně při připojení každého dNTP) se uvolňuje proton a pyrofosfát (PPi). Právě detekce uvolněného PPi se používá v rámci pyrosekvenování.
