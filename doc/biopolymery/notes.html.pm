@@ -742,8 +742,17 @@ Na prvních derivacích koncentračních křivek jde vidět peaky. Nejprve můž
         - většinou u pozorování DNA
         - měříme podle ní hlavně koncetraci v jednotlivých místech kyvety
         - na rozhraní se světlo láme a nedopadá do měřiče, takže koncentraci jsme schopni určit pouze před rozhraním a za ním
+        - jsme schopni rozlišit různé AK, i přirozené kofaktory proteinů
+        - velice citlivá
     - difrakce (interference)
         - pozorování proteinů, cukrů
+        - Abbeho difraktometrie
+            - na spodní část hranolu kápneme naši látku, změříme úhel totálního odrazu
+            - z toho spočítáme index lomu
+        - interferenční měření
+            - z interferenčních obrazců na tenké vrstvě můžeme zjistit, jak tlustý je nějaký materiál
+            - rayleigh interferometer - světlo prochází dvěma kyvetami (blank + náš vzorek), pozorujeme interferenční obrazce obou
+        - ne tolik citlivá
 }
 
 Molární hmotnost můžeme vypočítat ze Svedbergovy rovnice
@@ -763,98 +772,30 @@ Když po každém kroku zjistíme sedimentační koeficienty DNA, zjistíme, že
 
 ◊title{Sekvenace DNA}
 
-Přečtení kódu DNA. Hlavně servisně, třeba i pouze ověření nějakého pokusu.
+Přečtení kódu DNA. Existuje mnoho různých metod, poslední dobou je sekvenace rutinní záležitost, levná a relativně rychlá. Základní postup je ale společný (skoro) všem z nich.
 
-# příprava krátkých kousků DNA
-    - štěpení
-    - PCR
-# příprava ssDNA
-# sekvenace úseků
-    - štěpíme stené sekvence v několika místech, jednotlivé fragmenty se překrývají, je poté možné je poskládat
-# dodatečné uspořádání a překryv částí
+◊ls[#:t "Obecný postup"]{
+    # připravíme krátké kousky DNA
+    # amplifikujeme pomocí PCR
+    # připravíme ssDNA
+        - teplota + CsCl
+    # sekvenujeme jednotlivé krátké úseky
+        - části se musí překrývat, abychom věděli, jak úseky nakonec zase poskládat za sebe
+            - například štěpíme stejné sekvence v několika místech
+    # uspořádání nasekvenování částí, zjištění překryvu
+}
 
-KDYSI (RNA)
-- štěpení fosfodiesterázou hadího jedu (od 3' konce) nebo z hovězí sleziny (od 5' konce)
-- účinné látky se dá malé množství, dojde k částečnému natrávení
-    - vzniknou kousky RNA, které jsou všechny různě dlouhé
-- u jednotlivých fragmetnů zjistíme stechiometrické koeficienty jednotlivých bazí, začínáme od nejkratších a postupně se dozvídáme jednu AK (v dinukleotidu nebyla, v trinukleotidu je)
-    - podobně od druhého konce RNA, oba výsledky se dají dohromady
+Většina sekvenačních postupů se liší už v provedení bodu 1: jak získat z dlouhého DNA kratší fragmenty. Rozlišujeme metody, při kterých už existující DNA štěpíme, a metody, kdy kratší kousky DNA  podle delší DNA sami syntetizujeme.
 
-◊todo{Co jsou restrikční endonuklézy.}
-KEVENACE DNA
-- příprava fragmentů stejné délky restrikčními endonukleázami
-- produkce a purifikace velkých množství konkrétních úseků DNA
-    - DNA je v jedné kopii, RNA v mnoha
-- jsou ale i nové sekvenační postupy, které přesně dlouhé fragmenty nepotřebují
-
-◊slide[9 #:s 8]
-ENDONUK.
-- homodimery
-    - vyžadujeme na DNA "palindromatickou" sekvenci (z 5' čarou konce ale vypadá vždy stejně), protože se na každé ze dvou vláken musí navázat jeden "prst" jedné části endonuk.
-    - palindromy někdy tvoří vlásenky/kříže (autokomplementárně), viz polymorf.
-- váží DNA na specifických mítech, malý i velký žlábek
-    - R smyčka: velký žlíbek
-    - Q smyčka: malý žlábek
-- rozpoznávaná místa jsou 4--8bp, stříhá DNA tak, že vytváří volné konce , které se mohou opět navázat
-- jak ovlivnit velikost DNA
-    - jak dlouhé části rozpoznává? na tom záleží pravděpodobnost toho, že se tyto nukleotidy vyskytnou za sebou a endonuk střihne
-- pocházejí z bakterií, které se jimi brání proti bateriofágům
-    - nametylovanou DNA neštípou, bakterie si svou DNA nametylují, a nemetylovanou štípou
-- RE často potřebují určité katyionty
-- štěpení se dá pozorovat i na elektroforéze
-
-◊slide[19 20 22 23 #:s 8]
-CHEMICKÉ ŠTĚPENÍ
-- štěpíme náhodně, uprostřed DNA
-    - štěpení před G: přidáme dimethylsulfát, ten se naváže na N7 na G, N7 nemůže být čytřvazný a ta "pustí" ribozu, na tu navážeme piperidin, ten ji destabilizuje a odváží se od ní oba fosfáty -> DNA se přeruší
-    - štěpení před G + A
-    - před C + T: hydrazin, aminová skupina, stejný prlběh jinak
-- abychom mohli fragmenty pozorovat, původní strand označíme na 5' konci
-    - -fosfát, na volnou OH fosfátu navážeme gammafosfát, kde může být radioaktivní P32
-- dále pozorujeme pouze strandy, které začínají na tomto 5' konci
-    - rozdělíme na PA gelu (70 stupňů) -> jen podle velikosti
-    - dáme tam vzorky po každém ze štěpení ◊slide[26 #:s 8 #:inline #t]
-    - jen pár pásků bude radioaktivně označených
-
-METODA TERMINACE DNA (SANGER)
-- in vitro replikace pomocí DNA polymerázy
-- vhodné pro malé množství vzorky
-
-PCR (polymerase chain reaction)
-# denaturace dihelixu (-> dva strandy)
-# vytvoříme dva primery komplementární ze začátku a z konce k části, ktorou chceme zkoumat
-# přidání DNA polymerázy
-# DNA polymeráza syntetizuje od primeru až do "tam kde ji necháme"
-# vzinkou dvě vlákna začínající primerem
-# znovu ochladíme, navážeme primery...
-# začnou vznikat krátké sekvence, které jsou z obou stran omezeny primerem
-    - počet roste exponenciálně
-
-◊slide[30 #:s 8]
-sekvenační metody
-- ssDNA, DNA primer, DNA polymeráza, dNTP (deoxy trinukleotid), dideoxyNTP (příépadně značený)
-- ve směsi je malé množsví ddNTP, semtam se naváže; na ddNTP se ale nemůže navázat nic dalšího
-
-◊slide[34 35 #:s 8]
-- uděláme PCR, ale semtam se nám sekvence zakončí ddNTP
-    - začínáme primerem, ale nekončíme primerem => přírůstek jen lineární, ne exponenciální
-    - ddNTP je označená a víme, kde skončila, čili víme, že v daném místě má být odpovídající dNTP
-    - když postup zopakujeme pro všchny ddTNP, zjistíme časem ,kde je jaká dNTP
-
-- značíme terminátor (ddNTP), semtam i primer a dNTP, abychom poznali, která DNA je naše a která tam už byla
-
-pro primer je nutné znát okolí části, kterou chceme sekvenovat
-
-běžně se nedělá gelové ELFO, ale kapilární + chromatografie
-
-[MOODLE] SSB někdy váže DNA přes stacking interakce na Tyr nebo Trp
-
+◊todo{Dokončit.}
 
 SKUPINY SEKV. METOD (podle chyby)
 polymer se štěpí -> může se stát, že přílišdlouhé fragmenty nerozpoznáme
     - v degradačních metodách nejsou problémy s repetitivními úseky, a krátkými úseky
     - v syntetizačncích metodách je problém u velmi dlouhých fragmentů
         - potřebujeme primer, čili i znát kousek sekvence kolem, dá se ale i přidat ne-zcela homologní primery
+
+◊subsection{Hledání ORF}
 
 HLEDÁNÍ ORF
 - zajímá nás, co jsou regulační oblasti a co jsou geny
@@ -868,15 +809,135 @@ Jak číst sekvence DNA?
 3 -> 5: antisense (templát pro transkripci mRNA), 5 -> 3 sense (komplementární, "kódující" mRNA), mRNA 5 -> 3 = DNA 5 -> 3
 - mohou vznikat i antisesne transkripty, které regulují
 
-◊slide[43 #:s 8]
-SHOTGUN SEKVENOVÁNÍ ?
+◊section{Metody se štěpením DNA}
+
+Zpravidla jsou to metody starší, které se v dnešní době už tolik nepoužívají.
+
+◊subsection{Původní metody}
+
+Původní metody pracoval hlavně s RNA, protože ta se štěpí snadněji. Využívaly štěpení přírodními látkami, konkrétně
+◊ls{
+        - fosfodiesterázou hadího jedu (od 3' konce)
+        - fosfodiesterázou z hovězí sleziny (od 5' konce)
+}
+
+◊ls[#:t "Postup"]{
+    # přidáme malé množství účinné látky
+    # dojde k částečnému natrávení RNA
+        - vzniknou kousky RNA, které jsou všechny různě dlouhé
+    # u jednotlivých fragmentů analyticky zjistíme počty jednotlivých bazí koeficienty
+        - začínáme u nejkratšího fragmentu, potom druhý nejkratší atd...
+        - postupně se dozvídáme, jaký nukleotid je na jaké pozici
+        - např: G v dinukleotidu vůbec nebyl, ale v trinukleotidu je => na třetím místě je G
+}
+
+V současné době už nepoužíváme hadí jed, ale jsme schopni připravit stejně velké kusy DNA pomocí ◊em{restrikčních endonukleáz}. Existují ale i nové sekvenační postupy, které fragmenty s určitou přesnou délkou nepotřebují.
+
+◊slide[9 #:s 8]
+◊box["Restrikční endonukleázy"]{
+    ◊ls{
+        - homodimery (skládají se ze dvou identických podjednotek)
+        - váží DNA na specifických místech, v malém i velkém žlábku
+            - R smyčka: velký žlíbek
+            - Q smyčka: malý žlábek
+        - rozpoznávaná místa jsou dlouhá 4bp--8bp
+        - často k funkci potřebují určité kationty
+        - štěpení se dá pozorovat i na elektroforéze
+        - velice přesné rozpoznání štěpného místa
+    }
+
+    Jsou to homodimery, váží se na obě vlákna DNA stejnou částí proteinu; vyžadují proto, aby na DNA byla palindromatická sekvence. Takové palindromatické sekvence však někdy způsobují i problémy (tvoří se kříže, vlásenky...), viz ◊link["#Další konformační anomálie"]{polymorfismus DNA}.
+
+    ◊ls[#:t "Druhy"]{
+        - REI: rozštěpí DNA např. o 1kbp dál
+        - REII: štěpí komplementární řetězce naproti sobě za vzniku kohezních konců
+        - REIII: podobně jako REI
+    }
+
+    RE pocházejí z bakterií, které se jimi brání proti bakteriofágům: bakterie mají většinu svého DNA nametylovánu, a když narazí na nenametylovanou DNA, ER ji z DNA vyštípnou.
+
+    Délku vzniklých fragmentů můžeme ovlivnit tím, jak dlohou rozpoznávací sekvenci ER zadáme---čím kratší, tím větší je šance, že se na DNA bude nalézat.
+}
+
+◊subsection{Chemické štěpení}
+
+DNA je štěpeně na náhodně dlouhé kusy, někde uprostřed.
+
+◊ls[#:t "Postup"]{
+    # radioaktivně označíme DNA na 5' konci, abychom mohly dané DNA později detekovat
+        # pomocí alkalické fosfatázy odštěpíme původní P
+        # pomocí polynukleotidkinázy navážeme nový, radioaktivně značený fosfát
+    # takto označenou sekvenci pošleme na několik štěpení
+}
+
+◊slide[19 20 #:s 8]
+◊ls[#:t "Štěpení před G"]{
+    # přidáme dimethylsulfát, který se naváže na N7 na G
+    # N7 na G nemůže být čtyřvazný, přeruší vazbu na ribózu
+    # na ribóze je nyní volná OH skupina, na kterou se naváže piperidin
+    # ribóza je destabilizována, přeruší vazbu s oběma fosfáty
+    # DNA vlákno se rozpadá
+}
+
+Na podobném principu funguje štěpení před G + A. Samozeřjmě takové štěpení nám přinese více fragmentů než štěpení pouze před G.
+
+◊slide[22 23 #:s 8]
+◊ls[#:t "Štěpení před C + T"]{
+    - podobný průběh jako štěpení před G, jen za dimethylsulfát vyměníme hydrazin, který se váže na aminovou skupina
+    - zbytek reakce je stejný
+}
+
+◊slide[26 #:s 8]
+Pozorujeme pouze strandy, které začínají na označeném 5' konci.
+◊ls{
+    - rozdělíme produkty štěpení podle hmotnosti na PA gelu (70◊|deg|)
+        - jen pár pásků bude radioaktivně označených
+    - jsme omezeni počtem asi 100 fragmentů, a navíc samozřejmě nejsme schopni nasekvenovat označený 5' nukleotid
+}
+
+◊section{Metody se syntézou DNA}
+
+◊box["PCR (polymerase chain reaction)"]{
+    Řetězová reakce, která slouží k amplifikaci (duplikaci) určité části DNA.
+
+    ◊ls[#:t "Postup"]{
+        # denaturace DNA na dvě vlákna
+        # vytvoření dvou primerů, které jsou komplementární k začátku a konci úseku, který chceme zkoumat
+        # přidání DNA polymerázy
+        # DNA polymeráza nasedne na primer a syntetizuje DNA směrem od něj
+        # vzniknou dvě vlákna začínající primerem
+        # pokud opět navážeme primery a přidáme DNA polymerázu, získáme sekvenci DNA omezenou z obou částí primery
+            - jejich počet roste exponenciálně
+    }
+
+    Abychom mohli PCR provést, musíme znát alespoň kousek sekvence před a po námi zkoumané části, abychom mohli vytvořit odpovídající primery. Někdy se primery tvoří jen přibližně a nejsou 100% komplementární.
+}
+
+◊subsection{Metoda terminace (Sanger)}
+
+Na rozdíl od sekvenačních metod štěpících nějaké stávající DNA na menší fragmenty funguej tento postup trochu obráceně; pomocí DNA polymerázy vytváří komplementární vlákno k sekvenovanému vláknu, a v průběhu této in vintro syntetizace dochází k samotné sekvenaci. Je to metoda vhodná hlavně pro malé vzorky.
+
+◊slide[30 #:s 8]
+◊ls[#:t "Postup"]{
+    - potřebujeme ssDNA, DNA primer, DNA polymeráza, dNTP (běžný deoxy trinukleotid), dideoxyNTP (trinukleotid, který na ribóze nemá žádnou OH skupinu)
+    - podle ssDNA tvoříme komplementární vlákno, někdy se ale stane, že se naváže ddNTP místo dNTP
+        - po ddNTP se již nic navázat nemůže, polymerace DNA končí
+    - časem vznikne mnoho různě dlouhých úseků zakončených ddNTP
+}
+
+◊slide[34 35 #:s 8]
+ddNTP máme čtyři druhy, a ty jsou buďto fyzicky oddělené v nádobách, nebo fluorescečně označené v jedné nádobě. Skončíme tedy se čtyřmi skupinami fragmentů DNA, které jsou všechny ukončeny určitou ddNTP a my víme, kterou (buďto podle nádoby, nebo podle barvy). Stačí nám zjistit, jak dlouhá jednotlivá vlákna jsou a můžeme z nich složit celou sekvenci.
+
+Délku jednotlivých fragmentů zjistíme pomocí ELFO --- běžně se nedělá gelová ELFO, ale kapilární ELFO doplněná chromatografií. Semtam kromě terminátoru (ddNTP) značíme i primer nebo běžné dNTP, abychom poznali, která DNA je naše nově polymerovaná a která je ta původní templátová.
+
+◊todo{Co je shotgun sekvenování?}
 
 NEXT-GEN SEQ
 - dají se paralelizovat
 - syntetizační metody (jako Sanger)
 
+◊subsection{Pyrosekvenování}
 ◊slide[47 #:s 8]
-PYROSEKVENOVÁNÍ
 - sledujeme produkci pyrofosfátu, který se uvolňujě při každém správném zapojení komplementárního nukleotidu do vlákna
     - množství pyrofosfátu, detekovatelné uvolněné protony
 # ukotvená DNA
@@ -891,7 +952,7 @@ ATP + luciferin + O2 -> AMP + PPi + CO2 + foton
 (ptrobém s tím, že PPi zase vzniká? Ne, jen získáme více než jeden foton)
 Luciferáza by mohla rozpoznat a zpracovat i náš dATP, proto se použí dATPalfaS, který má na alfaP síru
 
-MODIFIKACE PYROSEQ
+◊subsubsection{PYROSEQ a METHYLACE}
 - u bakterií často methylace
 - u savčích často 5-methyl-cytosin, pouze v kombinaci s G (značení CpG)
     - metyhly často umlčuje regulační oblasti genu
@@ -912,7 +973,7 @@ Zjištění methylace pomocí pyroseq
 - celou DNA můžeme změnit C->U (při PCR potom -> T), C-methylovaný->žádná změna
     - změříme před i po změně
 
-PYROSEQ 454
+◊subsection{Pyrosekvenování 454}
 - paralelní pyroseq
 
 # štěpení na relativně krátké úseky (500bp)
@@ -928,20 +989,7 @@ PYROSEQ 454
 - sekvenace transkriptomu
 - objev nový genů
 
-
-ILLUMINA - SOLEXA
-# fiaxce ssDNA  + primer na sklíčko
-# aplifikace PCR -> vznik DNA kolonie
-# terminace řetěczce fluorescenčním analogem dNTP
-# detekce kamerou
-# odštěpení sondy, další dNTP
-
-ION SEMICONDUCTOR SEQ
-při inkorporaci se uvolňuje kromě PPi i proton
-- DNA přímo na křemíkovém čipu, který je ciltivý na protony (pH)
-- levná detekce, bez optických prvků
-- jen krátké fragmenty
-
+◊subsection{Sekvenace nanopóry}
 ◊slide[63 #:s 8]
 SEKVENACE NANOPÓRY
 - bakteriální toxiny, dělají díry do membrán ,procházejí jimi ionty
@@ -957,14 +1005,21 @@ SEKVENACE NANOPÓRY
 - pomocí nanopórů lze provádět "hmotností spektrometrii" roztoku
     - pikoamperové proudy na membráně
 
+◊subsection{Další metody}
+Illumina - Solexa
+# fiaxce ssDNA  + primer na sklíčko
+# aplifikace PCR -> vznik DNA kolonie
+# terminace řetěczce fluorescenčním analogem dNTP
+# detekce kamerou
+# odštěpení sondy, další dNTP
+
+Ion semiconductor sequencing
+při inkorporaci se uvolňuje kromě PPi i proton
+- DNA přímo na křemíkovém čipu, který je ciltivý na protony (pH)
+- levná detekce, bez optických prvků
+- jen krátké fragmenty
+
 VŠEHOCHUŤ
 - hyperchronní efekt - ssDNA absorbuje více než dsDNA
-- nedělat blanky na pufry, kde je vysoká absorbance
 
-jak měit index lomu
-1) abbeho difraktometrie
-na spodní část hranolu kápneme naši látku, změříme úhel totálního odrazu, z toho index lomu
-2) interferenční měření
-- měří index lomu
-- z interferenčních obrazců na tenké vstvě můžeem zjistit, jak tlustý je nějaký materiál
-rayleigh inetrferometer - světlo prochází dvěma kyvetami (blank + náš vzorek), pozorujeme interference obou
+[MOODLE] SSB někdy váže DNA přes stacking interakce na Tyr nebo Trp
