@@ -320,6 +320,10 @@ Vazba je planární, protože dvojná vazba ◊chem{C=O} někdy přejde na vazbu
     - paralelní a antiparalelní (ten je stabilnější)
 }
 
+◊section{Spektrofotometrie proteinů}
+
+◊todo{Dokončit.}
+
 ◊title{Struktura DNA}
 
 ◊todo{Doplnit informace o endo a exo konfiguracích, syn a antiklinální, levo a pravotočivé, Hoogsteenovo párování atd.}
