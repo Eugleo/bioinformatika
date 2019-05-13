@@ -140,7 +140,7 @@ h6 {
           (font-size (heading-size h))
           (line-height (heading-line-height h))))
 
-◊(insert-heading (heading 'h1 3 1.5 2.618 2.5))
+◊(insert-heading (heading 'h1 2.5 1.5 2.618 2))
 ◊(insert-heading (heading 'h2 2 0.5 2.118 1.5))
 ◊(insert-heading (heading 'h3 1 0.5 1.618 1.5))
 ◊(insert-heading (heading 'h4 1 0 1.309 1))
