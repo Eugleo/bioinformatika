@@ -79,9 +79,7 @@ Objev struktury DNA: Watson, Crick, Franklin (50. léta 20. století).
 ◊lecture[3]
 
 ◊slide[21 #:s 1]
-Primární až kvartnerní; struktura určuje funkci proteinu (proto nás zajímá), například s čím reaguje, jakými membránami projde a za jakých podmínek atp.
-
-◊todo{Doplnit linky na zápisky z biopolymerů (až zde budou k dispozici).}
+Primární až kvartnerní; struktura určuje funkci proteinu (proto nás zajímá), například s čím reaguje, jakými membránami projde a za jakých podmínek atp. Další informace viz též ◊link["/doc/biopolymery/notes.html#Stavba proteinů"]{zápisky z biopolymerů}.
 
 ◊section{Primární struktura}
 
@@ -160,7 +158,7 @@ Polární AK jsou hydrofilní, nepolární jsou hydrofobní.
 
 ◊box["AK se zásaditou (aminovou) skupinou"]{
     ◊definitions{
-        ◊term["arginin"]{může být methylován, bývá na povrchu, kvůli kladného náboje tvoří vodíkové můstky se záporně nabitými strukturami (DNA)}
+        ◊term["arginin"]{může být methylován, bývá na povrchu, kvůli kladnému náboji tvoří vodíkové můstky se záporně nabitými strukturami (DNA)}
 
         ◊term["lysin"]{může být postrtranslačně modifikován}
     }
@@ -186,7 +184,7 @@ Polární AK jsou hydrofilní, nepolární jsou hydrofobní.
     ◊definitions{
         ◊term["methionin"]{má jen jeden kodon, může být na povrchu oxidován}
 
-        ◊term["cystein"]{často v hydrofobním jádře protein§ (přestože je polární), tvoří disulfidické můstky, iteraguje s ionty kovů (často v aktivních místech enzymů)}
+        ◊term["cystein"]{často v hydrofobním jádře proteinů (přestože je polární), tvoří disulfidické můstky, iteraguje s ionty kovů (často v aktivních místech enzymů)}
     }
 }
 
@@ -299,9 +297,9 @@ Než se dostaneme k samotnému procesu alignmentu (tj. zjišťování, které je
 ◊slide[26 27 #:s 2]
 ◊definitions{
     ◊term["A je homolog B"]{
-        A a B mají společného předka, jejich původní funkce však nemusí být zachována. Homologii můžeme (opatrně) odvodit z vyokého procenta sekvenční identita A a B (viz dále). Musíme však dát pozor na paralogii.
+        A a B mají společného předka, jejich původní funkce však nemusí být zachována. Homologii můžeme (opatrně) odvodit z vysokého procenta sekvenční identity A a B (viz dále). Musíme však dát pozor na paralogii.
 
-        Na základě homologie můžeme (opatrně) odvodit funkční a strukturní podobnost. Například můžeme hledat homology problémových lidských proteinů v modelových organismech, na které budeme cílit vývíjená léčiva.
+        Na základě homologie můžeme (opatrně) odvodit funkční a strukturní podobnost. Například můžeme hledat homology problémových lidských proteinů v modelových organismech, na které budeme cílit vyvíjená léčiva.
     }
 
     ◊term["A je ortolog B"]{
@@ -311,7 +309,7 @@ Než se dostaneme k samotnému procesu alignmentu (tj. zjišťování, které je
     ◊term["A je paralog B"]{
         Poddruh homologie; A a B vznikly genovou duplikací ze společného
         předka --- jejich funkce tedy nemusí být zachována
-        (protože jedna kopie genu ji zastará, zatímco A a B se mohli vyvinout v něco jiného).
+        (protože jedna kopie genu ji zastane, zatímco A a B se mohli vyvinout v něco jiného).
     }
 
     ◊term["A je ohnolog B"]{
