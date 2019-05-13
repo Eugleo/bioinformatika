@@ -442,7 +442,7 @@ Substituce jedné AK za jinou je pravděpodobnější než inzerce/delece. V rá
         - vznikají experimentální variabilní GP založeny na strukturních datech proteinů (v pravidelných sekundárních strukturách je nizší pravděpodobnost výskytu mezery)
 }
 
-K hledání optimálního (nebo suboptimálního) alignmentu používá algoritmus, který projde mnoho různých možncých alignmentů a vybere z nich ten s nejvyšším skóre dle přidělené skórovací tabulky. Pozor, ani nejlepší alignment nemusí odpovídat reálu.
+K hledání optimálního (nebo suboptimálního) alignmentu používá algoritmus, který projde mnoho různých možných alignmentů a vybere z nich ten s nejvyšším skóre dle přidělené skórovací tabulky. Pozor, ani nejlepší alignment nemusí odpovídat reálu.
 
 ◊subsection{Skórovací tabulky}
 
