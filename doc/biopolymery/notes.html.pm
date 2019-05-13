@@ -785,15 +785,19 @@ Přečtení kódu DNA. Existuje mnoho různých metod, poslední dobou je sekven
     # uspořádání nasekvenování částí, zjištění překryvu
 }
 
+◊definitions{
+    ◊term["shotgun sequencing"]{
+        Termín, který popisuje postup sekvenace, který byl nastíněn výše: osekvenuje se mnoho krátkých fragmentů DNA s náhodou délkou, které potom počítač přečte (získá ◊em{ready}) a složí dohromady.
+
+        Jakýmsi protikladem tohoto postupu je metoda ◊em{primer walking}, která prochází DNA popořadě, a je tím pádem sice jednodušší, ale také pomalejší.
+    }
+
+    ◊term["next generation sequencing"]{
+        Někdy také high-throughput sequencing --- umbrella term pokrývající všechny moderní metody sekvenování DNA. Cílem je rychlost (paralelizace), přesnost a nízká cena.
+    }
+}
+
 Většina sekvenačních postupů se liší už v provedení bodu 1: jak získat z dlouhého DNA kratší fragmenty. Rozlišujeme metody, při kterých už existující DNA štěpíme, a metody, kdy kratší kousky DNA  podle delší DNA sami syntetizujeme.
-
-◊todo{Dokončit.}
-
-SKUPINY SEKV. METOD (podle chyby)
-polymer se štěpí -> může se stát, že přílišdlouhé fragmenty nerozpoznáme
-    - v degradačních metodách nejsou problémy s repetitivními úseky, a krátkými úseky
-    - v syntetizačncích metodách je problém u velmi dlouhých fragmentů
-        - potřebujeme primer, čili i znát kousek sekvence kolem, dá se ale i přidat ne-zcela homologní primery
 
 ◊subsection{Hledání ORF}
 
@@ -932,94 +936,114 @@ Délku jednotlivých fragmentů zjistíme pomocí ELFO --- běžně se nedělá 
 
 ◊todo{Co je shotgun sekvenování?}
 
-NEXT-GEN SEQ
-- dají se paralelizovat
-- syntetizační metody (jako Sanger)
+◊todo{Co je to next-gen sequencing?}
 
 ◊subsection{Pyrosekvenování}
+
+Při syntéze DNA (konkrétně při připojení každého dNTP) se uvolňuje proton a pyrofosfát (PPi). Právě detekce uvolněného PPi se používá v rámci pyrosekvenování.
+
 ◊slide[47 #:s 8]
-- sledujeme produkci pyrofosfátu, který se uvolňujě při každém správném zapojení komplementárního nukleotidu do vlákna
-    - množství pyrofosfátu, detekovatelné uvolněné protony
-# ukotvená DNA
-# přidáme nukleotid, vždy víme, který
-    - zařazen -> pyrofosfát -> sulfuryláza + tvorba ATP  -> luciferáza + světlo
-        - problém s tím, pokud se zařadí více (8+) stejných za sebe, protože intenzita vyzářeného světla roste jen omezeně
-    - nezažazen -> žádné světlo, propláchneme, zkusíme znovu
+◊ls[#:t "Postup"]{
+    # k DNA, kterou chceme nasekvenovat, přidáme komplementární primer
+    # přidáme nějaký konkrétní nukleotid (musíme vědět, který)
+    # sledujeme, co se stane
+        - pokud je nukleotid zařazen do naší rostoucí DNA, uvolní se PPi a proton, uvolněný PPi detekujeme
+        ◊$${
+            \ce{
+                DNA_n + {dNTP} ->[DNA polmeráza] DNA_{n + 1} + PPi \\
+                PPi + adenosin 5' fosfosulfát ->[sulfuryláza] ATP + SO4^{-2} \\
+                ATP + luciferin + O2 ->[luciferáza] AMP + PPi + CO2 + foton
+            }
+        }
+        - nakonec tedy pozorujeme záblesk; jak lze vidět z poslední rovnice, kromě fotonu se uvolní další PPi, čili reakce proběhne několikrát po sobě a uvolní se více než jeden foton
+        - pokud je v sekvenci více stejných dNTP za sebou, sledujeme větší intenzitu světla
+}
 
-DNA_n + dNTP -> DNA_n+1 + PPi
-PPi + adedosin 5' fosfosulfát -(sulfuryláza)-> ATP + SO_4 -2
-ATP + luciferin + O2 -> AMP + PPi + CO2 + foton
-(ptrobém s tím, že PPi zase vzniká? Ne, jen získáme více než jeden foton)
-Luciferáza by mohla rozpoznat a zpracovat i náš dATP, proto se použí dATPalfaS, který má na alfaP síru
+Nevýhodou této metody je, že při vyšším (8+) počtu stejných dNTP za sebou už se nám špatně detekuje jejich přesný počet. Luciferáza by mohla rozpoznat a zpracovat i běžné dATP (což nechceme), proto se použí dATP◊${\alpha}S, který má na P◊${\alpha} síru.
 
-◊subsubsection{PYROSEQ a METHYLACE}
-- u bakterií často methylace
-- u savčích často 5-methyl-cytosin, pouze v kombinaci s G (značení CpG)
-    - metyhly často umlčuje regulační oblasti genu
-    - můžeme si často myslet, že to není naše DNA, pokud není methylována -> rozpoznání tor-like receptory -> degradace
-- CpG by normálně mělo tvořit 1/16, je ale mnohem vzácnější (1%)
-- vliv CpG na buněčné dělení a tedy u rakoviny (5' CpG 3')
-- cPG často nahromaděný v regulačních místech (rpomotory)
-    - v důležitých místech není methylováno
+◊subsubsection{Odhalování metylace}
 
-proč methylace?
-někdy probíhá deaminace; methylcytosin -> thymin, cytosin -> uracyl
-    - uracyl v DNA snadno opraven
-    - thymin může poškodit informační hodnotu DNA
-=> CpG se nachází v menší míře (nebezpečné)
+Bakterie mají často své DNA nametylováno, což jim pomáhá rozpoznat virovou DNA. U savců není metylováno veškeré DNA (metylace má i regulační funkci), ale je nametylována většina (70%) CpG párů --- tj. ◊code{[5'] cytosin - fosfát - guanin [3']} za sebou na jednom vlákně.
 
-Zjištění methylace pomocí pyroseq
-- můžeme zjistit, že jeden CpG je methylován a druhý ne (v jednom strandu ano, ve druhém ne)
-- celou DNA můžeme změnit C->U (při PCR potom -> T), C-methylovaný->žádná změna
-    - změříme před i po změně
+◊ls[#:t "Vlastnosti CpG"]{
+    - metylován je cytosin
+    - kdyby byla DNA čistě náhodná, CpG by v ní mělo tvořit kolem 6%, reálně jich tam je pouze 1%
+    - CpG jsou často v regulačních promotorových oblastech
+        - mají vliv na buněčné dělení => často figurují u rakoviny
+    - nemetyolvané CpG je rozpoznáno TLR (tall like receptors), které detekují infekce
+}
 
-◊subsection{Pyrosekvenování 454}
-- paralelní pyroseq
+Proč je CpG méně, než bychom čekali? Mohlo by to být z toho důvodu, že methylcytosin se při deaminaci (což je proces, který u DNA může probíhat) mění na thymin, zatímco běžný cytosin se mění na uracyl. Uracyl je totiž v DNA jednoduše detekován a rychle opraven, zatímco thymin vlastně změní informaci, kterou DNA v daném místě nese. (Metylované) CpG je tedy svým způsobem nebezpečné.
 
-# štěpení na relativně krátké úseky (500bp)
-# PCR amiplifikace s adaptory (nemusíme znár místo pro primery)
-# uvolnění ssDNA, druhé vlákno zůstává s bioitinem
-# vazba ssDNA na mikrometrovou kuličku
-# kuličky do mikroreaktorů, mikrokontejnerů, probíhá běžné pyrosekvenování
+◊ls[#:t "Role pyrosekvenování v detekci CpG"]{
+    - pokud se na jednom vlákně nachází CpG, na druhém se (také v 5' -> 3' směru) nachází také CpG, kvůli komplementarity
+        - pomocí pyrosekvenování můžeme zjistit, že jeden CpG je methylován a druhý ne
+    - u celé DNA můžeme provést reakci ◊chem{C -> U}, zatímco C-metylovaný zůstane stejný
+        - zjistíme množství a polohu všech U před a po této reakci
+}
 
-- sekvenace celých genomů
-- sekvenace celých bakteriálních spol.
-- detekce mutací ve směsi alel
-- SNP (single nucleotide polymophism)
-- sekvenace transkriptomu
-- objev nový genů
+◊subsubsection{Pyrosekvenování 454}
+
+Prinvipielně stejné jako běžné pyrosekvenování, liší se jen postupem.
+
+◊ls[#:t "Postup"]{
+    # štěpení DNA na relativně krátké úseky (500bp)
+    # konce DNA jsou ligovány na primer a na biotin - tyto fragmenty se vychytávají na kuličky
+    # na jedné kuličce v roztoku probíhá PCR amplifikace
+        - z PCR můžeme získat ssDNA, která pochází z jedné molekuly
+    # kuličky se opláchnou a převedou do olejové emulze
+        - mají kolem sebe všechny potřebné proteiny, ale jsou separovány od ostatních kuliček s DNA
+    # kuličky se dají do mikroreaktorů (prohlubně v desce), kde probíhá běžné pyrosekvenování
+        - navrch se přisypou kuličky s enzymovými komplexy nutnými pro pyrosekvenování
+        - celé reaktory se proplachují všemi čtyřmi dNTP
+        - měří se luminiscence
+}
+
+Jediný hlavní rozdíl oproti pyrosekvenování je v tom, že P454 probíhá paralelně na mnoha fragmentech DNA najednou, je tedy rychlejší.
+
+◊ls[#:t "Využití"]{
+    - sekvenace celých genomů
+    - sekvenace celých bakteriálních společenství
+    - detekce mutací ve směsi alel
+    - single nucleotide polymophism (SNP)
+    - sekvenace transkriptomu
+    - objev nový genů
+}
 
 ◊subsection{Sekvenace nanopóry}
+
+Nová metoda, stále se vylepšuje. Je rychlá, ale má vysokou chybovost (10%) --- hodí se k doplnění ostatních metod.
+
 ◊slide[63 #:s 8]
-SEKVENACE NANOPÓRY
-- bakteriální toxiny, dělají díry do membrán ,procházejí jimi ionty
-    - ale prochází jimi i DNA
-- využití nanopórů + brzdění DNA na začátku póru (jinak by byla moc ryhlá)
-- měříme čtveřice nukleotidů v nejužším místě póru podle měnícího se produ
-- nezávisí na délce DNA
-- můžeme do díry nechat projít oba strandy DNA, tj. osekvenujeme komplementární vlákno ve druhém směru
-- chybovost je kolem 10%
-- vytvoření fosfolipidové dvojvrstvy v nádobce
-    - dobře izoluje el. proud
-    - využití pro pozorování bakteriálních toxinů
-- pomocí nanopórů lze provádět "hmotností spektrometrii" roztoku
-    - pikoamperové proudy na membráně
+◊ls[#:t "Postup"]{
+    # máme dvě komůrky oddělené přepážkou, ve které je díra zakrytá fosfolipidovou dvojvrstvou
+    # v této membráně vytvoříme pór, například bakteriálním toxinem, který umožní molekulům přecházet z jedné strany membrány na druhou
+    # do každé komůrky vložíme jenu elektrodu
+    # záporně nabité DNA putuje ke kladnému pólu přes pór v membráně
+    # vlákno DNA pór ucpává a my jsme tím páde mschopni měřit výkyvy proudo, protože přes ucpaný pór nemohou procházet ionty
+        - z výkyvů jsme schopni přečíst čtyři po sobě jdoucí nukleotidy
+        - pomocí nanopórů lze provádět i "hmotností spektrometrii" roztoku
+}
+
+V případě nutnosti můžeme DNA u "vchodu" do póru zpomalit nějakým proteinem, který váže DNA. Také je možné nechat projít pórem hned po prvním strandu i druhý strand, což nám dovoluje zkontrolovat chyby.
 
 ◊subsection{Další metody}
-Illumina - Solexa
-# fiaxce ssDNA  + primer na sklíčko
-# aplifikace PCR -> vznik DNA kolonie
-# terminace řetěczce fluorescenčním analogem dNTP
-# detekce kamerou
-# odštěpení sondy, další dNTP
 
-Ion semiconductor sequencing
-při inkorporaci se uvolňuje kromě PPi i proton
-- DNA přímo na křemíkovém čipu, který je ciltivý na protony (pH)
-- levná detekce, bez optických prvků
-- jen krátké fragmenty
+◊ls[#:t "Illumina - Solexa"]{
+    - fixování ssDNA a primeru na sklíčko
+    - PCR, z fixované DNA vznikne ◊em{DNA kolonie}
+    - řetězec terminujeme fluorescenčním analogem dNTP (jako u Sangerovy metody)
+    - terminátory rozpoznáváme kamerou
+    - dNTP sonda lze po oskenování odštěpit, navázán zůstane jen obyčejný dNTP -> můžeme dál pokračovat v syntéze
+}
 
-VŠEHOCHUŤ
+◊ls[#:t "Ion semiconductor sequencing"]{
+    - při inkorporaci se uvolňuje kromě PPi i proton
+    - DNA leží přímo na křemíkovém čipu, který je citlivý na protony (tj. citlivý na malé změny pH)
+    - levná detekce, bez optických prvků
+    - možno sekvenovat jen krátké fragmenty
+}
+
+◊title{Nezařazené poznámky}
 - hyperchronní efekt - ssDNA absorbuje více než dsDNA
-
 [MOODLE] SSB někdy váže DNA přes stacking interakce na Tyr nebo Trp
