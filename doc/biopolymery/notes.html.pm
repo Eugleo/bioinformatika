@@ -1,8 +1,324 @@
 #lang pollen
-
 ◊define-meta[title]{Struktura a vlastnosti informačních biopolymerů}
 ◊define-meta[header]{zápisy}
 ◊(define-meta toc #t)
+
+
+◊title{Stavba hmoty}
+
+◊meta{Tato a následující sekce jsou zkratkovité, protože se v testech příliš nevyskytují. Slouží hlavně k obecnému přehledu a shnrují povětšinou už známé věci.}
+
+◊ls{
+    - hmota se dělí na pole a látky, ale všechny formy látky mají dualistický charakter
+    - látky se skládají z atomů, které mají obal a jádro
+        - proton: ◊${1,673 \cdot 10^{-27} \text{kg}}, náboj ◊${+e}
+            - ◊${e = -1,602 \cdot 10^{-19} \text{C}}
+        - elektron: ◊${9,109 \cdot 10^{-31} \text{kg}}, náboj ◊${-e}
+        - ◊${1,675 \cdot 10^{-27} \text{kg}}, o trochu těžší než proton
+}
+
+◊meta{Ve fotochemii přednášel Einstein. Cool.}
+
+◊ls[#:t "Fotoelektrický jev"]{
+    - po dopadu fotonu na destičku se uvolní elektron
+    - k uvolnění dojde jen pokud má foton dostatečně velký náboj
+    - poměr elektronů a fotonů je 1:1
+    - světlo má korpuskulární charakter
+        - dvojštěerbinový pokus => světlo má vlnový charakter (důkaz interferencí)
+}
+
+◊ls[#:t "Základní vlastnosti atomu"]{
+    - nukleony se přitahují velkou silou s krátkým dosahem
+    - neutrony kompenzují extrémní kladný náboj, proto jich je vždy stejně nebo více než protonů
+    - chemické vlastnosti udává konfigurace elektronů, hlavně těch valenčních
+    - jádra se shodnými čísly Z i čísly N jsou ◊strong{nuklidy}
+    - nuklidy se stejným Z a různým A jsou ◊strong{izotopy}
+        - izotopy mají stejné chemické vlastnosti a liší se rychlostí reakce
+        - používají se někdy u značení
+}
+
+◊ls[#:t "Radioaktivita"]{
+    - jaderná přeměna
+        - při rozpadu jádra se uvolňuje záření (rychle letící částice)
+    - ◊${\alpha}: ryhle létající jádra ◊chem{^4_2He}, proniká vzduchem až několik cm, silně ionizující
+    - ◊${\beta}: proud elektronů nebo pozitronů, je 100x pronikavětší než ◊${\alpha}
+    ◊$${\ce{p -> n + e+ \\ n -> p + e}}
+    - ◊${\gamma}: nejpronikavější (proletí několika metry betonu)
+    - měří se mlžnou komorou
+        - páry, které kondezují, pokud jimi něco proletí
+}
+
+U radioaktivity je důležitý i rozpadový zákon, který nám říká, kolik atomů radioaktivní látky budeme mít za určitou dobu.
+◊$${N = N_0 \cdot e^{-\lambda t},}
+kde ◊${\lambda} je přeměnová konstanta. Tu můžeme spočítat například pokud známe poločas rozpadu naší látky, protože
+◊$${\tau = \frac{\log 2}{\lambda}.}
+Zavádí se i veličina ◊strong{aktivita} [Bq], která udává počet radioaktivních přeměn za sekundu.
+
+◊ls[#:t "Bohrův model atomu"]{
+    - elektrony se pohybují po stacionárních drahách (hladinách) s určitým poloměrem, neztrácejí při pohybu energii
+    - elektron může přecházet z jedné do druhé hladiny, když pohltí/vyzáří určité ◊em{kvantum energie}
+    - můžeme pozorovat ◊strong{emisní spektrum} atomu
+        - úzké čáry, které udávají hodnotu vyzářeného záření
+        - jejich hodnoty odpovídají rozdílům mezi jednotlivými hladinami
+    - model má několik nedostatků, funguje jen pro malé atomy
+        - neumožňuje vypočítat relativní intenzitu spektrálních čar
+        - nefunguje pro atom v magnetickém a elektrickém poli
+        - nevysvětluje chemickou vazbu
+}
+
+◊section{Kvantově-mechanický model atomu}
+
+V tomto modelu je projevu korpuskulárně-vlnový dualismus elektronů. Aplikuje se Heisenbergův princip neurčitosti --- nemůžeme současně detekovat hybnost i polohu částic. Proto se k popisu částic používají probabilistické metody.
+
+◊subsection{Schrödingerova rovnice}
+
+Rovnice, která popisuje částice pomocí vlnové funkce ◊${\psi}. ◊${|\psi|^2} pak udává pravděpodobnost toho, kde se daná částice nachází. Velikost atomu nemůžeme přesně určit, většinou se spokojíme s prostorem, kde se elektrony vyskytují s 99% pravděpodobností.
+
+◊${\psi} vyjde jako řešení Schrödingerovy rovnice, těchto řešení je nekonečně mnoho. Liší se například i tím, jakou energii daná částice má. Řešení popisujeme třemi čísly, která se nazývají ◊strong{kvantová}.
+◊ls{
+    - ◊${n}, hlavní kvatnové číslo, odpovídá energii částice
+        -   ◊${E = -B/n^2}, kde ◊${B = 13,6 \text{eV}}
+        - ◊${n = 1}, atom je v základním stavu, ◊${n > 1}, atom je v excitovaém stavu
+    - ◊${l}, vedlejší kvantové číslo, udává moment hybnosti elektronu
+        - 0 --◊${n-1}
+        - udává tvar orbitalu (prostoru), ve kterém se elektron nachází
+    - ◊${m}, magnetické kvantové číslo, udává prostorovou orientaci orbitalu
+        - ◊${-(n - 1)}--◊${n-1}
+}
+
+◊todo{Přidat tvary orbitalů + trik na to, jak se je naučit. Zmínit i fázi. falstad.com/qmatom. Přidat obrázek z wiki: atomic_orbital. Přidat tabulku orbitalů}
+
+◊meta{Rozpoznávání kvantových čísel z obrázku orbitalu je v testu.}
+
+◊ls[#:t "Kvantová čísla pro složitější atomy"]{
+    - vlnová funkce se konstruuje pomocí jednotlivých orbitalů
+    - elektrony se vzájemně odpuzují
+    - eketrony se steným ◊${n} tovří ◊em{slupku}, se stejným ◊${n} a ◊${l} tvoří ◊${podslupku}
+        - elektrony na stejných podslupkách mají stejnou energii
+}
+
+◊ls[#:t "Obsazování orbitalů"]{
+    - obsazování podle výstavbového principu
+        - nejprve jsou obsazovány orbitaly s nejnižší energií (tj. nejnižším součtem ◊${n} a ◊${l})
+    - Pauliho princip
+        - v každém orbitalu jsou nejvýšedva elektrony, a ty se liší svým spinovým číslem
+    - Hundovo pravidlo
+        - orbitaly se stejnou energií (tzv. degenerované) se obsazují nejprve po jednom elekronu, všechny mají zezačátku stejný spin
+}
+
+◊section{Periodická soustava prvků}
+
+◊ls{
+    - rozdělení podle protonového čísla, tedy podle počtu elektronů atedy podle chemických vlastností
+    - dělení prvků podle toho, jaké valenční orbitaly se zaplňují jako poslední: s-prvky, p-prvky (i d-prvky a f-prvky)
+    - nejstabilnější stav orbitalů je u vzácných plynů, tzv. ◊em{oktetové pravidlo}
+    - prvky pod sebou mají podobné vlastnosti
+    - se Z se mění určité veličiny
+        - roste atomový poloměr
+            - v rámci periody je nejvyšší pro alkalické kovy
+            - paradox: s obsazováním už zčásti obsazeného orbitalu se atomový poloměr změnšuje
+        - klesá ionizační energie, tedy energie kterou musíme dodat, abychom odštěpili elektron
+            - v rámci periody je nejvyšší pro vzácné plyny
+        - elektronová afinita, tedy energie která se uvolní, když atom přijme elektron
+}
+
+◊section{Molekuly}
+
+◊definitions{
+    ◊term["molekula"]{
+        Stálé seskupení atomových jader obklopených elektrony; tvoří samostatnou částici. Vazby mezi jednotlivými atomy se dají zrušit jen chemickou reakcí. Elektronová struktura vázaných atomů se liší od elektronové struktury volných atomů.
+
+        Molekuly dělíme na homonukleární a heteronukleární.
+    }
+}
+
+◊subsection{Chemická vazba}
+
+◊definitions{
+    ◊term["disociační energie"]{
+        Energie, která se uvolní při přerušení chemické vazby. Je stejně velká jako vazbená energie, která vyjadřuje, jaký je pokles energie oproti stavu, kdy dva atomy vázány nejsou.
+    }
+}
+
+◊ls{
+    - při vzniku dochází k takovému přeskupení elektronů reagujících atomů, které vede ke snížení celkové energie soustavy
+    -  energie, která se uvolní při rozpadu vazby, se nazývá ◊em{disociační}
+    - vaznost atomu
+        - C má vaznost čtyři
+        - N, P tři
+        - O, S dva
+        - H jedna
+    - elektrony, které ve valenční vrstvě chybí jednomu atomu, mu mohou být "doplněny" druhým atomem
+}
+
+◊ls[#:t "Délky vazeb"]{
+    - nejkratší vazba je v ◊chem{H2}, 74,1pm
+    - ◊chem{C-C} 150pm, ◊chem{C = C} 130pm, ◊chem{C # C} 120pm
+    - ◊chem{C-N} 132pm
+    - ◊chem{C - H} 109pm
+    - vazba ale nemá konstantní délku, má pouze jednu preferovanou délku, kolem které "kmitá"
+}
+
+◊ls[#:t "Kovalentní vazba"]{
+    - vzájemné sdílení dvou elektronů dvěma atomy
+    - dochází k překryvu elektronových hustot, elektrony se nacházejí v ◊strong{molekulových orbitalech}, nejsme schopni určit, které elektron patří kterému atomu
+    - může být polární a nepolární, podle toho, jaký je rozdíl mezi elektronegativitami zúčastněných atomů
+    - molekula vzniklá z různých atomů má nenulový dipólový moment (je trochu polární, protože jeden z atomů si přitáhne sdílený elektronový pár blíže k sobě)
+}
+
+◊ls[#:t "Koordinační vazba"]{
+    - jeden atom (donor) poskytuje celý elektronový pár druhému (akceptoru), který musí mít volný valenční orbital
+    - vazba má parametry shodné s kovalentní vazbou, liší se jen vznikem
+}
+
+◊ls[#:t "Iontová vazba"]{
+    - atomy jsou drženy elektrostatickými silami
+    - iontové sloučeniny ve vodě disociují na anionty a kationty, obalené molekulami vody
+}
+
+◊ls[#:t "Molekulové orbitaly"]{
+    - kombinace atomových orbitalů, výsledkem jsou dvě různé vlnové funkce
+    - opět odpovídají rozložením elektronovým hustot kolem molekuly
+    - záleží na tom, jestli jsou jednotlivé atomové orbitaly ve fázi, nebo jestli se jejich fáze liší
+        - rozlišení vazebných a antivazebných orbitalů
+        - jestli vazba vznikne nebo ne záleží na tom, jestli je více elektronů ve vazbených nebo antivazebných orbitalů
+}
+
+◊subsection{Hybridizace orbitalů}
+
+Kombinování AO, vhodné pro popis vazeb a prostorového uspořádání. Například u C se skombinují (po excitaci) ◊${2s} a ◊${2p} orbitaly do tzv. ◊${sp^3} hybridizace.
+
+Protože ◊${s} má nějakou danou fázi, původně symetrický ◊${p} který je s ◊${s} nyní skombinovaný, bude najednou asymetrický; strana se stejnou fázi jako původní ◊${s} bude v ◊${sp^3} větší.
+Proto tvoří C pravidelný čtyřboký jehlan s úhly 109.5◊|deg| mezi C a H.
+
+Uhlík může mít i hybridizaci ◊${sp^2} (které se neučastní všechny tři ◊${2p} orbitaly, ale pouze dva z nich). Například v ethenu, kde vzniká dvojná vazba, jeden uhlík je v ◊${sp^2} a druhý z ◊${p}. ◊${\sigma} vazba vzniká v ◊${sp} orbitalech, ◊${\pi} vazba vzniká na původních ◊${2p} orbitalech. Podobně existuje i ◊${sp} hybridizace, která se vyskytuje při vzniku trojné vazby.
+
+◊ls[#:t "Molekuly složitějších molekul"]{
+    - molekuly cyklické, s jednoduchými vazbami (např. cukry)
+        - trans (židlička) a cis (vanička) konfigurace
+    - aromatiké sloučeniny (benzenové jádro, mají ◊${4n + 2} ◊|pi| elektronů)
+        - planární, ◊|pi| elektrony jsou delokalizované a všude jsou valstně částečně dvojné vazby, kolem kterých nejde rotovat
+        - tendence reagovat přes stacking interactions, tak, aby si mraky delokalizovaných ◊|pi| elektronů nepřekážely
+}
+
+◊title{Stavba proteinů}
+
+Proteiny se skládají z aminokyselin (AK), pro více informací o struktuře proteinů a jednotlivých AK viz ◊link["/doc/zaklady-bioinformatiky/notes.html#Struktura nukleových kyselin"]{struktura NA} a ◊link["/doc/zaklady-bioinformatiky/notes.html#Struktura proteinů"]{struktura proteinů} v zápiscích ze základů bioinformatiky.
+
+◊ls[#:t "Stabilizace určité konformace"]{
+    - struktura samozřejmě závisí na sekvenci atp., ale určitá konformace je "pohromadě" držena slabými vazbami
+        - jsou slabé, ale působí jich hodně najednou
+        - mají krátký dosah, závisí na teplotě
+    - Van der Waalsovy interakce mezi dipóly
+    - vodíkové můstky
+        - délka asi 3◊|angs|, 2 + 1
+    - stacking interakce
+    - hydrofobní interakce (nepolární AK jdou do jádra proteinu)
+        - molekula není s vodou schopna tvořit vodíkové vazby
+        - když se takové molekuly nahromadí, umožní vodě vytvořit vodíkové můstky samotné uvnitř sebe, což je energeticky výhodné
+    - interakce s vodou v roztocích
+    - iontové interakce s ionty v roztocích, i uvnitř molekul
+}
+
+Je velice složité počítat se všemi těmito vazbami, když se například snažíme konkrétní protein namodelovat. Práci nám stěžuje i to, že kolem jednoduchých vazeb je možná rotace a vibrace (měnění délky vazby), takže proteiny jsou v čase dynamické.
+
+◊definitions{
+    ◊term["rotamery"]{
+        Dvě AK, které mají stejné chemické složení, ale ve smém R-řetězci se liší rotací v nějaké z jednoduchých vazeb. Pokud je rozdíl v úhlech veliký, můžu se liši vlastnosti obou AK.
+    }
+}
+
+◊section{Aminokyseliny}
+
+◊meta{Je nutné umět zkratky, vzorce i základní vlastnosti a rozdělení všech AK.}
+
+◊ls{
+    - amfoterní charakter (◊chem{NH2} a ◊chem{COOH} si navzájem předají vodík), vzniká ◊em{amfion}, někdy také ◊em{zwitterion}
+    - dělí se na nepolární, polární a nabité polární
+}
+
+◊img["ak.jpeg"]{Seznam aminokyselin a jejich rozdělení}
+
+◊ls{
+    - dva cysteiny spolu tvoří sulfidický můstek
+    - všechny proteiny (alespoň hned po translaci) začínají na Met, u bakterií je to N-formylmethionin
+    - AK mo­hou být mod­i­fikovány (oligosacharidy, sul­fa­ti­zace, es­ter­i­fikace, fos­fory­lace, ami­dace, atd.)
+    - průměrná hmot­nost AA je 110g/mol
+    - existuje i několik vzácných AK
+        - selenocystein, pyrrolysin, N-formylmethionin
+        - jsou kódovány STOP kodony
+}
+
+◊subsection{Disociace AK}
+
+Měříme poměr koncentrací nedisociovaných a disociovaných kyselin.
+◊$${\ce{HA <=> A^- + H^+} \\ K_a = \frac{[H^+][A^-]}{[HA]},}
+kde ◊${K_a} je takzvaná ◊em{disociační konstanta}. Pokud přidáme nějakou kyselinu do vody, pH se časem ustálí na ◊${\text{pK}_a} kyseliny.
+
+◊slide[23 26 #:s 1]
+Definujeme také ◊em{izoelektrický bod} AK, což je bod, kdy kyselina nemá žádný náboj. Počítá se jako průměr jednotlivých ◊${\text{pK}_a} všech možných forem AK, podle toho, který z vodíků je odštěpený. Pro vodík v ◊chem{COOH} je ◊${\text{pK}_a \approx 2}, pro ten v ◊chem{NH3} ◊${\text{pK}_a \approx 10}.
+
+◊subsection{Další vlastnosti AK}
+
+◊slide[32 #:s 1]
+◊strong{Hydrofobicita} udává, jako moc je protein hydrofobní; značí se ◊${R}, a má kladné hodnoty pro hydrofobní proteiny.
+
+◊slide[33 #:s 1]
+◊ls[#:t "Chiralita"]{
+    - z uhlíku vychází čtyři různé substituenty
+    - u AK je jím ◊chem{C\alpha}
+    - rozlišení optických L a D izomerů
+        - L-izomer: pokud H míří k nám, COOH nahoru, potom po směru hodinových ručiček: ◊strong{CO-R-N}
+        - optické izomery pootáčejí rovinu polarizovaného světla
+        - L/D izomery nestáčí tuto rovinu nutně vždy na stejnou stranu
+    - většina přírodních AK jsou L-izomery (vyjímky například buněčné stěny bakterií)
+    - může se stát, že máme více chirálních uhlíků, poté existuje ◊${2^k} forem molekuly
+}
+
+◊section{Peptidová vazba}
+
+◊slide[44 45 #:s 1]
+Vazba mezi dvěma AK, které se účasntní původní ◊chem{COOH} a ◊chem{NH2} skupiny.
+
+◊slide[46 #:s 1]
+Vazba je planární, protože dvojná vazba ◊chem{C=O} někdy přejde na vazbu ◊chem{C-N} (tzv. ◊em{mezomernie}). Rotace je tedy možná pouze v "rozích" vazby, kolem vazeb vycházejících z ◊chem{C\alpha}.
+
+◊slide[50 51 52 #:s 1]
+◊ls[#:t "Torzní úhly"]{
+    - rotace kolem ◊chem{C\alpha} jsou možné, ale kyslík a vodík si při určitých hodnotách rotace překážejí
+    - jsou povolené dvě konformace: ◊strong{cis} a ◊strong{trans}
+        - zpravidla u všech proteinů se vyskytuje konformace trans
+        - cis konformace jen výjimenčně u prolinu
+    - torzní úhly: ◊${\varphi} značí úhel ◊${C-N}, ◊${\psi} značí úhel ◊${C-C}
+        - povolené hodnoty těchto úhlů můžeme zanést do tzv. ◊em{Ramachandranova grafu}
+        - v Ramachandranově grafu nejprve vypíšeme oblasti pravděpodobných hodnot, teoreticky možných hodnot a nepravděpodobných hodnot, poté srovnáma naměřená data s těmito zónami
+        - určité oblasti odpovídají určitým sekundárním strukturů, viz slide ◊slide[53 #:s 1 #:inline #t]
+}
+
+◊section{Sekundární struktury}
+
+◊slide[57 #:s 1]
+◊ls[#:t "Helikální"]{
+    - ◊alfa helix
+        - pravotočivá šroubovice
+        - stabilizován vodíkovými můstky mezi vodíkem aminoskupiny a kyslíkem karbonylu
+        - vzálenost vodíkových můstků je 4AK
+        - 3,6 AK na otáčku
+        - upostřed není dutina
+        - postranní řetězce vždy směřují ven
+    - ◊${3_{10}} helix
+        - interakce mezi první a třetí AK
+        - vzácnejší, vyskytuje se na okrajích sekundárních struktur
+    - ◊pi helix
+        - interakce mezi první a pátou AK
+        - vzácnejší, vyskytuje se na okrajích sekundárních struktur
+}
+
+◊slide[56 #:s 1]
+◊ls[#:t "Beta struktury"]{
+    - interaguje opět vodík na aminoskupině s karbonylem, ale mohou být v rámci řetězce i daleko od sebe
+    - paralelní a antiparalelní (ten je stabilnější)
+}
 
 ◊title{Struktura DNA}
 
