@@ -6,7 +6,7 @@
 
 ◊title{Stavba hmoty}
 
-◊meta{Tato a následující sekce jsou zkratkovité, protože se v testech příliš nevyskytují. Slouží hlavně k obecnému přehledu a shnrují povětšinou už známé věci.}
+◊meta{Tato a následující sekce jsou zkratkovité, protože se v testech příliš nevyskytují. Slouží hlavně k obecnému přehledu a shrnují povětšinou už známé věci.}
 
 ◊ls{
     - hmota se dělí na pole a látky, ale všechny formy látky mají dualistický charakter
