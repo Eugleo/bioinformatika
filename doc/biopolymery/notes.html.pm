@@ -86,7 +86,7 @@ Rovnice, která popisuje částice pomocí vlnové funkce ◊${\psi}. ◊${|\psi
         - ◊${-(n - 1)}--◊${n-1}
 }
 
-◊todo{Přidat tvary orbitalů + trik na to, jak se je naučit. Zmínit i fázi. falstad.com/qmatom. Přidat obrázek z wiki: atomic_orbital. Přidat tabulku orbitalů}
+◊todo{Přidat tvary orbitalů + trik na to, jak se je naučit. Zmínit i fázi.  Nalinkovat falstad.com/qmatom. Přidat obrázek z wiki: atomic_orbital. Přidat tabulku orbitalů.}
 
 ◊meta{Rozpoznávání kvantových čísel z obrázku orbitalu je v testu.}
 
@@ -466,13 +466,168 @@ Schéma fluorometru: na fluoreskující vzorek svítíme monochromatickým paprs
 }
 
 ◊slide[64 #:s 2]
-Z emisních spekter můžeme poznat, v jakém prostředí se daná AK nachází, nebo jestli je uvnitř či na povrchu proteinu. Posun k červené oblasti (ale stále v rámci UV) ukazuje na přítomnost ◊chem{H20}.
+Z emisních spekter Trp můžeme poznat, v jakém prostředí (solventu) se nachází a jestli je uvnitř či na povrchu proteinu. Posun k červené oblasti (ale stále v rámci UV) ukazuje na přítomnost ◊chem{H20}.
 
-◊title{Struktura DNA}
+◊title{Struktura nukleových kyselin}
 
-◊todo{Doplnit informace o endo a exo konfiguracích, syn a antiklinální, levo a pravotočivé, Hoogsteenovo párování atd.}
+DNA a RNA se skládají z bazické, cukerné a fosfátové části. Páteř tvoří cukr (ribóza, deoxyribóza), který se střídá se zbytky kyseliny ◊chem{H3PO4}.
 
-◊todo{Syn a anti konfigurace jsou na proteopedii. Jsou tam i další fajn věci.}
+◊section{Stavební jednotky}
+
+◊slide[2 #:s 3]
+◊ls[#:t "Kyselina trihydrogen fosforečná"]{
+    - každý z vodíků může být disociován
+    - ◊chem{H3PO4} někdy tvoří dimer, ◊em{pyrofosfát} ◊slide[3 #:s 3 #:inline #t]
+        - spojené makroergní vazbou (při rozštěpení se uvolní velké množtsví energie)
+        - makroergní proto, že jsou k sobě blízko kyslíky (vzniká mechanické pnutí)
+    - trifosforečná kyselina bývá vázána v nukleotidech
+}
+
+
+Základním cukrem je ribóza a deoxyribóza. Základní strukturní vlastnosti cukrů jsou však předvedeny na glukóze.
+
+◊todo{Doplnit, jak vypadá D-glukosa v cyklické formě.}
+
+◊slide[5 6 #:s 3]
+◊ls[#:t "Glukóza"]{
+    - pojmenování podle polohy OH skupiny na chirálním uhlíku, který je nejvzdálenější od aldehydické skupiny
+        - v lineárním Fisherově zakreslení: OH vpravo -> D-forma, OH vlevo -> L-forma
+    - pokud dojde k vytvoření cukerného heterocyklu, můžeme rozlišit dvě formy podle polohy OH na ◊chem{C1}
+        - ◊alpha, OH míří dolů
+        - ◊beta, OH míří nahoru
+}
+
+◊slide[8 9 #:s 3]
+◊ls[#:t "Ribóza"]{
+    - v NA cyklizuje do pětičetného cyklu (ribofuranóza), může ale tvořit i šestičetný cyklus (ribopyranóza)
+    - uhlíky se v rámci NA značí s čarou
+        - fosfát je v NA vázaný na ◊chem{C3'} a ◊chem{C5'}
+        - na ◊chem{C1'} je přes N-glykosidickou vazbu navázána dusíkatá báze
+        - na ◊chem{C2'} je OH skupina (RNA), případně tam není (DNA)
+    - celkově je tedy v NA (případně deoxy verze)
+    - cyklus ◊strong{není planární} ◊slide[10 #:s 3 #:inline #t]
+        - pokud ◊chem{C2'} míří na stejnou stranu jako ◊chem{C5'}, je NA takzvaně ◊em{endo} (případně C2 endo)
+        -pokud míří ◊chem{C2'} na opačnou stranu, je NA ◊em{exo} (případně C2 exo)
+}
+
+◊slide[12 #:s 3]
+V NA tedy nacházíme ◊strong{◊|beta|-D-ribofuranózu}, a to buďto endo nebo exo formu. Samozřejmě v DNA je deoxy- varianta tohoto cuktu, viz slide. OH skupina má vliv na reaktivitu, DNA je proto mnohem stabilnější než RNA.
+
+Cukr s fosfátem (navázaným přes fosfodiesterovou vazbu) tvoří tzv. ◊em{cukrfosfátovou kostru} NA.
+
+◊img["slides-3/slide-13.jpg"]{Dusíkaté báze nukleových kyselin}
+
+◊ls[#:t "Dusíkaté báze"]{
+    - puriny jsou na ◊chem{C1'} v cukru vázány dusíkem ◊chem{N9}, pyrimidiny dusíkem ◊chem{N1}
+        - puriny jsou vlastně kondenzáty pyrimidinu a imidazolu
+    - Watson-Crickovo párování: párování GC, AT, na základě vodíkových můstků ◊slide[13 #:s 3 #:inline #t]
+    - v DNA je nahrazen thymin uracilem (který se liší jen jednou metylovou skupinou)
+    - kromě těchto základních se vyskytují v DNA i další, minoritní, báze: methylované báze a hydroxymethylované báze, uracil
+    - uracil má někdy tvar pseudouridinu, dihydrouridinu atp. ◊slide[37 #:s 3 #:inline #t]
+    - jeden pár bazí má asi 660g/mol, neboli 660Da
+}
+
+◊ls[#:t "Párování bazí"]{
+    - keto skupina je vždy akceptor
+    - amino skupina vždy donor
+    - sekundární amin, imin: mohou fungovat jako akceptor
+}
+
+◊section{Struktura}
+
+◊slide[16 #:s 3]
+◊ls{
+    - vlákna v DNA jsou antiparalelní, jedno je ve směru 3'->5' a druhé 5'->3'
+    - zaujímají strukturu dihelixu (Watson, Crick)
+        - difrakční obrazec spirály má tvar X
+}
+
+◊img["slides-3/slide-21.jpg"]{Nukleosid, nukleotid}
+
+Názvolsoví nukleotidů a nukleosidů je trochu zmaneté:
+◊ls{
+    - adenin - adenosin
+    - cytosin - cytidin
+    - guanin - guanosin
+    - thymin - thymidin
+    - uracil - uridin
+}
+
+◊ls[#:t "Synklinální a antiklinální forma"]{
+    - rozdělení forem podle toho, na jakou stranu je rotovaná báze
+    - rozlišuje se pouze u purinů
+    - pokud purin míří k cukrfosfátové kostře, jedná se o formu ◊em{synklinální}, v opačném případě se jedná o formu ◊em{antiklinální}
+    - antiklinální forma je výhodnější, a tedy častější
+        - jedinou výjimkou je ◊link["#Konformace Z"]{Z forma DNA}
+}
+
+◊meta{Syn a anti konfigurace ◊link["http://proteopedia.org/wiki/index.php/Syn_and_anti_nucleosides"]{jsou na proteopedii} s pěknými obrázky. A jsou tam i další fajn věci.}
+
+◊slide[42 #:s 3]
+◊ls[#:t "Keto-enol tautomery"]{
+    - keto skupina
+        - uhlík a kyslík vázané dvojnou vazbou
+        - kyslík má vždy volný elektronový pár, funguje jako akceptor vodíkové vazby
+    - enol skupina je OH
+    - pokud budeme mít OH skupinu v blízkost idvojné vazby, bude spontánně docházet k přeskupení na keto formu
+        - Erlenmeyerovo pravidlo
+}
+
+◊slide[43 44 #:s 3]
+◊ls[#:t "Amid, imid"]{
+    - primární, sekundární, terciální aminy (viz slide výše)
+        - pokud je dusík vázán dvojnou vazbou, jedná se o ◊em{imino} skupinu
+    - pokud je amin v blízkosti keto skupiny, jedná se o amid
+        - podobně existují imidy
+}
+
+◊img["slides-3/slide-47.jpg"]{Tautomery nukleotidů}
+◊img["slides-3/slide-48.jpg"]{Tautomery nukleotidů}
+
+U všech bazí můžeme pozorovat takzvané ◊strong{tautomery}, konkrétně amid+keto nebo imid+enol formy. Přestože jsou amid+keto formy častější, musíme při práci s NA počítat s tím, že semtam mohou mít některé báze velice odlišnou stavbu, totiž imid+enol.
+
+◊slide[56 #:s 3]
+◊ls[#:t "Struktura tRNA"]{
+    - tři báze dole na smyčce nemají s čím párovat, trčí ven ze smyčky
+        - tvoří antikodon, párují s třemi bázemi na mRNA
+        - v jedné z pozic je určitá variabilita, jev ◊em{kolísavé párování} (wobbling) => různými triplety je kódovaná stejná AK
+            - například ve třetí pozici se může nacházet inosin (hypoxantin + ribóza) ◊slide[59 #:s 3 #:inline #t], který může párovat s C, U i G
+            - tRNA je méně než 64, což je počet, který by byl teoreticky nutný k zakódování všech trojic
+    - v horní části vázaná AK
+}
+
+◊subsection{Hoosteenovo párování}
+
+Běžné Watson-Crickovo párování je postavené na tom, že spolu párují pouze AT, CG, a všechny puriny jsou v antiklinální podobě. K párování ale může docházet i když jsou puriny v synklinální podobě (zvláště u adeninu, cytosin by musel mít kladný náboj).
+
+◊img["slides-3/slide-50.jpg"]{Hoogsteenovo párování}
+
+◊slide[51 52 53 #:s 3]
+To znamená, že puriny jsou "na druhé straně" schopny párovat s ještě jednou bazí. Vznikají takzvané ◊em{triády}.
+
+◊slide[54 #:s 3]
+◊ls[#:t "G-kvadruplex"]{
+    - čtyři guaniny v jednom patře
+        - vlákno se dvakrát ohýbá (viz slide)
+    - velice pevná struktura
+    - často v telomerách na koncích chromozomů, aby nebyl degradován endonukleázami
+}
+
+Někdy se do běžného DNA helixu vmezeří třetí strand, který se na jedno z vláken naváže H-párováním. Toto třetí vlákno musí mít tzv. polypurinovou část, aby tuto vazbu mohlo vytvořit. Podobně se může mezi vlákna DNA vmezeřit i vlákno RNA.
+
+◊section{Reaktivita bazí}
+
+◊slide[63 #:s 3]
+◊ls{
+    - reakce jsou stejné jako u jiných heterocyklických sloučenin
+    - výjimka: pyrimidiny někdy reagují s podobnou molekulou
+        - u pyrimidinů je ◊chem{C5=C6} podobná izolované dvojné vazbě
+        - naříklad ◊strong{thyminový dimer} (viz slide)
+        - při působení UV záření
+    - výjimka: alkylace purinů na ◊chem{N7} destabilizuje glykosidickou vazbu a vede k depurinaci
+}
+
+Většinu bazí můžeme brát jako aromatické molekuly. Součástí interakce bazí jsou tedy i stacking interakce napříč patry.
 
 ◊title{Polymorfismus DNA}
 
@@ -511,12 +666,12 @@ Jedna molekula DNA bude mít v různých prostředích různou konformaci. Konfo
         - poly-A úseky, poly-AT úseky, atp., mají roznídlné vlastnosti
 }
 
-◊todo{Přepsat tabulku srovnání místo obrázku slidu. + Jeden pár bazí má asi 660g/mol = 660Da + Hoogsteen a G-kvadruplex?
-◊slide[38 #:s 4]
-Někdy se váží tři strandy DNA, dvě běžně v B konformaci, třetí CTCT (polypurinová část) úsek pomocí hoogstedova párování (<- H-DNA), puriny synklinální. Podobně se může vmezeřit i RNA.
-}
+◊todo{Přepsat tabulku srovnání místo obrázku slidu.}
 
 ◊slide[20 22 24 #:s 4] Existují tři hlavní rodiny konformací: ◊strong{A}, ◊strong{B} a ◊strong{Z}.
+
+
+◊slide[38 #:s 4]
 
 ◊subsection{Konformace B}
 
@@ -645,9 +800,9 @@ K ohybům dochází v DNA hlavně na základě sekvenčního polymorfismu a na h
         - G+U, U+U a podobně
             - někdy stabilizováno přes molekulu vody
         - G někdy tvoří vodíkový můstek s ribozou
-    - uracyl a cytosin na špičce s ničím nepárují
+    - uracil a cytosin na špičce s ničím nepárují
         - cytosin stacking interaguje s párem pod sebou
-        - uracyl ční do prostoru (nejspíš málo konzervovaná pozice)
+        - uracil ční do prostoru (nejspíš málo konzervovaná pozice)
     - na špičce vlásenky často UUCG a podobné
 }
 
@@ -851,9 +1006,7 @@ Enzymy ovlivňující topologii DNA.
 
 ◊i{ELFO se dělá jak pro DNA, tak pro RNA. V tomto textu se soustředíme sice pouze na popis DNA ELFO, ale pro RNA bude vše fungovat velice podobně.}
 
-◊todo{Nalinkovat na ELFO proteinů.}
-
-Funkce podobná ELFO preoteinů, s tím rozdílem, že NA se dají rozdělit nejden podle velikosti (hmotnosti), ale také podle topologie. ◊slide[20 21 #:s 5 #:inline #t]
+Funkce podobná ◊link["#Gelová elektroforéza"]{ELFO preoteinů}, s tím rozdílem, že NA se dají rozdělit nejden podle velikosti (hmotnosti), ale také podle topologie. ◊slide[20 21 #:s 5 #:inline #t]
 
 ◊section{Princip funkce pro DNA}
 
@@ -1276,7 +1429,7 @@ Většina sekvenačních postupů se liší už v provedení bodu 1: jak získat
     Jak správně číst sekvence DNA?
     ◊ls{
         - 3' -> 5' je ◊strong{antisense} vlákno, slouží jako templát pro traskripci
-        - 5' -> 3' je ◊strong{sense} vlákno, nebo také ◊strong{kódující} -- výsledná mRNA má (až na uracyl) stejnou sekvenci jako toto vlákno
+        - 5' -> 3' je ◊strong{sense} vlákno, nebo také ◊strong{kódující} -- výsledná mRNA má (až na uracil) stejnou sekvenci jako toto vlákno
         - někdy mohou vznikat i antisesne transkripty, které mají regulační funkci
     }
 }
@@ -1437,7 +1590,7 @@ Bakterie mají často své DNA nametylováno, což jim pomáhá rozpoznat virovo
     - nemetyolvané CpG je rozpoznáno TLR (tall like receptors), které detekují infekce
 }
 
-Proč je CpG méně, než bychom čekali? Mohlo by to být z toho důvodu, že methylcytosin se při deaminaci (což je proces, který u DNA může probíhat) mění na thymin, zatímco běžný cytosin se mění na uracyl. Uracyl je totiž v DNA jednoduše detekován a rychle opraven, zatímco thymin vlastně změní informaci, kterou DNA v daném místě nese. (Metylované) CpG je tedy svým způsobem nebezpečné.
+Proč je CpG méně, než bychom čekali? Mohlo by to být z toho důvodu, že methylcytosin se při deaminaci (což je proces, který u DNA může probíhat) mění na thymin, zatímco běžný cytosin se mění na uracil. uracil je totiž v DNA jednoduše detekován a rychle opraven, zatímco thymin vlastně změní informaci, kterou DNA v daném místě nese. (Metylované) CpG je tedy svým způsobem nebezpečné.
 
 ◊ls[#:t "Role pyrosekvenování v detekci CpG"]{
     - pokud se na jednom vlákně nachází CpG, na druhém se (také v 5' -> 3' směru) nachází také CpG, kvůli komplementarity
