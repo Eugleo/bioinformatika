@@ -83,7 +83,6 @@ body {
   color: black;
   font-kerning: normal;
   font-feature-settings: 'kern' 1;
-  text-rendering: 'optimize-legibility';
 }
 
 * {
@@ -116,12 +115,6 @@ body {
 ◊(define (padding-bottom multiple)
   (format "padding-bottom: ~arem;" (* multiple LINE-HEIGHT)))
 
-*:not(mathjax *, span, h1 *, h2 *, h3 *, h4 *, h5, h6 *) {
-  ◊(line-height 1)
-  ◊(margin-top 0)
-  ◊(margin-bottom 1)
-}
-
 h1,
 h2,
 h3,
@@ -152,27 +145,24 @@ h1 {
   border-bottom: 2px solid black;
 }
 
+p {
+  ◊(margin-bottom 1)
+}
+
+body {
+  ◊(line-height 1)
+}
+
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
-ul ul {
-  ◊(margin-bottom 0)
-}
-
-ul ol {
-  ◊(margin-bottom 0)
-}
-
-ol ol {
-  ◊(margin-bottom 0)
-}
-
-ol ul {
+ul ul, ul ol, ol ol, ol ul {
   ◊(margin-bottom 0)
 }
 
 ul, ol {
   padding-left: 30px;
+  ◊(margin-bottom 1)
 }
 
 li {
@@ -206,6 +196,10 @@ ol {
 dt {
   font-family: "IBM Plex Sans";
   font-weight: bold;
+}
+
+dl {
+  ◊(margin-bottom 1)
 }
 
 dl > *:last-child {
@@ -256,12 +250,20 @@ answer {
   ◊(margin-bottom 1)
 }
 
+/* Images
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+img {
+  ◊(margin-bottom 1)
+}
+
 /* Boxes
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
 box {
   display: block;
   border-top-right-radius: 1.5rem;
+  ◊(margin-bottom 1)
 }
 
 box > .body {
