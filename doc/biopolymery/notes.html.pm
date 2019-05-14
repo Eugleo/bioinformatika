@@ -320,9 +320,153 @@ Vazba je planární, protože dvojná vazba ◊chem{C=O} někdy přejde na vazbu
     - paralelní a antiparalelní (ten je stabilnější)
 }
 
-◊section{Spektrofotometrie proteinů}
+◊title{Metody pozorování proteinů}
 
-◊todo{Dokončit.}
+◊section{Spektrofotometrie}
+
+◊slide[27 #:s 2]
+Světlo: viditelné elektromagnetické záření. Pro spektrofotometrii (zde dále SFM) proteinů je vhodnější UV záření.
+
+◊ls[#:t "Lambertův-Beerův zákon"]{
+    - určuje, jakým způsobem prochází světlo vzorkem
+    - vzorek může světlo pohlcovat (na tom naříklad záleží jeho barva), nebo rozptylovat
+        - v obou případech pozorujeme intenzitu světla před a po projití vzorkem
+}
+
+Konkrétní znění zákona se dá vyjádřit vzorcem
+◊align${
+    T &= \frac{I}{I_0} \\
+    A &= -\log T = \varepsilon \cdot l \cdot c,
+}
+kde ◊${I} a ◊${I_0} značí inzentity světla, ◊${T} je ◊strong{transmitance} vzorku, ◊strong{A} je absorbance vzorku a ◊${\varepsilon} je molární extinkční koeficient. Pokud íiž známe absorbanci naší látky, můžeme pomocí tohoto vzorce například spočítat jejich koncentraci.
+
+◊slide[32 #:s 2]
+◊ls[#:t "Absorbce světla molekulou"]{
+    - molekula má v základním stavu
+    - po absorpci fotonu se dostane celá molekula do excitovaného stavu, protože jeden z jejích elektronů přejde do vyššího orbitalu
+    - excitovaná molekula při návratu do základního stavu vyzáří energii
+    - velikost vyzářené energie závisí na růzdílů energií orbitalů, mezi kterými elektron přecházel
+}
+
+◊subsection{Spektrofotometrie v praxi}
+
+SFM je nedestruktivní metoda, což je její velká výhoda.
+
+◊slide[33 #:s 2]
+Proteiny dobře absorbují světlo kolem 225nm (tam absorbuje peptidová vazba) a případně i kolem 260nm, když mají nějaké aromatické AK. Všechny AK absorbují různě moc, takže pokud známe složení proteinu a vidíme absorpční spektrum vzorku, umíme z něj vypočítat koncentraci. ◊${\varepsilon} pro jakýkoli protein o známé sekvenci se totiž dá dopočítat.
+
+Nukleové kyseliny zpravidla absorbují kolem 260nm. U nukleových kyslein se užívá například k posouzení stupně a průběhu denaturace, k posouzení homogenity Pro sekvence DNA a RNA se koncentrace stanovuje trochu jinak,
+◊$${100 \cdot \frac{A_{260}}{K} = c.}
+Pro dsDNA ◊${K = 2}, pro ssDNA ◊${K = 2,5}, pro ssDNA ◊${K = 3}, pro oligo DNA ◊${K = 3,3} -- ◊${K = 5}.
+
+◊section{Cirkulární dichroismus}
+
+◊slide[52 #:s 2]
+◊definitions{
+    ◊term["lineární polarizace světla"]{
+        Udává rovinu kmitání elektrické vlny světla. Běžné světlo není polarizované, i když při odrazu k částečné polarizaci dochází.
+
+        Ke změně polarizace můžeme použít polarizační filtry, které propustí pouze světlo, které kmitá v jedné konkrétní rovině.
+    }
+
+    ◊term["cirkulární polarizace světla"]{
+        Pokud v polarizovaném světle zpozdíme kmitání magnetické složky, například o čtvrt vlny, výsledný světelný vektor, který se součtem vektoru elektrického pole a vektoru magnetického pole, se bude postupně při kmitání otáček.
+
+        Rozlišujeme pravotočivou a levotočivou polarizaci.
+    }
+}
+
+Absorbce cirkulárně polarizovaného světla záleží na chiralitě molekul a na levotočivosti a pravotočivosti světla. ◊strong{Cirkulární sichroismus} je rozdíl mezi absorbancí levotočivě a pravotočivě polarizovanho světla.
+
+Cirkulární dichroismus jednotlivých SS se liší, viz obrázek. Podobně se liší CD pro protein s nějakým foldem a denaturovaný protein. Pokud změříme CD proteinu, můžeme z výsledné spektrální křivky zjistit procentuální podíl jednotlivých SS.
+
+◊img["slides-2/slide-55.jpg"]{Hodnota cirkulárního dichroismu pro různé sekundární struktury}
+
+◊section{Gelová elektroforéza}
+
+Pomocí ELFO můžeme zjistit velikost proteinu, odhalit počet proteinů nebo odhalit kontaminaci vzorku. Nejběžnější forma je ◊strong{SDS-PAGE}, SDS polyakrylamidová gelová elektroforéza.
+
+◊slide[37 45 #:s 2]
+◊ls[#:t "Základní princip ELFO"]{
+    # do gelu dáme do několika řad (line) vzorky (zpravidla nahoru)
+    # na gelu vytvoříme elektrické napětí
+    # všechny vzorky putují na druhou stranu gelu (zpravidla dolů), jejich ryhlost se (ideálně) liší pouze podle jejich velikosti
+    # po vypnuté elektrického proudu máme nedál od startu nejlehčí vzorky, nejblíže jsou vzorky nejtěžší
+}
+
+Musíme zařídit, aby byl gel tak akorát hustý, a aby všechny vzorky opravdu putovaly na stejnou stranu gelu (ke stejné elektrodě). Zároveň by bylo dobré nakonec vzorky nějak obarvit, ať je vůbec vidíme.
+
+Protože nechceme proteiny dělit podle jejich tvaru, ale jen podle velikosti, povaříme je před ELFO v denaturačních činidlech.
+
+◊subsection{Gel}
+
+Polyakrylamidový gel je sice velice náročný na přípravu, má ale výborné rozlišovací schopnosti: například při dělení DNA lze rozpoznat DNA dlouhou 500bp od 501bp.
+
+◊ls{
+    - polykarylamidový gel, nejčastěji 3%--15%
+    - ◊chem{akrylamid + bisakrylamid}
+        - vzniknou zesíťovaná vlákna
+        - aby proběhlaradikálová polymerace, potřebujeme také iniciátor (persíran amonný nebo UV-ozářený riboflavin) a stabilizátor volných radikálů (TEMED)
+        - musí probíhat v anaerobních podmínkách
+    - jeho viskozita zajišťuje, že velikým molekulám je při pohybu kladen větší odpor než malým
+        - tato konkrétní vlasnost záleží na jeho koncentraci, pro různé vzorky se používají různě koncetrované gely
+        - pro srovnání velmi rozdílných vzorků se používají ◊strong{gradientové gely}, jejichž hustota se seshora dolů zvyšuje
+}
+
+Na tento gel se nanáší ještě ◊em{zaostřovací gel}, přechod mezi ním a PAG pak tvoří jakousi "startovací linii", na kteoru se seřadí a vyrovnají porovnávané vzorky.
+
+◊subsection{SDS}
+
+◊slide[46 #:s 2]
+SDS (sodium dodecyl sulfát) se váže na proteiny. Velké proteiny vážou více SDS než malé proteiny. SDS má dvojí význam:
+◊ls{
+    # zabraňuje tomu, aby se proteiny samovolně opět nafoldovaly
+    # má záporný náboj, který "přebije" náboj proteinů a všechny proteiny tím pádem budou putovat ke kladné elektrodě
+        - větší proteiny sice budou taženy větší silou, ale zase budou více brzděny gelem
+}
+
+◊subsection{Barvení}
+
+Proteiny chceme samozřejmě nějak vizualizovat, aby nám ELF ovůbec k něčemu byla.
+
+◊slide[48 49 #:s 2]
+◊ls[#:t "Coomassie Brilliant Blue"]{
+    - nejběžnější barvivo
+    - běžně má hnědooranžovu barvu, ale když se naváže na protein, změní barvu na modrou
+        - váže se několikerým způsobem, vždy ale mění barvu
+        - množství proteinu se dá posoudit podle toho, jak moc modrý je výsledný obarvný roztok
+}
+
+Intenzita proužku vypovídá o tom, jak moc koncetrované jsou v daném místě proteiny. Zároveň ale platí, že malé proteiny se obarvují hůře, takže nebudou tak výrazné.
+
+◊section{Fluorescence}
+
+◊definitions{
+    ◊term["fluorescence"]{
+        Světlo emitované atomem po absorbci elektromagnetického záření. Energie fluorescence pochází z přechodu částice z prvního excitovaného stavu ◊${S_1} do základního elektronového stavu ◊${S_0}. Délka fluorescence je v řádu nanosekund.
+    }
+}
+
+◊ls[#:t "Výhody"]{
+    - citlivost vůči okolí molekuly (teplota, viskozita, polarita, pH atd.)
+    - vhodná doba trvání
+    - citlivost (nM koncentrace analyzováneho vzorku)
+    - možnost provádět pokusy s jednotlivými molekulami (protože snímáme jednotlivé fotony)
+}
+
+Schéma fluorometru: na fluoreskující vzorek svítíme monochromatickým paprskem, měříme emisní spektrum.
+
+◊img["slides-2/slide-61.jpg"]{Schéma fluorometru}
+
+◊slide[62 #:s 2]
+◊ls[#:t "Jabłonského diagram"]{
+    - rozebírá vibrační hladiny zákadního stavu ◊${S_0} a jejich schopnost absorbovat světlo, viz slide
+    - vlnová délka světla musí odpovídat rozdílům energií mezi energetickými slupkami
+    - absorpční a emisní spektra jsou si podobná
+}
+
+◊slide[64 #:s 2]
+Z emisních spekter můžeme poznat, v jakém prostředí se daná AK nachází, nebo jestli je uvnitř či na povrchu proteinu. Posun k červené oblasti (ale stále v rámci UV) ukazuje na přítomnost ◊chem{H20}.
 
 ◊title{Struktura DNA}
 
