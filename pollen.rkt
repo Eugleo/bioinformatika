@@ -50,7 +50,7 @@
         (,(if inline '@ 'aside)
         ,@(for/list ([n (in-list slides)])
           `(a [[href ,(format "javascript:toggleImageVisible('slides-~a-slide-~a')" source n)]
-                [class "slide"]]
+                [class "lnk-slide"]]
               ,slide-svg)))
         (@
         ,@(for/list ([n (in-list slides)])
@@ -469,7 +469,7 @@
 (define slide-svg
   `(svg
     ((xlmns "http://www.w3.org/2000/svg")
-     (class "slide")
+     (class "svg-slide")
      (viewBox "0 0 24 24"))
     (rect [[x "3"] [y "3"] [width "18"] [height "18"] [rx "2"]])
     (circle [[cx "8.5"] [cy "8.5"] [r "1.5"]])

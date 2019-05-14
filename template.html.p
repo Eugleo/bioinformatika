@@ -42,8 +42,7 @@
         }
 
         let h;
-
-        document.onreadystatechange = function () {
+        document.onreadystatechange = function() {
             if (document.readyState == "interactive") {
                 h = document.getElementById('sticky-header');
             }
@@ -65,6 +64,26 @@
             }
             lastOffset = window.pageYOffset;
         };
+
+        function showAllSlides() {
+            allSlides = document.getElementsByClassName("slide");
+            for (i = 0; i < allSlides.length; i++) {
+                var id = allSlides[i].id;
+                if (!visibilities[id]) {
+                    toggleImageVisible(allSlides[i].id);
+                }
+            }
+        }
+
+        function hideAllSlides() {
+            allSlides = document.getElementsByClassName("slide");
+            for (i = 0; i < allSlides.length; i++) {
+                var id = allSlides[i].id;
+                if (visibilities[id]) {
+                    toggleImageVisible(allSlides[i].id);
+                }
+            }
+        }
     </script>
 </head>
 
@@ -73,7 +92,7 @@
         <div class="wrapper">
             <span class="page-title"><a class="no-style" href="/bioinformatika" title="Úvodní stránka">notes</a>:<a class="no-style" href=lecture-page.html title="◊(select-from-metas 'title "lecture-page.html")">◊|lecture-page|</a>:<strong>◊(select-from-metas 'header here)</strong></span>
             <span class="page-navigation">
-                &lt;&gt;
+                &lt;<a href="javascript:showAllSlides()">+</a>/<a href="javascript:hideAllSlides()">–</a>&gt;
             </span>
         </div>
     </div>

@@ -335,11 +335,11 @@ box.meta > .body {
 /* Slides
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
-a.slide:hover {
+a.lnk-slide:hover {
   background-color: transparent;
 }
 
-svg.slide:hover {
+svg.svg-slide:hover {
   stroke: #288dce;
 }
 
@@ -348,14 +348,15 @@ aside {
   left: 75px;
   width: 17px;
   margin-bottom: 0;
+  line-height: 18px;
+  padding-top: 4px;
 }
 
-svg.slide {
+svg.svg-slide {
   width: 17px;
   height: 17px;
   fill: none;
   stroke: #186697;
-  margin-bottom: -1px;
   stroke-width: 2px;
   stroke-linecap: round;
   stroke-linejoin: bevel;
