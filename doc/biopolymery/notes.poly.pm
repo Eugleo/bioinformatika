@@ -86,7 +86,7 @@ Rovnice, která popisuje částice pomocí vlnové funkce ◊${\psi}. ◊${|\psi
         - ◊${-(n - 1)}--◊${n-1}
 }
 
-◊todo{Přidat tvary orbitalů + trik na to, jak se je naučit. Zmínit i fázi.  Nalinkovat falstad.com/qmatom. Přidat obrázek z wiki: atomic_orbital. Přidat tabulku orbitalů.}
+◊todo{Přidat tvary orbitalů + trik na to, jak se je naučit. Zmínit i fázi.Nalinkovat falstad.com/qmatom. Přidat obrázek z wiki: atomic\_orbital. Přidat tabulku orbitalů.}
 
 ◊meta{Rozpoznávání kvantových čísel z obrázku orbitalu je v testu.}
 
@@ -252,7 +252,7 @@ Je velice složité počítat se všemi těmito vazbami, když se například sn
 ◊subsection{Disociace AK}
 
 Měříme poměr koncentrací nedisociovaných a disociovaných kyselin.
-◊$${\ce{HA <=> A^- + H^+} \\ K_a = \frac{[H^+][A^-]}{[HA]},}
+◊$${\ce{HA <=> A^- + H^+} \\ K_a = \frac{[\ce{H^+}][\ce{A^-}]}{[\ce{HA}]},}
 kde ◊${K_a} je takzvaná ◊em{disociační konstanta}. Pokud přidáme nějakou kyselinu do vody, pH se časem ustálí na ◊${\text{pK}_a} kyseliny.
 
 ◊slide[23 26 #:s 1]
@@ -501,13 +501,13 @@ Základním cukrem je ribóza a deoxyribóza. Základní strukturní vlastnosti 
 ◊ls[#:t "Ribóza"]{
     - v NA cyklizuje do pětičetného cyklu (ribofuranóza), může ale tvořit i šestičetný cyklus (ribopyranóza)
     - uhlíky se v rámci NA značí s čarou
-        - fosfát je v NA vázaný na ◊chem{C3'} a ◊chem{C5'}
-        - na ◊chem{C1'} je přes N-glykosidickou vazbu navázána dusíkatá báze
-        - na ◊chem{C2'} je OH skupina (RNA), případně tam není (DNA)
+        - fosfát je v NA vázaný na ◊chem{C3} a ◊chem{C5}
+        - na ◊chem{C1} je přes N-glykosidickou vazbu navázána dusíkatá báze
+        - na ◊chem{C2} je OH skupina (RNA), případně tam není (DNA)
     - celkově je tedy v NA (případně deoxy verze)
     - cyklus ◊strong{není planární} ◊slide[10 #:s 3 #:inline #t]
-        - pokud ◊chem{C2'} míří na stejnou stranu jako ◊chem{C5'}, je NA takzvaně ◊em{endo} (případně C2 endo)
-        -pokud míří ◊chem{C2'} na opačnou stranu, je NA ◊em{exo} (případně C2 exo)
+        - pokud ◊chem{C2} míří na stejnou stranu jako ◊chem{C5}, je NA takzvaně ◊em{endo} (případně C2 endo)
+        -pokud míří ◊chem{C2} na opačnou stranu, je NA ◊em{exo} (případně C2 exo)
 }
 
 ◊slide[12 #:s 3]
@@ -518,7 +518,7 @@ Cukr s fosfátem (navázaným přes fosfodiesterovou vazbu) tvoří tzv. ◊em{c
 ◊img["slides-3/slide-13.jpg"]{Dusíkaté báze nukleových kyselin}
 
 ◊ls[#:t "Dusíkaté báze"]{
-    - puriny jsou na ◊chem{C1'} v cukru vázány dusíkem ◊chem{N9}, pyrimidiny dusíkem ◊chem{N1}
+    - puriny jsou na ◊chem{C1} v cukru vázány dusíkem ◊chem{N9}, pyrimidiny dusíkem ◊chem{N1}
         - puriny jsou vlastně kondenzáty pyrimidinu a imidazolu
     - Watson-Crickovo párování: párování GC, AT, na základě vodíkových můstků ◊slide[13 #:s 3 #:inline #t]
     - v DNA je nahrazen thymin uracilem (který se liší jen jednou metylovou skupinou)
@@ -1004,7 +1004,7 @@ Enzymy ovlivňující topologii DNA.
 
 ◊title{Elektroforéza nukleových kyselin}
 
-◊i{ELFO se dělá jak pro DNA, tak pro RNA. V tomto textu se soustředíme sice pouze na popis DNA ELFO, ale pro RNA bude vše fungovat velice podobně.}
+◊em{ELFO se dělá jak pro DNA, tak pro RNA. V tomto textu se soustředíme sice pouze na popis DNA ELFO, ale pro RNA bude vše fungovat velice podobně.}
 
 Funkce podobná ◊link["#Gelová elektroforéza"]{ELFO preoteinů}, s tím rozdílem, že NA se dají rozdělit nejden podle velikosti (hmotnosti), ale také podle topologie. ◊slide[20 21 #:s 5 #:inline #t]
 
@@ -1565,13 +1565,11 @@ Při syntéze DNA (konkrétně při připojení každého dNTP) se uvolňuje pro
     # přidáme nějaký konkrétní nukleotid (musíme vědět, který)
     # sledujeme, co se stane
         - pokud je nukleotid zařazen do naší rostoucí DNA, uvolní se PPi a proton, uvolněný PPi detekujeme
-        ◊$${
-            \ce{
-                DNA_n + {dNTP} ->[DNA polmeráza] DNA_{n + 1} + PPi \\
-                PPi + adenosin 5' fosfosulfát ->[sulfuryláza] ATP + SO4^{-2} \\
-                ATP + luciferin + O2 ->[luciferáza] AMP + PPi + CO2 + foton
-            }
-        }
+                ◊$${
+                    \ce{DNA_n + {dNTP} ->[DNA polymeraza] DNA_{n + 1} + PPi} \\
+                    \ce{PPi + adenosin 5 fosfosulfat ->[sulfurylaza] ATP + SO4^{-2}} \\
+                    \ce{ATP + luciferin + O2 ->[luciferaza] AMP + PPi + CO2 + foton}
+                }
         - nakonec tedy pozorujeme záblesk; jak lze vidět z poslední rovnice, kromě fotonu se uvolní další PPi, čili reakce proběhne několikrát po sobě a uvolní se více než jeden foton
         - pokud je v sekvenci více stejných dNTP za sebou, sledujeme větší intenzitu světla
 }

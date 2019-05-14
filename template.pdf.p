@@ -17,7 +17,6 @@
 
     %% Setup the fonts
     \usepackage{tgpagella}
-    \usepackage{ebgaramond-maths}
     \addtokomafont{labelinglabel}{\small\sffamily}
 
     %% Setup the page layout

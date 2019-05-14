@@ -6,8 +6,8 @@
 
 ◊title{Struktura a vlastnosti informačních biopolymerů}
 
-◊box["Zápisky"]{
-    K dispozici je odkaz na ◊link["notes.html"]{webovou verzi}.
+◊box["Zápisky (v1.0.0, poslední update 14. 5. 2019)"]{
+    K dispozici je odkaz na ◊link["notes.html"]{webovou verzi} a na ◊link["notes.pdf"]{dokument pdf}. PDF verze je WIP, prosím, hlašte chyby nebo nápady na vylepšení.
 }
 
 ◊section{Informace o předmětu}
