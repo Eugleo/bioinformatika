@@ -81,7 +81,6 @@ body {
   color: black;
   font-kerning: normal;
   font-feature-settings: 'kern' 1;
-  text-rendering: 'optimize-legibility';
 }
 
 * {
@@ -105,12 +104,6 @@ body {
 
 
 
-
-*:not(mathjax *, span, h1 *, h2 *, h3 *, h4 *, h5, h6 *) {
-  line-height: 1.6rem;
-  margin-top: 0rem;
-  margin-bottom: 1.6rem;
-}
 
 h1,
 h2,
@@ -156,27 +149,24 @@ h1 {
   border-bottom: 2px solid black;
 }
 
+p {
+  margin-bottom: 1.6rem;
+}
+
+body {
+  line-height: 1.6rem;
+}
+
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
-ul ul {
-  margin-bottom: 0rem;
-}
-
-ul ol {
-  margin-bottom: 0rem;
-}
-
-ol ol {
-  margin-bottom: 0rem;
-}
-
-ol ul {
+ul ul, ul ol, ol ol, ol ul {
   margin-bottom: 0rem;
 }
 
 ul, ol {
   padding-left: 30px;
+  margin-bottom: 1.6rem;
 }
 
 li {
@@ -210,6 +200,10 @@ ol {
 dt {
   font-family: "IBM Plex Sans";
   font-weight: bold;
+}
+
+dl {
+  margin-bottom: 1.6rem;
 }
 
 dl > *:last-child {
@@ -259,12 +253,20 @@ answer {
   margin-bottom: 1.6rem;
 }
 
+/* Images
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+img {
+  margin-bottom: 1.6rem;
+}
+
 /* Boxes
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
 box {
   display: block;
   border-top-right-radius: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 
 box > .body {
@@ -336,11 +338,11 @@ box.meta > .body {
 /* Slides
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
-a.slide:hover {
+a.lnk-slide:hover {
   background-color: transparent;
 }
 
-svg.slide:hover {
+svg.svg-slide:hover {
   stroke: #288dce;
 }
 
@@ -349,14 +351,15 @@ aside {
   left: 75px;
   width: 17px;
   margin-bottom: 0;
+  line-height: 18px;
+  padding-top: 4px;
 }
 
-svg.slide {
+svg.svg-slide {
   width: 17px;
   height: 17px;
   fill: none;
   stroke: #186697;
-  margin-bottom: -1px;
   stroke-width: 2px;
   stroke-linecap: round;
   stroke-linejoin: bevel;
