@@ -376,7 +376,7 @@ Pro dsDNA ◊${K = 2}, pro ssDNA ◊${K = 2,5}, pro ssDNA ◊${K = 3}, pro oligo
     }
 }
 
-Absorbce cirkulárně polarizovaného světla záleží na chiralitě molekul a na levotočivosti a pravotočivosti světla. ◊strong{Cirkulární sichroismus} je rozdíl mezi absorbancí levotočivě a pravotočivě polarizovanho světla.
+Absorbce cirkulárně polarizovaného světla záleží na chiralitě molekul a na levotočivosti a pravotočivosti světla. ◊strong{Cirkulární dichroismus} je rozdíl mezi absorbancí levotočivě a pravotočivě polarizovanho světla.
 
 Cirkulární dichroismus jednotlivých SS se liší, viz obrázek. Podobně se liší CD pro protein s nějakým foldem a denaturovaný protein. Pokud změříme CD proteinu, můžeme z výsledné spektrální křivky zjistit procentuální podíl jednotlivých SS.
 
