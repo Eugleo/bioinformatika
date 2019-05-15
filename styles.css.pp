@@ -169,6 +169,10 @@ li {
   ◊(margin-bottom 0)
 }
 
+highlight {
+  ◊(margin-bottom 1)
+}
+
 .highlight * {
   margin-bottom: 0;
 }

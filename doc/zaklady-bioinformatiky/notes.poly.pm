@@ -16,7 +16,7 @@ Objev struktury DNA: Watson, Crick, Franklin (50. léta 20. století).
 
 ◊slide[10 #:s 1]
 ◊ls[#:t "Stavební kameny"]{
-    - puriny (adenosin, guanin), pyrymidiny (thyrosin, uracil, cytosin)
+    - puriny (adenosin, guanin), pyrimidiny (thyrosin, uracil, cytosin)
     - ribosa, 2-deoxyribosa
     - fosfát
 }
@@ -222,7 +222,7 @@ Kromě primární struktury proteinu rozlišujeme ještě sekundární, teriárn
 }
 
 ◊ls[#:t "Vodíková vazba a stabilizace"]{
-    - síla vodíkové vazby závisí n atypu atomu a geometrii vazby
+    - síla vodíkové vazby závisí na typu atomu a geometrii vazby
         - cca 1--60 kJ/mol, v proteinech většinou okolo 10 kJ/mol
         - se zvětšujícím se úhlem vazby klesá její síla: odklon o 20◊deg snižuje energii o 10%
 }
@@ -593,14 +593,14 @@ Když srovnáváme více sekvencí najednou, je to sice složitější, ale má 
 
 ◊title{Hledání v databázích}
 
-Jak roste množství biologických dat, roste i nutnost umět v nich dobře vyhledávat; zpravidla se snažíme najít sekvenci podobnou nějaké jiné, kterou zrovna máme. Je tedy samozřejmé, že ◊strong{alignment} je součástí procesu vyhledávání, a to často i lokální alignment (vhledávání na základě podobných domén, motivů).
+Jak roste množství biologických dat, roste i nutnost umět v nich dobře vyhledávat; zpravidla se snažíme najít sekvenci podobnou nějaké jiné, kterou zrovna máme. Je tedy samozřejmé, že ◊strong{alignment} je součástí procesu vyhledávání, a to často i lokální alignment (vyhledávání na základě podobných domén, motivů).
 
 ◊definitions{
     ◊term["true positive (TP)"]{
         To, co jsme hledali a našli.
     }
 
-    ◊term["false positive (TP)"]{
+    ◊term["false positive (FP)"]{
         To, co jsme nehledali a přesto našli.
     }
 
@@ -625,7 +625,11 @@ Při vyhledávání je nutno brát ohledy na selektivitu a senzitivitu: obě tyt
         Pravděpodobnost, s jakou jsou nalezené sekvence příbuzné s vyhledávanou sekvencí. Čím nižší je, tím více nevýsledků se objevuje v rámci výsledku (=> je těžší najít ve výsledcích zajímavé údaje).
         ◊$${\text{selektivita} = \frac{\text{TP}}{\text{TP} + \text{FP}}}
     }
+}
 
+Obdobné veličiny existují i pro analýzu nenalezených sekvencí.
+
+◊definitions{
     ◊term["specifita"]{
         Udává s jakou pravděpodobností nebudou nalezeny sekvence, které nejsou příbuzné s vyhledávanou sekvencí.
         ◊$${\text{specifita} = \frac{\text{TN}}{\text{TN} + \text{FP}}}
@@ -640,7 +644,7 @@ Při vyhledávání je nutno brát ohledy na selektivitu a senzitivitu: obě tyt
 ◊section{Algoritmy}
 
 ◊ls{
-    - tradiční algoritmy příliš pomalé, využívají se heuristiky
+    - tradiční algoritmy jsou příliš pomalé, využívají se heuristiky
         - vedou rychle k výsledku, který je blízko tomu optimálnímu
         - trocha přesnosti obětována pro rychlost
         - FASTA, BLAST
@@ -654,7 +658,7 @@ Při vyhledávání je nutno brát ohledy na selektivitu a senzitivitu: obě tyt
 
 V 80. létech byl vyvinut algoritmus ◊strong{FASTA}, který využívá globální alignment. Funguje následovně:
 ◊ls{
-    # známé sekvence v databázi jsou rozděleny na krátké úseky o délce ◊${k} a uloženy vdo vyhledávací tabulky
+    # známé sekvence v databázi jsou rozděleny na krátké úseky o délce ◊${k} a uloženy do vyhledávací tabulky
         - u proteinů ◊${k \in \{2, 3\}}
         - u DNA ◊${4 \leq k \leq 6}
     # na stejně dlouhé úseky je nyní rozdělena i hledaná sekvence
@@ -665,7 +669,7 @@ V 80. létech byl vyvinut algoritmus ◊strong{FASTA}, který využívá globál
     # výstupem jsou sekvence z databáze, jejichž úseky mají celkově nejvyšší skóre
 }
 
-Z výše zmíněného i vyplývá, jaká je největší nevýhoda FASTA algoritmu. Může se stát, že FASTA některé příbuzné sekvence nenajde --- konkrétně ty, které s tou hledanou nemají ◊${k} identit v řadě. Jsou totiž srovnávány úseky o délce ◊${k} a v bodě 3. postupují jen úseky 100% shodné s nějakým úsekem hledané sekvence.
+Z výše zmíněného vyplývá, jaká je největší nevýhoda FASTA algoritmu. Může se stát, že FASTA některé příbuzné sekvence nenajde --- konkrétně ty, které s tou hledanou nemají ◊${k} identit v řadě. Jsou totiž srovnávány úseky o délce ◊${k} a v bodě 3. postupují jen úseky 100% shodné s nějakým úsekem hledané sekvence.
 
 ◊subsection{BLAST}
 
@@ -678,12 +682,13 @@ V 90. létech následoval algoritmus ◊strong{BLAST} (Basic Local Alignment Sea
     # na stejně dlouhé úseky je nyní rozdělena i hledaná sekvence
     # slova z hledané sekvence jsou porovnávána se slovy získanými ze sekvencí v databázi a podobnosti jsou oskórovány tabulkou (bez mezer); jsou vybrána taková slova z databáze, která dosáhnou předem nadefinovaného minimálního skóre (threshold)
         - pro proteiny se většinou používá běžná Blosum 62 tabulka
-    # vybraná slova jsou rozšířována dokud skóre jejich alignmentu roste, dál postupují opět jen dvojice slov s určitým skóre, tzv. ◊em{high scoring pairs} (HSPs)
+    # vybraná slova (◊em{hity}) jsou rozšířována dokud skóre jejich alignmentu roste, dál postupují opět jen dvojice slov s určitým skóre, tzv. ◊em{high scoring pairs} (HSPs)
+        - rozšiřování trvá dlouho, proto se k němu většinou přistupuje pouze tehdy, když jsou na najité sekvenci dva hity nedaleko od sebe
         - dvojicí slov je myšlen pár [slovo z hledané sekvence + odpovídající slovo z databáze slov známých sekvencí]
     # výstupem jsou HSPs seřazené podle svého skóre, je u nich dostupná i ◊link["#Parametry významnosti alignmentu"]{E-value}
 }
 
-Základní rozdíl oproti FASTA tkví v bodě 3. Nejsou vybrána pouze 100% shodná slova, nýbrž všechna slova, která dosháhnou určitého bodového ohodnocení.
+Základní rozdíl oproti FASTA tkví v bodě 3. Nejsou vybrána pouze 100% shodná slova, nýbrž všechna slova, která dosáhnou určitého bodového ohodnocení.
 
 Algoritmus BLAST se vyskytuje v několika verzích, mnohé z nich jsou na internetu, například ◊link["https://blast.ncbi.nlm.nih.gov/Blast.cgi"]{zde}.
 
@@ -729,7 +734,7 @@ Existují také SSearch a GSearch, což jsou rigorózní globální/lokální al
             # spočítáme průměr a standardní odchylku skóre
         }
 
-        ◊$${\text{Z-score} = \frac{\text{průměr skóre}}{\text{standartní odchylka}}}
+        ◊$${\text{Z-score} = \frac{\text{první skóre} - \text{průměr skóre}}{\text{standartní odchylka}}}
     }
 
     ◊term["P-value"]{
@@ -755,7 +760,7 @@ Existují také SSearch a GSearch, což jsou rigorózní globální/lokální al
     }
 
     ◊term["E-value"]{
-        Pravděpodobnost, že bude v databázi o dané velikosti náhodou dosaženo stejného nebo vyššího skóre.
+        Předpokládaný počet náhdoných (FP) sekvencí se stejným nebo vyšším skóre v databázi o dané velikosti. Udává něco jako šum, chceme tuto hodnotu tedy co nejnižší.
 
         ◊$${\text{E-value} = \text{P-value} \cdot \text{velikost databáze}}
 
@@ -772,9 +777,10 @@ BLAST přistupuje ke všem sekvencím stejně, existují ale i citlivější met
 ◊ls[#:t "Profily"]{
     - skórovací tabulka šitá na míru (pozičně specifická tabulka pro danou proteinovou rodinu)
     - pro každou pozici v alignmnetu jsou generována specifická skóre (jak pro záměnu AK, tak pro inzerci a deleci)
-    - ◊$${\text{profilové skóre} = 10 \cdot \text{četnost AK na pozici} \cdot \text{hodnota z tabulky}}
     - zvyšují citlivost dané metody
 }
+
+◊$${\text{profilové skóre} = 10 \sum_{p \in \text{pozice}} \cdot \text{četnost AK na pozici} p \cdot \text{hodnota z tabulky}}
 
 Zroku 1997 pochází PSI-BLAST (◊em{position specifix iterative BLAST}). Oproti běžnému BLASTu používá ◊em{position specific scoring matrix} (PSSM), což je tabulka obsahující specifická skóre pro každou pozici v sekvenci.
 
@@ -788,7 +794,7 @@ Zroku 1997 pochází PSI-BLAST (◊em{position specifix iterative BLAST}). Oprot
 Z roku 2009 je CS/CSI BLAST, ◊em{context-specific iterative BLAST}.
 
 ◊ls[#:t "CS/CSI BLAST"]{
-    - kontext vytváří 12 AK v okolí sledované AK
+    - "kontext" je tvořen 12 AK v okolí sledované AK
     - je schopen najít dvakrát více vzdálených homolgů než běžný BLAST při zachování rychlosti a chybovosti
     - po dvou iteracích CSI BLAST dostaneme stejné výsledky jako po pěti iteracích PSI-BLAST
 }
@@ -836,13 +842,13 @@ Aneb, ano, máme co dělat, i když nám MSA nic moc neprozradil.
     }
 
     ◊term["pattern"]{
-        Funguje podobně jako regex --- pattern udává, které AK se (ne)můžou vyskytovat na daném místě, případně kolikrát.
+        Funguje podobně jako regex --- udává, které AK se (ne)můžou vyskytovat na daném místě, případně kolikrát.
 
         ◊highlight['text]{
             [STAIV]-{ERDL}-[LIVMF]-[LIVM]-D-
             -[DSTA]-G-[LIVMFC]-X(2,3)-[DNH]
         }
-        AK jsou označeny jednopísmenným kódem, mezi nimi jsou pomlčky. V hranatách závorkách jsou vyskytující se AK, naopak ve složených jsou nevyskytující se AK. Číslo v závorce udává počet pozic.
+        AK jsou označeny jednopísmenným kódem, mezi jednotlivými pozicemi jsou pomlčky. V hranatách závorkách jsou AK vyskytující se na určité pozici, naopak ve složených jsou AK, které se na ni nevyskytují. Číslo v závorce udává počet pozic.
 
         Pattern jako jediný dovede jednoznačně přidělit či vyloučit motiv.
     }
@@ -850,10 +856,10 @@ Aneb, ano, máme co dělat, i když nám MSA nic moc neprozradil.
 
 ◊slide[23 24 #:s 5]
 ◊ls[#:t "Další databáze motivů"]{
+    - PFAM: používá HMM, dobře anotovaná, informace o tom, jak dobře proteiny interagují, jestli mají známou strukturu atd.; jde o databázi proteinových rodin a domén
     - BLOCKS: funguje na podobném principu jako BLAST: automaticky generovaná databáze alignmentů konzervovaných úseků
     - PRINTS: kde je více motivů kombinovaných do fingerprints, které popisují protein
     - PRODOM: oblíbeno strukturními biology
-    - PFAM: používá HMM, dobře anotovaná, informace o tom, jak dobře proteiny interagují, jestli mají známou strukturu atd.; jde o databázi proteinových rodin a domén
     - Gene3D: založena na 3D strukturních alignmentech
     - INTERPRO: shromažďuje informace z více databází, jde o metaserver
 }
@@ -908,29 +914,30 @@ Aneb, ano, máme co dělat, i když nám MSA nic moc neprozradil.
 
 ◊title{Databáze}
 
-Databáze jsou strukturovaný soubory dat v počítači, které je možné prohledávat a stahovat. Zakládají se z důvodů organizace, zálohování a proto, aby měl k datům kdokoli relativně jednoduchý přístup.
+Databáze jsou strukturované soubory dat v počítači, které je možné prohledávat, měnit a ukládat. Zakládají se z důvodů organizace a zálohování dat, a proto, aby měl k datům kdokoli relativně jednoduchý přístup.
 
 ◊ls[#:t "Vlastnosti databáze"]{
     - četnost aktualizace dat
     - četnost aktualizace software
     - redudance dat
     - anotace dat (přidělení biologického významu sekvencím)
-    - anotace databáze (kdo databízi vytvořil a co bylo jeho cílem, jak se s daty nakládá, jestli existuje kontrola dat)
+    - anotace databáze (kdo databázi vytvořil a co bylo jeho cílem, jak se s daty nakládá, jestli existuje kontrola dat)
 }
 
 V databázích nejsou uložena jen data o proteinech:
 ◊ls{
     - databáze DNA
-        - GebBank, EMBL, DDJB
-        - data si denně vyměňují, takže mají stený obsah
+        - GenBank, EMBL, DDJB
+        - data si denně vyměňují, takže mají stejný obsah
     - databáze proteinů
         - UniProt (tj. Swissprot + TrEMBL + PIR): lepší než americké databáze
         - SwissProt, GenPept, PRF
-    - genomové databáze (obsahují nukleotidové sekvence a mapování, z genové mapy umíme předpovědět funkci) ◊slide[52 53 #:s 5]
-        - enembl, sanger
+    - genomové databáze (obsahují nukleotidové sekvence a mapování, z genové mapy umíme předpovědět funkci) ◊slide[52 53 #:s 5 #:inline #t]
+        - Ensembl, Sanger
     - strukturní databáze (obsahují 3D struktury molekul)
         - primární: RCSB (USA), PDBe (EU), PDBJ (Japonsko)
             - pravidelně si vyměňují data
+            - všechny tři výše zmíněné jsou součástí obecné PDB (protein data bank), která je spravována mezinárodní organizací Worldwide Protein Data Bank
         - "added-value" databáze: OCA, PDBSum
         - odvozené databáze, které hodnotí kvalitu dat: EDS, WhatCheck
 }
@@ -941,7 +948,7 @@ V databázích nejsou uložena jen data o proteinech:
     - rentgenová krystalografie
         - libovolná velikost proteinu nebo komplexu
         - potřebujeme ale krystal, který je velmi složité vyrobit
-        - vhodná pro statickaé struktury
+        - vhodná pro statické struktury
         - má velké rozlišení
     - NMR (nuclear magnetic resonance)
         - limitovaná velikostí proteinu (kolem 50 kDa)
@@ -951,7 +958,7 @@ V databázích nejsou uložena jen data o proteinech:
     - elektronová mikroskopie
         - má limitované rozlišení
         - vhodná pro velké komplexy
-        - většinou používána v kombinaci s krystalografii pro dosažení velkého rozlišení
+        - většinou používána v kombinaci s krystalografií pro dosažení velkého rozlišení
 }
 
 ◊todo{Doplnit odkazy na zápisky ze strukturní biologie (až zde budou).}
@@ -977,10 +984,10 @@ V databázích nejsou uloženy jen struktury samotné, ale i daší doplňujíc�
     - seznam 3D modelů celých proteinů i s ligandy
 }
 
-◊ls[#:t "Problémy PDB databází"]{
-    - databáze nemůže odmítnout žádná data
+◊ls[#:t "Problémy databáze PDB"]{
+    - nemůže odmítnout žádná data
         - tím pádem může obsahovat --- a také vskutku obsahuje --- mnoho chyb
-        - kontrola přes WhatCheck, ProCheck, nebo kontrolou Ramachandranova diagramu, nebo použití EDS (electron density server)
+        - kontrola přes WhatCheck, ProCheck, kontrolou Ramachandranova diagramu, nebo použití EDS (electron density server)
     - struktury jsou pouze modely, které ne nutně vyhovují experimentálním datům (existují více interpretací těchto dat)
     - změnit data může jen jejich autor (po smrti autora už nikdo)
 }
@@ -991,7 +998,7 @@ V databázích nejsou uloženy jen struktury samotné, ale i daší doplňujíc�
     - nekonzistetní pojmenování polí v řádcích
 }
 
-Existují ale nov strukturní formáty, jako ◊code{mmCIF} nebo ◊code{XML}, které jsou pro počítače dobře čitelné.
+Existují ale nové strukturní formáty, jako ◊code{mmCIF} nebo ◊code{XML}, které jsou pro počítače dobře čitelné.
 
 ◊title{Strukturní alignment}
 ◊lecture[7]
@@ -1003,8 +1010,8 @@ Struktura proteinu je lépe konzervovaná, než sekvence --- struktura totiž ur
     - můžeme odhalit evoluční vztahy mezi proteiny
         - můžeme dokonce odhalovat homologie v twilight (a midnight) zone
     - proteiny lze na základě struktury dále třídit, můžeme v nich vyhledávat motivy atd.
-    - můžeme pomocí ní vylepšit MSA ◊slide[41 43 45 #:s 6]
-        - pozice mezer závisí na (viz ◊link["#Pairwise sequence alignment"]{oddíl o PSA})
+    - můžeme pomocí ní vylepšit MSA ◊slide[41 43 45 #:s 6 #:inline]
+        - pozice mezer závisí na sekundární struktuře (viz ◊link["#Pairwise sequence alignment"]{oddíl o PSA})
 }
 
 Najít strukturní alignment je složité (NP-složité), navíc ani optimální alignment (podle nějaké naší metriky) nemusí odpovídat reálným biologickým poznatkům.
@@ -1012,25 +1019,24 @@ Najít strukturní alignment je složité (NP-složité), navíc ani optimální
 ◊ls[#:t "Postup strukturního alignmentu"]{
     # najdeme nějaký alignment pomocí heuristických metod
     # optimalizujeme jej dle předem stanovených kritérií
-    # zhodnottím jeho statistickou významnost
+    # zhodnotíme jeho statistickou významnost
 }
 
 ◊slide[50 51 #:s 6]
 ◊strong{ad 1)} Toto lze dělat několika způsoby:
 ◊ls{
-    - srovnáním pravidelných úseků sekundární struktury (SS)
+    - srovnáním pravidelných úseků sekundární struktury (SS), příapadně jen jejich začátků a konců
     - srovnáním tabulek vzájemných vzdáleností (◊em{distance matrices}) návzájem si odpovídajích atomů
-    - rozebráním struktury na jednotlivé motivy, z nichž každému je přiřazeno jeno písmeno, a přepsáním proteinů do této nové abecedy; textové sekvence motivů edáním alignmentu těchto dvou sekvencí
-    - rozebráním struktury na jednotlivé motivy, z nichž každému je přiřazeno jeno písmeno, a přepsáním proteinů do této nové abecedy; textové sekvence motivů jsou poté srovnány běžným PSA (BLAST, Yakusa)
+    - rozebráním struktury na jednotlivé motivy, z nichž každému je přiřazeno jedno písmeno, a přepsáním proteinů do této nové abecedy; textové sekvence motivů jsou poté srovnány běžným PSA (BLAST, Yakusa)
 }
 
-◊strong{ad 2)} Optimalizovány většinou bývají superpozice atomů. Superpozice je vzdálenost dvou ◊chem{C\alpha} měřená jako RMSD (root mean square distance); hledají se pak takové konformace/rotace, aby se součet všech takových vzáleností minimalizoval.
+◊strong{ad 2)} Optimalizovány většinou bývají superpozice atomů. Superpozice je vzdálenost dvou ◊chem{C\alpha}, která je pak přes všechny ◊chem{C\alpha} měřená jako RMSD (root mean square distance). Hledají se pak takové konformace/rotace, bylo RMSD minimalizováno.
 
 ◊$${\text{RMSD} = \sqrt{\frac{d^2}{N}},}
 
 kde ◊${d} je (Euklidovská) vzdálenost dvou atomů ◊chem{C\alpha} a ◊${N} je počet atomů ◊chem{C\alpha}.
 
-◊strong{ad 3)} RMSD je k hodnocení nevhodné, protože je to globální parametr citlivý na lokální změny a protože koreluje s délkou alignmentu. Existuje ale několik alternativ:
+◊strong{ad 3)} RMSD je k hodnocení statistické významosti nevhodné, protože je to globální parametr citlivý na lokální změny a protože koreluje s délkou alignmentu. Existuje ale několik alternativ:
 
 ◊slide[57 #:s 6]
 ◊ls{
@@ -1058,17 +1064,18 @@ Strukturní alignment lze využít k tvorbě systému struktur (většinou p
 
 ◊slide[66 #:s 6]
 ◊ls[#:t "Klasifikační systémy"]{
-    - SCOP (Single Curious and Overworked Person?)
+    - SCOP (Single Curious Overworked Person?)
         - spíše historická kuriozita
         - srovnávání struktur bylo manuální, o klasifikaci rozhodoval člověk na základě svých znalostí a zkušeností
     - CATH (Class Architecture Topology Homology) ◊slide[62 #:s 6 #:inline #t]
         - class: jsou struktury proteinu spíše alfa nebo beta
-        - architecture: kolik jakých SS protein obsahuje (sandwich, roll, TIM barrel) ◊slide[64 65 #:s 6 #:inline #t]
-        - topology: jak vypadajíc smyčky propojující jednotlivé SS
+        - architecture: kolik jakých SS protein obsahuje (sandwich, roll, TIM barrel)
+        - topology: jak vypadají smyčky propojující jednotlivé SS
         - homology: jak jsou si struktury sekvenčně podobné
 }
 
-Jak je ze slidů vidět, skoro třetina známých super-rodin spadá do deseti foldovacích skupin. Konkrétně TIM barrel například ukazuje na struktury, které mohou mít mnoho různých enzymatických funkcí. Není to ale možno říct s jistotou, stejně jako u jiných složitých struktur.
+◊slide[64 65 #:s 6]
+Jak je ze slidů vidět, skoro třetina známých super-rodin spadá do deseti foldovacích skupin. Konkrétně TIM barrel se často vyskytuje u struktur, které mohou mít mnoho různých enzymatických funkcí. Není to ale možno říct s jistotou, stejně jako u jiných složitých struktur.
 
 ◊lecture[8]
 
@@ -1076,9 +1083,9 @@ Jak je ze slidů vidět, skoro třetina známých super-rodin spadá do deseti f
 
 Primární struktura (sekvence) proteinu bývá často určena experimentálně, můžeme se tedy pokusit predikovat vyšší struktury. Tato predikce nebývá příliš přesná, mívá tzv. ◊em{confidence level}, který udává, jak moc je odhad pravděpodobný.
 
-Anfinsen ukázal, že se ribonukleáza po denaturaci sama renaturuje tak, že je schopna vykonávat svou původní funkci a z toho usoudil, že veškerá informace potřebná pro zaujetí struktury je obsažena v sekvenci.
+Anfinsen ukázal (1973), že se ribonukleáza po denaturaci sama renaturuje tak, že je schopna vykonávat svou původní funkci a z toho usoudil, že veškerá informace potřebná pro zaujetí struktury je obsažena v sekvenci.
 
-Určení struktury ze sekvence je ale výpočetně velice náročné a někdy ani není možné.
+Určení struktury ze sekvence je ale výpočetně velice náročné a někdy to ani není možné.
 
 ◊subsection{Intrinsically disordered proteins}
 
@@ -1086,7 +1093,7 @@ Proteiny (nebo jejich části), které nemají v nepřítomnosti vazebného p
 
 ◊ls[#:t "Proč jsou zajímavé?"]{
     - bývají pro protein (nebo minimálně pro vědce) důležité
-    - přechod z nestruktorované do strukturované formy je často nezbytný pro funkci proteinu
+    - přechod z nestrukturované do strukturované formy je často nezbytný pro funkci proteinu
     - komplikují alignmenty, znemožňují krystalizaci
         - je tedy dobré je před krystalizací oddělit
 }
@@ -1106,7 +1113,7 @@ V rámci proteinu jdou části bez pevné struktury často alespoň přibližně
     - machine learning, meta servery (spojující několik metod dohromady)
     - predikuje se sekundární struktura, AK složení, dostupnost AK pro rozpuštědlo, hot loops atd.
     - typická přesnost předpovědí je mezi 60% a 70%
-    - Disembl, FoldIndex, DisoPred, SEG, SPOT-dis, AUCpreD ◊slide[16 17 18 #:s 7 #:inline #t]
+    - DisEMBL, FoldIndex, DisoPred, SEG, SPOT-dis, AUCpreD ◊slide[16 17 18 #:s 7 #:inline #t]
         - vyplatí se používat kombinaci těchto programů
 }
 
@@ -1116,16 +1123,16 @@ V rámci proteinu jdou části bez pevné struktury často alespoň přibližně
 Často chceme určit, který druh SS se v proteinu vyskytuje nejčastěji, případně na kterém místě je jaká SS, abychom podle toho mohli vylepšit alignment, či abychom dané informace využili při stavění kompletního 3D modelu proteinu. Druhy SS většinou rozlišujeme pouze tři: helix, list a "zbytek".
 
 ◊ls[#:t "Metody dříve"]{
-    - predikce založená na jedné sekvenci
-    - založeno na preferencích jednotlivých aminokyselin být v určité SS, které byly experimentálně zjištěny a statisticky zpracovány
-        - struktur, ze kterých jsme tado data získávali, bylo sedm
+    - predikce založená pouze na naší sekvenci
+    - odvozeno z preferencí jednotlivých aminokyselin být v určité SS, které byly experimentálně zjištěny a statisticky zpracovány
+        - struktur, ze kterých jsme tato data získávali, bylo sedm
     - pouze semiautomatické
     - přesnost predikce kolem 60 %
     - Chou-Fasman, GOR
 }
 
 ◊ls[#:t "Metody dnes"]{
-    - známe více sekvencí a jejich srtuktur, máme tedy více dat
+    - známe více sekvencí a jejich struktur, máme tedy více dat
     - nové "učící se" algoritmy, jako HMM a neuronové sítě
         - často využití MSA, které napomáhá správné predikci SS
     - přesnost predikce 75%--80% (Q3 skóre, neboli predikce tří různých stavů), navíc dostaneme i odhad významnosti predikce pro každou aminokyselinu
@@ -1143,8 +1150,8 @@ V rámci proteinu jdou části bez pevné struktury často alespoň přibližně
 
 ◊slide[25 #:s 7]
 ◊ls[#:t "Průkopníci"]{
-    - Chou-Fasman (1974,1978) - původně na 15 strukturách
-    - klasifikuje AK dle statistik jako silné/slabé makers nebo breakers helixu, listu
+    - Chou-Fasman (1974,1978) --- původně na 15 strukturách
+    - klasifikuje AK dle statistik jako [silné, slabé] [makers, breakers] [helixu, listu]
         - skóre 1/0/-1 (breakers, ani-ani, makers)
     - postup (dva kroky) ◊slide[26 28 29 #:s 7 #:inline #t]
         # počátek (tzv. ◊em{nukleace})
@@ -1158,7 +1165,7 @@ V rámci proteinu jdou části bez pevné struktury často alespoň přibližně
         - existují "chameleón" sekvence, ve kterých je na stejné místo predikován list i helix
 }
 
-Trochu lepší výsledky než Chou-Fasman má metoda GOR, která scie také počítá propensities pro všech 20 AK na určité pozici, ale závisí u ní i na 16 okolních AK. Výsledná tabulka s čísly je tedy ◊${20 \times 17}, místo ◊${20 \times 1}.
+Trochu lepší výsledky než Chou-Fasman má metoda GOR, která sice také počítá propensities pro všech 20 AK na určité pozici, ale výpočty u ní závisí i na 16 okolních AK. Výsledná tabulka s čísly je tedy ◊${20 \times 17}, místo ◊${20 \times 1}.
 
 ◊ls[#:t "Moderní metody"]{
     - například PHD, která má úspěšnost přes 70%
@@ -1193,7 +1200,7 @@ Trochu lepší výsledky než Chou-Fasman má metoda GOR, která scie také poč
         - úspěšnost se dá zvýšit použitím více metod najednou
 }
 
-Predikce je komplikována tím, že ne všechny helixy procházejí celu membránou: existují přerušované helixy, které jsou přerušeny uvnitř membrány, a ◊em{reentrant loops}, což jsou helixy, které se vrací zpět na stranu, ze které vyšly. ◊slide[50 #:s 7]
+Predikce je komplikována tím, že ne všechny helixy procházejí celou membránou: existují přerušované helixy, které jsou přerušeny uvnitř membrány, a ◊em{reentrant loops}, což jsou helixy, které se vrací zpět na stranu, ze které vyšly. ◊slide[50 #:s 7]
 
 Beta barelům je věnována menší pozornost, jelikož je jich málo a jsou často bakteriální či mitochondriální.
 
@@ -1228,7 +1235,7 @@ Předpokládáme, že určitý sekvenční motiv má dobře známou strukturu, a
         - B-faktor: jak je struktura stabilní; čím vyšší, tím je nestabilnější
         - rozlišení
     - roli hrají i biologické faktory: jakou má kvarterní strukturu, jestli váže ligandy, jestli tvoří komplexy
-        - může pro nás být zajímavější templát vázající GTP, takže nevybereme templát vázající GDP, i když má vyšší %SI
+        - může pro nás být zajímavější templát vázající GTP, takže nevybereme jiný templát, i když má vyšší %SI
 }
 
 Lze vybrat i více templátů, nebo použít různé templáty pro různé části proteinu.
@@ -1280,7 +1287,7 @@ WhatIf a Modeller vyžadují větší zkušenosti, jsou ale věrohodnější.
 
 ◊subsection{Fold recognition}
 
-Fold recognition metody používáme, když neumíme najít templát se známou strukturou, který by byl homologní k naší sekvenci. Snažíme se najít nehomologní proteiny, které přesto mají alespoň část své struktury shodnou s částí struktury naší sekvence. V tom nám pomáhá to, že dovolených foldů je omezené množství a stejné foldy se často opakují (na 130000 známých strukturách je jen 1375 různých foldů) --- pokud uvažujeme nějaký protein bez detekovatelného %SI, ze 70--80%, bude mít fold, který už je známý.
+Fold recognition metody používáme, když neumíme najít templát se známou strukturou, který by byl homologní k naší sekvenci. Snažíme se najít nehomologní proteiny, které přesto mají alespoň část své struktury shodnou s částí struktury naší sekvence. V tom nám pomáhá to, že dovolených foldů je omezené množství a stejné foldy se často opakují (na 130000 známých strukturách je jen 1375 různých foldů) --- pokud uvažujeme nějaký protein bez detekovatelného %SI, ze 70--80% bude mít fold, který už je známý.
 
 Existují dva základní postupy, které se liší svou metodikou i úspěšností: ◊em{profile} a ◊em{threading} metody.
 
@@ -1334,13 +1341,13 @@ Jeden z nejlepších nástrojů pro predikci struktur je ◊strong{Rosetta}. ◊
 ◊ls[#:t "CASP"]{
     - Critical Assesment of Techniques for Protein Structure Prediction
     - soutěž predičních metod
-    - sekvence, jejichž struktury jsou těsně před objevením, se zašlou několiak výzkumným týmům, které poté predikují jejich strukturu
+    - sekvence, jejichž struktury jsou těsně před objevením, se zašlou několik výzkumným týmům, které poté predikují jejich strukturu
     - vypočítaný model je poté porovnán s experimentálně objevenou strukturou
 }
 
 ◊subsection{Predikce interakce}
 
-Proteiny, které spolu interagují, se obvykle vyvíjejí společně a synchroně; mutace v jednom z proteinu jsou kompenzovány mutacemi v druhém. Používá se proto ◊strong{in silico dvouhybridní systém}: udělá se MSA obou proteinů a pokud vykazují podobnou frekvenci mutací, může se jednat o inerakční pár.
+Proteiny, které spolu interagují, se obvykle vyvíjejí společně a synchroně; mutace v jednom z proteinu jsou kompenzovány mutacemi v druhém. Používá se proto ◊strong{in silico dvouhybridní systém}: udělá se MSA obou proteinů a pokud vykazují podobnou frekvenci mutací, může se jednat o interakční pár.
 
 ◊ls[#:t "Nástroje na predikci interakcí"]{
     - Bayesiánské metody (někdy kombinují i více přístupů)
@@ -1396,17 +1403,15 @@ Bohužel, hlavní paradigma ne vždy funguje; jeden protein (jedna struktura) m�
         - motivy lze automaticky extrahovat z dobře anotovaných struktur
         - hledání odpovědi na otázku: objevuje se alespoň jeden z takových motivů v nové struktuře?
             - programy JESS, PINTS
-        - definování libovolný strukturní motiv
+        - definování libovolnyého strukturního motivu
             - pogram SPASM
-        - "reverse templates" - rozsekání struktury na motivy a hledání podobneách fragmentů v databázi
+        - "reverse templates" - rozsekání struktury na motivy a hledání podobných fragmentů v databázi
             - program SiteSeer
     - kombinace výše uvedených, například server ◊link["http://www.ebi.ac.uk/thornton-srv/databases/ProFunc/"]{ProFunc}
 }
 
-One way of obtaining such information experimentally is through two-hybrid interactions, where large number of protein-protein combinations can be tested for reasonably strong binding. In this method, a library of proteins is expressed together with a “bait” protein in cells, and using a genetic trick only those cells where a protein
-
 ◊ls[#:t "Zjišťování protein-protein interakcí"]{
-    - najít interakce s malými molekulami (ionty) je relativně snadné zjistit, neboť jsou na povrchu proteinu často "výdutě" speciálně přizpůsobené danému ligandu
+    - najít interakce s malými molekulami (ionty) je relativně snadné, neboť jsou na povrchu proteinu často "výdutě" speciálně přizpůsobené danému ligandu
     - najít interakce s jiným proteinem je naopak složité, protože často interagují velkou částí svých povrchů
     - tyto interakce se pozorují pomocí ◊em{two-hybrid interactions}
         - velké množství proteinů "z knihovny" je exprimováno v mnoha buňkách, společně s jedním ◊em{bait} proteinem
@@ -1478,13 +1483,13 @@ Pokud najdeme podobnost v ligand-vazebných místech dvou různých proteinů, d
     }
 
     ◊term["virtual screening"]{
-        Bioinformatická metoda, jejímž cílem je odhadnout, jak dobře se daná nizkomolekulární sloučenina váže na protein; lze ji tedy v principu využít k predikci ligandů pro danou strukturu. Pro svou funkci používá docking (viz níže).
+        Bioinformatická metoda, jejímž cílem je odhadnout, jak dobře se daná nízkomolekulární sloučenina váže na protein; lze ji tedy v principu využít k predikci ligandů pro danou strukturu. Pro svou funkci používá docking (viz níže).
 
         Je využívána farmaceutickými firmami, které navrhnou mnoho takovýchto látek, pro všechny udělají virtual screening a z nich vyberou několik nejlepších kandidátů, kteří půjdou do dalších testů.
     }
 
     ◊term["docking"]{
-         Molecular docking je proces, který se pokouší nalézt nizkoenergetické vazebné módy dvou molekul (obvykle proteinu a jeho ligandu, případně dvou proteinů). Je to spíše chemická ne bioinformatická metoda.
+         Molecular docking je proces, který se pokouší nalézt nízkoenergetické vazebné módy dvou molekul (obvykle proteinu a jeho ligandu, případně dvou proteinů). Je to spíše chemická ne bioinformatická metoda.
     }
 }
 

@@ -468,6 +468,223 @@ Schéma fluorometru: na fluoreskující vzorek svítíme monochromatickým paprs
 ◊slide[64 #:s 2]
 Z emisních spekter Trp můžeme poznat, v jakém prostředí (solventu) se nachází a jestli je uvnitř či na povrchu proteinu. Posun k červené oblasti (ale stále v rámci UV) ukazuje na přítomnost ◊chem{H20}.
 
+◊title{Nové zápisky v metodách}
+
+◊ls{
+    - chceme znát i více věcí než je nstrukturu
+    - koncentrace, mol.hmotnost, sekvence (introny x exony -- sekvenace proteinů), SS, rozměry a tvar molekuly
+    - až po těchto věceh zjistíme 3D strukturu
+    - a až poté řešíme interakce mezi proteiny, dynamiku a mechanismus sbalování
+}
+
+◊todo{Co je Assay?}
+
+== KONCENTRACE proteinů
+- spektrofotometrie: 280 / 220 nm
+- kolorimetrie
+    - biuretová reakce a Cu(II) vazba na 4N
+    - Lowry: biuret a Folinovo reagens
+    - BArdfordová: Coomassie Blue G250
+- denzitometrie, porovnání se standardem na ELFO
+
+=== biuretová reakce [slide]
+- biuret je kondenzát močoviny
+- umí koordinovat reakci s Cu
+    - podobná reakce/koordinace probíhá i na polypeptidu, němělo by záležet na konkrétní AK sekvenci
+- Cu se dá chelatovat pomocí BCA, tvoří komplex, který absorbuje velmi silně
+
+coomassie brillienat blue G-25
+- přidává molekule záporný náboj
+- zabarvuje se podle toho, se kterou částí proteinu reaguje
+    - nedá se používat v přítomnosti detergentů
+
+== SS + 3D Struktura
+- různé druhy, závisí na torzních úhlech
+- pouze na základě záměn AK můžeme získat mnoho různých struktur (SS, TS)
+- elektrostatické síly, H můstky, hydrofobní interakce, disuflidové vazby
+
+== PRÁCE S PROTEINEM
+1) produkce proteinu
+- kdysi z původního zdroje
+- nyní rekombinantně (kvasinky, e. coli)
+    - není úplně dobré dělat eukaryot. proteiny v bakteriích
+    - můžeme získat mutantní formy
+    - můžeme přidat afinitní značky, pomocí kterých můžeme protein "vychytávat"
+- důležitá je stabilizace (chlazení, nepřítomnost proteáz, případně vychytání proteáz pomocí speciálních nerozdělitelných peptidů)
+
+SOLUBILIZACE [slide]
+- vsolování, u všech proteinů to zvyšuje rozpustnost, protože bývají více stíněny náboje AK na povrchu, už se netvoří agregáty proteinů
+- vysolování, odebírání vody
+- organická rozpouštědla
+- detergenty, denaturační činidla (ale nebudou v nativní konformaci)
+- změna pH, pro každý protein je ideální pH s vyšší rozpustností
+
+◊todo{Co je to chromatografie?}
+
+=== CHROMATOGRAFIE
+- pokud chceme proteiny přečišťovat
+1) ionexová chromat
+- podklad
+    - pevný, nerozpustný
+    - intoy z podkladu (A, K) jsou vyměňovány za ionty v rotozku (B, C)
+    - Anex, Katex [ZE SLIDU]
+- protein
+    - polyelektrolyt
+    - vazba anexu nebo katexu podle pH a pI
+    - kompetice s ostatními ionty v roztoku
+
+- volba vhodných podmínek pro vazbu
+    - nechceme vázat kontaminující proteiny
+- výběr podmínek pro uvolnění z nosiče
+    - druhý krok selekce (zbavení se protilátek)
+- vazba na kolonu
+    - můžeme preotin neustále vázat a uvolňovat
+    - můžeme sbírat jednotlivé frakce
+
+[slide schématu ionexové chromat.]
+
+- ionexů je mnoho, liší se inertními materiály, ze kterých jsou vyrobeny
+
+2) hydrofobní chromat
+- hydrofobní zbytky AK jsou umístěny uvnitř proteinů
+- malá část je exponována do vnějšího prostředí
+- vazba na silně hydrofobní povrch
+    - RPC --- chromatografie s obrácenými fázemi (protein už tozmotaný)
+    - HIC --- hydrofobní chromatografie
+
+HIC
+- nosičem je agaróza (SPA) + hydrofobní skupiny (fenol, oktyl)
+- slabé hcydrofobní interakce
+- eluce
+    - klesajíím gradientem solí
+    - stoupajícím gradientem detergentů
+    - stoupajícím pH
+- proteiny nejsou denaturované
+- rozdělují se podle nativní hydrofobicity
+
+RPC
+- nosič
+    - imobilizovaná nepolární kapalina
+    - alkylové řetěce
+    - fenyl-silika
+- silné hydrofob. interakce
+- eluce
+    - hydrofobními látkami (organic. tozpouštědla)
+- protein je denaturován
+
+3) afinitní chromat
+- agaróza aktivovaná bromkyanem, navázání nejrůznějších ligandů
+- ukotvení ligandu na inertní nosič na koloně
+    - máme látku, která se vážěe na kolonu a zároveň fúzuje s naším proteinem
+- oplach kontaminací
+- odmytí cílového proteinu
+    - jiným ligandem s vyšší afinitou
+    - pH, iontová síla, teplota
+
+jedna z metod: his-tag
+- komplex 6 His zařazený na konci proteinů (N/C - záleží na tom, jestli ji tam chceme nechat)
+    - na histidinovou vrstvu se naváže nikl (AP, HRP), Ni je ligand
+- pokudp přidáme imidazol, protein se [TODO CO UDĚLÁ]
+
+druhá z metod: biotin [slide]
+- vysoce afinitní vazby mezi bioitem a avidinem
+- více druhů avidinu, streptavidinů, neutravidinu (ty jsou odvozeny z avidinů)
+- naváže se avidin na protein, pak avidin s proteinem na biotin v koloně
+    - někdy se ale váže biotin přímo na nějako uAK
+
+další z metody: GST
+- glutation-S-transferáze
+- plazmid ze ktrerého exprimujeme protein
+- TODO dna wtf?
+
+4) chromat na hydroxyapatitu
+- kompex H3PO4 a Ca
+- váže anionty díky kladným nábojům Ca, ale i kationty díky H3PO4
+- dobře váe preoteiny
+    - můžeme proteiny proplachovat, například od lipopolysacharidu, který mi tam zůstal z producenta (bakterie)
+
+5) [to sem nepatří] HPLC
+[TODO doplnit z přednášky]
+
+6) gelová filtrace (trochu patří do chromat) [slide x2]
+- dělení podle velikosti a tvaru molekul
+- stacionární fáze: kuličky hydratovaného gelu
+- velké molekuly proteinů budou putopat mimo kuličky gelu, malé molekuly budou vstupovat do gelu
+- velké molekuly půjdou nejrychleji
+    - Vcelkový = Vkuliček + Vmrtvý
+    - konkrétní látka má konstantní poměr Veluční / Vmrtvý
+    - vylučovací limit je Mw nejmenší molekuly, která neprojde gelem
+- distribuce rozdělení pórů v gelu => rozdělení podle rychlosti
+
+7) molekulová filtrace
+- [TODO DOPLNIT Z přednášky]
+
+◊section{ELFO proteinů}
+- sds page dělí proteiny podle velikosti/hmotnosti
+- nativní PAGE dělí podle náboje, někdteré proteiny do gelu nevstoupí (CN - clear native)
+- [slide] 20kDa až 1200kDa, gradientový gel
+- preoteiny nejsou denaturované, mohou tvořit komplexy
+- alternativa je BN (blue native), je tam nadbytek coomassie blue, které dává proteinu záporný náboj, ale nedenaturuje ho (na rozdíl od SDS)
+
+2D ELFO
+- koupený gel s gradientem pH
+- proteiny se budou pohybovat gelem tam, kde bude pH odpovídat jejich pI
+    - izoelektrická fokusace: proteiny putují do velcie úzkých zón
+    - normálně by se rozdělily taky, ale ne do úzkých zón
+- tento gel se dá položit kolmo na další gel [slide]
+    - proteiny putují z fokusovaných prožků a rozdělí se podle moleulová hmotsnoti
+- [TODO doplnit z přednášky něco u 2D ELFO o gelech]
+
+BARVENÍ GELU
+- coomasiia je nejčastější
+    - opáchneme SDS vodou
+    - barvíme 1h, hnědá -> modrá
+    - je nutné odbarvit methanolem, octovkou, vodou
+- stříbro
+    - velice citlivé
+    - váže se na různé AK
+    - vyvoláme Ag+ -> Ag0, získáme hnědočernou barvu
+    - během vyvolávání se používá formaldehyd, glutaraldehyd
+        - kovalentní modifikace proteinů, proteiny se nedají dál použít
+- zinkem
+    - velmi citlivé, negativní barvení
+    - imidazol váže zinek (i nikl btw), elý gel je bíle opalescentní
+    - kde jsou proteiny, gel zůstane průhledný
+- fluorescenční
+    - nejčastější nekovalentní
+    - SYPRO
+        - barvení v ejdnom kroku, bex fixace, bez odbarvování
+        - intenzita flouorescence roste lineárně s množstvím
+
+[TODO doplnit od fluorescenčních až po kvalitu]
+
+HODNOCEÍ KVALITY PROTEINŮ
+- jak zjistit, jestli při práci s proteinem nedošlo k nějaké chybě
+- sds-page: je protein fragmentován
+- wester blot - pje náš proten opravud ten, který myslíme? (protilátky)
+- NMR spektrum fingerprint
+- cirkulární dichroismus
+- DLS (TODO: co to je?)
+- chromatografie:
+
+◊section{Sekvenace proteinů}
+- někdy se stane, že DNA sekvence nepřechází celá do proteinu
+- důležitá pro krystalografii, protože ta musíme znát přesnou sekvenci abychom z krystalu něco vyčetli
+- umožňuje odvození SS
+- odhalení dědičných poruch a dispozic k onemocněním
+
+
+příprava na sekvencai
+[TODO doplnit]
+
+nalezení koncových AK
+- pomocí exopeptidáz, štěpíme protein z jednoho nebo druhého konce (nejlépe pro <5 posledních AK)
+- C koncová AK
+    - karboxypeptidáza A a B, z hovězího pankreasu
+    - ale neštěpí určité AA
+- sledujeme růst koncentrací AK v rotozku, podle pořadí toho, jak se mění, odhadujeme pořadí kocnocývh AK
+
+
 ◊title{Struktura nukleových kyselin}
 
 DNA a RNA se skládají z bazické, cukerné a fosfátové části. Páteř tvoří cukr (ribóza, deoxyribóza), který se střídá se zbytky kyseliny ◊chem{H3PO4}.
