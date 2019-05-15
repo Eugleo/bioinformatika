@@ -1010,7 +1010,7 @@ Struktura proteinu je lépe konzervovaná, než sekvence --- struktura totiž ur
     - můžeme odhalit evoluční vztahy mezi proteiny
         - můžeme dokonce odhalovat homologie v twilight (a midnight) zone
     - proteiny lze na základě struktury dále třídit, můžeme v nich vyhledávat motivy atd.
-    - můžeme pomocí ní vylepšit MSA ◊slide[41 43 45 #:s 6 #:inline]
+    - můžeme pomocí ní vylepšit MSA ◊slide[41 43 45 #:s 6 #:inline #t]
         - pozice mezer závisí na sekundární struktuře (viz ◊link["#Pairwise sequence alignment"]{oddíl o PSA})
 }
 
