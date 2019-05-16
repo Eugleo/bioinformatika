@@ -6,7 +6,7 @@
 
 ◊title{Základy bioinformatiky}
 
-◊box["Zápisky (v1.0.1, poslední update 14. 5. 2019)"]{
+◊box["Zápisky (v1.1.0, poslední update 16. 5. 2019)"]{
     K dispozici je odkaz na ◊link["notes.html"]{webovou verzi} a na ◊link["notes.pdf"]{dokument pdf}. PDF verze je WIP, prosím, hlašte chyby nebo nápady na vylepšení.
 
     Řešení bonusových úkolů jsou k dispozici ◊link["tasks.html"]{zde}.
