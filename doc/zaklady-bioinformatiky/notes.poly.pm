@@ -25,9 +25,9 @@ A jak velká? Například největší genom, patřící organismu Amoeba dubia, 
 ◊ls[#:t "Historie ioinformatiky"]{
     - (1707--1778) Carl Linne, první bioinformatik
     - (1956) Fred Sanger, první sekvence (insulin)
-    - (1957) Perutz & Kendrew, první proteinová struktura
+    - (1957) Perutz, Kendrew, první proteinová struktura
     - (1965) Margarett Dayhoff , první sekvenční databáze
-    - (1970) Needlman & Wunsch, algoritmus sekvenčního srovnávání
+    - (1970) Needlman, Wunsch, algoritmus sekvenčního srovnávání
     - (1971) první strukturní databáze
     - (1988) Hugo projekt
     - (1990) Altschul, Lipman et al., BLAST
