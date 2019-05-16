@@ -4,6 +4,38 @@
 ◊define-meta[header]{zápisy}
 ◊(define-meta toc #t)
 
+◊title{Úvod}
+
+◊meta{Zbytečná kapitola? Kdepak! Ve zkouškovém testu jsou otázky na historický vývoj bioinformatiky běžné, stejně jako obecné otázky typu "Čím se zabývá bioinformatika? (článek na 100 slov)".}
+
+Bioinformatika je vědní disciplína, která se zabývá zpracováním biologických dat. Slovem "zpracování" dat máme namysli jejich sběr, archivaci, organizaci a interpretaci.
+
+◊ls[#:t "Jaká data zpracováváme?"]{
+    - měření (délky křídel, váhy vůní [sic]...)
+    - sekvence (DNA, RNA, proteiny)
+    - 3D struktury
+    - genomická data
+    - příbuzenské vztahy
+    - interakce
+    - atd.
+}
+
+A jak velká? Například největší genom, patřící organismu Amoeba dubia, má 670GB. Stejně tak se v desítkách GB pohybují i 3D histologické skeny. EBI (European Bioinformatic Institute) měl v roce 2015 kapacitu 60 PB dat.
+
+◊ls[#:t "Historie ioinformatiky"]{
+    - (1707--1778) Carl Linne, první bioinformatik
+    - (1956) Fred Sanger, první sekvence (insulin)
+    - (1957) Perutz & Kendrew, první proteinová struktura
+    - (1965) Margarett Dayhoff , první sekvenční databáze
+    - (1970) Needlman & Wunsch, algoritmus sekvenčního srovnávání
+    - (1971) první strukturní databáze
+    - (1988) Hugo projekt
+    - (1990) Altschul, Lipman et al., BLAST
+    - (1992) NCBI, GenBankGenbank
+    - (1995) First genome, Haemophilus influenze
+}
+
+
 ◊title{Struktura nukleových kyselin}
 ◊lecture[2]
 Objev struktury DNA: Watson, Crick, Franklin (50. léta 20. století).
@@ -184,7 +216,7 @@ Polární AK jsou hydrofilní, nepolární jsou hydrofobní.
     ◊definitions{
         ◊term["methionin"]{má jen jeden kodon, může být na povrchu oxidován}
 
-        ◊term["cystein"]{často v hydrofobním jádře proteinů (přestože je polární), tvoří disulfidické můstky, iteraguje s ionty kovů (často v aktivních místech enzymů)}
+        ◊term["cystein"]{často v hydrofobním jádře proteinů (přestože je polární), tvoří disulfidické můstky, interaguje s ionty kovů (často v aktivních místech enzymů)}
     }
 }
 
@@ -480,7 +512,7 @@ Tabulky jsou tedy symetrické --- nejsme schopni z empirických dat zjistit, jak
     - založena na experimentálních datech, není extrapolována jako některé PAM tabulky
     - opět více druhů
         - BLOSUM ◊${x}: založena na lokálních alignmentech bloků AK s ◊${\text{SI}=x} (u homologních proteinů), bez mezer
-        - nejoblíbenější BLOSUM 80 (tedy popsiující proteiny se sekvenční identitou 80%)
+        - nejoblíbenější BLOSUM 62 (tedy popsiující proteiny se sekvenční identitou 80%)
 }
 
 ◊ls[#:t "Další tabulky"]{
@@ -575,14 +607,14 @@ Když srovnáváme více sekvencí najednou, je to sice složitější, ale má 
 ◊box["Poznámka bokem --- HMM"]{
     HMM je probabilistický model, který se využívá k tvoření obdoby skórovacích tabulek---takových, které jsou alignovaným sekvencím šité na míru. Pro každou pozici ukládá HMM, s jakou pravděpodobností se tam vyskytne jaká AK, s jakou pravděpodobností na daném místě dojde k inzerci a s jakou k deleci. Z těchto údajů dokáže HMM předpovědět sekvence, které do daného modelu zapadají, ale také určit, jak dobře do modelu "sedí" nějaká zadaná sekvence.
 
-    Je samozřejmě velice důležité co možná nejlépe určit parametry HMM (ony pravděpodobnosti zmíněné výše). To se většinou dělá ◊em{trénováním}, kdy se HMM zadají nějké sekvence a on z nich sám vypočítá potřebné pravdepodobnosti, které si poté uloží. HMM poté může rozhodnout, jak velká šance je, že je nějaká zadaná sekvence příbuzná s těmi, na kterých byl vytrénován.
+    Je samozřejmě velice důležité co možná nejlépe určit parametry HMM (ony pravděpodobnosti zmíněné výše). To se většinou dělá ◊em{trénováním}, kdy se HMM zadají nějaké sekvence a on z nich sám vypočítá potřebné pravdepodobnosti, které si poté uloží. HMM poté může rozhodnout, jak velká šance je, že je nějaká zadaná sekvence příbuzná s těmi, na kterých byl vytrénován.
 }
 
 ◊ls[#:t "Kvalita alignmentu"]{
     - kvalitu lze hodnotit ze strukturních informací
     - výsledný MSA je porovnáván s databází strukturních alignmentů ◊strong{BALiBase}, HomFam
     - hodnotící programy
-        - APDB, který je součástí T-Coffee (což program na MSA)
+        - APDB, který je součástí T-Coffee (což je program na MSA)
         - QuanTest (2017), za pomoci přesnosti predikce sekundárních struktur
     - umožňuje vybrat nejlepší z alternativních alignmentů
     - kvalita uvnitř alignmentu
@@ -760,7 +792,7 @@ Existují také SSearch a GSearch, což jsou rigorózní globální/lokální al
     }
 
     ◊term["E-value"]{
-        Předpokládaný počet náhdoných (FP) sekvencí se stejným nebo vyšším skóre v databázi o dané velikosti. Udává něco jako šum, chceme tuto hodnotu tedy co nejnižší.
+        Předpokládaný počet náhodných (FP) sekvencí se stejným nebo vyšším skóre v databázi o dané velikosti. Udává něco jako šum, chceme tuto hodnotu tedy co nejnižší.
 
         ◊$${\text{E-value} = \text{P-value} \cdot \text{velikost databáze}}
 
@@ -776,17 +808,17 @@ BLAST přistupuje ke všem sekvencím stejně, existují ale i citlivější met
 ◊slide[5 #:s 5]
 ◊ls[#:t "Profily"]{
     - skórovací tabulka šitá na míru (pozičně specifická tabulka pro danou proteinovou rodinu)
-    - pro každou pozici v alignmnetu jsou generována specifická skóre (jak pro záměnu AK, tak pro inzerci a deleci)
+    - pro každou pozici v alignmentu jsou generována specifická skóre (jak pro záměnu AK, tak pro inzerci a deleci)
     - zvyšují citlivost dané metody
 }
 
-◊$${\text{profilové skóre} = 10 \sum_{p \in \text{pozice}} \cdot \text{četnost AK na pozici} p \cdot \text{hodnota z tabulky}}
+◊$${\text{profilové skóre} = 10 \cdot \sum_{p \in \text{pozice}} (\text{četnost AK na pozici } p) \cdot (\text{hodnota z tabulky})}
 
 Zroku 1997 pochází PSI-BLAST (◊em{position specifix iterative BLAST}). Oproti běžnému BLASTu používá ◊em{position specific scoring matrix} (PSSM), což je tabulka obsahující specifická skóre pro každou pozici v sekvenci.
 
 ◊ls[#:t "PSI-BLAST"]{
-    # průběh nejprve jako BLAST, z nejlepších výsledných alignmentů je vytvořena PSSM
-    # další kolo BLASTu, pro počítání skóre je ale použita vypočítaná PSSM
+    # průběh jako BLAST, z nejlepších výsledných alignmentů je vytvořena PSSM
+    # je spuštěno další kolo BLASTu, pro počítání skóre je ale použita vypočítaná PSSM
         - po konci druhého kola je vytvořena nová PSSM
     # GOTO 2 (dokud nacházíme nové hity)
 }
@@ -820,7 +852,9 @@ Co dělat, když vyhledávání v databázích nepřineslo nic zajímavého? Jak
     - hledání buněčné lokalizace
     - určení, zda se nejedná o membránové proteiny
     - HCA - Hydrofobic Cluster Analysis
-    - hledání procentuální zastoupení AK – kalmodulin
+    - hledání procentuální zastoupení AK
+        - např. v buňce existují dvě kategorie molekul, které reagují s vápníkem, jedny se zásobní a druhé se signalizační funkcí
+        - obě kategorie můžeme rozlišit podle toho, jaké procento obsahují určitých AK
     - promotorové oblasti --- hledání DNA vazebných míst
     - predikce struktury
 }
@@ -1032,18 +1066,16 @@ Najít strukturní alignment je složité (NP-složité), navíc ani optimální
 
 ◊strong{ad 2)} Optimalizovány většinou bývají superpozice atomů. Superpozice je vzdálenost dvou ◊chem{C\alpha}, která je pak přes všechny ◊chem{C\alpha} měřená jako RMSD (root mean square distance). Hledají se pak takové konformace/rotace, bylo RMSD minimalizováno.
 
-◊$${\text{RMSD} = \sqrt{\frac{d^2}{N}},}
+◊$${\text{RMSD} = \sqrt{\frac{\sum_i d_i^2}{N}},}
 
 kde ◊${d} je (Euklidovská) vzdálenost dvou atomů ◊chem{C\alpha} a ◊${N} je počet atomů ◊chem{C\alpha}.
 
 ◊strong{ad 3)} RMSD je k hodnocení statistické významosti nevhodné, protože je to globální parametr citlivý na lokální změny a protože koreluje s délkou alignmentu. Existuje ale několik alternativ:
-
-◊slide[57 #:s 6]
 ◊ls{
     - SAS: řeší problém korelace hodnoty RMSD s délkou sekvence
       ◊$${\text{SAS} = \frac{\text{RMSD}}{N}}
     - Z-score a E-value, viz ◊link["#Parametry významnosti alignmentu"]{para­me­try výz­nam­nos­ti align­men­tu}
-    - TM-score: není závislé na délce, je citlivější (od 0=úplně jiné do 1=shodné)
+    - TM-score: není závislé na délce, je citlivější (od 0=úplně jiné do 1=shodné) ◊slide[57 #:s 6 #:inline #t]
 }
 
 ◊slide[58 #:s 6]
@@ -1069,7 +1101,7 @@ Strukturní alignment lze využít k tvorbě systému struktur (většinou p
         - srovnávání struktur bylo manuální, o klasifikaci rozhodoval člověk na základě svých znalostí a zkušeností
     - CATH (Class Architecture Topology Homology) ◊slide[62 #:s 6 #:inline #t]
         - class: jsou struktury proteinu spíše alfa nebo beta
-        - architecture: kolik jakých SS protein obsahuje (sandwich, roll, TIM barrel)
+        - architecture: kolik jakých foldů protein obsahuje (sandwich, roll, TIM barrel atd.)
         - topology: jak vypadají smyčky propojující jednotlivé SS
         - homology: jak jsou si struktury sekvenčně podobné
 }
@@ -1144,7 +1176,7 @@ V rámci proteinu jdou části bez pevné struktury často alespoň přibližně
     ◊term["SS propensity"]{
         Udává, v jaké SS se daná AK nejčastěji vyskytuje; to zjistíme z experimentálně naměřených dat.
 
-        ◊$${\text{P}[X \text{ je helixový typ}] = \frac{\text{frekvence } X \text{ v helixu}}{\text{frekvence } X}}
+        ◊$${\text{propensita } X \text{ k helixu} = \frac{\text{frekvence } X \text{ v helixu}}{\text{frekvence } X}}
     }
 }
 
@@ -1256,7 +1288,7 @@ Je dobré alignment ručně upravit (pokud například známe konzervovaná akti
     - použití energetické minimalizace
         - vazeb, torzních úhlů, smyček
         - není garantováno, že přinese lepší model
-        - není nidky úplně přesná (ignoruje se roztok atd)
+        - není nikdy úplně přesná (ignoruje se roztok atd)
     - modelování smyček
         - smyčky se často podílejí na vazbě ligandů, udělují specifitu nebo jsou součástí aktivních míst
         - často nemají protějška v templátu
@@ -1277,7 +1309,7 @@ Model je nutné nějak zkontrolovat; nikdy ale nebude zcela odpovídat pravdě. 
 ◊strong{ad 4.2 Model evaluation)} Modely se hodnotí jednodušeji než alignmenty, proto se často na chybu přijde až v této fázi. Nejlepší je použít WhatCheck, který zkontroluje celou škálu veličin, které nás zajímají.
 
 ◊ls[#:t "Programy pro homologní modelování"]{
-    - Swiss-Modeler: plně automatický
+    - Swiss-Model: plně automatický
     - WhatIf: umožňuje vytvářet vlastní alignment
     - Modeller: standartní nástroj
     - Phyre, Tasser
@@ -1291,7 +1323,7 @@ Fold recognition metody používáme, když neumíme najít templát se známou 
 
 Existují dva základní postupy, které se liší svou metodikou i úspěšností: ◊em{profile} a ◊em{threading} metody.
 
-◊slide[46 #:s 8 #:inline #t]
+◊slide[46 #:s 8]
 ◊ls[#:t "Profile metody"]{
     # uděláme profil naší sekvence
         - každá AK zařazena do jedné z 18 skupin na základě predikce její oblíbené SS (helix, beta list, zbytek) a toho, kde se nachází (uvnitř, na povrchu, atd. --- 6 skupin)
@@ -1301,13 +1333,13 @@ Existují dva základní postupy, které se liší svou metodikou i úspěšnost
         - například programy 3D PSSM, Phyre
 }
 
-Na rozdíl od profile metod se threading metody se nesnaží ze známých struktur vytvořit profily (3D -> 1D), ale naopak chtějí z naší sekvence získat nějaké informace o struktuře (1D -> 3D).
+Na rozdíl od profile metod se threading metody nesnaží ze známých struktur vytvořit profily (3D -> 1D), ale naopak chtějí z naší sekvence získat nějaké informace o struktuře (1D -> 3D).
 
 ◊ls[#:t "Postup"]{
-    # naší sekvenci přiřazujeme nějaký fold z databáze foldů (tzv. threading)
-    # tento fold zkoušíme různě naalignovat na naší sekvenci a pro každý alignment spočítáme jeho skóre
+    # na naší sekvenci "navlékáme" nějaký fold z databáze foldů (tzv. threading)
+    # tento fold zkoušíme na naší sekvenci různě naalignovat a pro každý alignment spočítáme jeho skóre
         - skóre se většinou počítá energetickou funkcí, která optimalizuje energii párových interakcí a solvatace
-        - oskórováním vlastně zjistíme, jak moc je naše sekvence kompatibilní se strukturou, kterou jsme jí přisoudili
+        - oskórováním zjistíme, jak moc je naše sekvence kompatibilní se strukturou, kterou jsme jí přisoudili
     # výsledný fold a alignment použijeme pro tvorbu modelu, která probíhá podobně jako při homologním modelování
 }
 
@@ -1341,13 +1373,13 @@ Jeden z nejlepších nástrojů pro predikci struktur je ◊strong{Rosetta}. ◊
 ◊ls[#:t "CASP"]{
     - Critical Assesment of Techniques for Protein Structure Prediction
     - soutěž predičních metod
-    - sekvence, jejichž struktury jsou těsně před objevením, se zašlou několik výzkumným týmům, které poté predikují jejich strukturu
+    - sekvence, jejichž struktury jsou těsně před objevením, se zašlou několika výzkumným týmům, které poté predikují jejich strukturu
     - vypočítaný model je poté porovnán s experimentálně objevenou strukturou
 }
 
 ◊subsection{Predikce interakce}
 
-Proteiny, které spolu interagují, se obvykle vyvíjejí společně a synchroně; mutace v jednom z proteinu jsou kompenzovány mutacemi v druhém. Používá se proto ◊strong{in silico dvouhybridní systém}: udělá se MSA obou proteinů a pokud vykazují podobnou frekvenci mutací, může se jednat o interakční pár.
+Proteiny, které spolu interagují, se obvykle vyvíjejí společně a synchronně; mutace v jednom z proteinů jsou kompenzovány mutacemi v druhém. Používá se proto ◊strong{in silico dvouhybridní systém}: udělá se MSA obou proteinů a pokud vykazují podobnou frekvenci mutací, může se jednat o interakční pár.
 
 ◊ls[#:t "Nástroje na predikci interakcí"]{
     - Bayesiánské metody (někdy kombinují i více přístupů)
