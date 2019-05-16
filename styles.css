@@ -173,6 +173,10 @@ li {
   margin-bottom: 0rem;
 }
 
+highlight {
+  margin-bottom: 1.6rem;
+}
+
 .highlight * {
   margin-bottom: 0;
 }
