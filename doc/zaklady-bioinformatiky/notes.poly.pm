@@ -22,7 +22,7 @@ Bioinformatika je vědní disciplína, která se zabývá zpracováním biologic
 
 A jak velká? Například největší genom, patřící organismu Amoeba dubia, má 670GB. Stejně tak se v desítkách GB pohybují i 3D histologické skeny. EBI (European Bioinformatic Institute) měl v roce 2015 kapacitu 60 PB dat.
 
-◊ls[#:t "Historie ioinformatiky"]{
+◊ls[#:t "Historie bioinformatiky"]{
     - (1707--1778) Carl Linne, první bioinformatik
     - (1956) Fred Sanger, první sekvence (insulin)
     - (1957) Perutz, Kendrew, první proteinová struktura
