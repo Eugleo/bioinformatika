@@ -308,6 +308,60 @@ Sledovat in vivo se dá i na tomografii, případně NMR.
         # vyplý/zaplý gen
 }
 
+◊title{Epitely}
+
+Epitely jsou tkáně tvořené buňkami s různým tvarem a funkcí, které jsou mezi sebou pevně spojeny pomocí mezibuněčných spojů. Vystýlají povrch sliznic a vnitřek dutin. Sedí na bazální lamině, jsou polarizovány.
+
+◊ls[#:t "Funkce epitelu"]{
+    - krytí a vystýlání povrchů, kůže, sliznice
+    - absorpce, střevo
+    - sekrece, žlázy
+    - recepce, neuroepitel
+    - stažlivost, myoepiteliální buňky
+    - resorpce, v rohovce (jediný takový epitel)
+	    - aby v ní nebyla voda a my dobře viděli
+    - dokáží fungovat jak svalové buňky, produkují myozin a aktin
+        - např. myoepitelové buňky mléčných žláz
+}
+
+◊section{Epitely v těle}
+
+◊ls[#:t "Druhy epitelů"]{
+    - podle vývodu
+        - endokrinní žlázy, bez vývodu
+        - exokrinní žlázy, s vývodem do lumen
+        - sekreční epitely, s vývodem do lumen
+    - podle funkce
+        - ochranný -> mnohovrstevný, odolný
+        - transportní – velké množství kanálů, průchod molekul přes membránu
+	    - řasinkový -> zajiŠťuje směrovaný pohyb (vajíčko ve vejcovodu)
+
+}
+
+◊definitions{
+    ◊term["Blažkovy linie"]{
+        Jev, popisující diferenciaci kůže v jednotlivých pásech, které jdou za sebou.
+    }
+}
+
+◊ls[#:t "Stavba epitelu"]{
+    - je polarizovaný
+        - bazální
+        - apikální
+        - bazolaterální
+    - pod ním je často pojivová tkáň
+    - tvar a velikost záleží na funkci (např. ochrana v jícnu => tlusté, vysoké buňky)
+    - odvozen od všech tří zárodečných listů
+        - ektoderm: epitelový povrch kůže, ústní a nosní dutina, řiť
+        - entoderm: výstelka dýchacího traktu, trávicí trakt, všechny orgány TS
+        - mezoderm: endotel (výstelka cév), mezotel (výstelka břišní dutiny, peritoneum)
+    - vždy sedí na bazální lamině, což je podpůrná pojivová tkáň
+        - ztráta kontaktu s bazální laminou vede k diferenciaci (keratinocyty)
+        - schpnost samouspořádání
+        - buňky samy epitel vyrábí, nebo vzniká pomocí fibroblastů
+        - v bazální lamině jsou přítomny speciální kolageny a fibriny
+}
+
 ◊title{Nervové buňky}
 
 ◊ls{
