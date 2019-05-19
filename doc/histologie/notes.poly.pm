@@ -246,8 +246,8 @@ Mají základ z neurální trubice, v PNS z neurální lišty. Někdy označovan
     }
 }
 
-◊img["oligodendrocyt.svg"]{Schematický obrázek oligodendrocytu}
-◊em{By Neuron_with_oligodendrocyte_and_myelin_sheath.svg: *Complete_neuron_cell_diagram_en.svg: LadyofHatsderivative work: Andrew c (talk) - Neuron_with_oligodendrocyte_and_myelin_sheath.svg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10888009}
+◊img["oligodendrocyt.png"]{Schematický obrázek oligodendrocytu}
+◊em{By Neuron-with-oligodendrocyte-and-myelin-sheath.svg: *Complete-neuron-cell-diagram-en.svg: LadyofHatsderivative work: Andrew c (talk) - Neuron-with-oligodendrocyte-and-myelin-sheath.svg, Public Domain, ◊link["https://commons.wikimedia.org/w/index.php?curid=10888009"]{link}}
 
 
 Pro gliové buňky je základním zdrojem energie glukóza, kterou anaerobně štěpí na laktát. Kyslík je štřen pro neurony, kde je potřeba pro přenos nervových vzruchů.
@@ -343,8 +343,8 @@ Studium navigace axonů se opět provádělo na zelených myškách; zeleně se 
     - jsou propojené přes gap junctions ◊em{konexinem 26}
 }
 
-◊img["ucho.svg"]{Schematický obrázek popisující části vnitřního ucha}
-◊em{By Madhero88 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=6888273}
+◊img["ucho.png"]{Schematický obrázek popisující části vnitřního ucha}
+◊em{By Madhero88 - Own work, CC BY-SA 3.0, ◊link["https://commons.wikimedia.org/w/index.php?curid=6888273"]{link}}
 
 ◊ls[#:t "Princip funkce"]{
     # zvukové vibrace deformují stereocilia na vláskových buňkách
@@ -371,7 +371,7 @@ Studium navigace axonů se opět provádělo na zelených myškách; zeleně se 
 }
 
 ◊img["oko.jpg"]{Schéma vstevtanosti oka}
-◊em{[By OpenStax College - Anatomy & Physiology, Connexions Web site. http://cnx.org/content/col11496/1.6/, Jun 19, 2013., CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=30148002]}
+◊em{[By OpenStax College - Anatomy Physiology, Connexions Web site. ◊link["http://cnx.org/content/col11496/1.6/"]{author link}, Jun 19, 2013., CC BY 3.0, ◊link["https://commons.wikimedia.org/w/index.php?curid=30148002"]{wiki link}]}
 
 Nejblíže u pigmentovaných epiteliálních buněk je senzorický epitel, poté jsou různé interneurony a gangliové neurony, které vysílají signál do mozku. Apikální vrstvu senzorické složy tvoří brva (či přetvořený bičík).
 

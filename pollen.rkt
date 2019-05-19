@@ -353,7 +353,7 @@
   (case (current-poly-target)
     [(md) `("![" ,@alt "]" "(" ,loc ")")]
     [(tex pdf) (apply string-append
-              `("\\begin{figure}\n"
+              `("\\begin{figure}[ht]\n"
                 "    \\caption{" ,@alt "}\n"
                 "    \\includegraphics[width=0.85\\textwidth]{" ,link "}\n"
                 "    \\centering\n"

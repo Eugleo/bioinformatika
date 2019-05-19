@@ -4,6 +4,8 @@
     \usepackage[czech]{babel}
     \addto\captionsczech{\renewcommand{\chaptername}{}}
 
+    \renewcommand{\floatpagefraction}{.8}%
+
     \usepackage{amsmath}
     \usepackage[version=4]{mhchem}
     \usepackage{listings}
