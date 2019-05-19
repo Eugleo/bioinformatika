@@ -2,6 +2,7 @@
 
 ◊define-meta[title]{Histologie}
 ◊define-meta[header]{zápisy}
+◊define-meta[toc]{true}
 
 ◊title{Nervové buňky}
 
@@ -31,14 +32,64 @@
 
 ◊section{Stavba CNS a PNS}
 
-V celém nervovém systému je asi ◊${10^{11}} nervových buňek, 3--10 krát více podpůrných gliových buněk a tím pádem 1000-5000 krát více možných propojení neuronů.
+V celém nervovém systému je asi ◊${10^{11}} nervových buňek, 3--10 krát více podpůrných gliových buněk a tím pádem 1000-5000 krát více možných propojení neuronů. Nervy jsou zpěvněny třemi obaly, epineuriem, perineuriem a endoneuriem.
 
-◊ls[#:t "Molecular fence"]{
-    - v aixonálním výběžku jsou jiné iontové kanály než dendritech
-    - zajišťují diferenciaci na úrovni membrány
-    - buňka je díky ní polarizovaná
-    - brání průchodu signalizace zpět do dendritu
-    - pro správnou funkci NS je nezbytná dostředivá a odstředivá signalizace právě na základě membránových domén
+
+◊ls[#:t "Metody zkoumání CNS"]{
+    - skenovací metody často pracují s izotopy prvků, které mají liché počty neutronů
+        - možnost vizualizovat pomocí funkční magnetické rezonance (FMR)
+        - dá se zjistit, které oblasti mozku jsou aktivní a neaktivní
+        - mozek je možno pozorovat in vivo, např. i to, jak reaguje na konkrétní vzruchy
+        - PET (pozitronová emisní tomografie): vychytávání cukru označeného radioaktivní látkou aktivním rostoucím nádorem
+    - mozek je rozdělen na malé specializované části
+}
+
+Bylo zjištěno, že máme nějak mnoho druhů neuronů na to, jak málo máme genů, které je kódují.Zdá se, že přírody nejspíše využívá triky s exony a introny (alternativní splicing).
+
+◊ls[#:t "Vývoj CNS"]{
+    # v ontogenezi se tvoří obrovské množství buněk
+        - některé projdou programovanou buněčnou smrtí
+    # nezralé neurony během ontogeneze putují podél radiálních gliových buněk propojujících vnitřní  a vnější povrch nervové trubice (délka až 2cm)
+    # gliové buňky slouží jako pravítko a určují tloušťku vrstev nervových buněk v mozku
+    # nervové výběžky jsou poté naváděny pomocí chemoatraktantů (např. netrin) a chemorepelentů (např. některé semaforiny, proteiny Slit)
+        - přesná diferenciace v konkrétní populaci je dána poziční informací od hormonů
+            - rodiny Hox, Pax, Dbx, Irx
+            - faktory sonic hedgehog, BMP
+        - někdy se jeden výběžek plazí po druhém, který by pak byl tzv. ◊em{pioneer neuron}
+    # pro přežívá neuronů jsou nutné neurotropiny, např. NGF (nerve growth factor)
+}
+
+◊ls[#:t "Tvorba vrstev pomocí gliových buněk"]{
+    # první neuroblasty vytvoří vrstvu, která se stabilizuje tvorbou mezibuněčných spojení
+    # poté se po gliových buňkách posunou nové buňky, projdou stávající vrstvu a vytvoří novou vrstvu atd.
+    # poslední vrstva přidaných buněk je ◊em{neokortex}, je nejdál od zdroje kmenových buněk
+}
+
+◊img["vrstvy_rust.png"]{Znázornění postupného růstu vrstev podle gliových buněk}
+
+◊ls[#:t "Nervové spoje"]{
+    - různé neurální populace se aktivují při různých úkolech
+        - např. při rozlišování hranatých a kulatých věcí
+    - dynamická struktura, která se "drátuje" v průběhu života
+    - součástí správného rozvoje CNS je i apoptóza
+    - neurony, které nejsou za prvních pár týdnů prenatálního života použity, podléhají buněčné smrti
+    - místům v mozku, která byla původně určena jako nefunkční či prázdná, bývá pomocí FMR přiřazena funkce
+    - podobně jsou i v rámci postnatálního života posilovány spoje, které jsou často používány
+        - naopak nepoužívané spoje slábnou a zanikají
+        - je důležité dávat dítěti (alespoň do sedmi let života) co nejvíce různých vjemů
+        - příkladem může být absolutní hudební sluch, který silně souvisí s typem vjemů, kterým je dítě vystavováno
+            - v Asii desetkrát vyšší incidence absolutního sluchu než u nás, snad kvůli tonálním jazykům
+            - je s ním spijený jen jeden gen, který avšak způsobuje i nízkou hodnotu IQ
+    - tato plasticita mozku během života zaniká
+        - netvoří se nové spoje, pouze se posilují a zeslabují ty stávající
+}
+
+◊box["Poznámka"]{
+    ◊definitions{
+        ◊term["mikrochimérismus"]{
+            Buňky myšátek během gravidity osidlují tělo matky, což se dá pozorovat na myšátkách GFP-tagovaného samce a netagované samice.
+        }
+    }
 }
 
 ◊subsection{Neurony}
@@ -73,7 +124,15 @@ V celém nervovém systému je asi ◊${10^{11}} nervových buňek, 3--10 krát 
     - mohou být myelinizované i nemyelinizované
 }
 
-◊section{Nervová zakončení}
+◊ls[#:t "Molecular fence"]{
+    - v aixonálním výběžku jsou jiné iontové kanály než dendritech
+    - zajišťují diferenciaci na úrovni membrány
+    - buňka je díky ní polarizovaná
+    - brání průchodu signalizace zpět do dendritu
+    - pro správnou funkci NS je nezbytná dostředivá a odstředivá signalizace právě na základě membránových domén
+}
+
+◊subsubsection{Nervová zakončení}
 
 ◊definitions{
     ◊term["aktivační zakončení"]{
@@ -101,17 +160,51 @@ V reálu záleží na tom, jak se posčítají hyperpolarizace a depolarizace.
     - akční potenciál je pořád stejně velký, jak rychle se má sval stáhnout pozná z frekvence, ve které dostává signály
 }
 
-◊ls{
-    - máme nějak mnoho neuronů na to, jak málo máme genů
-    - nejspíš jsou využívány triky s exony a introny (alternativní splicing)
+◊subsubsection{Schopnost regenerace}
+
+◊meta{Na toto byl v přednášce kladen velký důraz.}
+
+Naproti obecné představě jsou nervové buňky schopny určité regenerace.
+
+◊ls[#:t "Průběh poškození axonu"]{
+    # Ve zdravém neuronu spojeném se svalem je jádro uprostřed a je v něm mnoho Nisslových substancí.
+    # Když je axon přerušen, jádro se posune na periferii neuronu a počet Nisslových substancí je velice sníží. Část nervového vlákna, která je nyní spojená jen se svalem, degeneruje a je odklizena makrofágy.
+    # Denervovaná svalová buňka atrofuje. Schwannovy buňky proliferují, tvoří silný kabel roustoucí ze svalové buňky.
+    # Axon dorůstá a snaží se spojit a prorůst Schannovými buňkami.
+        - Když se mu to povede, sval je opět inervovaný, obnoví se jeho síla i funkce a neuron se vrátí do původního stavu.
+        - Když se mu to nepovede, růst axonu je neorganizovaný, sval dál atrofuje. Po překročení určité doby je sval už nenávratně poškozen.
 }
 
+◊box["Poznámka"]{
+    Nisslova substance (Nissl body) je granulární hmota v somě neuronu složená z endoplazmatického retikula obklopeného volnými ribozomy.
+}
 
-◊section{Pomocné nervové buňky}
+Axony málokdy najdou přesně tu správnou myelinovou pochvu a přesně to správné místo, kde původně vedly---jednotlivé svaly mají po regeneraci po zranění nejprve špatnou koordinaci a mozek se musí přeučovat, což trvá měsíce až roky.
+
+U myši jsou schopna se zahojit i poranění páteře; při poraněních páteře u člověka je ale problém s tím, že je informační zmatek přerušených axonů obrovský, navíc axony by musely prorůst mnohem dál než u myši.
+
+◊ls[#:t "Léčba přerušených nervových spojů"]{
+    - k léčení se snažíme využít i kmenové buňky
+    - stárnutí je spojeno s neurodegenerací, vymírají konkrétní populace nervových buněk
+        - např. u Parkinsonovy choroby to jsou dopaminergní neurony v ◊em{corpora nigra}
+    - existují snahy diferencovat určité populace nervových buněk in vitro
+    - regenerace je ale omezenejší než u běžných epitelů
+        - nejsilnější je regenerace v bulbus olfactorius (čichovém bulbu) a v hippokampu, který je plastický i v dospělosti
+}
+
+◊ls[#:t "Příklady regenerace"]{
+    - lze ji pozorovat u pacientů trpícími vážnými, život ohrožujícími epileptickými záchvaty
+        - odstraní se velká část mozku s epileptickým ložiskem
+        - původní práci této části zastane druhá hemisféra
+    - Phineas Gage
+        - hlavou mu proletěla tyč
+        - obnovila se mu skvěle řeč i hybnost
+    - víme, kde v myším mozku sídlí kmenové buňky
+}
+
+◊subsection{Pomocné nervové buňky}
 
 Mají základ z neurální trubice, v PNS z neurální lišty. Někdy označované jako ◊strong{gliové buňky}.
-
-◊todo{Přidat obrázek oligodendrocytu.}
 
 ◊definitions{
     ◊term["oligodendrocyty"]{
@@ -153,20 +246,13 @@ Mají základ z neurální trubice, v PNS z neurální lišty. Někdy označovan
     }
 }
 
+◊img["oligodendrocyt.svg"]{Schematický obrázek oligodendrocytu}
+◊em{By Neuron_with_oligodendrocyte_and_myelin_sheath.svg: *Complete_neuron_cell_diagram_en.svg: LadyofHatsderivative work: Andrew c (talk) - Neuron_with_oligodendrocyte_and_myelin_sheath.svg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10888009}
+
+
 Pro gliové buňky je základním zdrojem energie glukóza, kterou anaerobně štěpí na laktát. Kyslík je štřen pro neurony, kde je potřeba pro přenos nervových vzruchů.
 
-◊todo{Doplnit obrázek bariéry.}
-
-◊ls[#:t "Hematoencefylická bariéra"]{
-    - endoteliání kapilární buňka je obklopena výběžky astrocytů
-    - všechny mezery uzavřeny přes tight junctions
-    - kromě imunitních buněk by nemělo nic projít
-    - téměř vše, co se dostane k neuronům, prochází přes astrocyty
-}
-
-◊subsection{Myelinizace}
-
-◊ls{
+◊ls[#:t "Myelinizace"]{
     - panožka Schwannovy buňky nebo oligodendrocytu se několikrát obtočí kolem výběžku
     - výsledná vtsva má výborné elektrické vlastnosti
     - nabohaceny komplexní glykolipidy, sfingolipidy, gangliosidy
@@ -175,8 +261,27 @@ Pro gliové buňky je základním zdrojem energie glukóza, kterou anaerobně š
         - v jednom kanálku může být i více axonů
 }
 
+◊subsection{Hematoencefalická bariéra}
+
 ◊ls{
-    - nervy zpevňuje epineurium, perineurium a endoneurium
+    - odděluje mozek od zbytku těla a je běžně pro buňky neprůchodná
+    - propouští kmenové buňky, pokud je v mozku indukováno poškození
+        - minimálně u myší, na kterých byl tento experiment proveden
+        - pronikají přes ni kmenové buňky neznámého původu
+        - zajištění regenerace poměrně velké části nervové tkáně
+        - diferenciace v nervové buňky i různé typy gliových buněk
+}
+
+Na obrázku lze pozorovat výběžky astrocytů, které k sobě těsně doléhají. Samotná kapilára je pak z endoteliálních buněk, které jsou spojeny přes tight junctions.
+
+◊img["bbb.jpg"]{Schematický obrázek hematoencefalické bariéry}
+◊em{By Ben Brahim Mohammed - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=12263975}
+
+◊ls[#:t "Stavba"]{
+    - endoteliání kapilární buňka je obklopena výběžky astrocytů
+    - všechny mezery mezi endoteliáními buňkami uzavřeny přes tight junctions
+    - kromě imunitních buněk by nemělo nic projít
+    - téměř vše, co se dostane k neuronům, prochází přes astrocyty
 }
 
 ◊section{Senzorické epitely}
@@ -228,21 +333,24 @@ Studium navigace axonů se opět provádělo na zelených myškách; zeleně se 
 }
 
 ◊ls[#:t "Vláskové buňky"]{
-    - leží ve struktuře ◊strong{Cortiho orgánu}, mezi podpůrnými buňkami, překryty extracelulární matrix
+    - leží ve struktuře ◊strong{Cortiho orgánu} v hlemýždi, mezi podpůrnými buňkami, překryty extracelulární matrix
     - převádějí mechanickou deformaci v elektrický signál
     - všechny mají stejnou morfologii varhanovitých výběžků, ◊em{stereocilií}
         - stabilizovány aktinovým cytoskeletem
         - podobně jako výběžky na buňkách ve střevě
         - rozměry každé stereocilie pevně dány vzhledem k poloze ve středním uchu, odpovídají frekvencii zvukového podnětu, na který mají reagovat
-    - neregenerují
-    - propojené přes gap junctions ◊em{konexinem 26}
+    - neregenerují se
+    - jsou propojené přes gap junctions ◊em{konexinem 26}
 }
 
+◊img["ucho.svg"]{Schematický obrázek popisující části vnitřního ucha}
+◊em{By Madhero88 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=6888273}
+
 ◊ls[#:t "Princip funkce"]{
-    # zvukové vibrace deformují stereocilia
-    # otevírají se iontové kanály s mechanickými "vrátky"
+    # zvukové vibrace deformují stereocilia na vláskových buňkách
+    # otevírají se iontové kanály s mechanickými "vrátky" (mechanically gated ion channels)
         - reálně dochází ke změně konformace iontového kanálu
-    # vzniká membránový vzruch
+    # vzniká membránový vzruch, který se šíří vláskovou buňkou
     # na bazálním konci dojde v synapsi s neuronem k vylití neurotransmiteru
 }
 
@@ -262,7 +370,8 @@ Studium navigace axonů se opět provádělo na zelených myškách; zeleně se 
     - není schopný regenerace
 }
 
-◊todo{Doplnit schéma oka.}
+◊img["oko.jpg"]{Schéma vstevtanosti oka}
+◊em{[By OpenStax College - Anatomy & Physiology, Connexions Web site. http://cnx.org/content/col11496/1.6/, Jun 19, 2013., CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=30148002]}
 
 Nejblíže u pigmentovaných epiteliálních buněk je senzorický epitel, poté jsou různé interneurony a gangliové neurony, které vysílají signál do mozku. Apikální vrstvu senzorické složy tvoří brva (či přetvořený bičík).
 
@@ -299,7 +408,6 @@ To, jakým způsobem vidíme, je vlastně negativ: při zachycení fotonu se zas
         - např. syndrom LHON
         - zrakový nerv a funkce senzorického zrakového epitelu je zřejmě jedna z Achillových pat energetického metabolismu
 }
-
 
 ◊section{Patologie nervové soustavy}
 
@@ -352,111 +460,3 @@ To, jakým způsobem vidíme, je vlastně negativ: při zachycení fotonu se zas
     - neurofibrom
     - neurogenní sarkom --- vzácná varianta neurinomu, maligní
 }
-
-
-◊subsection{Schopnost regenerace}
-
-Naproti obecné představě jsou nervové buňky schopny určité regenerace.
-
-◊ls{
-    # Ve zdravém neuronu spojeném se svalem je jádro uprostřed a je v něm mnoho Nisslových substancí.
-    # Když je axon přerušen, jádro se posune na periferii neuronu a počet Nisslových substancí je velice sníží. Část nervového vlákna, která je nyní spojená jen se svalem, degeneruje a je odklizena makrofágy.
-    # Denervovaná svalová buňka atrofuje. Schwannovy buňky proliferují, tvoří silný kabel roustoucí ze svalové buňky.
-    # Axon dorůstá a snaží se spojit a prorůst Schannovými buňkami.
-        - Když se mu to povede, sval je opět inervovaný, obnoví se jeho síla i funkce a neuron se vrátí do původního stavu.
-        - Když se mu to nepovede, růst axonu je neorganizovaný, sval dál atrofuje. Po překročení určité doby je sval už nenávratně poškozen.
-}
-
-◊box["Poznámka"]{
-    Nisslova substance (Nissl body) je granulární hmota v somě neuronu složená z endoplazmatického retikula obklopeného volnými ribozomy.
-}
-
-Axony málokdy najdou přesně tu správnou myelinovou pochvu a přesně to správné místo, kde původně vedly---jednotlivé svaly mají po regeneraci po zranění nejprve špatnou koordinaci a mozek se musí přeučovat, což trvá měsíce až roky.
-
-U myši jsou schopna se zahojit i poranění páteře; při poraněních páteře u člověka je ale problém s tím, že je informační zmatek přerušených axonů obrovský, navíc axony by musely prorůst mnohem dál než u myši.
-
-◊ls{
-    - k léčení se snažíme využít i kmenové buňky
-    - stárnutí je spojeno s neurodegenerací, vymírají konkrétní populace nervových buněk
-        - např. u Parkinsonovy choroby to jsou dopaminergní neurony v ◊em{corpora nigra}
-    - existují snahy diferencovat určité populace nervových buněk in vitro
-    - regenerace je ale omezenejší než u běžných epitelů
-        - nejsilnější je regenerace v bulbus olfactorius (čichovém bulbu) a v hippokampu, který je plastický i v dospělosti
-}
-
-◊ls{
-    - toto se dá pozorovat i u pacientů trpícími vážnými, život ohrožujícími epileptickými záchvaty
-        - odstraní se velká část mozku s epileptickým ložiskem
-        - původní práci této části zastane druhá hemisféra
-    - Phineas Gage
-        - hlavou mu proletěla tyč
-        - obnovila se mu skvěle řeč i hybnost
-}
-
-◊ls{
-    - víme, kde v myším mozku sídlí kmenové buňky
-    - když je zeleně fluorescenčně označíme a přeneseme do neznačeného mozku, během života myši poté sledujeme, jak se značené buňky všude rozšiřují a jak se obnovují různé neuronální populace
-}
-
-◊definitions{
-    ◊term["mikrochimérismus"]{
-        Buňky myšátek během gravidity osidlují tělo matky, což se dá pozorovat na myšátkách GFP-tagovaného samce a netagované samice.
-    }
-}
-
-◊ls{
-    - hematoencefalická bariéra odděluje mozek od zbytku těla a je běžně pro buňky neprůchodná
-    - v mozku myši indukováno poškozeni
-        - přes hematoencefalickou bariéru masivně pronikají kmenové buňky neznámého původu
-        - zajištění regenerace poměrně velké části nervové tkáně
-        - diferenciace v nervové buňky i různé typy gliových buněk
-}
-
-◊ls{
-    - různé neurální populace se aktivují při různých úkolech
-        - např. při rozlišování hranatých a kulatých věcí
-    - dynamická struktura, která se "drátuje" v průběhu života
-}
-
-◊ls{
-    - skenovací metody často pracují s izotopy prvků, které mají liché počty neutronů
-        - možnost vizualizovat pomocí funkční magnetické rezonance (FMR)
-        - dá se zjistit, které oblasti mozku jsou aktivní a neaktivní
-        - mozek je možno pozorovat in vivo, např. i to, jak reaguje na konkrétní vzruchy
-        - PET (pozitronová emisní tomografie): vychytávání cukru označeného radioaktivní látkou aktivním rostoucím nádorem
-    - mozek je rozdělen na malé specializované části
-        - je těžko pochopitelné, že je poté možno velkou část mozku nahradit druhou hemisférou
-}
-
-◊ls{
-    - součástí správného rozvoje CNS je i apoptóza
-    - neurony, které nejsou za prvních pár týdnů prenatálního života použity, podléhají buněčné smrti
-    - místům v mozku, která byla původně určena jako nefunkční či prázdná, bývá pomocí FMR přiřazena funkce
-    - podobně jsou i v rámci postnatálního života posilovány spoje, které jsou často používány
-        - naopak nepoužívané spoje slábnou a zanikají
-        - je důležité dávat dítěti (alespoň do sedmi let života) co nejvíce různých vjemů
-        - příkladem může být absolutní hudební sluch, který silně souvisí s typem vjemů, kterým je dítě vystavováno
-            - v Asii desetkrát vyšší incidence absolutního sluchu než u nás, snad kvůli tonálním jazykům
-            - je s ním spijený jen jeden gen, který avšak způsobuje i nízkou hodnotu IQ
-    - tato plasticita mozku během života zaniká
-        - netvoří se nové spoje, pouze se posilují a zeslabují ty stávající
-}
-
-◊ls{
-    - v ontogenezi se tvoří obrovské množství buněk
-    - některé projdou programovanou buněčnou smrtí
-    - nezralé neurony během ontogeneze putují podél radiálních gliobých buněk propojujících vnitřní  a vnější povrch nervové trubice (délka až 2cm)
-    - gliové buňky slouží jako pravítko a určují tloušťku vrstev nervových buněk v mozku
-        - tvorba vrstev (viz obrázek níže)
-            # první neuroblasty lezou a vytvoří vrstvu, která se stabilizuje tvorbou mezibuněčných spojení
-            # lezou nové buňky, prolezou stávající vrstvu a vytvoří další vrstvu
-            # neokortex je poslední vrstva přidaných buněk, nejdál od zdroje kmenových buněk
-    - nervové výběžky jsou poté naváděny pomocí chemoatraktantů (např. netrin) a chemorepelentů (např. některé semaforiny, proteiny Slit)
-        - přesná diferenciace v konkrétní populaci je dána poziční informací od hormonů
-            - rodiny Hox, Pax, Dbx, Irx
-            - faktory sonic hedgehog, BMP
-        - někdy se jeden výběžek plazí po druhém, který by pak byl tzv. ◊em{pioneer neuron}
-    - pro přežívá neuronů jsou nutné neurotropiny, např. NGF (nerve growth factor)
-}
-
-◊img["vrstvy_rust.png"]{Znázornění postupného růstu vrstev podle gliových buněk}
