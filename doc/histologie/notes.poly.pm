@@ -4,6 +4,310 @@
 ◊define-meta[header]{zápisy}
 ◊define-meta[toc]{true}
 
+◊title{Úvod}
+
+Histologie je nauka o tkáních. Díky novým typům značení, pokroku v molekulární genetice a novým vizualizačním technikám se histologie, ač by to tak na první pohled nevypadalo, stále řadí k dynamicky se rozvíjejícím oborům.
+
+Jeden příklad za všechny, mechanismus šedivění vlasů. Melanocyty, které jsou nahrazovány z kmenových buněk, vyrábí melanin, který předávají keranocytům. To způsobí obarvení vlasu. Pokud však kmenové buňky vymřou, nedojde k vytvoření pigmentových buněk, tudíž vlas ztrácí pigmentaci. To nastane, je-li protein Bcl-2 na vnější mitochondriální membráně inaktivovaný.
+
+◊ls[#:t "Typy tkání"]{
+    - epitelové
+    - pojivové
+    - svalové
+    - nervové
+}
+
+◊title{Metody pro specifickou lokalizaci struktur}
+
+◊ls{
+    - histochemické techniky
+        - specifické barvení
+        - nespecifické barvení
+            - získání kyselé a zásadité struktury buněk
+    - enzymatická histochemie
+        - některé enzymy jsou odolné vůči fixaci a řezání
+            - přidání bezbarvého substrátu => po reakci s enzymem se obarví
+    - imunohistochemie
+        - použití ◊em{sekundárních protilátek}, protilátek proti protilátkám
+        - označení fluorem => vznik nerozpustného produktu => klasická mikroskopie
+    - imunocytochemie
+        - pomocí protilátek detekujeme jednotlivé buněčné struktury
+}
+
+◊section{Příprava vzorku}
+
+◊subsection{Odběr tkáně}
+
+◊definitions{
+    ◊term["biopsie"]{
+        Odběr vzorku z živého organismu.
+    }
+
+    ◊term["nekropsie"]{
+        Odběr vzorku z mrtvého organismu.
+    }
+}
+
+◊subsection{Fixace}
+
+◊ls{
+    - nutná, jinak se vzorek sám rozloží (autolýza)
+    - zastaví metabolické děje v buňce
+        - zpomalením
+        - denaturací enzymů
+}
+
+◊ls[#:t "Princip funkce"]{
+    - fyzikální metody
+        - teplo
+            - denaturace proteinů způsobujících autolýzu
+        - zmražení
+            - rychlá příprava vzorku
+            - není třeba odvodňovat ani prosycovat pryskyřicí
+            - je však nutnost zabránit vzniku krystalků vody, např. pomocí kryoprezervans (sacharóza + ethylenglykol/dimethylsulfoxid)
+    - chemické metody
+        - imerzní
+            - ponoření do fixační tekutiny
+        - perfúzní
+            - nástřik cév
+}
+
+◊ls[#:t "Fixační činidla"]{
+    - precipitace proteinů
+        - chemická denaturace proteinů
+        - např. chlorid rtuťnatý, kyselina pikrová
+    - denaturace a síťování kovalentních modifikací
+        - formaldehyd, glutaraldehyd
+        - vazba na ◊chem{NH2} skupiny
+    - denaturující a odvodňující preparát
+        - alkoholy
+        - vysoce koncentrující metanol, etanol
+    - fixační směsi
+        - rychlé, dokonalé fixování
+        - Bouinův roztok: kys. pikrová, formaldehyd, kys. octová, voda
+        - Zenkerův roztok = formaldehyd, dvojchroman draselný, chlorid rtuťnatý, voda
+        - roztok glutaraldehydu, formaldehydu
+    - elektronová mikroskopie
+        - glutaraldehyd + oxid osmičelý
+}
+
+Alkohol skvěle fixuje, čím více ethanolu, tím lépe, protože alkohol ve tkáních váže vodu a tkáně tím pádem odvodní.
+
+◊subsection{Odvodnění a projasnění}
+
+◊ls{
+    - lázeň se vzestupnou řadou etanolu
+    - odvodnění
+        - parafíny nejsou mísitelné s vodou => nutnost vodu odstranit
+    - prosycení
+        - rozpouštědlem zalévacího média
+        - xylen, toluen, aceton
+}
+
+◊subsection{Zalévání do vosku}
+
+◊ls{
+    - zpevnění preparátu
+    - rozpouštědlo mísící se s parafínem (xylol)
+    - parafíny, pryskyřice, zmražení
+}
+
+◊subsection{Krájení}
+
+◊ls{
+    - krájí se na tloušťku jedné vrstvy buněk, tedy 4--10◊${\mu}m
+    - mikrotomy ("kráječe")
+        - mikrotom
+        - ultramikrotom
+        - vibratom
+        - kryomikrotom
+            - bez fixace, bez zalévání, bez denaturace
+    - řez se dá na podložní sklo, přilepení bílek/glycerin
+    - řezání parafínových bločků
+        - ocelový nůž
+        - plátek na kapku vody na podložním sklíčku => napnutí + rozprostření
+    - bločky v pryskyřici
+        - skleněný/diamantový nůž
+        - řezy mají mezi 0,1 a 0,01${\mu}m
+    - řezy pro elektronovou mikroskopii
+        - řez na kovovou síťku z leptané mědi
+}
+
+◊subsection{Barvení}
+
+◊ls{
+    - účel: zviditelnění struktur a tkání
+    - většina barviv rozpustných ve vodě => je třeba z řezů odstranit vodu
+    - většina pozorovaných molekul je nabitých
+        - bazofilní struktury
+            - kyselé povahy, obsahují záporný náboj
+            - DNA, RNA, glykosaminoglykany (EM, lysozomy)
+            - barvení bazickými barvivy
+                - toluidinová modř, methylenová modř, hematoxylin
+        - acidofilní (◊em{eosinofilní}) struktury
+            - jsou zásadité povahy, obsahují kladný náboj
+            - cytoplazma, některé typy granul
+            - kyselá barviva
+                - oranž G, eosin, kyselý fuchsin
+    - nejčastěji barvení hematoxylinem a eosinem
+        - acidofilní struktury: růžová, červená
+        - bazofilní struktury: modrá, černá, purpurová
+            - hematoxylin se oxidací mění na haematein
+    - fluorescenční techniky
+        - paralelně vedle sebe několik různě obarvených struktur => vícebarevný preparát
+        - velké množství barviv, všechna se specificky akumulují v jednotlivých organelách
+}
+
+◊meta{Není třeba si pamatovat všechny barvy, stačí jen základní rozdělení uvedené výše + hematoxylin, eosin, giemsa a oranž.}
+
+◊ls[#:t "Běžné barvy"]{
+    - giemsa
+        - krevní roztěry
+    - PAS barvivo
+        - důkaz záporně nabitých makromolekul
+        - muciny, GAG, sacharidy, polysacharidy, glykolipidy
+    - Nisslova substance
+        - nervové buňky
+        - neuronové a gliové sítě modřed
+    - AZAN
+        - kombinace několika barviv
+        - azokarmín: červená jádra
+        - anilínová modř: modrá kolagenní vlákna a mucin
+        - oranž G: oranžová cytoplasma a svaly, červené erytrocyty
+    - Weigert-van Gieson
+        - Weigertův hematoxylin: šedá jádra
+        - saturnová červeň: červená kolagenní vlákna
+        - kyselina pikrová: žlutá cytoplasma a svalovina
+    - žlutý Massonův trichrom
+        - hematoxylin: modrá až černá jádra
+        - erythrosin: červená svalovina
+        - šafrán: žlutá kolagenní vlákna, červené erytrocyty
+    - zelený Massonův trichrom
+        - hematoxylin, kyselý fuchsin
+        - světlá zeleň: zelená kolagenní vlákna, červené erytrocyty
+    - Weigert resorcin-fuchsin
+        - resorcin fuchsin: fialová elastická vlákna
+    - Heidenhainův železitý hematoxylin
+        - modrá až černá jádra a cytoplasma
+        - barvení svalů
+        - průkaz parazitů v tkáních
+    - impregnace stříbrem
+        - hnědá až černá kolagenní a retikulární vlákna
+        - barvení neuronů a glií
+        - barví s vysokým prostorovým rozlišením
+    - kresylvioleť
+        - fialová DNA, RNA
+        - jádro, jadérko, granulární ER
+}
+
+◊ls[#:t "Barva na vitální barvení"]{
+    - neutrální červeň
+        - neprotonovaná bezbarvá, permeabilní do buněk
+        - protonovaná se obarví červeně => nemůže projít membránou
+        - protonace např. v lysozomech
+    - Janusova zeleň
+        - neoxidovaná bezbarvá, permeabilní do buněk
+        - obarvování mitochondrií
+}
+
+◊section{Histochemie}
+
+◊ls{
+    - využití chemických reakcí k vizualizaci struktur
+    - vznikající produkty
+        - nesmí difundovat z místa vzniku
+        - musí být nerozpustné, barevné nebo elektrodenzní
+    - metoda musí být specifická
+    - fixace nesmí blokovat funkční skupiny nebo zničit funkci prokazovaných enzymů
+}
+
+◊ls[#:t "Histochemické detekce"]{
+     - železo
+		- Perlsova reakce: tvorba tmavomodré sraženiny ferokyanidu železitého
+		- odhalení hemochromatózy, hemosiderózy
+	- fosfáty
+		- dusičnan stříbrný, fosforečnan stříbrný redukován na černý precipát stříbra (hydrochinonem)
+        - studium osifikace
+	- DNA
+		- Feulgenova reakce: hydrolýza DNA pomocí HCl
+		- Schiffovo činidlo: volné aldehydové skupiny reagují s fuchsinem
+	- proteiny
+		- imunocytochemické metody
+		- polysacharidy, oligosacharidy
+			- PAS reakce: oxidace kyselinou jodistou
+			- aldehydové skupiny reagují s fuchsinem => purpurová sraženina
+		- glykolipidy, glykoproteiny
+			- značené lektiny
+    - enzymy
+        - kyselé fosfatázy
+            - Gomoriho metoda: fixace formalinem, inkubace s glycerolfosfátem sodným + dusičnanem olovnatým -> fosfátové ionty -> nerozpustný elektrodenzní fosforečnan olovnatý (lysozymy)
+        - dehydrogenázy
+            - Tetrazolium: reakce na barevnou sraženinu formazanu
+        - detekce mitochondrií
+        - peroxidáza
+        - DAB 3'-diaminbenzen: vznik z peroxidu vodíku pomocí peroxidázy
+        - hnědé zbarvení
+
+}
+
+◊ls[#:t "Průkazové reakce"]{
+    - imunocytochemie
+    - lektinová histochemie, hybridizace in situ
+    - metabolické radioaktivní značení, neboli elektromikroskopická autoradiografie
+}
+
+◊ls[#:t "Propojení elektronové mikroskopie a autoradiografie"]{
+    - k buňkám se přidá radioaktivně značený leucin
+    - leuxcin se zabuduje do proteinů
+	- sledování putování nově syntetizovaných proteinů
+}
+
+◊section{Mikroskopie}
+
+Oko rozpozná 100◊${\mu}m, světelný mikroskop 100nm, elektronový i rozměry pod 1nm.
+
+◊ls[#:t "Světelná mikroskopie"]{
+    - sledování in vivo
+	- digitalizace dat
+	- mnohobarevná detekce
+	- konfokální mikroskop
+		- detekce světelného signálu z jedné roviny zaostření bez kontaminace signálem nad a pod rovinou zaostření
+}
+
+Sledovat in vivo se dá i na tomografii, případně NMR.
+
+◊ls[#:t "Elektronová mikroskopie"]{
+    - detekce elektronů
+	- optika je elektromagnetické povahy
+	- černobílé obrázky, ale exsituje možnost obarvení
+	- typy
+		- skenovací EM: svítíme na pokovený objekt, detekujeme, co se odrazí
+		- transmisní EM: objekt prosvěcován elektrony, detekujeme jejich rozptyl
+			- bez nutnosti barvení, schopni rotovat, prozařovat pod různými úhly
+}
+
+◊ls[#:t "Průtoková cytometrie"]{
+    - stroj schopný navázat suspenzi buněk (mohou být fluorescenčně značené)
+        # svítíme laserem
+        # zjišťujeme, která buňka je pozitivní pro konkrétní fluorescenci a svítí
+	- slouží k rozlišení buněk v krvi, tím, že se rozpadnou na jednotlivé populace
+}
+
+◊ls[#:t "Laserová mikrodisekce"]{
+    # v preparátu najdeme útvar, který nás zajímá
+    # laserem tento útvar vyřízneme
+    # laserem se poté vystřelí do detekční nádoby
+}
+
+◊ls[#:t "Gene arrays"]{
+    - studium celkové expresní aktivity
+    - určení buněčných typů, pomocí izolace RNA přepsané do fluorescenčně značené DNA
+        # hybridizace na sklíčkách
+        # imobilizace sekvencí specifických pro konkrétní geny
+        # soubory barevných teček
+        # vyplý/zaplý gen
+}
+
 ◊title{Nervové buňky}
 
 ◊ls{
