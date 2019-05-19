@@ -17,7 +17,7 @@ Jeden příklad za všechny, mechanismus šedivění vlasů. Melanocyty, které 
     - nervové
 }
 
-◊title{Metody pro specifickou lokalizaci struktur}
+◊title{Metody zkoumání}
 
 ◊ls{
     - histochemické techniky
@@ -128,7 +128,7 @@ Alkohol skvěle fixuje, čím více ethanolu, tím lépe, protože alkohol ve tk
         - plátek na kapku vody na podložním sklíčku => napnutí + rozprostření
     - bločky v pryskyřici
         - skleněný/diamantový nůž
-        - řezy mají mezi 0,1 a 0,01${\mu}m
+        - řezy mají mezi 0,1 a 0,01◊${\mu}m
     - řezy pro elektronovou mikroskopii
         - řez na kovovou síťku z leptané mědi
 }
