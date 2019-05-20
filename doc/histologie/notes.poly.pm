@@ -324,7 +324,7 @@ Epitely jsou tkáně tvořené buňkami s různým tvarem a funkcí, které jso
         - např. myoepitelové buňky mléčných žláz
 }
 
-◊section{Epitely v těle}
+◊section{Stavba epitelů}
 
 ◊ls[#:t "Druhy epitelů"]{
     - podle vývodu
@@ -361,6 +361,409 @@ Epitely jsou tkáně tvořené buňkami s různým tvarem a funkcí, které jso
         - buňky samy epitel vyrábí, nebo vzniká pomocí fibroblastů
         - v bazální lamině jsou přítomny speciální kolageny a fibriny
 }
+
+◊section{Krycí epitely}
+
+Krycí kepitely kryjí zevní povrch a vystýlají tělní dutiny.
+
+◊ls[#:t "Klasifikace dle tvaru buněk"]{
+    - dlaždicový (plochý)
+        - výstelka cév (endotel)
+        - výstelka serózních dutin (perikard, pleura, peritoneum)
+        - rohovka
+    - kubický
+        - povrch ovária
+        - štítná žláza
+    - cylindrický
+        - výstelka střev, žlučníku
+}
+
+◊ls[#:t "Klasifikace dle počtu vrstev"]{
+    - jednovrstevný
+    - vrstevnatý
+        - dlaždicový rohovějící
+            - kůže: na povrchu tenké šupinky odumřelých buněk
+        - dlaždicový nerohovějící
+            - vlhké dutiny – ústa, jícen, pochva
+            - živé buňky
+        - kubický
+            - vzácný
+            - potní žlázy
+            - vyvíjející se ovariální folikuly
+        - cylindrický
+            - vzácný
+            - spojivka
+            - vývody velkých žláz
+        - přechodný
+            - močový měchýř
+            - močovod, kde se tvar buněk mění podle rozpětí měchýře
+            - využití v tkáňovém inženýrství: pytlíček z bazální laminy porůst buňkami měchýře s vysokým obsahem kmenových buněk
+        - víceřadý
+            - některé buňky jsou zakotveny v bazální lamině, nedosahují povrchu
+            - s řasinkami v dýchacích cestách
+        - neuroepitel
+            - senzorické funkce
+            - buňky chuťových pohárků
+            - čichový epitel
+        - myoepitel
+            - větvené buňky specializované na kontrakci
+            - mléčné, potní, slinné žlázy
+}
+
+◊ls[#:t "Nádory"]{
+    - u všech buněk kromě červených krvinek (nemají jádro, nemnoží se) a neutrofilních granulocytů (skoro před smrtí)
+	- do 10 let nejčastěji nádory krvetvorné tkáně
+	- po 45. roce je 90% nádorů odvozených od epitelů
+}
+
+◊definitions{
+    ◊term["karcinomy"]{
+        Nádory odvozené od epitelu.
+    }
+
+    ◊term["adenokarcinomy"]{
+        Nádory odvozené od epiteliálních žláz.
+    }
+
+    ◊term["metaplázie"]{
+        Změna buněčného typu během života. Například u silných kuřáků se řasinkový pseudostratifikovaný epitel mění v stratifikovaný deskovitý, který poté správně neodvádí hlen. Reparace takového procesu je velice složitá.
+
+        Další příklad: při nedostatku vitaminu A nastane ztráta diferenciační informace pro řasinkové epitely v průdušnici a močovém měchýři, které poté přestanou fungovat jako pružné jednotky.
+    }
+}
+
+Kromě metaplázovaných epitelů mají ale jinak epitely velice dobrou schopnost reparace.
+
+◊section{Žlázové epitely}
+
+◊ls{
+    - buňky specializované na tvorbu sekretů
+    - jednobuněčné žlázy
+		- pohárkové buňky (výstelka tenkého střeva)
+		- dýchací trakt
+	- mnohobuněčné žlázy
+		- vývoj z krycích epitelů proliferací a invazí do okolního vaziva
+}
+
+◊tg[#:t "Typy žláz"]{
+    - exokrinní
+		- zachováno spojení s povrchovým epitelem
+		- tubulární vývod je vystlaný epitelem
+		- např. žlučové vývody, slinivka
+	- endokrinní
+		- postrádají vývod, sekret je roznášen krevním řečištěm
+		- slouží např. pro přenos hormonů
+}
+
+Některé orgány jsou jak exokrinní, tak endokrinní
+◊ls{
+    - játra: žluč (exokrinní), transferin + albumin (endokrinní)
+	- pankreas: trávicí enzymy (exokrinní) + inzulin + glukagon (endokrinní)
+}
+
+◊subsection{Exokrinní žlázy}
+
+◊ls[#:t "Dělení podle stavby"]{
+    - podle větvení vývodů
+        - jednoduché žlázy, mají jeden nerozvětvený tubulózní vývod
+            - stočené tubulózní, větvené tubulózní, acinózní (alveolární)
+        - složené žlázy, mají větvené vývody
+        tubulózní, acinózní, tubuloacinózní (tuboalveolární)
+    - podle tvaru
+        - acinózní, kulatý tvar a úzké lumen
+        - tubulózní, tvar trubice a úzké lumen
+        - alveolární, tvar měchýřku a široké lumen
+        - tuboacinózní,  tvar trubice s kulatým koncem (ve žlázách smíšeného typu)
+        - tuboalveolární, tvar trubice s měchýřkovitým rozšířením (ve žlázách smíšeného typu)
+}
+
+◊ls[#:t "Dělení podle typu vylučování"]{
+    - merokrinní žlázy
+        - jsou exocytována sekreční granula
+        - např. pankreas
+    - holokrinní žlázy
+        - sekreční produkt je uvolněn s celou buňkou, buňka naplěná sekretem zanikne
+        - např. mazové žlázy
+    - apokrinní žlázy
+        - přechodný typ
+        - sekreční produkt je odloučen zároveň s apikální částí cytoplasmy
+        - látky neobalené membránou: tukové kapénky v tukových buňkách a mléčných žlázách
+        - uzavřou se do váčků a oddělí se buňky
+        - odvrhování apikální části buněk probíhá v sítnici
+}
+
+◊box["Poznámka"]{
+    Sekrece mléka v mléčnách žlázách je regulována oxytocinem, který aktivuje myoepitální buňky, ty se stáhnou a mléko je vylučováno ze žlázy. Pro mléčnou žlázu existují kmenové buňky, takže ji můžeme de novo vytvořit.
+}
+
+◊ls[#:t "Dělení podle charakteru sekretu"]{
+    - serózní žlázy, které mají sekret řídký a bohatý na proteiny
+        - obsahuje buňky bohaté na granulární endoplazmatické retikulum, což způsobuje jejich bazofílii
+    - mucinózní žlázy, které mají sekret hustý a plný mucinu
+        - tvar sekrečního oddílu je tubulózní
+}
+
+◊section{Jednotlivé tkáně}
+
+◊subsection{Kmenové buňky}
+
+◊ls{
+    - udržování kmenovosti souvisí s vazbou na jiné buňky
+        - po opuštění niky dochází k diferenciaci
+    - po ztrátě kontaktu s bazální laminou se odlupují a apoptizují
+}
+
+◊definitions{
+    ◊term["niky"]{
+        Receptory udržující buňky v nediferencovaném kmenovém stavu.
+    }
+}
+
+◊ls[#:t "Kmenové buňky v kostní dřeni"]{
+    - stromální buňky vytváří jeskyňky
+		- nediferencované mezenchymální a hematopoetické kmenové buňky
+}
+
+◊ls[#:t "Kmenové buňky ve střevě"]{
+    - z jedné kmenové buňky lze diferencovat všechny epiteliální buňky
+	- v tenkém střevě jsou ve vychlípeninách
+        - směrem dolů diferencují do Pannetových buněk
+        - směrem nahoru diferencují ve žlázy a v resorpční epiteliální buňky
+}
+
+◊ls[#:t "Kmenové buňky v kůži"]{
+    - kmenové buňky nejblíže jsou povrchu pokožky
+	- během diferenciace sestupují do údolíček
+	- během keratinizace jsou vytlačovány vzhůru
+}
+
+◊ls[#:t "Kmenové buňky v mléčné žláze"]{
+    - jsou lokalizovány na povrchu ve směru růstu žlázy
+}
+
+◊subsection{Endoteliání buňky a cévy}
+
+Velikost jednotlivých buněk v endotelu závisí na jejich ploidii.
+
+◊definitions{
+    ◊term["endotel"]{
+        Epiteliální tkáň tvořící vnitřní stěnu cév.
+    }
+
+    ◊term["angiogeneze"]{
+        Vznik nových kapilár větvením.
+    }
+}
+
+◊ls[#:t "Dynamika endoteliálního systému"]{
+    - moc kyslíku => některé kapiláry se uzavřou
+	- málo kyslíku (hypoxie) => vyšle se signál pro vznik nových cév
+		- vznikne slepá větvička, ta roste, až si tepna najde žílu
+		- zvýšení koncentrace HIF (hypoxia inducible factor)
+            - je to protein, který se při nízké koncentraci kyslíku přestává odbourávat
+		- stabilizace HIFu regulována ubiquitinilací
+		- zvýšená koncentrace HIF vede k produkci VEGF (vascular endothelial growth factor)
+}
+
+◊subsubsection{Cévy}
+
+◊ls{
+    - složeny z endoteliálních buněk, z ECM a ze svaloviny
+	- složení: tunica intima (endotel), tunica media (svaloviny) a z tunica adventitia (pojivo)
+	- poměry těchto vrstev závisí na druhu cévy
+		- kapilárky z endotelu
+		- propustnost kapilár
+			- nepropustná: kontinuální buňka a kontinuální bazální lamina
+			- „děravá“ (fenestrovaná): bazální lamina je jemnější sítko, větší částice neprojdou
+			- zcela nepropustná: mozek, uspořádání buněk je zodpovědné za intaktnost ◊link["#Hematoencefalická bariéra"]{hematoencefalické bariéry}
+}
+
+◊ls[#:t "Vznik"]{
+    - běžně růstem už vzniklých trubiček
+	- in vitro
+		# uvnitř endoteliální buňky začne vznikat systém vakuol
+		# vakuoly se pospojují
+        # vznikne dutá struktura, která je schopná se spojit s jinými trubičkami
+        # vznik cévní sítě
+}
+
+◊ls[#:t "Chlopně"]{
+    - nalézají se v některých žilách
+	- deriváty endotelu vybíhajícího do lumen
+    - zabraňují zpětnému toku krve
+	- jsou pouze v malých a středně velkých žilách
+}
+
+◊ls[#:t "Spojení žíly a tepny"]{
+    - nutnost zabránit homotypické adhezi
+	- ke spojení nutné ◊em{ephriny}, což jsou molekuly tvořící se při diferenciaci nervové soustavy
+        - arterie obsahují ephrin-B2
+        - žíly obsahují ephrin-B4
+}
+
+◊subsubsection{Patologie}
+
+◊ls[#:t "Hippel-Landauův syndrom"]{
+    - vznik nádorů tvořených hyperproliferovanými endoteliálními buňkami (◊strong{hemangioblastomy})
+	- pro vazbu ubiquitinu je v HIF běžně ubiquitinylační sekvence
+	    - tato sekvence zmutuje, v důsledku čehož se nemůže navázat na ubiquitin
+        - HIF se nedegraduje, neustále se produkuje VEGF
+        - stále se aktivuje proliferace a probíhá tvorba nových výběžků
+}
+
+◊ls[#:t "Atheroskleróza"]{
+    - nedochází k ukládání cholesterolu do stěn cév
+    - průběh
+	    # zánět v těle nebo volné radikály způsobí oxidaci LDL, časem už normálně oxidovaná forma LDL v těle není
+            - LDL (low-density lipoprotein) jsou částice zodpovědné za přenos cholesterolu
+        # buňky nedokážou oxidovaný LDL metabolizovat, LDL se v nich hromadí
+        # nastoupí monocyty, které endocytují oxidovaný LDL, ale neodbourají ho
+        # LDL se hromadí v monocytech, vznikají pěnovité buňky plné vakuol naplněné oxidovaným LDL
+        # monocyty spustí expresi genů, aktivují makrofágy (přilákají buňky "opraváře")
+        # to vede k produkci mezibuněčné hmoty pomocí mezenchymálních buněk a fibrocytů (fibroblasty)
+            - fibroblasty jsou schopny diferencovat v osteocyty, osteoblasty a chondroblasty
+        # vznikají hrbolky kosti v cévě, která tím ztrácí svou mechanickou odolnost
+}
+
+◊subsection{Kůže}
+
+◊ls{
+    - největší orgán těla, tvoří 16% hmotnosti
+    - musí být mechanicky odolná
+        - ECM syntetizovaná fibroblasty
+    - musí být krevně zásobená
+        - systém krevních kapilár ohraničených endoteliálními buňkami
+        - obsahuje buňky imunitního systému
+            - při zánětu makrofágy, granulocyty a lymfocyty
+}
+
+◊todo{
+    Zjistit, co je EM a ECM.
+}
+
+◊ls[#:t "Vrstvy kůže"]{
+    - epidermis
+    - dermis
+        - silně vaskularizovaná a inervovaná
+    - hypodermis
+        - tuková tkáň
+}
+
+Kromě zmíněných vrstev se v kůži nalézají též senzory a nervová zakončení.
+
+◊ls[#:t "Fibrocyt"]{
+    - diferenciační prekurzor fibroblastu
+	- fibrocyt může diferencovat ve fibroblast, chondrocyt, hladkou svalovinu, tukovou buňku
+	- změna fibroblastu na tukovou buňku provázena změnou exprese genů
+	- fibroblasty vytváří desmozomy s jinými fobroblasty => síťovitá struktura
+	- fibroblasty spolu s epiteliálními buňkami produkují složky bazální laminy
+}
+
+◊ls[#:t "Mezenchymální kmenové buňky"]{
+    - mají obrovský diferenciační potenciál
+	- dají se kultivovat in vitro v koktejlu růstových faktorů a cíleně diferencovat v různé typy buněk
+	- pluripotence: embryonální kmenové buňky
+		- dají se izolovat z časného embrya
+		- dají se in vitro kultivovat a geneticky manipulovat a poté vrátit do embrya
+}
+
+◊subsubsection{Epidermis}
+
+◊ls{
+    - jediná z vrstev kůže, která je epiteliálního původu
+    - sedí na bazální lamině, nejspodnější vrstvu tvoří keratinocyty
+        - v záhybech na bazální lamině jsou kmenové buňky neschopné diferencovat v melanocyty, ale vznikají z nich kerantinocyty
+    - je stále proliferována
+        # buňky jsou posouvány vzhůru
+        # časem jsou buňky dehydratovány a keratinizují
+        # takové mrtvé buňky se odloupnou
+    - obsahuje melanocyty a Langerhansovy buňky
+    - rozdíl mezi bělošskou a černošskou kůží je v pH endozomálního systému (běloši jsou kyselejší)
+}
+
+◊ls[#:t "Melanocyty"]{
+    - produkují melanin, kterým poté zbarvují okolní buňky
+    - ochrana před UV
+    - nevznikají v kůži, ale vlezou do ní z ◊link["#Nervové buňky"]{neurální lišty}
+    - obsahují ◊em{melanozomy}
+        - deriváty lysozomů
+        - naplněné melaninem jsou předávány epidermálním buňkám (keratinocytům)
+    - mutace
+        - málo melanozomových prekurzorů => málo melazosomů => skvrny
+        - mutace genu pro kit
+            - receptor pro SCF faktor => je na epiteliální buňce v nice => udržuje buňky 					v kmenovém stavu
+            - málo kmenových buněk => málo melanocytů
+        - mutace v genu Pax3
+            - homozygot => ztráta sluchu, depigmentace vlasů, očí, kůže
+}
+
+Porucha tvorby melaninu vede k albinismu. Tato porucha může být způsobena poruchou v enzymu tyrozinkináze nebo poruchou regulace pH v melanozomu.
+
+◊ls[#:t "Langerhansovy buňky"]{
+    - derivované z kostní dřeně
+    - dendritická buňka nesoucí MHC třídy II
+    - tvoří jednu vrstvičku rovnoměrně rozloženou pod kůží
+    - po pohlcení cizorodých substancí čekají v uzlině na rozpoznání T-lymfocytem, který poté obstará imunitní reakci
+}
+
+◊subsection{Neuroepitely}
+
+◊em{Pro více informací viz ◊link["#Nervové buňky"]{oddíl o nervových tkáních} a ◊link[#"Senzorické epitely"]{oddíl o senzorických epitelech}.}
+
+◊ls{
+    - mají rozdílnou schopnost regenerace a rychlost obměny buněk
+        - senzorický neuroepitel ve středním uchu ani ten na sítnici není schopen regenerace (máme ho jednou pro vždy)
+        - čichový epitel prochází neustálou obměnou
+            - je epidermálního původu
+            - pro detailnější popis tkáně viz ◊link["#Čichový epitel"]{oddíl o čichovém epitelu}
+}
+
+◊section{Patologie}
+
+◊ls[#:t "Kartagenův syndrom (situs inversus)"]{
+    - první popsaný případ v roce 1688
+ 	- převrácená pravolevá symetrie vnitřních orgánů
+	- 50% jedinců trpí chronickou bronchitidou a sterilitou
+	    - způsobena mutací v molekulárním motoru zajišťujícím pohyb řasinek v řasinkovém epitelu
+}
+
+◊ls[#:t "Průjem"]{
+    - porucha funkce resorpčních epitelů trávicí soustavě
+	- u dospělého člověka je za jeden den sekrece sedmi litrů tekutin
+		- 1l slin
+		- 1,5l trávicí tekutiny v žaludku
+		- 1l žluči
+		- 1,5l trávicí tekutiny ze slinivky
+		- 2l sukusu (všemožné tekutiny vylučované živými tkáněmi)
+	- resorpce tekuni ve střevě
+        - 7,8l v tenkém střevě + dvanáctníku
+        - 1l v tlustém střevě
+    - 0,2l ztrácíme stolicí
+}
+
+◊ls[#:t "Cystická fibróza"]{
+    - druhá nejčastější genetická porucha (po poruše konexinu vedoucí k poruše sluchu)
+	- způsobená mutací proteinu CFTR, který přenáší chloridové ionty ven z buněk
+	    - ve zdravé buňce dochází vylučování chloridových iontů
+		    - spolu s ionty opouští buňky voda
+            - dochází ke zvlhčení epitelů a sliznice
+        - v nezdravé buňce k tomu nedochází, sliznice jsou suché, hleny jsou husté
+	- trpí jí jeden člověk z 2500
+}
+
+Existují i určité poruchy mechanických vlastnosí kůže, které jsou způsobeny hlavně mutacemi v genech pro keratiny.
+
+◊title{Pojivová tkáň}
+
+◊section{Vazivo}
+
+◊section{Tuková tkáň}
+
+◊section{Chrupavka}
+
+◊section{Kost}
+
+◊title{Svaly}
 
 ◊title{Nervové buňky}
 
@@ -445,7 +848,9 @@ Bylo zjištěno, že máme nějak mnoho druhů neuronů na to, jak málo máme g
 ◊box["Poznámka"]{
     ◊definitions{
         ◊term["mikrochimérismus"]{
-            Buňky myšátek během gravidity osidlují tělo matky, což se dá pozorovat na myšátkách GFP-tagovaného samce a netagované samice.
+            Přítomnost dvou a více geneticky odlišných populací buněk, které jsou odvozeny z různých zdrojů, v jednom orgánu nebo jednotlivci.
+
+            Např. buňky myšátek během gravidity osidlují tělo matky, což se dá pozorovat na myšátkách GFP-tagovaného samce a netagované samice.
         }
     }
 }
