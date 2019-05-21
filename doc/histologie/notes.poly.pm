@@ -1743,7 +1743,8 @@ Svaly vznikají z myobalstů, které jsou určeny expresí genů z rodin MyoD 
 ◊ls[#:t "Neurotransmiter (acetylcholin)"]{
     # po vylití váčků z nervového zakončení v synaptické štěrbině se váže na acetylcholinový receptor
     # depolarizace membrány svalové buňky
-    # šíří se dovnitř skrz systém příčných T-tubulů # signál doběhne dovnitř
+    # šíří se dovnitř skrz systém příčných T-tubulů
+    # signál doběhne dovnitř
     # propojení membrány T-tubulu a membrány ER
         - signál přenesen na sarkoplazmatické retikulum (SR)
     # uvolnění ◊chem{Ca^{2+}} z SR do cytoplasmy
