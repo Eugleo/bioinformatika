@@ -1702,7 +1702,7 @@ Svaly vznikají z myobalstů, které jsou určeny expresí genů z rodin MyoD 
     - 3 isoenzymy MM, MB
 }
 
-◊ls["Aldoláza"]{
+◊ls[#:t "Aldoláza"]{
     - hmotnost 160 000 Da
     - 3 isoenzymy
         - A: sval
