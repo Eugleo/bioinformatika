@@ -72,7 +72,7 @@
 (define (section . elements)
   (case (current-poly-target)
     [(md) `("## " ,@elements)]
-    [(tex pdf) (make-section-title-tex "section" elements)]
+    [(tex pdf) (apply string-append `("\\section" "{" ,@elements "} \\label{" ,@elements "} " "\\FloatBarrier\n" ))]
     [else (make-section-title 'h2 elements)]))
 (define (subsection . elements)
   (case (current-poly-target)
@@ -187,9 +187,9 @@
     [else (format "~a\n" listed-items)]))
 
 (define (make-list-tex ord items)
-  (apply string-append `(,(if ord "\\begin{enumerate}[nosep]\n" "\\begin{itemize}[nosep]\n")
+  (apply string-append `(,(if ord "\\begin{myEnumerate}\n" "\\begin{myItemize}\n")
     ,@(map (lambda (s) (apply string-append `("    \\item " ,@s "\n"))) items)
-    ,(if ord "\\end{enumerate}\n" "\\end{itemize}\n"))))
+    ,(if ord "\\end{myEnumerate}\n" "\\end{myItemize}\n"))))
 
 (define (elements-recurse f xs)
   (cond

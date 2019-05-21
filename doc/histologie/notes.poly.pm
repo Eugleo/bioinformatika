@@ -3,6 +3,7 @@
 ◊define-meta[title]{Histologie}
 ◊define-meta[header]{zápisy}
 ◊define-meta[toc]{true}
+◊define-meta[authors ("Evžen Wybitul" "Lucie Drahoňovská" " Kateřina Krausová")]
 
 ◊title{Úvod}
 
