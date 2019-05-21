@@ -1592,6 +1592,369 @@ Hematopoéza se dá jednoduše sledovat in vitro. Nejprve se provede výplach z 
 
 ◊title{Svaly}
 
+◊ls{
+    - účastní se ◊strong{cytokinese}
+        - proces je zprozdředkovaný aktino-myozinovým komplexem 26
+        - aktinová vlákna omotána okolo buněk epitelu, ukotvena v adhezivních spojích
+        - pomocí pohybu myozinu se změní jejich tvar, dojde k lokálnímu zaškrcení buňky
+        - dojde k deformaci celé buněčné vrstvy
+    - celý epitel funguje jako jedna signalizační a morfologická jednotka
+    - aktinovyá vlákna jsou antiparalelně uspořádána a ukotvena do kotvících struktur (Z disky)
+    - čtyři typy svalových buněk: kosterní svaly, srdeční svaly, hladké svaly, myoepiteliální buňky
+}
+
+◊section{Kosterní svaly}
+
+◊ls{
+    - specializace na ohyb kostry a spojení pák (kosti, chrupavky)
+    - pohyby ovládané vůlí, někdy i mimovolné (svalový třes)
+    - rychlost ovládání je zajištěna inervací volným nervstvem
+        - okamžitá reakce pák a protipák je nutná např. k řeči
+    - každý sval by měl fungovat jako mechanická jednotka
+        - to zajišťuje soustava vazivových pochev
+}
+
+Svaly vznikají z myobalstů, které jsou určeny expresí genů z rodin MyoD a MEF2.
+
+◊ls[#:t "Vznik"]{
+    # proliferace
+    # diferenciace
+    # splynutí myoblastů ve svalová vlákna
+        - myoblasty se už nikdy nedělí ani nereplikují DNA
+        - z toho plyne ztížená regenerace svalu
+}
+
+◊ls[#:t "Stavba"]{
+    - některé kosterní svalové buňky jsou velmi velké, je potřeba vícejadernost
+    - často splyne více myocytárních buněk a vznikne ◊em{syncitium}
+    - jsou 3cm dlouhé a 100◊${\mu}m v průměru
+    - tvoří svalová vlákna
+    - obaly
+        - endomysium: každé svalové vlákno je obklopené jemnou vrstvou vaziva
+        - perimysium: vazivové pochvy obalující svazky svalových vláken
+        - epimysium: obal celého svalu
+    - velice důležitá je inervace svalu
+        - mechanická odolnost nervu je zajištěna mezibuněčnaou hmotou
+    - svalová hmota se zvětšuje narůstáním aktinomyozinových vláken v už existujících svalových jednotkách
+    - příčné svaly interagují s pojivovou tkání, musí tedy být ukotveny na kosti
+        - k tomu slouží šlachy: struktury s orientovanými kolagenními vlákny, které jsou syntetizovány fibroblasty
+}
+
+◊definitions{
+    ◊term["svalové vřeténko"]{
+        Specializovaná struktura podávající informaci o napnutosti či relaxovanosti svalu do CNS.
+    }
+}
+
+◊ls[#:t "Svalová vřeténka"]{
+    - někdy probíhá specializace do mnohobuněčných syncitiálních útvarů se senzorickou funkcí místo mechanické, vznikají deriváty svalu, ◊em{svalová vřeténka}
+    - mají intimní propojení senzorických nervových zakončení s něčím svalového původu
+    - deformace těchto svalků se přenáší do mozku, který tím získává zásadní informace o "zapnutí" našich svalů
+        - pokud tato signalizace nefunguje, mozek nedokáže synchronizovat naše pohyby
+}
+
+◊ls[#:t "Svalové kmenové buňky"]{
+    - i v diferencovaných příčně pruhovaných svalech máme kmenové buňky pro příčně pruhované svaly, tzv. ◊em{satelitní buňky}
+    - jsou pod pojivem na povrchu svalu, je jich málo, mají omezenou činnost
+    - aktivují MyoD
+}
+
+- depolarizace membrány díky aktivitě Na/K ATPázy
+- ve svalové buňce musí fingovat vápenaté pumpy => aktivní transport Ca2+ do ER - troponin-tropomyozinový komplex brání myozinu pohybovat se po aktinu
+- po navázání komplexu na Ca2+ změní konformaci => myozinové hlavy můžou běžet po aktinu - pro mechanické vlastnosti důležité pospojování struktur => fungování jako 1 mechanická jednotka
+- proužkování svalu
+= linie, na které se napojuje aktinový cytoskelet v hexagonálním uspořádání
+- ve všech volných dírách mezi aktinovými hexagony hexagonální myozinové hlavice - klíčový protein aktinin
+30
+- vyrůstá ze Z-disku jako krystalizační jádro = místo s pevným připojením aktinu - uvnitř buňky v jednom svalovém vlákně vytváří sarkomery několik soustav vedle sebe
+- propojení subvláken díky intermediálním filamentům (molekuly desminu)
+
+◊subsection{Svalové proteiny}
+
+◊ls[#:t "Myosin"]{
+    - jediný protein tlustých vláken (myofibril)
+    - z celkového proteinu svalu tvoří 60-70%
+    - molekulová hmotnost 540 000
+    - tvořen 6 řetězci (dva těžké + čtyři lehké)
+        - těžké jsou vzájemně uspořádané do dvoušroubovice o délce 150nm, mají globulární N-terminální konce
+}
+
+◊ls[#:t "Troponin-tropomyozinový komplex"]{
+    - molekulová hmotnost 72 000
+    - skládá ze tří podjednotek
+        - troponin C
+            - váže ◊chem{Ca^{2+}}
+            - molekulová hmotnost 18 000
+            - vazba na troponin T
+            - podobný kalmodulinu
+        - troponin I
+            - intermediární, váže se mezi troponiny C a T
+                - vazba na aktin a troponin T
+            - molekulární hmotnost 23 000
+            - inhibuje interakce mezi aktinem a myozinem do doby vazby Ca2+ na troponin C
+        - troponin T
+            - molekulová hmotnost 31 000
+            - vazba na tropomyozin, troponin I a troponin C v místě styku 2 molekul tropomyozinu
+}
+
+◊ls[#:t "Kreatinkináza"]{
+    - hmotnost 86 000Da
+    - 3 isoenzymy MM, MB
+}
+
+◊ls["Aldoláza"]{
+    - hmotnost 160 000 Da
+    - 3 isoenzymy
+        - A: sval
+        - B: játra
+        - C: mozek
+}
+
+◊ls[#:t "Laktátdehydrogenáza"]{
+    - hmotnost 135 000 Da
+    - 5 isoenzymů
+    - je ve všech tkáních
+    - různé zastoupení: LD1: srdce, LD2: srdce, LD3: svalstvo atd.
+}
+
+◊ls[#:t "Myoglobin"]{
+    - hmotnost 18 000 Da
+    - nachází se v červených svalových vláknech
+}
+
+◊ls[#:t "Titin"]{
+    - pružina relaxující sval
+    - největší známý protein, obsahuje 34 350 AK
+}
+
+◊ls[#:t "Nebulin"]{
+    - molekulární pravítko určující délku aktinové části sarkomery
+}
+
+◊subsection{Inervace}
+
+◊ls[#:t "Perimysium"]{
+    # větvení axonů
+    # rozšířená zakončení na povrchu svalových buněk
+    # motorické ploténky
+    # myoneurální spojení
+}
+
+◊ls[#:t "Neurotransmiter (acetylcholin)"]{
+    # po vylití váčků z nervového zakončení v synaptické štěrbině se váže na acetylcholinový receptor
+    # depolarizace membrány svalové buňky
+    # šíří se dovnitř skrz systém příčných T-tubulů # signál doběhne dovnitř
+    # propojení membrány T-tubulu a membrány ER
+        - signál přenesen na sarkoplazmatické retikulum (SR)
+    # uvolnění ◊chem{Ca^{2+}} z SR do cytoplasmy
+    # kontrakce svalu
+}
+
+Svaly jsou příkladem excitatorních buněk: mají nerovnoměrné uspořádání ◊chem{K+} a ◊chem{Na+} iontů. To napomáhá vedení vzruchu.
+
+◊subsection{Regulace stahu příčně pruhovaného svalu}
+
+◊ls{
+    - koncentrační gradient mezi sarkoplasmatickým retikulem a cytoplazmou je 10 000
+        - potencuje rychlost vtoku vápenatých iontů do cytoplasmy
+    - kreatin ve svalech
+        - pomocí enzymu kreatin kináza fosforyluje na kreatin fosfát
+        - slouží jako zásobní energetický zdroj
+}
+
+◊ls[#:t "Průběh svalového stahu"]{
+    # zvýšení koncentrace iontů ◊chem{Ca^{2+}}
+    # deformace troponinu na tropomyozin
+    # interakce myozinové hlavice s aktinem
+    # stah svalu
+}
+
+◊ls[#:t "Složení relaxovaného svalu"]{
+    - koncentrace ATP 4mM
+    - koncentrace ADP 0,013mM
+    - reakční kinetika posunuta ve směru ATP -> ADP + P
+    - koncentrace kreatinu 13mM
+    - koncentrace kreatin fosfátu 25mM
+    - reakce jde ve směru kreatin fosfát -> kreatin + fosfát
+}
+
+ATP vystačí svalu na 2s aktivity, kreatin fosfát na 8s. Poté dochází už jen odbouránvání organických sloučenin. Anaerobní zdroj energie je glykogen, který je odbouráván na pyruvát a vystačí na 60s. Další ATP je tvořeno glykolýzou, která je 2,5x rychlejší než oxidativní metabolismus.
+
+◊subsection{Motorická jednotka}
+
+Jedno nervové vlákno (axon) může inervovat různý počet svalových vláken, která poté tvoří tzv. ◊strong{motorickou jednotku}.
+
+◊ls[#:t "Základní informace"]{
+    - axo se může rozvětvit, pak vznikne nervosvaloveá ploténka s několika svalovými vlákny
+    - MJ jsou různě veliké podle požadavku na typ svalového stahu (v bicepsu větší než na jazyku)
+    - vlákna nejsou schopna stupňované kontrakce
+    - počet axonů na sval
+        - oční svaly: 1 axon
+        -  svaly končetin: 100 a více axonů inervovaných jedním neuronem
+    - designování velikosti MJ probíhá v prenatálním období a do třetího roku života
+}
+
+◊subsection{Pomalá a rychlá svalová vlákna}
+
+◊ls{
+    - výskyt konkrétního typu závislý na typu inervace, frekvenci vylévání acetylcholinu, způsobu dráždění svalové buňky, zdroji příslušného nervu
+        - přehozením nervů se dá z bílého udělat červené a naopak
+    - v rámci jednoho svalu různé typy svalových vláken v různé proporci
+    - rychlá vlákna: bílá, málo myoglobinu, anaerobní metabolismus
+    - pomalá vlákna: červená, mnoho myoglobinu, aerobní metabolismus
+    - smíšená vlákna mají znaky obou předchozích typů
+}
+
+◊subsection{Růst svalů}
+
+◊ls{
+    - čím více svalů, tím větší signalizace k menšímu růstu pomocí produkce myostatinu - myostatin = negativní regulátor růstu svalu
+        - receptor nefunguje => přírůstek svalové hmoty
+    - u AIDS zvýšená produkce myostatinu => úbytek svalové hmoty
+    - zvětšení svalové hmoty = zvětšování syncitií => přidělání dalšího systému sarkomer
+}
+
+◊subsection{Svalová onemocnění}
+
+◊ls[#:t "Myasthenia gravis"]{
+    - autoimunitní
+	- postupující svalová ochablost
+	- B-lymfocyty v brzlíku tvoří protilátky proti acetylcholinovým receptorům
+	- receptor je interalyzován (= endocytován) do buňky => sval neschopen přijímat signál => postupná atrofie
+	- 2. možnost
+		- imunitní systém rozpoznává acetylcholinový receptor jako cizorodou látku
+		- myelic basic protein MBP v CNS
+		- destrukce myelinových pochev díky aktivitě autoreaktivních cytotoxických T-lymfocytů
+		- nelze ovládat postižené svaly => není inervován => atrofuje
+}
+
+◊ls[#:t "Narušení inervace svalu"]{
+    - po úraze, po narušení páteře
+	- neinervovaný sval atrofuje => zmenšuje se (od určitého stadia nevratně)
+	- možno změnit rychlý sval na pomalý změnou inervace
+}
+
+◊ls[#:t "Svalová dystrofie – myopatie"]{
+    - poškození svalových vláken nesouvisející s inervací či autoimunitou
+	- nefunkčnost konkrétních enzymů/syndromy patologií mitochondrií
+	- typy
+		- glykogenosy
+			- abnormální ukládání glykogenu ve svalu
+			- dědičné autosomálně recesivní onemocnění
+		- McArdle
+			- chybí myofosforyláza b => svalová slabost, křeče
+			- při cvičení se v plasmě nezvyšuje laktát => nedochází k poklesu pH
+		- Tauri
+			- svalová bolest
+			- chybí fosfofrukokináza => hromadění prekurzorů ve tkáních (glc-6-P, fru-6-P)
+		- Duchennova svalová dystrofie
+			- gonosomálně recesivní onemocnění
+			- chlapci věku 3-7let
+			- nejdříve pánevní pletenec => ramenní pletenec
+			- ve věku 10-12 let končí na vozíku
+			- v séru zvýšeny enzymy (kreatinkináza) dlouho před prvními symptomy
+			- způsobeno mutací genu pro dystrofin
+				- propojuje receptor pro ECM s aktinovým cytoskeletem (vnitřek s vnějškem)
+				- mutace => sval má špatné mechanoelastické vlastnosti => poškození => atrofie
+		- proti acetylcholinovému receptoru se může vytvořit autoimunitní onemocnění
+			- rychlá únava a obrna svalů
+			=> destrukce receptoru => nemůže přejít neuromuskulární signál
+}
+
+◊section{Srdeční svaly}
+
+◊ls{
+    - optimalizované pro pomalé, opakované pohyby
+    - nepříliš ovladatelné vůlí
+    - exprese receptorů nastavená tak, aby po srdci běžely vlny signálů => nezbytné vodivé propojení => gap junctions + desmozomy (aby to fungovalo jako 1 mechanická jednotka)
+    - utilizuje široké spektrum látek
+	    - glukóza, laktát, ketolátky, aminokyseliny, (ne)esterifikované MK
+    - má příčné pruhování
+    - dobrý elektrický kontakt všech srdečních buněk => vzruch putuje z jednoho vlákna na další
+    - zákon "všechno nebo nic" (idealizovaný případ)
+		- podráždění myokardu v určitém místě => vyvolání akčního potenciálu => rozšíření na celý myokard => kontrakce
+}
+
+◊ls[#:t "Kardiomyocyt"]{
+    - jednojaderná buňka
+	- centrálně uložené oválné jádro
+	- 40% mitochondrií, GA, glykogen, lipidy, kontraktilní aparát, SR
+    - 150◊${\mu}m velká
+}
+
+◊ls[#:t "Purkyňova vlákna"]{
+    - svalové buňky specializované pro přenos signálu po celém srdci
+	- málo myozinu
+	- T-tubuly tlusté a krátké => svalové jednotky jsou menší
+}
+
+◊ls[#:t "Stavba"]{
+    - "cik cak" desmozomální propojení => trojrozměrné => na základě propojení a orientace lze nastavit způsob stahu celého srdce
+    - tvořená z buněk splanchického mezodermu
+    - není to syncitiální struktura => struktura tvořená individuálními buňkami pevně propojenými desmozomálními spoji a proděravěné gap junctions => zároveň jedna mechanická jednotka i signalizační jednotka
+    - struktura rozvětvených buněk
+        - místa propojení = interkalární disky = hypertrofované desmozomy s gap junctions
+    - specializované kardiomyocyty ke generaci pacemakerové neustále se opakující aktivaci iontových kanálů s konkrétní frekvencí => autonomie srdce v signalizace ke svalové aktivitě
+        - funkce pacemakeru způsobena koordinací součinnosti různých iontových kanálů
+        - tuto aktivitu lze posttranslačně měnit (fosforylací) => zrychlení/zpomalení tepu
+        - endogenní vznik vzruchů (akčních potenciálů) ve specializovaných pacemarkerových buňkách => šíření na 	ostatní vlákna
+}
+
+◊ls[#:t "Regenerace srdečního svalu"]{
+    - špatně regeneruje
+    - nejsou v něm kmenové buňky pro srdce
+        - ale mohou do něj vstupovat a dodiferencovat se do kardiomyocytů
+    - při nedostatečném zásobení srdečního svalu kyslíkem => nekróza tkáně => vznik jizev => narušení přenosu signálu po srdci
+        - velikost jizev ovlivňuje aktivita fibroblastů
+    - pruhováno ve stejném směru jako svalová vlákna
+}
+
+◊section{Hladké svaly}
+
+◊ls{
+    - slouží k k tvorbě pomalých, mimovolných stahů
+    - je na místech, kde je třeba regenerovat, a v místech, kde se tkáň často obměňuje
+	    - dokáží dobře regenerovat a diferencovat z prekurzorů
+	    - mezenchymální kmenová buňka => fibrocyt => buňka hladkého svalu
+    - často okolo trubic v těle (alternativa k řasinkovému epitelu), v cévách (možnost změnit průměr)
+    - buňky blízko fibroblastů
+    - nevytvářejí syncitia => nejsou pevně propojeny interkalárními disky
+    - každá buňka obalena laminou a retikulárními vlákny
+    - ve stahu jsou autonomní struktury
+	    - řada z nich ovládána nervy neovladatelnými vůlí
+    - schopnost vytvářet mezibuněčnou hmotu
+        - chrání je při mechanických stazích
+        - přenos mechanického stahu veden přes navázání na stejnou oblast mezibuněčné hmoty
+}
+
+◊ls[#:t "Stavba"]{
+    - nemají T-tubuly, ale mají kaveoly = vchlípeniny do buňky udržované proteineme kaveolinem
+    - bohatě vyvinutá intermediální filamenta
+        - napojena na membránu různě => struktury podobné izolovaným sarkomerám
+        - uspořádány různosměrně
+        - není příčně pruhovaná
+    - ve velkých buňkách více sarkomer za sebou => sepnuty alternativou Z-disku
+    - jádro buněk protaženo podle jejich tvaru
+}
+
+◊ls[#:t "Mechanismus aktivace stahu"]{
+    - hlavní přepínač je kalmodulin = vápník vázající protein
+	- kinázy regulované vápenatými ionty (proteinkináza C)
+		- mohou nafosforylovat lehký řetězce myozinu => aktivace myozinu => rozeběhne se po aktinovém vlákně
+    - samotný mechanismus stahu je stejný
+    - kináza lehkých řetězců myozinu aktivní jen v přítomnosti kalmodulinu s navázaným vápníkem
+	    - ◊chem{Ca} se neváže na kinázu, ale na kalmodulin => ten pak na kinázu
+    - vápník => fosforylace => stah => defosforylace fosfatázou
+}
+
+◊section{Myoepiteliání buňky}
+
+◊ls{
+    - pomáhají sekreci produktů epiteliálních žláz (mléčné, slinné)
+    - váček vytvořený myoepiteliálními buňkami produkující sekret má kolem sebe roztažené výběžky myopetiliálních buněk => schopnost celý váček stáhnout
+    - malé žlázy si vystačí s jednou takovou buňkou
+}
+
 ◊title{Nervové buňky}
 
 ◊ls{
