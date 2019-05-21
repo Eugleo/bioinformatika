@@ -1123,378 +1123,467 @@ Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu t
 
 ◊meta{Tato kapitola bývá probírána až v rámci posledních přednášek, po nervové soustavě.}
 
-HISTOLOGIE
-KREV
--Pojivo
 
--Všechny krevní buňky se mohou rozdělit do hlavních tří linií
-    -erytroidní linie (erytrocyty, retikulocyty)
-        -zprostředkování transportu kyslíku do tkání
-    -lymfoidní linie (T-buňky, B-buňky a jejich blízcí příbuzní)
+◊ls[#:t "Linie krevních buněk"]{
+    - erytroidní linie
+        - zprostředkování transportu kyslíku do tkání
+        - erytrocyty, retikulocyty
+    - lymfoidní linie
         - zásadní pro tvorbu adaptivní imunitní odpovědi
-    -myeloidní linie (granulocyty a makrofágy)
-        -umožňuje vrozenou imunitní odpověď a podílí se na odpovědi adaptivní
+        - T-buňky, B-buňky a jejich blízcí příbuzní
+    - myeloidní linie
+        - umožňuje vrozenou imunitní odpověď a podílí se na odpovědi adaptivní
+        - granulocyty a makrofágy
+}
 
-složení
-    -Hodně mezibuněčné hmoty = plazma
-        -nestlačitelná
-        -5-6 litrů
-    -krevní buňky : erytrocyty, leukocyty, trombocyty
-        -relativně mobilní, schopny opustit krevní řečiště
-    -červené krvinky = erytrocyty
-        -45% objemu (◊${5 \cdot 10^12} na litr)
-    -bílé krvinky = leukocyty
-        -1% objemu
-        -granulocyty (◊${5 \cdot 10^9} na litr)
-            = polymorfonukleární leukocyty (velmi proměnlivé - polymorfní jádro)
-            -obsahujé granula = obarvitelné částice
-            -12 - 15 mikrometrů
-            -schopné pohybu
-            -terminálně diferencionavé nedělící se buňky
-            -neutrofily
-                -fagocytují, zabíjejí a tráví bakterie
-                -barví se neutrálními barvivy (do růžova)
-            -bazofily
-                -při alergické reakci sekretují histamin a serotonin
-                -barví se zásaditými barvivy (do tmavě modra)
-            -eozinofily
-                -likvidují mnohobuněčné parazity
-                -barví se kyselými barvivy (hematoxylin-eosin - do červena)
-        -agranulocyty
-            -nejsou obarvitelné
-            -monocyty (◊${4 \cdot 10^8} na litr)
-                -diferencují se v makrofágy a dendritické buňky
-                -magrofágy
-                    -fagocytují parazity a vlastní poškozené a apoptoticé buňky
-                    -produkují oxidační produkty
-                    -některé se mění na dendritické buňky
-                -dendritické buňky
-                    -fagocytují na periferii
-                    ->migrují do uzlin
-                    ->prezentují antigeny prostřednictvím MHC II. třídy
-            -lymfocyty (◊${3 \cdot 10^8} na litr)
-    -krevní destičky = trombocyty
+◊definitions{
+    ◊term["hematokrit"]{
+        Celkový objem pevné složky krve.
+    }
+}
 
-sedimentace
-    -její rychlost určována diagnostickou hematologickou metodou
-    -krev se nasaje do trubice
-        -nejrychleji klesají erytrocyty a pak leukocyty
-        -nad nimi zůstane plazma
-        -hematokrit = celkový objem pevné složky krve
-        -buffy coat = koncentrovaná suspenze získaná sedimentací
-        -vysoká sedimentace
-            -když je v těle zánět, v plazmě je hodně imunoglobulinů
-                -krev je hustější a krvinky klesají pomaleji
-                -sloupec erytrocytů je vyšší, i když jich je stejně jako u zdravého jedince
+◊ls[#:t "Složení krve"]{
+    - objev krve činí 6 až 8% tělesné hmotnosti
+        - z toho hematokrit činí u žen 41%, u mužů 46%
+    - hodně mezibuněčné hmoty (plazma)
+        - nestlačitelná
+        - 5--6 litrů
+    - krevní buňky: erytrocyty, leukocyty, trombocyty
+        - relativně mobilní, schopny opustit krevní řečiště
+    - červené krvinky (erytrocyty)
+        - 45% objemu (◊${5 \cdot 10^12} na litr)
+    - bílé krvinky (leukocyty)
+        - 1% objemu (◊${4} až ◊${6 \cdot 10^9} na litr)
+        - granulocyty (◊${5 \cdot 10^9} na litr)
+        - agranulocyty (◊${7 \cdot 10^8} na litr)
+    - krevní destičky (trombocyty)
+        - ◊${150} až ◊${300 \cdot 10^9} na litr
+}
 
-centrifugace
-    -rychlejší alternativa sedimentace
+◊img["vyvoj_krevinch_bunek.png"]{Schéma zobrazující vývoj krevních buněk ze společné kmenové buňky}
 
-složení a funkce krve
-    -objem krve - 6/8% telesne hmotnosti
-    -hematokrit - ženy: 41%, muži 46%
-    -erytrocyty - ◊${5 \cdot 10^6} / mikrolitr
-    -leukocyty -  ◊${4} až ◊${6 \cdot 10^3} / mikrolitr
-    -trombocyty - ◊${150} až ◊${300 \cdot 10^3} / mikrolitr
+◊todo{Přidat obrázek sedimentace.}
 
-erytrocyty
-    -terminálně diferencované bezjaderné buňky
-    -přenos plynů (u savců)
-        -bikonkávní tvar (maximální povrch vůči objemu - vázání plynů)
-        -ptáci, obojživelníci - oválný
-        -průměr 5 mikrometrů
-        -kapiláry mají jen tak velký průměr, jak velké je jádro erytrocytů, které limituje jejich velikost
+◊definitions{
+    ◊term["buffy coat"]{
+        Koncentrovaná suspenze získaná sedimentací.
+    }
+}
 
-    -krvetvorba
-        -jako všechna pojiva pochází z mezenchymu
-        -odvozeny od kmenových buněk krevní řady (erytroidní linie)
-            -ty mají extraembryonální původ = v prenatálním vývoji vznik ve žloutkovém váčku (= trofoblastu)
-        -vznik v kostní dřeni (◊${5 \cdot 10^11} / den vzniká a zaniká)
-            -erytroblast = nezralý erytroblast v kostní dřeni
-            -retikulocyt = nezralý erytrocyt v krevním řečišti (1% všech erytrocytů)
-                -neopouštějí krevní řečiště
-            -změna erytroblastu v erytrocyt
-                -ztrácí RNA, jádro kondenzuje, je vyloučeno a odklizeno makrofágy (ztrácí všechny organely)
-    -žijí cca 120 dní
-        -poté ve slezině či kostní dřeni odstaněny makrofágy
-    -Anémie = chudokrevnost
-        -hypochromní anémie
-            = erytrocytů je v krvi dost, je v nich ale nedostatek hemoglobinu
-            -špatně nesou kyslík a barvu
-        -srpkovitá anémie
-            -způsobeno bodovou mutací hydrofilní kyseliny glutamové (např. GAA) na hydrofobní valin (např. GUA)
-            -v neoxidovaném (=neokysličeném) stavu se hemoglobin shlukuje (polymerizuje, vytváří vláknité útvary a agregáty) a mění tak tvar krvinek
-            -krvinky mají kratší životnost, jsou méně flexibilní - blokují vlásečnice, což vede k ucpání cév
-    -fetální hemoglobin má vyšší afinitu ke kysíku než dospělý
-        = váže kyslík za nižšího tlaku (který je v placentě)
+◊ls[#:t "Sedimentace"]{
+    - její rychlost určována diagnostickou hematologickou metodou
+    - krev se nasaje do trubice, nechá se sedimentovat
+        - nejrychleji klesají erytrocyty a pak leukocyty
+        - nad nimi zůstane plazma
+    - vysoká sedimentace
+        - když je v těle zánět, v plazmě je hodně imunoglobulinů
+            - krev je hustější a krvinky klesají pomaleji
+            - sloupec erytrocytů je vyšší, i když jich je stejně jako u zdravého jedince
+}
 
-Neutrofily
-    -polymorfonukleární leukocyty
-    -dříve zvané mikrofágy
-    -60-70%  bílých krvinek
-    -jádro
-        -nezralé má tvar podkovy
-        -složeno z 2-5 laloků spojených můstky
-        -čím starší, tím více segmentů (až 7 = hypersegmentované buňky)
-        -ženy mají na jednom segmentu paličkovitý přívěšek, který obsahuje inaktivovaný chromozom X
-    -krátce žijící buňky (v krvi 6-7 dní, ve vazivu 1-4 dny)
-    -přichází v první vlně buněk do místa zánětu
-    -jejich receptory jsou schopny rozeznat např. bakterie, které fagocytují a ve fagozomech zlikvidují
-    -stimulace fagocytické aktivity
-        -nízkoafinní Fc receptory na neutrofilech
-        -označení bakterie protilátkami = opsonizace
-    -látky pro rozklad bakterií
-        -superoxidové anionty
-        -peroxid vodíku
-        -chlornanové kationty
-    -mrtvé neutrofily + bakterie + natrávený materiál -> hnis
-    -mohou být rychle nahrazeny z kostní dřeně
-    -neutrofilie
-        = zvýšené množství neutrofilů v krvi
-        -může značit akutní, nebo chronickou infekci
+Rychlejší alternativou sedimentace je centrifugace. K dalším metodám zkoumání krve patří krevní roztěr a průtoková cytometrie.
 
-Eozinofily
-    -2-4% leukocytů
-    -dvojlaločná jádra s granulami (cca 200 na buňku)
-    -eozinofilie
-        =zvýšený počet eozinů v krvi
-        -alergické reakce a parazitární infekce (např helmintózy)
-        -při napadení organismu patologem se jejich počet drasticky zvedne
-        -jejich počet se dá snížit kortikoidy
-        -granula
-            -hlavní složka MBP (=major basic protein)
-                -antiparazitická funkce
-            -enzymy histamináza a arylsulfatáza
-                -rozkládají histamin a leukotrieny
-                -mohou tlumit účinek basofilů a žírných buněk
+◊todo{Doplnit schéma průtokové cytometrie.}
 
-Bazofily
-    -1% krevních leukocytů
-    -na povrchu jsou receptory pro protilátky (imunoglobuliny IgE)
-    -při zvýšené hladině bazofilů v krvi může pravděpodobněji dojít k alergické reakci
-    -schopny degranulace
-        -granula splynou s membránou a vylijí se do okolního prostředí
-            -ničí cizí struktury
-    -regulace exocytozy
-        -regulovaná vazba antigenu na IgE navázaný na IgE receptory
-            -IgE receptor je vysokoafinní = váže IgE i pokud není navázané na antigen
-    -multivalentní antigen = struktura obsahující větší množství vazebných míst pro protilátku
-    -pokud se v těle vyskytne multivalentní antigen, dojde k agregaci receptorů
-        -> aktivace signalizační kaskády
-        -> degranulace granulí
-        -> vylití biologicky aktivních aminů (histamin, serotonin)
+◊subsection{Erytrocyty}
 
-Monocyty
-    -největší krvinky
-    -součástí myeloidní linie
-    -oválné podkovovité, nebo ledvinovité jádro
-    -prekurzory mononukleárního fagocytárního systému (= soubor všech makrofágů v různých tkáních)
-    -před vstupem do tkáně osm hodin kolují v krvi
-    -prakticky nefunkční - v krvi mají jen funkci "zásobárny makrofágů"
-    -diferenciace
-        -makrofágy
-            -diferenciace po vstupu do tkáně kapilární stěnou
-            -endocytóza tkáňového debrisu včetně apoptotických tělísek
-            -na povrchu nesou MHC II. třídy
-                = krátké úseky glykoproteinů (exogenní peptidy sic), které jsou charakteristické pro makrofágem pohlcenou látku
-                -kontrolují je Th-lymfocyty - spouštějí imunologický poplach (upozorní B-lymfocyty)
-                -při zánětu nastupují po neutrofilech
-        -dendritické buňky
-            -dosáhneme toho izolací z krve a použitím interleukinu-4a GM-CSF (=granulocytární makrofágový colony stimulating factor)
-            - funkcí je endocytóza
-            -endocytují cizorodou látku
-                ->přesunou se do mízní uzliny a naštěpí endocytovanou látku
-                ->prezentují ji na povrchu
-                ->T-lymfocyt ji rozpozná a aktivuje a poté vyvolá imunitní reakci
+◊ls{
+    - terminálně diferencované bezjaderné buňky
+    - přenos plynů (u savců)
+    - bikonkávní tvar (maximální povrch vůči objemu)
+        - ptáci, obojživelníci mají oválný
+    - průměr 5 mikrometrů
+        - kapiláry mají jen tak velký průměr, jak velké je jádro erytrocytů, které limituje jejich velikost
+    - žijí cca 120 dní, poté ve slezině či kostní dřeni odstaněny makrofágy
+    - fetální hemoglobin má vyšší afinitu ke kysíku než dospělý
+        - váže kyslík za nižšího tlaku (který je v placentě)
+}
 
-        -osteoklasty
-            =kostní buňky odbourávající kostní tkáň
-            -vznik splýváním monocytů -> mnohojaderné
-            -funkce: např. prořezávání zubů
-                -proti špičce zubu se nachází speciální populace osteoklastů
-                -je třeba odbourat kost čelisti, aby se mohl zub prořezat ven
-            -poruchy v myeloidní linii (především ve funkci monocytů a jejich diferenciačních produktů) mohou mít velký vliv na remodelaci kostní hmoty
-                -Pagetova choroba
-                    -nadměrné odbourávání kosti a následné tovoření kosti neplohodnotné
+◊definitons{
+    ◊term["erytroblast"]{
+        Nezralý erytrocyt v kostní dřeni.
+    }
 
-Lymfocyty
-    -30% leukocytů
-    -různorodá velikost (5 mikrometrů - 15 mikrometrů)
-        -rozdíl v množství cytoplazmy (většina je zcela vyplněna jádrem)
-    -schopny aktivního pohybu (z krve do tkání - místa zánětu / mízní uzliny)
-    -schopny vytvářet mnohočetná komplikovaná mezibuněčná spojení
-        =interakce vícera párů membránových receptorů a jejich ligandů
-        -regulace diferenciace (případně následné proliferace) a efektorové funkce (např. zabití cílové buňky cytotoxickým T-lymfocytem)
-    -T-lymfocyty
-        -90%
-        -dělení podle povrchových koreceptorů pro MHC glykoproteiny
-            -CD4
-                -pomocné a supresorové
-                -reakce s MHC II
-            -CD8
-                -cytotoxické
-                -interakce s MHC I
-        -dělení podle genů, které byly přestavěny ve funkční T-receptor
-            -vznikají v nich rekombinací nové geny, a syntetizují nové proteiny
-            -přeskupování genových segmentů pomocí rekombináz
-                -může dojít k chybám
-                    - popletení substrátu
-                    -> spojení ramen dvou chromozomů, které spolu fyzicky vůbec nesouvisí
-                    -> např. filadelfský chomozom
-                        -na něm je fúzní chimérní gen (propojení částí genů Cbl a Abl)
-                        -vznik aktivované kinázy schopné transformovat postiženou buňku v buňku nádorovou
-            -alfabeta
-                -výběr genů probíhá náhodně
-                -jsou poté připraveny na cokoli
-            -gamadelta
-                -výběr genů probíhá na základě evoluce
-                    -konkrétní poskládání genových segmentů, které jsou nejčastěji používaná a mají smysl
-            -organismy se liší v poměru alfabet a gamadelt
-                -přežvýkavci 70:30
-                -člověk 95:5
-        -efektorové buňky
-            -frakce T- a B-lymfocytů
-                -T-lymfocyty: pomocné a cytotoxické buňky
-                -B-lymfocyty: plazmatické buňky = buňky produkující velké množství protilátek
-            -diferencovány a aktivovány pro výkon své funkce
-    -B-lymfocyty
-        -5%
-        -produkce protilátek
-        -afnitní maturace
-            -když se organismus setká s nějakým antigenem, vylepší svoje protilátky
-            -sekundární odpověď zahrnuje protilátky s vyšší afinitou k antigenu
-            -imunoglobulinové geny náhodně mutují, B-lymfocyty s mutovanými geny poté soupeří o navázání antigenu
-            -ty s nízkou afinitou jsou odstraněny a tak zůstanou pouze ty s vysokou
-    -NK buňky
-        -5%
-        -ničí buňky bez MHC I
+    ◊term["retikulocyt"]{
+        Nezralý erytrocyt v krevním řečišti (tvoří 1% všech erytrocytů). Tyto erytrocyty neopouštějí krevní řečiště.
+    }
+}
 
-Krevnní destičky
-    -nejsou to buňky, ale bezjaderné diskovité útvary
-    -3 mikrometry
-    -vznik fragmentací polyploidních megakaryocytů sídlících v kostní dřeni
-    -megakaryocyt vysílá výběžky přes stěny do kapilár a odštěpuje destičky přímo do krve
-        -za den až 100 000 z jednoho karyocytu
-    -rozpad megakaryocytu je programovanou buněčnou smrtí
-        -zbytky odklizeny makrofágy
-    -v krvi přežijí 10 dní
-    -neopouští krevní řečiště
-    -obsahují
-        -regulátory srážení krve
-        -PDGF = platelet derived growth factor
-            -jako diferenciační faktor epiteliálních buněk se podílí na efektivní reparaci poškozené tkáně
-        -serotonin
-            -vasokonstriktor
-            -jeho uvolnění je stimulováno vazbou na poškozené cévní stěny
-            -schopen uzavřít i malé arterie
-    -poškození tkáně
-        -destička se dostane do kontaktu s kolagenními vlákny
-        ->exocytóza faktorů aktivujících ostatní destičky
-        ->uvolnění aktivačních látek ze stěn poškozených cév
-            -změna protrombinu na trombin
-        ->trombin katalyzuje přeměnu fibrinogenu na fibrin
-        ->fibrin polymeruje a vytváří vláknitou síťovinu vznikající krevní sraženiny
-        ->trombus = sraženina
+◊ls[#:t "Vznik"]{
+    - jako všechna pojiva pochází z mezenchymu
+    - odvozeny od kmenových buněk krevní řady (erytroidní linie)
+        - ty mají extraembryonální původ (v prenatálním vývoji),vznikají ve žloutkovém váčku (trofoblastu)
+    - vznik v kostní dřeni (◊${5 \cdot 10^11} za den vzniká a zaniká)
+     - při změně erytroblastu v erytrocyt ztrácí erytroblast RNA, jeho jádro kondenzuje, je vyloučeno a odklizeno makrofágy (ztrácí všechny organely)
+}
 
-Osteoklasty
-    -diferencované z monocytů
-    -odbourávají kost
-    -mnohojaderné
-        -vznik splýváním monocytů
-    -funkce: např. prořezávání zubů
-        -proti špičce zubu se nachází speciální populace osteoklastů
-        -je třeba odbourat kost čelisti, aby se mohl zub prořezat ven
+◊ls[#:t "Anémie (chudokrevnost)"]{
+    - hypochromní anémie
+        - erytrocytů je v krvi dost, je v nich ale nedostatek hemoglobinu
+        - špatně nesou kyslík a barvu
+    - srpkovitá anémie
+        - způsobeno bodovou mutací hydrofilní kyseliny glutamové (např. kodon GAA) na hydrofobní valin (např. kodon GUA)
+        - v neokysličeném stavu se hemoglobin shlukuje (polymerizuje, vytváří vláknité útvary a agregáty) a mění tak tvar krvinek
+        - krvinky mají kratší životnost, jsou méně flexibilní - blokují vlásečnice, což vede k ucpání cév
+}
 
-Metody zkoumání krve
-    krevní roztěr a průtoková cytometrie
+◊subsection{Leukocyty}
 
-Patologie krve (onemocnění)
-    -leukémie
-        =rakovina krve
-        -dochází k nádorové přeměně některého z diferenciačních stádií buněk odvozených od kmenových buněk kostní dřeně
-        -zvýšený počet leukocytů jednoho typu v krvi
-            -myeloblastické zvýšení
-                -zvýšené množství granulocytů a monocytů
-            -lymfoblastické
-                -zvýšené množství lymfocytů
-        -obě mohou být akutní nebo chronické
-        -leukocyty nedozrávají a jsou tak nefunkční
-        -rizikové faktory
-            -kouření
-            -chemikálie (benzen)
-            -radioaktivní záření
-            -léčba jiného nádorového onemocnění
-            -filadelfský chromozom
-        -efektivní řešení: chemoterapie a transplantace kostní dřeně
-    -mononukleoza
-        -EBV virus napadá B-lymfocyty, nebo jejich prekurzory
-            -B-lymfocyty se pomnoží a tváří se jako cizí organismus a tělo se brání
-            -dochází k narušení rovnováhy mezi jednotlivými složkami imunitního systému
-        -po vyléčení máme EBV na celý život
+Leukocyty se dělí na granulocyty a agranulocyty.
 
-LYMFATICKÝ SYSTÉM
+◊subsubsection{Granulocyty}
 
--lymfatické ( = lymfoidní) tkáně
-    -jsou všude po těle, zejména v místech, kde do těla vstupují, nebo kudy během infekce putují patogeny
-        -pod epitely -> s epitely asociovaná lymfoidní tkáň
-            -místa proliferace a diferenciace lymfocytů
-            -MALT = lymfoidní tkáň asociovaná s mukózou (sliznicí)
-            -bronchy BALT = lymfoidní tkáň asociovaná s dýchacími cestami
-            -GALT = lymfoidní tkáň asociovaná se střevem (gut)
-        -lymfatické orgány
-            -anatomicky diferenciovaná množina lymfoidní tkáně
-            -složeny pouze z lymfoidní tkáně
-            -dělení
-                -primární
-                    -zajišťují hematopoezu = krvetvorbu
-                    -selekce s vlastním tělěm nereagujících lymfocytů
-                    -kostní dřeň
-                    -thymus = brzlík
-                -sekundární
-                    -napojeny na lymfatický i oběhový systém
-                    -zajišťují efektivní setkávání buněk imunitního systému
-                    -kompartmentace efektivního imunitního dozoru
-                    -slezina
-                    -uzliny
-Kostní dřeň
-    -veliký orgán
-    -sídlo hematopoezy
-    -dochází tu k proliferaci buněk všech linií
-    -dělení
-        -červená kostní dřeň
-            -hematopoetická
-            -u fétu probíhá krvetvorba jen v játrech a slezině
-            -po narození je v těle pouze červená k.d. a hematopoéza probíhá výhradně tam
-            -v dopělosti pouze v plochých kostech a obratlích
-        -žlutá kostní dřeň
-            -tuková
-        -šedá kostní dřeň
-    -0,1% buněk kostní dřeně má na povrchu membránový protein CD34
-    -každý buněčný typ je nezávisle regulován
-        -EPO = erytropoetin
-        -CSF = kolonie stimulující faktory
-    -stromální buňky lymfatických uzlin
-        -velmi důležité
-        -"lešení" pro hematopoetické buňky
-        -vytváří vhodné prostředí pro setkání lymfocytů s antigeny
-    -kmenové buňky v kostní dřeni
-        -stačí transplantovat 5 KB pro zajištění kompletní krvetvorby (myší model)
-    -faktory zvyšující přežívání a nediferencovaný stav
-    -typickou markerovou molekulou je C-kit = CD117
-        -na povrchu buňky
-        -obsahuje informace o buněčném typu, stádiu diferenciace a buněčné aktivitě
-    -totipotentní buňka = buňka schopná vytvořit jakýkoli druh buňky, ergo celý organismus (zygoty, dělivé meristémy)
-    -multipotentní buňka = buňka schopná diferenciace do mnoha typů buněk, pouze však v rámci jedné tkáně (kmenové buňky)
-    -sledování hematopoezy
-        -výplach z kostní dřeně in vitro (jako na praktikách)
-            -růst na agaru - vznik nepohyblivých kolonií, které se dají dobře pozorovat
+◊ls{
+    - terminálně diferencionavé nedělící se buňky
+    - polymorfonukleární leukocyty (velmi proměnlivé, polymorfní jádro)
+    - obsahují granula, což jsou obarvitelné částice
+    - 12--15 mikrometrů
+    - schopné pohybu
+    - neutrofily
+        - fagocytují, zabíjejí a tráví bakterie
+        - barví se neutrálními barvivy (do růžova)
+    - bazofily
+        - při alergické reakci sekretují histamin a serotonin
+        - barví se zásaditými barvivy (do tmavě modra)
+    - eozinofily
+        - likvidují mnohobuněčné parazity
+        - barví se kyselými barvivy (hematoxylin-eosi, do červena)
+}
 
-embryonální krvetvorba
-    -vzniká cca 3.týden
-    -ze žloutkového vaku se vytvoří krevní ostrůvky obashující primitivní erytroblasty
-        -větší než ty dospělé, jiný hemoglobin (Hb), mají jádro
-    -od 5.týdne vzniká intraembryonální krvetvorba
-    -v játrech, slezině, kostní dřeni
+◊ls[#:t "Neutrofily"]{
+    - polymorfonukleární leukocyty, dříve zvané mikrofágy
+    - 60--70%  bílých krvinek
+    - mají segmentované jádro
+        - nezralé má tvar podkovy
+        - čím starší, tím více segmentů (až 7)
+            - hypersegmentované buňky
+        - běžně je složeno z 2--5 laloků spojených můstky
+        - ženy mají na jednom segmentu paličkovitý přívěšek, který obsahuje inaktivovaný chromozom X
+    - krátce žijící buňky (v krvi 6-7 dní, ve vazivu 1-4 dny)
+    - přichází v první vlně buněk do místa zánětu
+    - mohou být rychle nahrazeny z kostní dřeně
+}
+
+◊ls[#:t "Neutrofilní aktivita"]{
+    - receptory neutrofilů jsou schopny rozeznat např. bakterie, které poté fagocytují a ve fagozomech zlikvidují
+    - jejich fagocytická aktivita může být dále stimulována
+        - nízkoafinní Fc receptory na neutrofilech
+        - označení bakterie protilátkami, tzv. ◊em{opsonizace}
+    - látky pro rozklad bakterií
+        - superoxidové anionty
+        - peroxid vodíku
+        - chlornanové kationty
+    - mrtvé neutrofily + bakterie + natrávený materiál -> hnis
+}
+
+Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infekci, a to akutní i chronickou.
+
+◊ls[#:t "Eozinofily"]{
+    - 2-4% leukocytů
+    - mají dvojlaločná jádra s granulami (cca 200 na buňku)
+    - granula
+        - tvoří hlavní složku MBP (major basic protein)
+            - mají antiparazitickou funkci
+        - enzymy histamináza a arylsulfatáza
+            - rozkládají histamin a leukotrieny
+            - mohou tlumit účinek basofilů a žírných buněk
+}
+
+◊ls[#:t "Eozinofilie"]{
+    - ukazuje na  alergické reakce a parazitární infekce (např. helmintózy)
+    - při napadení organismu patogenem se jejich počet drasticky zvedne
+    - jejich počet se dá snížit kortikoidy
+}
+
+◊definitions{
+    ◊term["Multivalentní antigen"]{
+        Struktura obsahující větší množství vazebných míst pro protilátku.
+    }
+}
+
+◊ls[#:t "Bazofily"]{
+    - tvoří 1% krevních leukocytů
+    - na povrchu jsou receptory pro protilátky (imunoglobuliny E, IgE)
+    - při zvýšené hladině bazofilů v krvi může pravděpodobněji dojít k alergické reakci
+    - jsou schopny degranulace
+        - granula splynou s membránou a vylijí se do okolního prostředí
+        - ničí cizí struktury
+    - regulace exocytózy
+        - regulovaná vazbou antigenu na IgE, který je navázaný na IgE receptorech
+            - IgE receptor váže IgE i pokud není navázaný na antigen (= je vysokoafinní)
+    - pokud se v těle vyskytne multivalentní antigen, dojde k agregaci receptorů
+        # aktivace signalizační kaskády
+        # degranulace granulí
+        # vylití biologicky aktivních aminů (histamin, serotonin)
+}
+
+◊subsubsection{Agranulocyty}
+
+◊ls{
+    - nejsou obarvitelné
+    - monocyty (◊${4 \cdot 10^8} na litr)
+        - diferencují se v makrofágy a dendritické buňky
+        - magrofágy
+            - fagocytují parazity a vlastní poškozené a apoptotické buňky
+            - produkují oxidační produkty
+            - některé se mění na dendritické buňky
+        - dendritické buňky
+            - fagocytují na periferii, kde migrují do uzlin a prezentují antigeny prostřednictvím MHC II. třídy
+    - lymfocyty (◊${3 \cdot 10^8} na litr)
+}
+
+◊definitions{
+    ◊term["Fagocytární systém"]{
+        Soubor všech makrofágů v různých tkáních.
+    }
+
+    ◊term["MHC II. třídy"]{
+        Krátké úseky glykoproteinů (exogenní peptidy sic), které jsou charakteristické pro pohlcenou látku.
+    }
+}
+
+◊ls[#:t "Monocyty"]{
+    - největší krvinky
+    - součástí myeloidní linie
+    - oválné, podkovovité nebo ledvinovité jádro
+    - prekurzory mononukleárního fagocytárního systému
+    - před vstupem do tkáně osm hodin kolují v krvi
+    - prakticky nefunkční, v krvi mají jen funkci "zásobárny makrofágů"
+    - diferenciují na makrofágy a dendritické buňky
+}
+
+◊ls[#:t "Makrofágy"]{
+    - diferenciace po vstupu do tkáně kapilární stěnou
+    - provádí endocytózu tkáňového debrisu včetně apoptotických tělísek
+    - na povrchu nesou MHC II. třídy
+        - toto MHC kontrolují Th-lymfocyty, které případně spouštějí imunologický poplach, címž upozorní B-lymfocyty
+    - při zánětu nastupují po neutrofilech
+}
+
+◊ls[#:t "Dendritické buňky"]{
+    - in vitro připravíme izolací z krve a použitím interleukinu-4a GM-CSF (granulocytární makrofágový colony stimulating factor)
+    - aktivita
+        # endocytují cizorodou látku
+        # přesunou se do mízní uzliny a naštěpí endocytovanou látku
+        # prezentují ji na povrchu
+        # T-lymfocyt ji potenciálně rozpozná, aktivuje se a vyvolá imunitní reakci
+}
+
+◊ls[#:t "Osteoklasty"]{
+    - kostní buňky odbourávající kostní tkáň
+    - vznik splýváním monocytů -> mnohojaderné
+    - funkce např. prořezávání zubů
+        - proti špičce zubu se nachází speciální populace osteoklastů
+        - je třeba odbourat kost čelisti, aby se mohl zub prořezat ven
+     - poruchy v myeloidní linii (především ve funkci monocytů a jejich diferenciačních produktů) mohou mít velký vliv na remodelaci kostní hmoty
+        - Pagetova choroba
+            - nadměrné odbourávání kosti a následné tovoření kosti neplohodnotné
+}
+
+◊ls[#:t "Lymfocyty"]{
+    - tvoří 30% leukocytů
+    - různorodá velikost (5 mikrometrů -- 15 mikrometrů)
+        - rozdíl v množství cytoplazmy (většina je zcela vyplněna jádrem)
+     - schopny aktivního pohybu (z krve do tkání --- do místa zánětu nebo do mízní uzliny)
+     - schopny vytvářet mnohočetná komplikovaná mezibuněčná spojení
+        - interakce vícero párů membránových receptorů a jejich ligandů
+        - regulace diferenciace (případně následné proliferace) a efektorové funkce (např. zabití cílové buňky cytotoxickým T-lymfocytem)
+}
+
+◊ls[#:t "T-lymfocyty"]{
+    - tvoří 90% leukocytů
+    - dělení podle povrchových koreceptorů pro MHC glykoproteiny
+        - CD4 (interakce s MHC II)
+            - pomocné a supresorové
+        - CD8 (interakce s MHC I)
+            - cytotoxické
+    - dělení podle genů, které byly přestavěny ve funkční T-receptor
+        - rekombinací v nich vznikají nové geny a jsou syntetizovány nové proteiny
+            - přeskupování genových segmentů je prováděno rekombinázami
+        - ◊|alpha|◊|beta|
+            - výběr genů probíhá náhodně
+            - jsou připraveny na cokoli
+        - ◊${\gamma \delta}
+            - výběr genů probíhá na základě evoluce
+            - jedná se o konkrétní poskládání genových segmentů, která jsou nejčastěji používaná a mají smysl
+        - organismy se liší v poměru ◊|alpha|◊|beta| a ◊${\gamma \delta}
+            - např. člověk 95:5, přežvýkavci 70:30
+}
+
+◊ls[#:t "Chyby při vzniku T-lymfocytů"]{
+    - popletení substrátu
+    - dojde ke spojení ramen dvou chromozomů, které spolu fyzicky vůbec nesouvisí
+    - např. filadelfský chomozom
+        - na něm je fúzní chimérní gen (propojení částí genů Cbl a Abl)
+        - vznik nedeaktivovatelné kinázy schopné transformovat postiženou buňku v buňku nádorovou
+}
+
+◊ls[#:t "B-lymfocyty"]{
+    - tvoří 5% leukocytů
+    - produkují protilátky
+    - afinitní maturace
+        - když se organismus setká s nějakým antigenem, vylepší svoje protilátky
+        - sekundární odpověď zahrnuje protilátky s vyšší afinitou k antigenu
+        - imunoglobulinové geny náhodně mutují, B-lymfocyty s mutovanými geny poté soupeří o navázání antigenu
+        - ty s nízkou afinitou jsou odstraněny a tak zůstanou pouze ty s vysokou
+}
+
+◊ls[#:t "Efektorové buňky"]{
+    - kategorie buněk tvořená zčásti buňkami ze skupiny T-lymfocytů a zčásti buňkami B-lymfocytů
+        - z T-lymfocytů jsou to pomocné (Th) a cytotoxické buňky (Tc)
+        - z B-lymfocytů jsou to plazmatické buňky, neboli buňky produkující velké množství protilátek
+    - jsou diferenciovány a aktivovány pro výkon své funkce
+}
+
+◊ls[#:t "NK buňky"]{
+    - tvoří 5% leukocytů
+    - ničí buňky bez MHC I
+}
+
+◊subsection{Krevnní destičky}
+
+◊ls{
+    - nejsou to buňky, ale bezjaderné diskovité útvary
+    - velikost 3 mikrometry
+    - vznikají fragmentací polyploidních megakaryocytů sídlících v kostní dřeni
+        - megakaryocyt vysílá výběžky přes stěny do kapilár a odštěpuje destičky přímo do krve
+            - jeho rozpad je programovanou buněčnou smrtí, zbytky poté uklidí makrofágy
+        - za den až 100 000 z jednoho karyocytu
+    - v krvi přežijí 10 dní
+    - neopouští krevní řečiště
+}
+
+◊ls[#:t "Stavba"]{
+    - regulátory srážení krve
+        - PDGF (platelet derived growth factor)
+            - jako diferenciační faktor epiteliálních buněk se podílí na efektivní reparaci poškozené tkáně
+        - serotonin
+            - vasokonstriktor
+            - jeho uvolnění je stimulováno vazbou na poškozené cévní stěny
+            - schopen uzavřít i malé arterie
+}
+
+◊ls[#:t "Průběh opravy poškozené tkáně"]{
+    # destička se dostane do kontaktu s kolagenními vlákny
+    # nastane exocytóza faktorů aktivujících ostatní destičky
+    # dojde k uvolnění aktivačních látek ze stěn poškozených cév
+        - změna protrombinu na trombin
+    # trombin katalyzuje přeměnu fibrinogenu na fibrin
+    # fibrin polymeruje a vytváří vláknitou síťovinu vznikající krevní sraženiny
+    # vznik trombu (sraženiny)
+}
+
+◊subsection{Patologie}
+
+◊ls[#:t "Leukémie"]{
+    - rakovina krve
+    - dochází k nádorové přeměně některého z diferenciačních stádií buněk odvozených od kmenových buněk kostní dřeně
+    - zvýšený počet leukocytů jednoho typu v krvi
+        - myeloblastické zvýšení
+            - zvýšené množství granulocytů a monocytů
+        - lymfoblastické zvýšení
+            - zvýšené množství lymfocytů
+        - obě mohou být akutní nebo chronické
+    - leukocyty nedozrávají a jsou tak nefunkční
+    - rizikové faktory
+        - kouření
+        - chemikálie (benzen)
+        - radioaktivní záření
+        - léčba jiného nádorového onemocnění
+        - filadelfský chromozom
+    - efektivní řešení: chemoterapie a transplantace kostní dřeně
+}
+
+◊ls[#:t "Mononukleóza"]{
+    - EBV virus napadá B-lymfocyty, nebo jejich prekurzory
+        - B-lymfocyty se pomnoží, tváří se jako cizí organismus a tělo se brání
+        - dochází k narušení rovnováhy mezi jednotlivými složkami imunitního systému
+    - po vyléčení máme EBV na celý život
+}
+
+◊section{Lymfatický systém}
+
+Lymfatické i lymfoidní tkáně jsou všude po těle, zejména v místech, kde do těla vstupují patogeny, nebo kudy během infekce putují.
+
+◊definitions{
+    ◊term["MALT"]{
+         Lymfoidní tkáň asociovaná s mukózou (sliznicí).
+    }
+
+    ◊term["GALT"]{
+        Lymfoidní tkáň asociovaná se střevem (gut).
+    }
+
+    ◊term["BALT"]{
+        Lymfoidní tkáň asociovaná s dýchacími cestami (bronchy).
+    }
+}
+
+◊ls[#:t "Lokalizace lymfatických cest"]{
+    - pod epitely (s epitely asociovaná lymfoidní tkáň)
+        - místa proliferace a diferenciace lymfocytů
+        - MALT, GALT, BALT
+    - lymfatické orgány
+        - anatomicky diferenciovaná množina lymfoidní tkáně
+        - složeny pouze z lymfoidní tkáně
+        - dělení
+            - primární
+                - zajišťují hematopoézu (krvetvorbu)
+                - probíhá v nich selekce lymfocytů, které nereagují s tělěm
+                - kostní dřeň, thymus (brzlík)
+            - sekundární
+                - napojeny na lymfatický i oběhový systém
+                - zajišťují efektivní setkávání buněk imunitního systému
+                - kompartmentace efektivního imunitního dozoru
+                - slezina, mízní uzliny
+                    - stromální buňky  jsou velmi důležité
+                    - tvoří "lešení" pro hematopoetické buňky
+                    - vytváří vhodné prostředí pro setkání lymfocytů s antigeny
+
+}
+
+◊definitions{
+    ◊term["totipotentní buňka"]{
+        Buňka schopná vytvořit jakýkoli druh buňky, ergo celý organismus. Takovými buňami jsou zygoty a dělivé meristémy.
+    }
+
+    ◊term["multipotentní buňka"]{
+         Buňka schopná diferenciace do mnoha typů buněk, pouze však v rámci jedné tkáně. To jsou kmenové buňky.
+    }
+}
+
+◊ls[#:t "Kostní dřeň"]{
+    - veliký orgán
+    - sídlo hematopoézy
+    - dochází tu k proliferaci buněk všech linií
+    - dělení podle barvy
+        - červená kostní dřeň
+            - hematopoetická
+            - u fetu probíhá krvetvorba jen v játrech a slezině
+            - po narození je v těle pouze červená k.d. a hematopoéza probíhá výhradně tam
+            - v dopělosti pouze v plochých kostech a obratlích
+        - žlutá kostní dřeň
+            - tuková
+        - šedá kostní dřeň
+    - 0,1% buněk kostní dřeně má na povrchu membránový protein CD34
+    - každý buněčný typ je nezávisle regulován
+        - erytropoetin (EPO), kolonie stimulující faktory (CSF)
+    - kmenové buňky v kostní dřeni
+        - stačí transplantovat 5000 buněk pro zajištění kompletní krvetvorby (<= myší model)
+    - typickou markerovou molekulou je C-kit CD117
+        - je na povrchu buňky
+        - obsahuje informace o buněčném typu, stádiu diferenciace a buněčné aktivitě
+}
+
+Hematopoéza se dá jednoduše sledovat in vitro. Nejprve se provede výplach z kostní dřeně (jako na praktikách), poté se nechají jednotlivé buňky růst na agaru. Vzniknou nepohyblivé kolonie, které se dají dobře pozorovat.
+
+◊ls[#:t "Embryonální krvetvorba"]{
+    - vzniká cca třetí týden
+        - ze žloutkového vaku se vytvoří krevní ostrůvky obsahující primitivní erytroblasty
+        - větší než ty dospělé, mají jiný hemoglobin (Hb) a obsahují jádro
+    - od pátého týdne vzniká intraembryonální krvetvorba
+        - v játrech, slezině, kostní dřeni
+}
 
 ◊title{Svaly}
 
@@ -1567,7 +1656,6 @@ Bylo zjištěno, že máme nějak mnoho druhů neuronů na to, jak málo máme g
     - dynamická struktura, která se "drátuje" v průběhu života
     - součástí správného rozvoje CNS je i apoptóza
     - neurony, které nejsou za prvních pár týdnů prenatálního života použity, podléhají buněčné smrti
-    - místům v mozku, která byla původně určena jako nefunkční či prázdná, bývá pomocí FMR přiřazena funkce
     - podobně jsou i v rámci postnatálního života posilovány spoje, které jsou často používány
         - naopak nepoužívané spoje slábnou a zanikají
         - je důležité dávat dítěti (alespoň do sedmi let života) co nejvíce různých vjemů
@@ -1577,6 +1665,8 @@ Bylo zjištěno, že máme nějak mnoho druhů neuronů na to, jak málo máme g
     - tato plasticita mozku během života zaniká
         - netvoří se nové spoje, pouze se posilují a zeslabují ty stávající
 }
+
+Místům v mozku, která byla původně určena jako nefunkční či prázdná, bývá pomocí FMR přiřazena funkce --- objevujeme stále nové souvislosti mezi jednotlivými částmi mozku.
 
 ◊box["Poznámka"]{
     ◊definitions{
@@ -1612,9 +1702,9 @@ Bylo zjištěno, že máme nějak mnoho druhů neuronů na to, jak málo máme g
     - větví se, má ale konstantní šířku
     - 1mm -- 1m na délku
     - vyrůstají z místa zvaného ◊em{axonální kónus}
-        - tam se provádějí všechny výpočt
+        - tam se provádějí všechny výpočty
         - jde o to, jestli je překročen akční potenciál
-    - plazmatická membrána axo, lemmaobsahuje axoplazmu
+    - plazmatická membrána axolemma, obsahuje axoplazmu
     - úsek mezi kónem a počátkem myelinové pochvy se nazývá ◊em{iniciální segment}
         - jsou zde unikátní iontové kanály kontrolující generování nervového vzruchu
     - mohou být myelinizované i nemyelinizované
@@ -1682,7 +1772,7 @@ U myši jsou schopna se zahojit i poranění páteře; při poraněních páteř
 ◊ls[#:t "Léčba přerušených nervových spojů"]{
     - k léčení se snažíme využít i kmenové buňky
     - stárnutí je spojeno s neurodegenerací, vymírají konkrétní populace nervových buněk
-        - např. u Parkinsonovy choroby to jsou dopaminergní neurony v ◊em{corpora nigra}
+        - např. u Parkinsonovy choroby to jsou dopaminergní neurony v ◊em{substantia nigra}
     - existují snahy diferencovat určité populace nervových buněk in vitro
     - regenerace je ale omezenejší než u běžných epitelů
         - nejsilnější je regenerace v bulbus olfactorius (čichovém bulbu) a v hippokampu, který je plastický i v dospělosti
@@ -1720,7 +1810,7 @@ Mají základ z neurální trubice, v PNS z neurální lišty. Někdy označovan
             - čistí extracelulární prostředí v mozku po proběhlých nervových vzruších
         }
 
-        Za jejich přítomnosti také dochází k vychytávání neurotransmiterů a k jejich transformaci; např. glutamát -> glutamin, který není neurotransmiterem. Glutamin oté předají presynaptickému neuronu. To se děje proto, aby k nervovým vzruchům mohlo docházet častěji.
+        Za jejich přítomnosti také dochází k vychytávání neurotransmiterů a k jejich transformaci; např. glutamát -> glutamin, který není neurotransmiterem. Glutamin poté předají presynaptickému neuronu. To se děje proto, aby k nervovým vzruchům mohlo docházet častěji.
 
         ◊ls[#:t "Stavba"]{
             - diferenciace podléhá růstovým faktorům
@@ -1794,12 +1884,12 @@ Na obrázku lze pozorovat výběžky astrocytů, které k sobě těsně doléhaj
 
 ◊ls{
     - jako jedna z mála neurosenzorických struktur se během života mění
-    - zde se skupina buněk se diferencuje v čichové (viz obrázek výše)
+        - senzorické neurony přeživájí 1--2 měsíce
+        - poté jsou nahrazeny diferenciací bazálních buněk
+    - skupina buněk se diferencuje v čichové (viz obrázek výše)
         - cilie jsou nepohyblivé, obsahují čichové receptory
         - na bazální straně jeden axon směřující do mozku
         - obklopeny podpůrnými buňkami s podobným významem jako gliové buňky
-    - senzorické neurony přeživájí 1--2 měsíce
-        - poté jsou nahrazeny diferenciací bazálních buněk
     - každý senzorický neuron exprimuje jen jeden z několika set čichových receptorů
     - když jsou buňky obnovovány, nově vznikající buňka si náhodně vybere jeden receptor
 }
