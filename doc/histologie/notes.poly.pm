@@ -805,8 +805,8 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 
 ◊ls{
     - jeden z největších orgánů v těle
-        - muži: 15-20% hmotnosti
-        - ženy: 20-25% hmotnosti
+        - muži: 15--20% hmotnosti
+        - ženy: 20--25% hmotnosti
     - hormonálně aktivní orgán
     - vysoce inervovaná a vaskularizovaná
     - po extrémním zhubnutí zůstane na ploskách nohou
@@ -1142,10 +1142,10 @@ složení
     -krevní buňky : erytrocyty, leukocyty, trombocyty
         -relativně mobilní, schopny opustit krevní řečiště
     -červené krvinky = erytrocyty
-        -45% objemu (5*10^12 / l)
+        -45% objemu (◊${5 \cdot 10^12} na litr)
     -bílé krvinky = leukocyty
         -1% objemu
-        -granulocyty (5*10^9 /l)
+        -granulocyty (◊${5 \cdot 10^9} na litr)
             = polymorfonukleární leukocyty (velmi proměnlivé - polymorfní jádro)
             -obsahujé granula = obarvitelné částice
             -12 - 15 mikrometrů
@@ -1162,7 +1162,7 @@ složení
                 -barví se kyselými barvivy (hematoxylin-eosin - do červena)
         -agranulocyty
             -nejsou obarvitelné
-            -monocyty (4*10^8/l)
+            -monocyty (◊${4 \cdot 10^8} na litr)
                 -diferencují se v makrofágy a dendritické buňky
                 -magrofágy
                     -fagocytují parazity a vlastní poškozené a apoptoticé buňky
@@ -1172,7 +1172,7 @@ složení
                     -fagocytují na periferii
                     ->migrují do uzlin
                     ->prezentují antigeny prostřednictvím MHC II. třídy
-            -lymfocyty (3*10^8/l)
+            -lymfocyty (◊${3 \cdot 10^8} na litr)
     -krevní destičky = trombocyty
 
 sedimentace
@@ -1193,9 +1193,9 @@ centrifugace
 složení a funkce krve
     -objem krve - 6/8% telesne hmotnosti
     -hematokrit - ženy: 41%, muži 46%
-    -erytrocyty - 5*10^6 / mikrolitr
-    -leukocyty -  4-6*10^3 / mikrolitr
-    -trombocyty - 150-300*10^3 / mikrolitr
+    -erytrocyty - ◊${5 \cdot 10^6} / mikrolitr
+    -leukocyty -  ◊${4} až ◊${6 \cdot 10^3} / mikrolitr
+    -trombocyty - ◊${150} až ◊${300 \cdot 10^3} / mikrolitr
 
 erytrocyty
     -terminálně diferencované bezjaderné buňky
@@ -1209,7 +1209,7 @@ erytrocyty
         -jako všechna pojiva pochází z mezenchymu
         -odvozeny od kmenových buněk krevní řady (erytroidní linie)
             -ty mají extraembryonální původ = v prenatálním vývoji vznik ve žloutkovém váčku (= trofoblastu)
-        -vznik v kostní dřeni (5*10^11 / den vzniká a zaniká)
+        -vznik v kostní dřeni (◊${5 \cdot 10^11} / den vzniká a zaniká)
             -erytroblast = nezralý erytroblast v kostní dřeni
             -retikulocyt = nezralý erytrocyt v krevním řečišti (1% všech erytrocytů)
                 -neopouštějí krevní řečiště
