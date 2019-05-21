@@ -3,6 +3,7 @@
 ◊define-meta[title]{Základy bioinformatiky}
 ◊define-meta[header]{zápisy}
 ◊(define-meta toc #t)
+◊define-meta[authors ("Evžen Wybitul" " Kateřina Krausová")]
 
 ◊title{Úvod}
 

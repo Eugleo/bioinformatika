@@ -2,6 +2,7 @@
 ◊define-meta[title]{Struktura a vlastnosti informačních biopolymerů}
 ◊define-meta[header]{zápisy}
 ◊(define-meta toc #t)
+◊define-meta[authors ("Evžen Wybitul")]
 
 
 ◊title{Stavba hmoty}
