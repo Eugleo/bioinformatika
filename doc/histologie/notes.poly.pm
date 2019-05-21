@@ -1160,13 +1160,9 @@ Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu t
         - ◊${150} až ◊${300 \cdot 10^9} na litr
 }
 
-◊img["vyvoj_krevinch_bunek.png"]{Schéma zobrazující vývoj krevních buněk ze společné kmenové buňky}
+Na následujícím obrázku lze vidět, z jakých buněk se vyvíjejí jednotlivé krevní buňky. Jejich vlastnosti jsou popsány v následující sekci.
 
-◊definitions{
-    ◊term["buffy coat"]{
-        Koncentrovaná suspenze získaná sedimentací.
-    }
-}
+◊img["vyvoj_krevinch_bunek.png"]{Schéma zobrazující vývoj krevních buněk ze společné kmenové buňky}
 
 ◊ls[#:t "Sedimentace"]{
     - její rychlost určována diagnostickou hematologickou metodou
@@ -1179,7 +1175,13 @@ Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu t
             - sloupec erytrocytů je vyšší, i když jich je stejně jako u zdravého jedince
 }
 
-Rychlejší alternativou sedimentace je centrifugace. K dalším metodám zkoumání krve patří krevní roztěr a průtoková cytometrie.
+◊definitions{
+    ◊term["buffy coat"]{
+        Koncentrovaná suspenze získaná sedimentací.
+    }
+}
+
+Rychlejší alternativou sedimentace je centrifugace. K dalším metodám zkoumání krve patří krevní roztěr a průtoková cytometrie (schéma funkce viz obrázek níže).
 
 ◊img["cytometrie.png"]{Schéma průtokové cytometrie}
 ◊em{By Kierano - Own work, CC BY 3.0, ◊link["https://commons.wikimedia.org/w/index.php?curid=22102570"]{link}}
@@ -1201,7 +1203,7 @@ Při cytometrii protékají měřičem buňky jedna po jedné. Přerušují u to
         - váže kyslík za nižšího tlaku (který je v placentě)
 }
 
-◊definitons{
+◊definitions{
     ◊term["erytroblast"]{
         Nezralý erytrocyt v kostní dřeni.
     }
