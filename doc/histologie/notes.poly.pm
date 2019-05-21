@@ -223,21 +223,21 @@ Alkohol skvěle fixuje, čím více ethanolu, tím lépe, protože alkohol ve tk
 
 ◊ls[#:t "Histochemické detekce"]{
      - železo
-		- Perlsova reakce: tvorba tmavomodré sraženiny ferokyanidu železitého
-		- odhalení hemochromatózy, hemosiderózy
-	- fosfáty
-		- dusičnan stříbrný, fosforečnan stříbrný redukován na černý precipát stříbra (hydrochinonem)
+        - Perlsova reakce: tvorba tmavomodré sraženiny ferokyanidu železitého
+        - odhalení hemochromatózy, hemosiderózy
+    - fosfáty
+        - dusičnan stříbrný, fosforečnan stříbrný redukován na černý precipát stříbra (hydrochinonem)
         - studium osifikace
-	- DNA
-		- Feulgenova reakce: hydrolýza DNA pomocí HCl
-		- Schiffovo činidlo: volné aldehydové skupiny reagují s fuchsinem
-	- proteiny
-		- imunocytochemické metody
-		- polysacharidy, oligosacharidy
-			- PAS reakce: oxidace kyselinou jodistou
-			- aldehydové skupiny reagují s fuchsinem => purpurová sraženina
-		- glykolipidy, glykoproteiny
-			- značené lektiny
+    - DNA
+        - Feulgenova reakce: hydrolýza DNA pomocí HCl
+        - Schiffovo činidlo: volné aldehydové skupiny reagují s fuchsinem
+    - proteiny
+        - imunocytochemické metody
+        - polysacharidy, oligosacharidy
+            - PAS reakce: oxidace kyselinou jodistou
+            - aldehydové skupiny reagují s fuchsinem => purpurová sraženina
+        - glykolipidy, glykoproteiny
+            - značené lektiny
     - enzymy
         - kyselé fosfatázy
             - Gomoriho metoda: fixace formalinem, inkubace s glycerolfosfátem sodným + dusičnanem olovnatým -> fosfátové ionty -> nerozpustný elektrodenzní fosforečnan olovnatý (lysozymy)
@@ -259,7 +259,7 @@ Alkohol skvěle fixuje, čím více ethanolu, tím lépe, protože alkohol ve tk
 ◊ls[#:t "Propojení elektronové mikroskopie a autoradiografie"]{
     - k buňkám se přidá radioaktivně značený leucin
     - leuxcin se zabuduje do proteinů
-	- sledování putování nově syntetizovaných proteinů
+    - sledování putování nově syntetizovaných proteinů
 }
 
 ◊section{Mikroskopie}
@@ -268,29 +268,29 @@ Oko rozpozná 100◊${\mu}m, světelný mikroskop 100nm, elektronový i rozměry
 
 ◊ls[#:t "Světelná mikroskopie"]{
     - sledování in vivo
-	- digitalizace dat
-	- mnohobarevná detekce
-	- konfokální mikroskop
-		- detekce světelného signálu z jedné roviny zaostření bez kontaminace signálem nad a pod rovinou zaostření
+    - digitalizace dat
+    - mnohobarevná detekce
+    - konfokální mikroskop
+        - detekce světelného signálu z jedné roviny zaostření bez kontaminace signálem nad a pod rovinou zaostření
 }
 
 Sledovat in vivo se dá i na tomografii, případně NMR.
 
 ◊ls[#:t "Elektronová mikroskopie"]{
     - detekce elektronů
-	- optika je elektromagnetické povahy
-	- černobílé obrázky, ale exsituje možnost obarvení
-	- typy
-		- skenovací EM: svítíme na pokovený objekt, detekujeme, co se odrazí
-		- transmisní EM: objekt prosvěcován elektrony, detekujeme jejich rozptyl
-			- bez nutnosti barvení, schopni rotovat, prozařovat pod různými úhly
+    - optika je elektromagnetické povahy
+    - černobílé obrázky, ale exsituje možnost obarvení
+    - typy
+        - skenovací EM: svítíme na pokovený objekt, detekujeme, co se odrazí
+        - transmisní EM: objekt prosvěcován elektrony, detekujeme jejich rozptyl
+            - bez nutnosti barvení, schopni rotovat, prozařovat pod různými úhly
 }
 
 ◊ls[#:t "Průtoková cytometrie"]{
     - stroj schopný navázat suspenzi buněk (mohou být fluorescenčně značené)
         # svítíme laserem
         # zjišťujeme, která buňka je pozitivní pro konkrétní fluorescenci a svítí
-	- slouží k rozlišení buněk v krvi, tím, že se rozpadnou na jednotlivé populace
+    - slouží k rozlišení buněk v krvi, tím, že se rozpadnou na jednotlivé populace
 }
 
 ◊ls[#:t "Laserová mikrodisekce"]{
@@ -319,7 +319,7 @@ Epitely jsou tkáně tvořené buňkami s různým tvarem a funkcí, které jso
     - recepce, neuroepitel
     - stažlivost, myoepiteliální buňky
     - resorpce, v rohovce (jediný takový epitel)
-	    - aby v ní nebyla voda a my dobře viděli
+        - aby v ní nebyla voda a my dobře viděli
     - dokáží fungovat jak svalové buňky, produkují myozin a aktin
         - např. myoepitelové buňky mléčných žláz
 }
@@ -334,7 +334,7 @@ Epitely jsou tkáně tvořené buňkami s různým tvarem a funkcí, které jso
     - podle funkce
         - ochranný -> mnohovrstevný, odolný
         - transportní – velké množství kanálů, průchod molekul přes membránu
-	    - řasinkový -> zajiŠťuje směrovaný pohyb (vajíčko ve vejcovodu)
+        - řasinkový -> zajiŠťuje směrovaný pohyb (vajíčko ve vejcovodu)
 
 }
 
@@ -412,8 +412,8 @@ Krycí kepitely kryjí zevní povrch a vystýlají tělní dutiny.
 
 ◊ls[#:t "Nádory"]{
     - u všech buněk kromě červených krvinek (nemají jádro, nemnoží se) a neutrofilních granulocytů (skoro před smrtí)
-	- do 10 let nejčastěji nádory krvetvorné tkáně
-	- po 45. roce je 90% nádorů odvozených od epitelů
+    - do 10 let nejčastěji nádory krvetvorné tkáně
+    - po 45. roce je 90% nádorů odvozených od epitelů
 }
 
 ◊definitions{
@@ -439,26 +439,26 @@ Kromě metaplázovaných epitelů mají ale jinak epitely velice dobrou schopnos
 ◊ls{
     - buňky specializované na tvorbu sekretů
     - jednobuněčné žlázy
-		- pohárkové buňky (výstelka tenkého střeva)
-		- dýchací trakt
-	- mnohobuněčné žlázy
-		- vývoj z krycích epitelů proliferací a invazí do okolního vaziva
+        - pohárkové buňky (výstelka tenkého střeva)
+        - dýchací trakt
+    - mnohobuněčné žlázy
+        - vývoj z krycích epitelů proliferací a invazí do okolního vaziva
 }
 
 ◊ls[#:t "Typy žláz"]{
     - exokrinní
-		- zachováno spojení s povrchovým epitelem
-		- tubulární vývod je vystlaný epitelem
-		- např. žlučové vývody, slinivka
-	- endokrinní
-		- postrádají vývod, sekret je roznášen krevním řečištěm
-		- slouží např. pro přenos hormonů
+        - zachováno spojení s povrchovým epitelem
+        - tubulární vývod je vystlaný epitelem
+        - např. žlučové vývody, slinivka
+    - endokrinní
+        - postrádají vývod, sekret je roznášen krevním řečištěm
+        - slouží např. pro přenos hormonů
 }
 
 Některé orgány jsou jak exokrinní, tak endokrinní
 ◊ls{
     - játra: žluč (exokrinní), transferin + albumin (endokrinní)
-	- pankreas: trávicí enzymy (exokrinní) + inzulin + glukagon (endokrinní)
+    - pankreas: trávicí enzymy (exokrinní) + inzulin + glukagon (endokrinní)
 }
 
 ◊subsection{Exokrinní žlázy}
@@ -521,20 +521,20 @@ Některé orgány jsou jak exokrinní, tak endokrinní
 
 ◊ls[#:t "Kmenové buňky v kostní dřeni"]{
     - stromální buňky vytváří jeskyňky
-		- nediferencované mezenchymální a hematopoetické kmenové buňky
+        - nediferencované mezenchymální a hematopoetické kmenové buňky
 }
 
 ◊ls[#:t "Kmenové buňky ve střevě"]{
     - z jedné kmenové buňky lze diferencovat všechny epiteliální buňky
-	- v tenkém střevě jsou ve vychlípeninách
+    - v tenkém střevě jsou ve vychlípeninách
         - směrem dolů diferencují do Pannetových buněk
         - směrem nahoru diferencují ve žlázy a v resorpční epiteliální buňky
 }
 
 ◊ls[#:t "Kmenové buňky v kůži"]{
     - kmenové buňky nejblíže jsou povrchu pokožky
-	- během diferenciace sestupují do údolíček
-	- během keratinizace jsou vytlačovány vzhůru
+    - během diferenciace sestupují do údolíček
+    - během keratinizace jsou vytlačovány vzhůru
 }
 
 ◊ls[#:t "Kmenové buňky v mléčné žláze"]{
@@ -557,46 +557,46 @@ Velikost jednotlivých buněk v endotelu závisí na jejich ploidii.
 
 ◊ls[#:t "Dynamika endoteliálního systému"]{
     - moc kyslíku => některé kapiláry se uzavřou
-	- málo kyslíku (hypoxie) => vyšle se signál pro vznik nových cév
-		- vznikne slepá větvička, ta roste, až si tepna najde žílu
-		- zvýšení koncentrace HIF (hypoxia inducible factor)
+    - málo kyslíku (hypoxie) => vyšle se signál pro vznik nových cév
+        - vznikne slepá větvička, ta roste, až si tepna najde žílu
+        - zvýšení koncentrace HIF (hypoxia inducible factor)
             - je to protein, který se při nízké koncentraci kyslíku přestává odbourávat
-		- stabilizace HIFu regulována ubiquitinilací
-		- zvýšená koncentrace HIF vede k produkci VEGF (vascular endothelial growth factor)
+        - stabilizace HIFu regulována ubiquitinilací
+        - zvýšená koncentrace HIF vede k produkci VEGF (vascular endothelial growth factor)
 }
 
 ◊subsubsection{Cévy}
 
 ◊ls{
     - složeny z endoteliálních buněk, z extracelulární matrix a ze svaloviny
-	- složení: tunica intima (endotel), tunica media (svaloviny) a z tunica adventitia (pojivo)
-	- poměry těchto vrstev závisí na druhu cévy
-		- kapilárky z endotelu
-		- propustnost kapilár
-			- nepropustná: kontinuální buňka a kontinuální bazální lamina
-			- „děravá“ (fenestrovaná): bazální lamina je jemnější sítko, větší částice neprojdou
-			- zcela nepropustná: mozek, uspořádání buněk je zodpovědné za intaktnost ◊link["#Hematoencefalická bariéra"]{hematoencefalické bariéry}
+    - složení: tunica intima (endotel), tunica media (svaloviny) a z tunica adventitia (pojivo)
+    - poměry těchto vrstev závisí na druhu cévy
+        - kapilárky z endotelu
+        - propustnost kapilár
+            - nepropustná: kontinuální buňka a kontinuální bazální lamina
+            - „děravá“ (fenestrovaná): bazální lamina je jemnější sítko, větší částice neprojdou
+            - zcela nepropustná: mozek, uspořádání buněk je zodpovědné za intaktnost ◊link["#Hematoencefalická bariéra"]{hematoencefalické bariéry}
 }
 
 ◊ls[#:t "Vznik"]{
     - běžně růstem už vzniklých trubiček
-	- in vitro
-		# uvnitř endoteliální buňky začne vznikat systém vakuol
-		# vakuoly se pospojují
+    - in vitro
+        # uvnitř endoteliální buňky začne vznikat systém vakuol
+        # vakuoly se pospojují
         # vznikne dutá struktura, která je schopná se spojit s jinými trubičkami
         # vznik cévní sítě
 }
 
 ◊ls[#:t "Chlopně"]{
     - nalézají se v některých žilách
-	- deriváty endotelu vybíhajícího do lumen
+    - deriváty endotelu vybíhajícího do lumen
     - zabraňují zpětnému toku krve
-	- jsou pouze v malých a středně velkých žilách
+    - jsou pouze v malých a středně velkých žilách
 }
 
 ◊ls[#:t "Spojení žíly a tepny"]{
     - nutnost zabránit homotypické adhezi
-	- ke spojení nutné ◊em{ephriny}, což jsou molekuly tvořící se při diferenciaci nervové soustavy
+    - ke spojení nutné ◊em{ephriny}, což jsou molekuly tvořící se při diferenciaci nervové soustavy
         - arterie obsahují ephrin-B2
         - žíly obsahují ephrin-B4
 }
@@ -605,8 +605,8 @@ Velikost jednotlivých buněk v endotelu závisí na jejich ploidii.
 
 ◊ls[#:t "Hippel-Landauův syndrom"]{
     - vznik nádorů tvořených hyperproliferovanými endoteliálními buňkami (◊strong{hemangioblastomy})
-	- pro vazbu ubiquitinu je v HIF běžně ubiquitinylační sekvence
-	    - tato sekvence zmutuje, v důsledku čehož se nemůže navázat na ubiquitin
+    - pro vazbu ubiquitinu je v HIF běžně ubiquitinylační sekvence
+        - tato sekvence zmutuje, v důsledku čehož se nemůže navázat na ubiquitin
         - HIF se nedegraduje, neustále se produkuje VEGF
         - stále se aktivuje proliferace a probíhá tvorba nových výběžků
 }
@@ -614,12 +614,12 @@ Velikost jednotlivých buněk v endotelu závisí na jejich ploidii.
 ◊ls[#:t "Atheroskleróza"]{
     - nedochází k ukládání cholesterolu do stěn cév
     - průběh
-	    # zánět v těle nebo volné radikály způsobí oxidaci LDL, časem už normálně oxidovaná forma LDL v těle není
+        # zánět v těle nebo volné radikály způsobí oxidaci LDL, časem už normálně oxidovaná forma LDL v těle není
             - LDL (low-density lipoprotein) jsou částice zodpovědné za přenos cholesterolu
         # buňky nedokážou oxidovaný LDL metabolizovat, LDL se v nich hromadí
         # nastoupí monocyty, které endocytují oxidovaný LDL, ale neodbourají ho
         # LDL se hromadí v monocytech, vznikají pěnovité buňky plné vakuol naplněné oxidovaným LDL
-        # monocyty spustí expresi genů, aktivují makrofágy (přilákají buňky "opraváře")
+        # monocyty spustí expresi genů, aktivují makrofágy (přilákají buňky "opraváře")
         # to vede k produkci mezibuněčné hmoty pomocí mezenchymálních buněk a fibrocytů (fibroblasty)
             - fibroblasty jsou schopny diferencovat v osteocyty, osteoblasty a chondroblasty
         # vznikají hrbolky kosti v cévě, která tím ztrácí svou mechanickou odolnost
@@ -649,18 +649,18 @@ Kromě zmíněných vrstev se v kůži nalézají též senzory a nervová zakon
 
 ◊ls[#:t "Fibrocyt"]{
     - diferenciační prekurzor fibroblastu
-	- fibrocyt může diferencovat ve fibroblast, chondrocyt, hladkou svalovinu, tukovou buňku
-	- změna fibroblastu na tukovou buňku provázena změnou exprese genů
-	- fibroblasty vytváří desmozomy s jinými fobroblasty => síťovitá struktura
-	- fibroblasty spolu s epiteliálními buňkami produkují složky bazální laminy
+    - fibrocyt může diferencovat ve fibroblast, chondrocyt, hladkou svalovinu, tukovou buňku
+    - změna fibroblastu na tukovou buňku provázena změnou exprese genů
+    - fibroblasty vytváří desmozomy s jinými fobroblasty => síťovitá struktura
+    - fibroblasty spolu s epiteliálními buňkami produkují složky bazální laminy
 }
 
 ◊ls[#:t "Mezenchymální kmenové buňky"]{
     - mají obrovský diferenciační potenciál
-	- dají se kultivovat in vitro v koktejlu růstových faktorů a cíleně diferencovat v různé typy buněk
-	- pluripotence: embryonální kmenové buňky
-		- dají se izolovat z časného embrya
-		- dají se in vitro kultivovat a geneticky manipulovat a poté vrátit do embrya
+    - dají se kultivovat in vitro v koktejlu růstových faktorů a cíleně diferencovat v různé typy buněk
+    - pluripotence: embryonální kmenové buňky
+        - dají se izolovat z časného embrya
+        - dají se in vitro kultivovat a geneticky manipulovat a poté vrátit do embrya
 }
 
 ◊subsubsection{Epidermis}
@@ -687,7 +687,7 @@ Kromě zmíněných vrstev se v kůži nalézají též senzory a nervová zakon
     - mutace
         - málo melanozomových prekurzorů => málo melazosomů => skvrny
         - mutace genu pro kit
-            - receptor pro SCF faktor => je na epiteliální buňce v nice => udržuje buňky 					v kmenovém stavu
+            - receptor pro SCF faktor => je na epiteliální buňce v nice => udržuje buňky                     v kmenovém stavu
             - málo kmenových buněk => málo melanocytů
         - mutace v genu Pax3
             - homozygot => ztráta sluchu, depigmentace vlasů, očí, kůže
@@ -718,20 +718,20 @@ Porucha tvorby melaninu vede k albinismu. Tato porucha může být způsobena po
 
 ◊ls[#:t "Kartagenův syndrom (situs inversus)"]{
     - první popsaný případ v roce 1688
- 	- převrácená pravolevá symetrie vnitřních orgánů
-	- 50% jedinců trpí chronickou bronchitidou a sterilitou
-	    - způsobena mutací v molekulárním motoru zajišťujícím pohyb řasinek v řasinkovém epitelu
+     - převrácená pravolevá symetrie vnitřních orgánů
+    - 50% jedinců trpí chronickou bronchitidou a sterilitou
+        - způsobena mutací v molekulárním motoru zajišťujícím pohyb řasinek v řasinkovém epitelu
 }
 
 ◊ls[#:t "Průjem"]{
     - porucha funkce resorpčních epitelů trávicí soustavě
-	- u dospělého člověka je za jeden den sekrece sedmi litrů tekutin
-		- 1l slin
-		- 1,5l trávicí tekutiny v žaludku
-		- 1l žluči
-		- 1,5l trávicí tekutiny ze slinivky
-		- 2l sukusu (všemožné tekutiny vylučované živými tkáněmi)
-	- resorpce tekuni ve střevě
+    - u dospělého člověka je za jeden den sekrece sedmi litrů tekutin
+        - 1l slin
+        - 1,5l trávicí tekutiny v žaludku
+        - 1l žluči
+        - 1,5l trávicí tekutiny ze slinivky
+        - 2l sukusu (všemožné tekutiny vylučované živými tkáněmi)
+    - resorpce tekuni ve střevě
         - 7,8l v tenkém střevě + dvanáctníku
         - 1l v tlustém střevě
     - 0,2l ztrácíme stolicí
@@ -739,12 +739,12 @@ Porucha tvorby melaninu vede k albinismu. Tato porucha může být způsobena po
 
 ◊ls[#:t "Cystická fibróza"]{
     - druhá nejčastější genetická porucha (po poruše konexinu vedoucí k poruše sluchu)
-	- způsobená mutací proteinu CFTR, který přenáší chloridové ionty ven z buněk
-	    - ve zdravé buňce dochází vylučování chloridových iontů
-		    - spolu s ionty opouští buňky voda
+    - způsobená mutací proteinu CFTR, který přenáší chloridové ionty ven z buněk
+        - ve zdravé buňce dochází vylučování chloridových iontů
+            - spolu s ionty opouští buňky voda
             - dochází ke zvlhčení epitelů a sliznice
         - v nezdravé buňce k tomu nedochází, sliznice jsou suché, hleny jsou husté
-	- trpí jí jeden člověk z 2500
+    - trpí jí jeden člověk z 2500
 }
 
 Existují i určité poruchy mechanických vlastnosí kůže, které jsou způsobeny hlavně mutacemi v genech pro keratiny.
@@ -762,12 +762,12 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 
 ◊ls{
     - řídké, ◊em{areorální}
-		- spojuje tkáně mezi sebou
-		- vyplňuje prostory, zpevňuje epitely, obaluje lymfatické a krevní cévy
-		- ve žlázách, sliznicích, dermis
-		- kolagenní, elastická i retikulární vlákna
-	- husté
-		- převládají kolagenní vlákna
+        - spojuje tkáně mezi sebou
+        - vyplňuje prostory, zpevňuje epitely, obaluje lymfatické a krevní cévy
+        - ve žlázách, sliznicích, dermis
+        - kolagenní, elastická i retikulární vlákna
+    - husté
+        - převládají kolagenní vlákna
         - neuspořádané
             - svazky kolagenu bez určité orientace
             - např. dermis (podkoží)
@@ -778,8 +778,8 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 
 ◊ls[#:t "Extracelulární matrix (ECM)"]{
     - hlavní složkou kolagen různých typů
-	- epitel není vaskularizovaný, pod epitelem je pojivová tkáň
-		- velké množství buněk imunitního systému, především bazofilů
+    - epitel není vaskularizovaný, pod epitelem je pojivová tkáň
+        - velké množství buněk imunitního systému, především bazofilů
 }
 
 ◊ls[#:t "Retikulární pojivová tkáň"]{
@@ -791,22 +791,22 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 
 ◊ls[#:t "Vaziva se speciálními vlastnostmi"]{
     - elastická vaziva
-		- žluté vazy páteře, závěsný vaz penisu (ligamentum suspensorium penis)
-	- rosolovité vazivo
-		- amorfní hmota, tvořená kyselinou hyaluronovou
-		- rosolovitá konzistence jako výplň
-		- základní složka pupeční šňůry, v pulpách vyvíjejících se zubů
-	- tukové vazivo
-	- hemopoetická tkáň
-		- lymfatická a myeloidní tkáň
+        - žluté vazy páteře, závěsný vaz penisu (ligamentum suspensorium penis)
+    - rosolovité vazivo
+        - amorfní hmota, tvořená kyselinou hyaluronovou
+        - rosolovitá konzistence jako výplň
+        - základní složka pupeční šňůry, v pulpách vyvíjejících se zubů
+    - tukové vazivo
+    - hemopoetická tkáň
+        - lymfatická a myeloidní tkáň
 }
 
 ◊section{Tuková tkáň}
 
 ◊ls{
     - jeden z největších orgánů v těle
-	    - muži: 15-20% hmotnosti
-	    - ženy: 20-25% hmotnosti
+        - muži: 15-20% hmotnosti
+        - ženy: 20-25% hmotnosti
     - hormonálně aktivní orgán
     - vysoce inervovaná a vaskularizovaná
     - po extrémním zhubnutí zůstane na ploskách nohou
@@ -848,22 +848,22 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 }
 
 ◊ls[#:t "Regulace množství tukové tkáně"]{
-	- čím více tukové tkáně, tím více proteinu leptinu tělo produkuje
-	- leptinový receptor je v hypokampu (centrální centrum hladu a sytosti)
-	- lidé jedí více, když je málo leptinu
+    - čím více tukové tkáně, tím více proteinu leptinu tělo produkuje
+    - leptinový receptor je v hypokampu (centrální centrum hladu a sytosti)
+    - lidé jedí více, když je málo leptinu
         - leptin je tedy negativní regulátor velikosti tukové tkáně
 }
 
 ◊ls[#:t "Nádory tukových tkání"]{
     - unilokulární adipocyty
-		- benigní tumory lipomy
-			- kuličky hypertrofované tukové tkáně
-			- díky vazivovému obalu snadné odstranění
-		- maligní tumory liposarkomy
-	- multilakulární adipocyty
-		- hibernomy
-			- hypertrofovaná multilokulární tuková tkáň
-			- poruchy produkce tepla
+        - benigní tumory lipomy
+            - kuličky hypertrofované tukové tkáně
+            - díky vazivovému obalu snadné odstranění
+        - maligní tumory liposarkomy
+    - multilakulární adipocyty
+        - hibernomy
+            - hypertrofovaná multilokulární tuková tkáň
+            - poruchy produkce tepla
 }
 
 ◊section{Chrupavka}
@@ -881,55 +881,55 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 ◊todo{Jakým způsobem je omezeno dělení?}
 
 ◊ls[#:t "Funkce"]{
-	- podpora měkkých tkání
-	- tlumí nárazy
-	- umožňuje hladký klouzavý pohyb kostí
-	- zásadní pro vývoj kostí
+    - podpora měkkých tkání
+    - tlumí nárazy
+    - umožňuje hladký klouzavý pohyb kostí
+    - zásadní pro vývoj kostí
 }
 
 ◊ls[#:t "Složení"]{
-	- ECM
-	- glykosaminoglykany
-	- proteoglykany orientované na kolagenních a elastických vláknech
-	- chondrocyty
+    - ECM
+    - glykosaminoglykany
+    - proteoglykany orientované na kolagenních a elastických vláknech
+    - chondrocyty
 }
 
 ◊ls[#:t "Chondrocyty"]{
-	- buněčná složka chrupavky
-	- vznikají diferenciací z buněk na povrchu chrupavky
-	- tvoří a obalují EK, tím se dostávají dovnitř do chrupavky
-		- nalézají se ◊em{v lakunách} v tzv. isogenetických skupinkách
-	- odolávají nízkému parciálnímu tlaku kyslíku
-	    - jsou často vystaveny nedostatku kyslíku
+    - buněčná složka chrupavky
+    - vznikají diferenciací z buněk na povrchu chrupavky
+    - tvoří a obalují EK, tím se dostávají dovnitř do chrupavky
+        - nalézají se ◊em{v lakunách} v tzv. isogenetických skupinkách
+    - odolávají nízkému parciálnímu tlaku kyslíku
+        - jsou často vystaveny nedostatku kyslíku
 }
 
 ◊todo{Zjistit, co je EK.}
 
 ◊ls[#:t "Chondroblasty"]{
-	- jedny z mála buněk schopné přežít v jedinci i po smrti
-	- fungují díky anaerobní glykolýzy
-	- jejich proliferace je ovlivňována růstovými faktory
-		- ◊em{somatotropin} spouští produkci somatomedinu v játrech
-		- nedostatek způsobuje metaplázii chrupavek
+    - jedny z mála buněk schopné přežít v jedinci i po smrti
+    - fungují díky anaerobní glykolýzy
+    - jejich proliferace je ovlivňována růstovými faktory
+        - ◊em{somatotropin} spouští produkci somatomedinu v játrech
+        - nedostatek způsobuje metaplázii chrupavek
 }
 
 ◊ls[#:t "Typy chrupavek"]{
     - hyalinní
-		- nejběžnější
-		- kolagen (40% suché váhy, hlavně typu II), chondroitin-6-sulfát, keratan sulfát, chondronektin
-		- modravě bílá a průsvitná
-		- v zárodku vytváří dočasný skeleton, který je nahrazen kostní tkání
-		- naoř. artikulační plochy pohyblivých kloubů, nos, hrtan, trachea, bronchy, přední konce žeber
-	- elastická
-		- ohebná, roztažitelná
-		- nažloutlá barva
-		- velké množství elastinových vláken, kolagen
-		- např. ušní boltec, stěny zevního zvukovodu, Eustachova trubice, drobné chrupavky hrtanu
-	- vazivová
-		- kolagen typu I
-		- je především v místech s velkými nároky na mechanickou odolnost a zátěž
-		- např. přechod mezi hustým vazivem a hyalinní chrupavkou: meziobratlové ploténky, spona pánevní, úpony některých vazů
-		    - výhřez meziobratlové ploténky (ruptura anulus fibrosu)
+        - nejběžnější
+        - kolagen (40% suché váhy, hlavně typu II), chondroitin-6-sulfát, keratan sulfát, chondronektin
+        - modravě bílá a průsvitná
+        - v zárodku vytváří dočasný skeleton, který je nahrazen kostní tkání
+        - naoř. artikulační plochy pohyblivých kloubů, nos, hrtan, trachea, bronchy, přední konce žeber
+    - elastická
+        - ohebná, roztažitelná
+        - nažloutlá barva
+        - velké množství elastinových vláken, kolagen
+        - např. ušní boltec, stěny zevního zvukovodu, Eustachova trubice, drobné chrupavky hrtanu
+    - vazivová
+        - kolagen typu I
+        - je především v místech s velkými nároky na mechanickou odolnost a zátěž
+        - např. přechod mezi hustým vazivem a hyalinní chrupavkou: meziobratlové ploténky, spona pánevní, úpony některých vazů
+            - výhřez meziobratlové ploténky (ruptura anulus fibrosu)
                 # vypuzení tekutého pulpózního jádra
                 # oploštění celého fibrózního prstence
                 # dislokace
@@ -937,13 +937,13 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 
 ◊ls[#:t "Patologie"]{
     - benigní nádory (chondromy)
-	- maligní nádory (chondrosarkomy)
-	- kalcifikace (zvápenatění)
-	- záněty perichondria
-	- špatná regenerace v dospělém věku
-	- achondroplázie
-		- z 99% je příčina v mutaci genu pro FGF-receptor-3
-		- ovlivňuje vývoj chrupavek v dlouhých kostech
+    - maligní nádory (chondrosarkomy)
+    - kalcifikace (zvápenatění)
+    - záněty perichondria
+    - špatná regenerace v dospělém věku
+    - achondroplázie
+        - z 99% je příčina v mutaci genu pro FGF-receptor-3
+        - ovlivňuje vývoj chrupavek v dlouhých kostech
 }
 
 ◊section{Kost}
@@ -958,9 +958,9 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 
 
 ◊ls[#:t "Funkce"]{
-	- opora měkkým tkáním
-	- chrání krvetvorné orgány, mozek, míchu
-	- zásobárna vápníku, fosfátu
+    - opora měkkým tkáním
+    - chrání krvetvorné orgány, mozek, míchu
+    - zásobárna vápníku, fosfátu
 }
 
 ◊todo{Přidat obrázek kosti.}
@@ -991,7 +991,7 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 
 ◊ls[#:t "Typy kostní tkáně"]{
     - primární nezralá vláknitá kost, sekundární zralá lamelózní kost
-	- kompaktní kost (diafýza), spongiózní kost (epifýza)
+    - kompaktní kost (diafýza), spongiózní kost (epifýza)
     - krátké kosti jsu tvořeny spongiózním jádrem obklopeným kompaktní diafýzou
         - dutiny spongiózní kosti tvoří kostní dřeň
             - červená je krvetvorná
@@ -1004,47 +1004,47 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
     - kost se neustále přestavuje
     - u dětí je remodelace 200◊${\times} rychlejší než u dospělých
     - za týden se odbourá 5--7% kostní hmoty
-	- houbovitá část je obnovována jednou za 3--4 roky
-	- kompaktní část je obnovována jednou za 10 let
-	- resorpce je regulována osteoklasty
+    - houbovitá část je obnovována jednou za 3--4 roky
+    - kompaktní část je obnovována jednou za 10 let
+    - resorpce je regulována osteoklasty
 }
 
 ◊subsection{Kostní buňky}
 
 ◊ls[#:t "Osteoblasty"]{
     - vznik z mezenchymálních buněk
-	- po uhnízdění se mění v osteocyty
-	- tvoří organickou ECM
-	- provádí syntézu kolagenu I, proteoglykanů, glykoproteinů
-	- lokalizovány výhradně na povrchu kosti, těsně vedle sebe jako jednovrstevný epitel
-	- kontakt s ostatními buňkami skrz výběžky
+    - po uhnízdění se mění v osteocyty
+    - tvoří organickou ECM
+    - provádí syntézu kolagenu I, proteoglykanů, glykoproteinů
+    - lokalizovány výhradně na povrchu kosti, těsně vedle sebe jako jednovrstevný epitel
+    - kontakt s ostatními buňkami skrz výběžky
         - poté jsou zality v ECM a změní se v osteocyt
     - do nově založené mineralizované kostní matrix se váže tetracyklin
         - měření výstavbové aktivity kosti
-		- testovanému jedinci se podává 5 dní, vznikají výbrusové preparáty
+        - testovanému jedinci se podává 5 dní, vznikají výbrusové preparáty
 }
 
 ◊todo{Zjistit, co se podává testovánemu jedinci.}
 
 ◊ls[#:t "Osteocyty"]{
     - vznik z osteoblastů
-		- uzavřeny v kosterní hmotě
+        - uzavřeny v kosterní hmotě
     - zaniknou, když převáží resorpce matrix
-	- jednotlivě uloženy v lakunách mezi lamelami matrix
-	- výběžky jsou propojeny gap junctions
-	- mají tvar broušeného diamantu
+    - jednotlivě uloženy v lakunách mezi lamelami matrix
+    - výběžky jsou propojeny gap junctions
+    - mají tvar broušeného diamantu
     - zality v ECM, následně mineralizují
-	    - jsou odpovědné za mineralizaci kostí
+        - jsou odpovědné za mineralizaci kostí
 }
 
 ◊ls[#:t "Osteoklasty"]{
     - vznik fúzí monocytů nebo makrofágů
     - obrovské mnohojaderné buňky (i přes 100◊${\mu}m) s 5--50 jádry
     - jsou bohatě větvené, pohyblivé
-	- resorbují kostní hmotu
-	- podílejí se na přestavbě kosti
+    - resorbují kostní hmotu
+    - podílejí se na přestavbě kosti
     - extracelulárně snižují pH a naleptávají kostní osteon (Haversův systém)
-	    - v místě resorpce vznikají enzymaticky vyleptané prolákliny v matrix, tzv. ◊em{Howshipovy lakuny}
+        - v místě resorpce vznikají enzymaticky vyleptané prolákliny v matrix, tzv. ◊em{Howshipovy lakuny}
 }
 
 ◊subsection{Osifikace}
@@ -1052,17 +1052,17 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 ◊ls[#:t "Osifikace"]{
     - vývoj kostních buněk: mezenchymální buňka -> chondroblast -> chondrocyt
     - dělení
-		- intramembranózní
-			- ve vazivu, kost vzniká přeměnou chrupavky
-			    - probíhá přímá mineralizace matrix produkované osteoblasty
+        - intramembranózní
+            - ve vazivu, kost vzniká přeměnou chrupavky
+                - probíhá přímá mineralizace matrix produkované osteoblasty
             - ploché, krátké a dlouhé kosti do šířky
-		- endochondrální osifikace
+        - endochondrální osifikace
             - vznik dlouhých a krátkých kosti
             - kost vzniká náhradou chupavky
-			    - probíhá ukládání kostní matrix a anorganických složek na předem vytvořenou matrix chrupavky
- 	- vhodné prostředí zajišťují mezenchymální buňky a fibroblasty
-	- kost může po splnění určitých podmínek vzniknout kdekoli v těle
-	- chrupavka může také osifikovat (speciální případ metaplazie)
+                - probíhá ukládání kostní matrix a anorganických složek na předem vytvořenou matrix chrupavky
+     - vhodné prostředí zajišťují mezenchymální buňky a fibroblasty
+    - kost může po splnění určitých podmínek vzniknout kdekoli v těle
+    - chrupavka může také osifikovat (speciální případ metaplazie)
         # v chrupavce je zánět
         # je vyslán signál nebezpečí k cévám
         # cévy vysílají výběžky do chrupavky, směrem k zánětu, aby jej odstranily
@@ -1093,30 +1093,30 @@ Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu t
     - kost praskne
     - mutace ovlivňující poměr odbourávání a budování kostní hmoty
         - důsledkem např. osteopetróza, osteoporóza
-	- průběh zloměniny
+    - průběh zloměniny
         # po zlomení se aktivují osteoblasty, namnoží se
         # osteblasty oudělají houbovitou kost
         # houbovitá kost je postupně přestavena v kompaktní kost
-	- krátké kosti se hojí špatně, zatímco dlouhé jsou na mechanické změny zvyklé
+    - krátké kosti se hojí špatně, zatímco dlouhé jsou na mechanické změny zvyklé
 }
 
 ◊ls[#:t "Poruchy kostní tkáně"]{
     - rachitis
-		- nedostatek vápníku u dětí, je narušen osifikační proces
-	- osteomalacie
-		- nedostatek vápníku u dospělých (těhotenství), měknutí kostí
-	- osteoporóza
-		- rozpad kostní hmoty (přílišná aktivita osteoklastů)
-		- opakem je osteopetróza
-	- hypofyzární nanismus
-		- nedostatek růstového hormonu
+        - nedostatek vápníku u dětí, je narušen osifikační proces
+    - osteomalacie
+        - nedostatek vápníku u dospělých (těhotenství), měknutí kostí
+    - osteoporóza
+        - rozpad kostní hmoty (přílišná aktivita osteoklastů)
+        - opakem je osteopetróza
+    - hypofyzární nanismus
+        - nedostatek růstového hormonu
         - opakem je gigantismus
-	- akromegalie
-		- nadbytek růstového hormonu v dospělosti, tloustnutí kostí
-	- Pagetova choroba
-		- ovlivnění metabolismu a diferenciace osteoklastů
-		- hrubé kosti, neodbourávají se
-		- léčitelné transplantací kostní dřeně
+    - akromegalie
+        - nadbytek růstového hormonu v dospělosti, tloustnutí kostí
+    - Pagetova choroba
+        - ovlivnění metabolismu a diferenciace osteoklastů
+        - hrubé kosti, neodbourávají se
+        - léčitelné transplantací kostní dřeně
 }
 
 ◊section{Krev}
