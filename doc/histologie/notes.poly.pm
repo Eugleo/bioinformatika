@@ -1818,47 +1818,47 @@ Jedno nervové vlákno (axon) může inervovat různý počet svalových
 
 ◊ls[#:t "Myasthenia gravis"]{
     - autoimunitní
-	- postupující svalová ochablost
-	- B-lymfocyty v brzlíku tvoří protilátky proti acetylcholinovým receptorům
-	- receptor je interalyzován (= endocytován) do buňky => sval neschopen přijímat signál => postupná atrofie
-	- 2. možnost
-		- imunitní systém rozpoznává acetylcholinový receptor jako cizorodou látku
-		- myelic basic protein MBP v CNS
-		- destrukce myelinových pochev díky aktivitě autoreaktivních cytotoxických T-lymfocytů
-		- nelze ovládat postižené svaly => není inervován => atrofuje
+    - postupující svalová ochablost
+    - B-lymfocyty v brzlíku tvoří protilátky proti acetylcholinovým receptorům
+    - receptor je interalyzován (= endocytován) do buňky => sval neschopen přijímat signál => postupná atrofie
+    - 2. možnost
+        - imunitní systém rozpoznává acetylcholinový receptor jako cizorodou látku
+        - myelic basic protein MBP v CNS
+        - destrukce myelinových pochev díky aktivitě autoreaktivních cytotoxických T-lymfocytů
+        - nelze ovládat postižené svaly => není inervován => atrofuje
 }
 
 ◊ls[#:t "Narušení inervace svalu"]{
     - po úraze, po narušení páteře
-	- neinervovaný sval atrofuje => zmenšuje se (od určitého stadia nevratně)
-	- možno změnit rychlý sval na pomalý změnou inervace
+    - neinervovaný sval atrofuje => zmenšuje se (od určitého stadia nevratně)
+    - možno změnit rychlý sval na pomalý změnou inervace
 }
 
 ◊ls[#:t "Svalová dystrofie – myopatie"]{
     - poškození svalových vláken nesouvisející s inervací či autoimunitou
-	- nefunkčnost konkrétních enzymů/syndromy patologií mitochondrií
-	- typy
-		- glykogenosy
-			- abnormální ukládání glykogenu ve svalu
-			- dědičné autosomálně recesivní onemocnění
-		- McArdle
-			- chybí myofosforyláza b => svalová slabost, křeče
-			- při cvičení se v plasmě nezvyšuje laktát => nedochází k poklesu pH
-		- Tauri
-			- svalová bolest
-			- chybí fosfofrukokináza => hromadění prekurzorů ve tkáních (glc-6-P, fru-6-P)
-		- Duchennova svalová dystrofie
-			- gonosomálně recesivní onemocnění
-			- chlapci věku 3-7let
-			- nejdříve pánevní pletenec => ramenní pletenec
-			- ve věku 10-12 let končí na vozíku
-			- v séru zvýšeny enzymy (kreatinkináza) dlouho před prvními symptomy
-			- způsobeno mutací genu pro dystrofin
-				- propojuje receptor pro ECM s aktinovým cytoskeletem (vnitřek s vnějškem)
-				- mutace => sval má špatné mechanoelastické vlastnosti => poškození => atrofie
-		- proti acetylcholinovému receptoru se může vytvořit autoimunitní onemocnění
-			- rychlá únava a obrna svalů
-			=> destrukce receptoru => nemůže přejít neuromuskulární signál
+    - nefunkčnost konkrétních enzymů/syndromy patologií mitochondrií
+    - typy
+        - glykogenosy
+            - abnormální ukládání glykogenu ve svalu
+            - dědičné autosomálně recesivní onemocnění
+        - McArdle
+            - chybí myofosforyláza b => svalová slabost, křeče
+            - při cvičení se v plasmě nezvyšuje laktát => nedochází k poklesu pH
+        - Tauri
+            - svalová bolest
+            - chybí fosfofrukokináza => hromadění prekurzorů ve tkáních (glc-6-P, fru-6-P)
+        - Duchennova svalová dystrofie
+            - gonosomálně recesivní onemocnění
+            - chlapci věku 3-7let
+            - nejdříve pánevní pletenec => ramenní pletenec
+            - ve věku 10-12 let končí na vozíku
+            - v séru zvýšeny enzymy (kreatinkináza) dlouho před prvními symptomy
+            - způsobeno mutací genu pro dystrofin
+                - propojuje receptor pro ECM s aktinovým cytoskeletem (vnitřek s vnějškem)
+                - mutace => sval má špatné mechanoelastické vlastnosti => poškození => atrofie
+        - proti acetylcholinovému receptoru se může vytvořit autoimunitní onemocnění
+            - rychlá únava a obrna svalů
+            => destrukce receptoru => nemůže přejít neuromuskulární signál
 }
 
 ◊section{Srdeční svaly}
@@ -1868,24 +1868,24 @@ Jedno nervové vlákno (axon) může inervovat různý počet svalových
     - nepříliš ovladatelné vůlí
     - exprese receptorů nastavená tak, aby po srdci běžely vlny signálů => nezbytné vodivé propojení => gap junctions + desmozomy (aby to fungovalo jako 1 mechanická jednotka)
     - utilizuje široké spektrum látek
-	    - glukóza, laktát, ketolátky, aminokyseliny, (ne)esterifikované MK
+        - glukóza, laktát, ketolátky, aminokyseliny, (ne)esterifikované MK
     - má příčné pruhování
     - dobrý elektrický kontakt všech srdečních buněk => vzruch putuje z jednoho vlákna na další
     - zákon "všechno nebo nic" (idealizovaný případ)
-		- podráždění myokardu v určitém místě => vyvolání akčního potenciálu => rozšíření na celý myokard => kontrakce
+        - podráždění myokardu v určitém místě => vyvolání akčního potenciálu => rozšíření na celý myokard => kontrakce
 }
 
 ◊ls[#:t "Kardiomyocyt"]{
     - jednojaderná buňka
-	- centrálně uložené oválné jádro
-	- 40% mitochondrií, GA, glykogen, lipidy, kontraktilní aparát, SR
+    - centrálně uložené oválné jádro
+    - 40% mitochondrií, GA, glykogen, lipidy, kontraktilní aparát, SR
     - 150◊${\mu}m velká
 }
 
 ◊ls[#:t "Purkyňova vlákna"]{
     - svalové buňky specializované pro přenos signálu po celém srdci
-	- málo myozinu
-	- T-tubuly tlusté a krátké => svalové jednotky jsou menší
+    - málo myozinu
+    - T-tubuly tlusté a krátké => svalové jednotky jsou menší
 }
 
 ◊ls[#:t "Stavba"]{
@@ -1897,7 +1897,7 @@ Jedno nervové vlákno (axon) může inervovat různý počet svalových
     - specializované kardiomyocyty ke generaci pacemakerové neustále se opakující aktivaci iontových kanálů s konkrétní frekvencí => autonomie srdce v signalizace ke svalové aktivitě
         - funkce pacemakeru způsobena koordinací součinnosti různých iontových kanálů
         - tuto aktivitu lze posttranslačně měnit (fosforylací) => zrychlení/zpomalení tepu
-        - endogenní vznik vzruchů (akčních potenciálů) ve specializovaných pacemarkerových buňkách => šíření na 	ostatní vlákna
+        - endogenní vznik vzruchů (akčních potenciálů) ve specializovaných pacemarkerových buňkách => šíření na     ostatní vlákna
 }
 
 ◊ls[#:t "Regenerace srdečního svalu"]{
@@ -1914,14 +1914,14 @@ Jedno nervové vlákno (axon) může inervovat různý počet svalových
 ◊ls{
     - slouží k k tvorbě pomalých, mimovolných stahů
     - je na místech, kde je třeba regenerovat, a v místech, kde se tkáň často obměňuje
-	    - dokáží dobře regenerovat a diferencovat z prekurzorů
-	    - mezenchymální kmenová buňka => fibrocyt => buňka hladkého svalu
+        - dokáží dobře regenerovat a diferencovat z prekurzorů
+        - mezenchymální kmenová buňka => fibrocyt => buňka hladkého svalu
     - často okolo trubic v těle (alternativa k řasinkovému epitelu), v cévách (možnost změnit průměr)
     - buňky blízko fibroblastů
     - nevytvářejí syncitia => nejsou pevně propojeny interkalárními disky
     - každá buňka obalena laminou a retikulárními vlákny
     - ve stahu jsou autonomní struktury
-	    - řada z nich ovládána nervy neovladatelnými vůlí
+        - řada z nich ovládána nervy neovladatelnými vůlí
     - schopnost vytvářet mezibuněčnou hmotu
         - chrání je při mechanických stazích
         - přenos mechanického stahu veden přes navázání na stejnou oblast mezibuněčné hmoty
@@ -1939,11 +1939,11 @@ Jedno nervové vlákno (axon) může inervovat různý počet svalových
 
 ◊ls[#:t "Mechanismus aktivace stahu"]{
     - hlavní přepínač je kalmodulin = vápník vázající protein
-	- kinázy regulované vápenatými ionty (proteinkináza C)
-		- mohou nafosforylovat lehký řetězce myozinu => aktivace myozinu => rozeběhne se po aktinovém vlákně
+    - kinázy regulované vápenatými ionty (proteinkináza C)
+        - mohou nafosforylovat lehký řetězce myozinu => aktivace myozinu => rozeběhne se po aktinovém vlákně
     - samotný mechanismus stahu je stejný
     - kináza lehkých řetězců myozinu aktivní jen v přítomnosti kalmodulinu s navázaným vápníkem
-	    - ◊chem{Ca} se neváže na kinázu, ale na kalmodulin => ten pak na kinázu
+        - ◊chem{Ca} se neváže na kinázu, ale na kalmodulin => ten pak na kinázu
     - vápník => fosforylace => stah => defosforylace fosfatázou
 }
 
