@@ -1765,7 +1765,7 @@ Svaly jsou příkladem excitatorních buněk: mají nerovnoměrné uspořádán
 
 ◊ls[#:t "Průběh svalového stahu"]{
     # zvýšení koncentrace iontů ◊chem{Ca^{2+}}
-    # deformace troponinu na tropomyozin
+    # deformace troponinu na tropomyozin
     # interakce myozinové hlavice s aktinem
     # stah svalu
 }
