@@ -141,7 +141,7 @@ Alkohol skvěle fixuje, čím více ethanolu, tím lépe, protože alkohol ve tk
     - většina pozorovaných molekul je nabitých
         - bazofilní struktury
             - kyselé povahy, obsahují záporný náboj
-            - DNA, RNA, glykosaminoglykany (EM, lysozomy)
+            - DNA, RNA, glykosaminoglykany (ECM, lysozomy)
             - barvení bazickými barvivy
                 - toluidinová modř, methylenová modř, hematoxylin
         - acidofilní (◊em{eosinofilní}) struktury
@@ -445,7 +445,7 @@ Kromě metaplázovaných epitelů mají ale jinak epitely velice dobrou schopnos
 		- vývoj z krycích epitelů proliferací a invazí do okolního vaziva
 }
 
-◊tg[#:t "Typy žláz"]{
+◊ls[#:t "Typy žláz"]{
     - exokrinní
 		- zachováno spojení s povrchovým epitelem
 		- tubulární vývod je vystlaný epitelem
@@ -568,7 +568,7 @@ Velikost jednotlivých buněk v endotelu závisí na jejich ploidii.
 ◊subsubsection{Cévy}
 
 ◊ls{
-    - složeny z endoteliálních buněk, z ECM a ze svaloviny
+    - složeny z endoteliálních buněk, z extracelulární matrix a ze svaloviny
 	- složení: tunica intima (endotel), tunica media (svaloviny) a z tunica adventitia (pojivo)
 	- poměry těchto vrstev závisí na druhu cévy
 		- kapilárky z endotelu
@@ -630,15 +630,11 @@ Velikost jednotlivých buněk v endotelu závisí na jejich ploidii.
 ◊ls{
     - největší orgán těla, tvoří 16% hmotnosti
     - musí být mechanicky odolná
-        - ECM syntetizovaná fibroblasty
+        - extracelulární matrix (ECM) je syntetizovaná fibroblasty
     - musí být krevně zásobená
         - systém krevních kapilár ohraničených endoteliálními buňkami
         - obsahuje buňky imunitního systému
             - při zánětu makrofágy, granulocyty a lymfocyty
-}
-
-◊todo{
-    Zjistit, co je EM a ECM.
 }
 
 ◊ls[#:t "Vrstvy kůže"]{
@@ -708,7 +704,7 @@ Porucha tvorby melaninu vede k albinismu. Tato porucha může být způsobena po
 
 ◊subsection{Neuroepitely}
 
-◊em{Pro více informací viz ◊link["#Nervové buňky"]{oddíl o nervových tkáních} a ◊link[#"Senzorické epitely"]{oddíl o senzorických epitelech}.}
+◊em{Pro více informací viz ◊link["#Nervové buňky"]{oddíl o nervových tkáních} a ◊link["#Senzorické epitely"]{oddíl o senzorických epitelech}.}
 
 ◊ls{
     - mají rozdílnou schopnost regenerace a rychlost obměny buněk
@@ -755,13 +751,750 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 
 ◊title{Pojivová tkáň}
 
+◊ls{
+    - je tvořena různými buněčnými typy
+    - má rozmanitou strukturu, funkci i tvar
+    - produkuje velké množství ECM sekretorickou drahou (často více ECM než buněk)
+    - vazivo, chrupavky, kosti, tuková tkáň, krev
+}
+
 ◊section{Vazivo}
+
+◊ls{
+    - řídké, ◊em{areorální}
+		- spojuje tkáně mezi sebou
+		- vyplňuje prostory, zpevňuje epitely, obaluje lymfatické a krevní cévy
+		- ve žlázách, sliznicích, dermis
+		- kolagenní, elastická i retikulární vlákna
+	- husté
+		- převládají kolagenní vlákna
+        - neuspořádané
+            - svazky kolagenu bez určité orientace
+            - např. dermis (podkoží)
+        - uspořádané
+            - orientované podle stejnosměrných mechanických podnětů
+            - např. šlachy
+}
+
+◊ls[#:t "Extracelulární matrix (ECM)"]{
+    - hlavní složkou kolagen různých typů
+	- epitel není vaskularizovaný, pod epitelem je pojivová tkáň
+		- velké množství buněk imunitního systému, především bazofilů
+}
+
+◊ls[#:t "Retikulární pojivová tkáň"]{
+    - houbovité uspořádání s volnými prostory uvnitř
+        - v místech, kde jsou třeba malé dutiny
+    - fibroblasty produkují ECM pomocí extracelulárních vláken
+        - tvoří architektonickou kostru krvetvorných orgánů (kostní dřeň, uzliny, slezina) z retikulárních buněk
+}
+
+◊ls[#:t "Vaziva se speciálními vlastnostmi"]{
+    - elastická vaziva
+		- žluté vazy páteře, závěsný vaz penisu (ligamentum suspensorium penis)
+	- rosolovité vazivo
+		- amorfní hmota, tvořená kyselinou hyaluronovou
+		- rosolovitá konzistence jako výplň
+		- základní složka pupeční šňůry, v pulpách vyvíjejících se zubů
+	- tukové vazivo
+	- hemopoetická tkáň
+		- lymfatická a myeloidní tkáň
+}
 
 ◊section{Tuková tkáň}
 
+◊ls{
+    - jeden z největších orgánů v těle
+	    - muži: 15-20% hmotnosti
+	    - ženy: 20-25% hmotnosti
+    - hormonálně aktivní orgán
+    - vysoce inervovaná a vaskularizovaná
+    - po extrémním zhubnutí zůstane na ploskách nohou
+    - dělí se na žlutou a hnědou
+}
+
+◊ls[#:t "Funkce tukové tkáně"]{
+    - tvaruje povrch těla
+    - tlumí nárazy
+    - tepelná izolace
+    - vyplňuje prostory
+    - zásobárna energie
+    - produkce tepla
+}
+
+◊ls[#:t "Žlutá tuková tkáň"]{
+    - unilokulární --- v každé buňce jen jedna centrálně uložená tuková kapénka (pokud nehladovíme)
+        - nemá membránu
+        - je formována hydrofobními interakcemi
+    - barva od bílé po tmavožlutou
+    - rozsah: všude mimo očních víček, penisu, skrota (šourku) a ušního boltce
+    - je rozdělena vazivovými přepážkami do neúplných lalůčků
+    - vzniká diferenciací z mezenchymálních buněk
+    - existují oblasti s aktivní inhibicí tvorby tukové tkáně
+}
+
+◊ls[#:t "Hnědá tuková tkáň"]{
+    - multilokulární --- mnoho drobných tukových kapének
+    - má mnoho mitochondrií, a tedy hodně cytochromu b, z čehož plyne její hnědé zbarvení
+    - připomíná endokrinní žlázu
+    - buňky jsou inervovány sympatikem
+    - slouží k produkci tepla (netřesová termogeneze)
+        # pokud je chladno, uvolní se norepinefrin
+        # aktivuje se senzitivní lipáza
+        # tuky jsou hydrolyzovány na triacylglyceridy
+        # protonový gradient v mitochondriích je díky UCP (uncoupling proteinu) transformován v teplo
+    - novorozenec ale využije protonový gradient k výrobě ATP a teplo vyrábí třesovou termogenezí
+    - u novorozence 2-5% hmotnosti
+}
+
+◊ls[#:t "Regulace množství tukové tkáně"]{
+	- čím více tukové tkáně, tím více proteinu leptinu tělo produkuje
+	- leptinový receptor je v hypokampu (centrální centrum hladu a sytosti)
+	- lidé jedí více, když je málo leptinu
+        - leptin je tedy negativní regulátor velikosti tukové tkáně
+}
+
+◊ls[#:t "Nádory tukových tkání"]{
+    - unilokulární adipocyty
+		- benigní tumory lipomy
+			- kuličky hypertrofované tukové tkáně
+			- díky vazivovému obalu snadné odstranění
+		- maligní tumory liposarkomy
+	- multilakulární adipocyty
+		- hibernomy
+			- hypertrofovaná multilokulární tuková tkáň
+			- poruchy produkce tepla
+}
+
 ◊section{Chrupavka}
 
+◊ls{
+    - mezibuněčná hmota nabývá pevné konzistence
+    - není inervovaná ani vaskularizovaná
+        - nemůže bolet
+        - je živena difúzí z přilehlé vazivové tkáně (perichondria)
+    - růst chrupavky
+        - buňky jsou zalité v ECM, to jim umožňuje růst a dělení (v omezené míře)
+            - čtyři buněčná dělení maximálně osmi buněk v lakunách (malých kanálcích)
+}
+
+◊todo{Jakým způsobem je omezeno dělení?}
+
+◊ls[#:t "Funkce"]{
+	- podpora měkkých tkání
+	- tlumí nárazy
+	- umožňuje hladký klouzavý pohyb kostí
+	- zásadní pro vývoj kostí
+}
+
+◊ls[#:t "Složení"]{
+	- ECM
+	- glykosaminoglykany
+	- proteoglykany orientované na kolagenních a elastických vláknech
+	- chondrocyty
+}
+
+◊ls[#:t "Chondrocyty"]{
+	- buněčná složka chrupavky
+	- vznikají diferenciací z buněk na povrchu chrupavky
+	- tvoří a obalují EK, tím se dostávají dovnitř do chrupavky
+		- nalézají se ◊em{v lakunách} v tzv. isogenetických skupinkách
+	- odolávají nízkému parciálnímu tlaku kyslíku
+	    - jsou často vystaveny nedostatku kyslíku
+}
+
+◊todo{Zjistit, co je EK.}
+
+◊ls[#:t "Chondroblasty"]{
+	- jedny z mála buněk schopné přežít v jedinci i po smrti
+	- fungují díky anaerobní glykolýzy
+	- jejich proliferace je ovlivňována růstovými faktory
+		- ◊em{somatotropin} spouští produkci somatomedinu v játrech
+		- nedostatek způsobuje metaplázii chrupavek
+}
+
+◊ls[#:t "Typy chrupavek"]{
+    - hyalinní
+		- nejběžnější
+		- kolagen (40% suché váhy, hlavně typu II), chondroitin-6-sulfát, keratan sulfát, chondronektin
+		- modravě bílá a průsvitná
+		- v zárodku vytváří dočasný skeleton, který je nahrazen kostní tkání
+		- naoř. artikulační plochy pohyblivých kloubů, nos, hrtan, trachea, bronchy, přední konce žeber
+	- elastická
+		- ohebná, roztažitelná
+		- nažloutlá barva
+		- velké množství elastinových vláken, kolagen
+		- např. ušní boltec, stěny zevního zvukovodu, Eustachova trubice, drobné chrupavky hrtanu
+	- vazivová
+		- kolagen typu I
+		- je především v místech s velkými nároky na mechanickou odolnost a zátěž
+		- např. přechod mezi hustým vazivem a hyalinní chrupavkou: meziobratlové ploténky, spona pánevní, úpony některých vazů
+		    - výhřez meziobratlové ploténky (ruptura anulus fibrosu)
+                # vypuzení tekutého pulpózního jádra
+                # oploštění celého fibrózního prstence
+                # dislokace
+}
+
+◊ls[#:t "Patologie"]{
+    - benigní nádory (chondromy)
+	- maligní nádory (chondrosarkomy)
+	- kalcifikace (zvápenatění)
+	- záněty perichondria
+	- špatná regenerace v dospělém věku
+	- achondroplázie
+		- z 99% je příčina v mutaci genu pro FGF-receptor-3
+		- ovlivňuje vývoj chrupavek v dlouhých kostech
+}
+
 ◊section{Kost}
+
+◊ls{
+    - nejodolnější vůči mechanickým stresům
+    - hlavní část skeletu dospělce
+    - specializovaná pojivová tkáň tvořená zvápenatělou mezibuněčnou hmotou
+        - kostní matrix + osteocyty + osteoblasty + osteoklasty
+    - odvápněná kost má tvar a ohebnost srovnatelnou se šlachou
+}
+
+
+◊ls[#:t "Funkce"]{
+	- opora měkkým tkáním
+	- chrání krvetvorné orgány, mozek, míchu
+	- zásobárna vápníku, fosfátu
+}
+
+◊todo{Přidat obrázek kosti.}
+
+◊ls[#:t "Stavba a složení"]{
+    - látkové složení
+        - 70% anorganické složky
+            - krystaly solí, hydroxyapatit
+        - 20% organické složky
+            - 90% kolagen, z něj 90% kolagen I
+        - 10% voda
+    - klíčové kostní proteiny: sialoprotein, osteokalcin, osteonektin
+    - topologické složení
+        - kost je síťovina osteocytů pospojovaných výběžky, které jsou propojeny přes gap junctions
+        - tato síťovina je koncentricky uspořádána do lamel kolem centrálního Haversova kanálku s cévami a nervy
+        - Haversovy kanálky jsou propojeny příčnými Volkmanovými kanálky, které přivádí cévy
+        - osteon roste dovnitř
+        - Haversovy kanálky jsou rovnoběžné s hlavní osou diafýzy
+    - periost je vrstva na povrchu kosti
+        - složen z kolagenních vláken a fibroblastů
+        - tvoří vnitřní vrstvu osteoprogenitorové buňky
+        - účel: výživa kostní tkáně, kontinuální přísun nových osteoblastů
+    - endost vystýlá vnitřní povrch kostních dutin
+        - je v něm uložena vrstva osteoprogenitorových buněk
+        - účel: výživa kostní tkáně, kontinuální přísun nových osteoblastů
+
+}
+
+◊ls[#:t "Typy kostní tkáně"]{
+    - primární nezralá vláknitá kost, sekundární zralá lamelózní kost
+	- kompaktní kost (diafýza), spongiózní kost (epifýza)
+    - krátké kosti jsu tvořeny spongiózním jádrem obklopeným kompaktní diafýzou
+        - dutiny spongiózní kosti tvoří kostní dřeň
+            - červená je krvetvorná
+            - žlutá obsahuje tukové buňky
+    - ploché kosti lebeční klenby jsou tvořeny dvěma lamelárními kompakty oddělenými vrstvou spongiózní kosti (diploe)
+}
+
+
+◊ls[#:t "Remodelace kostí"]{
+    - kost se neustále přestavuje
+    - u dětí je remodelace 200◊${\times} rychlejší než u dospělých
+    - za týden se odbourá 5--7% kostní hmoty
+	- houbovitá část je obnovována jednou za 3--4 roky
+	- kompaktní část je obnovována jednou za 10 let
+	- resorpce je regulována osteoklasty
+}
+
+◊subsection{Kostní buňky}
+
+◊ls[#:t "Osteoblasty"]{
+    - vznik z mezenchymálních buněk
+	- po uhnízdění se mění v osteocyty
+	- tvoří organickou ECM
+	- provádí syntézu kolagenu I, proteoglykanů, glykoproteinů
+	- lokalizovány výhradně na povrchu kosti, těsně vedle sebe jako jednovrstevný epitel
+	- kontakt s ostatními buňkami skrz výběžky
+        - poté jsou zality v ECM a změní se v osteocyt
+    - do nově založené mineralizované kostní matrix se váže tetracyklin
+        - měření výstavbové aktivity kosti
+		- testovanému jedinci se podává 5 dní, vznikají výbrusové preparáty
+}
+
+◊todo{Zjistit, co se podává testovánemu jedinci.}
+
+◊ls[#:t "Osteocyty"]{
+    - vznik z osteoblastů
+		- uzavřeny v kosterní hmotě
+    - zaniknou, když převáží resorpce matrix
+	- jednotlivě uloženy v lakunách mezi lamelami matrix
+	- výběžky jsou propojeny gap junctions
+	- mají tvar broušeného diamantu
+    - zality v ECM, následně mineralizují
+	    - jsou odpovědné za mineralizaci kostí
+}
+
+◊ls[#:t "Osteoklasty"]{
+    - vznik fúzí monocytů nebo makrofágů
+    - obrovské mnohojaderné buňky (i přes 100◊${\mu}m) s 5--50 jádry
+    - jsou bohatě větvené, pohyblivé
+	- resorbují kostní hmotu
+	- podílejí se na přestavbě kosti
+    - extracelulárně snižují pH a naleptávají kostní osteon (Haversův systém)
+	    - v místě resorpce vznikají enzymaticky vyleptané prolákliny v matrix, tzv. ◊em{Howshipovy lakuny}
+}
+
+◊subsection{Osifikace}
+
+◊ls[#:t "Osifikace"]{
+    - vývoj kostních buněk: mezenchymální buňka -> chondroblast -> chondrocyt
+    - dělení
+		- intramembranózní
+			- ve vazivu, kost vzniká přeměnou chrupavky
+			    - probíhá přímá mineralizace matrix produkované osteoblasty
+            - ploché, krátké a dlouhé kosti do šířky
+		- endochondrální osifikace
+            - vznik dlouhých a krátkých kosti
+            - kost vzniká náhradou chupavky
+			    - probíhá ukládání kostní matrix a anorganických složek na předem vytvořenou matrix chrupavky
+ 	- vhodné prostředí zajišťují mezenchymální buňky a fibroblasty
+	- kost může po splnění určitých podmínek vzniknout kdekoli v těle
+	- chrupavka může také osifikovat (speciální případ metaplazie)
+        # v chrupavce je zánět
+        # je vyslán signál nebezpečí k cévám
+        # cévy vysílají výběžky do chrupavky, směrem k zánětu, aby jej odstranily
+        # chrupavka je transformována v kost
+}
+
+Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu tedy dochází k odbourávání kosti, k osteoporóze a k následnému uvolnění ◊chem{Ca^{2+}} do krve. Naopak kalcitonin resorpci matrix inhibuje.
+
+◊ls[#:t "Průběh intramembranózní osifikace"]{
+    # nahromadění mezenchymálních buněk
+    # vznik primárního osifikačního centra
+    # diferenciace v osteoblasty
+    # tvorba kostní matrix
+    # uzavírání části vaziva
+    # radiální růst center, a jejich finální splynutí
+}
+
+◊ls[#:t "Průběh endochondrální osifikace"]{
+    # destrukce chondrocytu
+    # osteoprogenitorové buňky se přesouvají do lakun
+    # tyto buňky poté vrůstají do periostu
+    # tvorba kostní matrix
+}
+
+◊subsection{Patologie}
+
+◊ls[#:t "Zlomeniny"]{
+    - kost praskne
+    - mutace ovlivňující poměr odbourávání a budování kostní hmoty
+        - důsledkem např. osteopetróza, osteoporóza
+	- průběh zloměniny
+        # po zlomení se aktivují osteoblasty, namnoží se
+        # osteblasty oudělají houbovitou kost
+        # houbovitá kost je postupně přestavena v kompaktní kost
+	- krátké kosti se hojí špatně, zatímco dlouhé jsou na mechanické změny zvyklé
+}
+
+◊ls[#:t "Poruchy kostní tkáně"]{
+    - rachitis
+		- nedostatek vápníku u dětí, je narušen osifikační proces
+	- osteomalacie
+		- nedostatek vápníku u dospělých (těhotenství), měknutí kostí
+	- osteoporóza
+		- rozpad kostní hmoty (přílišná aktivita osteoklastů)
+		- opakem je osteopetróza
+	- hypofyzární nanismus
+		- nedostatek růstového hormonu
+        - opakem je gigantismus
+	- akromegalie
+		- nadbytek růstového hormonu v dospělosti, tloustnutí kostí
+	- Pagetova choroba
+		- ovlivnění metabolismu a diferenciace osteoklastů
+		- hrubé kosti, neodbourávají se
+		- léčitelné transplantací kostní dřeně
+}
+
+◊section{Krev}
+
+◊meta{Tato kapitola bývá probírána až v rámci posledních přednášek, po nervové soustavě.}
+
+HISTOLOGIE
+KREV
+-Pojivo
+
+-Všechny krevní buňky se mohou rozdělit do hlavních tří linií
+    -erytroidní linie (erytrocyty, retikulocyty)
+        -zprostředkování transportu kyslíku do tkání
+    -lymfoidní linie (T-buňky, B-buňky a jejich blízcí příbuzní)
+        - zásadní pro tvorbu adaptivní imunitní odpovědi
+    -myeloidní linie (granulocyty a makrofágy)
+        -umožňuje vrozenou imunitní odpověď a podílí se na odpovědi adaptivní
+
+složení
+    -Hodně mezibuněčné hmoty = plazma
+        -nestlačitelná
+        -5-6 litrů
+    -krevní buňky : erytrocyty, leukocyty, trombocyty
+        -relativně mobilní, schopny opustit krevní řečiště
+    -červené krvinky = erytrocyty
+        -45% objemu (5*10^12 / l)
+    -bílé krvinky = leukocyty
+        -1% objemu
+        -granulocyty (5*10^9 /l)
+            = polymorfonukleární leukocyty (velmi proměnlivé - polymorfní jádro)
+            -obsahujé granula = obarvitelné částice
+            -12 - 15 mikrometrů
+            -schopné pohybu
+            -terminálně diferencionavé nedělící se buňky
+            -neutrofily
+                -fagocytují, zabíjejí a tráví bakterie
+                -barví se neutrálními barvivy (do růžova)
+            -bazofily
+                -při alergické reakci sekretují histamin a serotonin
+                -barví se zásaditými barvivy (do tmavě modra)
+            -eozinofily
+                -likvidují mnohobuněčné parazity
+                -barví se kyselými barvivy (hematoxylin-eosin - do červena)
+        -agranulocyty
+            -nejsou obarvitelné
+            -monocyty (4*10^8/l)
+                -diferencují se v makrofágy a dendritické buňky
+                -magrofágy
+                    -fagocytují parazity a vlastní poškozené a apoptoticé buňky
+                    -produkují oxidační produkty
+                    -některé se mění na dendritické buňky
+                -dendritické buňky
+                    -fagocytují na periferii
+                    ->migrují do uzlin
+                    ->prezentují antigeny prostřednictvím MHC II. třídy
+            -lymfocyty (3*10^8/l)
+    -krevní destičky = trombocyty
+
+sedimentace
+    -její rychlost určována diagnostickou hematologickou metodou
+    -krev se nasaje do trubice
+        -nejrychleji klesají erytrocyty a pak leukocyty
+        -nad nimi zůstane plazma
+        -hematokrit = celkový objem pevné složky krve
+        -buffy coat = koncentrovaná suspenze získaná sedimentací
+        -vysoká sedimentace
+            -když je v těle zánět, v plazmě je hodně imunoglobulinů
+                -krev je hustější a krvinky klesají pomaleji
+                -sloupec erytrocytů je vyšší, i když jich je stejně jako u zdravého jedince
+
+centrifugace
+    -rychlejší alternativa sedimentace
+
+složení a funkce krve
+    -objem krve - 6/8% telesne hmotnosti
+    -hematokrit - ženy: 41%, muži 46%
+    -erytrocyty - 5*10^6 / mikrolitr
+    -leukocyty -  4-6*10^3 / mikrolitr
+    -trombocyty - 150-300*10^3 / mikrolitr
+
+erytrocyty
+    -terminálně diferencované bezjaderné buňky
+    -přenos plynů (u savců)
+        -bikonkávní tvar (maximální povrch vůči objemu - vázání plynů)
+        -ptáci, obojživelníci - oválný
+        -průměr 5 mikrometrů
+        -kapiláry mají jen tak velký průměr, jak velké je jádro erytrocytů, které limituje jejich velikost
+
+    -krvetvorba
+        -jako všechna pojiva pochází z mezenchymu
+        -odvozeny od kmenových buněk krevní řady (erytroidní linie)
+            -ty mají extraembryonální původ = v prenatálním vývoji vznik ve žloutkovém váčku (= trofoblastu)
+        -vznik v kostní dřeni (5*10^11 / den vzniká a zaniká)
+            -erytroblast = nezralý erytroblast v kostní dřeni
+            -retikulocyt = nezralý erytrocyt v krevním řečišti (1% všech erytrocytů)
+                -neopouštějí krevní řečiště
+            -změna erytroblastu v erytrocyt
+                -ztrácí RNA, jádro kondenzuje, je vyloučeno a odklizeno makrofágy (ztrácí všechny organely)
+    -žijí cca 120 dní
+        -poté ve slezině či kostní dřeni odstaněny makrofágy
+    -Anémie = chudokrevnost
+        -hypochromní anémie
+            = erytrocytů je v krvi dost, je v nich ale nedostatek hemoglobinu
+            -špatně nesou kyslík a barvu
+        -srpkovitá anémie
+            -způsobeno bodovou mutací hydrofilní kyseliny glutamové (např. GAA) na hydrofobní valin (např. GUA)
+            -v neoxidovaném (=neokysličeném) stavu se hemoglobin shlukuje (polymerizuje, vytváří vláknité útvary a agregáty) a mění tak tvar krvinek
+            -krvinky mají kratší životnost, jsou méně flexibilní - blokují vlásečnice, což vede k ucpání cév
+    -fetální hemoglobin má vyšší afinitu ke kysíku než dospělý
+        = váže kyslík za nižšího tlaku (který je v placentě)
+
+Neutrofily
+    -polymorfonukleární leukocyty
+    -dříve zvané mikrofágy
+    -60-70%  bílých krvinek
+    -jádro
+        -nezralé má tvar podkovy
+        -složeno z 2-5 laloků spojených můstky
+        -čím starší, tím více segmentů (až 7 = hypersegmentované buňky)
+        -ženy mají na jednom segmentu paličkovitý přívěšek, který obsahuje inaktivovaný chromozom X
+    -krátce žijící buňky (v krvi 6-7 dní, ve vazivu 1-4 dny)
+    -přichází v první vlně buněk do místa zánětu
+    -jejich receptory jsou schopny rozeznat např. bakterie, které fagocytují a ve fagozomech zlikvidují
+    -stimulace fagocytické aktivity
+        -nízkoafinní Fc receptory na neutrofilech
+        -označení bakterie protilátkami = opsonizace
+    -látky pro rozklad bakterií
+        -superoxidové anionty
+        -peroxid vodíku
+        -chlornanové kationty
+    -mrtvé neutrofily + bakterie + natrávený materiál -> hnis
+    -mohou být rychle nahrazeny z kostní dřeně
+    -neutrofilie
+        = zvýšené množství neutrofilů v krvi
+        -může značit akutní, nebo chronickou infekci
+
+Eozinofily
+    -2-4% leukocytů
+    -dvojlaločná jádra s granulami (cca 200 na buňku)
+    -eozinofilie
+        =zvýšený počet eozinů v krvi
+        -alergické reakce a parazitární infekce (např helmintózy)
+        -při napadení organismu patologem se jejich počet drasticky zvedne
+        -jejich počet se dá snížit kortikoidy
+        -granula
+            -hlavní složka MBP (=major basic protein)
+                -antiparazitická funkce
+            -enzymy histamináza a arylsulfatáza
+                -rozkládají histamin a leukotrieny
+                -mohou tlumit účinek basofilů a žírných buněk
+
+Bazofily
+    -1% krevních leukocytů
+    -na povrchu jsou receptory pro protilátky (imunoglobuliny IgE)
+    -při zvýšené hladině bazofilů v krvi může pravděpodobněji dojít k alergické reakci
+    -schopny degranulace
+        -granula splynou s membránou a vylijí se do okolního prostředí
+            -ničí cizí struktury
+    -regulace exocytozy
+        -regulovaná vazba antigenu na IgE navázaný na IgE receptory
+            -IgE receptor je vysokoafinní = váže IgE i pokud není navázané na antigen
+    -multivalentní antigen = struktura obsahující větší množství vazebných míst pro protilátku
+    -pokud se v těle vyskytne multivalentní antigen, dojde k agregaci receptorů
+        -> aktivace signalizační kaskády
+        -> degranulace granulí
+        -> vylití biologicky aktivních aminů (histamin, serotonin)
+
+Monocyty
+    -největší krvinky
+    -součástí myeloidní linie
+    -oválné podkovovité, nebo ledvinovité jádro
+    -prekurzory mononukleárního fagocytárního systému (= soubor všech makrofágů v různých tkáních)
+    -před vstupem do tkáně osm hodin kolují v krvi
+    -prakticky nefunkční - v krvi mají jen funkci "zásobárny makrofágů"
+    -diferenciace
+        -makrofágy
+            -diferenciace po vstupu do tkáně kapilární stěnou
+            -endocytóza tkáňového debrisu včetně apoptotických tělísek
+            -na povrchu nesou MHC II. třídy
+                = krátké úseky glykoproteinů (exogenní peptidy sic), které jsou charakteristické pro makrofágem pohlcenou látku
+                -kontrolují je Th-lymfocyty - spouštějí imunologický poplach (upozorní B-lymfocyty)
+                -při zánětu nastupují po neutrofilech
+        -dendritické buňky
+            -dosáhneme toho izolací z krve a použitím interleukinu-4a GM-CSF (=granulocytární makrofágový colony stimulating factor)
+            - funkcí je endocytóza
+            -endocytují cizorodou látku
+                ->přesunou se do mízní uzliny a naštěpí endocytovanou látku
+                ->prezentují ji na povrchu
+                ->T-lymfocyt ji rozpozná a aktivuje a poté vyvolá imunitní reakci
+
+        -osteoklasty
+            =kostní buňky odbourávající kostní tkáň
+            -vznik splýváním monocytů -> mnohojaderné
+            -funkce: např. prořezávání zubů
+                -proti špičce zubu se nachází speciální populace osteoklastů
+                -je třeba odbourat kost čelisti, aby se mohl zub prořezat ven
+            -poruchy v myeloidní linii (především ve funkci monocytů a jejich diferenciačních produktů) mohou mít velký vliv na remodelaci kostní hmoty
+                -Pagetova choroba
+                    -nadměrné odbourávání kosti a následné tovoření kosti neplohodnotné
+
+Lymfocyty
+    -30% leukocytů
+    -různorodá velikost (5 mikrometrů - 15 mikrometrů)
+        -rozdíl v množství cytoplazmy (většina je zcela vyplněna jádrem)
+    -schopny aktivního pohybu (z krve do tkání - místa zánětu / mízní uzliny)
+    -schopny vytvářet mnohočetná komplikovaná mezibuněčná spojení
+        =interakce vícera párů membránových receptorů a jejich ligandů
+        -regulace diferenciace (případně následné proliferace) a efektorové funkce (např. zabití cílové buňky cytotoxickým T-lymfocytem)
+    -T-lymfocyty
+        -90%
+        -dělení podle povrchových koreceptorů pro MHC glykoproteiny
+            -CD4
+                -pomocné a supresorové
+                -reakce s MHC II
+            -CD8
+                -cytotoxické
+                -interakce s MHC I
+        -dělení podle genů, které byly přestavěny ve funkční T-receptor
+            -vznikají v nich rekombinací nové geny, a syntetizují nové proteiny
+            -přeskupování genových segmentů pomocí rekombináz
+                -může dojít k chybám
+                    - popletení substrátu
+                    -> spojení ramen dvou chromozomů, které spolu fyzicky vůbec nesouvisí
+                    -> např. filadelfský chomozom
+                        -na něm je fúzní chimérní gen (propojení částí genů Cbl a Abl)
+                        -vznik aktivované kinázy schopné transformovat postiženou buňku v buňku nádorovou
+            -alfabeta
+                -výběr genů probíhá náhodně
+                -jsou poté připraveny na cokoli
+            -gamadelta
+                -výběr genů probíhá na základě evoluce
+                    -konkrétní poskládání genových segmentů, které jsou nejčastěji používaná a mají smysl
+            -organismy se liší v poměru alfabet a gamadelt
+                -přežvýkavci 70:30
+                -člověk 95:5
+        -efektorové buňky
+            -frakce T- a B-lymfocytů
+                -T-lymfocyty: pomocné a cytotoxické buňky
+                -B-lymfocyty: plazmatické buňky = buňky produkující velké množství protilátek
+            -diferencovány a aktivovány pro výkon své funkce
+    -B-lymfocyty
+        -5%
+        -produkce protilátek
+        -afnitní maturace
+            -když se organismus setká s nějakým antigenem, vylepší svoje protilátky
+            -sekundární odpověď zahrnuje protilátky s vyšší afinitou k antigenu
+            -imunoglobulinové geny náhodně mutují, B-lymfocyty s mutovanými geny poté soupeří o navázání antigenu
+            -ty s nízkou afinitou jsou odstraněny a tak zůstanou pouze ty s vysokou
+    -NK buňky
+        -5%
+        -ničí buňky bez MHC I
+
+Krevnní destičky
+    -nejsou to buňky, ale bezjaderné diskovité útvary
+    -3 mikrometry
+    -vznik fragmentací polyploidních megakaryocytů sídlících v kostní dřeni
+    -megakaryocyt vysílá výběžky přes stěny do kapilár a odštěpuje destičky přímo do krve
+        -za den až 100 000 z jednoho karyocytu
+    -rozpad megakaryocytu je programovanou buněčnou smrtí
+        -zbytky odklizeny makrofágy
+    -v krvi přežijí 10 dní
+    -neopouští krevní řečiště
+    -obsahují
+        -regulátory srážení krve
+        -PDGF = platelet derived growth factor
+            -jako diferenciační faktor epiteliálních buněk se podílí na efektivní reparaci poškozené tkáně
+        -serotonin
+            -vasokonstriktor
+            -jeho uvolnění je stimulováno vazbou na poškozené cévní stěny
+            -schopen uzavřít i malé arterie
+    -poškození tkáně
+        -destička se dostane do kontaktu s kolagenními vlákny
+        ->exocytóza faktorů aktivujících ostatní destičky
+        ->uvolnění aktivačních látek ze stěn poškozených cév
+            -změna protrombinu na trombin
+        ->trombin katalyzuje přeměnu fibrinogenu na fibrin
+        ->fibrin polymeruje a vytváří vláknitou síťovinu vznikající krevní sraženiny
+        ->trombus = sraženina
+
+Osteoklasty
+    -diferencované z monocytů
+    -odbourávají kost
+    -mnohojaderné
+        -vznik splýváním monocytů
+    -funkce: např. prořezávání zubů
+        -proti špičce zubu se nachází speciální populace osteoklastů
+        -je třeba odbourat kost čelisti, aby se mohl zub prořezat ven
+
+Metody zkoumání krve
+    krevní roztěr a průtoková cytometrie
+
+Patologie krve (onemocnění)
+    -leukémie
+        =rakovina krve
+        -dochází k nádorové přeměně některého z diferenciačních stádií buněk odvozených od kmenových buněk kostní dřeně
+        -zvýšený počet leukocytů jednoho typu v krvi
+            -myeloblastické zvýšení
+                -zvýšené množství granulocytů a monocytů
+            -lymfoblastické
+                -zvýšené množství lymfocytů
+        -obě mohou být akutní nebo chronické
+        -leukocyty nedozrávají a jsou tak nefunkční
+        -rizikové faktory
+            -kouření
+            -chemikálie (benzen)
+            -radioaktivní záření
+            -léčba jiného nádorového onemocnění
+            -filadelfský chromozom
+        -efektivní řešení: chemoterapie a transplantace kostní dřeně
+    -mononukleoza
+        -EBV virus napadá B-lymfocyty, nebo jejich prekurzory
+            -B-lymfocyty se pomnoží a tváří se jako cizí organismus a tělo se brání
+            -dochází k narušení rovnováhy mezi jednotlivými složkami imunitního systému
+        -po vyléčení máme EBV na celý život
+
+LYMFATICKÝ SYSTÉM
+
+-lymfatické ( = lymfoidní) tkáně
+    -jsou všude po těle, zejména v místech, kde do těla vstupují, nebo kudy během infekce putují patogeny
+        -pod epitely -> s epitely asociovaná lymfoidní tkáň
+            -místa proliferace a diferenciace lymfocytů
+            -MALT = lymfoidní tkáň asociovaná s mukózou (sliznicí)
+            -bronchy BALT = lymfoidní tkáň asociovaná s dýchacími cestami
+            -GALT = lymfoidní tkáň asociovaná se střevem (gut)
+        -lymfatické orgány
+            -anatomicky diferenciovaná množina lymfoidní tkáně
+            -složeny pouze z lymfoidní tkáně
+            -dělení
+                -primární
+                    -zajišťují hematopoezu = krvetvorbu
+                    -selekce s vlastním tělěm nereagujících lymfocytů
+                    -kostní dřeň
+                    -thymus = brzlík
+                -sekundární
+                    -napojeny na lymfatický i oběhový systém
+                    -zajišťují efektivní setkávání buněk imunitního systému
+                    -kompartmentace efektivního imunitního dozoru
+                    -slezina
+                    -uzliny
+Kostní dřeň
+    -veliký orgán
+    -sídlo hematopoezy
+    -dochází tu k proliferaci buněk všech linií
+    -dělení
+        -červená kostní dřeň
+            -hematopoetická
+            -u fétu probíhá krvetvorba jen v játrech a slezině
+            -po narození je v těle pouze červená k.d. a hematopoéza probíhá výhradně tam
+            -v dopělosti pouze v plochých kostech a obratlích
+        -žlutá kostní dřeň
+            -tuková
+        -šedá kostní dřeň
+    -0,1% buněk kostní dřeně má na povrchu membránový protein CD34
+    -každý buněčný typ je nezávisle regulován
+        -EPO = erytropoetin
+        -CSF = kolonie stimulující faktory
+    -stromální buňky lymfatických uzlin
+        -velmi důležité
+        -"lešení" pro hematopoetické buňky
+        -vytváří vhodné prostředí pro setkání lymfocytů s antigeny
+    -kmenové buňky v kostní dřeni
+        -stačí transplantovat 5 KB pro zajištění kompletní krvetvorby (myší model)
+    -faktory zvyšující přežívání a nediferencovaný stav
+    -typickou markerovou molekulou je C-kit = CD117
+        -na povrchu buňky
+        -obsahuje informace o buněčném typu, stádiu diferenciace a buněčné aktivitě
+    -totipotentní buňka = buňka schopná vytvořit jakýkoli druh buňky, ergo celý organismus (zygoty, dělivé meristémy)
+    -multipotentní buňka = buňka schopná diferenciace do mnoha typů buněk, pouze však v rámci jedné tkáně (kmenové buňky)
+    -sledování hematopoezy
+        -výplach z kostní dřeně in vitro (jako na praktikách)
+            -růst na agaru - vznik nepohyblivých kolonií, které se dají dobře pozorovat
+
+embryonální krvetvorba
+    -vzniká cca 3.týden
+    -ze žloutkového vaku se vytvoří krevní ostrůvky obashující primitivní erytroblasty
+        -větší než ty dospělé, jiný hemoglobin (Hb), mají jádro
+    -od 5.týdne vzniká intraembryonální krvetvorba
+    -v játrech, slezině, kostní dřeni
 
 ◊title{Svaly}
 
