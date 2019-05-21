@@ -187,7 +187,7 @@
     [else (format "~a\n" listed-items)]))
 
 (define (make-list-tex ord items)
-  (apply string-append `(,(if ord "\\begin{myEnumerate}\n" "\\begin{myItemize}\n")
+  (apply string-append `(,(if ord "\\begin{myEnumerate}[nosep]\n" "\\begin{myItemize}[nosep]\n")
     ,@(map (lambda (s) (apply string-append `("    \\item " ,@s "\n"))) items)
     ,(if ord "\\end{myEnumerate}\n" "\\end{myItemize}\n"))))
 
