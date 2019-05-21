@@ -963,7 +963,7 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
     - zásobárna vápníku, fosfátu
 }
 
-◊todo{Přidat obrázek kosti.}
+◊img["kost.png"]{Schematický obrázek kosti}
 
 ◊ls[#:t "Stavba a složení"]{
     - látkové složení
@@ -1162,8 +1162,6 @@ Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu t
 
 ◊img["vyvoj_krevinch_bunek.png"]{Schéma zobrazující vývoj krevních buněk ze společné kmenové buňky}
 
-◊todo{Přidat obrázek sedimentace.}
-
 ◊definitions{
     ◊term["buffy coat"]{
         Koncentrovaná suspenze získaná sedimentací.
@@ -1183,7 +1181,11 @@ Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu t
 
 Rychlejší alternativou sedimentace je centrifugace. K dalším metodám zkoumání krve patří krevní roztěr a průtoková cytometrie.
 
-◊todo{Doplnit schéma průtokové cytometrie.}
+◊img["cytometrie.png"]{Schéma průtokové cytometrie}
+◊em{By Kierano - Own work, CC BY 3.0, ◊link["https://commons.wikimedia.org/w/index.php?curid=22102570"]{link}}
+
+Při cytometrii protékají měřičem buňky jedna po jedné. Přerušují u toho laserový paprsek, který je poté pomocí soustavy zrcadel a detektorů analyzován --- dá se zjistit počet buněk, z vlastností paprsku i jejich druh a obsah. Často se buňky fluorescenčně barví.
+
 
 ◊subsection{Erytrocyty}
 
