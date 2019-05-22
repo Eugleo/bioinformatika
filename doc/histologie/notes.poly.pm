@@ -86,7 +86,7 @@ Jeden příklad za všechny, mechanismus šedivění vlasů. Melanocyty, které 
     - fixační směsi
         - rychlé, dokonalé fixování
         - Bouinův roztok: kys. pikrová, formaldehyd, kys. octová, voda
-        - Zenkerův roztok = formaldehyd, dvojchroman draselný, chlorid rtuťnatý, voda
+        - Zenkerův roztok = formaldehyd, dichroman draselný, chlorid rtuťnatý, voda
         - roztok glutaraldehydu, formaldehydu
     - elektronová mikroskopie
         - glutaraldehyd + oxid osmičelý
@@ -355,17 +355,17 @@ Epitely jsou tkáně tvořené buňkami s různým tvarem a funkcí, které jso
     - odvozen od všech tří zárodečných listů
         - ektoderm: epitelový povrch kůže, ústní a nosní dutina, řiť
         - entoderm: výstelka dýchacího traktu, trávicí trakt, všechny orgány TS
-        - mezoderm: endotel (výstelka cév), mezotel (výstelka břišní dutiny, peritoneum)
+        - mezoderm: endotel (výstelka cév), mezotel (výstelka břišní dutiny, peritoneum (= pobřišnice - vystýlá dutinu břišní))
     - vždy sedí na bazální lamině, což je podpůrná pojivová tkáň
         - ztráta kontaktu s bazální laminou vede k diferenciaci (keratinocyty)
-        - schpnost samouspořádání
+        - schopnost samouspořádání
         - buňky samy epitel vyrábí, nebo vzniká pomocí fibroblastů
         - v bazální lamině jsou přítomny speciální kolageny a fibriny
 }
 
 ◊section{Krycí epitely}
 
-Krycí kepitely kryjí zevní povrch a vystýlají tělní dutiny.
+Krycí epitely kryjí zevní povrch a vystýlají tělní dutiny.
 
 ◊ls[#:t "Klasifikace dle tvaru buněk"]{
     - dlaždicový (plochý)
@@ -521,14 +521,14 @@ Některé orgány jsou jak exokrinní, tak endokrinní
 }
 
 ◊ls[#:t "Kmenové buňky v kostní dřeni"]{
-    - stromální buňky vytváří jeskyňky
+    - stromální buňky vytváří jeskyňky (niky)
         - nediferencované mezenchymální a hematopoetické kmenové buňky
 }
 
 ◊ls[#:t "Kmenové buňky ve střevě"]{
     - z jedné kmenové buňky lze diferencovat všechny epiteliální buňky
     - v tenkém střevě jsou ve vychlípeninách
-        - směrem dolů diferencují do Pannetových buněk
+        - směrem dolů diferencují do Panethových buněk
         - směrem nahoru diferencují ve žlázy a v resorpční epiteliální buňky
 }
 
@@ -650,7 +650,7 @@ Kromě zmíněných vrstev se v kůži nalézají též senzory a nervová zakon
 
 ◊ls[#:t "Fibrocyt"]{
     - diferenciační prekurzor fibroblastu
-    - fibrocyt může diferencovat ve fibroblast, chondrocyt, hladkou svalovinu, tukovou buňku
+    - fibrocyt může diferencovat ve fibroblast (a naopak), chondrocyt, hladkou svalovinu, tukovou buňku
     - změna fibroblastu na tukovou buňku provázena změnou exprese genů
     - fibroblasty vytváří desmozomy s jinými fobroblasty => síťovitá struktura
     - fibroblasty spolu s epiteliálními buňkami produkují složky bazální laminy
@@ -669,12 +669,12 @@ Kromě zmíněných vrstev se v kůži nalézají též senzory a nervová zakon
 ◊ls{
     - jediná z vrstev kůže, která je epiteliálního původu
     - sedí na bazální lamině, nejspodnější vrstvu tvoří keratinocyty
-        - v záhybech na bazální lamině jsou kmenové buňky neschopné diferencovat v melanocyty, ale vznikají z nich kerantinocyty
+        - v záhybech na bazální lamině jsou kmenové buňky neschopné diferencovat v melanocyty, ale vznikají z nich keratinocyty
     - je stále proliferována
         # buňky jsou posouvány vzhůru
         # časem jsou buňky dehydratovány a keratinizují
         # takové mrtvé buňky se odloupnou
-    - obsahuje melanocyty a Langerhansovy buňky
+    - obsahuje melanocyty a Langerhansovy buňky (= dendritické buňky)
     - rozdíl mezi bělošskou a černošskou kůží je v pH endozomálního systému (běloši jsou kyselejší)
 }
 
@@ -686,7 +686,7 @@ Kromě zmíněných vrstev se v kůži nalézají též senzory a nervová zakon
         - deriváty lysozomů
         - naplněné melaninem jsou předávány epidermálním buňkám (keratinocytům)
     - mutace
-        - málo melanozomových prekurzorů => málo melazosomů => skvrny
+        - málo melanozomových prekurzorů => málo melanozomů => skvrny
         - mutace genu pro kit
             - receptor pro SCF faktor => je na epiteliální buňce v nice => udržuje buňky                     v kmenovém stavu
             - málo kmenových buněk => málo melanocytů
@@ -732,7 +732,7 @@ Porucha tvorby melaninu vede k albinismu. Tato porucha může být způsobena po
         - 1l žluči
         - 1,5l trávicí tekutiny ze slinivky
         - 2l sukusu (všemožné tekutiny vylučované živými tkáněmi)
-    - resorpce tekuni ve střevě
+    - resorpce tekutin ve střevě
         - 7,8l v tenkém střevě + dvanáctníku
         - 1l v tlustém střevě
     - 0,2l ztrácíme stolicí
@@ -767,8 +767,14 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
         - vyplňuje prostory, zpevňuje epitely, obaluje lymfatické a krevní cévy
         - ve žlázách, sliznicích, dermis
         - kolagenní, elastická i retikulární vlákna
+        - hodně ECM
+        - typy
+            - tukové
+            - elastické (okolo páteře)
+            - retikulární (vytváří prostot pro "výrobní buňky")
     - husté
         - převládají kolagenní vlákna
+        - velmi málo ECM
         - neuspořádané
             - svazky kolagenu bez určité orientace
             - např. dermis (podkoží)
@@ -861,7 +867,7 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
             - kuličky hypertrofované tukové tkáně
             - díky vazivovému obalu snadné odstranění
         - maligní tumory liposarkomy
-    - multilakulární adipocyty
+    - multilokulární adipocyty
         - hibernomy
             - hypertrofovaná multilokulární tuková tkáň
             - poruchy produkce tepla
@@ -908,7 +914,7 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 
 ◊ls[#:t "Chondroblasty"]{
     - jedny z mála buněk schopné přežít v jedinci i po smrti
-    - fungují díky anaerobní glykolýzy
+    - fungují díky anaerobní glykolýze
     - jejich proliferace je ovlivňována růstovými faktory
         - ◊em{somatotropin} spouští produkci somatomedinu v játrech
         - nedostatek způsobuje metaplázii chrupavek
@@ -1054,7 +1060,7 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
     - vývoj kostních buněk: mezenchymální buňka -> chondroblast -> chondrocyt
     - dělení
         - intramembranózní
-            - ve vazivu, kost vzniká přeměnou chrupavky
+            - ve vazivu, kost vzniká přeměnou vaziva
                 - probíhá přímá mineralizace matrix produkované osteoblasty
             - ploché, krátké a dlouhé kosti do šířky
         - endochondrální osifikace
@@ -1096,7 +1102,7 @@ Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu t
         - důsledkem např. osteopetróza, osteoporóza
     - průběh zloměniny
         # po zlomení se aktivují osteoblasty, namnoží se
-        # osteblasty oudělají houbovitou kost
+        # osteblasty udělají houbovitou kost
         # houbovitá kost je postupně přestavena v kompaktní kost
     - krátké kosti se hojí špatně, zatímco dlouhé jsou na mechanické změny zvyklé
 }
@@ -1178,7 +1184,7 @@ Na následujícím obrázku lze vidět, z jakých buněk se vyvíjejí jednotliv
 
 ◊definitions{
     ◊term["buffy coat"]{
-        Koncentrovaná suspenze získaná sedimentací.
+        Koncentrovaná suspenze leukocytů a trombocytů získaná sedimentací.
     }
 }
 
@@ -1239,7 +1245,7 @@ Leukocyty se dělí na granulocyty a agranulocyty.
 ◊subsubsection{Granulocyty}
 
 ◊ls{
-    - terminálně diferencionavé nedělící se buňky
+    - terminálně diferenciované nedělící se buňky
     - polymorfonukleární leukocyty (velmi proměnlivé, polymorfní jádro)
     - obsahují granula, což jsou obarvitelné částice
     - 12--15 mikrometrů
@@ -1252,7 +1258,7 @@ Leukocyty se dělí na granulocyty a agranulocyty.
         - barví se zásaditými barvivy (do tmavě modra)
     - eozinofily
         - likvidují mnohobuněčné parazity
-        - barví se kyselými barvivy (hematoxylin-eosi, do červena)
+        - barví se kyselými barvivy (hematoxylin-eosin, do červena)
 }
 
 ◊ls[#:t "Neutrofily"]{
@@ -1283,23 +1289,6 @@ Leukocyty se dělí na granulocyty a agranulocyty.
 
 Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infekci, a to akutní i chronickou.
 
-◊ls[#:t "Eozinofily"]{
-    - 2-4% leukocytů
-    - mají dvojlaločná jádra s granulami (cca 200 na buňku)
-    - granula
-        - tvoří hlavní složku MBP (major basic protein)
-            - mají antiparazitickou funkci
-        - enzymy histamináza a arylsulfatáza
-            - rozkládají histamin a leukotrieny
-            - mohou tlumit účinek basofilů a žírných buněk
-}
-
-◊ls[#:t "Eozinofilie"]{
-    - ukazuje na  alergické reakce a parazitární infekce (např. helmintózy)
-    - při napadení organismu patogenem se jejich počet drasticky zvedne
-    - jejich počet se dá snížit kortikoidy
-}
-
 ◊definitions{
     ◊term["Multivalentní antigen"]{
         Struktura obsahující větší množství vazebných míst pro protilátku.
@@ -1315,11 +1304,29 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
         - ničí cizí struktury
     - regulace exocytózy
         - regulovaná vazbou antigenu na IgE, který je navázaný na IgE receptorech
-            - IgE receptor váže IgE i pokud není navázaný na antigen (= je vysokoafinní)
+            - vysokoafinní IgE receptor váže IgE i pokud není navázaný na antigen
     - pokud se v těle vyskytne multivalentní antigen, dojde k agregaci receptorů
         # aktivace signalizační kaskády
         # degranulace granulí
         # vylití biologicky aktivních aminů (histamin, serotonin)
+}
+
+◊ls[#:t "Eozinofily"]{
+    - 2-4% leukocytů
+    - mají dvojlaločná jádra s granulami (cca 200 na buňku)
+    - granula
+        - hlavní složku tvoří MBP (major basic protein)
+            - má antiparazitickou funkci
+            - aktivuje neutrofily, stimuluje žírné buňky
+        - enzymy histamináza a arylsulfatáza
+            - rozkládají histamin a leukotrieny
+            - mohou tlumit účinek basofilů a žírných buněk
+}
+
+◊ls[#:t "Eozinofilie"]{
+    - ukazuje na  alergické reakce a parazitární infekce (např. helmintózy)
+    - při napadení organismu patogenem se jejich počet drasticky zvedne
+    - jejich počet se dá snížit kortikoidy
 }
 
 ◊subsubsection{Agranulocyty}
@@ -1334,6 +1341,8 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
             - některé se mění na dendritické buňky
         - dendritické buňky
             - fagocytují na periferii, kde migrují do uzlin a prezentují antigeny prostřednictvím MHC II. třídy
+        - osteoklasty
+            - buňky odbourá­va­jící kost­ní tkáň
     - lymfocyty (◊${3 \cdot 10^8} na litr)
 }
 
@@ -1350,7 +1359,7 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
 ◊ls[#:t "Monocyty"]{
     - největší krvinky
     - součástí myeloidní linie
-    - oválné, podkovovité nebo ledvinovité jádro
+    - oválné jádro, podkovovité nebo ledvinovité
     - prekurzory mononukleárního fagocytárního systému
     - před vstupem do tkáně osm hodin kolují v krvi
     - prakticky nefunkční, v krvi mají jen funkci "zásobárny makrofágů"
@@ -1361,17 +1370,17 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
     - diferenciace po vstupu do tkáně kapilární stěnou
     - provádí endocytózu tkáňového debrisu včetně apoptotických tělísek
     - na povrchu nesou MHC II. třídy
-        - toto MHC kontrolují Th-lymfocyty, které případně spouštějí imunologický poplach, címž upozorní B-lymfocyty
+        - toto MHC kontrolují Th-lymfocyty, které případně spouštějí imunologický poplach, čímž upozorní B-lymfocyty
     - při zánětu nastupují po neutrofilech
 }
 
 ◊ls[#:t "Dendritické buňky"]{
-    - in vitro připravíme izolací z krve a použitím interleukinu-4a GM-CSF (granulocytární makrofágový colony stimulating factor)
     - aktivita
         # endocytují cizorodou látku
         # přesunou se do mízní uzliny a naštěpí endocytovanou látku
         # prezentují ji na povrchu
-        # T-lymfocyt ji potenciálně rozpozná, aktivuje se a vyvolá imunitní reakci
+        # Th-lymfocyt ji potenciálně rozpozná, aktivuje se a vyvolá imunitní reakci
+    - in vitro připravíme izolací z krve a použitím interleukinu-4a GM-CSF (granulocytární makrofágový colony stimulating factor)
 }
 
 ◊ls[#:t "Osteoklasty"]{
@@ -1382,15 +1391,15 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
         - je třeba odbourat kost čelisti, aby se mohl zub prořezat ven
      - poruchy v myeloidní linii (především ve funkci monocytů a jejich diferenciačních produktů) mohou mít velký vliv na remodelaci kostní hmoty
         - Pagetova choroba
-            - nadměrné odbourávání kosti a následné tovoření kosti neplohodnotné
+            - nadměrné odbourávání kosti a následné tovoření kosti neplnohodnotné
 }
 
 ◊ls[#:t "Lymfocyty"]{
     - tvoří 30% leukocytů
     - různorodá velikost (5 mikrometrů -- 15 mikrometrů)
         - rozdíl v množství cytoplazmy (většina je zcela vyplněna jádrem)
-     - schopny aktivního pohybu (z krve do tkání --- do místa zánětu nebo do mízní uzliny)
-     - schopny vytvářet mnohočetná komplikovaná mezibuněčná spojení
+    - schopny aktivního pohybu (z krve do tkání --- do místa zánětu nebo do mízní uzliny)
+    - schopny vytvářet mnohočetná komplikovaná mezibuněčná spojení
         - interakce vícero párů membránových receptorů a jejich ligandů
         - regulace diferenciace (případně následné proliferace) a efektorové funkce (např. zabití cílové buňky cytotoxickým T-lymfocytem)
 }
@@ -1416,8 +1425,7 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
 }
 
 ◊ls[#:t "Chyby při vzniku T-lymfocytů"]{
-    - popletení substrátu
-    - dojde ke spojení ramen dvou chromozomů, které spolu fyzicky vůbec nesouvisí
+    - popletení substrátu; dojde ke spojení ramen dvou chromozomů, které spolu fyzicky vůbec nesouvisí
     - např. filadelfský chomozom
         - na něm je fúzní chimérní gen (propojení částí genů Cbl a Abl)
         - vznik nedeaktivovatelné kinázy schopné transformovat postiženou buňku v buňku nádorovou
@@ -1427,10 +1435,10 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
     - tvoří 5% leukocytů
     - produkují protilátky
     - afinitní maturace
-        - když se organismus setká s nějakým antigenem, vylepší svoje protilátky
-        - sekundární odpověď zahrnuje protilátky s vyšší afinitou k antigenu
-        - imunoglobulinové geny náhodně mutují, B-lymfocyty s mutovanými geny poté soupeří o navázání antigenu
-        - ty s nízkou afinitou jsou odstraněny a tak zůstanou pouze ty s vysokou
+        # když se organismus setká s nějakým antigenem, vylepší svoje protilátky
+        # sekundární odpověď zahrnuje protilátky s vyšší afinitou k antigenu
+        # imunoglobulinové geny náhodně mutují, B-lymfocyty s mutovanými geny poté soupeří o navázání antigenu
+        # ty s nízkou afinitou jsou odstraněny a tak zůstanou pouze ty s vysokou
 }
 
 ◊ls[#:t "Efektorové buňky"]{
@@ -1442,8 +1450,25 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
 
 ◊ls[#:t "NK buňky"]{
     - tvoří 5% leukocytů
-    - ničí buňky bez MHC I
+    - ničí buňky bez MHC I (rakovinotvorné...)
+        - nespecifická imunita
+    - proděraví buňce buněčnou stěnu perforinem
+    - při špatné funkci - chronický únavový syndrom
 }
+zánět
+
+    - zvýšení průtoku v místtě rány
+    - makrofágy, mastocyty a basofily vypouští histamin
+        - zvýšení propustnosti cév (aby se bílé krvinky odstaly lépe na místo zánětu)
+        - prosak krevní plazmy
+        - otok
+    - makrofágy začnou uvolňovat chemoki(ni)ny
+        - lákají další bílé krvinky
+        - stimulují basofily k vylití hydrolytických enzymů
+    - poškozené buňky vylučují prostaglandiny
+        - označují buňku pro Tc-lymfocyt
+
+
 
 ◊subsection{Krevnní destičky}
 
@@ -1524,6 +1549,9 @@ Lymfatické i lymfoidní tkáně jsou všude po těle, zejména v místech, kde 
     }
 }
 
+◊img["uzlina.png"]{Schematický obrázek mízní uzliny}
+◊em{By KC Panchal - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=4360228}
+
 ◊ls[#:t "Lokalizace lymfatických cest"]{
     - pod epitely (s epitely asociovaná lymfoidní tkáň)
         - místa proliferace a diferenciace lymfocytů
@@ -1594,12 +1622,12 @@ Hematopoéza se dá jednoduše sledovat in vitro. Nejprve se provede výplach z 
 
 ◊ls{
     - účastní se ◊strong{cytokinese}
-        - proces je zprozdředkovaný aktino-myozinovým komplexem 26
+        - proces je zprosdředkovaný aktino-myozinovým komplexem 26
         - aktinová vlákna omotána okolo buněk epitelu, ukotvena v adhezivních spojích
         - pomocí pohybu myozinu se změní jejich tvar, dojde k lokálnímu zaškrcení buňky
         - dojde k deformaci celé buněčné vrstvy
     - celý epitel funguje jako jedna signalizační a morfologická jednotka
-    - aktinovyá vlákna jsou antiparalelně uspořádána a ukotvena do kotvících struktur (Z disky)
+    - aktinová vlákna jsou antiparalelně uspořádána a ukotvena do kotvících struktur (Z disky)
     - čtyři typy svalových buněk: kosterní svaly, srdeční svaly, hladké svaly, myoepiteliální buňky
 }
 
@@ -1614,7 +1642,7 @@ Hematopoéza se dá jednoduše sledovat in vitro. Nejprve se provede výplach z 
         - to zajišťuje soustava vazivových pochev
 }
 
-Svaly vznikají z myobalstů, které jsou určeny expresí genů z rodin MyoD a MEF2.
+Svaly vznikají z myoblastů, které jsou určeny expresí genů z rodin MyoD a MEF2.
 
 ◊ls[#:t "Vznik"]{
     # proliferace
@@ -1626,7 +1654,7 @@ Svaly vznikají z myobalstů, které jsou určeny expresí genů z rodin MyoD 
 
 ◊ls[#:t "Stavba"]{
     - některé kosterní svalové buňky jsou velmi velké, je potřeba vícejadernost
-    - často splyne více myocytárních buněk a vznikne ◊em{syncitium}
+    - často splyne více myocytárních buněk a vznikne ◊em{syncytium}
     - jsou 3cm dlouhé a 100◊${\mu}m v průměru
     - tvoří svalová vlákna
     - obaly
@@ -1647,7 +1675,7 @@ Svaly vznikají z myobalstů, které jsou určeny expresí genů z rodin MyoD 
 }
 
 ◊ls[#:t "Svalová vřeténka"]{
-    - někdy probíhá specializace do mnohobuněčných syncitiálních útvarů se senzorickou funkcí místo mechanické, vznikají deriváty svalu, ◊em{svalová vřeténka}
+    - někdy probíhá specializace do mnohobuněčných syncytiálních útvarů se senzorickou funkcí místo mechanické, vznikají deriváty svalu, ◊em{svalová vřeténka}
     - mají intimní propojení senzorických nervových zakončení s něčím svalového původu
     - deformace těchto svalků se přenáší do mozku, který tím získává zásadní informace o "zapnutí" našich svalů
         - pokud tato signalizace nefunguje, mozek nedokáže synchronizovat naše pohyby
@@ -1698,8 +1726,14 @@ Svaly vznikají z myobalstů, které jsou určeny expresí genů z rodin MyoD 
 }
 
 ◊ls[#:t "Kreatinkináza"]{
+    - katalyzuje přenos fosfátu z ATP na kreatin
+        - kreatin - zásobuje svaly velmi rychlou energií
     - hmotnost 86 000Da
-    - 3 isoenzymy MM, MB
+    - dvě podjednotky, které mohou být dvojího typu (M = muscle, B = brain)
+        -> 3 isoenzymy
+            - MM
+            - MB
+            - BB
 }
 
 ◊ls[#:t "Aldoláza"]{
@@ -2342,15 +2376,24 @@ Nejblíže u pigmentovaných epiteliálních buněk je senzorický epitel
 
 To, jakým způsobem vidíme, je vlastně negativ: při zachycení fotonu se zastaví/sníží bazální signalizace. To umožňuje rozlišovat jemnější nuance v signálech.
 
-◊ls[#:t "Rodopsiny"]{
-    - součástí rodiny opsinů, v tyčinkách
-    - superpozicí tří různý rodopsinů vzniká konkrétní barva
-    - mutace v jednom rodopsinu zapříčiní to, že člověk nebude schopen rozeznat nějaké barvy od sebe
-        - jeden z rodopsinů je vázaný na chromozom X, takže se daltonismus vyskytuje častěji u mužů
+◊ls[#:t "Tyčinky"]{
+    - obsahují pigment rodopsin
+        - součástí rodiny opsinů
+    -zajišťují vnímání kontrastu
+}
+◊ls[#:t "Čípky"]{
+    - obsahují pigment jodopsin (fotopsin)
+    - zajišťují vnímání barev
+    - každý obsahuje jeden ze tří druhů jodopsinu (citlivý na červenou, zelenou, nebo modrou barvu)
+        -vlastní barva vzniká superpozicí tří čípků
+    - daltonismus
+        -mutace v jednom jodopsinu zapříčiní to, že člověk nebude schopen rozeznat nějaké barvy od sebe
+        -jeden z jodopsinů je vázaný na chromozom X, takže se daltonismus vyskytuje častěji u mužů
 }
 
+
 ◊ls[#:t "Pigmentované epiteliální buňky"]{
-    - odrážejí a pohlcují světlo, brání osdleskům
+    - odrážejí a pohlcují světlo, brání odleskům
     - fungují jako makrofágy
         - senzorické buňky se nemohou během života měnit, proto jen vyměňují svůj obsah
         - odštěpují váčky s denaturovanými proteiny a kovalentně modifikovanými lipidy
@@ -2361,6 +2404,7 @@ To, jakým způsobem vidíme, je vlastně negativ: při zachycení fotonu se zas
     - výše zmíněná barvoslepost
     - mutace mitochondriální DNA => ztráta zraku, atrofie očního nervu
         - např. syndrom LHON
+            - degenerace gangliových buněk
         - zrakový nerv a funkce senzorického zrakového epitelu je zřejmě jedna z Achillových pat energetického metabolismu
 }
 
@@ -2383,11 +2427,11 @@ To, jakým způsobem vidíme, je vlastně negativ: při zachycení fotonu se zas
 ◊ls[#:t "Parkinsonova choroba"]{
     - příčinou je nedostatek dopaminu
     - dochází ke svalovým třesům
-    - v mozku jsou oblastni, kde jsou dopaminergní neurony lokalizovány (substania nigra), často odumírají
-    - po Alzheimrovi druhá nejčastější choroba
+    - v mozku jsou oblasti, kde jsou dopaminergní neurony lokalizovány (substantia nigra), často odumírají
+    - po Alzheimerovi druhá nejčastější choroba
 }
 
-◊ls[#:t "Alzheimrova choroba"]{
+◊ls[#:t "Alzheimerova choroba"]{
     - některé proteiny mají narušené odbourávání
         - např. amyloidní protein, tau protein
     - v mozku se hromadí plaky neodbouratelné substance, která tlačí, je cytotoxická a způsobuje neurologické patologie
@@ -2404,14 +2448,14 @@ To, jakým způsobem vidíme, je vlastně negativ: při zachycení fotonu se zas
 ◊ls[#:t "Nádory CNS"]{
     - primární nádory mozku tvoří přibližně 1--2% všech zhoubných nádorů
     - nejčastěji děti do pěti let, nebo dospělí od 60 let
-    - malé množství nádor je dědičně podmíněno
+    - malé množství nádorů je dědičně podmíněno
     - více než 50% nádorů jsou nádory z buněk podpůrné tkáně, ◊em{gliomy}
         - dělí se na low-grade a high-grade gliomy, podle toho, jak vysoký mají stupeň malignity
-    - neuroblastom, ganglioneurom, feochromocyton, chemodektom, retinoblastom, oligodendrogliom (druh gliových buněk), astrocytom (druh gliových buněk), meduloblastom, ependymom, meningiom, angioretikulom
+    - neuroblastom, ganglioneurom, feochromocytom, chemodektom, retinoblastom, oligodendrogliom (druh gliových buněk), astrocytom (druh gliových buněk), meduloblastom, ependymom, meningiom, angioretikulom
 }
 
 ◊ls[#:t "Nádory PNS"]{
-    - neurinom, neurilemon, Schwannom = nádor ze Schwannových buněk
+    - neurinom, neurilemom, Schwannom = nádor ze Schwannových buněk
     - neurofibrom
     - neurogenní sarkom --- vzácná varianta neurinomu, maligní
 }
