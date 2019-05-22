@@ -259,13 +259,13 @@ Alkohol skvěle fixuje, čím více ethanolu, tím lépe, protože alkohol ve tk
 
 ◊ls[#:t "Propojení elektronové mikroskopie a autoradiografie"]{
     - k buňkám se přidá radioaktivně značený leucin
-    - leuxcin se zabuduje do proteinů
+    - leucin se zabuduje do proteinů
     - sledování putování nově syntetizovaných proteinů
 }
 
 ◊section{Mikroskopie}
 
-Oko rozpozná 100◊${\mu}m, světelný mikroskop 100nm, elektronový i rozměry pod 1nm.
+Oko rozpozná řádově stovky ◊u{\mu m}, světelný mikroskop stovky ◊u{nm}, elektronový i stovky ◊u{pm}.
 
 ◊ls[#:t "Světelná mikroskopie"]{
     - sledování in vivo
@@ -280,9 +280,9 @@ Sledovat in vivo se dá i na tomografii, případně NMR.
 ◊ls[#:t "Elektronová mikroskopie"]{
     - detekce elektronů
     - optika je elektromagnetické povahy
-    - černobílé obrázky, ale exsituje možnost obarvení
+    - černobílé obrázky, ale existuje možnost obarvení
     - typy
-        - skenovací EM: svítíme na pokovený objekt, detekujeme, co se odrazí
+        - skenovací EM: svítíme na pokovovaný objekt, detekujeme, co se odrazí
         - transmisní EM: objekt prosvěcován elektrony, detekujeme jejich rozptyl
             - bez nutnosti barvení, schopni rotovat, prozařovat pod různými úhly
 }
@@ -297,32 +297,32 @@ Sledovat in vivo se dá i na tomografii, případně NMR.
 ◊ls[#:t "Laserová mikrodisekce"]{
     # v preparátu najdeme útvar, který nás zajímá
     # laserem tento útvar vyřízneme
-    # laserem se poté vystřelí do detekční nádoby
+    # laserem se poté tento objekt vystřelí do detekční nádoby
 }
 
 ◊ls[#:t "Gene arrays"]{
     - studium celkové expresní aktivity
-    - určení buněčných typů, pomocí izolace RNA přepsané do fluorescenčně značené DNA
+    - určení buněčných typů pomocí izolace RNA přepsané do fluorescenčně značené DNA
         # hybridizace na sklíčkách
         # imobilizace sekvencí specifických pro konkrétní geny
         # soubory barevných teček
-        # vyplý/zaplý gen
+        # vypnutý/zapnutý gen
 }
 
 ◊title{Epitely}
 
-Epitely jsou tkáně tvořené buňkami s různým tvarem a funkcí, které jsou mezi sebou pevně spojeny pomocí mezibuněčných spojů. Vystýlají povrch sliznic a vnitřek dutin. Sedí na bazální lamině, jsou polarizovány.
+Epitely jsou tkáně tvořené buňkami s různým tvarem a funkcí, které jsou mezi sebou pevně spojeny pomocí mezibuněčných spojů. Vystýlají povrch sliznic a vnitřek dutin. Sedí na bazální lamině, jejich buňky jsou polarizovány.
 
 ◊ls[#:t "Funkce epitelu"]{
-    - krytí a vystýlání povrchů, kůže, sliznice
-    - absorpce, střevo
-    - sekrece, žlázy
-    - recepce, neuroepitel
-    - stažlivost, myoepiteliální buňky
-    - resorpce, v rohovce (jediný takový epitel)
+    - krytí a vystýlání povrchů (kůže, sliznice)
+    - absorpce (střevo)
+    - sekrece (žlázy)
+    - recepce (neuroepitel)
+    - stažlivost (myoepiteliální buňky)
+    - resorpce (rohovka --- jediný takový epitel)
         - aby v ní nebyla voda a my dobře viděli
-    - dokáží fungovat jak svalové buňky, produkují myozin a aktin
-        - např. myoepitelové buňky mléčných žláz
+    - dokáží fungovat jako svalové buňky, produkují myozin a aktin
+        - např. myoepiteliální buňky mléčných žláz
 }
 
 ◊section{Stavba epitelů}
@@ -333,15 +333,17 @@ Epitely jsou tkáně tvořené buňkami s různým tvarem a funkcí, které jso
         - exokrinní žlázy, s vývodem do lumen
         - sekreční epitely, s vývodem do lumen
     - podle funkce
-        - ochranný -> mnohovrstevný, odolný
-        - transportní – velké množství kanálů, průchod molekul přes membránu
-        - řasinkový -> zajiŠťuje směrovaný pohyb (vajíčko ve vejcovodu)
+        - ochranný: mnohovrstevný, odolný
+        - transportní:  velké množství kanálů, průchod molekul přes membránu
+        - řasinkový: zajišťuje směrovaný pohyb (vajíčko ve vejcovodu)
 
 }
 
+◊todo{Najít něco více o Blažkových liniích.}
+
 ◊definitions{
     ◊term["Blažkovy linie"]{
-        Jev, popisující diferenciaci kůže v jednotlivých pásech, které jdou za sebou.
+        Jev popisující diferenciaci kůže v jednotlivých pásech, které jdou za sebou.
     }
 }
 
@@ -354,12 +356,12 @@ Epitely jsou tkáně tvořené buňkami s různým tvarem a funkcí, které jso
     - tvar a velikost záleží na funkci (např. ochrana v jícnu => tlusté, vysoké buňky)
     - odvozen od všech tří zárodečných listů
         - ektoderm: epitelový povrch kůže, ústní a nosní dutina, řiť
-        - entoderm: výstelka dýchacího traktu, trávicí trakt, všechny orgány TS
-        - mezoderm: endotel (výstelka cév), mezotel (výstelka břišní dutiny, peritoneum (= pobřišnice - vystýlá dutinu břišní))
+        - mezoderm: endotel (výstelka cév), mezotel (výstelka břišní dutiny, peritoneum (pobřišnice))
+        - entoderm: výstelka dýchacího traktu, trávicí trakt, všechny orgány trávicí soustavy
     - vždy sedí na bazální lamině, což je podpůrná pojivová tkáň
         - ztráta kontaktu s bazální laminou vede k diferenciaci (keratinocyty)
         - schopnost samouspořádání
-        - buňky samy epitel vyrábí, nebo vzniká pomocí fibroblastů
+        - buňky bazální laminy samy epitel vyrábí, nebo vzniká pomocí fibroblastů
         - v bazální lamině jsou přítomny speciální kolageny a fibriny
 }
 
@@ -385,30 +387,29 @@ Krycí epitely kryjí zevní povrch a vystýlají tělní dutiny.
         - dlaždicový rohovějící
             - kůže: na povrchu tenké šupinky odumřelých buněk
         - dlaždicový nerohovějící
-            - vlhké dutiny – ústa, jícen, pochva
             - živé buňky
+            - např. vlhké dutiny: ústa, jícen, pochva
         - kubický
             - vzácný
             - potní žlázy
             - vyvíjející se ovariální folikuly
         - cylindrický
             - vzácný
-            - spojivka
-            - vývody velkých žláz
+            - např. spojivka, vývody velkých žláz
         - přechodný
-            - močový měchýř
-            - močovod, kde se tvar buněk mění podle rozpětí měchýře
-            - využití v tkáňovém inženýrství: pytlíček z bazální laminy porůst buňkami měchýře s vysokým obsahem kmenových buněk
+            - tvar buněk se může měnit
+            - využití v tkáňovém inženýrství: pytlíček z bazální laminy se nechá porůst buňkami měchýře s vysokým obsahem kmenových buněk
+            - např. močový měchýř, močovod
         - víceřadý
-            - některé buňky jsou zakotveny v bazální lamině, nedosahují povrchu
-            - s řasinkami v dýchacích cestách
+            - některé buňky jsou zakotveny v bazální lamině a nedosahují povrchu
+            - např. dýchací cesty (s řasinkami)
         - neuroepitel
             - senzorické funkce
             - buňky chuťových pohárků
-            - čichový epitel
+            - např. čichový epitel
         - myoepitel
             - větvené buňky specializované na kontrakci
-            - mléčné, potní, slinné žlázy
+            - např. mléčné, potní, slinné žlázy
 }
 
 ◊ls[#:t "Nádory"]{
@@ -459,23 +460,23 @@ Kromě metaplázovaných epitelů mají ale jinak epitely velice dobrou schopnos
 Některé orgány jsou jak exokrinní, tak endokrinní
 ◊ls{
     - játra: žluč (exokrinní), transferin + albumin (endokrinní)
-    - pankreas: trávicí enzymy (exokrinní) + inzulin + glukagon (endokrinní)
+    - pankreas: trávicí enzymy (exokrinní), inzulin + glukagon (endokrinní)
 }
 
 ◊subsection{Exokrinní žlázy}
 
 ◊ls[#:t "Dělení podle stavby"]{
-    - podle větvení vývodů
-        - jednoduché žlázy, mají jeden nerozvětvený tubulózní vývod
-            - stočené tubulózní, větvené tubulózní, acinózní (alveolární)
-        - složené žlázy, mají větvené vývody
-        tubulózní, acinózní, tubuloacinózní (tuboalveolární)
     - podle tvaru
         - acinózní, kulatý tvar a úzké lumen
         - tubulózní, tvar trubice a úzké lumen
         - alveolární, tvar měchýřku a široké lumen
-        - tuboacinózní,  tvar trubice s kulatým koncem (ve žlázách smíšeného typu)
-        - tuboalveolární, tvar trubice s měchýřkovitým rozšířením (ve žlázách smíšeného typu)
+        - tuboloacinózní,  tvar trubice s kulatým koncem (ve žlázách smíšeného typu)
+        - tuboloalveolární, tvar trubice s měchýřkovitým rozšířením (ve žlázách smíšeného typu)
+    - podle větvení vývodů
+        - jednoduché žlázy, mají jeden nerozvětvený tubulózní vývod
+            - stočené tubulózní, větvené tubulózní, acinózní (alveolární)
+        - složené žlázy, mají větvené vývody
+        tubulózní, acinózní, tubuloacinózní (tuboloalveolární)
 }
 
 ◊ls[#:t "Dělení podle typu vylučování"]{
@@ -483,7 +484,7 @@ Některé orgány jsou jak exokrinní, tak endokrinní
         - jsou exocytována sekreční granula
         - např. pankreas
     - holokrinní žlázy
-        - sekreční produkt je uvolněn s celou buňkou, buňka naplěná sekretem zanikne
+        - sekreční produkt je uvolněn s celou buňkou, buňka jako taková zanikne
         - např. mazové žlázy
     - apokrinní žlázy
         - přechodný typ
@@ -504,9 +505,8 @@ Některé orgány jsou jak exokrinní, tak endokrinní
         - tvar sekrečního oddílu je tubulózní
 }
 
-◊section{Jednotlivé tkáně}
 
-◊subsection{Kmenové buňky}
+◊section{Kmenové buňky}
 
 ◊ls{
     - udržování kmenovosti souvisí s vazbou na jiné buňky
@@ -533,7 +533,7 @@ Některé orgány jsou jak exokrinní, tak endokrinní
 }
 
 ◊ls[#:t "Kmenové buňky v kůži"]{
-    - kmenové buňky nejblíže jsou povrchu pokožky
+    - kmenové buňky jsou nejblíže povrchu pokožky
     - během diferenciace sestupují do údolíček
     - během keratinizace jsou vytlačovány vzhůru
 }
@@ -541,6 +541,8 @@ Některé orgány jsou jak exokrinní, tak endokrinní
 ◊ls[#:t "Kmenové buňky v mléčné žláze"]{
     - jsou lokalizovány na povrchu ve směru růstu žlázy
 }
+
+◊section{Jednotlivé tkáně}
 
 ◊subsection{Endoteliání buňky a cévy}
 
@@ -559,28 +561,28 @@ Velikost jednotlivých buněk v endotelu závisí na jejich ploidii.
 ◊ls[#:t "Dynamika endoteliálního systému"]{
     - moc kyslíku => některé kapiláry se uzavřou
     - málo kyslíku (hypoxie) => vyšle se signál pro vznik nových cév
-        - vznikne slepá větvička, ta roste, až si tepna najde žílu
         - zvýšení koncentrace HIF (hypoxia inducible factor)
-            - je to protein, který se při nízké koncentraci kyslíku přestává odbourávat
-        - stabilizace HIFu regulována ubiquitinilací
+            - protein, který se při nízké koncentraci kyslíku přestává odbourávat
+            - stabilizace HIFu je regulována ubiquitinilací
         - zvýšená koncentrace HIF vede k produkci VEGF (vascular endothelial growth factor)
+        - vznikne slepá větvička cévy, ta roste, až si tepna najde žílu
 }
 
 ◊subsubsection{Cévy}
 
 ◊ls{
     - složeny z endoteliálních buněk, z extracelulární matrix a ze svaloviny
-    - složení: tunica intima (endotel), tunica media (svaloviny) a z tunica adventitia (pojivo)
+        - tunica intima (endotel), tunica media (svaloviny) a tunica adventitia (pojivo)
     - poměry těchto vrstev závisí na druhu cévy
-        - kapilárky z endotelu
-        - propustnost kapilár
-            - nepropustná: kontinuální buňka a kontinuální bazální lamina
+        - kapiláry jsou především z endotelu
+        - propustnost kapilár se liší
             - „děravá“ (fenestrovaná): bazální lamina je jemnější sítko, větší částice neprojdou
+            - nepropustná: kontinuální buňka a kontinuální bazální lamina
             - zcela nepropustná: mozek, uspořádání buněk je zodpovědné za intaktnost ◊link["#Hematoencefalická bariéra"]{hematoencefalické bariéry}
 }
 
 ◊ls[#:t "Vznik"]{
-    - běžně růstem už vzniklých trubiček
+    - in vivo růstem už vzniklých trubiček
     - in vitro
         # uvnitř endoteliální buňky začne vznikat systém vakuol
         # vakuoly se pospojují
@@ -589,25 +591,24 @@ Velikost jednotlivých buněk v endotelu závisí na jejich ploidii.
 }
 
 ◊ls[#:t "Chlopně"]{
-    - nalézají se v některých žilách
-    - deriváty endotelu vybíhajícího do lumen
     - zabraňují zpětnému toku krve
-    - jsou pouze v malých a středně velkých žilách
+    - jsou to deriváty endotelu vybíhajícího do lumen
+    - nalézají se v malých a středně velkých žilách
 }
 
 ◊ls[#:t "Spojení žíly a tepny"]{
     - nutnost zabránit homotypické adhezi
+        - nechceme, aby se spojila žíla s žilou a tepna s tepnou
     - ke spojení nutné ◊em{ephriny}, což jsou molekuly tvořící se při diferenciaci nervové soustavy
-        - arterie obsahují ephrin-B2
+        - tepny obsahují ephrin-B2
         - žíly obsahují ephrin-B4
 }
 
 ◊subsubsection{Patologie}
 
-◊ls[#:t "Hippel-Landauův syndrom"]{
+◊ls[#:t "Hippel-Landaův syndrom"]{
     - vznik nádorů tvořených hyperproliferovanými endoteliálními buňkami (◊strong{hemangioblastomy})
-    - pro vazbu ubiquitinu je v HIF běžně ubiquitinylační sekvence
-        - tato sekvence zmutuje, v důsledku čehož se nemůže navázat na ubiquitin
+    - pro vazbu ubiquitinu je na HIF ubiquitinylační sekvence---tato sekvence zmutuje, v důsledku čehož se ubiquitin na HIF nemůže navázat
         - HIF se nedegraduje, neustále se produkuje VEGF
         - stále se aktivuje proliferace a probíhá tvorba nových výběžků
 }
@@ -615,7 +616,7 @@ Velikost jednotlivých buněk v endotelu závisí na jejich ploidii.
 ◊ls[#:t "Atheroskleróza"]{
     - nedochází k ukládání cholesterolu do stěn cév
     - průběh
-        # zánět v těle nebo volné radikály způsobí oxidaci LDL, časem už normálně oxidovaná forma LDL v těle není
+        # zánět v těle nebo volné radikály způsobí oxidaci LDL, časem už v těle není normálně oxidovaná forma LDL
             - LDL (low-density lipoprotein) jsou částice zodpovědné za přenos cholesterolu
         # buňky nedokážou oxidovaný LDL metabolizovat, LDL se v nich hromadí
         # nastoupí monocyty, které endocytují oxidovaný LDL, ale neodbourají ho
@@ -634,25 +635,30 @@ Velikost jednotlivých buněk v endotelu závisí na jejich ploidii.
         - extracelulární matrix (ECM) je syntetizovaná fibroblasty
     - musí být krevně zásobená
         - systém krevních kapilár ohraničených endoteliálními buňkami
-        - obsahuje buňky imunitního systému
-            - při zánětu makrofágy, granulocyty a lymfocyty
+    - obsahuje buňky imunitního systému
+        - při zánětu makrofágy, granulocyty a lymfocyty
 }
 
 ◊ls[#:t "Vrstvy kůže"]{
     - epidermis
     - dermis
         - silně vaskularizovaná a inervovaná
+        - dělí se na řídké vazivo (blíže pokožky) a husté vazivo (blíže hypodermis)
     - hypodermis
         - tuková tkáň
 }
 
 Kromě zmíněných vrstev se v kůži nalézají též senzory a nervová zakončení.
 
-◊ls[#:t "Fibrocyt"]{
-    - diferenciační prekurzor fibroblastu
-    - fibrocyt může diferencovat ve fibroblast (a naopak), chondrocyt, hladkou svalovinu, tukovou buňku
+◊img["kuze.png"]{Schematický obrázek vrstev kůže}
+◊em{By Madhero88 and M.Komorniczak - ◊link["https://en.wikipedia.org/wiki/File:Skin_layers.png"]{link}, CC BY-SA 3.0, ◊link["https://commons.wikimedia.org/w/index.php?curid=21986708"]{link}}
+
+◊ls[#:t "Fibrocyty a fibroblasty"]{
+    - fibrocyt je diferenciační prekurzor fibroblastu
+    - fibrocyt může diferenciovat ve fibroblast (a naopak), chondrocyt, hladkou svalovinu, tukovou buňku
     - změna fibroblastu na tukovou buňku provázena změnou exprese genů
-    - fibroblasty vytváří desmozomy s jinými fobroblasty => síťovitá struktura
+    - fibroblasty vytváří desmozomy s jinými fibroblasty, vzniká síťovitá struktura
+        - desmozomy jsou spojení buněk, při kterých mezi buňkami zůstávají mezery (cadheriny napojeny na intermediární filamenta)
     - fibroblasty spolu s epiteliálními buňkami produkují složky bazální laminy
 }
 
@@ -678,6 +684,8 @@ Kromě zmíněných vrstev se v kůži nalézají též senzory a nervová zakon
     - rozdíl mezi bělošskou a černošskou kůží je v pH endozomálního systému (běloši jsou kyselejší)
 }
 
+◊todo{Lépe propracovat choroby spojené s melanocyty.}
+
 ◊ls[#:t "Melanocyty"]{
     - produkují melanin, kterým poté zbarvují okolní buňky
     - ochrana před UV
@@ -698,7 +706,7 @@ Porucha tvorby melaninu vede k albinismu. Tato porucha může být způsobena po
 
 ◊ls[#:t "Langerhansovy buňky"]{
     - derivované z kostní dřeně
-    - dendritická buňka nesoucí MHC třídy II
+    - dendritická buňka nesoucí MHC II
     - tvoří jednu vrstvičku rovnoměrně rozloženou pod kůží
     - po pohlcení cizorodých substancí čekají v uzlině na rozpoznání T-lymfocytem, který poté obstará imunitní reakci
 }
@@ -718,10 +726,10 @@ Porucha tvorby melaninu vede k albinismu. Tato porucha může být způsobena po
 ◊section{Patologie}
 
 ◊ls[#:t "Kartagenův syndrom (situs inversus)"]{
-    - první popsaný případ v roce 1688
-     - převrácená pravolevá symetrie vnitřních orgánů
+    - převrácená pravolevá symetrie vnitřních orgánů
     - 50% jedinců trpí chronickou bronchitidou a sterilitou
-        - způsobena mutací v molekulárním motoru zajišťujícím pohyb řasinek v řasinkovém epitelu
+    - první popsaný případ v roce 1688
+    - způsoben mutací v molekulárním motoru zajišťujícím pohyb řasinek v řasinkovém epitelu
 }
 
 ◊ls[#:t "Průjem"]{
@@ -764,37 +772,37 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 ◊ls{
     - řídké, ◊em{areorální}
         - spojuje tkáně mezi sebou
-        - vyplňuje prostory, zpevňuje epitely, obaluje lymfatické a krevní cévy
-        - ve žlázách, sliznicích, dermis
-        - kolagenní, elastická i retikulární vlákna
-        - hodně ECM
+        - obsahuje kolagenní, elastická i retikulární vlákna (obecně hodně ECM)
+        - vyplňuje prostory, zpevňuje epitely, obaluje lymfatické a krevní cévy, je ve žlázách, sliznicích, dermis
         - typy
             - tukové
             - elastické (okolo páteře)
             - retikulární (vytváří prostot pro "výrobní buňky")
     - husté
-        - převládají kolagenní vlákna
-        - velmi málo ECM
-        - neuspořádané
-            - svazky kolagenu bez určité orientace
-            - např. dermis (podkoží)
-        - uspořádané
-            - orientované podle stejnosměrných mechanických podnětů
-            - např. šlachy
+        - převládají kolagenní vlákna (obecně velmi málo ECM)
+        - typy
+            - neuspořádané
+                - svazky kolagenu bez určité orientace
+                - např. dermis (podkoží)
+            - uspořádané
+                - orientované podle stejnosměrných mechanických podnětů
+                - např. šlachy
 }
 
 ◊ls[#:t "Extracelulární matrix (ECM)"]{
-    - hlavní složkou kolagen různých typů
-    - epitel není vaskularizovaný, pod epitelem je pojivová tkáň
-        - velké množství buněk imunitního systému, především bazofilů
+    - hlavní složkou je kolagen různých typů
+    - epitel nebývá vaskularizovaný, ale pod epitelem je vaskularizovaná pojivová tkáň
+        - taková tkáň obsahuje velké množství buněk imunitního systému, především bazofilů
 }
 
 ◊ls[#:t "Retikulární pojivová tkáň"]{
     - houbovité uspořádání s volnými prostory uvnitř
-        - v místech, kde jsou třeba malé dutiny
+    - vyskytuje se v místech, kde jsou třeba malé dutiny
     - fibroblasty produkují ECM pomocí extracelulárních vláken
         - tvoří architektonickou kostru krvetvorných orgánů (kostní dřeň, uzliny, slezina) z retikulárních buněk
 }
+
+◊todo{Lépe formulovat to, co dělají fibroblasty.}
 
 ◊ls[#:t "Vaziva se speciálními vlastnostmi"]{
     - elastická vaziva
@@ -823,25 +831,33 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 ◊ls[#:t "Funkce tukové tkáně"]{
     - tvaruje povrch těla
     - tlumí nárazy
-    - tepelná izolace
+    - obstarává tepelnou izolaci, slouží k produkci tepla
     - vyplňuje prostory
-    - zásobárna energie
-    - produkce tepla
+    - slouží jako zásobárna energie
+}
+
+◊definitions{
+    ◊term["unilokulární tuková tkáň"]{
+        V každé tukové buňce je jen jedna centrálně uložená tuková kapénka.
+    }
+
+    ◊term["multilokulární tuková tkáň"]{
+        V každé tukové buňce je mnoho drobných tukových kapének.
+    }
 }
 
 ◊ls[#:t "Žlutá tuková tkáň"]{
-    - unilokulární --- v každé buňce jen jedna centrálně uložená tuková kapénka (pokud nehladovíme)
-        - nemá membránu
-        - je formována hydrofobními interakcemi
+    - unilokulární
+    - nemá membránu, je formována hydrofobními interakcemi
     - barva od bílé po tmavožlutou
-    - rozsah: všude mimo očních víček, penisu, skrota (šourku) a ušního boltce
     - je rozdělena vazivovými přepážkami do neúplných lalůčků
     - vzniká diferenciací z mezenchymálních buněk
-    - existují oblasti s aktivní inhibicí tvorby tukové tkáně
+    - rozsah: všude mimo očních víček, penisu, skrota (šourku) a ušního boltce
+        - existují oblasti s aktivní inhibicí tvorby tukové tkáně
 }
 
 ◊ls[#:t "Hnědá tuková tkáň"]{
-    - multilokulární --- mnoho drobných tukových kapének
+    - multilokulární
     - má mnoho mitochondrií, a tedy hodně cytochromu b, z čehož plyne její hnědé zbarvení
     - připomíná endokrinní žlázu
     - buňky jsou inervovány sympatikem
@@ -857,18 +873,18 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 ◊ls[#:t "Regulace množství tukové tkáně"]{
     - čím více tukové tkáně, tím více proteinu leptinu tělo produkuje
     - leptinový receptor je v hypokampu (centrální centrum hladu a sytosti)
-    - lidé jedí více, když je málo leptinu
+    - lidé jedí více, když mají málo leptinu
         - leptin je tedy negativní regulátor velikosti tukové tkáně
 }
 
 ◊ls[#:t "Nádory tukových tkání"]{
     - unilokulární adipocyty
-        - benigní tumory lipomy
+        - lipomy (benigní)
             - kuličky hypertrofované tukové tkáně
             - díky vazivovému obalu snadné odstranění
-        - maligní tumory liposarkomy
+        - liposarkomy (maligní)
     - multilokulární adipocyty
-        - hibernomy
+        - hibernomy (benigní)
             - hypertrofovaná multilokulární tuková tkáň
             - poruchy produkce tepla
 }
@@ -895,30 +911,33 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 }
 
 ◊ls[#:t "Složení"]{
-    - ECM
-    - glykosaminoglykany
+    - ECM (tedy hlavně kolagenní vlákna)
     - proteoglykany orientované na kolagenních a elastických vláknech
+    - glykosaminoglykany
     - chondrocyty
 }
 
-◊ls[#:t "Chondrocyty"]{
-    - buněčná složka chrupavky
-    - vznikají diferenciací z buněk na povrchu chrupavky
-    - tvoří a obalují EK, tím se dostávají dovnitř do chrupavky
-        - nalézají se ◊em{v lakunách} v tzv. isogenetických skupinkách
-    - odolávají nízkému parciálnímu tlaku kyslíku
-        - jsou často vystaveny nedostatku kyslíku
-}
-
-◊todo{Zjistit, co je EK.}
-
 ◊ls[#:t "Chondroblasty"]{
+     - vznikají diferenciací mezenchymálních kmenových buněk na povrchu chrupavky
+        - těmto buňkám se někdy také říká osteprogenitoriální buňky
     - jedny z mála buněk schopné přežít v jedinci i po smrti
     - fungují díky anaerobní glykolýze
     - jejich proliferace je ovlivňována růstovými faktory
         - ◊em{somatotropin} spouští produkci somatomedinu v játrech
         - nedostatek způsobuje metaplázii chrupavek
+    - tvoří a obalují se ECM, tím se dostávají dovnitř do chrupavky
+
 }
+
+◊ls[#:t "Chondrocyty"]{
+    - buněčná složka chrupavky
+    - většinou už ECM neprodukují, ale někdy ano
+    - nalézají se ◊em{v lakunách} v tzv. isogenetických skupinkách (skupinkách chondrocytů, které všechny vznikly z jediné osteprogenitoriální buňky)
+    - odolávají nízkému parciálnímu tlaku kyslíku
+        - jsou často vystaveny nedostatku kyslíku
+}
+
+◊todo{Zjistit, co je EK.}
 
 ◊ls[#:t "Typy chrupavek"]{
     - hyalinní
@@ -926,7 +945,7 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
         - kolagen (40% suché váhy, hlavně typu II), chondroitin-6-sulfát, keratan sulfát, chondronektin
         - modravě bílá a průsvitná
         - v zárodku vytváří dočasný skeleton, který je nahrazen kostní tkání
-        - naoř. artikulační plochy pohyblivých kloubů, nos, hrtan, trachea, bronchy, přední konce žeber
+        - např. artikulační plochy pohyblivých kloubů, nos, hrtan, trachea, bronchy, přední konce žeber
     - elastická
         - ohebná, roztažitelná
         - nažloutlá barva
@@ -956,18 +975,18 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 ◊section{Kost}
 
 ◊ls{
-    - nejodolnější vůči mechanickým stresům
-    - hlavní část skeletu dospělce
-    - specializovaná pojivová tkáň tvořená zvápenatělou mezibuněčnou hmotou
-        - kostní matrix + osteocyty + osteoblasty + osteoklasty
-    - odvápněná kost má tvar a ohebnost srovnatelnou se šlachou
+    - nejodolnější vůči mechanickým silám
+    - tvoří hlavní část skeletu dospělce
+    - je to specializovaná pojivová tkáň tvořená zvápenatělou mezibuněčnou hmotou
+        - kostní matrix ◊${+} buňky (osteoblasty, osteocyty, osteoklasty)
+        - odvápněná kost má tvar a ohebnost srovnatelnou se šlachou
 }
 
 
 ◊ls[#:t "Funkce"]{
-    - opora měkkým tkáním
+    - dělá oporu měkkým tkáním
     - chrání krvetvorné orgány, mozek, míchu
-    - zásobárna vápníku, fosfátu
+    - slouží jako zásobárna vápníku a fosfátu
 }
 
 ◊img["kost.png"]{Schematický obrázek kosti}
@@ -999,7 +1018,7 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 ◊ls[#:t "Typy kostní tkáně"]{
     - primární nezralá vláknitá kost, sekundární zralá lamelózní kost
     - kompaktní kost (diafýza), spongiózní kost (epifýza)
-    - krátké kosti jsu tvořeny spongiózním jádrem obklopeným kompaktní diafýzou
+    - krátké kosti jsou tvořeny spongiózním jádrem obklopeným kompaktní diafýzou
         - dutiny spongiózní kosti tvoří kostní dřeň
             - červená je krvetvorná
             - žlutá obsahuje tukové buňky
@@ -1019,34 +1038,28 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 ◊subsection{Kostní buňky}
 
 ◊ls[#:t "Osteoblasty"]{
-    - vznik z mezenchymálních buněk
+    - vznik z mezenchymálních kmenových buněk
     - po uhnízdění se mění v osteocyty
-    - tvoří organickou ECM
-    - provádí syntézu kolagenu I, proteoglykanů, glykoproteinů
-    - lokalizovány výhradně na povrchu kosti, těsně vedle sebe jako jednovrstevný epitel
+    - vytvářejí organickou ECM
+        - provádí syntézu kolagenu I, proteoglykanů, glykoproteinů
+    - jsou lokalizovány výhradně na povrchu kosti, těsně vedle sebe jako jednovrstevný epitel
     - kontakt s ostatními buňkami skrz výběžky
-        - poté jsou zality v ECM a změní se v osteocyt
-    - do nově založené mineralizované kostní matrix se váže tetracyklin
-        - měření výstavbové aktivity kosti
-        - testovanému jedinci se podává 5 dní, vznikají výbrusové preparáty
 }
 
-◊todo{Zjistit, co se podává testovánemu jedinci.}
+Výstavbovou aktivitu kostní matrix můžeme měřit tetracyklinem, který se váže do kostní matrix, u níž je právě v průběhu mineralizace. Druhá dávka tetracyklinu se podá tři týdny po první a měří se rozdíl mezi pozorováními.
 
 ◊ls[#:t "Osteocyty"]{
-    - vznik z osteoblastů
-        - uzavřeny v kosterní hmotě
+    - vznikají z osteoblastů, poté co jsou uzavřeny v kosterní hmotě
     - zaniknou, když převáží resorpce matrix
-    - jednotlivě uloženy v lakunách mezi lamelami matrix
-    - výběžky jsou propojeny gap junctions
+    - spočívají v lakunách mezi lamelami matrix
+    - jejich výběžky jsou mezi buňkami propojeny gap junctions
     - mají tvar broušeného diamantu
-    - zality v ECM, následně mineralizují
-        - jsou odpovědné za mineralizaci kostí
+    - jsou odpovědné za mineralizaci kostí
 }
 
 ◊ls[#:t "Osteoklasty"]{
-    - vznik fúzí monocytů nebo makrofágů
-    - obrovské mnohojaderné buňky (i přes 100◊${\mu}m) s 5--50 jádry
+    - vznikají fúzí monocytů nebo makrofágů
+    - obrovské mnohojaderné buňky (i přes ◊u{100 \mu m}) s 5--50 jádry
     - jsou bohatě větvené, pohyblivé
     - resorbují kostní hmotu
     - podílejí se na přestavbě kosti
@@ -1056,17 +1069,19 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
 
 ◊subsection{Osifikace}
 
+◊todo{Propracovat osifikaci více do detailu, opravit vývoj kostních buněk.}
+
 ◊ls[#:t "Osifikace"]{
     - vývoj kostních buněk: mezenchymální buňka -> chondroblast -> chondrocyt
     - dělení
         - intramembranózní
-            - ve vazivu, kost vzniká přeměnou vaziva
+            - probíhá ve vazivu, kost vzniká přeměnou vaziva
                 - probíhá přímá mineralizace matrix produkované osteoblasty
-            - ploché, krátké a dlouhé kosti do šířky
+            - růst plochých a krátkých kostí, zvětšování dlouhých kostí do šířky, formování lebky, hojení zlomenin
         - endochondrální osifikace
-            - vznik dlouhých a krátkých kosti
-            - kost vzniká náhradou chupavky
+            - kost vzniká náhradou chrupavky
                 - probíhá ukládání kostní matrix a anorganických složek na předem vytvořenou matrix chrupavky
+            - vznik dlouhých a krátkých kosti
      - vhodné prostředí zajišťují mezenchymální buňky a fibroblasty
     - kost může po splnění určitých podmínek vzniknout kdekoli v těle
     - chrupavka může také osifikovat (speciální případ metaplazie)
@@ -1076,33 +1091,33 @@ Existují i určité poruchy mechanických vlastnosí kůže, které jsou způso
         # chrupavka je transformována v kost
 }
 
-Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu tedy dochází k odbourávání kosti, k osteoporóze a k následnému uvolnění ◊chem{Ca^{2+}} do krve. Naopak kalcitonin resorpci matrix inhibuje.
-
 ◊ls[#:t "Průběh intramembranózní osifikace"]{
-    # nahromadění mezenchymálních buněk
-    # vznik primárního osifikačního centra
-    # diferenciace v osteoblasty
-    # tvorba kostní matrix
-    # uzavírání části vaziva
-    # radiální růst center, a jejich finální splynutí
+    # nahromadění mezenchymálních kmenových buněk (MSC)
+    # vznik nidu, skupiny MSC
+    # diferenciace MSC v osteoblasty
+    # osteoblasty tvoří kostní matrix (vylučují mimo jiné osteoidy)
+    # kostní matrix je mineralizována
+    # radiální růst nidů vedoucí k jejich splynutí
 }
 
 ◊ls[#:t "Průběh endochondrální osifikace"]{
-    # destrukce chondrocytu
-    # osteoprogenitorové buňky se přesouvají do lakun
-    # tyto buňky poté vrůstají do periostu
-    # tvorba kostní matrix
+    # vznikne periosteum, ze kterého se časem začnou uvolňovat osteoblasty
+    # osteoblasty začnou uvolňovat osteoid, který se ukládá kolem existující chrupavky
+    # chondrocyty se zvětší, žačnou produkovat alkalin fosfatázu, která přispěje k mineralizaci kostní matrix
+    # osteoprogenitorové buňky začnou na matrix ukládat další osteoid
 }
+
+Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu tedy dochází k odbourávání kosti, k osteoporóze a k následnému uvolnění ◊chem{Ca^{2+}} do krve. Naopak kalcitonin resorpci matrix inhibuje.
 
 ◊subsection{Patologie}
 
 ◊ls[#:t "Zlomeniny"]{
     - kost praskne
-    - mutace ovlivňující poměr odbourávání a budování kostní hmoty
-        - důsledkem např. osteopetróza, osteoporóza
+    - existují mutace ovlivňující poměr odbourávání a budování kostní hmoty
+        - důsledkem je např. osteopetróza, osteoporóza
     - průběh zloměniny
         # po zlomení se aktivují osteoblasty, namnoží se
-        # osteblasty udělají houbovitou kost
+        # osteblasty vytvoří houbovitou kost
         # houbovitá kost je postupně přestavena v kompaktní kost
     - krátké kosti se hojí špatně, zatímco dlouhé jsou na mechanické změny zvyklé
 }
@@ -1115,15 +1130,18 @@ Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu t
     - osteoporóza
         - rozpad kostní hmoty (přílišná aktivita osteoklastů)
         - opakem je osteopetróza
-    - hypofyzární nanismus
-        - nedostatek růstového hormonu
-        - opakem je gigantismus
+    - gigantismus
+        - přílišný růst kostí, člověk je nadprůměrně veliký
+        - příčinou je přebytek růstového hormonu
+        - opakem je hypofyzární nanismus
     - akromegalie
-        - nadbytek růstového hormonu v dospělosti, tloustnutí kostí
+        - většinou zvětšení čela, nosu, lícních kostí, spojená s bolestí kloubů
+        - příčinou je nadbytek růstového hormonu v dospělosti
     - Pagetova choroba
-        - ovlivnění metabolismu a diferenciace osteoklastů
-        - hrubé kosti, neodbourávají se
-        - léčitelné transplantací kostní dřeně
+        - kosti jsou deformované
+        - příčinou je přílišné odbourávání kostí spojené s rychlým a neorganizovaným růstem nové kostní tkáně
+            - problém v metabolismu a diferenciaci osteoklastů
+        - je léčitelná transplantací kostní dřeně
 }
 
 ◊section{Krev}
@@ -1143,6 +1161,8 @@ Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu t
         - granulocyty a makrofágy
 }
 
+◊img["vyvoj_krevinch_bunek.png"]{Schéma zobrazující vývoj krevních buněk ze společné kmenové buňky}
+
 ◊definitions{
     ◊term["hematokrit"]{
         Celkový objem pevné složky krve.
@@ -1158,23 +1178,19 @@ Počet osteoklastů zvyšuje parathormon. Při velkém množství parathormonu t
     - krevní buňky: erytrocyty, leukocyty, trombocyty
         - relativně mobilní, schopny opustit krevní řečiště
     - červené krvinky (erytrocyty)
-        - 45% objemu (◊${5 \cdot 10^12} na litr)
+        - 45% objemu (◊u{5e12} na litr)
     - bílé krvinky (leukocyty)
-        - 1% objemu (◊${4} až ◊${6 \cdot 10^9} na litr)
-        - granulocyty (◊${5 \cdot 10^9} na litr)
-        - agranulocyty (◊${7 \cdot 10^8} na litr)
+        - 1% objemu (◊u{4} až ◊u{6e9} na litr)
+        - granulocyty (◊u{5e9} na litr)
+        - agranulocyty (◊u{7e8} na litr)
     - krevní destičky (trombocyty)
-        - ◊${150} až ◊${300 \cdot 10^9} na litr
+        - ◊u{150} až ◊u{300e9} na litr
 }
-
-Na následujícím obrázku lze vidět, z jakých buněk se vyvíjejí jednotlivé krevní buňky. Jejich vlastnosti jsou popsány v následující sekci.
-
-◊img["vyvoj_krevinch_bunek.png"]{Schéma zobrazující vývoj krevních buněk ze společné kmenové buňky}
 
 ◊ls[#:t "Sedimentace"]{
     - její rychlost určována diagnostickou hematologickou metodou
     - krev se nasaje do trubice, nechá se sedimentovat
-        - nejrychleji klesají erytrocyty a pak leukocyty
+        - nejrychleji klesají erytrocyty, pak leukocyty
         - nad nimi zůstane plazma
     - vysoká sedimentace
         - když je v těle zánět, v plazmě je hodně imunoglobulinů
@@ -1193,19 +1209,18 @@ Rychlejší alternativou sedimentace je centrifugace. K dalším metodám zkoum�
 ◊img["cytometrie.png"]{Schéma průtokové cytometrie}
 ◊em{By Kierano - Own work, CC BY 3.0, ◊link["https://commons.wikimedia.org/w/index.php?curid=22102570"]{link}}
 
-Při cytometrii protékají měřičem buňky jedna po jedné. Přerušují u toho laserový paprsek, který je poté pomocí soustavy zrcadel a detektorů analyzován --- dá se zjistit počet buněk, z vlastností paprsku i jejich druh a obsah. Často se buňky fluorescenčně barví.
-
+Při cytometrii protékají měřičem buňky jedna po jedné. Přerušují u toho laserový paprsek, který je poté pomocí soustavy zrcadel a detektorů analyzován --- dá se zjistit počet buněk, z vlastností paprsku pak i jejich druh a obsah. Často se buňky fluorescenčně barví.
 
 ◊subsection{Erytrocyty}
 
 ◊ls{
     - terminálně diferencované bezjaderné buňky
-    - přenos plynů (u savců)
+    - zajišťují přenos plynů (u savců)
     - bikonkávní tvar (maximální povrch vůči objemu)
-        - ptáci, obojživelníci mají oválný
-    - průměr 5 mikrometrů
+        - ptáci a obojživelníci mají oválný
+    - průměr ◊u{5 \mu m}
         - kapiláry mají jen tak velký průměr, jak velké je jádro erytrocytů, které limituje jejich velikost
-    - žijí cca 120 dní, poté ve slezině či kostní dřeni odstaněny makrofágy
+    - žijí cca 120 dní, poté jsou ve slezině či kostní dřeni odstaněny makrofágy
     - fetální hemoglobin má vyšší afinitu ke kysíku než dospělý
         - váže kyslík za nižšího tlaku (který je v placentě)
 }
@@ -1221,19 +1236,19 @@ Při cytometrii protékají měřičem buňky jedna po jedné. Přerušují u to
 }
 
 ◊ls[#:t "Vznik"]{
-    - jako všechna pojiva pochází z mezenchymu
+    - jako všechna pojiva pochází z mezenchymálních kmenových buněk
     - odvozeny od kmenových buněk krevní řady (erytroidní linie)
-        - ty mají extraembryonální původ (v prenatálním vývoji),vznikají ve žloutkovém váčku (trofoblastu)
-    - vznik v kostní dřeni (◊${5 \cdot 10^11} za den vzniká a zaniká)
-     - při změně erytroblastu v erytrocyt ztrácí erytroblast RNA, jeho jádro kondenzuje, je vyloučeno a odklizeno makrofágy (ztrácí všechny organely)
+        - ty mají extraembryonální původ (v prenatálním vývoji), vznikají ve žloutkovém váčku (trofoblastu)
+    - vznik v kostní dřeni (◊u{5e11} za den vzniká a zaniká)
+    - při změně erytroblastu v erytrocyt ztrácí erytroblast RNA, jeho jádro kondenzuje, je vyloučeno a odklizeno makrofágy (ztrácí všechny organely)
 }
 
 ◊ls[#:t "Anémie (chudokrevnost)"]{
     - hypochromní anémie
         - erytrocytů je v krvi dost, je v nich ale nedostatek hemoglobinu
-        - špatně nesou kyslík a barvu
+        - v důsledku toho špatně nesou kyslík
     - srpkovitá anémie
-        - způsobeno bodovou mutací hydrofilní kyseliny glutamové (např. kodon GAA) na hydrofobní valin (např. kodon GUA)
+        - způsobena bodovou mutací hydrofilní kyseliny glutamové (např. kodon GAA) na hydrofobní valin (např. kodon GUA)
         - v neokysličeném stavu se hemoglobin shlukuje (polymerizuje, vytváří vláknité útvary a agregáty) a mění tak tvar krvinek
         - krvinky mají kratší životnost, jsou méně flexibilní - blokují vlásečnice, což vede k ucpání cév
 }
@@ -1242,13 +1257,17 @@ Při cytometrii protékají měřičem buňky jedna po jedné. Přerušují u to
 
 Leukocyty se dělí na granulocyty a agranulocyty.
 
+◊box["Funkce imunitní odpovědi"]{
+    ◊img["imunita.jpg"]{Flowchart zobrazující postup jednotlivých druhů imunitních odpovědí}
+}
+
 ◊subsubsection{Granulocyty}
 
 ◊ls{
     - terminálně diferenciované nedělící se buňky
     - polymorfonukleární leukocyty (velmi proměnlivé, polymorfní jádro)
     - obsahují granula, což jsou obarvitelné částice
-    - 12--15 mikrometrů
+    - ◊u{12} až ◊u{15 \mu m}
     - schopné pohybu
     - neutrofily
         - fagocytují, zabíjejí a tráví bakterie
@@ -1258,7 +1277,7 @@ Leukocyty se dělí na granulocyty a agranulocyty.
         - barví se zásaditými barvivy (do tmavě modra)
     - eozinofily
         - likvidují mnohobuněčné parazity
-        - barví se kyselými barvivy (hematoxylin-eosin, do červena)
+        - barví se kyselými barvivy (do červena)
 }
 
 ◊ls[#:t "Neutrofily"]{
@@ -1278,8 +1297,8 @@ Leukocyty se dělí na granulocyty a agranulocyty.
 ◊ls[#:t "Neutrofilní aktivita"]{
     - receptory neutrofilů jsou schopny rozeznat např. bakterie, které poté fagocytují a ve fagozomech zlikvidují
     - jejich fagocytická aktivita může být dále stimulována
-        - nízkoafinní Fc receptory na neutrofilech
-        - označení bakterie protilátkami, tzv. ◊em{opsonizace}
+        - nízkoafinními Fc receptory na neutrofilech
+        - označením bakterie protilátkami, tzv. ◊em{opsonizací}
     - látky pro rozklad bakterií
         - superoxidové anionty
         - peroxid vodíku
@@ -1298,13 +1317,12 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
 ◊ls[#:t "Bazofily"]{
     - tvoří 1% krevních leukocytů
     - na povrchu jsou receptory pro protilátky (imunoglobuliny E, IgE)
-    - při zvýšené hladině bazofilů v krvi může pravděpodobněji dojít k alergické reakci
+    - při zvýšené hladině bazofilů v krvi se zvyšuje pravděpodobnost alergické reakce
     - jsou schopny degranulace
         - granula splynou s membránou a vylijí se do okolního prostředí
         - ničí cizí struktury
-    - regulace exocytózy
-        - regulovaná vazbou antigenu na IgE, který je navázaný na IgE receptorech
-            - vysokoafinní IgE receptor váže IgE i pokud není navázaný na antigen
+    - exocytóza je regulovaná vazbou antigenu na IgE, který je navázaný na IgE receptorech
+        - vysokoafinní IgE receptor váže IgE i pokud není navázaný na antigen ( z čehož, hádám, plynou problémy s alergickou reakcí)
     - pokud se v těle vyskytne multivalentní antigen, dojde k agregaci receptorů
         # aktivace signalizační kaskády
         # degranulace granulí
@@ -1313,8 +1331,8 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
 
 ◊ls[#:t "Eozinofily"]{
     - 2-4% leukocytů
-    - mají dvojlaločná jádra s granulami (cca 200 na buňku)
-    - granula
+    - mají dvojlaločná jádra
+    - granula (cca 200 na buňku)
         - hlavní složku tvoří MBP (major basic protein)
             - má antiparazitickou funkci
             - aktivuje neutrofily, stimuluje žírné buňky
@@ -1325,24 +1343,24 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
 
 ◊ls[#:t "Eozinofilie"]{
     - ukazuje na  alergické reakce a parazitární infekce (např. helmintózy)
-    - při napadení organismu patogenem se jejich počet drasticky zvedne
-    - jejich počet se dá snížit kortikoidy
+    - při napadení organismu patogenem se počet eozinofilů drasticky zvedne
+        - jejich počet se dá snížit kortikoidy
 }
 
 ◊subsubsection{Agranulocyty}
 
 ◊ls{
     - nejsou obarvitelné
-    - monocyty (◊${4 \cdot 10^8} na litr)
-        - diferencují se v makrofágy a dendritické buňky
-        - magrofágy
-            - fagocytují parazity a vlastní poškozené a apoptotické buňky
-            - produkují oxidační produkty
-            - některé se mění na dendritické buňky
-        - dendritické buňky
-            - fagocytují na periferii, kde migrují do uzlin a prezentují antigeny prostřednictvím MHC II. třídy
-        - osteoklasty
-            - buňky odbourá­va­jící kost­ní tkáň
+    - monocyty (◊u{4e8} na litr)
+        - diferenciují se v makrofágy, dendritické buňky a osteoklasty
+            - makrofágy
+                - fagocytují parazity a vlastní poškozené a apoptotické buňky
+                - produkují oxidační produkty
+                - některé se mění na dendritické buňky
+            - dendritické buňky
+                - fagocytují na periferii, kde migrují do uzlin a prezentují antigeny prostřednictvím MHC II
+            - osteoklasty
+                - odbourá­va­jí kost­ní tkáň
     - lymfocyty (◊${3 \cdot 10^8} na litr)
 }
 
@@ -1351,7 +1369,7 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
         Soubor všech makrofágů v různých tkáních.
     }
 
-    ◊term["MHC II. třídy"]{
+    ◊term["MHC II"]{
         Krátké úseky glykoproteinů (exogenní peptidy sic), které jsou charakteristické pro pohlcenou látku.
     }
 }
@@ -1364,10 +1382,10 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
     - před vstupem do tkáně osm hodin kolují v krvi
     - prakticky nefunkční, v krvi mají jen funkci "zásobárny makrofágů"
     - diferenciují na makrofágy a dendritické buňky
+        - na makrofágy diferenciují po vstupu do tkáně kapilární stěnou
 }
 
 ◊ls[#:t "Makrofágy"]{
-    - diferenciace po vstupu do tkáně kapilární stěnou
     - provádí endocytózu tkáňového debrisu včetně apoptotických tělísek
     - na povrchu nesou MHC II. třídy
         - toto MHC kontrolují Th-lymfocyty, které případně spouštějí imunologický poplach, čímž upozorní B-lymfocyty
@@ -1377,40 +1395,38 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
 ◊ls[#:t "Dendritické buňky"]{
     - aktivita
         # endocytují cizorodou látku
-        # přesunou se do mízní uzliny a naštěpí endocytovanou látku
-        # prezentují ji na povrchu
+        # přesunou se do mízní uzliny
+        # naštěpí endocytovanou látku a prezentují ji na povrchu
         # Th-lymfocyt ji potenciálně rozpozná, aktivuje se a vyvolá imunitní reakci
     - in vitro připravíme izolací z krve a použitím interleukinu-4a GM-CSF (granulocytární makrofágový colony stimulating factor)
 }
 
 ◊ls[#:t "Osteoklasty"]{
     - kostní buňky odbourávající kostní tkáň
-    - vznik splýváním monocytů -> mnohojaderné
+    - vznikají splynutím monocytů => jsou mnohojaderné
     - funkce např. prořezávání zubů
         - proti špičce zubu se nachází speciální populace osteoklastů
         - je třeba odbourat kost čelisti, aby se mohl zub prořezat ven
-     - poruchy v myeloidní linii (především ve funkci monocytů a jejich diferenciačních produktů) mohou mít velký vliv na remodelaci kostní hmoty
-        - Pagetova choroba
-            - nadměrné odbourávání kosti a následné tovoření kosti neplnohodnotné
+    - poruchy v myeloidní linii (především ve funkci monocytů a jejich diferenciačních produktů) mohou mít velký vliv na remodelaci kostní hmoty
+        - Pagetova choroba: nadměrné odbourávání kosti a následné tvoření kosti neplnohodnotné
 }
 
 ◊ls[#:t "Lymfocyty"]{
     - tvoří 30% leukocytů
-    - různorodá velikost (5 mikrometrů -- 15 mikrometrů)
+    - různorodá velikost (◊u{5} až ◊u{15 \mu m})
         - rozdíl v množství cytoplazmy (většina je zcela vyplněna jádrem)
     - schopny aktivního pohybu (z krve do tkání --- do místa zánětu nebo do mízní uzliny)
     - schopny vytvářet mnohočetná komplikovaná mezibuněčná spojení
         - interakce vícero párů membránových receptorů a jejich ligandů
-        - regulace diferenciace (případně následné proliferace) a efektorové funkce (např. zabití cílové buňky cytotoxickým T-lymfocytem)
+        - regulace diferenciace (případně následné proliferace) a efektorové funkce (např. zabití cílové buňky cytotoxickým Tc-lymfocytem)
 }
 
 ◊ls[#:t "T-lymfocyty"]{
+    - vznikají v kostní dřeni, dozrávají v thymu (brzlíku)
     - tvoří 90% leukocytů
     - dělení podle povrchových koreceptorů pro MHC glykoproteiny
-        - CD4 (interakce s MHC II)
-            - pomocné a supresorové
-        - CD8 (interakce s MHC I)
-            - cytotoxické
+        - CD4 (interakce s MHC II): pomocné (Th) a supresorové
+        - CD8 (interakce s MHC I): cytotoxické (Tc)
     - dělení podle genů, které byly přestavěny ve funkční T-receptor
         - rekombinací v nich vznikají nové geny a jsou syntetizovány nové proteiny
             - přeskupování genových segmentů je prováděno rekombinázami
@@ -1427,7 +1443,7 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
 ◊ls[#:t "Chyby při vzniku T-lymfocytů"]{
     - popletení substrátu; dojde ke spojení ramen dvou chromozomů, které spolu fyzicky vůbec nesouvisí
     - např. filadelfský chomozom
-        - na něm je fúzní chimérní gen (propojení částí genů Cbl a Abl)
+        - je na něm fúzní chimérní gen (propojení částí genů Cbl a Abl)
         - vznik nedeaktivovatelné kinázy schopné transformovat postiženou buňku v buňku nádorovou
 }
 
@@ -1443,21 +1459,21 @@ Zvýšené množství neutrofilů v krvi (neutrofilie) tedy může značit infek
 
 ◊ls[#:t "Efektorové buňky"]{
     - kategorie buněk tvořená zčásti buňkami ze skupiny T-lymfocytů a zčásti buňkami B-lymfocytů
-        - z T-lymfocytů jsou to pomocné (Th) a cytotoxické buňky (Tc)
+        - z T-lymfocytů jsou to pomocné (Th) a cytotoxické (Tc) buňky
         - z B-lymfocytů jsou to plazmatické buňky, neboli buňky produkující velké množství protilátek
     - jsou diferenciovány a aktivovány pro výkon své funkce
 }
 
 ◊ls[#:t "NK buňky"]{
     - tvoří 5% leukocytů
-    - ničí buňky bez MHC I (rakovinotvorné...)
-        - nespecifická imunita
+    - ničí buňky bez MHC I (rakovinotvorné...), jsou součástí nespecifická imunita
     - proděraví buňce buněčnou stěnu perforinem
-    - při špatné funkci - chronický únavový syndrom
+    - při špatné funkci chronický únavový syndrom
 }
-zánět
 
-    - zvýšení průtoku v místtě rány
+
+◊ls[#:t "Zánět"]{
+    - zvýšení průtoku v místě rány
     - makrofágy, mastocyty a basofily vypouští histamin
         - zvýšení propustnosti cév (aby se bílé krvinky odstaly lépe na místo zánětu)
         - prosak krevní plazmy
@@ -1466,11 +1482,10 @@ zánět
         - lákají další bílé krvinky
         - stimulují basofily k vylití hydrolytických enzymů
     - poškozené buňky vylučují prostaglandiny
-        - označují buňku pro Tc-lymfocyt
+        - označují buňku pro Tc-lymfocyt, který v ní po nalezení spustí buněčnou smrt
+}
 
-
-
-◊subsection{Krevnní destičky}
+◊subsection{Krevní destičky}
 
 ◊ls{
     - nejsou to buňky, ale bezjaderné diskovité útvary
@@ -1478,7 +1493,7 @@ zánět
     - vznikají fragmentací polyploidních megakaryocytů sídlících v kostní dřeni
         - megakaryocyt vysílá výběžky přes stěny do kapilár a odštěpuje destičky přímo do krve
             - jeho rozpad je programovanou buněčnou smrtí, zbytky poté uklidí makrofágy
-        - za den až 100 000 z jednoho karyocytu
+        - za den jich z jednoho karyocytu vznikne až 100 000
     - v krvi přežijí 10 dní
     - neopouští krevní řečiště
 }
@@ -1513,8 +1528,8 @@ zánět
             - zvýšené množství granulocytů a monocytů
         - lymfoblastické zvýšení
             - zvýšené množství lymfocytů
-        - obě mohou být akutní nebo chronické
-    - leukocyty nedozrávají a jsou tak nefunkční
+        - obě mohou být akutní nebo chronická
+    - leukocyty nedozrávají, jsou nefunkční
     - rizikové faktory
         - kouření
         - chemikálie (benzen)
@@ -1549,14 +1564,13 @@ Lymfatické i lymfoidní tkáně jsou všude po těle, zejména v místech, kde 
     }
 }
 
-◊img["uzlina.png"]{Schematický obrázek mízní uzliny}
-◊em{By KC Panchal - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=4360228}
+◊img["uzlina.jpg"]{Schematický obrázek mízní uzliny}
 
 ◊ls[#:t "Lokalizace lymfatických cest"]{
-    - pod epitely (s epitely asociovaná lymfoidní tkáň)
+    - pod epitely (lymfoidní tkáň asociovaná s epitely)
         - místa proliferace a diferenciace lymfocytů
         - MALT, GALT, BALT
-    - lymfatické orgány
+    - v lymfatických orgánech
         - anatomicky diferenciovaná množina lymfoidní tkáně
         - složeny pouze z lymfoidní tkáně
         - dělení
@@ -1566,9 +1580,8 @@ Lymfatické i lymfoidní tkáně jsou všude po těle, zejména v místech, kde 
                 - kostní dřeň, thymus (brzlík)
             - sekundární
                 - napojeny na lymfatický i oběhový systém
-                - zajišťují efektivní setkávání buněk imunitního systému
-                - kompartmentace efektivního imunitního dozoru
-                - slezina, mízní uzliny
+                - zajišťují efektivní setkávání buněk imunitního systému a efektivní kompartmentaci imunitního dozoru
+                - slezina, mízní uzliny (schéma mízní uzliny viz obrázek výše)
                     - stromální buňky  jsou velmi důležité
                     - tvoří "lešení" pro hematopoetické buňky
                     - vytváří vhodné prostředí pro setkání lymfocytů s antigeny
@@ -1577,18 +1590,17 @@ Lymfatické i lymfoidní tkáně jsou všude po těle, zejména v místech, kde 
 
 ◊definitions{
     ◊term["totipotentní buňka"]{
-        Buňka schopná vytvořit jakýkoli druh buňky, ergo celý organismus. Takovými buňami jsou zygoty a dělivé meristémy.
+        Někdy též ◊em{omnipotentní} buňka --- buňka schopná vytvořit jakýkoli jiný druh buňky, ergo celý organismus. Takovými buňami jsou zygoty a dělivé meristémy.
     }
 
     ◊term["multipotentní buňka"]{
-         Buňka schopná diferenciace do mnoha typů buněk, pouze však v rámci jedné tkáně. To jsou kmenové buňky.
+         Buňka schopná diferenciace do mnoha typů buněk, pouze však v rámci jedné tkáně. Příkladem mohou být kmenové buňky.
     }
 }
 
 ◊ls[#:t "Kostní dřeň"]{
     - veliký orgán
-    - sídlo hematopoézy
-    - dochází tu k proliferaci buněk všech linií
+    - sídlo hematopoézy, dochází zde k proliferaci buněk obou hematopoetických linií (lymfoidní i myeloidní)
     - dělení podle barvy
         - červená kostní dřeň
             - hematopoetická
@@ -1631,6 +1643,8 @@ Hematopoéza se dá jednoduše sledovat in vitro. Nejprve se provede výplach z 
     - čtyři typy svalových buněk: kosterní svaly, srdeční svaly, hladké svaly, myoepiteliální buňky
 }
 
+◊todo{Doplnit a upravit celou sekci.}
+
 ◊section{Kosterní svaly}
 
 ◊ls{
@@ -1652,14 +1666,16 @@ Svaly vznikají z myoblastů, které jsou určeny expresí genů z rodin MyoD 
         - z toho plyne ztížená regenerace svalu
 }
 
+◊img["sval.jpg"]{Schematický obrázek svalových vláken}
+
 ◊ls[#:t "Stavba"]{
     - některé kosterní svalové buňky jsou velmi velké, je potřeba vícejadernost
     - často splyne více myocytárních buněk a vznikne ◊em{syncytium}
-    - jsou 3cm dlouhé a 100◊${\mu}m v průměru
+    - jsou ◊u{3cm} dlouhé a mají ◊u{100 \mu m} v průměru
     - tvoří svalová vlákna
     - obaly
-        - endomysium: každé svalové vlákno je obklopené jemnou vrstvou vaziva
-        - perimysium: vazivové pochvy obalující svazky svalových vláken
+        - endomysium: jemná vrstva vaziva obalující každé svalové vlákno
+        - perimysium: vazivová pochva obalující svazky (◊${=} snopce, fascia) svalových vláken
         - epimysium: obal celého svalu
     - velice důležitá je inervace svalu
         - mechanická odolnost nervu je zajištěna mezibuněčnaou hmotou
@@ -1667,6 +1683,8 @@ Svaly vznikají z myoblastů, které jsou určeny expresí genů z rodin MyoD 
     - příčné svaly interagují s pojivovou tkání, musí tedy být ukotveny na kosti
         - k tomu slouží šlachy: struktury s orientovanými kolagenními vlákny, které jsou syntetizovány fibroblasty
 }
+
+◊img["sarkomera.jpg"]{Detailní schéma stavby sarkomery}
 
 ◊definitions{
     ◊term["svalové vřeténko"]{
@@ -1676,28 +1694,32 @@ Svaly vznikají z myoblastů, které jsou určeny expresí genů z rodin MyoD 
 
 ◊ls[#:t "Svalová vřeténka"]{
     - někdy probíhá specializace do mnohobuněčných syncytiálních útvarů se senzorickou funkcí místo mechanické, vznikají deriváty svalu, ◊em{svalová vřeténka}
-    - mají intimní propojení senzorických nervových zakončení s něčím svalového původu
-    - deformace těchto svalků se přenáší do mozku, který tím získává zásadní informace o "zapnutí" našich svalů
+    - jsou zde intimní propojení senzorických nervových zakončení s něčím svalového původu
+    - signál o deformaci těchto svalů se přenáší do mozku, který tím získává zásadní informace o "zapnutí" našich svalů
         - pokud tato signalizace nefunguje, mozek nedokáže synchronizovat naše pohyby
 }
 
 ◊ls[#:t "Svalové kmenové buňky"]{
-    - i v diferencovaných příčně pruhovaných svalech máme kmenové buňky pro příčně pruhované svaly, tzv. ◊em{satelitní buňky}
+    - i v diferenciovaných příčně pruhovaných svalech máme kmenové buňky pro příčně pruhované svaly, tzv. ◊em{satelitní buňky}
     - jsou pod pojivem na povrchu svalu, je jich málo, mají omezenou činnost
     - aktivují MyoD
 }
 
-- depolarizace membrány díky aktivitě Na/K ATPázy
-- ve svalové buňce musí fingovat vápenaté pumpy => aktivní transport Ca2+ do ER - troponin-tropomyozinový komplex brání myozinu pohybovat se po aktinu
-- po navázání komplexu na Ca2+ změní konformaci => myozinové hlavy můžou běžet po aktinu - pro mechanické vlastnosti důležité pospojování struktur => fungování jako 1 mechanická jednotka
-- proužkování svalu
-= linie, na které se napojuje aktinový cytoskelet v hexagonálním uspořádání
-- ve všech volných dírách mezi aktinovými hexagony hexagonální myozinové hlavice - klíčový protein aktinin
-30
-- vyrůstá ze Z-disku jako krystalizační jádro = místo s pevným připojením aktinu - uvnitř buňky v jednom svalovém vlákně vytváří sarkomery několik soustav vedle sebe
-- propojení subvláken díky intermediálním filamentům (molekuly desminu)
+◊ls[#:t "Svalová aktivita"]{
+    - depolarizace membrány díky aktivitě Na/K ATPázy
+    - ve svalové buňce musí fungovat vápenaté pumpy => aktivní transport Ca2+ do ER - troponin-tropomyozinový komplex brání myozinu pohybovat se po aktinu
+    - po navázání komplexu na Ca2+ změní konformaci => myozinové hlavy můžou běžet po aktinu - pro mechanické vlastnosti důležité pospojování struktur => fungování jako 1 mechanická jednotka
+    - proužkování svalu
+    = linie, na které se napojuje aktinový cytoskelet v hexagonálním uspořádání
+    - ve všech volných dírách mezi aktinovými hexagony hexagonální myozinové hlavice - klíčový protein aktinin
+    30
+    - vyrůstá ze Z-disku jako krystalizační jádro = místo s pevným připojením aktinu - uvnitř buňky v jednom svalovém vlákně vytváří sarkomery několik soustav vedle sebe
+    - propojení subvláken díky intermediálním filamentům (molekuly desminu)
+}
 
 ◊subsection{Svalové proteiny}
+
+◊todo{Detailněji popsat mechanismus práce svalu.}
 
 ◊ls[#:t "Myosin"]{
     - jediný protein tlustých vláken (myofibril)
@@ -1726,8 +1748,7 @@ Svaly vznikají z myoblastů, které jsou určeny expresí genů z rodin MyoD 
 }
 
 ◊ls[#:t "Kreatinkináza"]{
-    - katalyzuje přenos fosfátu z ATP na kreatin
-        - kreatin - zásobuje svaly velmi rychlou energií
+    - katalyzuje přenos fosfátu z ATP na kreatin, který poté zásobuje svaly velmi rychlou energií
     - hmotnost 86 000Da
     - dvě podjednotky, které mohou být dvojího typu (M = muscle, B = brain)
         -> 3 isoenzymy
@@ -1767,6 +1788,8 @@ Svaly vznikají z myoblastů, které jsou určeny expresí genů z rodin MyoD 
 
 ◊subsection{Inervace}
 
+◊em{Viz také ◊link["#Schop­nost re­gen­er­ace"]{schopnost regenerace axonů}.}
+
 ◊ls[#:t "Perimysium"]{
     # větvení axonů
     # rozšířená zakončení na povrchu svalových buněk
@@ -1778,9 +1801,8 @@ Svaly vznikají z myoblastů, které jsou určeny expresí genů z rodin MyoD 
     # po vylití váčků z nervového zakončení v synaptické štěrbině se váže na acetylcholinový receptor
     # depolarizace membrány svalové buňky
     # šíří se dovnitř skrz systém příčných T-tubulů
-    # signál doběhne dovnitř
-    # propojení membrány T-tubulu a membrány ER
-        - signál přenesen na sarkoplazmatické retikulum (SR)
+    # signál je přenesen na sarkoplazmatické retikulum (SR)
+        - membrána T-tubulu je propojena s membránou SR
     # uvolnění ◊chem{Ca^{2+}} z SR do cytoplasmy
     # kontrakce svalu
 }
@@ -1790,16 +1812,16 @@ Svaly jsou příkladem excitatorních buněk: mají nerovnoměrné uspořádán
 ◊subsection{Regulace stahu příčně pruhovaného svalu}
 
 ◊ls{
-    - koncentrační gradient mezi sarkoplasmatickým retikulem a cytoplazmou je 10 000
+    - koncentrační gradient mezi SR a cytoplazmou je 10 000
         - potencuje rychlost vtoku vápenatých iontů do cytoplasmy
     - kreatin ve svalech
-        - pomocí enzymu kreatin kináza fosforyluje na kreatin fosfát
+        - je pomocí enzymu kreatin kinázy fosforyluován na kreatin fosfát
         - slouží jako zásobní energetický zdroj
 }
 
 ◊ls[#:t "Průběh svalového stahu"]{
     # zvýšení koncentrace iontů ◊chem{Ca^{2+}}
-    # deformace troponinu na tropomyozin
+    # deformace troponinu a tropomyozinu
     # interakce myozinové hlavice s aktinem
     # stah svalu
 }
@@ -1820,23 +1842,23 @@ ATP vystačí svalu na 2s aktivity, kreatin fosfát na 8s. Poté dochází u
 Jedno nervové vlákno (axon) může inervovat různý počet svalových vláken, která poté tvoří tzv. ◊strong{motorickou jednotku}.
 
 ◊ls[#:t "Základní informace"]{
-    - axo se může rozvětvit, pak vznikne nervosvaloveá ploténka s několika svalovými vlákny
-    - MJ jsou různě veliké podle požadavku na typ svalového stahu (v bicepsu větší než na jazyku)
+    - axon se může rozvětvit, pak vznikne nervosvalová ploténka s několika svalovými vlákny
+    - MJ jsou různě velké podle požadavku na typ svalového stahu (v bicepsu větší než na jazyku)
     - vlákna nejsou schopna stupňované kontrakce
-    - počet axonů na sval
+    - počet axonů na sval se také liší
         - oční svaly: 1 axon
-        -  svaly končetin: 100 a více axonů inervovaných jedním neuronem
+        - svaly končetin: 100 a více axonů inervovaných jedním neuronem
     - designování velikosti MJ probíhá v prenatálním období a do třetího roku života
 }
 
 ◊subsection{Pomalá a rychlá svalová vlákna}
 
 ◊ls{
+    - rychlá vlákna: bílá, málo myoglobinu, anaerobní metabolismus
+    - pomalá vlákna: červená, mnoho myoglobinu, aerobní metabolismus
     - výskyt konkrétního typu závislý na typu inervace, frekvenci vylévání acetylcholinu, způsobu dráždění svalové buňky, zdroji příslušného nervu
         - přehozením nervů se dá z bílého udělat červené a naopak
     - v rámci jednoho svalu různé typy svalových vláken v různé proporci
-    - rychlá vlákna: bílá, málo myoglobinu, anaerobní metabolismus
-    - pomalá vlákna: červená, mnoho myoglobinu, aerobní metabolismus
     - smíšená vlákna mají znaky obou předchozích typů
 }
 
@@ -1994,7 +2016,8 @@ Jedno nervové vlákno (axon) může inervovat různý počet svalových
 
 ◊ls{
     - ontogeneticky i fylogeneticky odvozeny od epitelu
-        - některé z nich mají polarizovanou strukturu (ependymální gliové buňky mají řasinky)
+        - některé z nich mají polarizovanou strukturu
+        - ependymální gliové buňky mají řasinky
     - neurony, neuroepiteliální smyslové buňky, gliové buňky
     - mnoho rozdílů mezi buňkami, patří zde nejmenší i největší buněčné typy
 }
@@ -2005,20 +2028,20 @@ Jedno nervové vlákno (axon) může inervovat různý počet svalových
     }
 
     ◊term["periferní nervový systém (PNS)"]{
-        Je tvořen nervoveými buňkami a ganglii, dále buňkami vzniklými z neurální lišty.
+        Je tvořen nervovými buňkami a ganglii, dále buňkami vzniklými z neurální lišty.
     }
 
     ◊term["neurální lišta"]{
         Neurální lišta je zbytek neuroepitelu, který zůstane v místě, kde se vchlípila neurální trubice.
 
-        Vznikají zde buňky s obrovským diferenciačním a migračním potenciálem: chromafilní buňky, melanocyty, odontoblasty, Schwannovy buňky, neurony senzorické, gangliové, atd. Tyto buňky nezvznikají in situ, ale na liště, a na místo určení se dostanou už naprogramovány.
+        Vznikají zde buňky s obrovským diferenciačním a migračním potenciálem: chromafilní buňky, melanocyty, odontoblasty, Schwannovy buňky, neurony senzorické, gangliové, atd. Tyto buňky nevznikají in situ, ale na liště, a na místo určení se dostanou už naprogramovány.
 
     }
 }
 
 ◊section{Stavba CNS a PNS}
 
-V celém nervovém systému je asi ◊${10^{11}} nervových buňek, 3--10 krát více podpůrných gliových buněk a tím pádem 1000-5000 krát více možných propojení neuronů. Nervy jsou zpěvněny třemi obaly, epineuriem, perineuriem a endoneuriem.
+V celém nervovém systému je asi ◊${10^{11}} nervových buňek, 3--10 krát více podpůrných gliových buněk a 1000-5000 krát více možných propojení neuronů. Nervy jsou zpěvněny třemi obaly, epineuriem, perineuriem a endoneuriem.
 
 
 ◊ls[#:t "Metody zkoumání CNS"]{
@@ -2030,13 +2053,13 @@ V celém nervovém systému je asi ◊${10^{11}} nervových buňek, 3--10 krát 
     - mozek je rozdělen na malé specializované části
 }
 
-Bylo zjištěno, že máme nějak mnoho druhů neuronů na to, jak málo máme genů, které je kódují.Zdá se, že přírody nejspíše využívá triky s exony a introny (alternativní splicing).
+Bylo zjištěno, že máme nějak mnoho druhů neuronů na to, jak málo máme genů, které je kódují. Zdá se, že příroda nejspíše využívá triky s exony a introny (alternativní splicing).
 
 ◊ls[#:t "Vývoj CNS"]{
     # v ontogenezi se tvoří obrovské množství buněk
         - některé projdou programovanou buněčnou smrtí
     # nezralé neurony během ontogeneze putují podél radiálních gliových buněk propojujících vnitřní  a vnější povrch nervové trubice (délka až 2cm)
-    # gliové buňky slouží jako pravítko a určují tloušťku vrstev nervových buněk v mozku
+        - gliové buňky slouží jako pravítko a určují tloušťku vrstev nervových buněk v mozku
     # nervové výběžky jsou poté naváděny pomocí chemoatraktantů (např. netrin) a chemorepelentů (např. některé semaforiny, proteiny Slit)
         - přesná diferenciace v konkrétní populaci je dána poziční informací od hormonů
             - rodiny Hox, Pax, Dbx, Irx
@@ -2047,8 +2070,8 @@ Bylo zjištěno, že máme nějak mnoho druhů neuronů na to, jak málo máme g
 
 ◊ls[#:t "Tvorba vrstev pomocí gliových buněk"]{
     # první neuroblasty vytvoří vrstvu, která se stabilizuje tvorbou mezibuněčných spojení
-    # poté se po gliových buňkách posunou nové buňky, projdou stávající vrstvu a vytvoří novou vrstvu atd.
-    # poslední vrstva přidaných buněk je ◊em{neokortex}, je nejdál od zdroje kmenových buněk
+    # poté se po gliových buňkách posunou nové buňky, projdou stávající vrstvu, vytvoří novou vrstvu atd.
+    # poslední vrstva přidaných buněk, která je nejdál od zdroje kmenových buněk, je ◊em{neokortex}
 }
 
 ◊img["vrstvy_rust.png"]{Znázornění postupného růstu vrstev podle gliových buněk}
@@ -2058,13 +2081,12 @@ Bylo zjištěno, že máme nějak mnoho druhů neuronů na to, jak málo máme g
         - např. při rozlišování hranatých a kulatých věcí
     - dynamická struktura, která se "drátuje" v průběhu života
     - součástí správného rozvoje CNS je i apoptóza
-    - neurony, které nejsou za prvních pár týdnů prenatálního života použity, podléhají buněčné smrti
-    - podobně jsou i v rámci postnatálního života posilovány spoje, které jsou často používány
-        - naopak nepoužívané spoje slábnou a zanikají
+        - neurony, které nejsou za prvních pár týdnů prenatálního života použity, podléhají buněčné smrti
+    - podobně jsou i v rámci postnatálního života posilovány spoje, které jsou často používány, naopak nepoužívané spoje slábnou a zanikají
         - je důležité dávat dítěti (alespoň do sedmi let života) co nejvíce různých vjemů
         - příkladem může být absolutní hudební sluch, který silně souvisí s typem vjemů, kterým je dítě vystavováno
             - v Asii desetkrát vyšší incidence absolutního sluchu než u nás, snad kvůli tonálním jazykům
-            - je s ním spijený jen jeden gen, který avšak způsobuje i nízkou hodnotu IQ
+            - je s ním spojený jen jeden gen, který však způsobuje i nízkou hodnotu IQ (čili tímto genem běžný absolutní sluch způsoben není)
     - tato plasticita mozku během života zaniká
         - netvoří se nové spoje, pouze se posilují a zeslabují ty stávající
 }
@@ -2091,19 +2113,19 @@ Místům v mozku, která byla původně určena jako nefunkční či prázdná, 
 }
 
 ◊ls[#:t "Dendrity"]{
-    - většina neuronů mnoho dendritů
-    - větví se, co dendrit, to možnost napojit se na individuální nervovou buňku
+    - většina neuronů má mnoho dendritů
+    - větví se: co dendrit, to možnost napojit se na individuální nervovou buňku
         - např. Purkyněho buňky mohou integrovat až 200 000 signálů
-    - při větvení se tenč
+    - při větvení se tenčí
     - zesilují se, nebo zeslabují, podle toho, jak jsou používány
-        - buňka umí do dendritu transportovat proteiny, snad i lokalizovanou translaci
+        - buňka umí do dendritu transportovat proteiny, snad tam umí i lokalizovat část translačního procesu
         - tento proces nejspíše stojí za dlouhodobou pamětí
 }
 
 ◊ls[#:t "Axony"]{
-    - většina neuronů jeden axon, vzácně 0
+    - většina neuronů má jeden axon, vzácně nula
     - větví se, má ale konstantní šířku
-    - 1mm -- 1m na délku
+    - ◊u{1mm} -- ◊u{1m} na délku
     - vyrůstají z místa zvaného ◊em{axonální kónus}
         - tam se provádějí všechny výpočty
         - jde o to, jestli je překročen akční potenciál
@@ -2114,8 +2136,8 @@ Místům v mozku, která byla původně určena jako nefunkční či prázdná, 
 }
 
 ◊ls[#:t "Molecular fence"]{
-    - v aixonálním výběžku jsou jiné iontové kanály než dendritech
-    - zajišťují diferenciaci na úrovni membrány
+    - zajišťuje diferenciaci na úrovni membrány
+        - v axionálním výběžku jsou jiné iontové kanály než na dendritech
     - buňka je díky ní polarizovaná
     - brání průchodu signalizace zpět do dendritu
     - pro správnou funkci NS je nezbytná dostředivá a odstředivá signalizace právě na základě membránových domén
@@ -2125,17 +2147,13 @@ Místům v mozku, která byla původně určena jako nefunkční či prázdná, 
 
 ◊definitions{
     ◊term["aktivační zakončení"]{
-        Extracelulárně snižují polaritu nebo koncentraci sodných iontů a zvyšují potenciální vybuzení neuronu k vypálení signálu.
-
-        Způsobují malou depolarizaci na postsynaptické membráně, otevírají gated kationtové kanály.
+        Extracelulárně snižují polaritu nebo koncentraci sodných iontů a zvyšují potenciální vybuzení neuronu k vypálení signálu. Způsobují malou depolarizaci na postsynaptické membráně, otevírají gated kationtové kanály.
 
         Ve spojení především s neurotransmitery acetylcholinem a glutamátem.
     }
 
     ◊term["inhibiční zakončení"]{
-        Způsobují malé hyperpolarizace, otevírají ◊chem{Cl-} a ◊chem{K+} kanály. Ovlivňují prostorovou a časovou sumaci signálů. Rozhodují o tom, jestli bude či nebude na neuronu postsynaptický potenciál.
-
-        Znesnadňují signalizaci buňkám, kde se zrovna vylijí.
+        Znesnadňují signalizaci buňkám, které se zrovna vylijí. Způsobují malou hyperpolarizaci, otevírají postsynaptické ◊chem{Cl-} a ◊chem{K+} kanály. Ovlivňují prostorovou a časovou sumaci signálů. Rozhodují o tom, jestli bude či nebude na neuronu postsynaptický potenciál.
 
         Ve spojení především s neurotransmitery GABA a glycinem.
     }
@@ -2153,24 +2171,24 @@ V reálu záleží na tom, jak se posčítají hyperpolarizace a depolarizace.
 
 ◊meta{Na toto byl v přednášce kladen velký důraz.}
 
-Naproti obecné představě jsou nervové buňky schopny určité regenerace.
-
-◊ls[#:t "Průběh poškození axonu"]{
-    # Ve zdravém neuronu spojeném se svalem je jádro uprostřed a je v něm mnoho Nisslových substancí.
-    # Když je axon přerušen, jádro se posune na periferii neuronu a počet Nisslových substancí je velice sníží. Část nervového vlákna, která je nyní spojená jen se svalem, degeneruje a je odklizena makrofágy.
-    # Denervovaná svalová buňka atrofuje. Schwannovy buňky proliferují, tvoří silný kabel roustoucí ze svalové buňky.
-    # Axon dorůstá a snaží se spojit a prorůst Schannovými buňkami.
-        - Když se mu to povede, sval je opět inervovaný, obnoví se jeho síla i funkce a neuron se vrátí do původního stavu.
-        - Když se mu to nepovede, růst axonu je neorganizovaný, sval dál atrofuje. Po překročení určité doby je sval už nenávratně poškozen.
-}
+Naproti všeobecné představě jsou nervové buňky schopny určité regenerace.
 
 ◊box["Poznámka"]{
     Nisslova substance (Nissl body) je granulární hmota v somě neuronu složená z endoplazmatického retikula obklopeného volnými ribozomy.
 }
 
-Axony málokdy najdou přesně tu správnou myelinovou pochvu a přesně to správné místo, kde původně vedly---jednotlivé svaly mají po regeneraci po zranění nejprve špatnou koordinaci a mozek se musí přeučovat, což trvá měsíce až roky.
+◊ls[#:t "Průběh poškození axonu"]{
+    # Ve zdravém neuronu spojeném se svalem je jádro uprostřed a je v něm mnoho Nisslových substancí.
+    # Když je axon přerušen, jádro se posune na periferii a počet Nisslových substancí se sníží. Část nervového vlákna, která je nyní spojená jen se svalem, degeneruje a je odklizena makrofágy.
+    # Denervovaná svalová buňka atrofuje. Schwannovy buňky proliferují, tvoří silný kabel roustoucí ze svalové buňky.
+    # Axon dorůstá a snaží se spojit a prorůst Schwannovými buňkami.
+        - Když se mu to povede, sval je opět inervovaný, obnoví se jeho síla i funkce a neuron se vrátí do původního stavu.
+        - Když se mu to nepovede, růst axonu je neorganizovaný, sval dál atrofuje. Po překročení určité doby je sval už nenávratně poškozen.
+}
 
-U myši jsou schopna se zahojit i poranění páteře; při poraněních páteře u člověka je ale problém s tím, že je informační zmatek přerušených axonů obrovský, navíc axony by musely prorůst mnohem dál než u myši.
+Axony málokdy najdou přesně tu správnou myelinovou pochvu a přesně to správné místo, kam původně vedly---jednotlivé svaly mají po regeneraci po zranění nejprve špatnou koordinaci a mozek se musí přeučovat, což trvá měsíce až roky.
+
+U myši jsou schopna se zahojit i poranění páteře; při poraněních páteře u člověka je problém s tím, že je informační zmatek přerušených axonů obrovský, navíc axony by musely prorůst mnohem dál než u myši.
 
 ◊ls[#:t "Léčba přerušených nervových spojů"]{
     - k léčení se snažíme využít i kmenové buňky
@@ -2193,13 +2211,13 @@ U myši jsou schopna se zahojit i poranění páteře; při poraněních páteř
 
 ◊subsection{Pomocné nervové buňky}
 
-Mají základ z neurální trubice, v PNS z neurální lišty. Někdy označované jako ◊strong{gliové buňky}.
+Mají základ z neurální trubice, v PNS z neurální lišty. Někdy jsou označované jako ◊strong{gliové buňky}.
 
 ◊definitions{
     ◊term["oligodendrocyty"]{
-        Tvoří myelinové pochvy axonů v CNS. Mohou se podílet na myelinizaci více než 1 axonu.
+        Tvoří myelinové pochvy axonů v CNS. Mohou se podílet na myelinizaci více než jednoho axonu.
 
-        Podobnou úlohu zastávají v PNS Schwannovy buňky. Každ Schwannova buňka však může vytvářet pouze jeden segment myelinové pochvy na jenom axonu.
+        Podobnou úlohu zastávají v PNS Schwannovy buňky. Každá Schwannova buňka však může vytvářet pouze jeden segment myelinové pochvy na jenom axonu.
     }
 
     ◊term["astrocyty"]{
@@ -2217,10 +2235,10 @@ Mají základ z neurální trubice, v PNS z neurální lišty. Někdy označovan
 
         ◊ls[#:t "Stavba"]{
             - diferenciace podléhá růstovým faktorům
-                - NGF (nerve growth factor), BDGF (brain derived GF), GDNF (glial cell derived GF)
-            - propojeny gap junctions
+                - NGF (nerve growth factor), BDGF (brain derived GF), GDNF (glial cell-derived neurotrophic factor)
+            - navzájem propojeny gap junctions
             - různé výběžky plní různé úkoly
-                - nějaké výběžky obalují kapiláry a účastní se hematoencefalytické bariéry
+                - nějaké výběžky obalují kapiláry a tvoří část hematoencefalytické bariéry
         }
     }
 
@@ -2239,7 +2257,7 @@ Mají základ z neurální trubice, v PNS z neurální lišty. Někdy označovan
 ◊em{By Neuron-with-oligodendrocyte-and-myelin-sheath.svg: *Complete-neuron-cell-diagram-en.svg: LadyofHatsderivative work: Andrew c (talk) - Neuron-with-oligodendrocyte-and-myelin-sheath.svg, Public Domain, ◊link["https://commons.wikimedia.org/w/index.php?curid=10888009"]{link}}
 
 
-Pro gliové buňky je základním zdrojem energie glukóza, kterou anaerobně štěpí na laktát. Kyslík je štřen pro neurony, kde je potřeba pro přenos nervových vzruchů.
+Pro gliové buňky je základním zdrojem energie glukóza, kterou anaerobně štěpí na laktát. Kyslík je šetřen pro neurony, kde je potřeba pro přenos nervových vzruchů.
 
 ◊ls[#:t "Myelinizace"]{
     - panožka Schwannovy buňky nebo oligodendrocytu se několikrát obtočí kolem výběžku
@@ -2254,17 +2272,16 @@ Pro gliové buňky je základním zdrojem energie glukóza, kterou anaerobně š
 
 ◊ls{
     - odděluje mozek od zbytku těla a je běžně pro buňky neprůchodná
-    - propouští kmenové buňky, pokud je v mozku indukováno poškození
-        - minimálně u myší, na kterých byl tento experiment proveden
+    - propouští kmenové buňky, pokud je v mozku indukováno poškození; minimálně u myší, na kterých byl tento experiment proveden
         - pronikají přes ni kmenové buňky neznámého původu
-        - zajištění regenerace poměrně velké části nervové tkáně
-        - diferenciace v nervové buňky i různé typy gliových buněk
+            - diferenciace v nervové buňky i různé typy gliových buněk
+            - zajištění regenerace poměrně velké části nervové tkáně
 }
 
 Na obrázku lze pozorovat výběžky astrocytů, které k sobě těsně doléhají. Samotná kapilára je pak z endoteliálních buněk, které jsou spojeny přes tight junctions.
 
 ◊img["bbb.jpg"]{Schematický obrázek hematoencefalické bariéry}
-◊em{By Ben Brahim Mohammed - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=12263975}
+◊em{By Ben Brahim Mohammed - Own work, CC BY 3.0, ◊link["https://commons.wikimedia.org/w/index.php?curid=12263975"]{link}}
 
 ◊ls[#:t "Stavba"]{
     - endoteliání kapilární buňka je obklopena výběžky astrocytů
@@ -2287,29 +2304,29 @@ Na obrázku lze pozorovat výběžky astrocytů, které k sobě těsně doléhaj
 
 ◊ls{
     - jako jedna z mála neurosenzorických struktur se během života mění
-        - senzorické neurony přeživájí 1--2 měsíce
+        - senzorické neurony přežívají 1--2 měsíce
         - poté jsou nahrazeny diferenciací bazálních buněk
     - skupina buněk se diferencuje v čichové (viz obrázek výše)
         - cilie jsou nepohyblivé, obsahují čichové receptory
         - na bazální straně jeden axon směřující do mozku
         - obklopeny podpůrnými buňkami s podobným významem jako gliové buňky
     - každý senzorický neuron exprimuje jen jeden z několika set čichových receptorů
-    - když jsou buňky obnovovány, nově vznikající buňka si náhodně vybere jeden receptor
+        - když jsou buňky obnovovány, nově vznikající buňka si náhodně vybere jeden receptor
 }
 
-◊ls{
-    - axony senzorických neuronů se stejným receptorem jsou rozptýleny v čichové sliznici
-    - axony směřují do stejného glomerulu
-        - u myší je v bulbus olfactorius na každé straně 1800 různých glomerolů
-        - čím více glomerulů, tím více vůní umíme rozeznat, ale i tím více senzorických neuronů musíme mít
+◊ls[#:t "Glomeru­ly"]{
+    - axony senzorických neuronů se stejným receptorem jsou rozptýleny v čichové sliznici (=> nejsou nashromážděny na jednom místě)
+    - axony neuronů se stejným receptorem směřují do stejného glomerulu
+        - u myší je v bulbus olfactorius na každé straně 1800 různých glomerulů
+        - čím více glomerulů, tím více vůní umíme rozeznat, ale tím více druhů senzorických neuronů musíme mít
     - jak axony nově vznikajících buněk najdou správnou cestu ke glomerulu
         - zdá se, že v tom hrají roli receptory pro čich spřažené s G-proteiny
-        - tyto receptory jsou schopny homeotické adheze, tj. dva stejné receptory se "zazipují", ale jiné ne
-        - axon putuje po glomerulech, zůstane tam, kde se váže nejsilněji
+        - tyto receptory jsou schopny homeotické adheze, tj. dva stejné receptory se "zazipují", ale dva různé ne
+        - axon putuje po glomerulech, zkouší se navázat a zůstane tam, kde se váže nejsilněji
     - existuje mnoho poruch této axonové navigace, lidé ztrácí schopnost kontinuity pachů
 }
 
-Studium navigace axonů se opět provádělo na zelených myškách; zeleně se obarvily jen neurony reagující na jednu konkrétní vůni. Po histologii mozku se ukázalo, že všechny zelené axony míří pouze do dvou míst (glomerulů), jednom na každé hemisféře.
+Studium navigace axonů se opět provádělo na zelených myškách; zeleně se obarvily jen neurony reagující na jednu konkrétní vůni. Po histologii mozku se ukázalo, že všechny zelené axony míří pouze do dvou míst na bul­bus ol­fac­to­rius (dvou glomerulů, jednom v každé hemisféře).
 
 ◊subsection{Sluchový epitel}
 
@@ -2317,6 +2334,7 @@ Studium navigace axonů se opět provádělo na zelených myškách; zeleně se 
     - morfologicky nejpropracovanější tkáň v těle
     - hlemýžďová rezonanční struktura vzniká prenatálně
     - záleží na tom, v kterém místě hlemýždě dochází k rezonanci s membránami, které obalují prostory vyplněné tekutinou
+        - u ústí hlemýždě jsou rozpoznávány vysoké frekvence, uprostřed spirály naopak nízké
         - voda je nestlačitelná => přenáší vibrace
     - senzorickými buňkami jsou sluchové vláskové buňky
 }
@@ -2371,24 +2389,23 @@ Nejblíže u pigmentovaných epiteliálních buněk je senzorický epitel
         - v očních buňkách je jinak vysoká koncentrace cGMP
     # otevřou se ◊chem{Ca^{2+}} kanály, dojde k hyperpolarizaci membrány
     # uzavřou se ◊chem{Na+} kanály
+    # do synapse se přestane vylučovat neurotransmitter
     # zastaví se bazální signalizace
 }
 
-To, jakým způsobem vidíme, je vlastně negativ: při zachycení fotonu se zastaví/sníží bazální signalizace. To umožňuje rozlišovat jemnější nuance v signálech.
+To, jakým způsobem vidíme, je vlastně negativ: při zachycení fotonu se sníží/zastaví bazální signalizace. To umožňuje rozlišovat jemnější nuance v signálech.
 
 ◊ls[#:t "Tyčinky"]{
-    - obsahují pigment rodopsin
-        - součástí rodiny opsinů
-    -zajišťují vnímání kontrastu
+    - obsahují pigment rodopsin, který je součástí rodiny opsinů
+    - zajišťují vnímání kontrastu černé a bílé
 }
 ◊ls[#:t "Čípky"]{
     - obsahují pigment jodopsin (fotopsin)
     - zajišťují vnímání barev
     - každý obsahuje jeden ze tří druhů jodopsinu (citlivý na červenou, zelenou, nebo modrou barvu)
-        -vlastní barva vzniká superpozicí tří čípků
-    - daltonismus
-        -mutace v jednom jodopsinu zapříčiní to, že člověk nebude schopen rozeznat nějaké barvy od sebe
-        -jeden z jodopsinů je vázaný na chromozom X, takže se daltonismus vyskytuje častěji u mužů
+        - vlastní barva vzniká superpozicí tří čípků
+        - mutace v jednom jodopsinu zapříčiní to, že člověk od sebe nebude schopen rozeznat určité barvy
+            - např. daltonismus; jeden z jodopsinů je vázaný na chromozom X, takže se daltonismus vyskytuje častěji u mužů
 }
 
 
@@ -2419,21 +2436,21 @@ To, jakým způsobem vidíme, je vlastně negativ: při zachycení fotonu se zas
 }
 
 ◊ls[#:t "Epilepsie"]{
+    - nervová soustava dočasně upadá do stavu pozitivních zpětných vazeb
     - způsobená různými úrazy, infekcemi, někdy je dědičná
     - jednou z příčin je odumření neuronů a nahrazení gliovými buňkami (tzv. ◊em{gliová jizva})
-    - nervová soustava dočasně upadá do stavu pozitivních zpětných vazeb
 }
 
 ◊ls[#:t "Parkinsonova choroba"]{
-    - příčinou je nedostatek dopaminu
     - dochází ke svalovým třesům
-    - v mozku jsou oblasti, kde jsou dopaminergní neurony lokalizovány (substantia nigra), často odumírají
+    - příčinou je nedostatek dopaminu
+    - v mozku jsou oblasti, kde jsou lokalizovány dopaminergní neurony (substantia nigra), ty často odumírají
     - po Alzheimerovi druhá nejčastější choroba
 }
 
 ◊ls[#:t "Alzheimerova choroba"]{
     - některé proteiny mají narušené odbourávání
-        - např. amyloidní protein, tau protein
+        - např. amyloidní protein, ◊${\tau} protein
     - v mozku se hromadí plaky neodbouratelné substance, která tlačí, je cytotoxická a způsobuje neurologické patologie
 }
 
@@ -2455,7 +2472,6 @@ To, jakým způsobem vidíme, je vlastně negativ: při zachycení fotonu se zas
 }
 
 ◊ls[#:t "Nádory PNS"]{
-    - neurinom, neurilemom, Schwannom = nádor ze Schwannových buněk
-    - neurofibrom
+    - neurinom, neurilemom, neu­rofi­brom, Schwannom (nádor ze Schwannových buněk)
     - neurogenní sarkom --- vzácná varianta neurinomu, maligní
 }
