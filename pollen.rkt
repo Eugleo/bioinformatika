@@ -303,7 +303,10 @@
 
 #| Basic elements|#
 
-(provide link $ $$ align$ chem img highlight code)
+(provide link $ $$ align$ u chem img highlight code)
+
+(define (u str)
+  ($ (string-append "\\pu{" str "}")))
 
 (define (link #:title [title #f] url . description)
   (case (current-poly-target)
