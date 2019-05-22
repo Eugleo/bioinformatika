@@ -5,7 +5,7 @@
     \addto\captionsczech{\renewcommand{\chaptername}{}}
 
     \usepackage{placeins} % Don't move figures beyond sections
-
+    \usepackage{siunitx}
     \usepackage{amsmath}
     \usepackage[version=4]{mhchem}
     \usepackage{listings}

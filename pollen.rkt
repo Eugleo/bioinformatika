@@ -306,7 +306,14 @@
 (provide link $ $$ align$ u chem img highlight code)
 
 (define (u str)
-  ($ (string-append "\\pu{" str "}")))
+  (case (current-poly-target)
+    [(md html) ($ (string-append "\\pu{" str "}"))]
+    [(tex pdf)
+      (define number (regexp-match? #rx"\\d" str))
+      (define matches (regexp-match #rx"^(.*) (.*)$" str))
+      (if number
+          (string-append "\\SI{" (list-ref matches 1) "}{" (list-ref matches 2) "}")
+          (string-append "\\si{" str "}"))]))
 
 (define (link #:title [title #f] url . description)
   (case (current-poly-target)
