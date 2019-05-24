@@ -102,7 +102,9 @@
 
             ◊(->html (select-from-doc 'toc-entries here))
         }
+
 ◊(map ->html (select-from-doc 'body here))
     </div>
+     <page-end> ⋅ 𝓔 ⋅ </page-end>
     </body>
 </html>

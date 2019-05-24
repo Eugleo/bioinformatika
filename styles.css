@@ -65,8 +65,15 @@
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container {
-  max-width: 690px;
-  margin-left: 100px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 750px) {
+  .container {
+      max-width: 690px;
+   }
 }
 
 /* Typography
@@ -118,13 +125,13 @@ h6 {
 
 
 h1 {
-    margin-top: 4.0rem;
-    margin-bottom: 2.4000000000000004rem;
+    margin-top: 3.2rem;
+    margin-bottom: 1.6rem;
     font-size: 2.618rem;
     line-height: 3.2rem;
 }
 h2 {
-    margin-top: 3.2rem;
+    margin-top: 1.6rem;
     margin-bottom: 0.8rem;
     font-size: 2.118rem;
     line-height: 2.4000000000000004rem;
@@ -137,7 +144,7 @@ h3 {
 }
 h4 {
     margin-top: 1.6rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0.8rem;
     font-size: 1.309rem;
     line-height: 1.6rem;
 }
@@ -173,7 +180,8 @@ li {
   margin-bottom: 0rem;
 }
 
-highlight {
+.highlight {
+  overflow: scroll;
   margin-bottom: 1.6rem;
 }
 
@@ -402,12 +410,19 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .wrapper {
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   height: 100%;
   justify-content: space-between;
-  max-width: 690px;
+  width: 90%
+}
+
+@media (min-width: 750px) {
+  .wrapper {
+     max-width: 690px;
+   }
 }
 
 .sticky-header {
@@ -429,6 +444,15 @@ a:hover {
 .page-navigation {
   font-family: "IBM Plex Mono";
   color: rgb(48, 48, 48);
+}
+
+page-end {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 3.2rem;
+  margin-bottom: 4.0rem;
 }
 
 
@@ -503,10 +527,18 @@ there.
 /* Code highlighting
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.highlight {
+code {
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  background: #fcfcfc;
+   font-family: "IBM Plex Mono";
+   padding-left: 3px;
+   padding-right: 3px;
+}
+
+.highlight, pre {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    padding-left: 30px;
     background: #fcfcfc;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
@@ -516,10 +548,26 @@ there.
     display: none;
 }
 
-.highlight pre {
+pre {
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
     font-family: "IBM Plex Mono";
     white-space: pre;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
+.highlight pre {
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: clear;
+  border-top: none;
+  border-bottom: none;
+}
+
+
 
 
 
