@@ -177,7 +177,6 @@ li {
 }
 
 .highlight {
-  overflow: scroll;
   ◊(margin-bottom 1)
 }
 
@@ -192,6 +191,12 @@ dt {
 dd {
   padding-left: 30px;
   ◊(margin-bottom 1)
+}
+
+.scrollable {
+  overflow: scroll;
+  ◊(margin-top 0.5)
+  ◊(margin-bottom 0.5)
 }
 
 /* Lists
@@ -528,9 +533,10 @@ code {
   border: 1px solid #ebebeb;
   border-radius: 5px;
   background: #fcfcfc;
-   font-family: "IBM Plex Mono";
-   padding-left: 3px;
-   padding-right: 3px;
+  font-family: "IBM Plex Mono";
+  padding-left: 3px;
+  padding-right: 3px;
+  white-space: pre-wrap;
 }
 
 .highlight, pre {
@@ -539,6 +545,7 @@ code {
     background: #fcfcfc;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
+    overflow: scroll;
 }
 
 .highlight .linenos {
