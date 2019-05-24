@@ -169,7 +169,7 @@ li {
   ◊(margin-bottom 0)
 }
 
-highlight {
+.highlight {
   ◊(margin-bottom 1)
 }
 
@@ -500,7 +500,7 @@ there.
 /* Code highlighting
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.highlight {
+.highlight, pre {
     ◊(padding-top 0.5)
     ◊(padding-bottom 0.5)
     padding-left: 30px;
@@ -513,10 +513,23 @@ there.
     display: none;
 }
 
-.highlight pre {
+pre {
+    ◊(margin-bottom 1)
+    ◊(margin-top 1)
     font-family: "IBM Plex Mono";
     white-space: pre;
 }
+
+.highlight pre {
+  ◊(margin-bottom 0)
+  ◊(margin-top 0)
+  padding-left: none;
+  background: clear;
+  border-top: none;
+  border-bottom: none;
+}
+
+
 
 ◊; syntax colors adapted from Racket documentation
 ◊define[paren-color]{#888}
