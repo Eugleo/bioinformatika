@@ -7,7 +7,7 @@
 
 ◊title{GAMSA}
 
-GAMSA (genetic algorithm multiple sequence alignment) je můj program, ve kterém jsem se --- jak už název napovídá --- pokusil implementovat MSA pomocí genetického algoritmu. Kód je dosutpný na ◊link["https://github.com/Eugleo/gamsa"]{mém GitHubu}. Informace jsem čerpal především z těchto dvou článků:
+GAMSA (genetic algorithm multiple sequence alignment) je můj program, ve kterém jsem se --- jak už název napovídá --- pokusil implementovat MSA pomocí genetického algoritmu. Kód je dostupný na ◊link["https://github.com/Eugleo/gamsa"]{mém GitHubu}. Informace jsem čerpal především z těchto dvou článků:
 ◊ls{
     - ◊link["http://www.funpecrp.com.br/gmr/year2007/vol4-6/pdf/Xm0016.pdf"]{A simple genetic algorithm for multiple sequence alignment}
     - ◊link["https://www.researchgate.net/publication/234831605_Multiple_Sequence_Alignment_Using_a_Genetic_Algorithm_and_GLOCSA"]{Multiple Sequence Alignment Using a Genetic Algorithm and GLOCSA}
@@ -15,7 +15,7 @@ GAMSA (genetic algorithm multiple sequence alignment) je můj program, ve které
 
 ◊section{Princip funkce}
 
-Hodně high-level popis funkce je velice podobný jako u všech GA, tedy
+High-level popis funkce je velice podobný jako u všech GA, tedy
 ◊ls{
     # Ze seedu vygenerujeme počáteční populaci (každé jedné populaci pak říkáme ◊em{generace}).
     # Ze současné generace vytvoříme různými rekombinačními způsoby novou generaci o stejném počtu jedinců. Tento bod mnohokrát opakujeme.
@@ -29,9 +29,9 @@ Celý proces si lze představit jako prohledávání grafu, kde vrcholy jsou rů
 
 ◊em{Pro více informací viz například sekce o sequence alignmentu ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Pairwise%20sequence%20alignment"]{v mých zápisech}.}
 
-Multiple sequence alignment je bioinformatická metoda, která se snaží v několika sekvencích (většinou proteinech) najít prvky, které pocházejí ze stejného předka.
+Multiple sequence alignment je bioinformatická metoda, která se snaží v několika sekvencích (většinou proteinech) najít prvky (většinou aminokyseliny), které pocházejí ze stejného předka.
 
-V praxi to znamená, že máme ◊${n} sekvencí znaků, které se snažíme nějak srovnat pod sebe. Sekvence pod sebe srovnáváme tak, že do nich doplňujeme mezery; výsledému souboru původních sekvencí spolu s doplněnými mezerami říkáme ◊strong{Alignment}. Například pro ◊${n = 2} bychom mohli dostat vstup
+V praxi to znamená, že máme ◊${n} sekvencí znaků, které se snažíme nějak srovnat pod sebe. Sekvence pod sebe srovnáváme tak, že do nich doplňujeme mezery; výsledému souboru původních sekvencí spolu s doplněnými mezerami říkáme ◊strong{alignment}. Například pro ◊${n = 2} bychom mohli dostat vstup
 
 ◊highlight['text]{
     VLSEGKTEAPV
@@ -45,8 +45,6 @@ ze kterého bychom poskládali například následující alignment
     VLS--P--APV
 }
 
-Alignmentů existuje (nekonečně) mnoho, byly proto zavedeny způsoby, jakými je možné odlišit dobré alignmenty od těch špatných. Nejčastější metodou je skórování pomocí ◊strong{skórovacích tabulek} (scoring matrices), například BLOSUM 62 nebo PAM 250, které vycházejí z experimentálních pozorování proteinů. Skórovací tabulky obsahují skóre pro všechny možné kombinace písmen (aminokyselin, AK), je tedy poté možné výsledný alignment jednoduše projet sloupec po sloupci, v daném sloupci oskórovat všechny dvojice znaků a výsledky sečíst.
-
 V kódu by tedy klidně mohl alignment vypadat nějak takto (i když v reálu jej implementuji trochu jinak)
 ◊highlight['hs]{
     data Alignment = Alignment
@@ -55,6 +53,8 @@ V kódu by tedy klidně mohl alignment vypadat nějak takto (i když v reálu je
         }
 }
 
+Alignmentů existuje (nekonečně) mnoho, byly proto zavedeny způsoby, jakými je možné odlišit dobré alignmenty od těch špatných. Nejčastější metodou je skórování pomocí ◊strong{skórovacích tabulek} (scoring matrices), například BLOSUM 62 nebo PAM 250, které vycházejí z experimentálních pozorování proteinů. Skórovací tabulky obsahují skóre pro všechny možné kombinace písmen (aminokyselin, AK), je tedy možné alignment jednoduše projet sloupec po sloupci, v daném sloupci oskórovat všechny dvojice znaků a výsledky sečíst.
+
 ◊subsection{Tvorba generací}
 
 Program na vstupu očekává cestu k souboru, ve kterém bude na každém řádku sekvence AK a pomlček, které budou představovat mezery --- to bude počáteční (seed) alignment. Z něj je poté vygenerována úvodní populace, která čítá 100 jedinců; tento počet je možné změnit, i když zatím ne zrovna uživatelsky přívětivě.
@@ -62,8 +62,8 @@ Program na vstupu očekává cestu k souboru, ve kterém bude na každém řádk
 Každá další generace je z té současné vytvořena následujícím způsobem:
 ◊ls{
     # ◊${n} nejlepších jedinců je přeneseno do další generace beze změny
-    # je pořádáno ◊${t} turnajů
-        - nejlepší ze všech ◊${u} účastníků turnaje se posouvá do další generace a je upraven pouze mutací
+    # je pořádáno ◊${t} turnajů, každého z nich se účastní ◊${u} náhodně vybraných jedinců
+        - nejlepší ze všech účastníků se posouvá do další generace a je upraven pouze mutací
         - zbylí účastníci turnaje jsou rekombinováni s výhercem a poté ještě mutováni
 }
 
@@ -73,7 +73,7 @@ Výchozí hodnoty jsou ◊${n = 1}, ◊${t = 33}, ◊${u = 3} a tedy ◊${v_{gen
 
 ◊subsection{Rekombinační operace}
 
-Používám dva druhy rekombinačních operací: ◊strong{mutace} a ◊strong{crossovery}. Oba druhy se zabývají pouze změnou rozmístění, počtu a velikosti mezer v alignmentu, původní sekvence AK zůstávají nezměněny. Proteiny reprezentuji jako
+Používám dva druhy rekombinačních operací: ◊strong{mutace} a ◊strong{crossovery}. Oba druhy se zabývají pouze změnou rozmístění, počtu a velikosti mezer v alignmentu, původní sekvence AK zůstávají nezměněny. Proteiny proto reprezentuji jako
 
 ◊highlight['hs]{
     data Protein = Protein
@@ -82,18 +82,18 @@ Používám dva druhy rekombinačních operací: ◊strong{mutace} a ◊strong{c
         }
 }
 
-a to především právě proto, že seznam mezer se mění velice často.
+protože sekvence jsou konstatní, zatímco mezery se neustále mění.
 
 ◊ls[#:t "Mutace"]{
     - mutujeme jedince, tedy alignment, ale mutace samotné se týkají pouze jednoho proteinu z celého alignmentu
-    - v rámci mutace při tvoření nové generace může být jeden alignment zmutován i několikrát
+    - v rámci mutace při tvoření nové generace může být jeden alignment zmutován i několikrát za sebou
     - rozlišuji pět druhů mutací
-        # insert: vloží do náhodného proteinu na náhodné místo mezeru, jejíž velikost je náhodná, ale odvíjí se od průměrné velikosti mezer v seed alignmentu
-        # increase: zvětší v náhodném proteinu náhodnou mezeru o náhodnou velikost
-        # descrease: ditto, ale zmenší
-        # delete: v náhodném proteinu vymaže náhodnou mezeru, šance úspěchu se ale snižuje s délkou mezery
-        # shift: přesune v náhodném proteinu náhodnou mezeru na jiné místo, případně je-li toto místo již mezerou obsazeno, prohoí velikosti těchto dvou mezer
-    - jednotlivé druhy mutace ("mutační operace") budou aplikovány s různou pravděpodobností; tyto pravděpodobnosti se navíc v průběhu programu přizpůsobují tomu, jak je který druh mutace úspěšný
+        # ◊code{insert} vloží do náhodného proteinu na náhodné místo mezeru, jejíž velikost je náhodná, ale odvíjí se od průměrné velikosti mezer v seed alignmentu
+        # ◊code{increase} zvětší v náhodném proteinu náhodnou mezeru o náhodnou velikost
+        # ◊code{descease} ditto, ale zmenší, a vždy pouze o 1
+        # ◊code{delete} zkusí v náhodném proteinu vymazat náhodnou mezeru, šance úspěchu se snižuje s délkou mezery
+        # ◊code{shift} přesune v náhodném proteinu náhodnou mezeru na jiné místo, případně je-li toto místo již nějakou mezerou obsazeno, prohodí velikosti těchto dvou mezer
+    - jednotlivé druhy mutace ("mutační operace") jsou aplikovány s různou pravděpodobností; tyto pravděpodobnosti se navíc v průběhu programu přizpůsobují tomu, jak je který druh mutace úspěšný
         - mechanismus je v detailu popsaný v druhém paperu, v podstatě se ale jedná o to, že dáváme do souvislosti skóre před mutací a po ní s počtem aplikací konkrétní mutační operace
 }
 
@@ -114,7 +114,7 @@ a to především právě proto, že seznam mezer se mění velice často.
             --VLSP--APV
             ◊strong{-EGKT---A--}
         }
-        # vertikální: z rodičovských alignmentů vznikne potomek tak, že všechny mezery před ◊${k}-tou AK převezme pro každý protein od jednoho z rodičů a mezery po ◊${k}-té AK převezme od druhého
+        # vertikální: z rodičovských alignmentů vznikne potomek tak, že pro každý protein všechny mezery před ◊${k}-tou AK převezme od jednoho z rodičů a mezery po ◊${k}-té AK převezme od druhého
         ◊pre{
             Rodiče:
             ◊strong{VLSEGKTEAPV}     VLSEGKTEAPV
@@ -134,7 +134,7 @@ Je vidět, že při vertikálním crossoveru se někdy pokazí "blokovitost" cel
 
 Jako fitness funkce mi posloužil běžný pairwise sequence alignment: v rámci alignmentu spolu podle skórovací tabulky srovnám všechny dvojice proteinů a sečtu jejich skóre. Používám tabulku ◊link["https://en.wikipedia.org/wiki/BLOSUM"]{BLOSUM62}, která se pro alignmenty proteinů používá běžně.
 
-Samozřejmě se hodnotí i mezery; protože mezery v přírodě nevznikají příliš často, mají vždy záporné skóre. Navíc vznik mezery je méně pravděpodobný než rozšíření nějaké již existující, takže "první blok" mezery mívá menší skóre než všechny ostatní bloky (v rámci jedné kontinuální mezery).
+Samozřejmě se hodnotí i mezery; protože mezery v přírodě nevznikají příliš často, mají vždy záporné skóre. Navíc vznik mezery je méně pravděpodobný než rozšíření nějaké již existující, takže "první blok" mezery mívá menší skóre než všechny ostatní bloky (v rámci jedné kontinuální mezery). Při počítání skóre úseku, kde jsou v obou hodnocených proteinech mezery, se daný úsek přeskakuje. Mezery na konci proteinu se zpravdila napočítají, ale já je počítám, protože jsem tak dostal lepší výsledky.
 
 ◊section{Orientace v kódu}
 
@@ -146,7 +146,7 @@ Kód je rozdělen na několik modulů.
     }
 
     ◊term["MultipleSeqAlignment"]{
-        Jakýsi hlavní modul celého balíčku, kombinuje všechny ostatní moduly. Obsahuje kód tvoření nových generací, dají se zde změnit základní vlastnosti celého algoritmu, jako počet generací, velikost populace atd.
+        Hlavní modul celého balíčku, kombinuje všechny ostatní moduly. Jsou zde tvořeny nové generace a dají se zde také změnit základní vlastnosti celého algoritmu, např. počet generací, velikost populace atd.
     }
 
     ◊term["Crossover, Mutation, Scoring (+ ScoringMatrix), Utils"]{
