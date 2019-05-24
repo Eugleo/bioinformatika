@@ -67,8 +67,15 @@
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container {
-  max-width: 690px;
-  margin-left: 100px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 750px) {
+  .container {
+      max-width: 690px;
+   }
 }
 
 /* Typography
@@ -133,10 +140,10 @@ h6 {
           (font-size (heading-size h))
           (line-height (heading-line-height h))))
 
-◊(insert-heading (heading 'h1 2.5 1.5 2.618 2))
-◊(insert-heading (heading 'h2 2 0.5 2.118 1.5))
+◊(insert-heading (heading 'h1 2 1 2.618 2))
+◊(insert-heading (heading 'h2 1 0.5 2.118 1.5))
 ◊(insert-heading (heading 'h3 1 0.5 1.618 1.5))
-◊(insert-heading (heading 'h4 1 0 1.309 1))
+◊(insert-heading (heading 'h4 1 0.5 1.309 1))
 
 h1 {
   font-family: "IBM Plex Roman";
@@ -170,6 +177,7 @@ li {
 }
 
 .highlight {
+  overflow: scroll;
   ◊(margin-bottom 1)
 }
 
@@ -399,12 +407,19 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .wrapper {
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   height: 100%;
   justify-content: space-between;
-  max-width: 690px;
+  width: 90%
+}
+
+@media (min-width: 750px) {
+  .wrapper {
+     max-width: 690px;
+   }
 }
 
 .sticky-header {
@@ -426,6 +441,15 @@ a:hover {
 .page-navigation {
   font-family: "IBM Plex Mono";
   color: rgb(48, 48, 48);
+}
+
+page-end {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  ◊(margin-top 2)
+  ◊(margin-bottom 2.5)
 }
 
 
@@ -500,10 +524,18 @@ there.
 /* Code highlighting
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+code {
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  background: #fcfcfc;
+   font-family: "IBM Plex Mono";
+   padding-left: 3px;
+   padding-right: 3px;
+}
+
 .highlight, pre {
     ◊(padding-top 0.5)
     ◊(padding-bottom 0.5)
-    padding-left: 30px;
     background: #fcfcfc;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
@@ -518,12 +550,15 @@ pre {
     ◊(margin-top 1)
     font-family: "IBM Plex Mono";
     white-space: pre;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .highlight pre {
   ◊(margin-bottom 0)
   ◊(margin-top 0)
-  padding-left: none;
+  padding-top: 0;
+  padding-bottom: 0;
   background: clear;
   border-top: none;
   border-bottom: none;
