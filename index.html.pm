@@ -14,7 +14,7 @@ Zatím jsou dostupné pouze zápisky ze základů bioinformatiky, zkusím ale v 
 ◊ls{
     - ◊link["doc/zaklady-bioinformatiky/lecture-page.html"]{Základy bioinformatiky}
     - ◊link["doc/biopolymery/lecture-page.html"]{Struktura a vlastnosti informačních biopolymerů}
-    - ◊link["doc/histologie /lecture-page.html"]{Histologie/Cytologie}
+    - ◊link["doc/histologie/lecture-page.html"]{Histologie/Cytologie}
 }
 
 ◊section{Plán}
