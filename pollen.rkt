@@ -1,6 +1,6 @@
 #lang racket
 
-(require pollen/pagetree pollen/decode txexpr hyphenate pollen/template/html)
+(require pollen/pagetree pollen/decode txexpr pollen/template/html)
 
 (require (prefix-in pygments: pollen/unstable/pygments))
 
@@ -542,7 +542,7 @@
           (decode-elements
             elements
             #:exclude-tags '(mathjax pre code)
-            #:string-proc (compose1 smart-implies smart-quotes smart-dashes hyphenate))))
+            #:string-proc (compose1 smart-implies smart-quotes smart-dashes))))
     (toc-entries ,toc-entries))]))
 
 (define (decode-elements2 elements)
