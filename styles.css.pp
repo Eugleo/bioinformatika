@@ -67,6 +67,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container {
+  position: relative;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -362,7 +363,7 @@ svg.svg-slide:hover {
 
 aside {
   position: absolute;
-  left: 75px;
+  left: -22px;
   width: 17px;
   margin-bottom: 0;
   line-height: 18px;
@@ -492,8 +493,15 @@ lecture {
 
 .lecture {
   position: absolute;
-  right: 400px;
+  right: -200px;
   margin-bottom: 0;
+  display: none;
+}
+
+@media (min-width: 800px) {
+  lecture {
+    display: block;
+  }
 }
 
 /* Media Queries
