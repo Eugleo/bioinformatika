@@ -195,7 +195,7 @@ dd {
 }
 
 .scrollable {
-  overflow: scroll;
+  overflow: auto;
   ◊(margin-top 0.5)
   ◊(margin-bottom 0.5)
 }
@@ -553,7 +553,7 @@ code {
     background: #fcfcfc;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .highlight .linenos {
