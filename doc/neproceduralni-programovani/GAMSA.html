@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <title>neproc:gamsa</title>
+    <link rel="stylesheet" type="text/css" media="all" href="../../styles.css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Ajax.config.path["mhchem"] = "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.2";
+        MathJax.Hub.Config({
+            jax: ["input/TeX","output/CommonHTML"],
+            extensions: ["[mhchem]/mhchem.js", "tex2jax.js","MathMenu.js","MathZoom.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+            TeX: {
+                extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+            },
+            CommonHTML: {
+                scale: 98
+            }
+        });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js">
+        </script>
+    <script type="text/javascript">
+        var visibilities = {};
+        function toggleImageVisible(id) {
+            var img = document.getElementById(id);
+            if (id in visibilities) {
+                 img.style.display = (visibilities[id] ? 'none' : 'block');
+                 visibilities[id] = !visibilities[id];
+            } else {
+                img.style.display = 'block'
+                visibilities[id] = true;
+            }
+        }
+
+        let h;
+        document.onreadystatechange = function() {
+            if (document.readyState == "interactive") {
+                h = document.getElementById('sticky-header');
+            }
+        }
+
+        let lastOffset = 10;
+        let first = true;
+        window.onscroll = function() {
+            var doc = document.documentElement;
+            var o = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+            if (o <= 8 && (lastOffset > 8 || first)) {
+                first = false;
+                h.style.boxShadow = 'none';
+                h.style.backgroundColor = 'rgb(255, 255, 255)';
+            } else if (o > 8 && (lastOffset <= 8 || first)) {
+                first = false;
+                h.style.boxShadow = '0px 1px 3px lightgrey';
+                h.style.backgroundColor = 'rgb(255, 255, 255)';
+            }
+            lastOffset = window.pageYOffset;
+        };
+
+        function showAllSlides() {
+            allSlides = document.getElementsByClassName("slide");
+            for (i = 0; i < allSlides.length; i++) {
+                var id = allSlides[i].id;
+                if (!visibilities[id]) {
+                    toggleImageVisible(allSlides[i].id);
+                }
+            }
+        }
+
+        function hideAllSlides() {
+            allSlides = document.getElementsByClassName("slide");
+            for (i = 0; i < allSlides.length; i++) {
+                var id = allSlides[i].id;
+                if (visibilities[id]) {
+                    toggleImageVisible(allSlides[i].id);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="sticky-header" id="sticky-header">
+        <div class="wrapper">
+            <span class="page-title"><a class="no-style" href="/bioinformatika" title="Úvodní stránka">notes</a>:<a class="no-style" href=lecture-page.html title="Neprocedurální programování">neproc</a>:<strong>gamsa</strong></span>
+            <span class="page-navigation">
+                &lt;<a href="javascript:showAllSlides()">+</a>/<a href="javascript:hideAllSlides()">–</a>&gt;
+            </span>
+        </div>
+    </div>
+    <div class="container">
+        <h1 id="Obsah"><a class="internal-link" href="#Obsah">Obsah</a></h1>
+
+        <ol class="toc"><ol><li><strong><a class="internal-link" href="#GAMSA">GAMSA</a></strong>
+        <ul><li><a class="internal-link" href="#Princip funkce">Princip funkce</a>
+        <ul><li><a class="internal-link" href="#Sequence alignment">Sequence alignment</a></li><li><a class="internal-link" href="#Tvorba generací">Tvorba generací</a></li><li><a class="internal-link" href="#Rekombinační operace">Rekombinační operace</a></li><li><a class="internal-link" href="#Fitness function">Fitness function</a></li></ul></li><li><a class="internal-link" href="#Orientace v kódu">Orientace v kódu</a></li><li><a class="internal-link" href="#Osobní poznámky">Osobní poznámky</a></li></ul></li></ol></ol>
+
+<h1 id="GAMSA"><a class="internal-link" href="#GAMSA">GAMSA</a></h1><p>GAMSA (genetic algorithm multiple sequence alignment) je můj program, ve kterém jsem se—jak už název napovídá—pokusil implementovat MSA pomocí genetického algoritmu. Kód je dostupný na <a href="https://github.com/Eugleo/gamsa">mém GitHubu</a>. Informace jsem čerpal především z těchto dvou článků:</p><ul><li><a href="http://www.funpecrp.com.br/gmr/year2007/vol4-6/pdf/Xm0016.pdf">A simple genetic algorithm for multiple sequence alignment</a></li><li><a href="https://www.researchgate.net/publication/234831605_Multiple_Sequence_Alignment_Using_a_Genetic_Algorithm_and_GLOCSA">Multiple Sequence Alignment Using a Genetic Algorithm and GLOCSA</a></li></ul><h2 id="Princip funkce"><a class="internal-link" href="#Princip funkce">Princip funkce</a></h2><p>High-level popis funkce je velice podobný jako u všech GA, tedy</p><ol><li>Ze seedu vygenerujeme počáteční populaci (každé jedné populaci pak říkáme <em>generace</em>).</li><li>Ze současné generace vytvoříme různými rekombinačními způsoby novou generaci o stejném počtu jedinců. Tento bod mnohokrát opakujeme.
+<ul><li>Často se hodí vědět, jak “dobrý” je daný <em>jedinec</em>; k tomu slouží takzvaná <em>fitness function</em>. Když budu v textu mluvit o “nejlepším jedinci”, budu mít vždy namysli jedince s nejvyšší hodnotou fitness function.</li></ul></li><li>Z poslední generace vybereme nejlepšího jedince, který je výstupem celého programu.</li></ol><p>Celý proces si lze představit jako prohledávání grafu, kde vrcholy jsou různí jedinci a hrany mezi nimi jsou různé rekombinační operace. Graf je ale tak velký, že běžné způsoby prohledávání na něj nefungují, proto se používají genetické algoritmy.</p><h3 id="Sequence alignment"><a class="internal-link" href="#Sequence alignment">Sequence alignment</a></h3><p><em>Pro více informací viz například sekce o sequence alignmentu <a href="https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Pairwise%20sequence%20alignment">v mých zápisech</a>.</em></p><p>Multiple sequence alignment je bioinformatická metoda, která se snaží v několika sekvencích (většinou proteinech) najít prvky (většinou aminokyseliny), které pocházejí ze stejného předka.</p><p>V praxi to znamená, že máme <mathjax>\(n\)</mathjax> sekvencí znaků, které se snažíme nějak srovnat pod sebe. Sekvence pod sebe srovnáváme tak, že do nich doplňujeme mezery; výsledému souboru původních sekvencí spolu s doplněnými mezerami říkáme <strong>alignment</strong>. Například pro <mathjax>\(n = 2\)</mathjax> bychom mohli dostat vstup</p><div class="highlight"><table class="sourcetable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="source"><pre><span></span>VLSEGKTEAPV
+VLSPAPV
+</pre></div></td></tr></tbody></table></div><p>ze kterého bychom poskládali například následující alignment</p><div class="highlight"><table class="sourcetable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="source"><pre><span></span>VLSEGKTEAPV
+VLS--P--APV
+</pre></div></td></tr></tbody></table></div><p>V kódu by tedy klidně mohl alignment vypadat nějak takto (i když v reálu jej implementuji trochu jinak)</p><div class="highlight"><table class="sourcetable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="source"><pre><span></span><span class="kr">data</span> <span class="kt">Alignment</span> <span class="ow">=</span> <span class="kt">Alignment</span>
+    <span class="p">{</span> <span class="n">aProteins</span> <span class="ow">::</span> <span class="p">[</span><span class="kt">Protein</span><span class="p">]</span>
+    <span class="p">,</span> <span class="n">aProteinGaps</span> <span class="ow">::</span> <span class="p">[[</span><span class="kt">Gap</span><span class="p">]]</span>
+    <span class="p">}</span>
+</pre></div></td></tr></tbody></table></div><p>Alignmentů existuje (nekonečně) mnoho, byly proto zavedeny způsoby, jakými je možné odlišit dobré alignmenty od těch špatných. Nejčastější metodou je skórování pomocí <strong>skórovacích tabulek</strong> (scoring matrices), například BLOSUM 62 nebo PAM 250, které vycházejí z experimentálních pozorování proteinů. Skórovací tabulky obsahují skóre pro všechny možné kombinace písmen (aminokyselin, AK), je tedy možné alignment jednoduše projet sloupec po sloupci, v daném sloupci oskórovat všechny dvojice znaků a výsledky sečíst.</p><h3 id="Tvorba generací"><a class="internal-link" href="#Tvorba generací">Tvorba generací</a></h3><p>Program na vstupu očekává cestu k souboru, ve kterém bude na každém řádku sekvence AK a pomlček, které budou představovat mezery—to bude počáteční (seed) alignment. Z něj je poté vygenerována úvodní populace, která čítá 100 jedinců; tento počet je možné změnit, i když zatím ne zrovna uživatelsky přívětivě.</p><p>Každá další generace je z té současné vytvořena následujícím způsobem:</p><ol><li><mathjax>\(n\)</mathjax> nejlepších jedinců je přeneseno do další generace beze změny</li><li>je pořádáno <mathjax>\(t\)</mathjax> turnajů, každého z nich se účastní <mathjax>\(u\)</mathjax> náhodně vybraných jedinců
+<ul><li>nejlepší ze všech účastníků se posouvá do další generace a je upraven pouze mutací</li><li>zbylí účastníci turnaje jsou rekombinováni s výhercem a poté ještě mutováni</li></ul></li></ol><p>Velikost každé generace je tedy dána</p><div class="scrollable"><mathjax>\[v_{gen} = n + t \cdot u\]</mathjax></div><p>Výchozí hodnoty jsou <mathjax>\(n = 1\)</mathjax>, <mathjax>\(t = 33\)</mathjax>, <mathjax>\(u = 3\)</mathjax> a tedy <mathjax>\(v_{gen} = 100\)</mathjax>, ale dají se relativně snadno změnit.</p><h3 id="Rekombinační operace"><a class="internal-link" href="#Rekombinační operace">Rekombinační operace</a></h3><p>Používám dva druhy rekombinačních operací: <strong>mutace</strong> a <strong>crossovery</strong>. Oba druhy se zabývají pouze změnou rozmístění, počtu a velikosti mezer v alignmentu, původní sekvence AK zůstávají nezměněny. Proteiny proto reprezentuji jako</p><div class="highlight"><table class="sourcetable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="source"><pre><span></span><span class="kr">data</span> <span class="kt">Protein</span> <span class="ow">=</span> <span class="kt">Protein</span>
+    <span class="p">{</span> <span class="n">pSeq</span> <span class="ow">::</span> <span class="kt">Vector</span> <span class="kt">Char</span>
+    <span class="p">,</span> <span class="n">pGaps</span> <span class="ow">::</span> <span class="p">[</span><span class="kt">Gap</span><span class="p">]</span>
+    <span class="p">}</span>
+</pre></div></td></tr></tbody></table></div><p>protože sekvence jsou konstatní, zatímco mezery se neustále mění.</p><div class="list"><list-title>Mutace</list-title><ul><li>mutujeme jedince, tedy alignment, ale mutace samotné se týkají pouze jednoho proteinu z celého alignmentu</li><li>v rámci mutace při tvoření nové generace může být jeden alignment zmutován i několikrát za sebou</li><li>rozlišuji pět druhů mutací
+<ol><li><code>insert</code> vloží do náhodného proteinu na náhodné místo mezeru, jejíž velikost je náhodná, ale odvíjí se od průměrné velikosti mezer v seed alignmentu</li><li><code>increase</code> zvětší v náhodném proteinu náhodnou mezeru o náhodnou velikost</li><li><code>descease</code> ditto, ale zmenší, a vždy pouze o 1</li><li><code>delete</code> zkusí v náhodném proteinu vymazat náhodnou mezeru, šance úspěchu se snižuje s délkou mezery</li><li><code>shift</code> přesune v náhodném proteinu náhodnou mezeru na jiné místo, případně je-li toto místo již nějakou mezerou obsazeno, prohodí velikosti těchto dvou mezer</li></ol></li><li>jednotlivé druhy mutace (“mutační operace”) jsou aplikovány s různou pravděpodobností; tyto pravděpodobnosti se navíc v průběhu programu přizpůsobují tomu, jak je který druh mutace úspěšný
+<ul><li>mechanismus je v detailu popsaný v druhém paperu, v podstatě se ale jedná o to, že dáváme do souvislosti skóre před mutací a po ní s počtem aplikací konkrétní mutační operace</li></ul></li></ul></div><box class="plain"><div class="title">Poznámka</div><div class="body">Rozhodl jsem se nakonec upustit od dynamického přizpůsobování pravděpodobností, místo toho jsem pro insert, increase, decrease, delete a shift zavedl fixní pravděpodobnosti 0.5, 0.2, 0.1, 0.1, 0.1 (respektive). Více informací v sekci <a href="#Osobní poznámky">osobní poznámky</a>.</div></box><div class="list"><list-title>Crossovery</list-title><ul><li>jsou používány pro alignmenty, které prohrají turnaj</li><li>rozlišuji dva druhy crossoverů
+<ol><li>horizontální: z rodičovských alignmentů vznikne potomek tak, že pro každý protein získá všechny mezery náhodně z jednoho, nebo druhého rodiče
+    <pre>Rodiče:
+<strong>VLSEGKTEAPV</strong>     VLSEGKTEAPV
+<strong>VLS--P--APV</strong>  +  --VLSP--APV
+<strong>-EGKT---A--</strong>     ---EGKTA---
+
+Potomek:
+<strong>VLSEGKTEAPV</strong>
+--VLSP--APV
+<strong>-EGKT---A--</strong></pre></li><li>vertikální: z rodičovských alignmentů vznikne potomek tak, že pro každý protein všechny mezery před <mathjax>\(k\)</mathjax>-tou AK převezme od jednoho z rodičů a mezery po <mathjax>\(k\)</mathjax>-té AK převezme od druhého
+    <pre>Rodiče:
+<strong>VLSEGKTEAPV</strong>     VLSEGKTEAPV
+<strong>VLS--P--APV</strong>  +  --VLSP--APV
+<strong>-EGKT---A--</strong>     ---EGKTA---
+
+Protomek (k = 3):
+<strong>VLS</strong>EGKTEAPV
+<strong>VLS</strong>P--APV
+<strong>-EGK</strong>TA---</pre></li></ol></li></ul></div><p>Je vidět, že při vertikálním crossoveru se někdy pokazí “blokovitost” celého alignmentu. V takovém případě jsou doplněny mezery na konec všech kratších proteinů.</p><h3 id="Fitness function"><a class="internal-link" href="#Fitness function">Fitness function</a></h3><p>Jako fitness funkce mi posloužil běžný pairwise sequence alignment: v rámci alignmentu spolu podle skórovací tabulky srovnám všechny dvojice proteinů a sečtu jejich skóre. Používám tabulku <a href="https://en.wikipedia.org/wiki/BLOSUM">BLOSUM62</a>, která se pro alignmenty proteinů používá běžně.</p><p>Samozřejmě se hodnotí i mezery; protože mezery v přírodě nevznikají příliš často, mají vždy záporné skóre. Navíc vznik mezery je méně pravděpodobný než rozšíření nějaké již existující, takže “první blok” mezery mívá menší skóre než všechny ostatní bloky (v rámci jedné kontinuální mezery). Při počítání skóre úseku, kde jsou v obou hodnocených proteinech mezery, se daný úsek přeskakuje. Mezery na konci proteinu se zpravdila napočítají, ale já je počítám, protože jsem tak dostal lepší výsledky.</p><h2 id="Orientace v kódu"><a class="internal-link" href="#Orientace v kódu">Orientace v kódu</a></h2><p>Kód je rozdělen na několik modulů.</p><dl><dt>Model</dt><dd>Modul obsahující definice základních datastruktur. Zde ti doporučuji začít číst.</dd><dt>MultipleSeqAlignment</dt><dd>Hlavní modul celého balíčku, kombinuje všechny ostatní moduly. Jsou zde tvořeny nové generace a dají se zde také změnit základní vlastnosti celého algoritmu, např. počet generací, velikost populace atd.</dd><dt>Crossover, Mutation, Scoring (+ ScoringMatrix), Utils</dt><dd>Moduly obsahující kód crossoveru, mutací, skórovací funkce a pomocných funkcí (respektive). Zvláště v mutation je (oproti zbytku balíčku) relativně zajímavý kód, kde používám monad transformery.</dd><dt>MutationProbabilities</dt><dd>Modul, který vlastně není používán—sloužil k dynamickému přizpůsobování pravděpodobností jednotlivých typů mutací. Na řádku 63 lze odkomentovat kód, který tuto funkcionalitu opět zapne.</dd></dl><p>Funkce <code>main</code> (a potažmo <code>stack exec</code>) čeká jeden argument: cestu k textovému souboru, ve kterém bude na každém řádku jedna sekvence znaků aminokyselin a pomlček. Soubor tedy může vypadat například následovně:</p><div class="highlight"><table class="sourcetable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="source"><pre><span></span>---MAIGFVIVTFQEQGETEYKNCELDKNQRQCVQYA--LKAR----------P-------LRCY---IPKNPYQYQVWYVVTSSYF------------
+-------------------S------KMTEEECRGYYYVYKDGDPT-----Q--------------MELRPRQ-----W---IHNDFHFDNVLSAMMS-
+-----------------------------------ISMGLESS-TISVVKILRVLRLLQFMFACIGVQLFKGK------------FFSCNDL-------
+FTNFILLFILLSSAALAAED------PIRAESVRNQILGYFDIAFTSVFTVEIVLK-----MTTYGAFLHKGS-----F---CRNYFNILDLLVVAVSL
+------------------------------------------------------------------------------------EYLMFIDVILS----
+</pre></div></td></tr></tbody></table></div><p>Obecně je lepší na vstupu dávat už naalignované sekvence, které poté algorimus už jen vylepší. Hledání alignmentů úplně od píky mu moc nejde (což je obecná vlastnost všech genetických MSA).</p><h2 id="Osobní poznámky"><a class="internal-link" href="#Osobní poznámky">Osobní poznámky</a></h2><p>Do tohoto projektu jsem šel s naprostou neznalostí genetických algoritmů, jen jsem o nich předtím párkrát někde četl. Už pár let si však hýčkám představu, že někdy nějaký napíšu; myšlenka, která za nimi stojí, mi vždycky přišla geniální. Nechat přírodu a náhodu udělat těžkou práci za nás... Boží!</p><p>Ukázalo se, že až tak idylické to s nimi není. Člověk má k dispozici velkou spoustu různých čudlíků, páček a vypínačů, všechny bez popisných cedulek, z nichž některé vypínače ani nejsou zapojeny, a některé sice jsou, ale pouze zapínají a vypínají jiné vypínače atd. Někdy je to až k zbláznění.</p><p>Proto jsem byl nakonec nucen odstoupit od postupu, který byl prosazován v druhém článku, totiž od dynamické úpravy pravděpodobností jednotlivých mutací. Z jakéhosi záhadného důvodu, který se mi nepodařilo najít ani po několika probdělých nocích, neustále roste pravděpodobnost <code>insert</code> a to až do té míry, že by pravděpodobnosti ostatních funkcí klesly na 0. Přesto však výsledný alignment mnoho mezer nemá, spíše naopak.</p><p>Když se toto dynamické chování vymění za fixní, program se několikanásobně zrychlí a je tedy možné nechat běžet řádově více generací, což nakonec vede k lepšímu výsledku za stejný čas. S implementací dynamických pravděpodobností bylo však tolik práce, že jsem se rozhodl tam veškerý kód nechat (a jde zprovoznit odkomentováním řádku 63 v modulu <code>Genetics.MutationProbabilities</code>). Snad se mi to někdy ještě podaří opravit.</p><p>Moc rád bych také implementoval paralelní běh kódu; když jsem spustil profiler, vyšlo mi, že nejvíce času se ztratí (dle očekávání) ve skórovací funkci. Ta nijak neovlivňuje ostatní části programu a navíc se skládá z mnoha nezávislých částí, a tak se paralelizace přímo nabízí.</p>
+    </div>
+     <page-end> ⋅ 𝓔 ⋅ </page-end>
+    </body>
+</html>

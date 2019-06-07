@@ -1,0 +1,643 @@
+@font-face {
+  font-family: "IBM Plex Roman";
+  font-weight: normal;
+  src: url('resources/fonts/IBMPlexSerif-Regular.woff2');
+}
+
+@font-face {
+  font-family: "IBM Plex Roman";
+  font-weight: bold;
+  src: url('resources/fonts/IBMPlexSerif-Bold.woff2');
+}
+
+@font-face {
+  font-family: "IBM Plex Roman";
+  font-weight: normal;
+  font-style: italic;
+  src: url('resources/fonts/IBMPlexSerif-Italic.woff2');
+}
+
+@font-face {
+  font-family: "IBM Plex Roman";
+  font-weight: bold;
+  font-style: italic;
+  src: url('resources/fonts/IBMPlexSerif-BoldItalic.woff2');
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  src: url('resources/fonts/IBMPlexSans-Regular.woff2');
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-weight: bold;
+  src: url('resources/fonts/IBMPlexSans-Bold.woff2');
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-weight: normal;
+  font-style: italic;
+  src: url('resources/fonts/IBMPlexSans-Italic.woff2');
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: normal;
+  src: url('resources/fonts/IBMPlexMono-Regular.woff2');
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+  src: url('resources/fonts/IBMPlexMono-Bold.woff2');
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  src: url('resources/fonts/IBMPlexMono-Italic.woff2');
+}
+
+/* Page layout
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 750px) {
+  .container {
+      max-width: 690px;
+   }
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "IBM Plex Roman";
+  color: black;
+  font-kerning: normal;
+  font-feature-settings: 'kern' 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Sans";
+}
+
+
+
+
+h1 {
+    margin-top: 3.2rem;
+    margin-bottom: 1.6rem;
+    font-size: 2.618rem;
+    line-height: 3.2rem;
+}
+h2 {
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+    font-size: 2.118rem;
+    line-height: 2.4000000000000004rem;
+}
+h3 {
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.618rem;
+    line-height: 2.4000000000000004rem;
+}
+h4 {
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.309rem;
+    line-height: 1.6rem;
+}
+
+h1 {
+  font-family: "IBM Plex Roman";
+  font-style: italic;
+  font-weight: normal;
+  border-bottom: 2px solid black;
+}
+
+p {
+  margin-bottom: 1.6rem;
+}
+
+body {
+  line-height: 1.6rem;
+}
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0rem;
+}
+
+ul, ol {
+  padding-left: 30px;
+  margin-bottom: 1.6rem;
+}
+
+li {
+  margin-bottom: 0rem;
+}
+
+.highlight {
+  margin-bottom: 1.6rem;
+}
+
+.highlight * {
+  margin-bottom: 0;
+}
+
+dt {
+  margin-bottom: 0;
+}
+
+dd {
+  padding-left: 30px;
+  margin-bottom: 1.6rem;
+}
+
+.scrollable {
+  overflow: auto;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul {
+  list-style: circle outside;
+}
+
+ol {
+  list-style: latin outside;
+}
+
+dt {
+  font-family: "IBM Plex Sans";
+  font-weight: bold;
+}
+
+dl {
+  margin-bottom: 1.6rem;
+}
+
+dl > *:last-child {
+  margin-bottom: 0;
+}
+
+dd > *:last-child {
+  margin-bottom: 0;
+}
+
+list-title {
+  font-family: "IBM Plex Mono";
+}
+
+p + ul {
+  margin-top: -1.6rem;
+}
+
+p + ol {
+  margin-top: -1.6rem;
+}
+
+q-body {
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+
+q-label {
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+question {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+   margin-bottom: 0;
+}
+
+a-label {
+  margin-right: 1rem;
+  color: rgb(194, 194, 194);
+}
+
+answer {
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+/* Images
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+img {
+  margin-bottom: 1.6rem;
+}
+
+/* Boxes
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+box {
+  display: block;
+  border-top-right-radius: 1.5rem;
+  margin-bottom: 1.6rem;
+}
+
+box > .body {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+box > .body > *:last-child {
+  margin-bottom: 0;
+}
+
+box > .title {
+  font-family: "IBM Plex Sans";
+  padding: .2rem 1rem .2rem 1.5rem;
+  padding-left: 30px;
+  top: 2px;
+  border-top-right-radius: 1.5rem;
+  margin-bottom: 0;
+}
+
+box.plain {
+  background: #fcfcfc;
+}
+
+box.plain > .title {
+  background: #f6f6f6;
+  color: #666;
+}
+
+box.plain > .body {
+  border-color: #ebebeb;
+}
+
+box.todo {
+  border-left: solid 3px #ffc400;
+  background-color: #fffef2;
+}
+
+box.todo > .title {
+    background-color: #fff9d4;
+    color: #ffc400;
+}
+
+box.todo > div.body {
+  border-color: #fff0be;
+}
+
+box.meta {
+  border-left: solid 3px #3072dc;
+  background-color: #dae4f9;
+}
+
+box.meta > .title {
+    color: #3072dc;
+}
+
+box.meta > .body {
+  background-color: #f2f7ff;
+  border-color: #d1dff7;
+}
+
+/* Slides
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a.lnk-slide:hover {
+  background-color: transparent;
+}
+
+svg.svg-slide:hover {
+  stroke: #288dce;
+}
+
+aside {
+  position: absolute;
+  left: -22px;
+  width: 17px;
+  margin-bottom: 0;
+  line-height: 18px;
+  padding-top: 4px;
+}
+
+svg.svg-slide {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: #186697;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: bevel;
+  transition: stroke 0.25s;
+}
+
+img.slide {
+  max-width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+slide-inline-wrapper > img.slide {
+   margin-top: 1.6rem;
+}
+
+slide-link {
+  margin-bottom: 0;
+  display: inline;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  text-decoration: none;
+  color: rgb(37, 103, 58);
+  transition: background-color 0.25s;
+}
+
+a:hover {
+  background-color: rgba(8, 139, 8, 0.05);
+  color: rgba(8, 139, 8);
+}
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  width: 90%
+}
+
+@media (min-width: 750px) {
+  .wrapper {
+     max-width: 690px;
+   }
+}
+
+.sticky-header {
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  transition-delay: 0s;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 999;
+  left: 0;
+}
+
+.page-title {
+  font-family: "IBM Plex Mono";
+}
+
+.page-navigation {
+  font-family: "IBM Plex Mono";
+  color: rgb(48, 48, 48);
+}
+
+page-end {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 3.2rem;
+  margin-bottom: 4.0rem;
+}
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.internal-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.internal-link:hover {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Miscellaneous
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+lecture {
+  line-height: 1.5rem;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #D9D9D9;
+  color: #D9D9D9;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 1.5rem;
+  margin-bottom: 0;
+}
+
+.lecture {
+  position: absolute;
+  right: -200px;
+  margin-bottom: 0;
+  display: none;
+}
+
+@media (min-width: 800px) {
+  lecture {
+    display: block;
+  }
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {}
+
+/* Code highlighting
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+code {
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  background: #fcfcfc;
+  font-family: "IBM Plex Mono";
+  padding-left: 3px;
+  padding-right: 3px;
+  white-space: pre-wrap;
+}
+
+.highlight, pre {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background: #fcfcfc;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    overflow: auto;
+}
+
+.highlight .linenos {
+    display: none;
+}
+
+pre {
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+    font-family: "IBM Plex Mono";
+    white-space: pre;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.highlight pre {
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: clear;
+  border-top: none;
+  border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.p { color: #888;}
+.c { color: #998; font-style: italic; } /* Comment */
+.err { color: red; font-style: italic; } /* Error */
+.o { color: #000; } /* Operator */
+.cm { color: #c2741f; font-style: italic } /* Comment.Multiline */
+.cp { color: #c2741f; font-style: italic } /* Comment.Preproc */
+.c1 { color: #c2741f; font-style: italic } /* Comment.Single */
+.cs { color: #c2741f; font-style: italic } /* Comment.Special */
+.gd { color: #000; background-color: #ffdddd } /* Generic.Deleted */
+.ge { color: #000; font-style: italic } /* Generic.Emph */
+.gr { color: #a00; } /* Generic.Error */
+.gh { color: #999; } /* Generic.Heading */
+.gi { color: #000; background-color: #ddffdd } /* Generic.Inserted */
+.go { color: #888; } /* Generic.Output */
+.gp { color: #555; } /* Generic.Prompt */
+.gs { } /* Generic.Strong */
+.gu { color: #aaa; } /* Generic.Subheading */
+.gt { color: #a00; } /* Generic.Traceback */
+.k { color: #07a; } /* Keyword */
+.kc { color: #07a; } /* Keyword.Constant */
+.kd { color: #07a; } /* Keyword.Declaration */
+.kn { color: #07a; } /* Keyword.Namespace */
+.kp { color: #07a; } /* Keyword.Pseudo */
+.kr { color: #07a; } /* Keyword.Reserved */
+.kt { color: #07a; } /* Keyword.Type */
+.ow { color: rgb(39, 42, 126); } /* Operator.Word */
+.w { color: #bbb; } /* Text.Whitespace */
+.m { color: #275; } /* Literal.Number */
+.mf { color: #275; } /* Literal.Number.Float */
+.mh { color: #275; } /* Literal.Number.Hex */
+.mi { color: #275; } /* Literal.Number.Integer */
+.mo { color: #275; } /* Literal.Number.Oct */
+.s { color: #275;} /* Literal.String */
+.sb { color: #275; } /* Literal.String.Backtick */
+.sc { color: #275; } /* Literal.String.Char */
+.sd { color: #275; } /* Literal.String.Doc */
+.s2 { color: #275; } /* Literal.String.Double */
+.se { color: #275; } /* Literal.String.Escape */
+.sh { color: #275; } /* Literal.String.Heredoc */
+.si { color: #275; } /* Literal.String.Interpol */
+.sx { color: #275; } /* Literal.String.Other */
+.sr { color: #275; } /* Literal.String.Regex */
+.s1 { color: #275; } /* Literal.String.Single */
+.ss { color: #275; } /* Literal.String.Symbol */
+.bp { color: rgb(189, 44, 127); } /* Name.Builtin.Pseudo */
+.vc { color: #077; } /* Name.Variable.Class */
+.vg { color: #077; } /* Name.Variable.Global */
+.vi { color: #077; } /* Name.Variable.Instance */
+.il { color: #099; } /* Literal.Number.Integer.Long */
