@@ -775,7 +775,7 @@ Histonové modifikace tvoří epigenetický kód, který upravuje genovou expres
         - nes­tačí mu na­jít jen H4 tail, ale také další konce jiných his­tonů se speci­fick­ý­mi značka­mi
 }
 
-◊section{Replikace DNA}
+◊section{Replikace}
 
 ◊img["replication.jpg"]{Schematický obrázek replikace DNA}
 
@@ -851,6 +851,95 @@ Aby byl systém co nejvýkonnější, dochází k velkému množství replikačn
 }
 
 Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který našel chybu (break). Přerušené vlákno jsou poté schopny spojit ◊strong{ligázy}.
+
+◊section{Transkripce}
+
+◊ls[#:t "Regulace transkripce"]{
+    - posttranslační modifikace na histonu
+        - methylace, acylace atd.
+        - jsou k tomu třeba modifikující enzymy (readers, writers, protein 14-3-3)
+}
+
+◊ls[#:t "Kontrolní elementy transkripce"]{
+    - promotory, enhancery
+    - chromatin v superorientaci
+        - potřebujeme ho remodulovat - rozvolnit více organizované shluky
+    - enhancery
+        - oblasti DNA
+        - vážou se na ně regulační proteiny
+        - dokáží díky velkému mediátorovému komplexu komunikovat s promotorem
+        - vzniká smyčka --- DNA se ohne, enhancer se dostane k polymeráze a začíná transkripce
+        - mohou být až stovky bazí daleko od vlastního genu
+}
+
+◊ls[#:t "Transkripční faktory"]{
+    - dokáží rozpoznávat specifické sekvence DNA (promotorové regiony, enhancery)
+    - faktory lze rozdělit podle konformací, které zaujímají
+        - většinou  tvoří heterodimery, mají tvar alfa helixu
+        - specifita daná dvěma úseky DNA vedle sebe
+        - motivy
+            - zink finger
+                - koordinuje zinkové atomy, které drží konformaci v aktivním stavu
+            - leucinový zip
+                - motiv pomocí něhož některé bílkoviny vytvářejí dimery
+                - strany zipu se k sobě koordinují hydrofobními interakcemi
+    - pioneer faktor
+        - umí vázat histonový oktamer
+        - např. faktor FoxA
+            - strukturou se podobá histonu H1
+            - dokáže napodobit interakci H1 přes vazebnou doménu
+}
+
+◊ls[#:t "Eukaryotická transkripce"]{
+    - polymerázová reakce
+    - RNA polymeráza
+        - v aktivním místě Mg
+        - 3 typy, které se liší složením podjednotek
+            - I - umí syntetizovat RNA prekurzor
+            - II - transkribuje mRNA a malé nekódující RNA
+            - III - tRNA
+        - přenos polymeráz
+            - vytvoření většího množství komplexů
+            - chaperonové proteiny pomohou jednotkám k přechodu přes nukleární pór do jádra
+        - regulace pomocí fosforylace nestrukturovaného C konce
+    - splicosom
+        - viz video
+}
+
+◊subsection{Chromatine remodeling}
+
+◊ls{
+    - k DNA na nukleozomech není možné se dostat, je proto nutné chromatin ◊em{remodelovat} tak, abychom si DNA mohli přečíst
+    - potřeba dodat ATP
+    - způsoby remodelingu
+    - posunutí nukleozomu
+        - odhalení té části DNA, kterou potřebujeme
+        - velmi energeticky náročné (překonávání elektrostatických interakcí)
+    - zbavení se nukleozomu
+        - díky chaperonům ale zůstává stále poblíž, "naskočí" rychle zpátky
+    - zhušťování a ředění vzdálenosti nukleozomů
+    - výměna histonu (nejčastěji H2)
+}
+
+◊ls[#:t "Fáze"]{
+    # recruitment
+    # ATP depending pumping
+    # uvolnění interakce
+    # pootočen dalšími faktory (může dojít k rozpadu celého nukleozomu)
+}
+
+◊ls[#:t "ATP-dependent chromatin remodeling complexes"]{
+    - známe 4 typy
+    - SWI-SNF family
+    - INO80 family
+        - vícejednotkový
+        - základem je hexamer z proteinů Rvb1/Rvb2
+        - nemá ATPázovou aktivitu
+        - funguje jako stator pro molekulární motor
+            - recyklací ATP je schopen se otáčet
+            - jsou k tomu potřeba další proteiny, které uchopí nukleozom
+    - ISWI family
+}
 
 ◊section{Translace}
 
@@ -1005,93 +1094,4 @@ Isoleucyl-RS je vyjímka; má dvě ak­tivní mís­ta.
             - připojí ubiquitin s lysiny
             - jeden ubiquitin nemusí znamenat degradaci
                 - připojují se další, nastane ◊em{polyubiquitinace}
-}
-
-◊section{Transkripce}
-
-◊ls[#:t "Regulace transkripce"]{
-    - posttranslační modifikace na histonu
-        - methylace, acylace atd.
-        - jsou k tomu třeba modifikující enzymy (readers, writers, protein 14-3-3)
-}
-
-◊ls[#:t "Kontrolní elementy transkripce"]{
-    - promotory, enhancery
-    - chromatin v superorientaci
-        - potřebujeme ho remodulovat - rozvolnit více organizované shluky
-    - enhancery
-        - oblasti DNA
-        - vážou se na ně regulační proteiny
-        - dokáží díky velkému mediátorovému komplexu komunikovat s promotorem
-        - vzniká smyčka --- DNA se ohne, enhancer se dostane k polymeráze a začíná transkripce
-        - mohou být až stovky bazí daleko od vlastního genu
-}
-
-◊ls[#:t "Transkripční faktory"]{
-    - dokáží rozpoznávat specifické sekvence DNA (promotorové regiony, enhancery)
-    - faktory lze rozdělit podle konformací, které zaujímají
-        - většinou  tvoří heterodimery, mají tvar alfa helixu
-        - specifita daná dvěma úseky DNA vedle sebe
-        - motivy
-            - zink finger
-                - koordinuje zinkové atomy, které drží konformaci v aktivním stavu
-            - leucinový zip
-                - motiv pomocí něhož některé bílkoviny vytvářejí dimery
-                - strany zipu se k sobě koordinují hydrofobními interakcemi
-    - pioneer faktor
-        - umí vázat histonový oktamer
-        - např. faktor FoxA
-            - strukturou se podobá histonu H1
-            - dokáže napodobit interakci H1 přes vazebnou doménu
-}
-
-◊ls[#:t "Eukaryotická transkripce"]{
-    - polymerázová reakce
-    - RNA polymeráza
-        - v aktivním místě Mg
-        - 3 typy, které se liší složením podjednotek
-            - I - umí syntetizovat RNA prekurzor
-            - II - transkribuje mRNA a malé nekódující RNA
-            - III - tRNA
-        - přenos polymeráz
-            - vytvoření většího množství komplexů
-            - chaperonové proteiny pomohou jednotkám k přechodu přes nukleární pór do jádra
-        - regulace pomocí fosforylace nestrukturovaného C konce
-    - splicosom
-        - viz video
-}
-
-◊subsection{Chromatine remodeling}
-
-◊ls{
-    - k DNA na nukleozomech není možné se dostat, je proto nutné chromatin ◊em{remodelovat} tak, abychom si DNA mohli přečíst
-    - potřeba dodat ATP
-    - způsoby remodelingu
-    - posunutí nukleozomu
-        - odhalení té části DNA, kterou potřebujeme
-        - velmi energeticky náročné (překonávání elektrostatických interakcí)
-    - zbavení se nukleozomu
-        - díky chaperonům ale zůstává stále poblíž, "naskočí" rychle zpátky
-    - zhušťování a ředění vzdálenosti nukleozomů
-    - výměna histonu (nejčastěji H2)
-}
-
-◊ls[#:t "Fáze"]{
-    # recruitment
-    # ATP depending pumping
-    # uvolnění interakce
-    # pootočen dalšími faktory (může dojít k rozpadu celého nukleozomu)
-}
-
-◊ls[#:t "ATP-dependent chromatin remodeling complexes"]{
-    - známe 4 typy
-    - SWI-SNF family
-    - INO80 family
-        - vícejednotkový
-        - základem je hexamer z proteinů Rvb1/Rvb2
-        - nemá ATPázovou aktivitu
-        - funguje jako stator pro molekulární motor
-            - recyklací ATP je schopen se otáčet
-            - jsou k tomu potřeba další proteiny, které uchopí nukleozom
-    - ISWI family
 }
