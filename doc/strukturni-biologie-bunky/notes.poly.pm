@@ -11,7 +11,7 @@
 
 DNA má několik forem, konkrétně především B, A a Z. Tyto se liší velikostí žlábku, tvarem ribóz a případně orientací báze (synklinální/antiklinální).
 
-◊meta{Další informace též odpovídající část zápisů ze základů bioinformatiky (◊link["../zaklady- bioinformatiky/notes.html#Struktura%20nukleových%20kyselin"]{DNA}, ◊link["../zaklady- bioinformatiky/notes.html#Struktura%20proteinů"]{proteiny}) a také zápisy z ◊link["../biopolymery/notes.html"]{celého druhého předmětu}.}
+◊meta{Další informace též odpovídající část zápisů ze základů bioinformatiky (◊link["../zaklady-bioinformatiky/notes.html#Struktura%20nukleových%20kyselin"]{DNA}, ◊link["../zaklady-bioinformatiky/notes.html#Struktura%20proteinů"]{proteiny}) a také zápisy z ◊link["../biopolymery/notes.html"]{celého druhého předmětu}.}
 
 ◊section{Interakce mezi molekulami}
 
@@ -36,7 +36,7 @@ Atomy (potažmo molekuly) jsou vázány kovalentně, nebo nekovalentně.
 
 ◊section{Struktura proteinů}
 
-◊meta{Předpokládají se základní informace o proteinech a o stavbě a složení aminokyselin. Viz popříadě ◊link["../zaklady- bioinformatiky/notes.html#Struktura%20proteinů"]{zápisky z bioinformatiky}.}
+◊meta{Předpokládají se základní informace o proteinech a o stavbě a složení aminokyselin. Viz popříadě ◊link["../zaklady-bioinformatiky/notes.html#Struktura%20proteinů"]{zápisky z bioinformatiky}.}
 
 Proteiny jsou biopolymery složené z aminokyselin, které jsou vázané peptidickou vazbou. Peptidická vazba je ze 40% rezonanční, a proto je planární; rotace je dovolena pouze kolem chirálních ◊chem{C\alpha}. Volnost otáčení (tzv. torzní úhly) se zaznamnává na Ramachandranův diagram.
 
@@ -325,7 +325,7 @@ Narozdíl od RTG krystalografie pozorujeme u NMR ◊strong{přímou odezvu konkr
 
 Výpočetní metody studují ty stejné problémy jako NMR a hmotnostní spektrometrie: prostorové uspořádání molekul, jejich dynamické chování a vzájemná interakce.
 
-◊meta{Další informace lze najít v oddílu ◊link["../zaklady- bioinformatiky/notes.html#Predikce%20struktury"]{predikce struktury}.}
+◊meta{Další informace lze najít v oddílu ◊link["../zaklady-bioinformatiky/notes.html#Predikce%20struktury"]{predikce struktury}.}
 
 ◊ls[#:t "Dělení"]{
     - homologní modelování
@@ -373,7 +373,7 @@ Výpočetní metody studují ty stejné problémy jako NMR a hmotnostní spektro
 
 ◊ls[#:t "Mechanismus funkce"]{
     - funkce je ovlivněná strukturou
-    - váží se na substrát a snižují energetickou barieéru, takže reakce mlže proběhnout rychleji
+    - váží se na substrát a snižují energetickou barieéru, takže reakce může proběhnout rychleji
     - mechanismus zámku a klíče
         - enzym má preformované aktivní místo, do kterého se vejde pouze jeden substrát (musí mít určité vlastnosti)
         - pouze pro tento substrát reakce proběhne
@@ -655,16 +655,7 @@ S tímto pravidlem souvisí také jev tzv. "šnorchlování", tedy interakce pol
 ◊ls[#:t "G-protein-coupled receptors"]{
     - receptory spřažené s G-proteiny
     - struktura G-proteinu objevena roku 2007, struktura G-proteinu v komplexu objevena roku 2011
-        - ◊${\alpha} podjednotka váže nukleotid a reaguje s receptorem
-            - když má navázaný GTP, je v neaktivním stavu (disociuje GTP)
-            - když má navázaný GDP, je v aktivním stavu
-            - je v interakci s receptorem, sama o sobě se neumí navázat, k tomu potřebuje ◊${\beta} a ◊${\gamma} podjednotku
-        - ◊${\beta} a ◊${\gamma} drží pevně pohromadě
-    - průběh signálu
-        # přijde signální molekula (adrenalin), naváže se na ◊${7\times} procházející receptor
-        # konformační změna
-        # disociace GTP, aktivace G-proteinu
-        # odpojení ◊${\alpha} podjednotky
+    - více viz ◊name["#G-protein-coupled receptors"]{oddíl o GPCR} v tomto textu
 }
 
 ◊ls[#:t "Draselný kanál"]{
@@ -893,18 +884,34 @@ Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který
 ◊ls[#:t "Eukaryotická transkripce"]{
     - polymerázová reakce
     - RNA polymeráza
-        - v aktivním místě Mg
-        - 3 typy, které se liší složením podjednotek
-            - I - umí syntetizovat RNA prekurzor
-            - II - transkribuje mRNA a malé nekódující RNA
-            - III - tRNA
-        - přenos polymeráz
-            - vytvoření většího množství komplexů
-            - chaperonové proteiny pomohou jednotkám k přechodu přes nukleární pór do jádra
+        - v aktivním místě se nalézá ◊chem{Mg}
+        - 3 typy, které se liší složením podjednotek a svým účelem
+            - I umí syntetizovat RNA prekurzor
+            - II transkribuje mRNA a malé nekódující RNA
+            - III transkribuje tRNA
         - regulace pomocí fosforylace nestrukturovaného C konce
-    - splicosom
-        - viz video
+    - přenos polymeráz
+        - vytvoření většího množství komplexů
+        - chaperonové proteiny pomohou jednotkám k přechodu přes nukleární pór do jádra
 }
+
+◊subsection{Splicing}
+
+◊ls{
+    - vystřižení intronů, spojení exonů
+    - exony jsou různě kombinovány, pre-mRNA může být spliceována více způsoby
+    - začátek a konec intronu, stejně jako místo, kde se má připojit lariát (viz obrázek), mají své typické "konsenzuální" sekvence
+        - tyto sekvence jsou rozpoznány spliceosomem
+}
+
+◊ls[#:t "Spliceosom"]{
+    - jádro tvořeno snRNP (small nuclear RNA + protein subunit)
+    - snRNP umí rozpoznat signální sekvence na pre-mRNA, které označují introny
+}
+
+◊img["splicing.png"]{Schéma popisující průběh splicingu}
+
+◊;{Alberts, 320}
 
 ◊subsection{Chromatine remodeling}
 
@@ -912,13 +919,13 @@ Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který
     - k DNA na nukleozomech není možné se dostat, je proto nutné chromatin ◊em{remodelovat} tak, abychom si DNA mohli přečíst
     - potřeba dodat ATP
     - způsoby remodelingu
-    - posunutí nukleozomu
-        - odhalení té části DNA, kterou potřebujeme
-        - velmi energeticky náročné (překonávání elektrostatických interakcí)
-    - zbavení se nukleozomu
-        - díky chaperonům ale zůstává stále poblíž, "naskočí" rychle zpátky
-    - zhušťování a ředění vzdálenosti nukleozomů
-    - výměna histonu (nejčastěji H2)
+        - posunutí nukleozomu
+            - odhalení té části DNA, kterou potřebujeme
+            - velmi energeticky náročné (překonávání elektrostatických interakcí)
+        - zbavení se nukleozomu
+            - díky chaperonům ale zůstává stále poblíž, "naskočí" rychle zpátky
+        - zhušťování a ředění vzdálenosti nukleozomů
+        - výměna histonu (nejčastěji H2)
 }
 
 ◊ls[#:t "Fáze"]{
@@ -1094,4 +1101,137 @@ Isoleucyl-RS je vyjímka; má dvě ak­tivní mís­ta.
             - připojí ubiquitin s lysiny
             - jeden ubiquitin nemusí znamenat degradaci
                 - připojují se další, nastane ◊em{polyubiquitinace}
+}
+
+◊title{Přenos signálu v buňce}
+
+◊section{Receptory}
+
+◊ls[#:t "Části"]{
+    - extracelulární vazebná doména
+    - transmembránová doména
+        - alfa-helikální
+        - "spojka" --- spojuje extracelulární a intracelulární
+    - intracelulární
+        - spojena s enzymatickou funkcí
+        - probíhá sled reakcí, které mohou vést až ke změně genové exprese
+}
+
+◊ls[#:t "Typy"]{
+    - ligand-gated iontové kanály
+        - reagují na vazbu ligandu otevřením/zavřením
+        - nejrychlejší reakce
+    - receptory spojené s G proteiny
+        - také relativně rychlé
+        - produkují sekundární posly
+    - receptory spojené s kinázami
+    - jaderné receptory
+        - pod membránou
+        - nemají transmembránovou část
+        - ligandem jsou většinou melé hydrofobní molekuly
+}
+
+◊subsection{Fosforylace}
+
+◊ls{
+    - nejběžnější typ posttranslační modifikace
+    - až 13 000 fosforylovaných proteinů, 230 fosforylačních míst
+    - spotřeba ATP/GTP pro přenos fosfátu na protein
+    - reverzibilní proces (fosfatázy)
+    - kinázová doména je dobře konzervovaná
+    - funkce
+        - vytvořit interakci (fosfátová skupina interaguje přes hydroxylovou skupinu) nebo naopak interakci zabránit
+        - spustit enzymatickou reakci
+        - přidání náboje (fosfátová skupina je záporně nabitá)
+    - tyrosinová fosforylace
+        - reader: SH2 doména
+            - rozpoznává tyrosiny
+        - writer: tyrosin kináza
+            - modul, který fosforyluje
+        - eraser: P-Tyr fosfatáza
+            - modul, který defosforyluje
+}
+
+◊ls[#:t "Src kináza"]{
+    - tyrosin kináza
+    - má unikátní doménové uspořádání
+    - SH4 doména
+        - krátký úsek několika málo AK
+        - slouží k ukotvení do membrány
+    - unique doména
+        - asi 100 AK
+        - neuspořádaná oblast (čili pro ni nemáme strukturu)
+    - SH3 doména
+        - interaguje s SH4 a unikátní doménou (přes dvě smyčky)
+        - polyprolinový helix
+            - výskyt v linkeru
+            - dojde-li k rozvolnění struktury, linker se uvolní do struktury
+        - delece SH3 vede  narušení regulace kinázové aktivity -> leukemie
+    - SH2 doména
+        - asi 100 AK
+        - umí rozpoznat fosforylovaný tyrosin
+    - SH1 doména
+}
+
+◊note{
+    Proteiny bez konformace, intrinsically disordered proteins (IDP): více informací například ◊link["../doc/zaklady-bioinformatiky#Intrinsically disordered proteins"]{IDP v zápiscích z bioinformatiky}.
+
+    ◊ls[#:t "Příklady"]{
+        - E1A
+            - váže pRB (retinoblastomový protein) a CBP (cap binding proteins)
+        - PKA
+            - fosforylací aktivuje CREB a změní neuspořádané domény KIY v uspořádané
+    }
+}
+
+◊subsection{G-protein-coupled receptors}
+
+◊ls{
+    - rodina eukaryotních proteinů
+    - sedm transmembránových úseků
+    - variabilní ligandy (vůně, neurotransmitery, feromony, hormony, peptidy)
+    - přes 800 genů u člověka (4% všech protein-kódujících genů)
+    - snad každý fyziologický proces je regulován GPCR
+}
+
+◊ls[#:t "Princip funkce"]{
+    - na GCPR je navázaný G-protein složený z ◊${\alpha} a ◊${\beta / \gamma} podjednotek
+    - po navázání ligandu na receptor se z GCPR stane GEF (guanine nucleotide exchange factor), pomůže G◊${\alpha} uvolnit GDP
+        - opačný vliv by měl GAP (GTPase activating protein), který GTPázy inhibuje
+    - uvolněná G◊|alpha| naváže GTP, změní konformaci, G-protein je uvolněn z receptoru a rozpadá se na dvě části (G◊|alpha| + G◊${\beta / \gamma})
+        - G◊|alpha| je tedy GTPáza
+        - obě části se mohou navázat na něco dalšího a tím před signál dál
+    - G◊|alpha| se vydá k adenylcykláze, která produkuje sekundární posly (cAMP)
+        - cAMP spustí fosfatidyl inositolovou dráhu; její koncentrace se během krátké chvíle může zvýšit až dvacetkrát
+        - proto G◊|alpha| štěpí GTP (=deaktivuje se) velice rychle; stačí totiž i malá chvíle
+}
+
+◊note{
+    Adenylát cykláza má podobný fold jako reverzní transkriptáza a DNA polymeráza (asi společný předek).
+}
+
+◊ls[#:t "Malé GTPázy"]{
+    - malé molekuly, kolem 180 AK
+    - molekulární přepínače
+    - schopny fungovat autonomně
+    - ukotvené v membráně
+        - když jsou v membráně, jsou aktivní, a inaktivují se, když se z ní dostanou ven
+        - důsledek konformační změny při navázání GTP/GDP
+    - RAS rodina
+        - Ras
+            - proliferace
+            - často mutovaný v nádorech
+            - účastní se velkého množství drah
+            - SOS protein
+                - při vazbě na Ras způsobí uvolnění navázaného ligandu (urychluje výměnu ligandů)
+        - Rho
+            - morfologie: regulace aktinového cytoskeletu
+        - Rab, Arf
+            - váčkový transport
+        - Ran
+            - jaderný transport
+    - struktura
+        - beta sheet, kolem 3-4 helixy
+        - 2 switche
+        - vyžadují ◊chem{Mg+}
 }
