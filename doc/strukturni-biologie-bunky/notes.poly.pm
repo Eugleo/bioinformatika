@@ -11,7 +11,7 @@
 
 DNA má několik forem, konkrétně především B, A a Z. Tyto se liší velikostí žlábku, tvarem ribóz a případně orientací báze (synklinální/antiklinální).
 
-◊meta{Další informace též odpovídající část zápisů ze základů bioinformatiky (◊link["../zaklady-bioinformatiky/notes.html#Struktura%20nukleových%20kyselin"]{DNA}, ◊link["../zaklady-bioinformatiky/notes.html#Struktura%20proteinů"]{proteiny}) a také zápisy z ◊link["../biopolymery/notes.html"]{celého druhého předmětu}.}
+◊meta{Další informace též odpovídající část zápisů ze základů bioinformatiky (◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Struktura%20nukleových%20kyselin"]{DNA}, ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Struktura%20proteinů"]{proteiny}) a také zápisy z ◊link["https://eugleo.github.io/bioinformatika/doc/biopolymery/notes.html"]{celého druhého předmětu}.}
 
 ◊section{Interakce mezi molekulami}
 
@@ -36,7 +36,7 @@ Atomy (potažmo molekuly) jsou vázány kovalentně, nebo nekovalentně.
 
 ◊section{Struktura proteinů}
 
-◊meta{Předpokládají se základní informace o proteinech a o stavbě a složení aminokyselin. Viz popříadě ◊link["../zaklady-bioinformatiky/notes.html#Struktura%20proteinů"]{zápisky z bioinformatiky}.}
+◊meta{Předpokládají se základní informace o proteinech a o stavbě a složení aminokyselin. Viz popříadě ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Struktura%20proteinů"]{zápisky z bioinformatiky}.}
 
 Proteiny jsou biopolymery složené z aminokyselin, které jsou vázané peptidickou vazbou. Peptidická vazba je ze 40% rezonanční, a proto je planární; rotace je dovolena pouze kolem chirálních ◊chem{C\alpha}. Volnost otáčení (tzv. torzní úhly) se zaznamnává na Ramachandranův diagram.
 
@@ -325,7 +325,7 @@ Narozdíl od RTG krystalografie pozorujeme u NMR ◊strong{přímou odezvu konkr
 
 Výpočetní metody studují stejné problémy jako NMR a hmotnostní spektrometrie: prostorové uspořádání molekul, jejich dynamické chování a vzájemné interakce.
 
-◊meta{Další informace lze najít v oddílu ◊link["../zaklady-bioinformatiky/notes.html#Predikce%20struktury"]{predikce struktury}.}
+◊meta{Další informace lze najít v oddílu ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Predikce%20struktury"]{predikce struktury}.}
 
 ◊ls[#:t "Dělení"]{
     - homologní modelování
@@ -1175,7 +1175,7 @@ Isoleucyl-RS je vyjímka; má dvě ak­tivní mís­ta.
 }
 
 ◊note{
-    Proteiny bez konformace, intrinsically disordered proteins (IDP): více informací například ◊link["../doc/zaklady-bioinformatiky#Intrinsically disordered proteins"]{IDP v zápiscích z bioinformatiky}.
+    Proteiny bez konformace, intrinsically disordered proteins (IDP): více informací například ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky#Intrinsically disordered proteins"]{IDP v zápiscích z bioinformatiky}.
 
     ◊ls[#:t "Příklady"]{
         - E1A
