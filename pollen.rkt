@@ -15,6 +15,7 @@
   (provide (all-defined-out))
 
   (define poly-targets '(html md tex pdf))
+  (define compile-cache-active #f)
 
   (define BLOCK-TAGS
   '(name li box lecture details summary list-title answer img question q-label q-body ql dl dt dd
@@ -326,7 +327,7 @@
     [(tex pdf)
       (cond
         [(string-prefix? url "#") (apply string-append `("\\hyperref[" ,(string-trim url "#" #:right? #f) "]" "{" ,@description "}"))]
-        [else (apply string-append `("\\href{" ,(string-trim url "#" #:right? #f) "}" "{" ,@description "}"))])]
+        [else (apply string-append `("\\href{" ,(string-replace (string-trim url "#" #:right? #f) "#" "\\#") "}" "{" ,@description "}"))])]
     [else
       (define attr-list
         (if title
