@@ -103,7 +103,7 @@ U proteinů rozlišujeme primární až kvartení strukturu.
         - cca 600 obrázků, hemoglobiny z různých živočišných druhů, na základě tvaru a velikosti krystalů se snažili evolučně propojit, jak jsou si různé druhy příbuzné
     - (1915) krystaly séra albuminu
     - (1925) první krystal enzymu
-    - (1935) první krystal viru (tabákoveá mozaika)
+    - (1935) první krystal viru (tabáková mozaika)
 }
 
 ◊ls[#:t "Historie RTG"]{
@@ -118,13 +118,14 @@ RTG používáme místo běžného světla pro jeho kratší vlnovou délku; min
 
 ◊subsection{Krystalizace proteinů}
 
-Jedná se o nejtěžší část RTG krystalografie. Jako srážedla se používají soli, polymery, organické látky (odebíraají proteinu vodu). Přesné krystalizační podmínky nelze předpovědět, proto se dělá ◊em{screening} (testování 96 různých podmínek). Díky automatizai je nyní možné na každý pokus vypotřebovat pouze malé množství proteinu.
+Jedná se o nejtěžší část RTG krystalografie. Jako srážedla se používají soli, polymery, organické látky (odebírají proteinu vodu). Přesné krystalizační podmínky nelze předpovědět, proto se dělá ◊em{screening} (testování 96 různých podmínek). Díky automatizaci je nyní možné na každý pokus vypotřebovat pouze malé množství proteinu.
 
 ◊ls[#:t "Vlastnosti proteinových krystalů"]{
     - malé, symetrické
     - většinou bezbarvé
     - krychlová vnitřní struktura (shodná s diamantem, ◊chem{NaCl})
-    - malé styčné plochy, hodně prostoru -> kanály vyplněné krystalizační tekutinou vedoucí všemi směry, tvořící až 70% krystalu
+    - malé styčné plochy, hodně prostoru mezi molekulami
+        - kanály vyplněné krystalizační tekutinou (mateční roz­tok) tvoří až 70% krystalu
     - struktura krystalu velmi připomíná nativní strukturu
 }
 
@@ -144,14 +145,13 @@ Jedná se o nejtěžší část RTG krystalografie. Jako srážedla se použí
     # výsledek vypadá jako odraz, ale je to difrakce
         - RTG interaguje s elektrony (předá jim energii), elektrony vyzáří sekundární vlnu
     # zaznamenáme intenzitu difrakce na detektor (kdysi fotografický papír, dnes elektronický detektor)
-    # provedení Fourierovy syntézy (matematická operace)
+    # provedeme Fourierovu syntézu (matematická operace)
     # výsledkem je model proteinové struktury, konkrétně mapa elektronové hustoty
 }
 
 ◊ls[#:t "Difrakční experiment"]{
-    - na krystal pouštíme jednu zaostřený paprsek RTG o vybrané vlnové délce
+    - na krystal pouštíme jeden zaostřený paprsek RTG o vybrané vlnové délce
     - zaznamenáme difrakční obrazce ve všech směrech kolem krystalu
-    - výsledkem je soubor, pro každou difrakci nalezeneme její aktivitu
 }
 
 ◊ls[#:t "Fourierova transformace"]{
@@ -162,13 +162,13 @@ Jedná se o nejtěžší část RTG krystalografie. Jako srážedla se použí
 
 ◊ls[#:t "Fázový problém"]{
     - nejsme schopni získat fázi elektronové hustoty experimentálně
-    - máme několik metod, kterými ji zjišťujeme: metoda molekulového nahrazení, metoda izomorfního nahrazení, metoda anomálního rozptylu
-        - molekulové nahrazení: odhad na základě předchozích výsledků
-        - anomální rozptyl: zavedeme těžkyého kovu (Se, Hg), do něj namočíme krystal, pak odhadujeme fázi
+    - máme několik metod, kterými ji zjišťujeme
+        - metoda molekulového nahrazení: odhad na základě předchozích výsledků
+        - metoda anomálního rozptylu: zavedeme těžký kov (Se, Hg), do něj namočíme krystal, pak odhadujeme fázi
+        - metoda izomorfního nahrazení
 }
 
-Všechna PDB data jsou tedy pouze něčí interpretace jejich mapy elektronové hustoty. Proto je také nyní povinnost ukládat strukturní data (tedy přesnou podobu experimentálních dat), aby si každý mohl interpretaci udělat sám.
-
+Všechna PDB data jsou tedy pouze něčí interpretace mapy elektronové hustoty. Proto je také nyní povinnost ukládat do databází kromě struktury i původní strukturní data (tedy přesnou podobu experimentálních dat), aby si každý mohl interpretaci udělat sám.
 
 ◊ls[#:t "Rozlišení"]{
     - závisí na kvalitě krystalu a intenzitě RTG záření
@@ -183,10 +183,10 @@ Hodí se spíše pro větší vzorky; její rozlišení je omezené, ale stále 
 ◊ls[#:t "Postup"]{
     # vzorek vysušíme
         - ve vrstvě soli obsahující těžký atom (uranyl acetát)
-        - ◊em{negativní barvení}: zvýšení kontrastu, kontrola homogenity vzorku
+        - ◊em{negativní barvení} (negative staining): zvýšení kontrastu, kontrola homogenity vzorku
     # umístíme jej na mřížku
     # mřížku se vzorkem zmrazíme
-        - v tekutém etanu (cca 90°), rychlejší než dusík
+        - v tekutém ethanu (cca 90°), rychlejší než dusík
     # umístíme mřížku do elektronového mikroskopu
     # ozáříme mřížku proudem elektronů a sledujeme stíny částic
     # vytvoříme 3D mapu rozmístění částic, z ní poté zhotovíme finální model
@@ -195,7 +195,7 @@ Hodí se spíše pro větší vzorky; její rozlišení je omezené, ale stále 
 ◊ls[#:t "Požadavky na vzorek"]{
     - velikost > ◊u{150 kDa} (čím větší, tím lepší)
     - symetrie (oligomery)
-    - rigidita a stabilita proteinového komplexu
+    - rigidita a stabilita
     - homogenita (někdy lze ovšem rozlišit i více složek)
 }
 
@@ -230,16 +230,16 @@ Nukleární magnetická rezonance se často používá v analytické chemii, kro
 }
 
 ◊ls[#:t "Princip funkce"]{
-    - všechna jádra mají spin (otáčejí se), proto když je vložíme do magnetického pole, pokusí se všechna jádra s nenulovým spinem nějak zorientovat
-        - precesní pohyb s konkrétní frekvencí pro konkrétní jádro
-    - tato frekvence je ta, kterou pozorujeme v NMR
-    - pokud do magnetického pole dáme vysílač, vznikne další magnetické pole
-        - na krátkou chvíli vysílač zapneme, tím vychýlíme atomy
-        - poté opět vypneme, atomy se budou snažit dostat do původní polohy
-        - pohybující se vektory ještě k tomu rotují v určité frekvenci
+    - jádra mají spin (otáčejí se), a náboj -> chovají se jako magnety
+        - konkrétně musí ještě mít lichý počet neutronů a/nebo protonů
+        - když je vložíme do magnetického pole, budou se nějak orientovat
+    - na NMR měříme, kolik energie musíme vynaložit na to, aby se jádra přesunula do rezonančního stavu (jejich magnetické pole se vychýlí přesně proti vnějšímu magnetickému poli)
+        - tato energie je ovlivněna počtem elektronů v blízkosti atomu
+        - přesunu do rezonančního stavu se říká ◊em{precesní pohyb}, má konkrétní frekvenci a potřebnou energii pro konkrétní jádro v konkrétním elektronovém kontextu
+    - energii dodáme atomům pomocí radiofrekvenčního vysílače
+        - po vypnutí se atomy vrátí do původní polohy
         - tento pohyb indukuje v cívce proud, který zpracujeme jako NMR signál
-    - odezvu (měření rezonančních frekvencí jednotlivých atomů) měříme v závislosti na čase
-        - tuto odezvu poté analyzujeme pomocí Fourierovy transformace
+    - odezvu (měření rezonančních frekvencí jednotlivých atomů) měříme v závislosti na čase a analyzujeme ji pomocí Fourierovy transformace
 }
 
 NMR malých molekul je základním nástrojem analytické chemie. V naměřených spektrech je ale více signálů a šířka čar odráží velikost systému. U komplikovanějších molekul, kde dochází k překryvu signálů, je třeba použít vícedimenzionální spektra a/nebo NMR aktivní heterojádra.
@@ -257,7 +257,7 @@ NMR biomolekul velice závisí na velikosti těchto molekul; čím je molekula v
 
 ◊subsection{NMR proteinů}
 
-Právě u proteinů se objevuje problém s citlivostí NMR. Jejich . .
+Právě u proteinů se objevuje problém s citlivostí NMR.
 
 ◊ls[#:t "Metody pozorování"]{
     - proteiny jsou velké, rotují pomalu, jejich NMR signály jsou široké
@@ -306,24 +306,24 @@ Narozdíl od RTG krystalografie pozorujeme u NMR ◊strong{přímou odezvu konkr
 ◊ls[#:t "Předměty studia"]{
     - velice podobné NMR
     - chemický crosslinking
-    - výměna vodíku za deuterium (◊strong{HDX}, hydrogen- deuterium exchange)
+    - výměna vodíku za deuterium (◊strong{HDX}, hydrogen-deuterium exchange)
     - prostorové uspořádání molekul
     - vzájemné interakce
     - dynamické chování interakcí
 }
 
 ◊ls[#:t "HDX experiment"]{
-    - protein se dá do ◊chem{D20}, tedy vody, kde je vodík nahrazen deuteriem
+    - protein se dá do ◊chem{D2O}, tedy vody, kde je vodík nahrazen deuteriem
     - deuterium proniká do proteinu (vyměňuje se s vodíkem na páteři proteinu), protein je těžší
     - rychlost výměny ◊chem{D <-> H} závisí na tom, jestli má protein v daném místě navázaný ligand (pokud ano, je pomalejší)
     - stačí tedy změřit rychlost HDX s různými ligandy (globální HDX), popřípadě je možné protein rozsekat proteázou a změřit HDX u každého kousku
         - z toho zjistíme, která část proteinu váže jaký ligand
-        - používá se LC- MS (kapalinová chromatografie s hmotnostním spektrometrem)
+        - používá se LC-MS (kapalinová chromatografie s hmotnostním spektrometrem)
 }
 
 ◊section{Bioinformatika (výpočetní metody)}
 
-Výpočetní metody studují ty stejné problémy jako NMR a hmotnostní spektrometrie: prostorové uspořádání molekul, jejich dynamické chování a vzájemná interakce.
+Výpočetní metody studují stejné problémy jako NMR a hmotnostní spektrometrie: prostorové uspořádání molekul, jejich dynamické chování a vzájemné interakce.
 
 ◊meta{Další informace lze najít v oddílu ◊link["../zaklady-bioinformatiky/notes.html#Predikce%20struktury"]{predikce struktury}.}
 
@@ -348,7 +348,7 @@ Výpočetní metody studují ty stejné problémy jako NMR a hmotnostní spektro
     - ab initio výpočet struktury
         - velký problém s parametrizací
         - Rosetta (David Baker)
-            - vychází ze známých pdb struktur, rozsekaných na malé fragmenty
+            - vychází ze známých pdb struktur rozsekaných na malé fragmenty
             - porovnává sekvence, skládá fragmenty a hádá, jak by mohla vypadat další sekvence
             - poté vybere model a provede validaci
     - simulace molekulární dynamiky (MD simulation)
@@ -373,14 +373,14 @@ Výpočetní metody studují ty stejné problémy jako NMR a hmotnostní spektro
 
 ◊ls[#:t "Mechanismus funkce"]{
     - funkce je ovlivněná strukturou
-    - váží se na substrát a snižují energetickou barieéru, takže reakce může proběhnout rychleji
+    - váží se na substrát a snižují energetickou bariéru, takže reakce může proběhnout rychleji
     - mechanismus zámku a klíče
-        - enzym má preformované aktivní místo, do kterého se vejde pouze jeden substrát (musí mít určité vlastnosti)
+        - enzym má preformované aktivní místo, do kterého se vejde pouze jeden substrát s určitými vlastnostmi
         - pouze pro tento substrát reakce proběhne
-    - mechanismus induce fit (indukovaného přizpůsobení)
+    - mechanismus induced fit (indukovaného přizpůsobení)
         - aktivní místo nemusí být připravené na daný klíč
-        - na enzym se může navázat substrát, který indikuje změnu vazebného místa
-        - hexokináza: po vazbě obou dvou substrátů se aktivní místo přizpůsobí tak, že reakce může proběhnout
+        - na enzym se může navázat substrát, který indukuje změnu vazebného místa
+        - hexokináza: po vazbě obou substrátů se aktivní místo přizpůsobí tak, že reakce může proběhnout
     - některé enzymy potřebují "pomocníky"
         - kofaktory
         - koenzymy
@@ -401,13 +401,15 @@ Výpočetní metody studují ty stejné problémy jako NMR a hmotnostní spektro
 ◊ls{
     - anglicky carbonic anhydrase (CA)
     - katalyzuje reakci
-    ◊$${\ce{CO2 + H20 <=> H+ + HCO3-}}
+    ◊$${\ce{CO2 + H2O <=> H+ + HCO3-}}
         - tato reakce je samovolná
-    - nejrychlejší enzym na světě, hydratuje ◊${10^6} molekul ◊chem{CO2} za sekundu (zrychluje reakci ◊${10^7 \times})
+    - nejrychlejší enzym na světě, hydratuje ◊${10^6} molekul ◊chem{CO2} za sekundu (zrychluje reakci ◊${10^7} krát)
     - pět tříd: ◊${\alpha, \beta, \gamma, \delta, \zeta} (a nově objevená šestá třída ◊${\eta})
         - všechny mají jako kofaktor nějaký kov (◊chem{Zn}, ◊chem{Mo}, ◊chem{Cd})
         - v těle máme ◊|alpha|
 }
+
+◊todo{Vysvětlit, jak přesně se zinek účastní enzymatické reakce.}
 
 ◊ls[#:t "Zinečný kofaktor"]{
     - konkrétně ◊chem{Zn^{2+}}
@@ -417,16 +419,18 @@ Výpočetní metody studují ty stejné problémy jako NMR a hmotnostní spektro
     - hydroxid zůstane navázaný na iontu, přichází substrát, dochází k nukleofilnímu ataku, odchází produkt a celá reakce pokračuje
 }
 
-◊subsection{Lidská CA}
+◊subsection{Lidské CA}
 
 ◊ls{
     - pomáhají udržovat acidobazické prostředí v organizmu
     - účastní se ◊chem{CO2} a ◊chem{HCO3} transportu
         - respirace, resorpce kostí, glukoneogeneze, urogeneze, lipogeneze
     - 16 izoforem
-        - CAII: ve všech buňkách, je jí hodně, je stabilní, dobře krystalizuje
-            - má dobře definované aktivní místo, od něj vede cestička k C' konci vystlaná His
-            - slouží jako off target: často chceme cílit léky na inhibici CAIX, ale zároveň nechceme inhibovat žádné její isoformy (to se právě těstuje na CAII)
+        - CAII
+            - ve všech buňkách, je jí hodně
+            - je stabilní, dobře krystalizuje
+            - má dobře definované aktivní místo, od něj vede cestička k C konci vystlaná His
+            - slouží jako off target: často chceme cílit léky na CAIX, ale zároveň nechceme inhibovat žádné její isoformy (to se právě těstuje na CAII)
         - CAIX: nadprodukce u nádorů, marker rakoviny, cíl vyvíjených léků
 }
 
@@ -435,7 +439,7 @@ Výpočetní metody studují ty stejné problémy jako NMR a hmotnostní spektro
         - např. sulfanomid
     - inhibitory lidské CA
         - všech 16 izoforem si je velice podobných
-        - CAII anti- glaucoma drugs
+        - CAII anti-glaucoma drugs (glaukom je zelený zákal)
         - CAV je cílem léků proti obezitě
         - CAVII je v mozku, je cílem léků na bolest hlavy a epilepsii
 }
@@ -453,8 +457,8 @@ Enzym vyskytující se v retroviru HIV. V buňce se přepíše z RNA do DNA. Je 
 ◊ls[#:t "Struktura"]{
     - zcela symetrický dimer
     - dva řetězce, dvě podjenotky; každý řetězec je složek z 99 AK
-    - obě podjenotky jsou u sebe drženy svými N a Ckonci, kromě toho také aktivním místem ("zakousnou" se do sebe)
-    - v aktivním místě jsou  (podobně jako u pepsinu)
+    - obě podjednotky jsou u sebe drženy svými N a C konci, kromě toho také aktivním místem ("zakousnou" se do sebe)
+    - v aktivním místě jsou Asp (podobně jako u pepsinu)
 }
 
 ◊ls[#:t "Funkce"]{
@@ -467,7 +471,7 @@ Enzym vyskytující se v retroviru HIV. V buňce se přepíše z RNA do DNA. Je 
     - na začátku musí rozštěpit i sebe
 }
 
-Podle tvaru substrátu se vyvinula léčiva, která funkci enzymu inhibují (např. ritonavir). Deset takových inhibitorů je v klinické praxi; virus ale díky reverzní transkripci, která často chybuje, velice rychle mutuje a tedy si rychle vyvine proti léčivu rezistenci. Tyto (primární) mutace často musí být kompenzovány mutacemi sekundárními.
+Podle tvaru substrátu se vyvinula léčiva, která funkci enzymu inhibují (např. ritonavir). Deset takových inhibitorů je v klinické praxi; virus ale díky reverzní transkripci, která často chybuje, velice rychle mutuje a rychle si vyvine proti léčivu rezistenci. Tyto (primární) mutace často musí být kompenzovány mutacemi sekundárními.
 
 ◊definitions{
     ◊term["primární mutace"]{
@@ -483,8 +487,8 @@ Podle tvaru substrátu se vyvinula léčiva, která funkci enzymu inhibují (nap
 
 ◊ls{
     - v membráně mitochondrií, chloroplastů a bakterií
-    - katalzuje reakci
-    ◊$${\ce{ADP + Pi + H + out <=> ATP + H2O + H + in}}
+    - katalyzuje reakci
+    ◊$${\ce{ADP + Pi + H_{out} <=> ATP + H2O + H_{in}}}
         - syntetizuje ATP z ADP a fosfátu, využívá k tomu protonový gradient
     - dodává všem organizmům energii
     - funguje trochu jako molekulární motor: ◊chem{F0} podjednotku v membráně pohání protony, zatímco ◊chem{F1} podjednotku pohání ATP
@@ -495,23 +499,22 @@ Podle tvaru substrátu se vyvinula léčiva, která funkci enzymu inhibují (nap
 
 ◊ls{
     - zajišťují tvar buněk, komunikaci, obranu, přichycení, rozpoznávání a přenos signálů
-    - urdžují specifické prostředí buňky
-        - koncentraci iontů, malých metabolitů a makromolekul
+    - urdžují specifické prostředí buňky: koncentraci iontů, malých metabolitů a makromolekul
     - eukaryota mají membrány i uvnitř buňky
     - složení
         - lipidová dvojvrstva
         - proliny
-        - glycerocalyx = "cukerný obal"
+        - glycerocalyx, "cukerný obal"
         - steroly vložené v lipidové dvojvrstvě
-    - velmi dynamická struktura - model fluidní mozaiky
+    - velmi dynamická struktura --- model fluidní mozaiky
     - cytoplazmatická část je negativnější než exoplazmatická
 }
 
 ◊ls[#:t "Tloušťka membrány"]{
     - nemá konstantní tloušťku
         - záleží na typu membrány, teplotě apod.
-        - v literatuře 4-- 10nm, obvykle 5-- 6nm
-    - 3nm hydrofobní jádro a 1-- 1,5nm polární hlavy
+        - v literatuře ◊${4} až ◊u{10 nm}, obvykle ◊${5} až ◊u{6 nm}
+    - ◊u{3 nm} hydrofobní jádro a ◊${1} až ◊u{1,5 nm} polární hlavy
     - apikální membrána jaterní buňky je asi o 7◊|angs| širší než basolaterální membrána
     - membrána v uspořádaném stavu (nižší teplota) je užší než v neuspořádaném stavu
     - ohyby membrány způsobeny složením lipidů a proteinů (fosfatidylcholin a sfingomyelin způsobují konvexní pohyb)
@@ -525,7 +528,7 @@ Lipidů je až 200 typů.
     - nejčastější
     - glycerol + 2 alifatické řetězce
                     - jeden zahnutý (nenasycený), druhý přímý (nasycený)
-    - přes esterovou vazmu návázán fodfátový zbytek a další alkohol
+    - přes esterovou vazbu návázán fosfátový zbytek a další alkohol
     - různé typy se liší v navázaném alkoholu
     - některé fungují jako signální
 }
@@ -552,8 +555,7 @@ Lipidů je až 200 typů.
 
 ◊ls[#:t "Distribuce lipidů na membráně"]{
     - lipidy jsou na membráně distribuovány asymetricky, vznikají ◊strong{lipidové rafty}
-        - membránové mikrodomény
-        - ostrůvky bohaté na proteiny
+        - ostrůvky bohaté na proteiny, membránové mikrodomény
         - vznik po laterálním pohybu proteinů
         - organizační centra pro uspořádávání signálních makromolekuul
         - ovlivňují membránovou fluiditu a transport membránových proteinů
@@ -567,7 +569,7 @@ Lipidů je až 200 typů.
 Většina léků je založena na interakci s membránovými proteiny.
 
 ◊ls[#:t "Tvary"]{
-    - sedminásobný
+    - sedminásobný helix
     - beta barel
     - periferální
     - zanořený alfa helix
@@ -597,13 +599,15 @@ Většina léků je založena na interakci s membránovými proteiny.
 
 ◊definitions{
     ◊term["positive inside rule"]{
-        Intracelulární rezidua mají kladnější náboj než ty extracelulární. Souvisí se záporným nábojem vnitřní strany mebrány. Využívá se predikci orientace proteinu.
+        Intracelulární rezidua mají kladnější náboj než ta extracelulární. Souvisí to se záporným nábojem vnitřní strany mebrány. Tento jev se využívá při predikci orientace proteinu.
     }
 }
 
-S tímto pravidlem souvisí také jev tzv. "šnorchlování", tedy interakce polárních skupin proteinů s polárními skupinami lipidů hluboko v membráně.
+S tímto pravidlem souvisí také jev tzv. "šnorchlování", což je interakce polárních skupin proteinů s polárními skupinami lipidů hluboko v membráně.
 
-◊ls[#:t "Primární struktura"]{
+◊subsection{Primární struktura}
+
+◊ls{
     - aminokyselinové složení odlišné od ostatních proteinů
         - relativně vysoký obsah Gly a Pro
         - vysoké zastoupení Tyr a Trp (3x vyšší než u cytosolických proteinů)
@@ -618,15 +622,14 @@ S tímto pravidlem souvisí také jev tzv. "šnorchlování", tedy interakce pol
     - zlom na helixu způsobený proliny
     - okolo zlomu jsou časté Ser a Thr
     - prolin dělá ostrou zatáčku v membráně
-        - někdy vhodné pro regulační vlastnosti
-        - někdy pro přizpůsobení se
+        - někdy vhodné pro regulační vlastnosti, někdy pro přizpůsobení se
         - může zvětšit flexibilitu toho, co je třeba navázat
 }
 
 ◊ls[#:t "Reentrant loops"]{
     - helix neprojde skrz celou membránu, ale otočí se a vyjde tam, kde vešel
     - obsahuje je 10% membránových proteinů
-    - s rostoucím počtem transmembránových úseků roste pravděpodobnost výskytu
+    - s rostoucím počtem TM úseků roste pravděpodobnost výskytu
 }
 
 ◊ls[#:t "Experimentální určení struktur"]{
@@ -644,31 +647,31 @@ S tímto pravidlem souvisí také jev tzv. "šnorchlování", tedy interakce pol
 ◊subsection{Příklady membránových proteinů}
 
 ◊ls[#:t "Poriny"]{
-    - objeveny v bakteriích u eukaryot se nalézají v mitochondrální membráně
-    - kladně nabité směrem do kanálu
-    - v kanálu často váží vápenaté ionty
+    - objeveny v bakteriích, u eukaryot se nalézají v mitochondrální membráně
+    - kanály tvořící v membrně pór
+    - v kanálu často váží vápenaté ionty, jsou zde často kladně nabité
     - častý je trimerní porin
         - tři díry ve specifické orientaci
-        - často méně specifický
+        - není většinou příliš specifický
 }
 
 ◊ls[#:t "G-protein-coupled receptors"]{
     - receptory spřažené s G-proteiny
     - struktura G-proteinu objevena roku 2007, struktura G-proteinu v komplexu objevena roku 2011
-    - více viz ◊name["#G-protein-coupled receptors"]{oddíl o GPCR} v tomto textu
+    - více viz ◊link["#G-protein-coupled receptors"]{oddíl o GPCR} v tomto textu
 }
 
 ◊ls[#:t "Draselný kanál"]{
     - tetramer: čtyři podjednotky, tři slabiky, dva transmembránové helixy, jeden otvor
     - úzký průchod, extrémně selektivní --- prochází pouze draslík
-        - sodík je sice menší, a měl by tedy procházet spíš, ale draslík se umí lépe zbavit vody, takže projde lépe on
+        - sodík je sice menší, a měl by tedy procházet také, ale draslík se umí lépe zbavit vody --- na rozdíl od sodíku, který proto kanálem neprojde
     - karboxylové skupiny draslík dobře koordinují
 }
 
 ◊ls[#:t "Sting"]{
     - aktivátor a stimulátor genů
     - nachází se v membránách ER
-    - má imunitní povahum, spouští protizánětlivou reakci při styku s cizí DNA
+    - má imunitní povahu, spouští protizánětlivou reakci při styku s cizí DNA
     - po navázání cAMP dochází k otočení transmembránové části o 180◊|deg|
 }
 
@@ -690,7 +693,7 @@ Většina strukturních informací je z elektronové mikroskopie.
 ◊;{Zdroj: Alberts, str 215}
 
 ◊ls[#:t "Makrostruktura DNA"]{
-    - do ◊u{5 \mu m} je potřeba složit více jak metr DNA, proto je DNA silně kondenzovaná
+    - do ◊u{5 \mu m} je potřeba složit více než metr DNA, proto je DNA silně kondenzovaná
     - DNA je namotána na ◊strong{histonové oktamery} (viz níže)
         - komplex histonů a DNA se nazývá ◊strong{nukleozom}
     - kromě histonů jsou na DNA i další non-histonové proteiny; komplex histonů a těchto proteinů s DNA se souhrnně nazývá ◊strong{chromatin}
@@ -725,7 +728,7 @@ Většina strukturních informací je z elektronové mikroskopie.
         - tímto histone foldem drží jednotlivé části oktameru u sebe
     - namotá se na ně 164 bazí DNA ve dvou otáčkách
     - mají nestrukturované konce s Lys a Arg, kde dochází k posttranslačním modifikacím
-    - namotané DNA nelze dobře přečíst, proto existují histonové chaperony a chaperoniny, které umí nukleozomy po DNA různě posouvat
+    - namotané DNA nelze dobře přečíst, proto existují histonové chaperony a chaperoniny, které umí nukleozomy po DNA různě posouvat, případně je odstranit
     - histon H1
         - spojuje nukleosom do solenoidu (širšího vlákna)
         - není součástí oktameru jako takového
@@ -735,16 +738,16 @@ Většina strukturních informací je z elektronové mikroskopie.
         - nejvíce prozkoumané modifikace
 }
 
-Histonové modifikace tvoří epigenetický kód, který upravuje genovou expresi nebo podává informace o DNA, jako např. Informace o úrovni poškození, nebo o tom, že byl daný úsek DNA zrovna nově replikován. Tento kód je zpracováván komplexy ◊em{readers} a psán komplexy ◊em{writers}. Kromě toho může být i mazán pomocí ◊em{erasers}.
+Histonové modifikace tvoří epigenetický kód, který upravuje genovou expresi nebo podává informace o DNA, jako např. informace o úrovni poškození, nebo o tom, že byl daný úsek DNA zrovna nově replikován. Tento kód je zpracováván komplexy ◊em{readers} a psán komplexy ◊em{writers}. Kromě toho může být i mazán pomocí ◊em{erasers}.
 
 ◊ls[#:t "Readers"]{
     - slouží ke čtení histonového kódu
-        - poznají množství methylace
-        - někdy naopak rozpoznávají neupravený úsek
-        - větši­na k tomu má ◊em{aro­mat­ick­ou klec}, tj. část s aro­mat­ick­ý­mi AK
-    - jeden reader často rozpoznává více značek najednou (čili hledá jejich kombinaci)
+        - poznají množství methylace, ale někdy naopak rozpoznávají neupravený úsek
+        - větši­na k tomu má motiv zvaný ◊em{aro­mat­ick­á klec}, tj. část struktury s aro­mat­ick­ý­mi AK
+    - jeden reader často rozpoznává více značek najednou
+        - takový reader specificky reaguje na kombinaci těchto značek
         - pro stejný účel se někdy spojí dva readery do komplexu
-        - dva readery mohou být v konfiguraci cis nebo trans, podle toho, na jaké straně DNA čtou
+            - dva readery mohou být v konfiguraci cis nebo trans, podle toho, na jaké straně DNA čtou
     - např. chromodomény, promodomény, tudor domény, BD pro­teiny, WD40 Tu­dor, PWWP
         - tudor WD40 čte methylace na Arg
 }
@@ -755,14 +758,15 @@ Histonové modifikace tvoří epigenetický kód, který upravuje genovou expres
         # reader se naváže na modifikovaný nukleozom
         # writer se dostane blízko sousedního nukleozomu a modifikuje ho
         # reader přeskočí na tento nově modifikovaný nukleozom
-        # writer se dostane do blízkosti dalšího atd.
+        # writer se dostane do blízkosti dalšího nukleozomu
+        # GOTO 1
     - H3K4
         - přináší methyl na lysin --- střed­ní část umí ze sub­strá­tu získat methyl, zbytek se váže na DNA a his­ton
-        - fun­gu­je jako pinze­ta: krajní části uchopí nuk­leo­zom a střed­ní část se při­blíží k his­tonu, který methyluje
+        - fun­gu­je jako pinze­ta: krajní části uchopí nuk­leo­zom a střed­ní část se při­blíží k his­tonu a methyluje ho
     - H3K79
         - je potřeba signální ubiquitinilační značka
-        - má méně domén, pro­tože neváže methyl na zák­ladě DNA, které je hod­ně daleko
-        - také má více stavů
+        - má méně domén, pro­tože neváže methyl na zák­ladě DNA, která je hod­ně daleko
+        - má více stavů
         - nes­tačí mu na­jít jen H4 tail, ale také další konce jiných his­tonů se speci­fick­ý­mi značka­mi
 }
 
@@ -778,7 +782,7 @@ Aby byl systém co nejvýkonnější, dochází k velkému množství replikačn
 
 ◊ls[#:t "Replisom"]{
     - vyšší dynamická struktura
-    - sdružuje více proteinů
+    - sdružuje více proteinů: ORC, helikázu, DNA polymerázu, topoizomerázu
 }
 
 ◊ls[#:t "ORC (origin recognition complex)"]{
@@ -836,7 +840,7 @@ Aby byl systém co nejvýkonnější, dochází k velkému množství replikačn
 ◊ls[#:t "DNA-proteokináza"]{
     - strukturní element, který pojme DNA konec a ochrání ho před dalšími reakcemi
     - má kinázovou doménu
-    - některé části nají tvar solenoidu tvořeného helix- smyčka- helix úseky (heal??)
+    - některé části nají tvar solenoidu tvořeného helix-smyčka-helix úseky
     - rozpozná celý systém
     - vytvoří synapsi a přivolá další proteiny včetně ligázy
 }
@@ -854,22 +858,20 @@ Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který
 ◊ls[#:t "Kontrolní elementy transkripce"]{
     - promotory, enhancery
     - chromatin v superorientaci
-        - potřebujeme ho remodulovat - rozvolnit více organizované shluky
+        - potřebujeme ho remodulovat --- rozvolnit více organizované shluky
     - enhancery
-        - oblasti DNA
-        - vážou se na ně regulační proteiny
-        - dokáží díky velkému mediátorovému komplexu komunikovat s promotorem
-        - vzniká smyčka --- DNA se ohne, enhancer se dostane k polymeráze a začíná transkripce
-        - mohou být až stovky bazí daleko od vlastního genu
+        - oblasti DNA, na které se vážou regulační proteiny
+        - na DNA vzniká smyčka, společně s velkým mediátorovým komplexem to má za následek přiblížení enhancerové části a polymerázy
+            - tím páem mohou být enhancery až stovky bazí daleko od vlastního genu
 }
 
 ◊ls[#:t "Transkripční faktory"]{
     - dokáží rozpoznávat specifické sekvence DNA (promotorové regiony, enhancery)
     - faktory lze rozdělit podle konformací, které zaujímají
-        - většinou  tvoří heterodimery, mají tvar alfa helixu
+        - většinou tvoří heterodimery, mají tvar alfa helixu
         - specifita daná dvěma úseky DNA vedle sebe
         - motivy
-            - zink finger
+            - zinc finger
                 - koordinuje zinkové atomy, které drží konformaci v aktivním stavu
             - leucinový zip
                 - motiv pomocí něhož některé bílkoviny vytvářejí dimery
@@ -994,7 +996,7 @@ Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který
     - cca 1600 nukleotidů
     - 21 proteinů (S1, ..., S21)
     - odpovídá za rozpoznání
-    - vazváže se na ni mRNA
+    - váže se na ni mRNA
     - dekódování genetické informace
     - nasedá jako první
 }
@@ -1004,7 +1006,7 @@ Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který
     - molární váha 2,5 MD
     - cca 3000 nukleotidů
     - 34 proteinů (L1, ..., L34)
-    - 2 RNA řetězce
+    - dva RNA řetězce
     - enzym, který vytváří peptidovou vazbu
     - elongace peptidového řetězce a jeho ochrana
     - odpovídá za katalýzu peptidové vazby - elongaci
@@ -1029,11 +1031,10 @@ Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který
 ◊ls[#:t "Připojení AK"]{
     - aminoacyl tRNA syntetáza (aaRS)
         - umí připojit AK na tRNA
-        - dvě třídy, 20 konkrétních typů, pro kažkou AK jeden
-            - velice se liší celkovou strukturou, ale aktivní místo mají všechny skoro stejné
         - dvě vazebná místa (jedno pro tRNA a druhé pro AK)
     - strukturní variabilita enzymů
-        - 2 třídy (a více podtříd)
+        - velice se liší celkovou strukturou, ale aktivní místo mají všechny skoro stejné
+        - dvě třídy (a několik podtříd)
             # OH skupina na 2' uhlíku
                 - Rosmannův fold (kombinace beta listů a helixů)
                 - aktivní místo na povrchu
@@ -1089,7 +1090,7 @@ Isoleucyl-RS je vyjímka; má dvě ak­tivní mís­ta.
         - velký komplex proteáz
         - 19S jednotka rozpozná ubiquitinované proteiny a jen ty pustí dovnitř
         - v centrální části má "mlýnek" (20S jednotka)
-            - štěpí proteiny na krátké úseky (5- 7 peptidů)
+            - štěpí proteiny na krátké úseky (5--7 peptidů)
             - v cytoplazmě je rozštěpí další proteázy
             - ubiquitin se recykluje
         - některé proteasomy berou všechny proteiny co najdou
