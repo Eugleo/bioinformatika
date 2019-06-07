@@ -769,7 +769,7 @@ Histonové modifikace tvoří epigenetický kód, který upravuje genovou expres
         - přináší methyl na lysin --- střed­ní část umí ze sub­strá­tu získat methyl, zbytek se váže na DNA a his­ton
         - fun­gu­je jako pinze­ta: krajní části uchopí nuk­leo­zom a střed­ní část se při­blíží k his­tonu, který methyluje
     - H3K79
-        - - je potřeba signální ubiquitinilační značka
+        - je potřeba signální ubiquitinilační značka
         - má méně domén, pro­tože neváže methyl na zák­ladě DNA, které je hod­ně daleko
         - také má více stavů
         - nes­tačí mu na­jít jen H4 tail, ale také další konce jiných his­tonů se speci­fick­ý­mi značka­mi
