@@ -65,6 +65,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container {
+  position: relative;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -181,7 +182,6 @@ li {
 }
 
 .highlight {
-  overflow: scroll;
   margin-bottom: 1.6rem;
 }
 
@@ -196,6 +196,12 @@ dt {
 dd {
   padding-left: 30px;
   margin-bottom: 1.6rem;
+}
+
+.scrollable {
+  overflow: auto;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 /* Lists
@@ -360,7 +366,7 @@ svg.svg-slide:hover {
 
 aside {
   position: absolute;
-  left: 75px;
+  left: -22px;
   width: 17px;
   margin-bottom: 0;
   line-height: 18px;
@@ -490,8 +496,15 @@ lecture {
 
 .lecture {
   position: absolute;
-  right: 400px;
+  right: -200px;
   margin-bottom: 0;
+  display: none;
+}
+
+@media (min-width: 800px) {
+  lecture {
+    display: block;
+  }
 }
 
 /* Media Queries
@@ -531,9 +544,10 @@ code {
   border: 1px solid #ebebeb;
   border-radius: 5px;
   background: #fcfcfc;
-   font-family: "IBM Plex Mono";
-   padding-left: 3px;
-   padding-right: 3px;
+  font-family: "IBM Plex Mono";
+  padding-left: 3px;
+  padding-right: 3px;
+  white-space: pre-wrap;
 }
 
 .highlight, pre {
@@ -542,6 +556,7 @@ code {
     background: #fcfcfc;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
+    overflow: auto;
 }
 
 .highlight .linenos {
