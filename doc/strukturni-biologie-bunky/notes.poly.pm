@@ -424,8 +424,9 @@ Výpočetní metody studují ty stejné problémy jako NMR a hmotnostní spektro
     - účastní se ◊chem{CO2} a ◊chem{HCO3} transportu
         - respirace, resorpce kostí, glukoneogeneze, urogeneze, lipogeneze
     - 16 izoforem
-        - CAII: ve všech buňkách, je jí hodně, je stabilní, off target, dobře krystalizuje
+        - CAII: ve všech buňkách, je jí hodně, je stabilní, dobře krystalizuje
             - má dobře definované aktivní místo, od něj vede cestička k C' konci vystlaná His
+            - slouží jako off target: často chceme cílit léky na inhibici CAIX, ale zároveň nechceme inhibovat žádné její isoformy (to se právě těstuje na CAII)
         - CAIX: nadprodukce u nádorů, marker rakoviny, cíl vyvíjených léků
 }
 
@@ -690,38 +691,88 @@ S tímto pravidlem souvisí také jev tzv. "šnorchlování", tedy interakce pol
     - tvoří až 20% fosfolipidů
 }
 
-◊title{Replikace a rekombinace}
+◊title{Struktura DNA}
 
-◊img["nucleosome.jpg"]{Orázek makrostruktury DNA}
+Většina strukturních informací je z elektronové mikroskopie.
+
+◊img["dna_makrostructure.png"]{Obrázek makrostruktury DNA}
+◊;{Zdroj: Alberts, str 215}
+
+◊ls[#:t "Makrostruktura DNA"]{
+    - do ◊u{5 \mu m} je potřeba složit více jak metr DNA, proto je DNA silně kondenzovaná
+    - DNA je namotána na ◊strong{histonové oktamery} (viz níže)
+        - komplex histonů a DNA se nazývá ◊strong{nukleozom}
+    - kromě histonů jsou na DNA i další non-histonové proteiny; komplex histonů a těchto proteinů s DNA se souhrnně nazývá ◊strong{chromatin}
+        - chromatin tvoří ◊strong{30nm vlákno}
+        - tetranukleozomy se uspořádají do superhelixu, jeho dynamika se řídí délkou linkerů mezi nukleozomy
+            - úlohu hrají i postranní řetězce histonů 3 a 4
+}
+
+◊definitions{
+    ◊term["linker DNA"]{
+        DNA mezi nukleozomy, která není na nic navinutá. Mívá délku 20--30pb.
+    }
+}
+
+◊ls[#:t "Cohesiny a condensiny"]{
+    - po replikaci se skládá chromozom ze dvou chromatid, které musí držet u sebe; to zajišťuje cohesin
+    - naopak kondenzaci chromatid a rozvolnění vazeb mezi nimi má na starosti condensin
+        - condensin je tak velký, že jím projde nukleosom
+    - obojí jsou proteinové komplexy
+        - coiled-coil helixy
+        - vytváří velkou smyčku a ATPázovou doménu
+    - vyvíjí se v jádře
+    - k funkci potřebují ATP
+
+}
+
+◊section{Histony}
 
 ◊ls{
-    - do 5 mikrometrů je potřeba složit více jak metr DNA
-    - histonové oktamery -> nukleozomy (oktamer + DNA)
-        - namotá se na ně 164 bazí ve dvou otáčkách
-        - mezi nukleozomy jsou 20--30pb dlouhé nenamotané řetězce
-        - interagují spolu a tvoří složitější struktury
-            - tetranukleosomy se sdružují v alfahelix
-        - tvořeny ze 4 menších alfa-helikálních proteinů (histonů)
-        - histony mají nestrukturované konce s Lys a Arg, kde dochází k posttranslačním modifikacím
-        - histon H1
-            - spojuje nukleosom do solenoidu
-            - interaguje s DNA (drží ji na nukleosomu)
-            - má řadu regulačních funkcí
-        - histon H3
-            - nejvíce prozkoumané modifikace
-    - celý chromatin se organizuje do 30nm vláken
-        - nukleozom se potká se sousedním, vytvoří ve čtveřici tetranukleozom, ten nasedá, vytváří superhelix
-            - superhelix – dynamika se řídí délkou linkerů mezi nukleozomy
-                - kratší kompaktní, rigidní, přístup k DNA složitější
-            - úlohu hrají i postranní řetězce z histonů 3 a 4
-    - většina strukturních informace je z elektronové mikroskopie
-    - postranní řetězce mohou být na mnoha místech modifikovány
-    - pro samotnou transkripci potřebujeme přístupnou DNA -> kondenzace
-    - cohesin a condensin
-        - schopny udržet dvě vlákna DNA u sebe v cis konformaci nebo zachytí jedno vlákno a umožní vznik smyček
-        - condensin je tak velký, že projde nukleosomem
-        - vyvíjení v jádře - potřeba zisku ATP
-        - jsou to coiled-coil helixy, vytváří velkou smyčku a ATPázovou doménu
+    - jádro nukleozomu je proteinový oktamer složený ze čtyř párů identických ◊em{histonů} (H2A, H2B, H3, H4)
+        - všechny tyto histony mají konkrétní strukturní motiv "histone fold", složený ze tří helixů a dvou smyček
+        - tímto histone foldem drží jednotlivé části oktameru u sebe
+    - namotá se na ně 164 bazí DNA ve dvou otáčkách
+    - mají nestrukturované konce s Lys a Arg, kde dochází k posttranslačním modifikacím
+    - namotané DNA nelze dobře přečíst, proto existují histonové chaperony a chaperoniny, které umí nukleozomy po DNA různě posouvat
+    - histon H1
+        - spojuje nukleosom do solenoidu (širšího vlákna)
+        - není součástí oktameru jako takového
+        - interaguje s DNA (drží ji na nukleosomu)
+        - má řadu regulačních funkcí
+    - histon H3
+        - nejvíce prozkoumané modifikace
+}
+
+Histonové modifikace tvoří epigenetický kód, který upravuje genovou expresi nebo podává informace o DNA, jako např. Informace o úrovni poškození, nebo o tom, že byl daný úsek DNA zrovna nově replikován. Tento kód je zpracováván komplexy ◊em{readers} a psán komplexy ◊em{writers}. Kromě toho může být i mazán pomocí ◊em{erasers}.
+
+◊ls[#:t "Readers"]{
+    - slouží ke čtení histonového kódu
+        - poznají množství methylace
+        - někdy naopak rozpoznávají neupravený úsek
+        - větši­na k tomu má ◊em{aro­mat­ick­ou klec}, tj. část s aro­mat­ick­ý­mi AK
+    - jeden reader často rozpoznává více značek najednou (čili hledá jejich kombinaci)
+        - pro stejný účel se někdy spojí dva readery do komplexu
+        - dva readery mohou být v konfiguraci cis nebo trans, podle toho, na jaké straně DNA čtou
+    - např. chromodomény, promodomény, tudor domény, BD pro­teiny, WD40 Tu­dor, PWWP
+        - tudor WD40 čte methylace na Arg
+}
+
+◊ls[#:t "Writers"]{
+    - mají složitou strukturu
+    - někdy jsou v komplexu s readerem
+        # reader se naváže na modifikovaný nukleozom
+        # writer se dostane blízko sousedního nukleozomu a modifikuje ho
+        # reader přeskočí na tento nově modifikovaný nukleozom
+        # writer se dostane do blízkosti dalšího atd.
+    - H3K4
+        - přináší methyl na lysin --- střed­ní část umí ze sub­strá­tu získat methyl, zbytek se váže na DNA a his­ton
+        - fun­gu­je jako pinze­ta: krajní části uchopí nuk­leo­zom a střed­ní část se při­blíží k his­tonu, který methyluje
+    - H3K79
+        - - je potřeba signální ubiquitinilační značka
+        - má méně domén, pro­tože neváže methyl na zák­ladě DNA, které je hod­ně daleko
+        - také má více stavů
+        - nes­tačí mu na­jít jen H4 tail, ale také další konce jiných his­tonů se speci­fick­ý­mi značka­mi
 }
 
 ◊section{Replikace DNA}
@@ -739,41 +790,35 @@ Aby byl systém co nejvýkonnější, dochází k velkému množství replikačn
     - sdružuje více proteinů
 }
 
-◊ls[#:t "Replikační začátek"]{
-    - ORC (origin recognition complex)
-        - ATPáza složená z 6 podjednotek (hexamer)
-        - má specifické vnitřní rozhraní, které rozpozná specifickou sekvenci DNA
-            - až 17 bazí
-        - často bohatý na AT báze
-            - <= mají slabší vazby a jdou tak lépe oddělit
+◊ls[#:t "ORC (origin recognition complex)"]{
+    - trochu DNA ohne, ta je lépe přístupná pro další proteiny (např. helikázy)
+    - ATPáza složená z 6 podjednotek (hexamer)
+    - má specifické vnitřní rozhraní, které rozpozná specifickou sekvenci DNA (až 17 bazí)
+    - často bohatý na AT báze
+        - <= mají slabší vazby a jdou tak lépe oddělit
 }
 
 ◊ls[#:t "Helikáza"]{
-    - rozdělí vlákna DNA
-        - vytvoří replikační vidličku
+    - rozdělí vlákna DNA, vytvoří replikační vidličku
     - tvořena dvěma hexamery
         - na začátku je hexamer otevřený (tvar písmene C) potom se zavře, přistoupí další proteiny, dochází k vlastnímu rozplétání
-    - MCM (minichromosome maintenance protein complex)
-        - konkrétní helikáza
-        - tvořen dvěma hexamery
-        - není to symetrický tubus
-        - hexamery na sebe nasedají s posunem
-            - dostanou-li se mimo osu, na DNA je vyvíjen tlak a začne se rozplétat
+        - hexamery na sebe nasedají s posunem, protože jsou mimo osu, na DNA je vyvíjen tlak a začne se rozplétat
+    - např. MCM (minichromosome maintenance protein complex)
 }
 
 ◊ls[#:t "DNA polymeráza"]{
-    - má schopnost tvořit i štěpit
-    - na jednom vlákně vytváří nové vlákno lineárně, na druhém přes okazakiho fragmenty
+    - má schopnost tvořit i štěpit DNA
+    - na jednom vlákně vytváří nové vlákno lineárně, na druhém přerušovaně přes okazakiho fragmenty
     - jeden z nejkonzervovanějších a nejprozkoumanějších proteinů
 }
 
 ◊ls[#:t "Topoizomeráza"]{
-    - přeštípne 1 řetězec, rozmotá jedno překřížení (nechá ho propadnout) a zase vlákno spojí
-    - za polymerázou dochází k nechtěné torzi (tlačí před sebou otočky DNA)
+    - přeštípne jeden řetězec, rozmotá jedno překřížení a zase vlákno spojí
+        - za polymerázou dochází k nechtěné torzi (tlačí před sebou otočky DNA), přesně toto řeší TOPOI
     - ATPáza (potřebuje ATP pro vznik dimeru, tj. k vlastnímu sestřihu)
     - striktně alfa-helikální struktury
-    - v aktivním místě má tyrosiny schopné navázat se na báze
-    - jsou jich různé typy
+    - v aktivním místě má Tyr schopné navázat se na báze
+    - existují různé druhy
         - např TOPOI štěpí jen jeden řetězec a TOPOII štěpí dva
 }
 
@@ -781,8 +826,8 @@ Aby byl systém co nejvýkonnější, dochází k velkému množství replikačn
     - polymeráza neumí dojít až na úplný konec vlákna, replikací přicházíme o několik posledních párů bazí
     - proto jsou na koncích chromozomů telomery s repetitivními sekvencemi
     - enzym telomeráza je umí doplňovat
-        - nese si vlastní templátovou RNA, podle které ony konce dosyntetizovává
-    - dává dohromady multikomplex z proteinové části s enzymatickou aktivitou a RNA templátu
+        - nese si vlastní templátovou RNA, podle které ony konce dosyntetizuje
+    - multikomplex proteinové části (enzymatická aktivita) a RNA (templát)
         - templát: RNA sbalená do pseudoknotu (pevná struktura, chová se jako protein)
 }
 
@@ -794,7 +839,7 @@ Aby byl systém co nejvýkonnější, dochází k velkému množství replikačn
         - chybějící báze
         - nežádoucí spojování bazí
         - kovalentně modifikované báze v určitých pozicích
-    - pokud by nebylo řízené opravy, nesli bychom si poškození s sebou
+    - musí existovat řízený opravný mechanizmus
 }
 
 ◊ls[#:t "DNA-proteokináza"]{
@@ -807,7 +852,7 @@ Aby byl systém co nejvýkonnější, dochází k velkému množství replikačn
 
 Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který našel chybu (break). Přerušené vlákno jsou poté schopny spojit ◊strong{ligázy}.
 
-◊title{Translace}
+◊section{Translace}
 
 ◊definitions{
     ◊term["translace"]{
@@ -836,7 +881,7 @@ Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který
     - umí štěpit cukrfosfátovou kostru
 }
 
-◊section{Ribozom}
+◊subsection{Ribozom}
 
 ◊ls{
     - má tři významná místa
@@ -876,7 +921,7 @@ Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který
         - zabraňují vzniku peptidické vazby na tvořícím se proteinu
 }
 
-◊section{Životní cyklus proteinů}
+◊subsection{Životní cyklus proteinů}
 
 ◊ls{
     # připojení AK na tRNA
@@ -887,10 +932,10 @@ Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který
 
 ◊ls[#:t "Připojení AK"]{
     - aminoacyl tRNA syntetáza (aaRS)
-        - enzym
         - umí připojit AK na tRNA
-        - 20 typů, pro kažkou AK jeden
-        - 2 vazebná místa (jedno pro tRNA a druhé pro AK)
+        - dvě třídy, 20 konkrétních typů, pro kažkou AK jeden
+            - velice se liší celkovou strukturou, ale aktivní místo mají všechny skoro stejné
+        - dvě vazebná místa (jedno pro tRNA a druhé pro AK)
     - strukturní variabilita enzymů
         - 2 třídy (a více podtříd)
             # OH skupina na 2' uhlíku
@@ -900,6 +945,16 @@ Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který
                 - antiparalelní beta listy
                 - aktivní místo uvnitř
     - opravy enzymů
+}
+
+Isoleucyl-RS je vyjímka; má dvě ak­tivní mís­ta.
+◊ls{
+    -  snaha zaručit, že se místo Ile nenaváže Val, který je Ile tvarem velice podobný
+        - Ile je zpravid­la velice důležitý pro fold­ing pro­teinu
+    - do prvního místa se může navázat Ile nebo Val, do druhého jen Val
+    - pokud se do prvního místa naváže Val, naváže se i do druhého (obě místa jsou blízko sebe)
+        - enzym si toho všimne a Val odštěpí
+    - pokud se do prvního místa naváže Ile, druhé místo zůstane prázdné
 }
 
 ◊ls[#:t "Syntéza proteinu"]{
@@ -952,22 +1007,91 @@ Proteiokináza je na místo potřeby "zavolána" ◊strong{KU proteinem}, který
                 - připojují se další, nastane ◊em{polyubiquitinace}
 }
 
-◊title{Transkripce}
+◊section{Transkripce}
 
-- regulace transkripce
+◊ls[#:t "Regulace transkripce"]{
     - posttranslační modifikace na histonu
-        - methylace, acylace atd
-        - jsou k tomu třeba modifikující enzymy
-        - readers
-            - methyltransferázy
-            - pomocí proteinových domén čtou značky na histonech
-            - přečtou i to, že tam nic navázané není
-            - příklady
-                - chromodomény
-                - promodomény
-                - tudor domény
-                    - tudor WD40 čte methylace na argininech
-        - protein 14- 3- 3
-        - writers
-            - složeny z více podjednotek
-                - pro přečtení methylace je potřeba jen jedna doména, ale na zápis více
+        - methylace, acylace atd.
+        - jsou k tomu třeba modifikující enzymy (readers, writers, protein 14-3-3)
+}
+
+◊ls[#:t "Kontrolní elementy transkripce"]{
+    - promotory, enhancery
+    - chromatin v superorientaci
+        - potřebujeme ho remodulovat - rozvolnit více organizované shluky
+    - enhancery
+        - oblasti DNA
+        - vážou se na ně regulační proteiny
+        - dokáží díky velkému mediátorovému komplexu komunikovat s promotorem
+        - vzniká smyčka --- DNA se ohne, enhancer se dostane k polymeráze a začíná transkripce
+        - mohou být až stovky bazí daleko od vlastního genu
+}
+
+◊ls[#:t "Transkripční faktory"]{
+    - dokáží rozpoznávat specifické sekvence DNA (promotorové regiony, enhancery)
+    - faktory lze rozdělit podle konformací, které zaujímají
+        - většinou  tvoří heterodimery, mají tvar alfa helixu
+        - specifita daná dvěma úseky DNA vedle sebe
+        - motivy
+            - zink finger
+                - koordinuje zinkové atomy, které drží konformaci v aktivním stavu
+            - leucinový zip
+                - motiv pomocí něhož některé bílkoviny vytvářejí dimery
+                - strany zipu se k sobě koordinují hydrofobními interakcemi
+    - pioneer faktor
+        - umí vázat histonový oktamer
+        - např. faktor FoxA
+            - strukturou se podobá histonu H1
+            - dokáže napodobit interakci H1 přes vazebnou doménu
+}
+
+◊ls[#:t "Eukaryotická transkripce"]{
+    - polymerázová reakce
+    - RNA polymeráza
+        - v aktivním místě Mg
+        - 3 typy, které se liší složením podjednotek
+            - I - umí syntetizovat RNA prekurzor
+            - II - transkribuje mRNA a malé nekódující RNA
+            - III - tRNA
+        - přenos polymeráz
+            - vytvoření většího množství komplexů
+            - chaperonové proteiny pomohou jednotkám k přechodu přes nukleární pór do jádra
+        - regulace pomocí fosforylace nestrukturovaného C konce
+    - splicosom
+        - viz video
+}
+
+◊subsection{Chromatine remodeling}
+
+◊ls{
+    - k DNA na nukleozomech není možné se dostat, je proto nutné chromatin ◊em{remodelovat} tak, abychom si DNA mohli přečíst
+    - potřeba dodat ATP
+    - způsoby remodelingu
+    - posunutí nukleozomu
+        - odhalení té části DNA, kterou potřebujeme
+        - velmi energeticky náročné (překonávání elektrostatických interakcí)
+    - zbavení se nukleozomu
+        - díky chaperonům ale zůstává stále poblíž, "naskočí" rychle zpátky
+    - zhušťování a ředění vzdálenosti nukleozomů
+    - výměna histonu (nejčastěji H2)
+}
+
+◊ls[#:t "Fáze"]{
+    # recruitment
+    # ATP depending pumping
+    # uvolnění interakce
+    # pootočen dalšími faktory (může dojít k rozpadu celého nukleozomu)
+}
+
+◊ls[#:t "ATP-dependent chromatin remodeling complexes"]{
+    - známe 4 typy
+    - SWI-SNF family
+    - INO80 family
+        - vícejednotkový
+        - základem je hexamer z proteinů Rvb1/Rvb2
+        - nemá ATPázovou aktivitu
+        - funguje jako stator pro molekulární motor
+            - recyklací ATP je schopen se otáčet
+            - jsou k tomu potřeba další proteiny, které uchopí nukleozom
+    - ISWI family
+}
