@@ -15,7 +15,6 @@
   (provide (all-defined-out))
 
   (define poly-targets '(html md tex pdf))
-  (define compile-cache-active #f)
 
   (define BLOCK-TAGS
   '(name li box lecture details summary list-title answer img question q-label q-body ql dl dt dd

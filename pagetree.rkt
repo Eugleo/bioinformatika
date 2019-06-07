@@ -18,7 +18,10 @@
         (define lectures
             (for/list ([lecture (directory-list topic)]
                        #:when (regexp-match #rx"^(.*)\\.pm$" (path->string lecture)))
-                (path->string (path-replace-extension lecture #""))))
+                (path->string
+                    (path-replace-extension
+                        (path-replace-extension lecture #"")
+                        #".html"))))
         (map
             (lambda (lec)
                 (string->symbol (string-append (path->string topic) "/" lec)))
