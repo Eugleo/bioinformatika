@@ -25,31 +25,34 @@
     - k uvolnění dojde jen pokud má foton dostatečně velký náboj
     - poměr elektronů a fotonů je 1:1
     - světlo má korpuskulární charakter
-        - dvojštěerbinový pokus => světlo má vlnový charakter (důkaz interferencí)
+        - dvojštěrbinový pokus => světlo má vlnový charakter (důkaz interferencí)
+}
+
+◊definitions{
+    ◊term["nuklid"]{
+        Látka, která se skládá z atomů jednoho prvku, které mají stejné nukleonové číslo (A).
+    }
+
+    ◊term["izotop"]{
+        Atomy jednoho nuklidu v rámci směsi více nuklidů jednoho prvku. Všechny izotopy mají stejné chemické vlastnosti, liší se ale svou hmotností a tedy i rychlostí reakcí. Někdy se používají se někdy u chemického značení, např. radioaktivního.
+    }
 }
 
 ◊ls[#:t "Základní vlastnosti atomu"]{
-    - nukleony se přitahují velkou silou s krátkým dosahem
-    - neutrony kompenzují extrémní kladný náboj, proto jich je vždy stejně nebo více než protonů
-    - chemické vlastnosti udává konfigurace elektronů, hlavně těch valenčních
-    - jádra se shodnými čísly Z i čísly N jsou ◊strong{nuklidy}
-    - nuklidy se stejným Z a různým A jsou ◊strong{izotopy}
-        - izotopy mají stejné chemické vlastnosti a liší se rychlostí reakce
-        - používají se někdy u značení
+    - nukleony se přitahují velkou silou s krátkým dosahem
+    - neutrony kompenzují extrémní kladný náboj, proto jich je vždy stejně nebo více než protonů
+    - chemické vlastnosti udává konfigurace elektronů, hlavně těch valenčních
 }
 
 ◊ls[#:t "Radioaktivita"]{
-    - jaderná přeměna
-        - při rozpadu jádra se uvolňuje záření (rychle letící částice)
-    - ◊${\alpha}: ryhle létající jádra ◊chem{^4_2He}, proniká vzduchem až několik cm, silně ionizující
-    - ◊${\beta}: proud elektronů nebo pozitronů, je 100x pronikavětší než ◊${\alpha}
-    ◊$${\ce{p -> n + e+ \\ n -> p + e}}
+    - jaderná přeměna (rozpad jádra) -> uvolnění záření (rychle letící částice)
+    - ◊${\alpha}: rychle létající jádra ◊chem{^4_2He}, proniká vzduchem až několik cm, silně ionizující
+    - ◊${\beta}: proud elektronů nebo pozitronů, je ◊${100\times} pronikavětší než ◊${\alpha} ◊$${\ce{p -> n + e+ \\ n -> p + e-}}
     - ◊${\gamma}: nejpronikavější (proletí několika metry betonu)
-    - měří se mlžnou komorou
-        - páry, které kondezují, pokud jimi něco proletí
+        - pozorování v mlžné komoře (páry, které kondezují, pokud jimi něco proletí)
 }
 
-U radioaktivity je důležitý i rozpadový zákon, který nám říká, kolik atomů radioaktivní látky budeme mít za určitou dobu.
+U radioaktivity je důležitý i rozpadový zákon, který říká, kolik atomů radioaktivní látky budeme mít za určitou dobu.
 ◊$${N = N_0 \cdot e^{-\lambda t},}
 kde ◊${\lambda} je přeměnová konstanta. Tu můžeme spočítat například pokud známe poločas rozpadu naší látky, protože
 ◊$${\tau = \frac{\log 2}{\lambda}.}
@@ -69,22 +72,22 @@ Zavádí se i veličina ◊strong{aktivita} [Bq], která udává počet radioakt
 
 ◊section{Kvantově-mechanický model atomu}
 
-V tomto modelu je projevu korpuskulárně-vlnový dualismus elektronů. Aplikuje se Heisenbergův princip neurčitosti --- nemůžeme současně detekovat hybnost i polohu částic. Proto se k popisu částic používají probabilistické metody.
+V tomto modelu se projevuje korpuskulárně-vlnový dualismus elektronů. Aplikuje se Heisenbergův princip neurčitosti --- nemůžeme současně detekovat hybnost i polohu částic. Proto se k popisu částic používají probabilistické metody.
 
 ◊subsection{Schrödingerova rovnice}
 
 Rovnice, která popisuje částice pomocí vlnové funkce ◊${\psi}. ◊${|\psi|^2} pak udává pravděpodobnost toho, kde se daná částice nachází. Velikost atomu nemůžeme přesně určit, většinou se spokojíme s prostorem, kde se elektrony vyskytují s 99% pravděpodobností.
 
-◊${\psi} vyjde jako řešení Schrödingerovy rovnice, těchto řešení je nekonečně mnoho. Liší se například i tím, jakou energii daná částice má. Řešení popisujeme třemi čísly, která se nazývají ◊strong{kvantová}.
+◊${\psi} vyjde jako řešení Schrödingerovy rovnice, těchto řešení je nekonečně mnoho (liší se například tím, jakou energii daná částice má). Řešení popisujeme třemi čísly, která se nazývají ◊strong{kvantová}.
 ◊ls{
-    - ◊${n}, hlavní kvatnové číslo, odpovídá energii částice
-        -   ◊${E = -B/n^2}, kde ◊${B = 13,6 \text{eV}}
-        - ◊${n = 1}, atom je v základním stavu, ◊${n > 1}, atom je v excitovaém stavu
+    - ◊${n}, hlavní kvantové číslo, odpovídá energii částice
+        - ◊${E = -B/n^2}, kde ◊${B =} ◊u{13,6 eV}
+        - ◊${n = 1}, atom je v základním stavu, ◊${n > 1}, atom je v excitovaném stavu
     - ◊${l}, vedlejší kvantové číslo, udává moment hybnosti elektronu
-        - 0 --◊${n-1}
+        - hodnoty 0 až ◊${n-1}
         - udává tvar orbitalu (prostoru), ve kterém se elektron nachází
     - ◊${m}, magnetické kvantové číslo, udává prostorovou orientaci orbitalu
-        - ◊${-(n - 1)}--◊${n-1}
+        - hodnoty ◊${-(n - 1)} až ◊${n-1}
 }
 
 ◊todo{Přidat tvary orbitalů + trik na to, jak se je naučit. Zmínit i fázi.Nalinkovat falstad.com/qmatom. Přidat obrázek z wiki: atomic\_orbital. Přidat tabulku orbitalů.}
@@ -94,7 +97,7 @@ Rovnice, která popisuje částice pomocí vlnové funkce ◊${\psi}. ◊${|\psi
 ◊ls[#:t "Kvantová čísla pro složitější atomy"]{
     - vlnová funkce se konstruuje pomocí jednotlivých orbitalů
     - elektrony se vzájemně odpuzují
-    - eketrony se steným ◊${n} tovří ◊em{slupku}, se stejným ◊${n} a ◊${l} tvoří ◊${podslupku}
+    - elektrony se stjeným ◊${n} tvoří ◊em{slupku}, se stejným ◊${n} a ◊${l} tvoří ◊em{podslupku}
         - elektrony na stejných podslupkách mají stejnou energii
 }
 
@@ -102,25 +105,26 @@ Rovnice, která popisuje částice pomocí vlnové funkce ◊${\psi}. ◊${|\psi
     - obsazování podle výstavbového principu
         - nejprve jsou obsazovány orbitaly s nejnižší energií (tj. nejnižším součtem ◊${n} a ◊${l})
     - Pauliho princip
-        - v každém orbitalu jsou nejvýšedva elektrony, a ty se liší svým spinovým číslem
+        - v každém orbitalu jsou nejvýše dva elektrony, a ty se liší svým spinovým číslem
     - Hundovo pravidlo
-        - orbitaly se stejnou energií (tzv. degenerované) se obsazují nejprve po jednom elekronu, všechny mají zezačátku stejný spin
+        - orbitaly se stejnou energií (tzv. degenerované) se obsazují postupně po jednom elektronu, všechny mají ze začátku stejný spin
 }
 
 ◊section{Periodická soustava prvků}
 
 ◊ls{
-    - rozdělení podle protonového čísla, tedy podle počtu elektronů atedy podle chemických vlastností
+    - rozdělení podle protonového čísla, tedy podle počtu elektronů a tedy podle chemických vlastností
     - dělení prvků podle toho, jaké valenční orbitaly se zaplňují jako poslední: s-prvky, p-prvky (i d-prvky a f-prvky)
     - nejstabilnější stav orbitalů je u vzácných plynů, tzv. ◊em{oktetové pravidlo}
     - prvky pod sebou mají podobné vlastnosti
     - se Z se mění určité veličiny
         - roste atomový poloměr
             - v rámci periody je nejvyšší pro alkalické kovy
-            - paradox: s obsazováním už zčásti obsazeného orbitalu se atomový poloměr změnšuje
+            - paradox: s obsazováním už zčásti obsazeného orbitalu se atomový poloměr zmenšuje
         - klesá ionizační energie, tedy energie kterou musíme dodat, abychom odštěpili elektron
             - v rámci periody je nejvyšší pro vzácné plyny
-        - elektronová afinita, tedy energie která se uvolní, když atom přijme elektron
+        - elektronová afinity klesá v každé skupině periodické tabulky s rostoucím atomovým číslem a roste v každé periodě s růstem atomového čísla
+            - energie která se uvolní, když atom přijme elektron
 }
 
 ◊section{Molekuly}
@@ -137,7 +141,7 @@ Rovnice, která popisuje částice pomocí vlnové funkce ◊${\psi}. ◊${|\psi
 
 ◊definitions{
     ◊term["disociační energie"]{
-        Energie, která se uvolní při přerušení chemické vazby. Je stejně velká jako vazbená energie, která vyjadřuje, jaký je pokles energie oproti stavu, kdy dva atomy vázány nejsou.
+        Energie, která se uvolní při přerušení chemické vazby. Je stejně velká jako vazebná energie, která vyjadřuje, jaký je pokles energie oproti stavu, kdy dva atomy vázány nejsou.
     }
 }
 
@@ -154,15 +158,15 @@ Rovnice, která popisuje částice pomocí vlnové funkce ◊${\psi}. ◊${|\psi
 
 ◊ls[#:t "Délky vazeb"]{
     - nejkratší vazba je v ◊chem{H2}, 74,1pm
-    - ◊chem{C-C} 150pm, ◊chem{C = C} 130pm, ◊chem{C # C} 120pm
-    - ◊chem{C-N} 132pm
-    - ◊chem{C - H} 109pm
-    - vazba ale nemá konstantní délku, má pouze jednu preferovanou délku, kolem které "kmitá"
+    - ◊chem{C-C} ◊u{150 pm}, ◊chem{C = C} ◊u{130 pm}, ◊chem{C # C} ◊u{120 pm}
+    - ◊chem{C-N} ◊u{132 pm}
+    - ◊chem{C - H} ◊u{109 pm}
+    - vazba ale nemá konstantní délku, má pouze preferovanou délku, kolem které "kmitá"
 }
 
 ◊ls[#:t "Kovalentní vazba"]{
     - vzájemné sdílení dvou elektronů dvěma atomy
-    - dochází k překryvu elektronových hustot, elektrony se nacházejí v ◊strong{molekulových orbitalech}, nejsme schopni určit, které elektron patří kterému atomu
+    - dochází k překryvu elektronových hustot, elektrony se nacházejí v ◊strong{molekulových orbitalech}, nejsme schopni určit, který elektron patří kterému atomu
     - může být polární a nepolární, podle toho, jaký je rozdíl mezi elektronegativitami zúčastněných atomů
     - molekula vzniklá z různých atomů má nenulový dipólový moment (je trochu polární, protože jeden z atomů si přitáhne sdílený elektronový pár blíže k sobě)
 }
@@ -182,29 +186,29 @@ Rovnice, která popisuje částice pomocí vlnové funkce ◊${\psi}. ◊${|\psi
     - opět odpovídají rozložením elektronovým hustot kolem molekuly
     - záleží na tom, jestli jsou jednotlivé atomové orbitaly ve fázi, nebo jestli se jejich fáze liší
         - rozlišení vazebných a antivazebných orbitalů
-        - jestli vazba vznikne nebo ne záleží na tom, jestli je více elektronů ve vazbených nebo antivazebných orbitalů
+        - jestli vazba vznikne nebo ne záleží na tom, jestli je více elektronů ve vazebných nebo antivazebných orbitalů
 }
 
 ◊subsection{Hybridizace orbitalů}
 
-Kombinování AO, vhodné pro popis vazeb a prostorového uspořádání. Například u C se skombinují (po excitaci) ◊${2s} a ◊${2p} orbitaly do tzv. ◊${sp^3} hybridizace.
+Kombinování AO, vhodné pro popis vazeb a prostorového uspořádání. Například u C se zkombinují (po excitaci) ◊${2s} a ◊${2p} orbitaly do tzv. ◊${sp^3} hybridizace.
 
-Protože ◊${s} má nějakou danou fázi, původně symetrický ◊${p} který je s ◊${s} nyní skombinovaný, bude najednou asymetrický; strana se stejnou fázi jako původní ◊${s} bude v ◊${sp^3} větší.
+Protože ◊${s} má nějakou danou fázi, původně symetrický ◊${p} který je s ◊${s} nyní zkombinovaný, bude najednou asymetrický; strana se stejnou fázi jako původní ◊${s} bude v ◊${sp^3} větší.
 Proto tvoří C pravidelný čtyřboký jehlan s úhly 109.5◊|deg| mezi C a H.
 
-Uhlík může mít i hybridizaci ◊${sp^2} (které se neučastní všechny tři ◊${2p} orbitaly, ale pouze dva z nich). Například v ethenu, kde vzniká dvojná vazba, jeden uhlík je v ◊${sp^2} a druhý z ◊${p}. ◊${\sigma} vazba vzniká v ◊${sp} orbitalech, ◊${\pi} vazba vzniká na původních ◊${2p} orbitalech. Podobně existuje i ◊${sp} hybridizace, která se vyskytuje při vzniku trojné vazby.
+Uhlík může mít i hybridizaci ◊${sp^2} (které se neúčastní všechny tři ◊${2p} orbitaly, ale pouze dva z nich). Například v ethenu, kde vzniká dvojná vazba, jeden uhlík je v ◊${sp^2} a druhý z ◊${p}. ◊${\sigma} vazba vzniká v ◊${sp} orbitalech, ◊${\pi} vazba vzniká na původních ◊${2p} orbitalech. Podobně existuje i ◊${sp} hybridizace, která se vyskytuje při vzniku trojné vazby.
 
 ◊ls[#:t "Molekuly složitějších molekul"]{
     - molekuly cyklické, s jednoduchými vazbami (např. cukry)
         - trans (židlička) a cis (vanička) konfigurace
-    - aromatiké sloučeniny (benzenové jádro, mají ◊${4n + 2} ◊|pi| elektronů)
-        - planární, ◊|pi| elektrony jsou delokalizované a všude jsou valstně částečně dvojné vazby, kolem kterých nejde rotovat
+    - aromatické sloučeniny (benzenové jádro, mají ◊${4n + 2} ◊|pi| elektronů)
+        - planární, ◊|pi| elektrony jsou delokalizované a všude jsou vlastně částečně dvojné vazby, kolem kterých nejde rotovat
         - tendence reagovat přes stacking interactions, tak, aby si mraky delokalizovaných ◊|pi| elektronů nepřekážely
 }
 
 ◊title{Stavba proteinů}
 
-Proteiny se skládají z aminokyselin (AK), pro více informací o struktuře proteinů a jednotlivých AK viz ◊link["/doc/zaklady-bioinformatiky/notes.html#Struktura nukleových kyselin"]{struktura NA} a ◊link["/doc/zaklady-bioinformatiky/notes.html#Struktura proteinů"]{struktura proteinů} v zápiscích ze základů bioinformatiky.
+Proteiny se skládají z aminokyselin (AK), pro více informací o struktuře proteinů a jednotlivých AK viz ◊link["/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Struktura nukleových kyselin"]{struktura NA} a ◊link["/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Struktura proteinů"]{struktura proteinů} v zápiscích ze základů bioinformatiky.
 
 ◊ls[#:t "Stabilizace určité konformace"]{
     - struktura samozřejmě závisí na sekvenci atp., ale určitá konformace je "pohromadě" držena slabými vazbami
@@ -216,7 +220,7 @@ Proteiny se skládají z aminokyselin (AK), pro více informací o struktuře pr
     - stacking interakce
     - hydrofobní interakce (nepolární AK jdou do jádra proteinu)
         - molekula není s vodou schopna tvořit vodíkové vazby
-        - když se takové molekuly nahromadí, umožní vodě vytvořit vodíkové můstky samotné uvnitř sebe, což je energeticky výhodné
+        - když se takové molekuly nahromadí, umožní vodě vytvořit vodíkové můstky uvnitř sebe samé, což je energeticky výhodné
     - interakce s vodou v roztocích
     - iontové interakce s ionty v roztocích, i uvnitř molekul
 }
@@ -225,7 +229,7 @@ Je velice složité počítat se všemi těmito vazbami, když se například sn
 
 ◊definitions{
     ◊term["rotamery"]{
-        Dvě AK, které mají stejné chemické složení, ale ve smém R-řetězci se liší rotací v nějaké z jednoduchých vazeb. Pokud je rozdíl v úhlech veliký, můžu se liši vlastnosti obou AK.
+        Dvě AK, které mají stejné chemické složení, ale ve svém R-řetězci se liší rotací v nějaké z jednoduchých vazeb. Pokud je rozdíl v úhlech veliký, můžu se liší vlastnosti obou AK.
     }
 }
 
@@ -244,7 +248,7 @@ Je velice složité počítat se všemi těmito vazbami, když se například sn
     - dva cysteiny spolu tvoří sulfidický můstek
     - všechny proteiny (alespoň hned po translaci) začínají na Met, u bakterií je to N-formylmethionin
     - AK mo­hou být mod­i­fikovány (oligosacharidy, sul­fa­ti­zace, es­ter­i­fikace, fos­fory­lace, ami­dace, atd.)
-    - průměrná hmot­nost AA je 110g/mol
+    - průměrná hmot­nost AA je ◊u{110 g/mol}
     - existuje i několik vzácných AK
         - selenocystein, pyrrolysin, N-formylmethionin
         - jsou kódovány STOP kodony
@@ -266,23 +270,23 @@ Definujeme také ◊em{izoelektrický bod} AK, což je bod, kdy kyselina nemá �
 
 ◊slide[33 #:s 1]
 ◊ls[#:t "Chiralita"]{
-    - z uhlíku vychází čtyři různé substituenty
-    - u AK je jím ◊chem{C\alpha}
+    - chirální uhlík je takový, ze kterého vychází čtyři různé substituenty
+        - u AK je jím ◊chem{C\alpha}
     - rozlišení optických L a D izomerů
         - L-izomer: pokud H míří k nám, COOH nahoru, potom po směru hodinových ručiček: ◊strong{CO-R-N}
         - optické izomery pootáčejí rovinu polarizovaného světla
-        - L/D izomery nestáčí tuto rovinu nutně vždy na stejnou stranu
+        - všechny L izomery nestáčí tuto rovinu nutně vždy na stejnou stranu (a podobně ani všechny D)
     - většina přírodních AK jsou L-izomery (vyjímky například buněčné stěny bakterií)
-    - může se stát, že máme více chirálních uhlíků, poté existuje ◊${2^k} forem molekuly
+    - může se stát, že místo jednoho má molekula ◊${k} chirálních uhlíků, poté existuje ◊${2^k} forem této molekuly
 }
 
 ◊section{Peptidová vazba}
 
 ◊slide[44 45 #:s 1]
-Vazba mezi dvěma AK, které se účasntní původní ◊chem{COOH} a ◊chem{NH2} skupiny.
+Vazba mezi dvěma AK, které se účastní původní ◊chem{COOH} a ◊chem{NH2} skupiny.
 
 ◊slide[46 #:s 1]
-Vazba je planární, protože dvojná vazba ◊chem{C=O} někdy přejde na vazbu ◊chem{C-N} (tzv. ◊em{mezomernie}). Rotace je tedy možná pouze v "rozích" vazby, kolem vazeb vycházejících z ◊chem{C\alpha}.
+Vazba je planární, protože dvojná vazba ◊chem{C=O} někdy přejde na vazbu ◊chem{C-N} (tzv. ◊em{mezomerie}). Rotace je tedy možná pouze v "rozích" vazby, kolem vazeb vycházejících z ◊chem{C\alpha}.
 
 ◊slide[50 51 52 #:s 1]
 ◊ls[#:t "Torzní úhly"]{
@@ -292,8 +296,8 @@ Vazba je planární, protože dvojná vazba ◊chem{C=O} někdy přejde na vazbu
         - cis konformace jen výjimenčně u prolinu
     - torzní úhly: ◊${\varphi} značí úhel ◊chem{C-N}, ◊${\psi} značí úhel ◊chem{C-C}
         - povolené hodnoty těchto úhlů můžeme zanést do tzv. ◊em{Ramachandranova grafu}
-        - v Ramachandranově grafu nejprve vypíšeme oblasti pravděpodobných hodnot, teoreticky možných hodnot a nepravděpodobných hodnot, poté srovnáma naměřená data s těmito zónami
-        - určité oblasti odpovídají určitým sekundárním strukturů, viz slide ◊slide[53 #:s 1 #:inline #t]
+        - v Ramachandranově grafu nejprve vypíšeme oblasti pravděpodobných hodnot, teoreticky možných hodnot a nepravděpodobných hodnot, poté srovnáme naměřená data s těmito zónami
+        - určité oblasti odpovídají určitým sekundárním strukturám, viz slide ◊slide[53 #:s 1 #:inline #t]
 }
 
 ◊section{Sekundární struktury}
@@ -339,7 +343,7 @@ Konkrétní znění zákona se dá vyjádřit vzorcem
     T &= \frac{I}{I_0} \\
     A &= -\log T = \varepsilon \cdot l \cdot c,
 }
-kde ◊${I} a ◊${I_0} značí inzentity světla, ◊${T} je ◊strong{transmitance} vzorku, ◊strong{A} je absorbance vzorku a ◊${\varepsilon} je molární extinkční koeficient. Pokud íiž známe absorbanci naší látky, můžeme pomocí tohoto vzorce například spočítat jejich koncentraci.
+kde ◊${I} a ◊${I_0} značí inzentity světla, ◊${T} je ◊strong{transmitance} vzorku, ◊strong{A} je absorbance vzorku a ◊${\varepsilon} je molární extinkční koeficient. Pokud již známe absorbanci naší látky, můžeme pomocí tohoto vzorce například spočítat jejich koncentraci.
 
 ◊slide[32 #:s 2]
 ◊ls[#:t "Absorbce světla molekulou"]{
@@ -354,11 +358,11 @@ kde ◊${I} a ◊${I_0} značí inzentity světla, ◊${T} je ◊strong{transmit
 SFM je nedestruktivní metoda, což je její velká výhoda.
 
 ◊slide[33 #:s 2]
-Proteiny dobře absorbují světlo kolem 225nm (tam absorbuje peptidová vazba) a případně i kolem 260nm, když mají nějaké aromatické AK. Všechny AK absorbují různě moc, takže pokud známe složení proteinu a vidíme absorpční spektrum vzorku, umíme z něj vypočítat koncentraci. ◊${\varepsilon} pro jakýkoli protein o známé sekvenci se totiž dá dopočítat.
+Proteiny dobře absorbují světlo kolem ◊u{225 nm} (tam absorbuje peptidová vazba) a případně i kolem ◊u{280 nm}, když mají nějaké aromatické AK. Všechny AK absorbují různě moc, takže pokud známe složení proteinu a vidíme absorpční spektrum vzorku, umíme z něj vypočítat koncentraci. ◊${\varepsilon} pro jakýkoli protein o známé sekvenci se totiž dá dopočítat.
 
-Nukleové kyseliny zpravidla absorbují kolem 260nm. U nukleových kyslein se užívá například k posouzení stupně a průběhu denaturace, k posouzení homogenity Pro sekvence DNA a RNA se koncentrace stanovuje trochu jinak,
+Nukleové kyseliny zpravidla absorbují kolem u{260 nm}. U nukleových kyselin se SFM užívá například k posouzení stupně a průběhu denaturace, nebo k posouzení homogenity. Pro sekvence DNA a RNA se koncentrace stanovuje trochu jinak,
 ◊$${100 \cdot \frac{A_{260}}{K} = c.}
-Pro dsDNA ◊${K = 2}, pro ssDNA ◊${K = 2,5}, pro ssDNA ◊${K = 3}, pro oligo DNA ◊${K = 3,3} -- ◊${K = 5}.
+Pro dsDNA ◊${K = 2}, pro ssDNA ◊${K = 2,5}, pro ssDNA ◊${K = 3}, pro oligo DNA ◊${K = 3,3} až ◊${K = 5}.
 
 ◊section{Cirkulární dichroismus}
 
@@ -371,7 +375,7 @@ Pro dsDNA ◊${K = 2}, pro ssDNA ◊${K = 2,5}, pro ssDNA ◊${K = 3}, pro oligo
     }
 
     ◊term["cirkulární polarizace světla"]{
-        Pokud v polarizovaném světle zpozdíme kmitání magnetické složky, například o čtvrt vlny, výsledný světelný vektor, který se součtem vektoru elektrického pole a vektoru magnetického pole, se bude postupně při kmitání otáček.
+        Pokud v polarizovaném světle zpozdíme kmitání magnetické složky, například o čtvrt vlny, výsledný světelný vektor, který je součtem vektoru elektrického pole a vektoru magnetického pole, se bude postupně při kmitání otáčet.
 
         Rozlišujeme pravotočivou a levotočivou polarizaci.
     }
@@ -379,7 +383,7 @@ Pro dsDNA ◊${K = 2}, pro ssDNA ◊${K = 2,5}, pro ssDNA ◊${K = 3}, pro oligo
 
 Absorbce cirkulárně polarizovaného světla záleží na chiralitě molekul a na levotočivosti a pravotočivosti světla. ◊strong{Cirkulární dichroismus} je rozdíl mezi absorbancí levotočivě a pravotočivě polarizovanho světla.
 
-Cirkulární dichroismus jednotlivých SS se liší, viz obrázek. Podobně se liší CD pro protein s nějakým foldem a denaturovaný protein. Pokud změříme CD proteinu, můžeme z výsledné spektrální křivky zjistit procentuální podíl jednotlivých SS.
+Cirkulární dichroismus jednotlivých SS se liší, viz obrázek. Podobně se liší CD pro protein s nějakým foldem a pro denaturovaný protein. Pokud změříme CD proteinu, můžeme z výsledné spektrální křivky zjistit procentuální podíl jednotlivých SS.
 
 ◊img["slides-2/slide-55.jpg"]{Hodnota cirkulárního dichroismu pro různé sekundární struktury}
 
@@ -391,8 +395,8 @@ Pomocí ELFO můžeme zjistit velikost proteinu, odhalit počet proteinů nebo o
 ◊ls[#:t "Základní princip ELFO"]{
     # do gelu dáme do několika řad (line) vzorky (zpravidla nahoru)
     # na gelu vytvoříme elektrické napětí
-    # všechny vzorky putují na druhou stranu gelu (zpravidla dolů), jejich ryhlost se (ideálně) liší pouze podle jejich velikosti
-    # po vypnuté elektrického proudu máme nedál od startu nejlehčí vzorky, nejblíže jsou vzorky nejtěžší
+    # všechny vzorky putují na druhou stranu gelu (zpravidla dolů), jejich rychlost se (ideálně) liší pouze podle jejich velikosti
+    # po vypnutí elektrického proudu máme nedál od startu nejlehčí vzorky, nejblíže jsou vzorky nejtěžší
 }
 
 Musíme zařídit, aby byl gel tak akorát hustý, a aby všechny vzorky opravdu putovaly na stejnou stranu gelu (ke stejné elektrodě). Zároveň by bylo dobré nakonec vzorky nějak obarvit, ať je vůbec vidíme.
@@ -405,16 +409,16 @@ Polyakrylamidový gel je sice velice náročný na přípravu, má ale výborné
 
 ◊ls{
     - polykarylamidový gel, nejčastěji 3%--15%
-    - ◊chem{akrylamid + bisakrylamid}
+    - akrylamid ◊${+} bisakrylamid
         - vzniknou zesíťovaná vlákna
-        - aby proběhlaradikálová polymerace, potřebujeme také iniciátor (persíran amonný nebo UV-ozářený riboflavin) a stabilizátor volných radikálů (TEMED)
+        - aby proběhla radikálová polymerace, potřebujeme také iniciátor (persíran amonný nebo UV-ozářený riboflavin) a stabilizátor volných radikálů (TEMED)
         - musí probíhat v anaerobních podmínkách
-    - jeho viskozita zajišťuje, že velikým molekulám je při pohybu kladen větší odpor než malým
-        - tato konkrétní vlasnost záleží na jeho koncentraci, pro různé vzorky se používají různě koncetrované gely
+    - jeho viskozita zajišťuje, že velkým molekulám je při pohybu kladen větší odpor než malým
+        - tato konkrétní vlastnost záleží na jeho koncentraci, pro různé vzorky se používají různě koncetrované gely
         - pro srovnání velmi rozdílných vzorků se používají ◊strong{gradientové gely}, jejichž hustota se seshora dolů zvyšuje
 }
 
-Na tento gel se nanáší ještě ◊em{zaostřovací gel}, přechod mezi ním a PAG pak tvoří jakousi "startovací linii", na kteoru se seřadí a vyrovnají porovnávané vzorky.
+Na tento gel se nanáší ještě ◊em{zaostřovací gel}, přechod mezi ním a PAG pak tvoří jakousi "startovací linii", na kterou se seřadí a vyrovnají porovnávané vzorky.
 
 ◊subsection{SDS}
 
@@ -428,14 +432,14 @@ SDS (sodium dodecyl sulfát) se váže na proteiny. Velké proteiny vážou víc
 
 ◊subsection{Barvení}
 
-Proteiny chceme samozřejmě nějak vizualizovat, aby nám ELF ovůbec k něčemu byla.
+Proteiny chceme samozřejmě nějak vizualizovat, aby nám ELFO vůbec k něčemu byla.
 
 ◊slide[48 49 #:s 2]
 ◊ls[#:t "Coomassie Brilliant Blue"]{
     - nejběžnější barvivo
     - běžně má hnědooranžovu barvu, ale když se naváže na protein, změní barvu na modrou
         - váže se několikerým způsobem, vždy ale mění barvu
-        - množství proteinu se dá posoudit podle toho, jak moc modrý je výsledný obarvný roztok
+        - množství proteinu se dá posoudit podle toho, jak moc modrý je výsledný obarvený roztok
 }
 
 Intenzita proužku vypovídá o tom, jak moc koncetrované jsou v daném místě proteiny. Zároveň ale platí, že malé proteiny se obarvují hůře, takže nebudou tak výrazné.
@@ -467,7 +471,7 @@ Schéma fluorometru: na fluoreskující vzorek svítíme monochromatickým paprs
 }
 
 ◊slide[64 #:s 2]
-Z emisních spekter Trp můžeme poznat, v jakém prostředí (solventu) se nachází a jestli je uvnitř či na povrchu proteinu. Posun k červené oblasti (ale stále v rámci UV) ukazuje na přítomnost ◊chem{H20}.
+Z emisních spekter Trp můžeme poznat, v jakém prostředí (solventu) se nachází a jestli je uvnitř či na povrchu proteinu. Posun k červené oblasti (ale stále v rámci UV) ukazuje na přítomnost ◊chem{H2O}.
 
 ◊title{Nové zápisky v metodách}
 
@@ -704,8 +708,6 @@ DNA a RNA se skládají z bazické, cukerné a fosfátové části. Páteř tvo�
 
 Základním cukrem je ribóza a deoxyribóza. Základní strukturní vlastnosti cukrů jsou však předvedeny na glukóze.
 
-◊todo{Doplnit, jak vypadá D-glukosa v cyklické formě.}
-
 ◊slide[5 6 #:s 3]
 ◊ls[#:t "Glukóza"]{
     - pojmenování podle polohy OH skupiny na chirálním uhlíku, který je nejvzdálenější od aldehydické skupiny
@@ -725,7 +727,7 @@ Základním cukrem je ribóza a deoxyribóza. Základní strukturní vlastnosti 
     - celkově je tedy v NA (případně deoxy verze)
     - cyklus ◊strong{není planární} ◊slide[10 #:s 3 #:inline #t]
         - pokud ◊chem{C2} míří na stejnou stranu jako ◊chem{C5}, je NA takzvaně ◊em{endo} (případně C2 endo)
-        -pokud míří ◊chem{C2} na opačnou stranu, je NA ◊em{exo} (případně C2 exo)
+        - pokud míří ◊chem{C2} na opačnou stranu, je NA ◊em{exo} (případně C2 exo)
 }
 
 ◊slide[12 #:s 3]
@@ -742,7 +744,7 @@ Cukr s fosfátem (navázaným přes fosfodiesterovou vazbu) tvoří tzv. ◊em{c
     - v DNA je nahrazen thymin uracilem (který se liší jen jednou metylovou skupinou)
     - kromě těchto základních se vyskytují v DNA i další, minoritní, báze: methylované báze a hydroxymethylované báze, uracil
     - uracil má někdy tvar pseudouridinu, dihydrouridinu atp. ◊slide[37 #:s 3 #:inline #t]
-    - jeden pár bazí má asi 660g/mol, neboli 660Da
+    - jeden pár bazí má asi ◊u{660 g/mol}, neboli ◊u{660 Da}
 }
 
 ◊ls[#:t "Párování bazí"]{
@@ -762,7 +764,7 @@ Cukr s fosfátem (navázaným přes fosfodiesterovou vazbu) tvoří tzv. ◊em{c
 
 ◊img["slides-3/slide-21.jpg"]{Nukleosid, nukleotid}
 
-Názvolsoví nukleotidů a nukleosidů je trochu zmaneté:
+Názvolsoví nukleotidů a nukleosidů je trochu zmatené:
 ◊ls{
     - adenin - adenosin
     - cytosin - cytidin
@@ -787,13 +789,13 @@ Názvolsoví nukleotidů a nukleosidů je trochu zmaneté:
         - uhlík a kyslík vázané dvojnou vazbou
         - kyslík má vždy volný elektronový pár, funguje jako akceptor vodíkové vazby
     - enol skupina je OH
-    - pokud budeme mít OH skupinu v blízkost idvojné vazby, bude spontánně docházet k přeskupení na keto formu
+    - pokud budeme mít OH skupinu v blízkosti dvojné vazby, bude spontánně docházet k přeskupení na keto formu
         - Erlenmeyerovo pravidlo
 }
 
 ◊slide[43 44 #:s 3]
 ◊ls[#:t "Amid, imid"]{
-    - primární, sekundární, terciální aminy (viz slide výše)
+    - primární, sekundární, terciární aminy (viz slide výše)
         - pokud je dusík vázán dvojnou vazbou, jedná se o ◊em{imino} skupinu
     - pokud je amin v blízkosti keto skupiny, jedná se o amid
         - podobně existují imidy
@@ -802,19 +804,19 @@ Názvolsoví nukleotidů a nukleosidů je trochu zmaneté:
 ◊img["slides-3/slide-47.jpg"]{Tautomery nukleotidů}
 ◊img["slides-3/slide-48.jpg"]{Tautomery nukleotidů}
 
-U všech bazí můžeme pozorovat takzvané ◊strong{tautomery}, konkrétně amid+keto nebo imid+enol formy. Přestože jsou amid+keto formy častější, musíme při práci s NA počítat s tím, že semtam mohou mít některé báze velice odlišnou stavbu, totiž imid+enol.
+U všech bazí můžeme pozorovat takzvané ◊strong{tautomery}, konkrétně amid/imid a keto/enol formy. Přestože jsou amidové a keto formy častější, musíme při práci s NA počítat s tím, že semtam mohou mít některé báze i imidovou a enol stavbu.
 
 ◊slide[56 #:s 3]
 ◊ls[#:t "Struktura tRNA"]{
     - tři báze dole na smyčce nemají s čím párovat, trčí ven ze smyčky
         - tvoří antikodon, párují s třemi bázemi na mRNA
-        - v jedné z pozic je určitá variabilita, jev ◊em{kolísavé párování} (wobbling) => různými triplety je kódovaná stejná AK
-            - například ve třetí pozici se může nacházet inosin (hypoxantin + ribóza) ◊slide[59 #:s 3 #:inline #t], který může párovat s C, U i G
+        - v jedné z pozic je určitá variabilita, jev ◊em{kolísavého párování} (wobbling) => různými triplety je kódovaná stejná AK
+            - například ve třetí pozici se může nacházet inosin (hypoxantin + ribóza), který může párovat s C, U i G ◊slide[59 #:s 3 #:inline #t]
             - tRNA je méně než 64, což je počet, který by byl teoreticky nutný k zakódování všech trojic
     - v horní části vázaná AK
 }
 
-◊subsection{Hoosteenovo párování}
+◊subsection{Hoogsteenovo párování}
 
 Běžné Watson-Crickovo párování je postavené na tom, že spolu párují pouze AT, CG, a všechny puriny jsou v antiklinální podobě. K párování ale může docházet i když jsou puriny v synklinální podobě (zvláště u adeninu, cytosin by musel mít kladný náboj).
 
@@ -828,7 +830,7 @@ To znamená, že puriny jsou "na druhé straně" schopny párovat s ještě jedn
     - čtyři guaniny v jednom patře
         - vlákno se dvakrát ohýbá (viz slide)
     - velice pevná struktura
-    - často v telomerách na koncích chromozomů, aby nebyl degradován endonukleázami
+    - často v telomerách na koncích chromozomu, aby nebyl degradován endonukleázami
 }
 
 Někdy se do běžného DNA helixu vmezeří třetí strand, který se na jedno z vláken naváže H-párováním. Toto třetí vlákno musí mít tzv. polypurinovou část, aby tuto vazbu mohlo vytvořit. Podobně se může mezi vlákna DNA vmezeřit i vlákno RNA.
@@ -862,8 +864,8 @@ Většinu bazí můžeme brát jako aromatické molekuly. Součástí interakce 
 
 Je ale třeba si uvědomit, že pokud využíváme k detekci anomálií protilátky, můžeme se nám stát, že danou strukturu naší protilátkou stabilizujeme v jedné konkrétní konformaci, i když přirozeně by ji často měnila. Protilátky tak nemusí vždy odrážet realitu.
 
-◊box["Úhly a reakce"]{
-    Řekněme, že pozorujeme interakce dvou molekul v prostoru a vždy měříme úhly, pod kterými jsou spoliu ve styku, z čehož se poté snažíme vyvodit, jestli spolu reagují nějak specificky. Jaké úhly pro nás v tomto případě budou zajímavé?
+◊box["Poznámka"]{
+    Řekněme, že pozorujeme interakce dvou molekul v prostoru a vždy měříme úhly, pod kterými jsou spolu ve styku, z čehož se poté snažíme vyvodit, jestli spolu reagují nějak specificky. Jaké úhly pro nás v tomto případě budou zajímavé?
 
     Jendoduchým pozorováním lze dojít k závěru, že při náhodném umístění a orientaci molekul bude nejběžnější úhel mezi nimi 90◊|deg|, a obecně celé rozložení úhlů ude mít tvar sinusoidy.  Nejvzácnější bude tedy rovnoběžná orientace.
 
@@ -881,7 +883,7 @@ Jedna molekula DNA bude mít v různých prostředích různou konformaci. Konfo
     - přítomnost iontů
         - více ◊chem{Mg^{2+}} znamená jednodušší metylaci C5' a supercoiling, což způsobuje Z konformaci
     - zastoupení bazí
-        - poly-A úseky, poly-AT úseky, atp., mají roznídlné vlastnosti
+        - poly-A úseky, poly-AT úseky, atp., mají rozdílné vlastnosti
 }
 
 ◊todo{Přepsat tabulku srovnání místo obrázku slidu.}
@@ -930,18 +932,18 @@ Jedna molekula DNA bude mít v různých prostředích různou konformaci. Konfo
         - někdy se stane, že dvě báze spolu interagují prostřednictvím molekuly vody
 }
 
-Podobnou konformaci zaujímá i heterokomlex DNA+RNA, protože OH skupina cukru z RNA musí čnít ven z helixu, tedy C2' musí být exo.
+Podobnou konformaci zaujímá i heterokomplex DNA+RNA, protože OH skupina cukru z RNA musí čnít ven z helixu, tedy C2' musí být exo.
 
 ◊subsection{Konformace Z}
 
 ◊ls{
     - levotočivá spirálovitá struktura
-    - kostra uspořádaná zig-zag
+    - kostra uspořádaná cik-cak
         - v sekvenci se střídají puriny a pyrimidiny
-            - puriny jsou synklinální, jejich riboza je tedy přetočená a kostra vypadá zig-zag
+            - puriny jsou synklinální, jejich riboza je tedy přetočená a kostra vypadá cik-cak
     - patra jsou si strukturou podobná ob jedno (v B jsou si podobná všechna), repetitivní je dvojice párů bazí nad sebou
     - některé modifikace bazí (například methylace na C5') Z konformaci stabilizují (methyl se dobře schová mezi dvě patra)
-    - převládaají báze G a C
+    - převládají báze G a C
 }
 
 ◊section{Sekvenční polymorfismus}
@@ -1027,7 +1029,7 @@ K ohybům dochází v DNA hlavně na základě sekvenčního polymorfismu a na h
 ◊ls[#:t "Bazická hydrolýza RNA"]{
     # ve vysokém pH (silně zásadité) dojde k deprotonizaci ◊chem{OH} skupiny na ribóze
     # kyslík z ribózy může nukleofilně reagovat s fosfátem z RNA kostry
-    # fosfát je en čtyřvazebný a tak jednu ze stávajících vazeb přeruší
+    # fosfát je jen čtyřvazebný a tak jednu ze stávajících vazeb přeruší
     # RNA se rozpadne
     # fosfát posléze zůstane jen na C2' nebo C3'
 }
@@ -1044,7 +1046,7 @@ DNA má strukturu dihelixu, viz výše. Topologie DNA se zabývá tím, jaký tv
 
 ◊definitions{
     ◊term["supercoil"]{
-        Supercoil (neboli ◊em{nadobrátky}) je termín, který popisuje přetočení nebo podtočení dihelixu DNA, které je vyústěním nějakého vnitřního tlaku, který na vlákna působí. Supercoil vzniká například v bakteriálním plazmidu. ◊slide[14 #:s 5 #:inline #t] DNA v přírodě se většinou vyskytuje právě v této formě.
+        Supercoil je termín, který popisuje přetočení nebo podtočení dihelixu DNA, které je vyústěním nějakého vnitřního tlaku, který na vlákna působí. Supercoil vzniká například v bakteriálním plazmidu. ◊slide[14 #:s 5 #:inline #t] DNA v přírodě se většinou vyskytuje právě v této formě.
 
         Supercoilu se říká také ◊em{superhelix}, nadobrátkám někdy terciární vinutí (běžné Watson-Crickovské je sekundární).
         ◊img["supercoil.jpg"]{Znázornění nadobrátek}
@@ -1064,7 +1066,7 @@ DNA má strukturu dihelixu, viz výše. Topologie DNA se zabývá tím, jaký tv
         Udává počet nadobrátek, v přírodě (u bakteriálních plazmidů) bývá ◊${W = 1} na 200bp. Nadobrátky mohou vyústit ve dvojí typ topologie: DNA zaujme buďto toroidální tvar, nebo plektonemní tvar. Plektonemnímu tvaru se někdy říká ◊em{dvojitá nadšroubovice}.
 
         ◊box["Poznámka"]{
-            Toroid je nějaký tvar, který rotuje kolem nějaké osy. Plektonem je v překladu "zkroucené vlákno" a vypadá spíše jako řetěz. ◊img["toroid_plectoneme.png"]{Srovnání toroidu a plektonemy}
+            Toroid je těleso, které vzniklo rotací nějakého tvaru kolem jedné osy. Uprstřed toroidu je díra (například donut je druh toroidu). Plektonem je v překladu "zkroucené vlákno" a vypadá spíše jako řetěz. ◊img["toroid_plectoneme.png"]{Srovnání toroidu a plektonemy}
         }
 
         Znaménko udává, jestli je superhelix pravotočivý toroid (◊${+}) nebo levotočivý toroid (◊${-}). Pravotočivý toroid je matematicky totožný s levotočivým plektonemem a naopak, tedy levotočivý plektonem má znaménko (◊${+}).
@@ -1118,7 +1120,7 @@ Zdá se, že je výhodnější ◊strong{levotočivá} forma. To bylo potvrzeno 
         - z toho plyne, že ◊${W} bylo nejprve záporné, pak přešlo přes 0 a nyní je kladné => DNA je tedy běžně v levotočivé formě
 }
 
-◊box["ethydium bromid"]{
+◊box["Ethydium bromid"]{
     Iont ethidia se vzměstná mezi dvě patra DNA, přičemž se obě patra o kousek pootočí --- nově jsou vůči sobě pootočená jen o 10◊|deg|, místo běžných 36◊|deg|. DNA se tedy trochu povolí. Pokud přidáme ethidia dost, ubereme DNA celou jednu otáčku, čímž snížíme ◊${T} a zvyšíme ◊${W} (je-li DNA cyklická nebo má někde upevněné konce).
 }
 
@@ -1224,7 +1226,7 @@ Enzymy ovlivňující topologii DNA.
 
 ◊em{ELFO se dělá jak pro DNA, tak pro RNA. V tomto textu se soustředíme sice pouze na popis DNA ELFO, ale pro RNA bude vše fungovat velice podobně.}
 
-Funkce podobná ◊link["#Gelová elektroforéza"]{ELFO preoteinů}, s tím rozdílem, že NA se dají rozdělit nejden podle velikosti (hmotnosti), ale také podle topologie. ◊slide[20 21 #:s 5 #:inline #t]
+Funkce podobná ◊link["#Gelová elektroforéza"]{ELFO proteinů}, s tím rozdílem, že NA se dají rozdělit nejen podle velikosti (hmotnosti), ale také podle topologie. ◊slide[20 21 #:s 5 #:inline #t]
 
 ◊section{Princip funkce pro DNA}
 
@@ -1269,7 +1271,7 @@ ELFO se provádí v kapilárních systémech gelů, které částečně blokují
     - snadno se připravuje a snadno se s ním manipuluje
     - hodí se pro DNA o velikosti 1000bp -- 50000bp, při pulzní ELFO až do 2Mbp
     - je to přírodní produkt (relativně drahý), takže jednotlivé šarže se mohou lišit, a to i od stejného výrobce
-    - více koncentrovaný gel se hodí pro práci s malými molekulami DNA
+    - koncentrovanější gel se hodí pro práci s malými molekulami DNA
         - pro 100bp--2kbp se hodí 2% agaróza
         - 5kbp -- 50 kbp se hodí 0,3% agaróza
         - zbytek mezi těmito hodnotami
@@ -1316,15 +1318,15 @@ ELFO se provádí v kapilárních systémech gelů, které částečně blokují
 Průběh ELFO záleží na velikosti molekul, které pozorujeme.
 ◊slide[11 #:s 6]
 ◊ls{
-    # molekula je velice malá (menší než 300bp -- 400bp, což je velikost molekuly agarózy): kategorie Ogstenova síta
-        - bude procházet mezi molekulami gelu bez omezení ryhlosti
+    # molekula je velice malá (menší než 300bp -- 400bp, což je velikost molekuly agarózy): kategorie Ogstonova síta
+        - bude procházet mezi molekulami gelu bez omezení rychlosti
         - rychlost pohybu není závislá na délce
     # molekula je středně velká: kategorie entropické pasti
         - v této oblasti je závislost pohyblivosti na velikosti molekuly nejsilnější
     # molekula je dlouhá, ale lineární
         - molekula se protáhne a provleče mezi molekulami gelu
         - rychlost pohybu opět není závislá na délce
-        - například denaturovaná a rozpletená DNA
+        - například denaturovaná DNA
 }
 
 Na obrázku lze vidět porovnání délky molekuly a rychlosti, s jakou putuje v gelu. Snažíme se vždy, aby u námi pozorovaných molekul i malý rozdíl v déle způsobil velký rozdíl v rychlosti, protože poté i málo rozdílné molekuly půjdou dobře rozeznat. Vlevo na obrázku vidíme výsledek po 1D ELFO, kde nám spývají různé topoizomery. Po 2D ELFO jdou tyto topoizomery dobře rozlišit.
@@ -1333,7 +1335,7 @@ Na obrázku lze vidět porovnání délky molekuly a rychlosti, s jakou putuje v
 ◊ls[#:t "Faktory ovlivňující průběh"]{
     - napětí
         - při nízkém napětí je mobilita lineární DNA přímo úměrná napětí (což chceme)
-        - při zvýšeném napětí nad určitou mez (5V/cm) se mění mobilita fragmentů různě v závislosti na jejich velikosti (což nechceme)
+        - při zvýšeném napětí nad určitou mez (◊u{5 V/cm}) se mění mobilita fragmentů různě v závislosti na jejich velikosti (což nechceme)
     - směr elektrického pole
         - někdy se používá pulzní ELFO, kde se periodicky mění směr elektrického pole
     - složení bází a teplota
@@ -1350,7 +1352,7 @@ Na obrázku lze vidět porovnání délky molekuly a rychlosti, s jakou putuje v
     - elektroelucí
         - kousek gelu vyřízneme a rozemeleme
     - degaradací AG
-        - to mí jen málo enzymů, protože agaróza je odolná
+        - to umí jen málo enzymů, protože agaróza je odolná
 }
 
 ◊subsection{Rozdělení topoizomerů DNA}
@@ -1359,21 +1361,21 @@ Rychlost putování DNA závisí kromě velikosti molekuly i na jejím tvaru.
 
 ◊ls{
     - ocDNA se pohybuje vždy nejpomaleji
-    - relativní ryhlost cccDNA a lineární DNA závisí na hustotě gelu a napětí
+    - relativní rychlost cccDNA a lineární DNA závisí na hustotě gelu a napětí
         - řídký gel + nízké napětí: více se uplaňuje kompaktnost cccDNA
         - hustý gel + vysoké napětí: více se uplatní flexibilita lineární DNA
         - pohyblivost cccDNA navíc závisí na její nadšroubovicové hustotě
 }
 
-Může se nám stát, že chceme rozdělit vzorky podle velikosti i podle topologie. Bohužel velká lineární DNA může putovat stejně rychle jako menší coDNA, obě by tudíž skončily na stejném místě a nebyly rozeznatené. Proto se někdy používá ◊strong{2D ELFO}.
+Může se nám stát, že chceme rozdělit vzorky podle velikosti i podle topologie. Bohužel velká lineární DNA může putovat stejně rychle jako menší coDNA, obě by tudíž skončily na stejném místě a nebyly rozeznatelné. Proto se někdy používá ◊strong{2D ELFO}.
 
 ◊slide[25 #:s 6]
 ◊ls[#:t "Průběh 2D ELFO"]{
     # provedeme běžnou ELFO
-        - rozdělíme vzorky přibližně podle tepologie
+        - rozdělíme vzorky přibližně podle topologie
     # přidáme EtBr, čímž rozmotáme supercoily
     # otočíme elektrické pole o 90◊|deg| a opět provedeme ELFO
-        - tentokrát se rozmotané supercoily rozdělí podle délky podél nové trajektorie
+        - tentokrát se rozmotané supercoily rozdělí podél nové trajektorie podle délky
 }
 
 Někdy ani nepoužijeme EtBr a druhou osu ELFO vytvoříme pouze aplikací vyššího napětí. Mobilita při vyšším napětí se liší podle topologie, což nám dovoluje jednotlivé topologie rozlišit. ◊img["slides-6/slide-27.jpg"]{2D ELFO pro sloužící k rozeznání topologie}
@@ -1395,9 +1397,10 @@ Pokud nám naopak na rozdělení podle topologie nezáleží a chceme DNA dělit
 ◊ls{
     - elektrické pole se periodicky mění, molekuly neputují gelem přímo, ale cik-cak
     - používá se pro lepší rozlišení molekul podle délky, hlavně u delších molekul
-        - dráha, kterou molekuly ujdou, je mnohem delší, takže i dorbné rozdíly v jejich rychlosti mají větší možnost se projevit
+        - dráha, kterou molekuly ujdou, je mnohem delší, takže i drobné rozdíly v jejich rychlosti mají větší možnost se projevit
         - molekuly se často musejí ◊em{reorientovat}, a jak rychle a dobře to zvládají závisí na jejich délce
     - jako ◊strong{standardy} se často používají konkatemery známých genomů bakteriofágů o určitých délkách, případně chromozomy S. cerevisae a S. pombe (druhy kvasinek)
+        - stadard je sekvence o určité délce, která nám pomáhá odhadnout délku zkoumaných sekvencí (podobně dlouhé ekvence skončí po ELFO blízko standardu)
 }
 
 ◊section{Analýza ELFO}
@@ -1440,7 +1443,7 @@ Sedimentace slouží k analýze a případné separaci vzorků na základě jeji
         - izokinetická: odděluje molekuly na základě jejich hmotnosti
 }
 
-Zkumavku (kyvetu) se snažíme mít z nějakého odolného materiálu. Často se musíme vypořádat s tím, že molekuly u kraje kyvety o kyvetu třou a josu pomalejší.
+Zkumavku (kyvetu) se snažíme mít z nějakého odolného materiálu. Často se musíme vypořádat s tím, že molekuly u kraje kyvety o kyvetu třou a jsou pomalejší.
 
 ◊section{Fyzikální princip}
 
@@ -1456,7 +1459,7 @@ kde ◊${D} je difúzní koeficient biomakromolekuly. Pkud tedy známe ◊${D}, 
 
 Pro přehlednost zavádíme také veličinu ◊strong{relativní odstředivá síla}
 ◊$${\text{RCF} = \frac{F_o}{m \cdot g},}
-která udává, kolikrát je odstředivá síla na ultracentrifuze větší než tíhová síla. Gravitační (tíhovou) sílu můžeme zanedbat, protože RCF síla se pohybuje ve stovkách tisíc.
+která udává, kolikrát je odstředivá síla na ultracentrifuze větší než tíhová síla. Gravitační (tíhovou) sílu můžeme zanedbat, protože RCF se pohybuje ve stovkách tisíc.
 
 ◊subsection{Sedimentační koeficient}
 
@@ -1468,7 +1471,7 @@ Pokud ◊${F_o = F_{vz} + F_t}, nastane ◊em{stacionární stav}.
     \frac{V (\rho - \rho_k)}{f} = \frac{1}{r \omega^2} \frac{\text{d}v}{\text{d}t} &= s
 }
 
-◊${s} se nazývá ◊strong{sedimentační koeficient} a udává se ve Svedberzích, ◊${[S] = 10^{-13}\text{s}}. Pokud má tělísko 30S, pak urazí 3◊${\mu \text{m}/\text{s}} při sedimentačním zrychlení ◊${10^6 \text{ms}^{-2}}. Sedimentační koeficient dává do souvislosti rychlost sedimentace se zrychlením, kterým na tělísko působila centrifuga.
+◊${s} se nazývá ◊strong{sedimentační koeficient} a udává se ve Svedberzích, ◊${[S] = 10^{-13}\text{s}}. Pokud má tělísko 30S, pak urazí ◊u{3 \mum/s} při sedimentačním zrychlení ◊u{1e6 ms-2}. Sedimentační koeficient dává do souvislosti rychlost sedimentace se zrychlením, kterým na tělísko působila centrifuga.
 
 Pokud k ◊${s} přidáme korekce, získáme ◊strong{sedimentační konstantu}.
 ◊ls{
@@ -1506,22 +1509,22 @@ Její hodnota zálěží na koncentraci biopolymeru, teplotě, a použité kapal
     - rozdělení topoizomerů
     - stanovení poměru GC párů
         - GC páry jsou těžší než AT páry
-        - dvě komplemntární vlákna mohou mít různou vznášivou hustotu
+        - dvě komplementární vlákna mohou mít různou vznášivou hustotu
     - rozpoznání satelitních DNA
-        - pokud má jeden vzorek DNA velice odlišná vznášivou hustotu než zbytek, možná pochází z jiného organismu
+        - pokud má jeden vzorek DNA vznášivou hustotu velice odlišnouod zbytku, možná pochází z jiného organismu
     - rozdělení dsNA a ssNA
 }
 
 ◊img["slides-7/slide-34.jpg"]{Koncentrační rozložení CsCl a DNA před izopyknickou UC a po ní}
 
-U izopyknické UC záleží velice na hustotě CsCl, která by většinou být někdy mezi vzorky, aby se mohly lépe oddělit.
+U izopyknické UC záleží na hustotě CsCl, která by většinou být někde mezi vzorky, aby se mohly lépe oddělit.
 
 ◊ls[#:t "Izokinetická UC"]{
-    - každý vzorek je pohybuje (svou vlastní) kostantní rychlostí
+    - každý vzorek se pohybuje (svou vlastní) kostantní rychlostí
         ◊$${v = \text{konstanta} \cdot S}
     - běžně vzorky putují tím rychleji, čím dál jsou od osy otáčení, musíme tedy vytvořit speciální "zpomalovací" gradient
-        - používá se sacharózový gradient (nutrální, alkalický), 5%--15% nebo 15%--30%
-        - gradient musíme vytvořit ručně
+        - používá se sacharózový gradient (neutrální, alkalický), 5%--15% nebo 15%--30%
+        - gradient musíme vytvořit ručně, na rozdíl od ◊chem{CsCl} gradientu u izopyknické UC
 }
 
 ◊ls[#:t "Využití izokinetické UC"]{
@@ -1534,22 +1537,23 @@ U izopyknické UC záleží velice na hustotě CsCl, která by většinou být n
 ◊slide[29 #:s 7]
 ◊ls[#:t "Tvorba gradientu sacharózy"]{
     - v levé části máme málo koncentrovanou sacharózu, v právé více koncentrovanou
-    - když otevřeme kohoutek, nejprve se začne zkumavka plnit koncentrovanější sacharózou, časem se začnou obě konentrace mísit
+    - když otevřeme kohoutek, nejprve se začne zkumavka plnit koncentrovanější sacharózou, časem se začnou obě koncentrace mísit
         - poměr míšení a hodnotu celkového gradientu můžeme ovlivnit šířkou dna první nádoby
     - podobně se tvoří i gradienty u ELFO, když nám nestačí normální gel
 }
 
 ◊section{Preparativní a analytická ultracentrifugace}
 
-Preparativní ultracentrifugy slouží pouze k oddělení jednotlivých složek vzorku. Jednotlivé centrifugy se liší druhem rotorů, které mají různý tvar a různé naklonění zkumavek ◊slide[6 8 #:s 7 #:inline #t]. Vzorky se z kyvet po separaci odebírají injekční stříkačkou.
+◊slide[6 8 #:s 7]
+Preparativní ultracentrifugy slouží pouze k oddělení jednotlivých složek vzorku. Jednotlivé centrifugy se liší druhem rotorů, které mají různý tvar a různé naklonění zkumavek. Vzorky se z kyvet po separaci odebírají injekční stříkačkou.
 
-Analytické ultracentrifugy (AUC) mají kromě rotoru také zařízení, které v průběhu analýzy měří různé veličiny vzorku (koncentraci a podobně).
+Analytické ultracentrifugy (AUC) mají kromě rotoru také zařízení, které v průběhu centrifugace měří různé veličiny vzorku (koncentraci a podobně).
 
 ◊ls[#:t "Využití AUC"]{
     - pro purifikovaný biopolymer (tzv. ◊em{monodisperzní vzorek})
         - stanovení sedimentačního koeficientu a sedimentační konstanty
         - výpočet molární hmotnosti
-    - pro hetergoenní roztok
+    - pro heterogenní roztok
         - složení, počet složek, analýza reakcí složek
         - odhalení agregátů/komplexů i s jejich velikostí
     - velká přesnost, zjistíme absolutní vlastnosti molekuly, nepotřebujeme standardy (na rozdíl od ELFO)
@@ -1603,11 +1607,11 @@ Zajímá nás, jakým způsobem funguje replikace u bakterií.
 }
 
 ◊slide[41 #:s 7]
-Když po každém kroku zjistíme sedimentační koeficienty DNA, zjistíme, že na začátku byl helix těžký, poté vykazoval známky hybridního složení, a časem byl spíše lehký. Z toho (hlavně z druhého měření) je možno odvodit, že je replikace u bakterií semikonzervativní.
+Když po každém kroku změříme sedimentační koeficienty DNA, zjistíme, že na začátku byl helix těžký, poté vykazoval známky hybridního složení, a časem byl spíše lehký. Z toho (hlavně z druhého měření) je možno odvodit, že je replikace u bakterií semikonzervativní.
 
 ◊title{Sekvenace DNA}
 
-Přečtení kódu DNA. Existuje mnoho různých metod, poslední dobou je sekvenace rutinní záležitost, levná a relativně rychlá. Základní postup je ale společný (skoro) všem z nich.
+Přečtení kódu DNA. Existuje mnoho různých metod, základní postup je ale společný (skoro) všem z nich. Poslední dobou je sekvenace rutinní záležitost, levná a relativně rychlá.
 
 ◊ls[#:t "Obecný postup"]{
     # připravíme krátké kousky DNA
@@ -1617,12 +1621,12 @@ Přečtení kódu DNA. Existuje mnoho různých metod, poslední dobou je sekven
     # sekvenujeme jednotlivé krátké úseky
         - části se musí překrývat, abychom věděli, jak úseky nakonec zase poskládat za sebe
             - například štěpíme stejné sekvence v několika místech
-    # uspořádání nasekvenování částí, zjištění překryvu
+    # uspořádání nasekvenovaných částí, zjištění překryvu
 }
 
 ◊definitions{
     ◊term["shotgun sequencing"]{
-        Termín, který popisuje postup sekvenace, který byl nastíněn výše: osekvenuje se mnoho krátkých fragmentů DNA s náhodou délkou, které potom počítač přečte (získá ◊em{ready}) a složí dohromady.
+        Termín, který popisuje postup sekvenace, který byl nastíněn výše: osekvenuje se mnoho krátkých fragmentů DNA s náhodnou délkou, které potom počítač přečte (získá ◊em{ready}) a složí dohromady.
 
         Jakýmsi protikladem tohoto postupu je metoda ◊em{primer walking}, která prochází DNA popořadě, a je tím pádem sice jednodušší, ale také pomalejší.
     }
@@ -1632,14 +1636,14 @@ Přečtení kódu DNA. Existuje mnoho různých metod, poslední dobou je sekven
     }
 }
 
-Většina sekvenačních postupů se liší už v provedení bodu 1: jak získat z dlouhého DNA kratší fragmenty. Rozlišujeme metody, při kterých už existující DNA štěpíme, a metody, kdy kratší kousky DNA  podle delší DNA sami syntetizujeme.
+Většina sekvenačních postupů se liší už v provedení bodu 1: jak získat z dlouhého DNA kratší fragmenty. Rozlišujeme metody, při kterých štěpíme už existující DNA, a metody, kdy si sami syntetizujeme kratší kousky DNA podle původní DNA.
 
 ◊ls[#:t "Hledání ORF"]{
-    - open reading frame (ORF) popisuje způsob, jakým čteme trojice nukleotidů při translaci (jsou tři různé ORF, polde toho, kde začneme)
+    - open reading frame (ORF) popisuje způsob, jakým čteme trojice nukleotidů při translaci (jsou tři různé ORF, podle toho, kde začneme)
     - zajímá nás, co jsou regulační oblasti a co jsou geny
-        - v eukarytotech bývá často gen jen na jenom z vláken a na druhém není nic
+        - v eukaryotech bývá často gen jen na jednom z vláken a na druhém není nic
     - postup
-        # namapujeme stopkodony; tam, kde kde dlouho nejsou, bude pravděpodobně gen (délka 200bp--400bp * 3)
+        # namapujeme stop-kodony; tam, kde kde dlouho nejsou, bude pravděpodobně gen (délka 200bp--400bp ◊${\cdot} 3)
         # podíváme se, jestli v podezřelých oblastech končících na stopkodon začínáme na ATG (vzácně GTG, TTG)
 }
 
@@ -1658,7 +1662,7 @@ Zpravidla jsou to metody starší, které se v dnešní době už tolik nepouž�
 
 ◊subsection{Původní metody}
 
-Původní metody pracoval hlavně s RNA, protože ta se štěpí snadněji. Využívaly štěpení přírodními látkami, konkrétně
+Původní metody pracovaly hlavně s RNA, protože ta se štěpí snadněji. Využívaly štěpení přírodními látkami, konkrétně
 ◊ls{
         - fosfodiesterázou hadího jedu (od 3' konce)
         - fosfodiesterázou z hovězí sleziny (od 5' konce)
@@ -1668,7 +1672,7 @@ Původní metody pracoval hlavně s RNA, protože ta se štěpí snadněji. Vyu�
     # přidáme malé množství účinné látky
     # dojde k částečnému natrávení RNA
         - vzniknou kousky RNA, které jsou všechny různě dlouhé
-    # u jednotlivých fragmentů analyticky zjistíme počty jednotlivých bazí koeficienty
+    # u jednotlivých fragmentů analyticky zjistíme počty jednotlivých bazí
         - začínáme u nejkratšího fragmentu, potom druhý nejkratší atd...
         - postupně se dozvídáme, jaký nukleotid je na jaké pozici
         - např: G v dinukleotidu vůbec nebyl, ale v trinukleotidu je => na třetím místě je G
@@ -1681,7 +1685,7 @@ V současné době už nepoužíváme hadí jed, ale jsme schopni připravit ste
     ◊ls{
         - homodimery (skládají se ze dvou identických podjednotek)
         - váží DNA na specifických místech, v malém i velkém žlábku
-            - R smyčka: velký žlíbek
+            - R smyčka: velký žlábek
             - Q smyčka: malý žlábek
         - rozpoznávaná místa jsou dlouhá 4bp--8bp
         - často k funkci potřebují určité kationty
@@ -1699,17 +1703,17 @@ V současné době už nepoužíváme hadí jed, ale jsme schopni připravit ste
 
     RE pocházejí z bakterií, které se jimi brání proti bakteriofágům: bakterie mají většinu svého DNA nametylovánu, a když narazí na nenametylovanou DNA, ER ji z DNA vyštípnou.
 
-    Délku vzniklých fragmentů můžeme ovlivnit tím, jak dlohou rozpoznávací sekvenci ER zadáme---čím kratší, tím větší je šance, že se na DNA bude nalézat.
+    Délku vzniklých fragmentů můžeme ovlivnit tím, jak dlouhou rozpoznávací sekvenci ER zadáme---čím kratší, tím větší je šance, že se na DNA bude nalézat.
 }
 
 ◊subsection{Chemické štěpení}
 
-DNA je štěpeně na náhodně dlouhé kusy, někde uprostřed.
+DNA je štěpená na náhodně dlouhé kusy, někde uprostřed.
 
 ◊ls[#:t "Postup"]{
     # radioaktivně označíme DNA na 5' konci, abychom mohly dané DNA později detekovat
-        # pomocí alkalické fosfatázy odštěpíme původní P
-        # pomocí polynukleotidkinázy navážeme nový, radioaktivně značený fosfát
+        - pomocí alkalické fosfatázy odštěpíme původní P
+        - pomocí polynukleotidkinázy navážeme nový, radioaktivně značený fosfát
     # takto označenou sekvenci pošleme na několik štěpení
 }
 
@@ -1758,7 +1762,7 @@ Pozorujeme pouze strandy, které začínají na označeném 5' konci.
 
 ◊subsection{Metoda terminace (Sanger)}
 
-Na rozdíl od sekvenačních metod štěpících nějaké stávající DNA na menší fragmenty funguej tento postup trochu obráceně; pomocí DNA polymerázy vytváří komplementární vlákno k sekvenovanému vláknu, a v průběhu této in vintro syntetizace dochází k samotné sekvenaci. Je to metoda vhodná hlavně pro malé vzorky.
+Na rozdíl od sekvenačních metod štěpících nějaké stávající DNA na menší fragmenty funguje tento postup trochu obráceně; pomocí DNA polymerázy vytváří komplementární vlákno k sekvenovanému vláknu, a v průběhu této in vitro syntetizace dochází k samotné sekvenaci. Je to metoda vhodná hlavně pro malé vzorky.
 
 ◊slide[30 #:s 8]
 ◊ls[#:t "Postup"]{
@@ -1806,7 +1810,7 @@ Bakterie mají často své DNA nametylováno, což jim pomáhá rozpoznat virovo
     - nemetyolvané CpG je rozpoznáno TLR (tall like receptors), které detekují infekce
 }
 
-Proč je CpG méně, než bychom čekali? Mohlo by to být z toho důvodu, že methylcytosin se při deaminaci (což je proces, který u DNA může probíhat) mění na thymin, zatímco běžný cytosin se mění na uracil. uracil je totiž v DNA jednoduše detekován a rychle opraven, zatímco thymin vlastně změní informaci, kterou DNA v daném místě nese. (Metylované) CpG je tedy svým způsobem nebezpečné.
+Proč je CpG méně, než bychom čekali? Mohlo by to být z toho důvodu, že methylcytosin se při deaminaci (což je proces, který u DNA může probíhat) mění na thymin, zatímco běžný cytosin se mění na uracil. Uracil je totiž v DNA jednoduše detekován a rychle opraven, zatímco thymin vlastně změní informaci, kterou DNA v daném místě nese. (Metylované) CpG je tedy svým způsobem nebezpečné.
 
 ◊ls[#:t "Role pyrosekvenování v detekci CpG"]{
     - pokud se na jednom vlákně nachází CpG, na druhém se (také v 5' -> 3' směru) nachází také CpG, kvůli komplementarity
@@ -1817,7 +1821,7 @@ Proč je CpG méně, než bychom čekali? Mohlo by to být z toho důvodu, že m
 
 ◊subsubsection{Pyrosekvenování 454}
 
-Prinvipielně stejné jako běžné pyrosekvenování, liší se jen postupem.
+Principielně stejné jako běžné pyrosekvenování, liší se jen postupem.
 
 ◊ls[#:t "Postup"]{
     # štěpení DNA na relativně krátké úseky (500bp)
@@ -1838,9 +1842,9 @@ Jediný hlavní rozdíl oproti pyrosekvenování je v tom, že P454 probíhá pa
     - sekvenace celých genomů
     - sekvenace celých bakteriálních společenství
     - detekce mutací ve směsi alel
-    - single nucleotide polymophism (SNP)
+    - single nucleotide polymorphism (SNP)
     - sekvenace transkriptomu
-    - objev nový genů
+    - objev nových genů
 }
 
 ◊subsection{Sekvenace nanopóry}
@@ -1850,10 +1854,10 @@ Nová metoda, stále se vylepšuje. Je rychlá, ale má vysokou chybovost (10%) 
 ◊slide[63 #:s 8]
 ◊ls[#:t "Postup"]{
     # máme dvě komůrky oddělené přepážkou, ve které je díra zakrytá fosfolipidovou dvojvrstvou
-    # v této membráně vytvoříme pór, například bakteriálním toxinem, který umožní molekulům přecházet z jedné strany membrány na druhou
-    # do každé komůrky vložíme jenu elektrodu
+    # v této membráně vytvoříme pór, například bakteriálním toxinem, který umožní molekulám přecházet z jedné strany membrány na druhou
+    # do každé komůrky vložíme jednu elektrodu
     # záporně nabité DNA putuje ke kladnému pólu přes pór v membráně
-    # vlákno DNA pór ucpává a my jsme tím páde mschopni měřit výkyvy proudo, protože přes ucpaný pór nemohou procházet ionty
+    # vlákno DNA pór ucpává a my jsme tím pádem schopni měřit výkyvy proudu, protože přes ucpaný pór nemohou procházet ionty
         - z výkyvů jsme schopni přečíst čtyři po sobě jdoucí nukleotidy
         - pomocí nanopórů lze provádět i "hmotností spektrometrii" roztoku
 }
