@@ -1719,19 +1719,30 @@ DNA je štěpená na náhodně dlouhé kusy, někde uprostřed.
 
 ◊slide[19 20 #:s 8]
 ◊ls[#:t "Štěpení před G"]{
-    # přidáme dimethylsulfát, který se naváže na N7 na G
+    # přidáme dimethylsulfát (v pH 7), který se naváže na N7 na G
     # N7 na G nemůže být čtyřvazný, přeruší vazbu na ribózu
     # na ribóze je nyní volná OH skupina, na kterou se naváže piperidin
     # ribóza je destabilizována, přeruší vazbu s oběma fosfáty
     # DNA vlákno se rozpadá
 }
 
-Na podobném principu funguje štěpení před G + A. Samozeřjmě takové štěpení nám přinese více fragmentů než štěpení pouze před G.
+Na podobném principu funguje štěpení před G + A, ale probíhá při pH 4. Samozřejmě takové štěpení nám přinese více fragmentů než štěpení před G.
 
 ◊slide[22 23 #:s 8]
 ◊ls[#:t "Štěpení před C + T"]{
-    - podobný průběh jako štěpení před G, jen za dimethylsulfát vyměníme hydrazin, který se váže na aminovou skupina
+    - podobný průběh jako štěpení před G, pouze za dimethylsulfát vyměníme hydrazin, který se váže na aminovou skupinu
+        - pro štěpení čistě před C bychom ještě museli přidat ◊chem{NaCl}
     - zbytek reakce je stejný
+}
+
+◊meta{
+    Ve zkouškovém testu se může objevit otázka, která bude využívat znalost konkrétních chemikálií při různých druzích štěpení. Proto ještě jednou pro přehlednost:
+    ◊ls{
+        - dimethylsulfát + pH 7 => před G
+        - dimethylsulfát + pH 4 => před G a před A
+        - hydrazin + ◊chem{NaCl} => před C
+        - hydrazin => před C a před T
+    }
 }
 
 ◊slide[26 #:s 8]
