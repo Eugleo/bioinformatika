@@ -11,6 +11,16 @@
         [(equal? y LECTURE-PAGE-NAME) #f]
         [else (string<? x y)]))
 
+(define (make-poly path)
+    (list
+        (path->string (path-replace-extension (path-replace-extension path #"") #".pdf"))
+        (path->string (path-replace-extension (path-replace-extension path #"") #".html"))
+        (path->string (path-replace-extension (path-replace-extension path #"") #".md"))
+        (path->string (path-replace-extension (path-replace-extension path #"") #".tex"))))
+
+(define (make-html path)
+    (path->string (path-replace-extension (path-replace-extension path #"") #".html")))
+
 (define doc (build-path "doc"))
 (define list-of-files
     (for/list ([topic (directory-list doc #:build? #t)]
@@ -26,16 +36,6 @@
             (lambda (lec)
                 (string->symbol (string-append (path->string topic) "/" lec)))
             (sort lectures less-than))))
-
-(define (make-poly path)
-    (list
-        (path->string (path-replace-extension (path-replace-extension path #"") #".pdf"))
-        (path->string (path-replace-extension (path-replace-extension path #"") #".html"))
-        (path->string (path-replace-extension (path-replace-extension path #"") #".md"))
-        (path->string (path-replace-extension (path-replace-extension path #"") #".tex"))))
-
-(define (make-html path)
-    (path->string (path-replace-extension (path-replace-extension path #"") #".html")))
 
 (define (generate-pagetree)
     (define pt `(index.html ,@list-of-files))
