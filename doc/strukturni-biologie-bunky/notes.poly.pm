@@ -3,7 +3,12 @@
 ◊define-meta[title]{Strukturní biologie buňky}
 ◊define-meta[header]{zápisy}
 ◊(define-meta toc #t)
+
 ◊define-meta[authors ("Evžen Wybitul" "Kateřina Krausová" "Lucie Drahoňovská" "Terka Čalounová")]
+◊define-meta[date]{10.6.2019}
+◊define-meta[version-number]{v2.0.0}
+◊define-meta[version-name]{nový vzhled pdf}
+◊define-meta[color]{2AA7B8}
 
 ◊title{Struktura makromolekul}
 

@@ -6,7 +6,7 @@
 
 ◊title{Strukturní biologie buňky}
 
-◊box["Zápisky (v0.1.0, poslední update 7. 6. 2019)"]{
+◊box["Zápisky"]{
     K dispozici je odkaz na ◊link["notes.html"]{webovou verzi}. Kromě toho je dostupný také ◊link["notes.pdf"]{PDF dokument}, který je zatím v rozpracované podobě (hlavně, co se stylu týče). Jakékoli připomínky prosím hlašte!
 }
 

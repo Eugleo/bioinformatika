@@ -3,7 +3,12 @@
 ◊define-meta[title]{Základy bioinformatiky}
 ◊define-meta[header]{zápisy}
 ◊(define-meta toc #t)
+
 ◊define-meta[authors ("Evžen Wybitul" " Kateřina Krausová")]
+◊define-meta[date]{10.6.2019}
+◊define-meta[version-number]{v2.0.0}
+◊define-meta[version-name]{nový vzhled pdf}
+◊define-meta[color]{C24E4A}
 
 ◊title{Úvod}
 
