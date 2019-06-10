@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>notes:struktury</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../styles.css" />
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    <script type="text/javascript">
+        let h;
+
+        document.onreadystatechange = function () {
+            if (document.readyState == "interactive") {
+                h = document.getElementById('sticky-header');
+            }
+        }
+
+        let lastOffset = 10;
+        let first = true;
+        window.onscroll = function() {
+            var doc = document.documentElement;
+            var o = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+            if (o <= 8 && (lastOffset > 8 || first)) {
+                first = false;
+                h.style.boxShadow = 'none';
+                h.style.backgroundColor = 'rgb(255, 255, 255)';
+            } else if (o > 8 && (lastOffset <= 8 || first)) {
+                first = false;
+                h.style.boxShadow = '0px 1px 3px lightgrey';
+                h.style.backgroundColor = 'rgb(255, 255, 255)';
+            }
+            lastOffset = window.pageYOffset;
+        };
+    </script>
+</head>
+
+<body>
+    <div class="sticky-header" id="sticky-header">
+        <div class="wrapper">
+            <span class="page-title"><a class="no-style" href="/bioinformatika" title="Úvodní stránka">notes</a>:<strong>struktury</strong></span>
+        </div>
+    </div>
+    <div class="container">
+         <h1 id="Strukturní biologie buňky"><a class="internal-link" href="#Strukturní biologie buňky">Strukturní biologie buňky</a></h1><box class="plain"><div class="title">Zápisky</div><div class="body">K dispozici je odkaz na <a href="notes.html">webovou verzi</a>. Kromě toho je dostupný také <a href="notes.pdf">PDF dokument</a>, který je zatím v rozpracované podobě (hlavně, co se stylu týče). Jakékoli připomínky prosím hlašte!</div></box><h2 id="Informace o zkoušce"><a class="internal-link" href="#Informace o zkoušce">Informace o zkoušce</a></h2><ul><li>výsled­ná znám­ka bude součtem výsled­ku ze zk­oušky a z pa­pe­ru (60:40)
+              - zkouška je písemná, multiple choice
+              - “paper” je zpracování mechanismu libovolné nemoci a jeho vysvětlení na základě poznatků o struktuře proteinů (či jiných biomolekul)
+                  - článek má být v angličtině, publikován na proteopedii a prezentován (rovněž v angličtině) během sedmi minut na poslední přednášce
+                  - je možné jej dělat ve skupině až tří lidí</li></ul><box class="meta"><div class="title">META</div><div class="body">Písemný test se ptal povětšinou pouze na základní věci a ověřoval obecnou orientaci v problematice. Byly zde otázky typu “Jaké modifikace můžeme vidět na histonech?” (glykosylace, <strong>acylace</strong>, <strong>fosforylace</strong>, <strong>methylace</strong>) a ne typu “Kolikátá aminokyselina je cílem ritonaviru?“. První termín jsme zvládli všichni, nejhorší konečná známka byla dvojka.</div></box>
+    </div>
+</body>
+
+</html>

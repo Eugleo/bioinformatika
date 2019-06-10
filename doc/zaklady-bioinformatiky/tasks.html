@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <title>bioinf:tasks</title>
+    <link rel="stylesheet" type="text/css" media="all" href="../../styles.css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Ajax.config.path["mhchem"] = "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.2";
+        MathJax.Hub.Config({
+            jax: ["input/TeX","output/CommonHTML"],
+            extensions: ["[mhchem]/mhchem.js", "tex2jax.js","MathMenu.js","MathZoom.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+            TeX: {
+                extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+            },
+            CommonHTML: {
+                scale: 98
+            }
+        });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js">
+        </script>
+    <script type="text/javascript">
+        var visibilities = {};
+        function toggleImageVisible(id) {
+            var img = document.getElementById(id);
+            if (id in visibilities) {
+                 img.style.display = (visibilities[id] ? 'none' : 'block');
+                 visibilities[id] = !visibilities[id];
+            } else {
+                img.style.display = 'block'
+                visibilities[id] = true;
+            }
+        }
+
+        let h;
+        document.onreadystatechange = function() {
+            if (document.readyState == "interactive") {
+                h = document.getElementById('sticky-header');
+            }
+        }
+
+        let lastOffset = 10;
+        let first = true;
+        window.onscroll = function() {
+            var doc = document.documentElement;
+            var o = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+            if (o <= 8 && (lastOffset > 8 || first)) {
+                first = false;
+                h.style.boxShadow = 'none';
+                h.style.backgroundColor = 'rgb(255, 255, 255)';
+            } else if (o > 8 && (lastOffset <= 8 || first)) {
+                first = false;
+                h.style.boxShadow = '0px 1px 3px lightgrey';
+                h.style.backgroundColor = 'rgb(255, 255, 255)';
+            }
+            lastOffset = window.pageYOffset;
+        };
+
+        function showAllSlides() {
+            allSlides = document.getElementsByClassName("slide");
+            for (i = 0; i < allSlides.length; i++) {
+                var id = allSlides[i].id;
+                if (!visibilities[id]) {
+                    toggleImageVisible(allSlides[i].id);
+                }
+            }
+        }
+
+        function hideAllSlides() {
+            allSlides = document.getElementsByClassName("slide");
+            for (i = 0; i < allSlides.length; i++) {
+                var id = allSlides[i].id;
+                if (visibilities[id]) {
+                    toggleImageVisible(allSlides[i].id);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="sticky-header" id="sticky-header">
+        <div class="wrapper">
+            <span class="page-title"><a class="no-style" href="/bioinformatika" title="Úvodní stránka">notes</a>:<a class="no-style" href=lecture-page.html title="Základy bioinformatiky">bioinf</a>:<strong>tasks</strong></span>
+            <span class="page-navigation">
+                &lt;<a href="javascript:showAllSlides()">+</a>/<a href="javascript:hideAllSlides()">–</a>&gt;
+            </span>
+        </div>
+    </div>
+    <div class="container">
+
+
+<h1 id="Bonusové úkoly z bioinformatiky"><a class="internal-link" href="#Bonusové úkoly z bioinformatiky">Bonusové úkoly z bioinformatiky</a></h1><p>Zde budou vypracované oba bonusové úkoly.</p><h2 id="Úkol #1"><a class="internal-link" href="#Úkol #1">Úkol #1</a></h2><p>Vypracovaný podle <a href="http://xray.bmc.uu.se/nisse/inlupp_DB_vt09/index.html">této stránky</a>.</p><ql><question><q-label>1.1</q-label><q-body>What protein does the sequence come from?</q-body></question><answer><a-label>Odp:</a-label><a-body>Z lidské Tyrosin-protein kinázy BTK</a-body></answer><question><q-label>1.2</q-label><q-body>How many amino acid residues does the full-length protein contain?</q-body></question><answer><a-label>Odp:</a-label><a-body>659</a-body></answer><question><q-label>1.3</q-label><q-body>What kind of enzyme and what do they ‘do’?</q-body></question><answer><a-label>Odp:</a-label><a-body>Kináza; kinázy jsou enzymy katalyzující fosforylaci, což je proces, při kterém je na substrát přenášen fosfát z ATP (nebo jiné podobné molekuly)</a-body></answer><question><q-label>1.4</q-label><q-body>What is the common substrate of such enzymes?</q-body></question><answer><a-label>Odp:</a-label><a-body>Často jiné proteiny (je-li myšleno toto; pokud je otázka cílená spíše na donory fosfátové skupiny, těmi jsou většinou molekuly ATP).</a-body></answer><question><q-label>1.5</q-label><q-body>Which residues in the protein are involved in substrate binding?</q-body></question><answer><a-label>Odp:</a-label><a-body>Jediná AK v aktivím místě je Asp. Inositol-(1,3,4,5)-tetrakisphosphate reaguje s Lys, Arg a Tyr.</a-body></answer><question><q-label>1.6</q-label><q-body>How many and what are they called? [Domains]</q-body></question><answer><a-label>Odp:</a-label><a-body>Pět domén: PH, zinkový prst, SH3, SH2 a protein kinázová doména.</a-body></answer><question><q-label>1.7</q-label><q-body>How many structure models of this protein can you find in the structure database, i.e. the PDB (give also the names of the pdb entries)?</q-body></question><answer><a-label>Odp:</a-label><a-body>Je jich celkem 69, čili vypisovat je nebudu.</a-body></answer><question><q-label>1.8</q-label><q-body>What/which experimental methods have been used?</q-body></question><answer><a-label>Odp:</a-label><a-body>Krystalografie a NMR.</a-body></answer><question><q-label>1.9</q-label><q-body>What are these structural models representing? (Hint: this question is connected to questions 5 and 6).</q-body></question><answer><a-label>Odp:</a-label><a-body>Většinou jsou to modely významných částí proteinu. Zobrazují jeho (domnělou) 3D strukturu.</a-body></answer><question><q-label>1.10</q-label><q-body>How many members does this “Family” of domains have in the SCOP classification?</q-body></question><answer><a-label>Odp:</a-label><a-body>V protein kinázové doméně.</a-body></answer><question><q-label>1.11</q-label><q-body>How many members does this “Family” of domains have in the SCOP classification?</q-body></question><answer><a-label>Odp:</a-label><a-body>Rodina “Protein kinases, catalytic subunit” má 63 různých domén.</a-body></answer><question><q-label>1.12</q-label><q-body>What is the disease called?</q-body></question><answer><a-label>Odp:</a-label><a-body>X-linked agammaglobulinemia (XLA).</a-body></answer><question><q-label>1.13</q-label><q-body>In the above case, what is the molecular cause of the disease?</q-body></question><answer><a-label>Odp:</a-label><a-body>Téhle otázce bohužel moc nerozumím. Zdravá a nezdravá sekvence se liší na mnoha místech, pinpointovat nějaké konkrétní, které by za nemoc mohlo, se mi nepodařilo. Když se podívám, jak by vypadala translace, z obou sekvencí vylezou zcela odlišné proteiny. Předpokládám ale, že správná odpověď bude ještě o něco komplikovanější.</a-body></answer><question><q-label>1.14</q-label><q-body>How can such a mutation, R\(\rightarrow\)Q, look like on the genetic level?</q-body></question><answer><a-label>Odp:</a-label><a-body>Napadá mě například nějaká chyba při translaci; kodon R je <code>C-G-[ACGT]</code>, zatímco kodon Q je <code>C-A-[AG]</code>. Protože A i G jsou oba puriny, myslím, že nějaká chyba typu <code>CGA</code> \(\rightarrow\) <code>CAA</code> je možná.</a-body></answer><question><q-label>1.15</q-label><q-body>What is the functional effect of the R524\(\rightarrow\)Q substitution? (An answer in general terms is OK but a detailed answer can be found in some databases).</q-body></question><answer><a-label>Odp:</a-label><a-body>Taková substituce nějakým způsobem poškodí schopnost vázat ATP.</a-body></answer></ql><h2 id="Úkol #2"><a class="internal-link" href="#Úkol #2">Úkol #2</a></h2><p>Vypracovaný podle <a href="https://web.natur.cuni.cz/~marian/pract4.html">této stránky</a>.</p><ql><question><q-label>2.1</q-label><q-body>How would you qualify the protein based on the secondary structure content? All-alpha? All-beta? or mixed alpha-beta?</q-body></question><answer><a-label>Odp:</a-label><a-body>Protein je alfa-beta.</a-body></answer><question><q-label>2.2</q-label><q-body>Can you guess how many domains does the structure contain? Are they most probably identical or different?</q-body></question><answer><a-label>Odp:</a-label><a-body>Podle obrázku nejspíše dvě stejné domény (pokud ty samotné neberu jako rozdělené na více domén).</a-body></answer><question><q-label>2.3</q-label><q-body>What does Ramachandran plot show? What are Psi and Phi?</q-body></question><answer><a-label>Odp:</a-label><a-body>Ukazuje úhly na <mathjax>\(\ce{C\alpha}\)</mathjax> (peptidové vazby jsou planární). <mathjax>\(\psi\)</mathjax> a <mathjax>\(phi\)</mathjax> jsou názvy těch úhlů, konkrétně rotace kolem <mathjax>\(\ce{C-C}\)</mathjax> a <mathjax>\(\ce{C-N}\)</mathjax>, respektive.</a-body></answer><question><q-label>2.4</q-label><q-body>How many residues are outside three major allowed regions? What do the squares in the plot mean?</q-body></question><answer><a-label>Odp:</a-label><a-body>Tři. Každý malý modrý čtverec značí naměřenou hodnotu <mathjax>\(\psi\)</mathjax> a <mathjax>\(\phi\)</mathjax> na jednom z <mathjax>\(\ce{C\alpha}\)</mathjax>.</a-body></answer><question><q-label>2.5</q-label><q-body>Judging from Ramachandran plot of our mysterious structure, does PrX look like a protein? Is it worth to further analyse it?</q-body></question><answer><a-label>Odp:</a-label><a-body>Ano, přes 96% AK leží podle Ramachandranova diagramu na správném místě.</a-body></answer><question><q-label>2.6</q-label><q-body>When was the DALI webpage last updated?</q-body></question><answer><a-label>Odp:</a-label><a-body>Na <a href="http://ekhidna2.biocenter.helsinki.fi/dali/index.html#tabs-1">linknuté stránce</a> jsem tuto informaci nenašel.</a-body></answer><question><q-label>2.7</q-label><q-body>When was the DALI Lite database last updated? What database is used by DALI?</q-body></question><answer><a-label>Odp:</a-label><a-body>DALILite je discontinued, DALI používá celou PDB databázi.</a-body></answer><question><q-label>2.8</q-label><q-body>Do you think DALI database is updated often enough?</q-body></question><answer><a-label>Odp:</a-label><a-body>Zcela určitě.</a-body></answer><question><q-label>2.9</q-label><q-body>When was the SSM webpage last updated? Who is the primary developer of the server?</q-body></question><answer><a-label>Odp:</a-label><a-body>Pokud je namysli Fold, na který stránka odkazuje, byl naposledy updatován 8. 4. 2014. Hlavním správcem je EBI.</a-body></answer><question><q-label>2.10</q-label><q-body>Which paper would give you more information about the SSM server?</q-body></question><answer><a-label>Odp:</a-label><a-body>Nejspíše  E. Krissinel and K. Henrick (2004). Secondary-structure matching (SSM).</a-body></answer><question><q-label>2.11</q-label><q-body>How many different proteins are among the hits?</q-body></question><answer><a-label>Odp:</a-label><a-body>24 hitů, z toho 2 a 2 byly na jednom proteinu—celkem tedy 22 různých proteinů.</a-body></answer><question><q-label>2.12</q-label><q-body>What score is decisive for ordering the hits? What does it mean? Find the explanation for each column in the list.</q-body></question><answer><a-label>Odp:</a-label><a-body>Q-score, které reprezentuje kvalitu alignmentu <mathjax>\(\ce{C\alpha}\)</mathjax>. Kombinuje délku alignmentu (tj. počet matchnutých zbytků) a RMSD (tj. root mean square distance jednotlivých <mathjax>\(\ce{C\alpha}\)</mathjax>).</a-body></answer><question><q-label>2.13</q-label><q-body>What is the sequence identity between 1PO6 and the query?</q-body></question><answer><a-label>Odp:</a-label><a-body>65%.</a-body></answer><question><q-label>2.14</q-label><q-body>What is the SSE identity between 1PO6 and the query?</q-body></question><answer><a-label>Odp:</a-label><a-body>88% (konkrétně, 88% SS z PrX bylo indetifikováno v 1PO6, a 100% SS z 1PO6 bylo nalezeno v PrX).</a-body></answer><question><q-label>2.15</q-label><q-body>How many hits with the DALI server? More or less than with SSM?</q-body></question><answer><a-label>Odp:</a-label><a-body>Více, DALI našel 962 hitů.</a-body></answer><question><q-label>2.16</q-label><q-body>How could you explain the different number of hits between the SSM and the DALI? What other factors could have played role?</q-body></question><answer><a-label>Odp:</a-label><a-body>Pokud DALI nějakým způsobem zmenšuje vstupní databázi, může si nejspíše dovolit být trochu méně přísný co se vlastností hitů týče.</a-body></answer><question><q-label>2.17</q-label><q-body>What is the most probable function of our mysterious protein?</q-body></question><answer><a-label>Odp:</a-label><a-body>Jedná se nejspíše o nějaký heteroenní nukleární ribonukleoprotein, což je protein formující komplexy s RNA. Takové proteiny většinou figurují v procesech zahrnujících replikaci DNA, regulaci genové exprese apod.</a-body></answer><question><q-label>2.18</q-label><q-body>Was Arg 97 built into the structure in a wrong way or are there objective reasons that make building of this residue difficult?</q-body></question><answer><a-label>Odp:</a-label><a-body>Nemám tušení, Astex EDS viewer mi nefunguje v žádném z mých prohlížečů (Safari, Chrome, Firefox) a starý viewer vyžaduje starou verzi Javy, kterou mi prohlížeče odmítají spustit.</a-body></answer><question><q-label>2.19</q-label><q-body>Which domain does occur in hnRNP core protein A1?</q-body></question><answer><a-label>Odp:</a-label><a-body>Na 1PO6 se vyskytují dvě domény, RRM_1 a hnRNPA1. </a-body></answer><question><q-label>2.20</q-label><q-body>Does this domain interact with any other? Which?</q-body></question><answer><a-label>Odp:</a-label><a-body>Pokud máte namysli hnRNPA1, ne. Pokud RRM_1, tak ano, a těch interakcí je 19. Jedna z nich je ale vskutku mago_nashi.</a-body></answer><question><q-label>2.21</q-label><q-body>How many structures are known to contain a Mago nashi domain?</q-body></question><answer><a-label>Odp:</a-label><a-body>Samotnou mago_nashi doménu má 1119 struktur.</a-body></answer><question><q-label>2.22</q-label><q-body>What is the function of hnRNP core protein A1 according to the Uniprot?</q-body></question><answer><a-label>Odp:</a-label><a-body>Uniprot říká doslova: <em>Involved in the packaging of pre-mRNA into hnRNP particles, transport of poly(A) mRNA from the nucleus to the cytoplasm and may modulate splice site selection. May bind to specific miRNA hairpins. May play a role in HCV RNA replication.</em></a-body></answer><question><q-label>2.23</q-label><q-body>How many residues are within hydrogen bonding distance? What amino acid types (hydrofobic, positively charged..) mediate the interaction?</q-body></question><answer><a-label>Odp:</a-label><a-body>Podle PyMolu pouze tři AK: Gly (malá, nepolární \(\rightarrow\) hydrofobní), Phe (hydrofobní), Arg (kladně nabitý). Když se ale neomezím na 3,5Å, vidím H-můstků mnohem více.</a-body></answer><question><q-label>2.24</q-label><q-body>Is it side chain or main chain that is responsible for the interaction between the amino acids and RNA?</q-body></question><answer><a-label>Odp:</a-label><a-body><p>Zdá se, že většinou interaguje s RNA boční řetězec. </p><img src="resources/images/ukol.png" alt="Screenshot z PyMolu zobrazující interakci proeinu a RNA" style="width: 100%; height: auto;"/></a-body></answer><question><q-label>2.25</q-label><q-body>Which part of the nucleotide does mostly take part in the interaction?</q-body></question><answer><a-label>Odp:</a-label><a-body>Většinou samozřejmě báze, i když se zdá, že někdy reaguje i ribóza.</a-body></answer><question><q-label>2.26</q-label><q-body>Could there be also other types of interactions taking place?</q-body></question><answer><a-label>Odp:</a-label><a-body>Ano, na určitých místech to vypadá, jako by docházelo ke stacking interakcím mezi bázemi nukelotidů a aromatickými AK.</a-body></answer><question><q-label>2.27</q-label><q-body>Would you bet that our protein X could bind nucleic acid (please, motivate your answer)?</q-body></question><answer><a-label>Odp:</a-label><a-body>Ano, dle Clustalu <mathjax>\(\Omega\)</mathjax> existuje jedna velká konzervovaná část, která je PrX i 1PO6 společná. Protože se jedná přibližně o celou první polovinu 1PO6, a dle PyMolu usuzuji, že právě tam se nachází AK interagující s RNA, dá se odhadnout, že by toho byl schopen i náš PrX.</a-body></answer></ql>
+    </div>
+     <page-end> ⋅ 𝓔 ⋅ </page-end>
+    </body>
+</html>
