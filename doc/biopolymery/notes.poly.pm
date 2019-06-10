@@ -911,13 +911,13 @@ Jedna molekula DNA bude mít v různých prostředích různou konformaci. Konfo
     - uprostřed helixu není žádné místo
 }
 
-◊slide[6 7 #:s 4]
+◊slide[6 7 5 #:s 4]
 ◊box["Malý vs velký žlábek"]{
     Malý a velký žlábek lze rozlišit i na jiných konformacích DNA, kde zpravidla nejdou poznat tak dobře. Způsob jejich určení je naštěstí přesně popsán.
     ◊ls{
         # najdeme průsečík osy helixu a nějakého patra DNA
         # vedeme z tohoto bodu dvě polopřímky, každou do jednoho z C1' na obou bazích
-        # rozdělíme rovinu na dvě části: tam, kde je úhel menší než 180◊deg je malý žlábek, na opačné straně velký žlábek ◊slide[5 #:s 4 #:inline #t]
+        # rozdělíme rovinu na dvě části: tam, kde je úhel menší než 180◊deg je malý žlábek, na opačné straně velký žlábek
     }
 }
 
@@ -1066,8 +1066,10 @@ DNA má strukturu dihelixu, viz výše. Topologie DNA se zabývá tím, jaký tv
         Udává počet nadobrátek, v přírodě (u bakteriálních plazmidů) bývá ◊${W = 1} na 200bp. Nadobrátky mohou vyústit ve dvojí typ topologie: DNA zaujme buďto toroidální tvar, nebo plektonemní tvar. Plektonemnímu tvaru se někdy říká ◊em{dvojitá nadšroubovice}.
 
         ◊box["Poznámka"]{
-            Toroid je těleso, které vzniklo rotací nějakého tvaru kolem jedné osy. Uprstřed toroidu je díra (například donut je druh toroidu). Plektonem je v překladu "zkroucené vlákno" a vypadá spíše jako řetěz. ◊img["toroid_plectoneme.png"]{Srovnání toroidu a plektonemy}
+            Toroid je těleso, které vzniklo rotací nějakého tvaru kolem jedné osy. Uprstřed toroidu je díra (například donut je druh toroidu). Plektonem je v překladu "zkroucené vlákno" a vypadá spíše jako řetěz.
         }
+
+        ◊img["toroid_plectoneme.png"]{Srovnání toroidu a plektonemy}
 
         Znaménko udává, jestli je superhelix pravotočivý toroid (◊${+}) nebo levotočivý toroid (◊${-}). Pravotočivý toroid je matematicky totožný s levotočivým plektonemem a naopak, tedy levotočivý plektonem má znaménko (◊${+}).
     }

@@ -1257,9 +1257,7 @@ Při cytometrii protékají měřičem buňky jedna po jedné. Přerušují u to
 
 Leukocyty se dělí na granulocyty a agranulocyty.
 
-◊box["Funkce imunitní odpovědi"]{
-    ◊img["imunita.jpg"]{Flowchart zobrazující postup jednotlivých druhů imunitních odpovědí}
-}
+◊img["imunita.jpg"]{Flowchart zobrazující postup jednotlivých druhů imunitních odpovědí}
 
 ◊subsubsection{Granulocyty}
 

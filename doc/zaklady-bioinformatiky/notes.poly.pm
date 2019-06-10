@@ -1206,10 +1206,11 @@ Trochu lepší výsledky než Chou-Fasman má metoda GOR, která sice také poč
         - vychází z databáze nepříbuzných proteinů
 }
 
+◊slide[37 #:s 7]
 ◊box["Vsuvka"]{
     Arteficiální neurální sítě (ANN) jsou adaptivní systémy založené na biologickém modelu nervové soustavy. Dají se trénovat: máme určitý test dataset, na kterém daná ANN optimalizuje své parametry.
 
-    Kromě ANN se používají i metody konsenzu: kombinace několika různých metod pro dosažení optimálního výsledku. Například JPRED a NPS. ◊slide[37 #:inline #t #:s 7]
+    Kromě ANN se používají i metody konsenzu: kombinace několika různých metod pro dosažení optimálního výsledku. Například JPRED a NPS.
 }
 
 ◊subsection{Predikce membránových proteinů}
