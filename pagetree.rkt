@@ -14,18 +14,28 @@
 (define doc (build-path "doc"))
 (define list-of-files
     (for/list ([topic (directory-list doc #:build? #t)]
-               #:when (directory-exists? topic))
+            #:when (directory-exists? topic))
         (define lectures
-            (for/list ([lecture (directory-list topic)]
-                       #:when (regexp-match #rx"^(.*)\\.pm$" (path->string lecture)))
-                (path->string
-                    (path-replace-extension
-                        (path-replace-extension lecture #"")
-                        #".html"))))
+            (flatten
+                (for/list ([lecture (directory-list topic)]
+                        #:when (regexp-match #rx"^(.*)\\.pm$" (path->string lecture)))
+                    (if (regexp-match? #rx"^(.*)\\.poly\\.pm$" (path->string lecture))
+                        (make-poly lecture)
+                        (make-html lecture)))))
         (map
             (lambda (lec)
                 (string->symbol (string-append (path->string topic) "/" lec)))
             (sort lectures less-than))))
+
+(define (make-poly path)
+    (list
+        (path->string (path-replace-extension (path-replace-extension path #"") #".pdf"))
+        (path->string (path-replace-extension (path-replace-extension path #"") #".html"))
+        (path->string (path-replace-extension (path-replace-extension path #"") #".md"))
+        (path->string (path-replace-extension (path-replace-extension path #"") #".tex"))))
+
+(define (make-html path)
+    (path->string (path-replace-extension (path-replace-extension path #"") #".html")))
 
 (define (generate-pagetree)
     (define pt `(index.html ,@list-of-files))
