@@ -363,7 +363,7 @@
   (case (current-poly-target)
     [(md) `("![" ,@alt "]" "(" ,loc ")")]
     [(tex pdf) (apply string-append
-              `("\\begin{figure}[ht]\n"
+              `("\\begin{figure}\n"
                 "    \\caption{" ,@alt "}\n"
                 "    \\includegraphics[width=0.85\\textwidth]{" ,link "}\n"
                 "    \\centering\n"
@@ -407,10 +407,14 @@
 (provide meta todo def note theorem proof lemma prop coll box)
 
 (define (meta . body)
-  (internal-box "META" #:class "meta" body))
+  (case (current-poly-target)
+    [(tex pdf) (apply string-append `("\\meta{" ,@body "}"))]
+    [else (internal-box "META" #:class "meta" body)]))
 
 (define (todo . body)
-  (internal-box "TODO" #:class "todo" body))
+  (case (current-poly-target)
+    [(tex pdf) (apply string-append `("\\todo{" ,@body "}"))]
+    [else (internal-box "TODO" #:class "todo" body)]))
 
 (define (def (title #f) . body)
   (internal-box (make-title "Definice" title) body))

@@ -2,7 +2,12 @@
 ◊define-meta[title]{Struktura a vlastnosti informačních biopolymerů}
 ◊define-meta[header]{zápisy}
 ◊(define-meta toc #t)
+
 ◊define-meta[authors ("Evžen Wybitul")]
+◊define-meta[date]{10.6.2019}
+◊define-meta[version-number]{v2.0.0}
+◊define-meta[version-name]{nový vzhled pdf}
+◊define-meta[color]{FFB940}
 
 
 ◊title{Stavba hmoty}
@@ -1473,7 +1478,7 @@ Pokud ◊${F_o = F_{vz} + F_t}, nastane ◊em{stacionární stav}.
     \frac{V (\rho - \rho_k)}{f} = \frac{1}{r \omega^2} \frac{\text{d}v}{\text{d}t} &= s
 }
 
-◊${s} se nazývá ◊strong{sedimentační koeficient} a udává se ve Svedberzích, ◊${[S] = 10^{-13}\text{s}}. Pokud má tělísko 30S, pak urazí ◊u{3 \mum/s} při sedimentačním zrychlení ◊u{1e6 ms-2}. Sedimentační koeficient dává do souvislosti rychlost sedimentace se zrychlením, kterým na tělísko působila centrifuga.
+◊${s} se nazývá ◊strong{sedimentační koeficient} a udává se ve Svedberzích, ◊${[S] = 10^{-13}\text{s}}. Pokud má tělísko 30S, pak urazí ◊u{3 \mu m/s} při sedimentačním zrychlení ◊u{1e6 ms-2}. Sedimentační koeficient dává do souvislosti rychlost sedimentace se zrychlením, kterým na tělísko působila centrifuga.
 
 Pokud k ◊${s} přidáme korekce, získáme ◊strong{sedimentační konstantu}.
 ◊ls{
