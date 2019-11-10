@@ -200,6 +200,12 @@ dd {
   ◊(margin-bottom 0.5)
 }
 
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
