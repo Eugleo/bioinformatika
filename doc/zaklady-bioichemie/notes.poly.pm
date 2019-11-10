@@ -66,6 +66,8 @@ Biochemie pomáhá vysvětlovat rozmanitost přírody --- všechno tvorstvo stav
     }
 }
 
+◊title{Biomolekuly}
+
 ◊section{Voda}
 
 ◊ls{
@@ -113,6 +115,8 @@ Strukturu a vlastnosti vody silně ovlivňuje tvorba vodíkových můstků.
     - ionty ◊chem{OH-} a ◊chem{H3O+} jsou vysoce mobilní (viz obrázek)
 }
 
+◊img["common-h-bonds.png" #:w 400 #:label "{H-můstky běžně nalézané v biomolekulách"]{H-můstky běžné v biomolekulách}
+
 ◊ls[#:t "Srovnání vody s jinými rozpouštědly"]{
     - dielektrická konstanta zdaleka nejvyšší, i když ty molekuly jsou si jinak podobné
         - dielektrická konstanta udává míru odporu při vytváření elektrického pole v rámci nějaké látky vzhledem k vakuu
@@ -135,7 +139,7 @@ Body 1. a 2. probíhají ve všech polárních rozpouštědlech, avšak chován�
 
 ◊$${\Delta G = \Delta H - T \Delta S,}
 
-kde ◊${\Delta S} značí změnu entropie, ◊${\Delta H} změnu entalpie. Pokud je ◊${G > 0}, děj samovolně neprobíhá; při rozpouštění nepolárních látek ve vodě je ◊${\Delta S < 0} a tedy ◊${\Delta G > 0}.
+kde ◊${\Delta S} značí změnu entropie, ◊${\Delta H} změnu entalpie. Pokud je ◊${\Delta G > 0}, děj samovolně neprobíhá; při rozpouštění nepolárních látek ve vodě je ◊${\Delta S < 0} a tedy ◊${\Delta G > 0}.
 
 ◊definitions{
     ◊term["Hydrofobní kolaps"]{
@@ -144,3 +148,59 @@ kde ◊${\Delta S} značí změnu entropie, ◊${\Delta H} změnu entalpie. Poku
 }
 
 Hydrofobní interakce jsou vlastně ◊strong{negativně vyvolané reakce}: jsou vyvolané absencí přitahování molekul rozpouštědla a rozpouštěné látky
+
+◊subsection{Acidobazické vlastnosti vody a kyselin}
+
+◊definitions{
+    ◊term["Brønstedova kyselina"]{
+        Látka, která může poskytnout protony. Obdobně zásada je látka, která může protony přijmout. Po ztrátě protonu se Brønstedova kyselina stává svou ◊strong{konjugovanou zásadou}.
+    }
+
+    ◊term[""]{
+
+    }
+
+    ◊term["pufr"]{
+        Acidobazický pufr je směs slabé kyseliny a její konjugované zásady v roztoku, který má pH blízké ◊${pK_a} kyseliny.
+    }
+}
+
+◊$${
+    \text{pH} = \log \frac{1}{[\ce{H+}]} = -\log [\ce{H+}] = pK_a - \log \frac{[\ce{HA}]}{\ce{A-}} \stackrel{\text{pro vodu}}{=} -\log [\ce{H3O+}],
+}
+
+přičemž předposlední rovnosti se říká Hendersonova-Hasselbalchova rovnice a popisuje vztah mezi složením pufru a jeho kyselostí. Pro vodu zároveň platí
+
+◊$${K_{eq} = \frac{[\ce{H+}][\ce{OH-}]}{[\ce{H2O}]},}
+
+což vychází z obecnější rovnice
+
+◊$${\ce{A + B <=> C + D}: K_{eq} = \frac{[\ce{C}][\ce{D}]}{[\ce{A}][\ce{B}]}.}
+
+Z měření vychází, že při 25 ◊deg C ◊${[\ce{H2O}] = 55.5}, a tedy
+
+◊$${K_{eq} = \frac{[\ce{H+}][\ce{OH-}]}{55.5} \implies 55.5 K_{eq} = [\ce{H+}][\ce{OH-}] = K_w,}
+
+kde ◊${K_w} značí ◊em{iontový součin} vody a je za běžných podmínek roven ◊${10^{-14}}.
+
+◊ls[#:t "Titrace"]{
+    - používá se k zjištění množství kyseliny v roztoku
+    - do roztoku se přidává ◊chem{NaOH} (nebo jiná silná zásada) o známé koncentraci, dokud se roztok neneutralizuje
+    - z koncentrace a objemu použité zásady se spočítá pH původního roztoku
+        - vývoj pH roztoku v závislosti na množství přidané zásady se zaznamnává do tzv. ◊em{titrační křivky}, viz obrázek
+            - křivku lze popsat Hendresson-Hasselbachovou rovnicí
+            - v inflexním bodě platí ◊${\text{pH} = pK_a}
+            - v části, kde pH roste jen pomalu, se systém chová jako pufr
+}
+
+◊img["titration-curve.png" #:w 400 #:label "Titrační křivka"]{Titrační křivka}
+
+Pokud budeme vybírat pufr, musím volit tak, aby poměr soli a kyseliny byl roven jedné právě v oblasti, ve které budeme pracovat.
+
+◊ls[#:t "Polyprotní kyseliny"]{
+    - acidobazické skupiny v jedné molekule se navzájem ovlivňují
+    - pokud se ◊${pK_a} jejich různých ionizačních stupňů liší více než o 2 až 3 jednotky pH, můžeme je při výpočtech pH úspěšně považovat za směs jednotlivých slabých kyselin
+        - pro polyprotní kyseliny s hodnotami pK lišícími se méně než o tuto hodnotu jsou pozorované molekulové ionizační konstanty prostě vztaženy na mikroskopické ionizační konstanty disociujících skupin.
+}
+
+◊img["polyprotic-acid.png" #:w 400]{Tirační křivka polyprotní kyseliny}
