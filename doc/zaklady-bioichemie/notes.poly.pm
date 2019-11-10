@@ -4,7 +4,7 @@
 ◊define-meta[header]{zápisy}
 ◊(define-meta toc #t)
 
-◊define-meta[authors ("Evžen Wybitul"]
+◊define-meta[authors ("Evžen Wybitul")]
 
 
 
