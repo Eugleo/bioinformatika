@@ -309,3 +309,79 @@ Důležitá je imidazolová skupina, která ma jako ◊em{jediná} ◊${pK_a} bl
 
 Například kurděje jsou avitaminóza poškozující schopnost hydroxylace prolinu, který je potřeba pro pojivové tkáně: první projev je krvácení z
 dásní, způsobené problémy s extracelulární matrix.
+
+◊section{Kovalentní struktura proteinů}
+
+◊meta{Primární, sekundární, terciární i kvarterní struktura proteinů je rozebrána i zde: ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Struktura%20proteinů"]{Zápisy z bioinformatiky} nebo ◊link["https://eugleo.github.io/bioinformatika/doc/biopolymery/notes.html#Stavba%20proteinů"]{zápisy z biopolymerů}.}
+
+Proteiny jsou tvořeny AK spojenými peptidickou vazbou, nebo ◊chem{S-S} vazbou mezi cysteiny (nejedná se o můstek, nýbrž o plnohodnotnou vazbu). Např. u inzulinu tím vzniká složitejší kovalentní struktura.
+
+◊ls[#:t "Pojmy"]{
+    - cis, trans uspořádání
+        - vazby po prolinu i v cis, asi z 10%
+    - torzní úhly ◊${\psi} a ◊${\phi}
+    - rezonance ve vazbě, planarita
+        - pokud chceme planaritě zabránit, musíme udělat z rezonanční vazby vazbu jednoduchou (ovlivněním náboje, ovlivnění ◊chem{C-O})
+    - rotace kolem ◊${\text{C}\alpha}
+    - denaturace (ztráta pevné 3D struktury)
+    - primární, sekundární, terciární, kvarterní struktura
+    - fibrilární a globulární proteiny
+        - fibrilární jsou založené na neustálém opakování sekundárních struktur
+        - první analýzy se dělaly na fibrilárních proteinech, je to jednodušší
+    - tři druhy helixů
+    - paralelní a antiparalelní uspořádání beta-řetězců
+}
+
+Všechny tyto pojmy lze nalézt popsány v odkazech výše.
+
+◊ls[#:t "alfa-helix"]{
+    - ◊chem{NH} a ◊chem{CO} skupiny, které jsou součástí peptidové kostry, nejsou volné, ale jsou vůči sobě orientovány a interagují H-můstky
+        - můstky budou téměř rovnoběžné s osou helixu
+        - všechny vnitřní skupiny jsou angažovány => stabilizace struktury
+    - ◊chem{NH} a ◊chem{CO} skupiny na koncích nejsou součástí H-můstků a tak získáváme částečně nabitou strukturu, která má dipólový moment a podle toho se bude orientovat v el. poli
+        - ◊chem{NH} parciální kladný náboj, ◊chem{CO} parciální záporný
+    - R skupiny AK směřují vně helixu
+    - jedna rotace helixu je dlouhá ~3.6 AK => pokud např. každou 4. AK vybavíme hydrofobicitou, budeme tvořit válec, který bude z jedné strany hydrofobní
+        - a  když máme dva takové, tak bude docházet k hydrofobním interakcím, přilnou k sobě
+    - uprostřed struktury není místo, nevejde se tam molekula rozpoštědla
+    - stabilita záleží na řetězcích R (např. dva kladně nabité R vedle sebe by mohly snižovat stabilitu helixu)
+}
+
+AK tedy můžeme rozdělit dle dalšího kritéria, ◊em{kompatibility s helikální strukturou} --- dá se změřit např. tak, že z helixu odebíráme jednu AK po druhé a vždy změříme jeho stabilitu. Díky toho lze poté z (části) primární struktury proteinu predikovat, zda zaujme tvar helixu, či nikoli.
+
+Podobně se dají predikovat i jiné sekundární struktury, například levotočivý ◊strong{polyprolinový II helix}, který se nachází v kolagenu a obecně všude tam, kde je mnoho Pro.
+
+◊ls[#:t "Beta list"]{
+    - R míří nad a pod řetězec, můžeme opět tvořit strukturu s různými vlastnostmi na dvou stranách
+    - většinou max 6 AK na 6 AK, někdy ale i větší (např. beta-keratiny)
+}
+
+◊ls[#:t "Supersekundární motivy"]{
+    - beta-alfa-beta
+    - beta vlásenka
+    - alfa-alfa
+    - motiv řeckého klíče
+}
+
+◊img["motifs.jpg" #:w 300]{Strukturní motivy na proteinech}
+
+Kombinace sekundárních a supersekundárních struktur tvoří ◊strong{domény} --- útvary, které zaujmou stabilní konformaci i když jsou exprimovány odděleně od zbytku proteinu (= samostatné jednotky, co do foldingu).
+
+◊ls[#:t "Domény"]{
+    - alfa domény
+        - svazky čtyř helixů v cytochromu b562 u E. coli, lidský růstový hormon
+    - beta domény
+        - beta sendvič: imunoglobulinový motiv
+            - dva přeložené beta-listy tvoří sendvič, stabilizace je dána tím,že vnitřní strana je hydrofobní
+        - beta barel: retinol-vazebný proteinu
+            - pokud budeme beta list stáčet jako papír, bude mít tendenci se zkrucovat, vytvoří soudek (beta barel)
+            - může sloužit jako pór pro molekuly vody
+        - kombinace řeckých klíčů: bakteriální amidáza
+        - beta-listy, které dělají částečně plošné struktury
+            - na okrajích listů se tvoří vazebná místa, aktivní centra
+    - alfa-beta domény
+        - alfa-beta barel: součást trióza-fosfát-izomerázy
+            - jeden z nejstabilnějších proteinových tvarů v přírodě
+}
+
+Takovýchto struktur jsou řádově stovky (tj. relativně málo).
