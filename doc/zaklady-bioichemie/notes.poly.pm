@@ -203,4 +203,109 @@ Pokud budeme vybírat pufr, musím volit tak, aby poměr soli a kyseliny byl rov
         - pro polyprotní kyseliny s hodnotami pK lišícími se méně než o tuto hodnotu jsou pozorované molekulové ionizační konstanty prostě vztaženy na mikroskopické ionizační konstanty disociujících skupin.
 }
 
-◊img["polyprotic-acid.png" #:w 400]{Tirační křivka polyprotní kyseliny}
+◊img["polyprotic-acid.png" #:w 400]{Titrační křivka polyprotní kyseliny}
+
+◊section{Aminokyseliny}
+
+◊meta{Předpokládají se základní znalosti struktury a vlastností AK, viz např. ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Struktura%20proteinů"]{Zápisy z bioinformatiky} nebo ◊link["https://eugleo.github.io/bioinformatika/doc/biopolymery/notes.html#Stavba%20proteinů"]{zápisy z biopolymerů}. Je nutné znát i jendotlivé zkratky a umět nakreslit chemickou strukturu každé AK.}
+
+◊img["aa-venn.png" #:w 400]{Základní vlastnosti AK}
+
+◊ls[#:t "Důležité vlastnosti AK"]{
+    - náboj, titrační křivka (viz dále)
+    - velikost (viz obrázek níže)
+    - charakter skupin na R, zda jsou či nejsou aromatické
+        - pozn. prolin není aromatický, jeho cyklus ale významně ovlivňuje vlastnosti řetězce --- je v daném místě méně pružný
+    - leucin, izoleucin, valin, jsou vybaveny větveným alifatickým řetězcem
+        - izobutylová skupina je chováním podobná alifatickému uhlovodíku => je hydrofobní
+    - ◊chem{S-H} skupina v cysteinu bude oxidovaná či redukovaná v závislosti na prostředí, může tvořit ◊chem{S-S} můstky ať už s jiným cysteinem, nebo s jinými látkami
+    - jeden konec lysinu se chová polárně, druhý ne
+        - aminoskupina má kolem pH 7 kladný náboj
+        - alifatický řetězec je hydrofobní
+    - optická aktivita
+    - všechny až na Gly jsou asymetrické
+        - Gly má na flexibilitu řetězce opačnou vlastnost než Pro, zvyšuje ji
+}
+
+Všechny tyto vlastnosti se různě kombinují a přispívají tak k celkovým vlastnostem dané AK.
+
+◊ls[#:t "Optická aktivita AK"]{
+    - AK tvoří stereoizomery, tzv. ◊em{entantiomery}, jsou svým zrcadlovým obrazem
+    - nejsou chemicky rozlišitelné, ale stáčejí rovninu polarizovaného světla na různé strany
+        - pozor, ne vždy L doleva a D doprava
+    - běžně se vyskytují L-formy
+    - jejich názvosloví se odvozuje od Fisherovy projekce u cukrů
+    - Thr a Ile mají více center asymetrie (více chirálních uhlíků)
+        - tvoří tzv. ◊em{diastereomery} (narozdíl od enantiomerů nejsou svým zrcadlovým obrazem)
+        - rozlišuje se pak například L-Thr a L-allo-Thr
+}
+
+◊img["isomers1.png"]{Rozdíly mezi diastereomery a enantiomery}
+
+Existuje i jiný systém pojmenovávání stereoizomerů L a D, a to tzv. ◊em{R/S systém} (neboli Cahn-Ingold-Prelog).
+
+◊ls[#:t "R/S systém"]{
+    - nakreslíme šipku od substituentu s nejvyšší prioritou k tomu s nejnižší prioritou
+        - priorita substituentů je určována podle velikosti skupiny
+        - vodík se umístí tak, aby byl za uhlíkem
+    - pokud jde šipka po směru hodinových ručiček, jedná se o R sloučeninu (rectus = pravý), jinak se jedná o S sloučeninu (sinister = levý)
+    - všechny AK v těle, s výjimkou cysteinu, jsou (S)- sloučeniny
+}
+
+◊img["r-s-enantiomer.png" #:w 400]{Pojmenování R/S systémem}
+
+◊ls[#:t "Biologicky aktivní látky odvozené od AK"]{
+    - histamin: význam v alergických reakcích (nastane dekarboxylace histidinu, vznikne histamin)
+        - histidin získáváme z potravy, neumíme ho syntetizovat
+    - dopamin: prekurzor neurotransmiterů, regulačně aktivní látka
+    - kyselina gama-aminomáselná (vzniká dekarboxylací kyseliny glutamové)
+    - látky odvozeny jednoduchými reakcemi z AK (velmi důležité)
+    - některé AK jsou součástí metabolismu látek, které se běžně v proteinech nevyskytují
+        - citrulin (~ Arg) a ornitin (~ Lys) jsou součástí cyklu močoviny
+}
+
+◊subsection{Acidobazické vlastnosti AK}
+
+Příklad disociační křivky na Gly.
+
+◊img["glycine-titration.png" #:w 400]{Titrační křivka Gly}
+
+◊note{
+    Tato křivka se týká volné AK – pro Gly vázaný v proteinu by takto nevypadala. Gly na C- nebo N- konci si však jednu skupinu zachová, což může hrát roli.
+
+    Jedná se o zjednodušený model toho, jak se chová látka s více disociovatelnými skupinami. Např. Lys se bude chovat mnohem složitěji, protože má tři acidobazické skupiny, které navíc nejsou dostatečný počet pH bodů od sebe, čili se ovlivňují.
+}
+
+◊ls[#:t "Disociační křivka Gly"]{
+    - při velice nízkém pH je glycin plně protonovaný
+    - tvar křivky vychází z Hendersonovy-Hasselbachovy rovnice
+    - obě disociace jsou si velmi vzdálené => neovlivňují se
+    - v bodě PI, tzv. ◊em{izoelektrický bod}, má AK nulový náboj => nepochybuje se v elektrickém poli
+    - v bodech ◊${pK_1} a ◊${pK_2} jsou už plně disociované skupiny ◊chem{COOH} a ◊chem{NH3}, respektive
+    - ◊${pK} karboxylové skupiny je asi 2.2, ◊${pK} aminoskupiny je asi 9.4
+}
+
+◊meta{Je prý důležité umět popsat chování oněch dvou disociujících se skupin (jednoduché, oba body daleko od sebe a neovlivňují se). Kromě toho je také nutné umět nakreslit disociační křivku.}
+
+Protein se skládá z řádově stovek AK, bude proto mít velice složitou disociační křivku. Některé AK budou acidobazicky zajímavé pouze, když budou na konci proteinu; jiné budou zajímavé i jindy, a to při různých hodnotách pH (viz obrázek).
+
+◊img["aa-pka.jpg" #:w 400]{pKa jednotlivých aminokyselin}
+
+Jakmile se např. Asp dostane do pH7, bude ze větší části již naprosto disociovaná a nebude se již chovat jako kyselina. Obecně, pokud zvyšujeme pH (= zvyšujeme zásaditost prostředí), budou se skupiny zbavovat protonů --- mění se ale to, jaký náboj tímto AK získají.
+
+Důležitá je imidazolová skupina, která ma jako ◊em{jediná} ◊${pK_a} blízké pH fyziologických systémů (konkrétně kolem 6), čili kolem tohoto neutrálního pH bude mít právě polovinu skupin deprotonovanou.
+
+◊subsection{Posttranslační modifikace AK}
+
+◊ls{
+    - úpravy proteinu po translaci
+    - methylace: důležité na histonech
+    - fosforylace: zásadní regulační funkce
+        - serin, threonin, tyrosin
+    - acetyace: typicky Lys, vnik amidové vazby, která mění pH (při pH 7 pak už Lys nebude kladně nabitý)
+        - když Lys acetylujeme v jádře, ovlivňujeme interakce proteinů s NK (ty jsou totiž záporně nabité)
+    - karboxylace
+}
+
+Například kurděje jsou avitaminóza poškozující schopnost hydroxylace prolinu, který je potřeba pro pojivové tkáně: první projev je krvácení z
+dásní, způsobené problémy s extracelulární matrix.
