@@ -490,3 +490,97 @@ Někdy se může protein dostat do "pasti" (je nutné překonat stav s vyšší 
     - elastin, jak napovídá jeho název, má elastické vlastnosti a tvoří prostorovou síť vláken s nepravidelnou strukturou
         - jeho polypeptidová vlákna jsou spojena podobným způsobem jako u kolagenu.
 }
+
+◊subsection{Struktura a funkce globinů}
+
+◊note{
+    Přenos kyslíku je dobrý příklad, neboť je důležitý pro všechny větší organismy --- jeho rozpustnost v krvi je omezená, všechny organismy si proto musí nějak vypomáhat. To většinou dělají sloučeninami založenými na železu nebo mědi, například hemoglobinem (v savích tetramer), myoglobin (monomer).
+}
+
+◊img["hemoglobin.png" #:w 400]{Vstřebávání kyslíku v různých tlacích}
+
+◊ls{
+    - organismy žijí v různých parciálních tlacích kyslíku
+        - kyslík je vázaný s různou afinitou
+    - křivky (vynesené pro různé organismy) mají sigmoidní tvar (viz obrázek): daný organismus má přenašeč, který v nízkých koncentracích nebude vázat nic, a až ve vyšších všechno
+        - systém je nastaven tak, že funguje v určitém rozmezí kyslíku a právě v tom jej umí vázat či uvolnit
+        - tato vlastnost je dána tím, že se jedná o oligomerní molekuly, které jsou schopny spolu kooperovat
+        - v jiném případě by se mohlo stát, že organismus sice bude vázat kyslík, ale nebude schopen jej v tkáních uvolňovat
+}
+
+◊definitions{
+    ◊term["Saturační křivka"]{
+        Na ose ◊${x} je tlak ◊chem{O2} v Thorrech, na ose ◊${y} je saturace ◊chem{O2} v procentech. ◊${p50} je parciální tlak, při kterém jsou přenašeče saturována z 50%.
+    }
+
+    ◊term["Hemerythrin"]{
+        Obdoba hemoglobinu, je také vícepodjednotkovým komplexem. Mají ho hlavatci, ramenonožci.
+    }
+
+    ◊term["Hemocyanin"]{
+         Má jej třeba ostrorep, také existuje jako oligomer.
+    }
+
+    ◊term["Myoglobin"]{
+        Monomer, není tedy schopen zajistit kooperativní sigmoidní chování. Saturační křivka má tvar hyperboly (viz obrázek).
+    }
+}
+
+◊img["myoglobin.jpg" #:w 200]{Saturační křivka hemoglobinu a myoglobinu}
+
+◊subsubsection{Hemoglobin}
+
+◊ls{
+    - tetramer se dvěma alfa a dvěma beta podjednotkami, každá z nich má konjugovaný heterocyklický systém s ◊chem{Fe2+} (HEM), hemoglobin tedy jejich prostřednictvím umí vázat 4 molekuly kyslíku
+    - po vazbě kyslíku se mění kvartérní struktura
+        - např. u konce molekuly jedné podjednotky vůči druhému konci jiné
+        - dále se mění i díra uprostřed (oxygenací se zmenší)
+        - dochází k natočení dvou podjednotek vůči ostatním
+}
+
+◊img["hemoglobin-structure.png" #:w 400]{Struktura hemoglobinu}
+
+Ve interakci podjenotek spočívá sigmoidní chování.
+
+◊ls{
+    - podjednotky jsou nekovalentně spojené, ale přesto se významně ovlivňují
+    - máme-li situaci bez kyslíku, přicházejí molekuly postupně (1., 2., 3. 4.)
+    - vazba první molekuly ◊em{pozitivně ovlivní} vazbu těch dalších => když už je tam jedna, ostatní se váží snáz
+}
+
+◊img["porphyrin.png" #:w 400]{Změny ve struktuře po vazbě kyslíku}
+
+◊ls[#:t "Změny při vazbě kyslíku"]{
+    - v deoxygenovaném stavu (= ◊strong{R}, relaxed) je molekula porfyrinu deformována, není rovinná => vázaný hem je umístěn v dutině (kavitě)
+        - to má za následek řadu dalších změn, ke kterým v rámci podjednotky dochází
+        - mám tzv. ◊em{domovou strukturu}, kyslík se setkává s nižší afinitou, než kdyby byl hem "vystrčený"
+        - je to způsobeno vazbavi u železa, které jsou bez vázaného kyslíku delší a vytvoří onu proláklinu
+    - po vazbě kyslíku (= ◊strong{T}, tense) se porfyrin narovná a přes blízký histidin (◊em{proximální histidin}) přesune část pohybu i na helix F (viz obrázek), ten přesune pohyb i na zbývající podjednotky v molekule
+        - struktura funguje jako mechanický převodník
+        - hem se trochu vystrčí a má vyšší afinitu ke kyslíku
+}
+
+◊ls[#:t "Kontakty mezi podjednotkami"]{
+    - α1 + β1: 35 AK kontaktů
+    - α1 + β2: 19 AK
+    - α1 + α2: vlastně žádný
+    - analogicky pro α2
+}
+
+Podjetnotky α1 + β1 jsou tedy téměř nepohyblivě spojené, struktura se tedy dá vnímat jako dva dimery spíše čtyři monomery. Mezi těmito dvěma podjednotkami bude docházet k pohybům, při oxygenaci se vůči sobě otočí o 15 ◊|deg|. Také sezmění pozice tyrosinu z C helixu vůči histidinu, viz obrázek.
+
+◊img["t-r-state.gif" #:w 300]{Stavy T a R na rozhraní podjednotek}
+
+◊note{
+    Změny stavů a posouvání molekul se dají srovnat s pohybem a vzájemným posunem dvou pěstí; vždy se posunou o jeden prst, jakýkoli mezistav bude náročné udržet.
+}
+
+Sigmoidní tvar je tedy způsoben tím, že první kyslík se váže relativně složitě (hem je zastrčený), po jeho navázání ale vnutní daná podjednotka rovnější tvar porfyrinu i ostatním podjednotkám a další kyslíky se už váží čím dál snadněji. Po nasycení hemoglobinu se saturační křivka opět vyrovná. Kdybychom měli oligomer s více než čtyřmi podjednotkami, mohl by se chovat ještě více kooperativně a mít ještě prudší křivku.
+
+Pokud bychom oslabili nějaká spojení, získali bychom plošší křivku, oslabilo se kooperativní chování (jednotky by se tak neovlivňovaly). Pokud by se naopak posílily vazby, dlouho by se nic nevázalo, dokud by parciální tlak nevzrostl až do určité hodnoty --- první navázání kyslíku by mělo před sebou více práce; čím pevnější vazby mezi podjednotkami budou, tím se bude celek chovat kooperativněji, stylem všechno nebo nic.
+
+◊definitions{
+    ◊term["Homotropní efekt"]{
+        Druh alosterického efektu, při kterém látka ovlivňuji afinitu molekuly k sobě samé (jako např. zde s kyslíkem, kdy kyslík usnadňuje vázání kyslíku). Rozděluje se na pozitivní a negativní (kyslík je příkladem toho pozitivního). Opakem by byl heterotropní efekt.
+    }
+}
