@@ -510,7 +510,7 @@ Někdy se může protein dostat do "pasti" (je nutné překonat stav s vyšší 
 
 ◊definitions{
     ◊term["Saturační křivka"]{
-        Na ose ◊${x} je tlak ◊chem{O2} v Thorrech, na ose ◊${y} je saturace ◊chem{O2} v procentech. ◊${p50} je parciální tlak, při kterém jsou přenašeče saturována z 50%.
+        Na ose ◊${x} je tlak ◊chem{O2} v torrech, na ose ◊${y} je saturace ◊chem{O2} v procentech. ◊${p50} je parciální tlak, při kterém jsou přenašeče saturována z 50%.
     }
 
     ◊term["Hemerythrin"]{
@@ -584,3 +584,91 @@ Pokud bychom oslabili nějaká spojení, získali bychom plošší křivku, osla
         Druh alosterického efektu, při kterém látka ovlivňuji afinitu molekuly k sobě samé (jako např. zde s kyslíkem, kdy kyslík usnadňuje vázání kyslíku). Rozděluje se na pozitivní a negativní (kyslík je příkladem toho pozitivního). Opakem by byl heterotropní efekt.
     }
 }
+
+Hemoglobin tedy umožňuje při určité koncentraci kyslík vázat a při jiné uvolňovat. Tuto jeho vlastnost je ale možné dále regulovat.
+
+◊ls[#:t "Regulace afinity"]{
+    - slouží k přizpůsobení změnám v koncentraci kyslíku v prostředí
+    - dá se vypozorovat například ze saturačních křivek v 0 m.n.m. a 4500 m.n.m.
+        - běžně je v kapilárách tlak as 25 torrů, v plicích (a v prostředí) 100: při 100 saturujeme, při 25 desaturujeme
+        - ve 4500 m.n.m.: tlak je asi 50, pracovali bychom tedy s nižší kapacitou, musíme snížit afinitu ke kyslíku
+}
+
+◊img["o2-mountain.png" #:w 300]{Koncentrace kyslíku v různých nadmořských výškách}
+
+O tyto změny se stará ◊strong{kyselina bisfosfoglycerová}.
+
+◊ls[#:t "Kyselina bisfosfoglycerová"]{
+    - odvoditelná z glykolýzy, v erytrocytech se jí dají tvořit různé koncentrace
+    - váže se na pozitivně nabité zbytky (má fosfátové skupiny a karboxyskupiny)
+    - váže se do dutiny v hemoglobinu, a váže se tam silnou vazbou, pokud je dutina dostatečně velká, aby se uplatnily všechny interakce s kyselinou –-- a to je pouze v deoxygenovaném stavu
+    - 2,3-BPG po vazbě posouvá rovnováhu oxy-deoxy k deoxy stavu
+    - skrze BPG tedy máme schopnost změnou koncentrace jedné látky ovlivnit afinitu pro kyslík
+        - podobně i změna pH vede k posunu afinity pro kyslík (opět prostřednictvím BPG) –-- pohybujeme-li se ke kyselejšímu, snižujeme afinitu ke kyslíku
+}
+
+V souvislosti s oxy a deoxy hemoglobinem můžeme psát rovnici
+
+◊$${
+    \ce{xH+ + Hb(O2)_n <=> Hb(O2)_{n-1} H_x + O2},
+}
+
+kde se ◊${x} protonů váže na hemoglobin, který váže ◊${n} kyslíků. Zleva doprava probíhá deoxygenace, zároveň se s tím váže proton nebo dva podle parametru ◊${x} –-- vazba protonů je spřažena s vazbou kyslíku a obráceně, stejně jako pro protony to platí právě pro kyselinu BPG a i pro další látky.
+
+◊ls[#:t "Látky modifikující afinitu ke kyslíku"]{
+    - BPG
+        - ta funguje těmto způsobem např. u savců, u ptáků máme jinou, všeobecně to bývají nějaké nabité sloučeniny
+    - protony (potažmo pH)
+        - v plicích bude vyšší pH, méně ◊chem{CO2}, méně uhličitanu, méně chloridových iontů => hemoglobin naloží hodně nákladu a putuje do kapilár
+        - svalová námaha vede k okyselení a poklesu pH, což sníží afinitu pro kyslík => ve svalech se vyloží ještě více kyslíku
+    - ◊chem{CO2}
+        - při dýchání vzniká v tkáních, snižuje tam afinitu hemoglobinu ke kyslíku a hemoglobin tak vyloží víc kyslíku, než kdyby tam nebyl
+    - ◊chem{Cl-}
+        - do erytrocytů se dostává v souvislosti s rozpouštěním ◊chem{CO2}
+}
+
+Celý orchestr je zorganizován tak, aby se využila maximální transportní kapacita. Efekt ovlivnění desaturace Hb pomocí pH a ◊chem{CO2} (a teploty) se jmenuje ◊strong{Bohrův efekt}.
+
+◊ls[#:t "Bohrův efekt"]{
+    - usnadňuje transport kyslíku
+    - deoxyHb je zásaditější než nasycený Hb
+        - změna konformace proteinu mění bodové pK' o několik procent
+    - způsoben tím, že se k imidazolu přiblíží záporný náboj, čímž stabilizujeme výskyt kladného náboje na něm (jeho protonovanou formu)
+        - posouváme pK' imidazolu
+        - jen přiblížením-oddálením (aspartát-imidazol, v tomto případě) měníme acidobazické vlastnosti, schopnosti vázat a uvolňovat protony v daném pH
+        - disociovatelné skupiny ovlivňují okolí
+            - v pH 6.5, což je pK' imidazolu, by ho byla protonována cca polovina, ale je-li tam přiblížený aspatát, tak je protonována větší část
+}
+
+Bohrův efekt je vlastně v principu analogický k působení bisosfoglycerové kyseliny, chloridových iontů a podobně.
+
+BPG nemění strmost křivky, pouze ji celou posouvá doprava (měníme p50). Strmost křivky se mění pouze změnou proteinu samotného, protože je závislá na míře kooperativního chování. Je sice jednoduché udělat křivku méně strmou (např. denaturací), ovšem opaku je relativně složité dosáhnout.
+
+◊subsubsection{Modely alosterie}
+
+Popisujeme v nich chování hemoglobinu jako modelu, obdobně se budou chovat i další systémy, saturace se dá nafitovat. Dnes se již používají pokročilé postupy, zde jsou uvedené dva historické.
+
+◊ls[#:t "Symetrický model"]{
+    - vychází z představy, že hemoglobin je symetrický oligomer identických protomerů
+        - každý protomer může existovat ve stavech T (tensed) a R (relaxed), které mají nízkou a vysokou afinitu ke kyslíku, respektive
+        - změna stavů protomerů se děje pouze konformační změnou, a to u všech protomerů najednou (aby zůstala zachována symetrie)
+    - vychází z konceptu zámku a klíče
+        - vazba kyslíku je možná jen do aktivního centra s danými vlastnostmi
+        - ligand je klíč, zámek je molekula (místo, kam se kyslík váže)
+    - vazbou se posouvá koncentrace směrem z T do R
+}
+
+◊img["symetric-model.jpg" #:w 500]{Symetrický model}
+
+◊ls[#:t "Sekvenční model"]{
+    - používá koncept indukovaného přizpůsobení, oligomer nezachovává symetrii
+    - vazba ligandu na jeden protmer vyvolá konformační změnu, která ovlivní sousední protomery
+        - síla kooperativních interakcí je závislá na typu spojení podjednotek
+        - na počátku jsou všechny ve stavu T
+    - afinita protomeru pro vazbu ligandu se mění s množstvím ligandu navázaného v oligomeru
+    - není to vše nebo nic
+        - vazba ligandu vede k částečné změn, tzv. ◊em{iduced fit}
+        - tento model proto více odpovídá realitě
+}
+
+◊img["sequence-model.jpg"]{Sekvenční model}
