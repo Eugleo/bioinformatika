@@ -334,7 +334,7 @@ Proteiny jsou tvořeny AK spojenými peptidickou vazbou, nebo ◊chem{S-S} vazbo
 
 Všechny tyto pojmy lze nalézt popsány v odkazech výše.
 
-◊ls[#:t "alfa-helix"]{
+◊ls[#:t "Alfa helix"]{
     - ◊chem{NH} a ◊chem{CO} skupiny, které jsou součástí peptidové kostry, nejsou volné, ale jsou vůči sobě orientovány a interagují H-můstky
         - můstky budou téměř rovnoběžné s osou helixu
         - všechny vnitřní skupiny jsou angažovány => stabilizace struktury
@@ -365,7 +365,7 @@ Podobně se dají predikovat i jiné sekundární struktury, například levoto�
 
 ◊img["motifs.jpg" #:w 300]{Strukturní motivy na proteinech}
 
-Kombinace sekundárních a supersekundárních struktur tvoří ◊strong{domény} --- útvary, které zaujmou stabilní konformaci i když jsou exprimovány odděleně od zbytku proteinu (= samostatné jednotky, co do foldingu).
+Kombinace sekundárních a supersekundárních struktur tvoří ◊strong{domény} --- útvary, které zaujmou stabilní konformaci i když jsou exprimovány odděleně od zbytku proteinu (= samostatné jednotky, co se foldu týče).
 
 ◊ls[#:t "Domény"]{
     - alfa domény
@@ -385,3 +385,108 @@ Kombinace sekundárních a supersekundárních struktur tvoří ◊strong{domén
 }
 
 Takovýchto struktur jsou řádově stovky (tj. relativně málo).
+
+◊subsection{Síly udržující stabilitu proteinů}
+
+K pro rozrušení nativní konformace proteinu dlouhého ~100 AK je třeba dodat cca ◊u{40 kJ/mol}.
+
+◊note{
+    Energie ◊u{40 kJ/mol} k rozrušení proteinu se může zdát jako málo --- energie kovalentní vazby je přeci cca ◊u{300 kJ/mol}. Struktura proteinu je ale udržována mnoha silami, a to často i protichůdnými, navzájem se oslabujícími.
+
+    Protein musí být po splnění své funkce snadno degradovatelný, aby z jeho částí mohl být syntetizován protein nový. Pokud se tak neděje, a v těle se objeví nějaká superstabilní struktura, bývá to často příčinou onemocnění (Alzheimer, prionové choroby, atd.).
+}
+
+◊definitions{
+    ◊term["Solvatace"]{
+        Obalení rozpuštěné látky molekulami rozpouštědla.
+    }
+}
+
+◊ls[#:t "Iontové elektrostatické interakce"]{
+    - jsou sice silné, ale přispívají ke stabilitě proteinů relativně málo
+    - tvorba iontového páru není provázena velkým poklesem volné energie vzhledem k solvataci
+    - velmi málo iontových párů se nachází uvnitř proteinu
+    - iontové páry na povrchu proteinu nejsou konzervovány v evoluci
+}
+
+◊ls[#:t "H-můstky"]{
+    - přispívají ke stabilizaci proteinů jako takových relativně málo (kolem ◊${2} až ◊${8} ◊u{kJ/mol}), ale jsou významné pro sekundární struktury
+    - silnější jsou můstky v hydrofobním vnitřku proteinu
+    - většina vodíkových můstků se vytváří pouze mezi blízko se nacházejícími AK, jsou tedy pouze lokální
+    - 68 % můstků v proteinech se vytváří mezi atomy peptidové kostry, zbylé můstky jsou většinou mezi atomy vzdálenými max 5 AK
+    - neangažované můstky na koncích dodají struktuře parciální náboj, který může být dále využitý (např. k reakci s R skupinami či s okolím)
+        - ve sbalené struktuře ale bývají angažované (skoro) všechny donory i akceptory
+}
+
+◊ls[#:t "S-S disulfidické můstky"]{
+    - tvoří se spojením skupin cysteinu, jsou nekovalentní
+    - nejsou rozhodující pro zaujetí nativní konformace, ale jsou důležité
+}
+
+◊ls[#:t "Interakce dipól--dipól"]{
+    - jsou sice slabé, ale přispívají ke stabilitě proteinu významně
+}
+
+◊ls[#:t "Hydrofobní interakce"]{
+    - přispívají rozhodujícím způsobem je stabilitě nativní konformace
+}
+
+Například sbalení hemoglobinu (globulární struktura) je zapříčiněno především hydrofobními interakcemi --- uvnitř sbaleného proteinu skončí AK s hydrofobními skupinami, na povrchu AK polární. Kdybychom tuto strukturu narušili nějakým činidlem (např. 8M močovina), a pak jím přestali působit, opět se sbalí do původního tvaru.
+
+◊ls[#:t "Chaotropní ionty"]{
+    - soli, které mají destabilizující vliv na hydrataci proteinu a způsobují jeho denaturaci
+    - reagují s vodou méně, než molekuly vody samotné, a proto málo interferují s H-můstky
+}
+
+◊definitions{
+    ◊term["Hofmeisterova lyotropní řada"]{
+         Řada aniontů a kationtů, seřazená podle toho, jak velká koncentrace daného iontu je potřeba k vysrážení vaječného bílku (tedy podle snižujícího se molárního povrchového napětí).
+    }
+}
+
+◊subsection{Protein folding}
+
+◊definitions{
+    ◊term["Levinthalův paradox"]{
+        Pokud bychom měli protein se 100 AK, pro každý torzní úhel uvažovali pouze 3 hodnoty a každou sekundu vyzkoušeli ◊${10^{13}} různých možností, potřebovali bychom k vyzkoušení všech prostorových konfigurací našho proteinu ◊${10^{87}} sekund (což je asi ◊u{2e69}-krát více než je předpokládáné stáří vesmíru, pozn. redaktora).
+    }
+}
+
+Jak se zdá z Levinthalova paradoxu, dělá to příroda nějak jinak.
+
+◊img["free-energy-landscape.png" #:w 500]{Několik ilustrací volné energie foldujícího se proteinu}
+
+◊ls[#:t "Protein folding teoreticky"]{
+    - obr. a) popisuje představu z Levinthalova paradoxu (musíme se po ploše náhodně pohybovat, dokud nenalezneme bod N)
+    - obr. b) popisuje starou a překonanou představu, že se proteiny foldují po cestě mezistavů
+    - obr. d) popisuje současnou představu: proteiny hledají stav energetického minima (obrázek představuje hladinu volné energie)
+}
+
+◊ls[#:t "Protein folding v praxi"]{
+    - po odstranění denaturačního činidla proteiny v řádu ms zaujmou tvar, který pak připomíná nativní konformaci
+        - nastává rychlý ◊strong{hydrofobní kolaps}
+    - pak následuje několik vteřin, kdy se to sesypává, stabilizuje, dochází ke drobným úpravám
+    - až po desítkách vteřin či minutách dostáváme finální konformaci
+    - celková struktura je podmíněná částečnými, například sekundárními, strukturami (folding probíhá hierarchicky)
+        - lokální úsek má svou autonomii, nehledě na okolí se (zpravidla, s vyjímkami) poskládá do své jedné sekundární struktury
+        - potažmo tedy lokální složení AK rozhoduje o vzniku vyšších struktur
+}
+
+Někdy se může protein dostat do "pasti" (je nutné překonat stav s vyšší energií, než se bude možné dostat ke globálnímu minimu) --- tu mu mohou pomoci překonat ◊strong{chaperony}.
+
+◊ls[#:t "Proteinové struktury"]{
+    - alfa-keratin je příkladem superhelixu
+        - helixy se skládají do dimerů, ty do protofilament a ty do mikrofibril
+            - na obrátku je ve dvojitém helixu pouze 5.1, na rozdíl od 5.4 v alfa-helixu
+            - každá 4. a 6. (tj. poslední na otáčku) AK je hydrofobní a dva helixy se tak zazipují do dimeru (hydrofovními AK k sobě)
+        - pružnost keratinu klesá s rostoucím množstvím příčných disulfidových vazeb mezi protofibrilami
+    - fibroin je příkladem beta skládaného listu, je to složka např. hedvábí nebo pavučin
+        - v β-strukturách se střídají vrstvy postranních řetězců glycinu s řetězci alaninu a serinu
+    - kolagen, složka např. chrupavek, je příkladem trojitého helixu
+        - každým třetím zbytkem jeho polypeptidu je glycin, obsahuje ale také relativně mnoho prolinu a hydroxyprolinu
+        - vytváří strukturu podobnou lanu, která je velice pevná v tahu
+        - molekuly kolagenu agregují v posunutém (střídavém) uspořádání a vytvářejí fibrily, které jsou kovalentně příčně spojeny skupinami, odvozenými od postranních řetězců histidinu a lysinu
+        - prolyl-hydroxyláza vyžaduje jako kofaktor vitamin C
+    - elastin, jak napovídá jeho název, má elastické vlastnosti a tvoří prostorovou síť vláken s nepravidelnou strukturou
+        - jeho polypeptidová vlákna jsou spojena podobným způsobem jako u kolagenu.
+}
