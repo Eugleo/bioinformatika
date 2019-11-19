@@ -30,7 +30,7 @@ Biochemie pomáhá vysvětlovat rozmanitost přírody --- všechno tvorstvo stav
         # do kádinky přidáme střívko (semipermeabiní membrána)
         # přes póry projdou jen molekuly s určitou velikostí, cut-off point je několik tisíc ◊u{Da}
             - malé molekuly (fruktóza) přes střívkou projdou
-            - stejná koncentrace uvnitř i vně střívk
+            - stejná koncentrace uvnitř i vně střívka
     }
 
     Zjistilo se, že velké molekuly, které přes membránu neprošly (tedy proteiny, pozn. profesora) jsou termolabilní. Došlo poprvé k separaci, frakcionaci, rozdělení kvasinek.
@@ -115,7 +115,7 @@ Strukturu a vlastnosti vody silně ovlivňuje tvorba vodíkových můstků.
     - ionty ◊chem{OH-} a ◊chem{H3O+} jsou vysoce mobilní (viz obrázek)
 }
 
-◊img["common-h-bonds.png" #:w 400 #:label "{H-můstky běžně nalézané v biomolekulách"]{H-můstky běžné v biomolekulách}
+◊img["common-h-bonds.png" #:w 400]{H-můstky běžné v biomolekulách}
 
 ◊ls[#:t "Srovnání vody s jinými rozpouštědly"]{
     - dielektrická konstanta zdaleka nejvyšší, i když ty molekuly jsou si jinak podobné
@@ -671,4 +671,201 @@ Popisujeme v nich chování hemoglobinu jako modelu, obdobně se budou chovat i 
         - tento model proto více odpovídá realitě
 }
 
-◊img["sequence-model.jpg"]{Sekvenční model}
+◊img["sequence-model.jpg" #:w 500]{Sekvenční model}
+
+◊title{Enzymy a enzymová kinetika}
+
+◊definitions{
+    ◊term["Enzymy"]{
+        Buněčné katalyzátory, proteiny s katalytickými schopnostmi. Katalyzátory jsou látky urychlující chemické reakce, aniž by do nich přímo vstupovaly – ovlivňují reakci, ale samy se chemicky nemění.
+
+        ◊em{Thomas R. Cech}, objevil to, čemu se dnes říká ribozymy, což jsou proteiny
+    }
+
+    ◊term["Katabolické dráhy"]{
+        Metabolické dráhy, které rozkládají složité látky na jednodušší za vzniku energie. Opakem jsou dráhy ◊strong{anabolické}.
+    }
+}
+
+◊ls[#:t "Historie"]{
+    - Jönz Jacob Berzelius
+        - jako první použil pojem enzym a vyslovil teorii, že reakce v živých organismech neprobíhají neasistovaně, že existují nějaké molekuly, které se na reakcích podílí a urychlují je
+        - byl to chemik
+    - L. Pasteur
+        - popsal, že v buňkách je něco navíc, co způsobuje např. kvašení (pozoroval kvasinky)
+        - byl to vitalista; věřil tomu, že živé organismy mají v sobě něco nehmatatelného, vis vitalis, a dokazoval to tak, že když kvasinky zabil povařením, tak už glykolýzu neprováděly
+    - Eduard Büchner
+        - vyvrátil kocept vis vitalis, zabil kvasinky jinak než povařením (rozdrtil je, vytvořil tím bezbuněčné lyzáty, a enzymy stále fungovaly)
+    - Emil Fischer
+        - pracoval na cukrech; cukry mají spoustu izomerů, které se jen mírně liší strukturou, ale přesto jen některé z nich jsou katalyzovány enzymy
+        - přišel s teorií zámku a klíče, která tvrdí, že enzym má vazebné místo, které tvarově odpovídá molekule substrátu a to tak dokonale, že většina enzymů může katalyzovat jen jeden substrát
+     - Maud Leonora Mentenová
+        - kanadská badatelka, pracovala v Německu, věnovala se enzymové kinetice
+     - James B. Sumner
+        - jako první izoloval čistý enzym, ureázu
+            - ureáza je protein, který rozkládá močovinu
+        - dokázal, že enzymy jsou proteiny
+}
+
+◊note{James B. Sumner měl jen jednu ruku, tu druhou mu v mládí ustřelili při honu. ◊em{insert joke about single-handedly solving big enzymology problems}}
+
+Enzymy urychlují reakce, jsou tedy nezbytné pro život --- například energie z cukru by bez nich nešla vydolovat, protože cukr se sám o sobě protě nerozloží a energii neuvolní.
+
+◊ls[#:t "Zásadní vlastnosti enzymů"]{
+    - pro reakce stačí mírnější podmínky
+        - oproti anorganickým katalyzátorům, které potřebují extrémní teploty, tlaky, pH
+        - většina dalších organismů žije a má teplotní optimum v normálním tlaku, neutrálním pH a teplotě 30--40◊|deg|
+    - vyšší specificita reakce
+        - enzymy se málokdy pletou, pracují jen se svým substrátem a to ještě k tomu velice rychle
+        - např. proteosyntéza umí syntetizovat dlouhý řetězec bez chyby, naproti tomu u anorganické syntézy je pouze 30--40 AK nasyntetizováno neomylně
+    - schopnost regulace
+        - anorganické katalyzátory někam nasypeme a tam dělají to, čeho jsou schopny, zatímco enzymy mohou být regulovány
+        - regulace rychlosti je velice důležitá pro spolupráci katabolických drah s anabolickými
+}
+
+◊section{Stavba enzymů}
+
+◊definitions{
+    ◊term["Koenzym"]{
+        Neproteinová část enzymu; ne všech enzymy ji však mají.
+    }
+
+    ◊term["Apoenzym"]{
+        Proteinová část enzymu.
+    }
+}
+
+◊$${\text{(holo)enzym} = \text{apoenzym} + [\text{koenzym}]}
+
+Koenzymů je celá řada.
+
+◊ls[#:t "Koenzymy: anorganické ionty"]{
+    - nabité molekuly, které se podílí na struktuře holoenzymu
+    - měďnaté ionty
+        - důležitým enzymem je ◊strong{cytochrom oxidáza}, je členem elektrontransportního řetězce v mitochondrii, který se stará o přenos elektronů a tvorba ATP
+        - cytochrom oxidáza je posledním enzymem této dráhy, kde se kyslík redukuje na vodu --- měďnaté ionty slouží jako akceptory elektronů, které jsou v rámci této dráhy přenášeny
+    - železité ionty
+        - opět cytochrom oxidáza, fungují úplně stejně jako ty měďnaté
+        - hemoglobin
+    - draslík
+        - pyruvát kináza, důležitý enzym glykolýzy
+     - hořečnaté ionty
+        - většina enzymů, které pracují s ATP, obsahují hořečnaté ionty, protože jejich náboje interagují s fosfátovými skupinami ATP
+    - zinek
+        - alkohol dehydrogenáza, důležitý enzym sloužící k syntéze nebo k odbourávání ethanolu
+        - karbonát anhydráza, enzym důležitý pro přenos oxidu uhličitého v organismu při dýchání
+}
+
+◊ls[#:t "Koenzymy: vitamíny"]{
+    - větší molekuly, hlavně ze skupiny B
+    - několikero druhů
+        - molekuly pevně vázané na povrch enzymu
+        - molekuly, které se mohou oddisociovat (fungují jako jeden ze substrátů enzymu)
+}
+
+Druhý zmíněný druh poté může sloužit k různým účelům:
+◊ls{
+    - mohou akceptovat nějakou funkční skupinu, pak se zase odpojit a přenést ji dále
+    - podílejí se na karboxylacích (přenáší karboxylovou skupinu z jedné části enzymu na jinou, slouží jako takové pohyblivé raménko)
+    - důležité jsou koenzymy flavin adenin dinukleotid (FAD), který přenáší elektrony, a nikotinamid adenin dinukleotid (NAAD), který přenáší hydridové ionty
+}
+
+◊section{Názvosloví enzymů}
+
+Jméno enzymu vždy končí na "---áza". Kromě toho má každý enzym přidělený kód Evropskou enzymovou komisí: ◊code{ECXXXX}, kde X značí číslo a EC je zkratka pro Enzyme Commision.
+
+První číslo je vždy v rozmezí 1--6, protože se jedná o rozdělení enzymu do jedné z následujících kategorií, podle toho, jaký druh reakce katalyzuje:
+◊ls{
+    # ◊strong{oxido-reduktázy}: katalyzují reakce, při kterých se přenáší redukční ekvivalenty, směr přenosu je řízen redoxním potenciálem
+        - dehydrogenázy, peroxidázy, reduktázy... (biologické oxidace často probíhají jako dehydrogenace)
+    # ◊strong{transferázy}: enzymy, které přenáší nějakou funkční skupinu z jedné molekuly na druhou
+        - typické jsou fosfo-transferázy, které přenáší fosfátovou skupinu z ATP na nějakou jinou molekulu
+            - např. v glykolýze, první glykolytický enzym přenáší fosfát na glukózu a tvoří se glukóza-6-fosfát
+    # ◊strong{hydrolázy}: za adice vody štěpí nějakou molekulu na dvě
+    # ◊strong{lyázy}: enzymy, které provádí syntézu molekuly ze dvou molekul
+    # ◊strong{izomerázy}: provádí přestavbu nějaké molekuly
+    # ◊strong{ligázy}: lepí molekuly dohromady, za současného odštěpení nějaké malé molekuly
+        - např. spojování Okazakiho fragmentů
+}
+
+◊box["Příklad 1"]{
+    Pokud máme například následující reakci:
+
+    ◊$${\ce{ATP + glukosa -> ADP + glugosa-6-fosfat}}
+
+    Jedná se o první reakci glykolýzy;  glukóza, která vstoupila do buňky, je fosforylována. Význam této reakce je dvojí:
+    ◊ls{
+        # energizace cukerné molekuly
+        # strukturní změna, která zabrání tomu, aby se glukóza dostala zase ven z buňky (dostává se tam pomocí přenašeče, který je univerzální na obě strany)
+    }
+
+    Enzym by se dal nazvat ATP:glukózo fosfotransferáza (přenáší fosfát z ATP na glukózu). Pro zjednodušení by byl také možný název ◊em{glukokináza} (kinázy jsou enzymy, které něco fosforylují). A jak bychom tento enzym očíslovali?
+
+    ◊ls{
+        - ◊code{[2]}, patří mezi transferázy, tedy do druhé enzymové třídy
+        - ◊code{[7]}, přenáší fosfát
+        - ◊code{[1]}, ...na hydroxylovou skupinu glukózy
+        - ◊code{[2]}, cílová skupina se nachází na glukóze
+    }
+
+    Jedná se tedy o protein ◊code{E.C. 2.7.1.2}. Podobný enzym, hexokináza ◊code{E.C. 2.7.1.1}, je schopen fosforylovat i jiné hexózy (proto ta jednička na konci).
+}
+
+◊box["Příklad 2"]{
+    Enzym ◊code{E.C. 1.1.1.1} je
+
+    ◊ls{
+        - oxido-reduktáza
+        - působí na ◊chem{CHOH} skupinu donoru
+        - využívá NAAD
+        - donorem ◊chem{CHOH} skupiny je ethanol
+    }
+
+    Je to tedy akoholdehydrogenáza.
+}
+
+◊section{Regulace enzymatické aktivity}
+
+Probíhá buďto změnou kvantity samotného enzymu (musí nastat aktivace proteosyntézy toho enzymu, změna exprese apod.), nebo regulací samotného enzymu --- to je mnohem rychlejší.
+
+◊ls[#:t "Regulace enzymu"]{
+    - regulace změnou dostupnosti reaktantu
+        - netýká se to přímo regulace aktivity enzymu, ale pokud nedodáme substrát, nemůže reakce běžet
+        - např. glykolýza
+    - alosterická regulace
+        - alosterické enzymy jsou takové, jejichž aktivita je regulována navázáním molekuly, jiné, než samotný substrát
+    - regulace kovalentními modifikacemi
+        - např. pomocí protein-kinázy (adenylát-cykláza aktivuje protein-kinázu A a ta zase fosforyluje něco jiného)
+        - opět dochází ke změnám konformace
+    - regulace prostřednictvím regulačních proteinů
+    - regulace proteolýzou, ovlivněním konformace, změnou lokalizace
+    - regulace zastoupením izoenzymů
+        - izoenzymy jsou různé proteiny se stejnou funkcí, které katalyzují stejnou reakci, i když nejsou chemicky totožné
+}
+
+◊ls[#:t "Alosterická regulace"]{
+    - nejčastější typ enzymové regulace
+    - existují alosterické aktivátory i inhibitory
+    - např. enzym na počátku metabolické dráhy může být alostericky inhibován produktem té stejné dráhy, naopak aktivátorem může být ATP
+        - časté řízení metabolické dráhy
+        - produkt váže se na alosterické místo a tím snižuje aktivitu enzymu (negativní zpětná vazba)
+        - je-li ho v buňce hodně (a málo produktu dráhy), tak se ATP váže na jiné alosterické místo a tvorbu produktu zrychluje
+    - funguje na základě změny konformace enzymu, který má poté k substrátu jinou afinitu
+}
+
+◊ls[#:t "Regulace proteolýzou"]{
+    - některé enzymy se syntetizují v buňce v ER jako tzv. preenzymy: tvoří je jedno vlákno, jeden různě poskládaný a spojený řetězec pomocí disulfidických můstků
+    - tyto enzymy jsou zpočátku v inaktivním stavu, aby neškodily a neodbourávaly proteiny, které nemají
+    - teprve při po procestování ER a GA jsou z nich některé úseky vyštípnuty a tím se z nich vytvoří funkční enzym
+}
+
+Příkladem regulace zastoupením izoenzymů je laktát-dehydrogenáza.
+
+◊ls{
+    - laktát-dehydrogenáza katalyzuje přeměnu pyruvátu na kyselinu mléčnou
+    - běžně se to děje v lidských svalech za nedostatku kyslíku, za intenzivní námahy (=> zásobení tkáně kyslíkem není dostatečné na to, aby došlo k aerobnímu odbourávání)
+    - existují dva izoenzymy laktát-dehydrogenázy, M (muscle) a H (heart)
+        - jsou ze čtyř podjednotek a existuje řada forem enzymu, které se liší zastoupením M a H podjednotek
+        - srdce poměrně často využívá kyselinu mléčnou jako zdroj energie, na rozdíl od kosterních svalů
+        - v srdci je stálé a dokonalé zásobení kyslíkem a tam ta laktát-dehydrogenáza funguje opačným směrem: přeměňuje laktát na pyruvát
+}
