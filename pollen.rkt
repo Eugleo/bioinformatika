@@ -358,7 +358,12 @@
 (define (chem str)
   ($ (string-append "\\ce{" str "}")))
 
-(define (img #:root [root "resources/images/"] #:label [label ""] #:w [w #f] #:h [h #f] link . alt)
+(define (img #:root [root "resources/images/"]
+             #:label [label ""]
+             #:w [w #f]
+             #:h [h #f]
+             link
+             . alt)
   (define loc (string-append root link))
   (case (current-poly-target)
     [(md) `("![" ,@alt "]" "(" ,loc ")")]
@@ -370,12 +375,19 @@
                 "    \\label{" ,label "}\n"
                 "\\end{figure}\n"))]
     [else
-      `(img [[src ,loc]
-             [alt ,@alt]
-             [style
-              ,(format "width: ~a; height: ~a;"
-                       (if w (format "~apx" w) "100%")
-                       (if h (format "~apx" h) "auto"))]])]))
+      (define width (if w (format "~apx" w) "100%"))
+      (define height (if h (format "~apx" h) "auto"))
+      (define image
+        `(img [[src ,loc]
+              [alt ,@alt]
+              [style,(format "width: ~a; height: ~a;" width height)]]))
+      (cond
+        [(empty? alt) image]
+        [else
+          `(div [[class "figure-wrapper"]]
+                ,image
+                (div [[class "figure-caption"]]
+                     ,@alt))])]))
 
 (define (highlight lang . elements)
   (case (current-poly-target)
