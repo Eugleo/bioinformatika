@@ -204,6 +204,12 @@ dd {
   margin-bottom: 0.8rem;
 }
 
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
