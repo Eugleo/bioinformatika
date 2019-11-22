@@ -281,6 +281,33 @@ img {
   ◊(margin-bottom 1)
 }
 
+.figure-wrapper img {
+  ◊(margin-bottom 0.3)
+  display: block;
+  max-width: 100%;
+  margin: 15px;
+}
+
+.figure-caption {
+  ◊(font-size 0.8);
+  font-family: "IBM Plex Sans";
+  text-align: center;
+  background: #f6f6f6;
+}
+
+.figure-wrapper {
+  ◊(margin-bottom 1)
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 1.6rem;
+  align-items: stretch;
+  background: #ffffff;
+  border: 1px solid #d2d2d2;
+  flex-direction: column;
+  align-content: center;
+}
+
 /* Boxes
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 

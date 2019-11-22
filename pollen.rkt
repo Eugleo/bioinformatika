@@ -380,12 +380,15 @@
       (define image
         `(img [[src ,loc]
               [alt ,@alt]
-              [style,(format "width: ~a; height: ~a;" width height)]]))
+              [style ,(format "max-width: ~a; max-height: ~a;" width height)]]))
+      (define image-no-size
+        `(img [[src ,loc] [alt ,@alt]]))
       (cond
         [(empty? alt) image]
         [else
-          `(div [[class "figure-wrapper"]]
-                ,image
+          `(div [[class "figure-wrapper"]
+                 [style ,(format "max-width: ~a; max-height: ~a;" width height)]]
+                ,image-no-size
                 (div [[class "figure-caption"]]
                      ,@alt))])]))
 
@@ -410,9 +413,19 @@
     [(tex pdf) "\\(^{\\circ}\\)"]
     [else '(strong "°")]))
 (define pi ($ "\\pi"))
+
 (define angs "Å")
-(define alpha ($ "\\alpha"))
-(define beta ($ "\\beta"))
+(define alpha "α")
+(define beta "β")
+(define gamma "γ")
+(define delta "δ")
+(define Delta "Δ")
+(define epsilon "ε")
+(define lambda "λ")
+(define pi "π")
+(define sigma "σ")
+(define omega "ω")
+(define Omega "Ω")
 
 #| Boxes |#
 
