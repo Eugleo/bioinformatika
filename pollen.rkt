@@ -25,7 +25,7 @@
 (provide slide lecture)
 
 (define (latexify id content)
-  (apply string-append `("\\" ,id "{" ,@(map (lambda (x) (format "~a" x)) content) "}")))
+  (apply string-append `("\\" ,id "{" ,@(map ((curry format) "~a") content) "}")))
 
 (define (lecture str)
   (case (current-poly-target)
@@ -187,8 +187,9 @@
     [else (format "~a\n" listed-items)]))
 
 (define (make-list-tex ord items)
+  (define (helper s) (apply string-append `("    \\item " ,@s "\n")))
   (apply string-append `(,(if ord "\\begin{myEnumerate}[nosep]\n" "\\begin{myItemize}[nosep]\n")
-    ,@(map (lambda (s) (apply string-append `("    \\item " ,@s "\n"))) items)
+    ,@(map helper items)
     ,(if ord "\\end{myEnumerate}\n" "\\end{myItemize}\n"))))
 
 (define (elements-recurse f xs)
@@ -238,7 +239,7 @@
     [else listed-items]))
 
 (define (make-list ord items)
-  (cons (if ord 'ol 'ul) (map (lambda (s) (cons 'li s)) items)))
+  (cons (if ord 'ol 'ul) (map ((curry cons) 'li) items)))
 
 (define (bullet-ord? str)
   (regexp-match? #rx"\\s*# " str))
@@ -406,16 +407,20 @@
 
 #| Common shortcuts |#
 
-(provide deg pi angs alpha beta)
+(provide deg alpha beta gamma delta Delta epsilon lambda sigma pi omega Omega angs)
 
 (define deg
   (case (current-poly-target)
     [(tex pdf) "\\(^{\\circ}\\)"]
     [else '(strong "°")]))
-(define pi ($ "\\pi"))
+
+(define (def-symbol unicode latex)
+  (case (current-poly-target)
+    [(tex pdf) `("\\(" ,latex "\\)")]
+    [else unicode]))
 
 (define angs "Å")
-(define alpha "α")
+(define alpha "α" )
 (define beta "β")
 (define gamma "γ")
 (define delta "δ")
@@ -581,7 +586,8 @@
     #:txexpr-elements-proc decode-paras))
 
 (define (decode-paras elements)
-  (decode-paragraphs elements #:linebreak-proc (lambda (x) (decode-linebreaks x " "))))
+  (define (helper x) (decode-linebreaks x " "))
+  (decode-paragraphs elements #:linebreak-proc helper))
 
 (define HDR-LVL (make-hash '((h1 . "# ") (h2 . "    - ") (h3 . "        - ") (h4 . "            - ") (h5 . "                - "))))
 (define (heading->toc-entry heading)

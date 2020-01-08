@@ -68,6 +68,34 @@ Biochemie pomáhá vysvětlovat rozmanitost přírody --- všechno tvorstvo stav
 
 ◊title{Biomolekuly}
 
+◊box["Štěpení C-H vazeb"]{
+    ◊ls{
+        - ◊strong{homolytické štěpení}
+            - vede ke vzniku radikálů, každý z účastníků vazby získává jeden elektron z vazebného páru
+        - ◊strong{heterolytické štěpení}
+            - vede ke vzniku iontů
+            - heterolytickým štěpením mohou vznikat významné nukleofilní skupiny (hydroxy, amino, imidazolová, atd.) i elektrofilní skupiny (protony, ionty kovů, atd.)
+    }
+
+    V biologických systémech nejčastěji vzniká záporně nabitý ◊chem{C} (s oběma elektrony z páru) a proton ◊chem{H+}. Pokud je k dispozici koenzym ◊chem{NAD+} nebo ◊chem{NADP+}, může vzniknout kladně nabitý ◊chem{C+} a ◊chem{H-}.
+
+    ◊img["homolytic-cleavage.png" #:w 350]{Homolytické a heterolytické štěpení}
+}
+
+◊box["Nukleofily a elektrofily"]{
+    ◊definitions{
+        ◊term["Nukleofil"]{
+            Molekula, které přebývají elektrony, chce se jich zbavit.
+        }
+
+        ◊term["Elektrofil"]{
+            Molekula, kteréchybí elektrony, chtěla by nějaké dostat. Často jí jsou předány nukleofilem.
+        }
+    }
+
+    ◊img["nucleophiles.png" #:w 350]{Příklady nukleofilů a elektrofilů}
+}
+
 ◊section{Voda}
 
 ◊ls{
@@ -868,4 +896,480 @@ Příkladem regulace zastoupením izoenzymů je laktát-dehydrogenáza.
         - jsou ze čtyř podjednotek a existuje řada forem enzymu, které se liší zastoupením M a H podjednotek
         - srdce poměrně často využívá kyselinu mléčnou jako zdroj energie, na rozdíl od kosterních svalů
         - v srdci je stálé a dokonalé zásobení kyslíkem a tam ta laktát-dehydrogenáza funguje opačným směrem: přeměňuje laktát na pyruvát
+}
+
+◊section{Jak enzymy pracují}
+
+Budeme se pro zjednodušení bavit o ◊em{monosubstrátových} reakcích, ačkoli převážná většina reakcí v těle je disubstrátových.
+
+◊definitions{
+    ◊term["Aktivační energie"]{
+        Energie, kterou musí molekula dostat, aby překonala energetickou bariéru a uvolnila energii (zreagovala).
+    }
+}
+
+◊img["enzyme-curve.png" #:w 400]{Průběh Gibbsovy energie při reakci, černě bez katalyzátoru, modře s katalyzátorem}
+
+◊ls[#:t "Funkce enzymu"]{
+    - aktivní místo a substrát vytvoří komplex enzym-substrát
+        - při této vazbě substrátu na aktivní místo dojde k řadě interakcí, při kterých se uvolní energie, a ta pak umožní průběh reakce
+    - enzymy pomáhají překonat peak (transition state) s vysokou Gibbsovou energií
+        - reálný rozdíl je mnohonásobně větší, než jde z obrázku poznat
+        - pravděpodobnost katalyzované reakce je mnohonásobně vyšší
+}
+
+O tom, jak konkrétně enzym snižuje potřebnou energii se zmiňuje několik různých teorií.
+
+◊ls[#:t "Teorie zámku a klíče"]{
+    - substrát do enzymu "zapadne", jak fyzicky (tvarem), tak chemicky
+    - mezi substrátem a enzymem vznikne množství nekovalentních interakcí, jako např. H-můstky, elektrostatické interakce, nepolární interakce
+    - kdyby to tak ale bylo ve skutečnosti, molekula prostě do enzymu zapadne a v klidu tam zůstane --- k žádnému snižování energie by nedošlo
+}
+
+◊ls[#:t "Teorie indukovaného přizpůsobení."]{
+    - vazebné místo odpovídá klíči jen přibližně a teprve při přichycení se začínají tvořit další vazby
+    - vznikne napětí a dojde ke změnám konformace substrátu i enzymu
+        - u toho se uvolňuje vazbená energie, takže reakce může probíhat snadněji
+    - vysvětlení na modelu kovové tyčky, viz obrázek
+    - tato teorie je experimetálně ověřena
+}
+
+◊img["catalytic-reaction.png"]{Srovnání teorií funkce katalýzy a jejich energetických křivek}
+
+◊section{Enzymová kinetika}
+
+Základní rovnice je rovnice Michaelise a Mentenové. Ti vycházeli z poznatků Victora Henryho.
+
+◊ls[#:t "Základní rovnice enzymové kinetiky"]{
+    - vychází se z toho, že molekuly substrátu a enzymu vytvoří komplex, vznikne produkt a enzym se regeneruje --- tyto reakce jsou vratné a jsou charakterizovány rychlostními konstantami
+        - ◊${k_1} vznik komplexu enzym-substrát
+        - ◊${k_{-1}} rozpad komplexu
+        - ◊${k_2} vznik produktů a regenerovaného enzymu
+}
+
+Nechť sledujeme rovnici
+
+◊$${\ce{E + S <=>[k_1, k_{-1}] ES ->[k_2] P + E},}
+
+poté základní rovnice M-M rovnice vypadá následovně
+
+◊$${v_0 = \frac{V_{max}[S]}{K_M + [S]},}
+
+kde ◊${v_0} je počáteční rychlost reakce (v průběhu reakce se rychlost průběhu zpomaluje), ◊${V_{max}} je maximální rychlost reakce (ovlivněná koncentrací enzymu, která určuje maximální počet vazebných míst), ◊${[S]} je koncentrace substrátu a ◊${K_M} je ◊strong{Michaelisova konstanta}.
+
+◊img["reaction-speed.png" #:w 350]{Závislost počáteční rychlosti na počáteční koncentraci substrátu}
+
+Jak jde vidět z obrázku, ◊${K_M} je taková koncentrace substrátu, při které je počáteční rychlost rovna polovině maximální rychlosti. Enzymy se hodnotou ◊${K_M} silně odlišují, enzymy s nižší hodnotou reagují se substrátem mnohem ochotněji.
+
+Graf můžeme linearizovat (vznikne ◊em{dvojitě reciproční graf}), aby bylo jednodušší vyčíst z něj hodnoty ◊${K_M} a ◊${V_{max}}.
+
+◊img["double-reciprocal-plot.png" #:w 350]{Dvojitě reciproční (nebo také Lineweaver-Burk) graf}
+
+Někdy se uvádí také ◊strong{katalytická konstanta} ◊${k_{cat}},
+
+◊$${k_{cat} = \frac{V_{max}}{[E]_T},}
+
+kde ◊${[E]_T} značí celkovou koncentraci enzymu. Vyjadřuje, kolik molekul substrátu je enzym za vysoké koncentrace za jednotku času schopen přeměnit.
+
+Protože koncentrace substranu in vivo je mnohem nižší než aby mohlo být dosaženo maximální rychlosti, zavádí se ještě ◊strong{konstanta specificity}, která se počítá jako poměr ◊${k_cat} a ◊${K_M}.
+
+◊img["k-m-k-cat.png"]{Michaelisova konstanta, katalytická konstanta a konstanta specificity pro vybrané enzymy}
+
+◊ls[#:t "Kataláza"]{
+    - odbourává v peroxisomech peroxid vodíku, mění jej na vodu a kyslík
+    - má sice vysokou katalytickou konstantu, avšak také ◊${K_M} (není jen tak ochotna začít pracovat)
+}
+
+◊ls[#:t "Acetylcholinesteráza"]{
+    - odbourává nervový přenašeč acetylcholin na neurosvalové ploténce
+    - vychází dobře z tabulky výše, dosáhla vlastně enzymové dokonalosti (o moc lépe už to nejde)
+}
+
+◊ls[#:t "Hexokináza"]{
+    - reaguje s hexózami
+    - M.konstanta pro fruktózu je třicetkrát vyšší, než pro glukózu
+        - když někde bude stejně glukózy a fruktózy, tak bude mnohem raději reagovat s glukózou
+}
+
+◊section{Enzymová inhibice}
+
+Často probíhá skrze farmaka.
+
+◊img["inhibition.png" #:w 400]{Druhy inhibice enzymů}
+
+◊img["inhibition-curves.png"]{Dvojitě převrácené grafy při různých inhibicích}
+
+◊subsection{Kompetitivní inhibice}
+
+◊ls{
+    - o vazebné místo soutěží substrát a inhibitor
+    - inhibitor není metabolizovatelný a tak když se tam naváže, neděje se už nic
+    - typickým příkladem je inhibice sukcinát-dehydrogenázy malonátem
+        - sukcinát-dehydrogenáza je enzym v Krebsově cyklu
+    - dalším příkladem je léčba metanolové otravy
+        - zvyšuje se koncentrace ethanolu jako správného substrátu, ze kterého vzniká neškodný acetaldehyd, oproti metanolu jako špatného substrátu, ze kterého vzniká formaldehyd
+    - nemění se ◊${V_{max}}, ale mění se ◊${K_M} (viz FIGURE 1)
+}
+
+◊img["succinate.png" #:w 200]{Sukcinát a malonát}
+
+◊subsection{Akompetitivní inhibice}
+
+◊ls{
+    - vazba inhibitoru na enzym je podmíněna vazbou substrátu
+    - po navázání substrátu se nějak změní struktura enzymu a vznikne nové vazebné místo, na které se naváže inhibitor
+        - způsobeno změnou konformace
+    - mění se jak ◊${V_{max}}, tak ◊${K_M} (viz FIGURE 2)
+}
+
+◊subsection{Smíšená inhibice}
+
+◊ls{
+    - může se stát úplně všechno, inhibitor se naváže před substrátem, po substrátu
+    - mění se obě hodnoty, ale vždy se jedno zvyšuje a druhé snižuje (viz FIGURE 3)
+}
+
+◊subsection{Ireverzibilní inhibice}
+
+Tři druhy zmíněné výše se daly "přebít" zvýšením koncentrace substrátu. Následující inhibice jsou však ◊strong{nevratné}.
+
+◊ls[#:t "Kyselina acetylsalicilová (aspirin)"]{
+    - protizánětlivá látka, proti horečnatým stavům
+    - funguje na úrovni syntetické dráhy tak, že modifikuje ◊chem{OH} zbytek enzymu ◊chem{COX} a ten pak už nemůže tvořit záněty a horečky
+    - horečka by měla sloužit jako obranný mechanismus proti infekci a je otázka, zda je dobré se ji snažit srazit
+}
+
+◊ls[#:t "Hnojník inkoustový"]{
+    - nesmí se po něm požívat alkohol
+    - obsahuje ireverzibilní inhibitor alkohol-dehydrogenázy (je v něm látka, která se jinak používá k léčbě alkoholismu), dráhu zablokuje u přeměny acetaldehydu na kyselinu octovou
+    - acetaldehyd se pak hromadí v těle
+}
+
+◊section{Vliv pH na enzymy a bisubstrátové reakce}
+
+◊ls{
+    - enzymy se obecně vyznačují tím, že fungují v mírných podmínkách (pH 7.4), ale není to 100 % pravda
+    - např. pepsin (a jiné žaludeční enzymy) má optimum kolem pH 2
+    - známe i takové, které fungují nezávisle na pH (papain)
+    - extrémy jsou však i v buňce, např. enzymy v lysosomech jsou aktivní až v pH 5 (jinak by rozložily ER i GA)
+}
+
+◊img["enzymes+ph.png" #:w 400]{Enzymatická aktivita při různých hodnotách pH}
+
+Bisubstrátové reakce jsou v těle vůbec nejčastější.
+
+◊img["bisubstrate-reaction.png" #:w 450]{Druhy bisubstrátových enzymatických reakcí: následné (a) a ping-pongové (b)}
+
+◊ls[#:t "Následné reakce"]{
+    - reakce, které zahrnují tvorbu ternárního komplexu
+    - substráty se na enzym vážou buď v náhodném pořadí, nebo v přesně uspořádaném pořadí
+    - teprve po navázání jednoho substrátu se vytvoří vazebné místo pro druhý
+}
+
+◊ls[#:t "Ping-pongové reakce"]{
+    - naváže se první substrát a vznikne první produkt, v průběhu reakce dojde ke změně konformace enzymu tak, že je schopen navázat druhý substrát, vznikne druhý komplex a následně druhý produkt
+    - a tak dokola
+}
+
+◊section{Makroergní molekuly}
+
+◊box["Makroergní molekuly"]{
+    ◊ls{
+        - nejznámější jsou ATP a spol., ale nejsou jediné
+        - obecně jejich hydrolýzou vznikne více energie než ◊u{30 kJ/mol} (případně ◊u{25 kJ/mol})
+        - někdy je to sporné
+            - např. glukóza se považuje za energetickou molekulu, přestože se její hydrolýzou tolik energie neuvolní
+            - musí se v mnoha enzymových krocích pracovat, aby se z ní ta energie dostala
+    }
+
+    ◊img["atp.png" #:w 300]{Změna volné energie makroergní molekuly při glykolýze, potenciál přenosu fosfátové skupiny}
+
+    Na obrázku jsou seřazeny molekuly od té s nejvyšší energií po tu s nejnižší. Nejvyšší má pyruvát, ◊u{60 kJ/mol}, zatímco např. při orthofosfátovém štěpení (ATP -> ADP) se uvolní kolem ◊u{30 kJ/mol}.
+
+    ◊ls[#:t "Skupiny makroergních molekul"]{
+        - ◊strong{enolfosfáty}
+            - zde je i úplně energeticky nejbohatší molekula, fosfoenolpyruvát (objeví se při glykolýze)
+        - ◊strong{thioestery}:
+            - např. difosfoglycerát (také se objeví při glykolýze)
+            - mohou sloužit jako koenzymy
+        - ◊strong{acylfosfáty}: fosfoderiváty organických sloučenin
+            - např. 1,3-bisfosfoglycerát (opět z glykolýzy)
+        - ◊strong{fosfageny}: zásobní látky
+            - např. fosfokreatin (◊u{43 kJ/mol}), u člověka je ve svalech jako nejrychlejší zásobárna energie
+                - může vstupovat do reakce kreatin + ATP, vzniká fosfokreatin a ADP, to se děje, je-li fosfát v nadbytku; jinak se reakce otočí
+        ◊strong{sloučeniny s pyrofosfátovou vazbou}: všechny nukleosid-triosfáty
+            - ATP, GTP, UTP, CTP atd.
+            - účastní se tvorby nukleotidů
+            - mohou se štěpit různými způsoby, v buňce však probíhá pouze hydrolýza ATP na ADP a fosfát
+            - pyrofosfátové štěpení je na AMP a pyrofosfát, tam je větší zisk energie
+    }
+
+    ◊ls[#:t "Acetyl koenzym A"]{
+        - univerzální přenašeč acylů
+        - vazba mezi ním a merkaptoskupinou, kterou má na konci, je také makroergní
+    }
+
+    ◊todo{Vylepšit kvalitu následujících obrázků (nejspíše přepsat do tabulky).}
+
+    ◊img["macroergic-1.png"]{Makroergní molekuly (1)}
+
+    ◊img["macroergic-2.png"]{Makroergní molekuly (2)}
+
+    ◊subsection{ATP}
+
+    ◊ls{
+        - velice stabilní, i když má tolik energie, protože má vysokou aktivační energii hydrolýzy
+        - struktura
+            - adenin, báze
+            - cukr, pentóza (ribóza)
+            - trifosfát, tři molekuly fosfátu
+            - samotné bázi se říká ◊em{adenin} a s cukrem je to ◊em{adenozin}
+        - člověk vyrobí ◊u{64476 g} ATP za den (váží-li ◊u{75 kg})
+    }
+
+    ◊ls[#:t "Původ energie"]{
+         - za fyziologického pH se oddělí vodíky od fosfátů, původní ◊chem{OH} skupiny nesou záporné náboje a vzniká velké odpuzování skupin --- v tom pnutí tkví ta makroergnost
+        - není to vlastně v samotné vazbě, ale v uvolnění molekuly při štěpení.
+    }
+
+    ◊ls[#:t "Hydrolýza ATP"]{
+        # orthofosfátové štěpení, to je to normální (na ADP a fosfát), odštěpí se ◊|gamma| fosfát
+        # pyrofosfátové štěpení, oddělí se pyrofosfát (neboli také difosfát), vznikne AMP a PP (pyrofosfát)
+            - při tomto štěpení se uvolní více energie, pro některé reakce v buňce nestačí těch ◊u{30.5 kJ/mol} --- u této reakce se totiž následně hned pyrofosfatázou štěpí PP na P + P, u čehož se uvolní další energie navíc
+    }
+
+    ◊img["atp-mediator.png" #:w 400]{ATP jako mediátor energie}
+
+    ◊ls[#:t "Předávání energie"]{
+        - ATP umí přebírat energii od jiných makroergních sloučenin a dále ji předávat jiným, běžným molekulám (viz obrázek výše)
+        - samotné předávání probíhá ve dvou krocích (viz obrázek níže)
+            # vzniká fosforylovaný meziprodukt, který je vázaný na enzym
+            # dojde k navázání (zde) aminoskupiny a uvolnění fosfátu
+    }
+
+    ◊img["atp-two-step.png" #:w 400]{Předání energie ve dvou krocích}
+
+    ◊ls[#:t "ATP na svícení"]{
+        - luciferin je aktivován adenylací, využije se ATP
+        - enzym luciferáza
+    }
+
+    ◊img["luciferin.png" #:w 400]{Důležité části bioluminačního cyklu světlušky}
+}
+
+◊section{Metabolismus a enzymologie}
+
+Živé organismy jsou z termodynamického hlediska otevřené systémy v ustáleném stavu.
+
+◊definitions{
+    ◊term["Ustálený stav"]{
+        Ustálený stav je flexibilním stavem s maximální možnou termodynamickou účinností. Je charakteristickým stavem pro živé systémy.
+    }
+}
+
+V rámci metabolismu si ve větším detailu na několika příkladech popíšeme, k čemu na struktuře enzymu dochází. Všechny reakce jdou popsat ◊strong{reakční trajektorií}, kde se na ◊${x} vynáší průběh reakce a na ◊${y} relativní hodnota volné energie obou reaktantů (souhrn entropie a entalpie).
+
+◊ls[#:t "Vlastnosti enzymů (oproti katalyzátorům obecně)"]{
+    - přinášejí schopnost katalyzovat reakce za (pro organismus) běžných podmínek
+    - jsou specifické (např. konkrétní enzym reagovat jen s jediným cukrem)
+        - s několika cukry může běžet několik reakcí katalyzováných různými enzymy, které mohou být nezávisle na sobě regulovány
+        - veliký počet reakcí probíhá v jediném kompartmentu či v několika málo kompartmentech (např. v ER nebo v mitochondrii); současně je tam ohromě moc regulovaných reakcí, ale ty se díky specifitě vzájemně neovlivňují
+        - dává vzniknout danému konkrétnímu izomeru
+    - jsou regulovatelné tím, že měníme dostupnost substrátu a reaktantů
+        - když se koncentrace substrátu sníží pod určitou minimální hranici, enzym už ho neuvidí, s katalýzou se přestane
+    - jsou regulovatelné i "seshora" buňkou, která může dle potřeby měnit svou expresi
+}
+
+◊subsection{Princip katalýzy}
+
+Běžné mechanismy katalýzy, avšak kombinované na jedné molekule: vedou k vysoce specifickým reakcím s vysokými výtěžky a s vysokou účinností. Je minimalizován vznik nežádoucích vedlejších produktů.
+
+◊subsubsection{Acidobazická katalýza}
+
+◊ls{
+    - aktivnímu centru nabídneme kyselinu nebo zásadu
+    - přenos protonu od Brønstedovy kyseliny nebo na Brønstedovu zásadu snižuje volnou energii přechodového komplexu
+    - typicky je součástí: hydrolýzy esterů, peptidů, reakcí fosfátových skupin, tautomerizací (keto-enol)
+    - např. hydrolýza RNA v rámci reakce ribonukleasy A
+        - imidazolová skupina na histidinu 12 bude odjímat proton, což nakonec povede ke štěpení vazby; později se bude chovat naopak jako kyselina a odcházející skupině proton poskytne
+}
+
+◊img["acid-base-catalysis.png" #:w 400]{Acidobazická katalýza, specifická (vlevo) a obecná (vpravo)}
+
+◊subsubsection{Kovalentní katalýza}
+
+◊ls{
+    - přechodně se tvoří vazba mezi katalyzátorem a substrátem
+        # nukleofilní reakce mezi katalyzátorem a substrátem za tvorby kovalentní vazby
+        # posun elektronů z reakčního centra (na substrátu) směrem k elektrofilnímu centru katalyzátoru --- tato změna usnadní změnu uspořádání reakčního centra
+        # eliminace katalyzátoru (obrácení první reakce)
+    - vznik kovalentní vazby umožní změnu uspořádání a průběh reakce, katalyzátor pak bude zase oddělen
+    - rychlostně limitující fází katalyzované reakce je buď fáze nukleofilní, nebo elektrofilní (dle toho je pak katalytický efekt souhrnně označován)
+        - dobrý kovalentní katalyzátor: vysoce nukleofilní a zároveň snadno eliminovatelný
+}
+
+Např. z reakce
+
+◊$${\ce{AB ->[H2O] A + B},}
+
+se po katalýze stane reakce
+
+◊$${\ce{AB + X: -> AX + B ->[H2O] A + X: + B}.}
+
+◊ls[#:t "Příklady"]{
+    - aminoskupina Lys, thiolová Cys, karboxylová Asp, hydroxylová Ser, imidazolová His
+    - koenzymy thiaminpyrofosfát a pyridoxalofosfát
+}
+
+◊subsubsection{Katalýza kovovými ionty}
+
+◊definitons{
+    ◊term["Metaloenzymy"]{
+         Mají pevně vázané kovy (Fe, Cu, Zn, Mn, Co), využívají je pro vazbu a orientaci substrátu, pro oxido-redukční reakce. Polarizují substrát.
+    }
+
+    ◊term["Enzymy aktivované kovovými ionty"]{
+        Volně váží kovové ionty (především ionty kovů alkalických zemin: Na, K, Mg, Ca. ) z roztoku, vyžadují je pro svoji aktivitu.
+    }
+}
+
+◊ls[#:t "Participace kovových iontů"]{
+    # vazbou/orientací substrátů
+    # zprostředkováním oxido-redukčních reakcí
+    # elektrostatickou stabilizací nebo stíněním negativních nábojů
+}
+
+◊ls[#:t "Anhydráza kyseliny uhličité"]{
+    - katalyzuje vznik hydrogenuhličitanu z oxidu uhličitého (jinak by se ◊chem{CO2} hromadil v tkáních)
+    - proces
+        # zinek je koordinován imidazolovými skupinami v aktivním centru
+            - stabilizuje a polarizuje substrát.
+        # molekuly vody tvoří network elektrostatických interakcí
+        # další imidazolová skupina (z His) se přiklání k molekule vody a tvoří se řetězec
+        # molekula vody je polarizována
+        # imidazolová skupina působí nukleofilně
+            - polarizace molekuly vody umožní nukleofilní reakci ve směru substrátu
+}
+
+◊subsubsection{Elektrostatická katalýza}
+
+◊ls{
+    - eliminace vody z aktivního centra vede ke snížení dielektrické konstanty a k zesílení elektrostatických interakcí
+    - uspořádání nábojů v aktivním centru konstanty stabilizuje přechodové stavy reakcí
+    - distribuce nábojů kolem aktivního centra přivádí substrát do centra rychleji než by tomu bylo prostou difuzí
+}
+
+Například ◊em{hexokinázová reakce}, ve které figuruje i hořečnatý iont.
+
+◊subsubsection{Katalýza proximitním a orientačním efektem}
+
+◊ls{
+    - stabilizace relativní orientace skupin vůči sobě a omezení jejich pohybu
+    - opět např. u hexokinázové reakce
+        - hydroxylová skupina glukózy atakuje elektrondeficientní na gama fosfátu ATP
+        - skupina musí přistupovat ke druhé molekule reaktantu (◊|gamma|-fosfátu) tak, že je orientována ve směru osy vazby
+}
+
+◊img["hexokinase.png" #:w 300]{Katalýza části hexokinázové reakce}
+
+◊subsubsection{Katalýza preferenční vazbou přechodového stavu}
+
+◊ls{
+    - nejvýznamnější
+    - enzym váže přechodový stav s relativně vyšší afinitou než substrát nebo produkt
+    - prefenční vazba přechodového stavu zvyšuje jeho koncentraci, což se odrazí ve zvýšení rychlosti reakce
+        - snižuje peak ES komplexu, který se může rozpadnout na dvě strany: ES a nebo E + P (z toho se poté hůř vrací, viz obrázek)
+}
+
+◊img["intermediate-state.png" #:w 300]{Katalýza preferenční vazbou přechodového stavu: nekatalyzovaná reakce (červeně) a katalyzovaná reakce (modře)}
+
+◊subsection{Chymotrypsin}
+
+◊img["chymotrypsin-mechanism.png" #:w 200]{Jak probíhá proteolýza}
+
+◊ls[#:t "Chymotrypsin"]{
+    - proteináza, která je aktivní jako enzym zodpovědný za štěpení živin v trávicím traktu
+    - obecný mechanismus proteolýzy je ale všudypřítomný a nepostradatelný pro život
+        - procesů závislých na proteolýze je nespočet (signální, ontogenetické, atd.)
+    - dochází ke štěpení peptidové vazby, peptidová vazba je substituovaná vazba mezi dvěma zbytky AK
+}
+
+◊ls[#:t "Specificita serinových proteáz"]{
+    - budou si vybírat peptidové vazby jen v sousedství určitých R skupin
+    - např. pro chymotrypsin musí na ◊${R_{n-1}} být nějaký velký aromatický zbytek a na ◊${R_n} nesmí být prolin
+    - pro trypsin na ◊${R_{n-1}} musí být arginin nebo lysin
+        - požadavek na arginin je sice dosti řídké síto, ale to přesně chceme (štěpit peptidy na mnoha místech)
+        - větší specificita někde jinde v buňce by byla např. zařízena požadavky na ◊${R_{n-3}} a ◊${R_{n-2}}
+}
+
+◊subsubsection{Mechanismus serinové protolytické reakce}
+
+◊img["chymotrypsin-reaction.png" #:w 350]{Protolytická reakce}
+
+◊ls[#:t "Obecný popis"]{
+    - přenos acylové skupiny, který bude zahrnovat tvorbu přechodového stavu (intermediátu)
+    - intermediát bude ve tvaru čtyřstěnu, uhlík bude uprostřed a substituenty ve vrcholech
+        - přechodový stav bude charakterizován oxy-aniontem
+        - nabízí se pole pro elektrostatickou katalýzu, výskyt této molekuly budeme moci stabilizovat nabídnutím kladných částic do okolí
+    - přenos bude ukončen vpravo, kdy dojde k uvolnění substituentu, tedy k rozštěpení peptidové vazby a uvolnění nového konce proteinu
+}
+
+◊img["chymotrypsin.png" #:w 400]{Struktura aktivního místa chymotrypsinu}
+
+◊ls[#:t "Popis aktivního centra"]{
+    - ◊strong{katalytická triáda}
+        - Ser 195 (hydroxylová skupina), His 57 (imidazolová skupina) a Asp 102 (karboxylová skupina)
+            - ◊chem{OH} skupina Ser a její nukleofilní působení začíná celý proces štěpení vazby
+    - ◊strong{hydrofobní kapsa}
+        - do ní se váže peptidový řetězec, z jejího tvaru plyne požadavek na velkou hydrofobní AK na pozici ◊${R_{n-1}} v substrátu
+            - tato hydrofobní interakce dodá vazebnou energii pro substrát, vznik E-S komplexu
+        - každá peptidáza je trošku jiná, každá bude mít trochu jiný požadavek na skupiny, které se tam mají nacházet
+    - ◊strong{oxyaniontová díra}
+        - uspořádání nukleofilních skupin, které by byly k dispozici pro případný oxy-aniont, který by se v jejich blízkosti vyskytl
+}
+
+◊img["chymotrypsin-reaction-2.png" #:w 550]{Chymotrypsinová reakce v detailu}
+
+◊ls[#:t "Popis reakce"]{
+    # Ser je v triádě aktivovaný, chová se jako skvělé nukleofilní činidlo (a)
+        - vzájemné elektrostatické působení
+        - Ser získává unikátní vlastnosti
+    # dojde k nukleofilnímu ataku, tvoří se tetrahedrální přechodový stav (c)
+        - současně s tím byl odejmut proton z hydroxylové skupiny serinu, čemuž napomáhá blízkost imidazolové skupiny na pozici 57
+        - acidobazická katalýza, zároveň vzniká kovalentní intermediát, tedy i kovalentní katalýza, navíc se uplatňuje i proximitní a orientační efekt
+    # přechodový stav se rozpadá za štěpení peptidové vazby a vzniku komplexu enzym-[část původního substrátu] (e)
+        - není stabilní, je to jen metakomplex, dochází k němu pouze v okamžiku překonávání bariéry
+    # vazba molekuly vody, hydrolýza peptidové vazby, podruhé dochází k tvorbě čtyřstěnového intermediátu (g)
+    # intermediát se znovu rozpadá za vzniku karboxykonce uvolňovaného s enzymem (i)
+}
+
+Reakce má tedy dvě fáze, v obou dochází k nukleofilnímu působení: v tom prvním využíváme hydroxylovou skupinu serinu a dochází ke štěpení peptidové vazby, ve druhém použijeme molekulu vody, opět vzniká čtyřstěnový intermediát a pak dochází ke štěpení vazby na Ser 195 a uvolnění nového C konce.
+
+◊ls[#:t "Experimentální zjištění"]{
+    - imidazolová skupina His bude na konci reakce usnadňovat protonaci hydroxylové skupiny --- slouží tam jako takový katalyzátor, nejdříve protony sebere, pak je zase vrátí
+    - intermediát je pokaždé nabitý, oxy-aniont zde musí být stabilizován
+        - to se děje tím, jak je vystrčen do okolí ◊chem{NH} skupin, které jsou s ním schopny elektrostaticky interagovat
+    - pomocí cílených bodových mutací (např. Asp) se dá ověřit, že je daná AK důležitá pro efektivitu enzymu
+    - tvoří se nízkobariérové vodíkové můstky
+        - <= Asp a His mají podobné hodnoty ◊${pK'}
+}
+
+◊subsection{Přirozená regulace}
+
+◊ls{
+    - také pracuje s tvarem enzymu
+    - aktivní chymotrypsin vzniká z neaktivního prekurzoru (chymotrypsinogen) jeho štěpením
+        # mezi zbytky 15 a 16 probíhá proteolytické štěpení, které používá příbuznou proteázu, trypsin
+        # vzniká částečně aktivní chymotrypsin
+            - Ser se do blízkosti triády posune až štěpením
+        # chymotrypsin je autokatalyticky štěpen, vyštěpí se červené části
+        # konečný produkt je pospojován do jednoho celku S-S můstky
+}
+
+Další možnosti regulace jsou např. existence neštěpitelného pseudosubstrátu, který blokuje aktivní místo, nebo nepřítomnost kofaktoru, který k činnosti enzymu nezbytný.
+
+◊img["chymotrypsinogen.png" #:w 400]{Chymotrypsinogen}
+
+◊box["Evoluční význam triády"]{
+    Podobná triáda se za milióny let vyvinula nezávisle na sobě u mnoha enzymů --- očividně se jedná o dobrý mechanismus.
 }

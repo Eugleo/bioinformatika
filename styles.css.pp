@@ -285,7 +285,10 @@ img {
   ◊(margin-bottom 0.3)
   display: block;
   max-width: 100%;
+  max-height: 100%;
   margin: 15px;
+  margin: 15px;
+  object-fit: scale-down;
 }
 
 .figure-caption {
