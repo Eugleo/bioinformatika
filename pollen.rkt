@@ -380,10 +380,9 @@
       (define height (if h (format "~apx" h) "auto"))
       (define image
         `(img [[src ,loc]
-              [alt ,@alt]
               [style ,(format "max-width: ~a; max-height: ~a;" width height)]]))
       (define image-no-size
-        `(img [[src ,loc] [alt ,@alt]]))
+        `(img [[src ,loc]]))
       (cond
         [(empty? alt) image]
         [else

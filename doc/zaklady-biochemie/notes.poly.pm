@@ -1354,7 +1354,7 @@ Reakce má tedy dvě fáze, v obou dochází k nukleofilnímu působení: v tom 
         - <= Asp a His mají podobné hodnoty ◊${pK'}
 }
 
-◊subsection{Přirozená regulace}
+◊subsubsection{Přirozená regulace}
 
 ◊ls{
     - také pracuje s tvarem enzymu
@@ -1372,4 +1372,228 @@ Další možnosti regulace jsou např. existence neštěpitelného pseudosubstr�
 
 ◊box["Evoluční význam triády"]{
     Podobná triáda se za milióny let vyvinula nezávisle na sobě u mnoha enzymů --- očividně se jedná o dobrý mechanismus.
+}
+
+◊title{Sacharidy a glykolýza}
+
+◊definitions{
+    ◊term["Monosacharidy"]{
+        Monosacharidy jsou aldehydové (◊strong{aldózy}) nebo ketonové deriváty polyhydroxyalkoholů s alespoň třemi uhlíky v řetězci, nelze je hydrolyzovat na jednodušší.
+
+        Nejstabilnější jsou cyklické sacharidy, většinou mají 5 nebo 6 uhlíků.
+    }
+
+    ◊term["D a L forma"]{
+        Sacharidy jsou opticky aktivní látky, monosacharidy mají jedno chirání centrum, delší řetězce pak i více (tvoří ◊${2^n} izomerů, kde ◊${n} je počet chirálních uhlíků).
+
+        D forma je taková, kdy nejvzdálenější ◊chem{OH} skupina od chirálního uhlíku má stejnou konformaci jako D-glyceraldehyd ---  hydroxylovou skupinu má ◊strong{napravo}.
+    }
+}
+
+◊img["glyceraldehyde.png" #:w 250]{Glyceraldehyd}
+
+◊ls[#:t "Funkce cukrů"]{
+    - zásobní funkce (glykogen, škrob)
+    - zdroj energie
+    - signální funkce (heteropolysacharidy, proteoglykany)
+    - stavební funkce (celulóza, exoskelet bezobratlých)
+}
+
+◊section{Významné aldózy a ketózy}
+
+◊img["monosacharides.JPG"]{Všechny aldózy}
+
+◊ls[#:t "D-glukóza"]{
+    - aldohexóza, hroznový cukr
+    - centrální metabolit, hlavní zdroj energie napříč organismy
+    - jeden z mála monosacharidů, které se vyskytují ve formě monomerů v celé řadě buněk
+    - někde se můžeme setkat i s názvem dextróza (což je označení pouze pro D-formu)
+}
+
+◊img["glucose.png" #:w 100]{D-glukóza}
+
+Dále ještě galaktóza (je součástí laktózy, sacharidu, který se vyskytuje v mléce placentálů), manóza a idóza --- poslední dvě zmíněné jsou v mezibuněčné hmotě v podobně glykosamidoglykanů. Z aldopentóz poté ribóze, která je součástí DNA a RNA.
+
+◊img["ketoses.jpg"]{D-ketózy}
+
+D-fruktóza (častý zdroj energie, důležitý metabolit některých drah, je v medu, v sacharóze) a D-ribulóza (účastní se metabolismu pentózo-fosfátové dráhy a zejména fotosyntézy).
+
+◊note{
+    Na názvosloví sacharidů se kromě Fischera podílel i český chemik Emil Votoček a jeho žák Vladimír Prelog; zavedl univerzální pravidla pro popis konfigurace včetně stereoizomerů.
+}
+
+◊section{Cyklické formy}
+
+◊ls{
+    - aldehydová a ketoskupina jsou reaktivní a mají tendenci reagovat s alkoholy na druhé straně molekuly
+    - alkoholová + aldehydová skupina -> hemiacetál (s keto je to hemiketal)
+}
+
+◊img["a-b-glucopyranose.png" #:w 400]{◊|alpha| a ◊|beta| forma glukopyranózy}
+
+◊ls[#:t "Názvosloví cyklických sacharidů"]{
+    - "pyro" <= odvoditelné od pyranu, šestičetného cyklu
+    - ◊|alpha|/◊|beta| <= na prvním uhlíku je nové chirální (tzv ◊strong{anomerní}) centrum, vznikají dva anomery
+    - Haworthova projekce
+    - podobně pro fruktózu (◊|alpha|/◊|beta| D-frukto◊em{furanóza})
+}
+
+Z lineární glukózy vznikají ◊|alpha|/◊|beta| formy v určitém poměru, který je typický pro každý sacharid. Po určité době nastane v roztoku rovnováha, výsledný úhel stočení světla je dán váženým průměrem obou forem. Tomuto jevu ustanovení rovnováhy se říká ◊strong{mutarotace}. Kdyby stáčely stejně a vznikaly půl na půl, tak úhel bude ve výsledku nula (◊strong{racemická směs}).
+
+Cyklické sacharidy se vyskytují ve vaničkové a židličové konformai; židličková je ta stabilnější => častější.
+
+◊section{Deriváty monosacharidů}
+
+◊definitions{
+    ◊term["Aldolové kyseliny"]{
+        Vznikají oxidací aldehydové skupiny. Typicky nejsou v lineární podobě, jejich skupiny opět reagují s těmi alkoholovými --- probíhá ◊strong{esterifikace}, reakce kyseliny s alkoholem, vznikají ◊strong{laktony}. Nejdůležitější lakton je kyselina-L-askorbová (vitamín C).
+    }
+
+    ◊term["Alduronové kyseliny"]{
+        Vznikají oxidací uhlíku na jiné skupině.
+    }
+
+    ◊term["Alditoly"]{
+        Vznikají redukcí aldehydové skupiny.
+    }
+}
+
+◊img["glucose-family.png"]{Rodina glukózy}
+
+◊ls[#:t "Deoxy cukry"]{
+    - mají místo hydroxyskupiny jen vodík.
+    - např. ◊em{rhamnóza} a ◊em{fukóza}, složky zásobních polysacharidů nižších rostlin.
+}
+
+◊ls[#:t "Amino cukry"]{
+    - ◊em{N-acetylglukosamin} (odvozen od glukózy a N-acetylu)
+    - skupina je často vázaná na složku buněčných stěn bakterií a je i podjednotkou chitinu
+    - ◊em{N-acetylmuramová} kyselina, složka buněčných stěn bakterií (=> mureinová stěna)
+    - ◊em{N-neuraminová} neboli sialová kyselina, často se vyskytuje na glykoproteinech zvnějšku plasmatické membrány, podílí se na jejím záporném náboji
+}
+
+◊ls[#:t "Glykosidická vazba"]{
+    - monosacharidy mohou reagovat s alkoholy za vzniku glykosidů
+    - methylglukosid, methylalfa-gukosid a methylbeta-glukosid
+    - glykosidická vazba je zodpovědná za spojovnání monosacharidových podjednotek do disacharidů, oligosacharidů, polysacharidů
+}
+
+◊section{Disacharidy}
+
+◊definitions{
+    ◊term["Redukující a neredukující disacharidy"]{
+        Redukující mají volnou aldo či keto skupinu. Anomerní uhlíky --- ty z keto či aminoskupiny --- jsou jako jediné schopné redukovat a u neredukujících disacharidů jsou navzájem vázané glykosidickou vazbou.
+    }
+}
+
+◊ls{
+    - podjednotky jsou spojené glykosidickou vazbou
+    - příklady
+        - sacharóza se skládá z glukózy a fruktózy spojených ◊|alpha|-1,2 glykosidickou vazba,
+        - laktóza, mléčný cukr, z glukózy a galaktózy propojených ◊|beta|-1,4 glykosidickou vazbou
+        - ostatní ze dvou glukóz, různě propojených
+    - způsob propojení má zásadní podíl na vlastnostech vzniklé látky
+        - redukující disacharidy mají glykosidickou vazbu 1,4 nebo 1,6 (např. laktóza, maltóza)
+        - neredukující disacharidy mají glykosidickou vazbu 1,1, nebo 1,2 a jsou tak obsazeny obě poloacetalové ◊chem{OH} skupiny
+}
+
+◊img["glykosidic-bond.png" #:w 400]{Glykosidická vazba}
+
+◊note{Některé druhy placentálů, zejména ty v polárních oblastech, nemají v mléca laktózu; její úlohu zastanou tuky a bílkoviny.}
+
+◊ls[#:t "Trehalóza"]{
+    - důležitý pro odolnost organismu vůči mrazovému stresu napříč organismy od kvasinek po obratlovce
+    - účastní se anabiózy
+    - má kryoprotektivní účinky
+    - vyskytuje se i v krvi některých bezobratlých místo glukózy
+}
+
+◊img["trehalose.png" #:w 200]{Trehalóza}
+
+◊section{Polysacharidy}
+
+◊definitions{
+    ◊term["Homopolysacharidy a heteropolysacharidy"]{
+        Homopolysacharidy se skládají ze stejných podjednotek, heteropolysacharidy z různých. Příkladem homopolysacharidu je celulóza (glukóza, ◊|beta|1->4) a chitin (N-acetyl-glukosamin, ◊|beta|1->4).
+    }
+}
+
+◊img["chitin.png"]{Chitin}
+
+◊ls[#:t "Stavební polysacharidy"]{
+    - celulóza, chitin
+    - pevnost těchto stavebních polysacharidů je dána jejich prostorovým uspořádáním, např. celulóza vytváří fibrily o mnoha tisících podjednotek (sousední paralelní vlákna jsou posunuta o polovinu, jako cihly na zdi)
+        - maximální propojení vodíkovými můstky v rovině i nad sebou v prostoru, maximalní využití Van der Waalsových interakcí
+        - ve stěnách rostlin navíc není samostatně, ale mohou tam být další látky, např. ◊em{lignin}, které dohromady tvoří kompozitní strukturu jako např. železobeton
+    - tunika pláštěnců je také z celulózy
+}
+
+◊img["amylopectin.png"]{Amylóza (a), zlom/rozvětvení ve struktuře amylopektinu (nebo glykogenu) (b), struktura amylózy a amylopektinu (c)}
+
+◊ls[#:t "Zásobní polysacharidy"]{
+    - např. škrob u rostlin, glykogen u živočichů
+    - škrob se vyskytuje ve 2 formách, ◊em{amylóza} a ◊em{amylopektin}
+        - glukózy, ◊|alpha|-1,4
+        - 20% je tvořeno amylózou jejíž helixy nejsou příliš pevné
+        - 80% je tořeno amylopektinem, po cca 24--30 jednotkách se větví
+            - => mnoho neredukčních konců => rychlejší odbourávání (probíhá právě od těch neredukčních konců)
+            - jen jeden redukující konec
+}
+
+◊subsection{Glykosaminoglykany}
+
+Příklad heteropolysacharidů.
+
+◊img["glycosaminoglycanes.png"]{Glukosaminoglykany}
+
+◊ls[#:t "Struktura"]{
+    - na prvním místě je sacharid, na druhém je amino sacharid a alespoň jeden z nich obsahuje zápornou sulfátovou nebo karboxylátovou skupinu
+}
+
+◊ls[#:t "Funkce"]{
+    - jsou jednou z nejdůležitějších složek mezibuněčné hmoty živočichů, složkou proteoglykanů
+    - mají v mezibuněčné hmotě funkci mechanickou (působí jako tlumiče nárazů na tkáně)
+        - často se jmenují podle místa výskytu, napříkald chondroitin-sulfát v chrupavce, dermatan-sulfát v dermis, keratan-sulfát v rohovině
+        - hyaluronát je v celé mezibuněčné hmotě
+    - jsou schopny se hydratovat či dehydratovat: umí vázat velké množství ◊chem{Na2+}, ◊chem{K+} či ◊chem{Ca2+} iontů a poté (de)hydratací jsou schopné až tisíckrát změnit svůj objem
+    - mají i důležitou signální funkci jako růstové faktory (směrování buněk v embryonálním vývoji, při migraci buněk i v dospělém organismu)
+    - jsou důležité i pro imunitní systém a nádory, jejich proliferaci
+}
+
+◊ls[#:t "Heparin"]{
+    - reakce s antithrombinem, brání srážení krve
+    - silně záporně nabitý, sulfatovaný, vyskytuje se vlastně jen v žírných buňkách
+    - podobný je heparansulfát, ten je v endotelu a v mozku
+}
+
+Jsou součástí ◊strong{proteoglykanů}.
+
+◊img["proteoglycanes.png"]{Proteoglykany}
+
+◊ls[#:t "Proteoglykany"]{
+    - velké komplexy proteinů a heteropolysacharidů v bezbuněčné hmotě
+    - jejich struktura se označuje jako ◊strong{kartáčová} (viz obrázek)
+        - páteř tvoří kyselina hyaluronová, na ní jsou vázány ◊em{Core} proteiny a na ně pak řetězce gylkosaminogylkanů
+        - core protein na sobě má navázány ◊chem{N}- a ◊chem{O}- glykosylované sacharidy a řetězce glykosaminoglykanu
+    - jen asi 5% proteoglykanů tvoří proteinová složka, 95 % je cukerná
+}
+
+◊img["glycoproteins.png" #:w 450]{Spojení sacharidu a proteinu v glykoproteinech}
+
+◊ls[#:t "Glykoproteiny"]{
+    - většina proteinů v těle
+    - vazba přes N- a O- glykosylaci
+        - N- je přes ◊chem{NH} skupinu (na Asp)
+            - např. imunoglobuliny: funkce mohou ovlivňovat dobu života proteinů v oběhu, jeho aktivitu včetně katalytické aktivity, rozpoznávací funkci, jeho rozpoznávání jiným signálním proteinem, účastní se mezibuněčných interakcí atd.
+        - O- je ta běžná přes ◊chem{OH} (na Ser nebo Thr)
+            - kromě výše zmíněých funkcí ještě může alternovat s fosforylací, což slouží k signalizaci
+            - je také zodpovědná za krevní skupiny a za rozdílnost antigenů
+    - glykoproteiny na vnějšku plasmatické membrány jsou modifikovány kyselinou sialovou, která je zodpovědná za jejich záporný náboj
+}
+
+◊ls[#:t "Peptidoglykan"]{
+    - sacharidy jsou důležité i pro prokaryota => peptidoglykan slouží k tomu, aby pro hostitele bylo obtížnější si jich všimnout
+    - nachází se ve stěně ◊chem{G+} i ◊chem{G-} bakterií
+    - v zásadě se skládá z heteropolysacharidových řetězců navzájem propojených glyciny a krátkým řetězcem AK (např. D-aminokyselinami jako D-alanin)
+    - u bakterií se vyskytuje také kyselina N-acetylmuramová a N-acetylglukosamin
 }
