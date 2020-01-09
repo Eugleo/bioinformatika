@@ -816,6 +816,8 @@ První číslo je vždy v rozmezí 1--6, protože se jedná o rozdělení enzymu
         - např. spojování Okazakiho fragmentů
 }
 
+◊note{Enzymy katalyzující syntézy se nazívají ◊strong{sytázy} nebo ◊strong{syntetázy}. Rozdíl mezi nimi je ten, že ◊em{syntetázy} potřebují makroergní molekulu, zatímco ◊em{syntázy} ne.}
+
 ◊box["Příklad 1"]{
     Pokud máme například následující reakci:
 
@@ -1651,10 +1653,10 @@ Některé AK se na ACoA nemění; vždy ale dochází k oxidaci (přenos elektro
     # oxidativní fosforylace
 }
 
-◊img["mini-krebs.png" #:w 400]{Krebsův cyklus, základní schéma}
+◊img["mini-krebs.png" #:w 300]{Krebsův cyklus, základní schéma}
 
 ◊ls[#:t "Cyklus zjednodušeně"]{
-    # vstupuje dvojuhlíkatý (C2) ACoA a s C4 oxaloacetátem tvoří C6
+    # vstupuje dvojuhlíkatý (C2) ACoA a s C4 oxalacetátem tvoří C6
     # ta je ve sledu sedmi reakcí dvakrát dekarboxylována, uvolní se dvě molekuly ◊chem{CO2} (co je většina toho ◊chem{CO2}, který vydechujeme)
     # dva uhlíky se uvolní během cyklického pochodu
     # další uvolňované molekuly jsou čtyři redukované koenzymy
@@ -1667,7 +1669,7 @@ Některé AK se na ACoA nemění; vždy ale dochází k oxidaci (přenos elektro
 
 ◊subsection{Komplex pyruvát dehydrogenázy (PDC)}
 
-Popisuje vznik ACoA z pyruvátu.
+Stará se přeměnu pyruvátu, který je výstupem glykolýzy, na ACoA, který potřebujeme v KC.
 
 ◊img["acoa.png" #:w 400]{Vznik ACoA, pyruvát dehydrogenázová reakce}
 
@@ -1780,3 +1782,168 @@ Přiblížíme si ty pevně vázané a jeden z těch volných.
             - někteří parazitičtí prvoci (trypanosomy, plasmodia a další,) mají PDC citlivější než my, když se vytitruje správná koncentrace, nás to nezabije, ale je ano
     - příklady otravy: Napoleon, kloboučník z Alenky (proto byl šílený), původní fotografové
 }
+
+◊subsection{Reakce KC}
+
+◊aside{
+    Odkazy na
+    ◊ls{
+        # ◊link["#První reakce"]{první reakci}
+        # ◊link["#Druhá reakce"]{druhou reakci}
+        # ◊link["#Třetí reakce"]{třetí reakci}
+        # ◊link["#Čtvrtá reakce"]{čtvrtou reakci}
+        # ◊link["#Pátá reakce"]{pátou reakci}
+        # ◊link["#Šestá reakce"]{šestou reakci}
+        # ◊link["#Sedmá reakce"]{sedmou reakci}
+        # ◊link["#Osmá reakce"]{osmou reakci}
+}
+}
+
+◊img["krebs.png"]{Krebsův cyklus v detailu}
+
+Hlavní průběh (produkty, enzymy, atp.) viz obrázek. Následují pouze poznámky k jednotlivým fázím.
+
+◊subsubsection{První reakce}
+
+◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
+
+◊definitions{
+    ◊term["Prochirální molekuly"]{
+        Nejsou sice chirální, ale mohou se jednou reakcí chirálními stát. Příkladem je citrát.
+    }
+}
+
+◊img["first-reaction.png" #:w 400]{První reakce (citrát-syntázová)}
+
+◊ls[#:t "První reakce (citrát-syntázová)"]{
+    - exergonická
+    - typický příklad uspořádané enzymatické reakce: nejprve se naváže oxalacetát a ař pak se může navázat ACoA
+    - syntáza (ne syntetáza) => nepotřebuje makroergní molekulu
+    - dokud nebyla prochiralita známá, vznikla polemika o tom, zda tam vůbec citrát je
+}
+
+◊img["citrate-synthase.png" #:w 300]{Struktura citrát-syntázy}
+
+◊subsubsection{Druhá reakce}
+
+◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
+
+◊img["second-reaction.png" #:w 400]{Druhá reakce}
+
+◊ls[#:t "Druhá reakce"]{
+    - přeměnu sekundárního alkoholu na terciální (přenos hydroxylové skupiny z jednoho uhlíku na druhý)
+    - molekula izocitrátu je totiž snadněji oxidovatelná (dekarboxylovatelná), než molekula samotného citrátu
+}
+
+◊ls[#:t "Inhibitor druhé reakce"]{
+    - tzv. ◊em{sebevražedný substrát}
+    -  látka sama o sobě inhibující není, až po vstupu do metabolismu se stane jedovatou a inhibuje
+    - např. některé rostliny jako obranu proti nepřátelům tvoří fluoro-acetát
+        - fluoro-acetát -> fluoro-ACoA -> fluoro-citrát -> ireversibilní inhibice akonitázy
+}
+
+◊img["aconitase.png" #:w 200]{Akonitáza}
+
+◊ls[#:t "Akonitáza"]{
+    - má železosirné jádro
+    - síra je tam dvojího typu
+        - organická (v cysteinu), váže se na tři atomy Fe
+        - anorganická, koordinuje celý komplex
+    - kromě tří cysteinem vázaných Fe je tam jeden atom nevázaný, ten interaguje s karboxylovou skupinou citrátu a s vodou --- tam běží přeměna
+}
+
+◊ls[#:t "Cis-akonitáza"]{
+    - nalzena i v cytoplazmě
+    - akonitáza v cytoplasmě slouží jako regulátor hladiny železa v cytoplasmě
+        - velká koncentrace Fe -> uvolňování radikálů
+    - když je Fe hodně, v akonitáze se ukládají 4 atomy
+    - když je Fe málo, tak se železosirný komplex uvolní a místo vazebného místa pro Fe vznikne vazebné místo pro vlásenku mRNA
+    - podle toho, o jaké mRNA se jedná, se mění i regulační funkce akonitázy
+        - mRNA ◊strong{feritinu}
+            - feritin je protein, který zabaluje Fe do zásobních balíků
+            - když se na mRNA naváže akonitáza, zastaví se translace feritinu
+        - mRNA ◊strong{transferinu}
+            - transferin nosí železo z okolí buňky dovnitř buňky
+            - mRNA je akonitázou stabilizována, míra translace se zvýší
+}
+
+Třetí role akonitázy souvisí s nukleotidy: shluky mitochondriální DNA a proteinů. V mitochondriích je u člověka několik set kopií cirkulárních molekul, jeden z proteinů, který je drží u sebe, je právě akonitáza.
+
+◊subsubsection{Třetí reakce}
+
+◊img["third-reaction.png"]{Třetí reakce}
+
+◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
+
+Toto je první dekarboxylační reakce.
+
+◊subsubsection{Čtvrtá reakce}
+
+◊img["fourth-reaction.png" #:w 400]{Čtvrtá reakce}
+
+Sukcinyl-CoA je opět makroergní molekula.
+
+◊img["dekarboxylation-similarity.png"]{Podobnost mechanismu oxidativní dekarboxylace}
+
+◊ls[#:t "Podobnost alfa-ketoglutarátdehydrogenázy s PDC"]{
+    - podobný mechanismus funkce (viz obrázek)
+    - enzymy E1, E2, E3
+    - inhibice arsenem
+    - jen substráty jsou odlišné
+}
+
+◊subsubsection{Pátá reakce}
+
+◊img["fifth-reaction.png" #:w 400]{Pátá reakce}
+
+◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
+
+◊ls[#:t "Pátá reakce"]{
+    - katalyzováno sukcinyl-CoA syntetáza (jméno má podle reakce opačného směru)
+        - spíše z historických důvodů, reakce většinou běží směrem sukcináza -> sukcinát
+    - tvoří se kyselina jantarová, neboli sukcinát
+    - energie vazby s CoA je využita na syntézu makroergní sloučeniny, např. GTP
+}
+
+◊img["succinyl-synthetase.png" #:w 300]{Detailní průběh páté reakce}
+
+◊ls[#:t "Průběh páté reakce (viz obrázek)"]{
+    # vznik sukcinyl-fosfátu
+    # vznik sukcinátu, přenesení fosfátu na His zbytek v enzymu -> vznik makroergní formy enzymu
+    # fosfát je přenesen na GDP (nebo ADP a podobně), tvoří se GTP (nebo ATP a podobně)
+}
+
+Probíhá tedy tzv. ◊strong{syntéza ATP na substrátové úrovni}, která probíhá i v glykolýze. Druhý způsob syntézy ATP je v mitochondriích na základě oxidační fosforylace.
+
+◊subsubsection{Šestá reakce}
+
+◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
+
+◊img["sixth-reaction.png" #:w 400]{Šestá reakce}
+
+◊ls[#:t "Šestá reakce"]{
+    - enzym sukcinát-dehydrogenáza, koenzym FAD
+        - FAD funguje zde, v reakci pyruvát -> ACoA a v oxidační fosforylaci (jako komplex II)
+    - na rozdíl od ostatních enzymů v KC je vázaný na membránu
+        - je integrálním membránovým proteinem ve vnitřní mitochondriální membráně => může efektivně předávat elektrony
+    - (doslova) učebnicový příklad enzymu manifestujícího ◊em{kompetitivní inhibici}
+        - kyselinoa malonová je stejně jako sukcinát také dikarboxylová a liší se od něj pouze v jedné skupině
+        - řešením je přidat více sukcinátu
+        - inhibiční vlastnosti malonátu přišly vhod při zkoumání KC
+}
+
+◊img["mal-suc.png" #:w 150]{Malonát a sukcinát}
+
+◊subsubsection{Sedmá rekace}
+
+◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
+
+◊img["seventh-reaction.png" #:w 500]{Sedmá reakce}
+
+Malát je jiným názvem ◊em{kyselina jablečná}.
+
+◊subsubsection{Osmá reakce}
+
+◊img["eighth-reaction.png" #:w 400]{Osmá reakce}
+
+Probíhá ◊strong{regenerace oxalacetátu}.
