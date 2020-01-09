@@ -1727,7 +1727,7 @@ Přiblížíme si ty pevně vázané a jeden z těch volných.
     - merkapto-ethylamin může tvořit vazbu s acetylovými skupinami (např. v ACoA)
 }
 
-◊img["pdc-cubes.jpg" #:w 400]{Celková struktura PDC u E. coli: (a) je vnitřní krychle s 24 E2, (b) je vnější krychle s 24 E1 (oranžová) a 12 E3 (červená)}, (c) je (a) + (b)
+◊img["pdc-cubes.jpg" #:w 400]{Celková struktura PDC u E. coli: (a) je vnitřní krychle s 24 E2, (b) je vnější krychle s 24 E1 (oranžová) a 12 E3 (červená), (c) je (a) + (b)}
 
 ◊ls[#:t "Celková struktura"]{
     - u E. coli (a dalších prokaryot a ◊chem{G+} bakterií) je organizován do dvou pomyslných krychlí
@@ -1742,3 +1742,41 @@ Přiblížíme si ty pevně vázané a jeden z těch volných.
 }
 
 ◊subsubsection{Funkce}
+
+◊img["pdc-function.png"]{Oxidativní dekarboxylace pyruvátu na acetyl-CoA PDH komplexem}
+
+◊ls[#:t "Popis reakce (také viz obrázek)"]{
+    # pyruvát se dekarboxyluje, vzniká acetylová skupina vázající se na TPP
+    # na lipoamid je přenesena acetylová skupina a je redukována jedna sirná skupina na kyselině lipoové
+    # acetylová skupina je přenesena na CoA a redukuje se i druhá síra na lipoamidu
+        - produkty již vznikly, je už jen potřeba vrátit enzym do původního stavu
+    # ◊chem{FAD} se redukuje na ◊chem{FADH2}, síry na E2 jsou nyní opět oxidovány
+        - vodíky mu dopraví raménko z E2
+    # ◊chem{FADH2} předá vodíky ◊chem{NAD+} (-> ◊chem{NADH + H+}), E3 je nyní v původním stavu
+        - ◊chem{NADH + H+} předá protony do elektron-transportního řetězce na membráně, kam se k enzymu pevně připoutaný FAD nedostane
+}
+
+◊img["pdc-regulation.png" #:w 350]{Regulace PDC}
+
+◊ls[#:t "Principy regulace"]{
+    - kromě alosterické regulace je komplex regulován i kovalentními modifikacemi, fosforylací a defosforylací
+        - jsou na ní Ser či Thr skupiny, kam se může fosfátová skupina vázat
+        - kináza-pyruvátdehydrogenáza a fosfatázy, které ten fosfát zase odštěpí
+    - regulace závisí na koncentraci produktuů a reaktantů
+        - když je nadbytek ACoA nebo NADH, čili jednoho z produktů, tak je kináza aktivní a PDC brzdí
+        - když je moc pyruvátu či ADP, tak se kináza inaktivuje a celé se to zrychlí
+        - kináza je ke komplexu připojena stále
+        - fosfatáza je aktivována hlavně vápníkem (důležitý ◊em{druhý posel}), připojuje se ke komplexu jen dočasně
+}
+
+◊ls[#:t "Inhibice"]{
+    - arsen se váže na thiolové skupiny lipoátu, zamezí tím navázání acetylové skupiny a přenos acetátu z prvního enzymu na koenzym A
+        - tzv. ◊strong{chelatují} (obsadí) enzym
+    - využití arsenu
+        - jedy
+        - za války se používal lewisit (sloučenina arsenu), Britové používali british antilewisid
+            - antilewisid se navázal na lewisid a sloučenina se vyloučila v moči
+        - léčba (např. syfilis), preantibiotikum
+            - někteří parazitičtí prvoci (trypanosomy, plasmodia a další,) mají PDC citlivější než my, když se vytitruje správná koncentrace, nás to nezabije, ale je ano
+    - příklady otravy: Napoleon, kloboučník z Alenky (proto byl šílený), původní fotografové
+}
