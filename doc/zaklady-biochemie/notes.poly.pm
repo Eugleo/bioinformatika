@@ -1634,12 +1634,12 @@ Na pyruvátu a dalších molekulách se dá demonstrovat vlastnost katabolismu, 
         - ACoA je také přenašeč acetylové skupiny (◊chem{CH3CO})
 }
 
-◊todo{
-    ◊ls[#:t "Témata kapitoly"]{
-        - změna pyruvát -> ACoA
-        - pyruvát dekarboxyláza
-        - jak vzniká ACoA z tuků a jak jsou odbourávány AK
-    }
+◊note{
+    Jak KC vznikl? Dráha (někdy neúplná) probíhá v některých bakteriích, část i obráceně (slouží k redukci).
+
+    ◊img["kc-bacteria.png" #:w 400]{Neúplný KC v anaerobních bakteriích}
+
+     Celá dráha kromě zpracování ACoA a uvolnění NADH tvoří také různé intermediáty, které jsou užitečné pro syntézy.
 }
 
 Některé AK se na ACoA nemění; vždy ale dochází k oxidaci (přenos elektronů), což zařizuje ◊strong{glyceraldehydfosfát-dehydrogenáza}. Vzniká NADH, který je poté někdy použit v mitochondriích na syntézu ATP v rámci elektrontransportního řetězce.
@@ -1783,9 +1783,7 @@ Přiblížíme si ty pevně vázané a jeden z těch volných.
     - příklady otravy: Napoleon, kloboučník z Alenky (proto byl šílený), původní fotografové
 }
 
-◊subsection{Reakce KC}
-
-◊aside{
+◊sidenote{
     Odkazy na
     ◊ls{
         # ◊link["#První reakce"]{první reakci}
@@ -1796,16 +1794,18 @@ Přiblížíme si ty pevně vázané a jeden z těch volných.
         # ◊link["#Šestá reakce"]{šestou reakci}
         # ◊link["#Sedmá reakce"]{sedmou reakci}
         # ◊link["#Osmá reakce"]{osmou reakci}
+    }
 }
-}
+◊subsection{Reakce KC}
 
 ◊img["krebs.png"]{Krebsův cyklus v detailu}
 
 Hlavní průběh (produkty, enzymy, atp.) viz obrázek. Následují pouze poznámky k jednotlivým fázím.
 
+◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 ◊subsubsection{První reakce}
 
-◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
+◊img["first-reaction.png" #:w 400]{První reakce (citrát-syntázová)}
 
 ◊definitions{
     ◊term["Prochirální molekuly"]{
@@ -1813,22 +1813,22 @@ Hlavní průběh (produkty, enzymy, atp.) viz obrázek. Následují pouze pozná
     }
 }
 
-◊img["first-reaction.png" #:w 400]{První reakce (citrát-syntázová)}
-
 ◊ls[#:t "První reakce (citrát-syntázová)"]{
     - exergonická
     - typický příklad uspořádané enzymatické reakce: nejprve se naváže oxalacetát a ař pak se může navázat ACoA
     - syntáza (ne syntetáza) => nepotřebuje makroergní molekulu
     - dokud nebyla prochiralita známá, vznikla polemika o tom, zda tam vůbec citrát je
+        - citrát s akonitázou může reagovat jen jedním konkrétním způsobem, když se označí jeden uhlík, bude v produktu vždy na jednom konkrétním místě
 }
+
+◊img["prochiral.png"]{Prochirálnost citrátu}
 
 ◊img["citrate-synthase.png" #:w 300]{Struktura citrát-syntázy}
 
+◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 ◊subsubsection{Druhá reakce}
 
-◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
-
-◊img["second-reaction.png" #:w 400]{Druhá reakce}
+◊img["second-reaction.png" #:w 500]{Druhá reakce}
 
 ◊ls[#:t "Druhá reakce"]{
     - přeměnu sekundárního alkoholu na terciální (přenos hydroxylové skupiny z jednoho uhlíku na druhý)
@@ -1869,14 +1869,14 @@ Hlavní průběh (produkty, enzymy, atp.) viz obrázek. Následují pouze pozná
 
 Třetí role akonitázy souvisí s nukleotidy: shluky mitochondriální DNA a proteinů. V mitochondriích je u člověka několik set kopií cirkulárních molekul, jeden z proteinů, který je drží u sebe, je právě akonitáza.
 
+◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 ◊subsubsection{Třetí reakce}
 
 ◊img["third-reaction.png"]{Třetí reakce}
 
-◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
-
 Toto je první dekarboxylační reakce.
 
+◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 ◊subsubsection{Čtvrtá reakce}
 
 ◊img["fourth-reaction.png" #:w 400]{Čtvrtá reakce}
@@ -1892,11 +1892,10 @@ Sukcinyl-CoA je opět makroergní molekula.
     - jen substráty jsou odlišné
 }
 
+◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 ◊subsubsection{Pátá reakce}
 
 ◊img["fifth-reaction.png" #:w 400]{Pátá reakce}
-
-◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 
 ◊ls[#:t "Pátá reakce"]{
     - katalyzováno sukcinyl-CoA syntetáza (jméno má podle reakce opačného směru)
@@ -1915,9 +1914,8 @@ Sukcinyl-CoA je opět makroergní molekula.
 
 Probíhá tedy tzv. ◊strong{syntéza ATP na substrátové úrovni}, která probíhá i v glykolýze. Druhý způsob syntézy ATP je v mitochondriích na základě oxidační fosforylace.
 
+◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 ◊subsubsection{Šestá reakce}
-
-◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 
 ◊img["sixth-reaction.png" #:w 400]{Šestá reakce}
 
@@ -1934,16 +1932,54 @@ Probíhá tedy tzv. ◊strong{syntéza ATP na substrátové úrovni}, která pro
 
 ◊img["mal-suc.png" #:w 150]{Malonát a sukcinát}
 
-◊subsubsection{Sedmá rekace}
 
-◊aside{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
+◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
+◊subsubsection{Sedmá reakce}
 
 ◊img["seventh-reaction.png" #:w 500]{Sedmá reakce}
 
 Malát je jiným názvem ◊em{kyselina jablečná}.
 
+◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 ◊subsubsection{Osmá reakce}
 
 ◊img["eighth-reaction.png" #:w 400]{Osmá reakce}
 
 Probíhá ◊strong{regenerace oxalacetátu}.
+
+◊subsection{Regulace KC}
+
+◊img["kc-regulation.png" #:w 450]{Regulační místa KC}
+
+◊ls[#:t "Regulační mechanismy"]{
+    - nejdůležitější jsou následující tři enzymy (jejich inhibice/aktivace)
+        - citrát-syntázová reakce
+        - izocitrát-dehydrogenáza
+        - alfa-ktetoglutarát-dehydrogenáza
+}
+
+◊section{Intermediáty KC}
+
+◊img["kc-products.png"]{Využití meziproduktů KC v buňce}
+
+Citrát si musí "odskočit" do cytoplasmy, kde probíhá syntéza mastných kyselin; další itermediáty slouží k dalším syntézám. Celý cyklus má tedy ◊strong{katabolický} i ◊strong{anabolický} charakter.
+
+◊note{
+    ◊ls[#:t "Vstup AK do KC"]{
+        - přes ◊|alpha|-ketoglutarát
+        - přes sukcinyl-CoA
+        - Asp, Phe, Tyr přes fumarát
+    }
+}
+
+◊subsubsection{Anaplerotické reakce}
+
+◊ls{
+    - někdy dojde oxalacetát, protože na různých místech utíkají intermediáty do syntéz
+    - anaplerotické (= doplňující) reakce doplňují oxalacetát přes malát, viz červené šipky na obrázku
+    - výchozí molekulou jsou intermediáty metabolismu cukrů (2 pyruváty, 2 fosfoenolpyruváty, poslední dvě molekuly glykolýzy, té, která běží v cytoplasmě)
+}
+
+◊img["anaplerotic-reactions.png"]{Čtyři různé anaplerotické reakce}
+
+V poslední (reakce s jablečným enzymem) je zdrojem uhlíku místo ◊chem{CO2} bikarbonát. Reakce probíhá také při syntéze ◊chem{NADPH}, ale obráceně.

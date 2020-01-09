@@ -431,6 +431,17 @@ slide-link {
   display: inline;
 }
 
+/* Sidenote
+–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.sidenote {
+    display: block;
+    width: 5em;
+    float: left;
+    margin-left: -7em;
+    text-align: right;
+}
+
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 

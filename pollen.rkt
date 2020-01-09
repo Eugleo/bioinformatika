@@ -18,7 +18,7 @@
 
   (define BLOCK-TAGS
   '(name li box lecture details summary list-title answer img question q-label q-body ql dl dt dd
-    proof slide-aside-wrapper default-block-tags section subsection subsubsection subsubsubsection))
+    proof slide-aside-wrapper default-block-tags section subsection subsubsection subsubsubsection sidenote))
   (define block-tags
     (append BLOCK-TAGS default-block-tags)))
 
@@ -482,7 +482,7 @@
 (define (make-title base title)
   (if title (format "~a (~a)" base title) base))
 
-(provide options make-relative-path root questions question answer)
+(provide options make-relative-path root questions question answer sidenote)
 
 (define (questions label #:sep [sep "."] . elements)
   (define number 0)
@@ -593,3 +593,10 @@
   (if (equal? (get-tag heading) 'h1)
       `(,(hash-ref HDR-LVL (get-tag heading)) (strong ,@(get-elements heading)) "\n")
       `(,(hash-ref HDR-LVL (get-tag heading)) ,@(get-elements heading) "\n")))
+
+
+#| Sidenotes |#
+(define (sidenote . elements)
+  (case (current-poly-target)
+    [(md) `("> Poznámka <\n" ,@elements)]
+    [(html) `(div [[class "sidenote"]] ,@elements)]))
