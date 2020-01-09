@@ -1653,6 +1653,16 @@ Některé AK se na ACoA nemění; vždy ale dochází k oxidaci (přenos elektro
     # oxidativní fosforylace
 }
 
+◊box["Konvergující dráhy"]{
+    ◊ls{
+        - z různých látek vznikne jen několik produktů
+        - energetické molekuly směřují k ACoA
+        - pak je cyklus trikarboxylových kyselin, z nich se tvoří molekula GTP (nebo ATP), dvě molekuly ◊chem{CO2} a redukované koenzymy
+            - na jednu molekulu glukózy vznikají redukované koenzymy na šesti místech a všechny nesou vysokoenergetické elektrony, které odejmuli při oxidačních reakcích
+            - energie může být využita k syntéze ATP oxidací těchto koenzymů
+    }
+}
+
 ◊img["mini-krebs.png" #:w 300]{Krebsův cyklus, základní schéma}
 
 ◊ls[#:t "Cyklus zjednodušeně"]{
@@ -1807,23 +1817,35 @@ Hlavní průběh (produkty, enzymy, atp.) viz obrázek. Následují pouze pozná
 
 ◊img["first-reaction.png" #:w 400]{První reakce (citrát-syntázová)}
 
-◊definitions{
-    ◊term["Prochirální molekuly"]{
-        Nejsou sice chirální, ale mohou se jednou reakcí chirálními stát. Příkladem je citrát.
-    }
-}
-
 ◊ls[#:t "První reakce (citrát-syntázová)"]{
     - exergonická
-    - typický příklad uspořádané enzymatické reakce: nejprve se naváže oxalacetát a ař pak se může navázat ACoA
+    - typický příklad uspořádané enzymatické reakce: nejprve se naváže oxalacetát a až pak se může navázat ACoA
     - syntáza (ne syntetáza) => nepotřebuje makroergní molekulu
-    - dokud nebyla prochiralita známá, vznikla polemika o tom, zda tam vůbec citrát je
-        - citrát s akonitázou může reagovat jen jedním konkrétním způsobem, když se označí jeden uhlík, bude v produktu vždy na jednom konkrétním místě
+
 }
 
-◊img["prochiral.png"]{Prochirálnost citrátu}
-
 ◊img["citrate-synthase.png" #:w 300]{Struktura citrát-syntázy}
+
+◊box["Prochiralita citrátu"]{
+    ◊definitions{
+        ◊term["Prochirální molekuly"]{
+            Organické molekuly, které ač nejsou chirální, mají potenciál reagovat asymetricky, pokud se výžou na asymetrická vazebná místa.
+        }
+    }
+
+    ◊img["prochiral.png"]{Prochirálnost citrátu}
+
+    ◊ls[#:t "Citrát"]{
+        - viz obrázek
+        - citrát je symetrická molekula
+            - má dvě stejné ◊chem{COO-} skupiny, ze kterých se uhlíky po reakci objeví na dvou různých místech v ◊|alpha|-ketoglutarátu
+            - dalo by se čekat, že oba uhlíky z citrátu skončí na obou místech v molekule se stejnou pravděpodobností (symetricky)
+        - po pokusech s označenými izotopy uhlíku se ale ukázalo, že jeden uhlík vždy skončí na tom prvním a druhý vždy na tom druhém místě
+            - z toho se vyvodilo, že ať už se na ◊|alpha|-ketoglutarát mění cokoli, nic symetrického to není --- tedy určitě ne citrát
+                - proto se měnil název cyklu
+        - nakonec se zjistilo, že je to opravdu citrát, ale že se chová prochirálně --- na enzymu jsou tři vazebná místa, na která se citrát musí přesně strefit, a to jde pouze jedním způsobem => citrát reaguje ◊strong{asymetricky}, přestože je symetrický => konkrétní uhlík vždy skončí na stejném místě
+    }
+}
 
 ◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 ◊subsubsection{Druhá reakce}
@@ -1964,14 +1986,6 @@ Probíhá ◊strong{regenerace oxalacetátu}.
 
 Citrát si musí "odskočit" do cytoplasmy, kde probíhá syntéza mastných kyselin; další itermediáty slouží k dalším syntézám. Celý cyklus má tedy ◊strong{katabolický} i ◊strong{anabolický} charakter.
 
-◊note{
-    ◊ls[#:t "Vstup AK do KC"]{
-        - přes ◊|alpha|-ketoglutarát
-        - přes sukcinyl-CoA
-        - Asp, Phe, Tyr přes fumarát
-    }
-}
-
 ◊subsubsection{Anaplerotické reakce}
 
 ◊ls{
@@ -1983,3 +1997,50 @@ Citrát si musí "odskočit" do cytoplasmy, kde probíhá syntéza mastných kys
 ◊img["anaplerotic-reactions.png"]{Čtyři různé anaplerotické reakce}
 
 V poslední (reakce s jablečným enzymem) je zdrojem uhlíku místo ◊chem{CO2} bikarbonát. Reakce probíhá také při syntéze ◊chem{NADPH}, ale obráceně.
+
+◊note{
+    ◊ls[#:t "Vstup AK do KC"]{
+        - přes ◊|alpha|-ketoglutarát
+        - přes sukcinyl-CoA
+        - Asp, Phe, Tyr přes fumarát
+    }
+}
+
+◊section{Glyoxalátový cyklus}
+
+◊img["gloxalate.png" #:w 400]{Glyoxalátový cyklus}
+
+◊ls[#:t "Glyoxalátový cyklus"]{
+    - společné rysy s KC, je to dráha zahrnující některé podobné enzymy, ale je tam o dva enzymy navíc
+    - probíhá v ◊strong{glyoxysomech}, což jsou modifikované peroxisomy
+        - v semenech olejnatých rostlin
+}
+
+◊box["Peroxisomy"]{
+    ◊ls{
+        - detoxifikační centra
+            - odbourávají se tam jedy jako ethanol, léky
+        - látky se oxidují, stávají se rozpustnými a mohou se vylučovat močí
+        - vzniká zde peroxid vodíku
+    }
+}
+
+◊ls[#:t "Průběh"]{
+    # citrát syntázová rekce, vznik citrátu
+    # citrát je následně izomerizován na izocitrát, jako v KC (akonitáza)
+    # ◊strong{izocitrát lyáza} rozštěpí šestiuhlíkatou kyselinu na sukcinát a glyoxalát
+    # glyoxalát vstupuje do ◊strong{malátsyntázové reakce}, jež z něj a z ACoA uděá malát
+    # malát už zase vstupuje do klasické reakce KC (malát-dehydrogenáza)
+    # a regeneruje se oxalacetát
+}
+
+◊img["glyoxalate-vs-kc.png" #:w 400]{Vztah glyoxalátového cyklu a KC}
+
+Proč jsou glyoxysomy v semenech?
+
+◊ls[#:t "Syntéza cukrů"]{
+    - semena mají dva typy zásobních substrátů: škrob, tuky
+    - olejnatá semena u klíčení potřebují cukry, protože samotné tuky nejdou pomocí KC zpracovat -> musí nasyntetizovat sacharidy z tuků
+        - v KC nepřebývají žádné uhlíky, které by byly použitelné k syntéze sacharidů
+        - z glyoxalátového cyklu se uvolní sukcinát, který se může účastnit KC, a později nepřímo poslouží k tvorbě glukózy (viz obrázek)
+}
