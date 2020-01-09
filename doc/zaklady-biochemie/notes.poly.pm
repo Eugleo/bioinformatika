@@ -1597,3 +1597,148 @@ Jsou součástí ◊strong{proteoglykanů}.
     - v zásadě se skládá z heteropolysacharidových řetězců navzájem propojených glyciny a krátkým řetězcem AK (např. D-aminokyselinami jako D-alanin)
     - u bakterií se vyskytuje také kyselina N-acetylmuramová a N-acetylglukosamin
 }
+
+◊section{Glykolýza}
+
+◊section{Cyklus kyseliny citronové}
+
+◊ls{
+    - má mnoho jmen
+        - cyklus kyseliny citronové (CKC)
+            - tak jej nazval objevitel
+        - cyklus trikarboxylových kyselin
+            - kyselina citrónová byla zpochybněna jako intermediát cyklu
+            - vědělo se ale, že tam je nějaká trikarboxylová kyselina
+        - Krebsův cyklus
+            - podle objevitele (pozn. redaktora viz níže)
+}
+
+◊note{Der Krebs je německy cancer. Go figure.}
+
+◊img["metabolism-map.png" #:w 350]{Metabolická mapa, tečky jsou intermediáty enzymatických reakcí, čárky jsou přímo reakce}
+
+◊ls[#:t "Popis obrázku"]{
+    - tlustou svislou čarou je vyznačena glykolýza, končí na ◊strong{pyruvátu} (kyselině pyrohroznové)
+    - pyruvát vstupuje do velkého množství reakcí, např. mléčného kvašení, lakteátdehydrogenázové reakce a alkoholového kvašení, většinou však přes další molekulu vstupuje právě do CKC
+}
+
+Na pyruvátu a dalších molekulách se dá demonstrovat vlastnost katabolismu, který využívá energeticky bohaté sloučeniny z potravy na ATP a zisk buněčné energie.
+
+◊ls[#:t "Energeticky bohaté molekuly"]{
+    - proteiny, lipidy, sacharidy
+    - získáváme je zvenčí, v organismu jsou poté degradovány --- všechny tyto vysoce rozdílné molekuly se v rámci katabolismu sjednotí a setkají se v jedné univerzální molekule, acetyl koenzymu A
+    - získáváme je zvenčí, v organismu jsou poté degradovány --- všechny tyto vysoce rozdílné molekuly se v rámci katabolismu sjednotí a setkají se v jedné univerzální molekule, ◊strong{acetyl koenzymu A} (ACoA)
+        - ACoA je univerzální přenašeč acylových skupin (◊chem{COOH} po odtržení ◊chem{OH})
+        - ACoA je také přenašeč acetylové skupiny (◊chem{CH3CO})
+}
+
+◊todo{
+    ◊ls[#:t "Témata kapitoly"]{
+        - změna pyruvát -> ACoA
+        - pyruvát dekarboxyláza
+        - jak vzniká ACoA z tuků a jak jsou odbourávány AK
+    }
+}
+
+Některé AK se na ACoA nemění; vždy ale dochází k oxidaci (přenos elektronů), což zařizuje ◊strong{glyceraldehydfosfát-dehydrogenáza}. Vzniká NADH, který je poté někdy použit v mitochondriích na syntézu ATP v rámci elektrontransportního řetězce.
+
+◊img["oxidation-pathway.png" #:w 400]{Pohled na metabolismus cukrů, tuků a bílkovin}
+
+◊ls[#:t "Tři fáze katabolismu v metabolických drahách"]{
+    # konvergující dráhy vedoucí k ACoA
+        - glykolýza, beta-oxidace mastných kyselin, rozštěpení na dvě triózy
+    # Krebsův cyklus
+    # oxidativní fosforylace
+}
+
+◊img["mini-krebs.png" #:w 400]{Krebsův cyklus, základní schéma}
+
+◊ls[#:t "Cyklus zjednodušeně"]{
+    # vstupuje dvojuhlíkatý (C2) ACoA a s C4 oxaloacetátem tvoří C6
+    # ta je ve sledu sedmi reakcí dvakrát dekarboxylována, uvolní se dvě molekuly ◊chem{CO2} (co je většina toho ◊chem{CO2}, který vydechujeme)
+    # dva uhlíky se uvolní během cyklického pochodu
+    # další uvolňované molekuly jsou čtyři redukované koenzymy
+    # jako bonus vzniká jedna molekula makroergního fosfátu (např. GTP, ale to záleží na organismu)
+}
+
+◊box["O lokalizaci CKC"]{Krebsův cykus je lokalizován v mitochondrii, glykolýza byla v cytoplasmě, pyruvát po pyruvát-kinázovou reakci je ještě v cytoplasmě. Pyruvát pak přejde dovnitř mitochondrie, kde už je zbytek reakcí.}
+
+◊note{H. Krebs na cyklus neobjevil sám, pracovali na tom i jiní; postupně objevovali jednotlivé molekuly, určovali pořadí, používali inhibitory, koukali, co se kde hromadí. Pracovali se na preparátu rozemletého prsního svalu holuba, protože je to hodně aerobně aktivní tkáň, a cyklus je zde také velmi aktivní. Když ale sval rozemleli, rozemleli s ním i mitochondrie. Krebs objevenou lineární dráhu uzavřel do cyklu, to je jeho přínos.}
+
+◊subsection{Komplex pyruvát dehydrogenázy (PDC)}
+
+Popisuje vznik ACoA z pyruvátu.
+
+◊img["acoa.png" #:w 400]{Vznik ACoA, pyruvát dehydrogenázová reakce}
+
+◊ls[#:t "O reakci"]{
+    - oxidativní dekarboxyklace, ztratí se jeden ◊chem{CO2} a dva elektrony
+    - průběh reakce není tak jednoduchý jak by napovídal obrázek, pyruvát-dehydrogenázový enzym je komplex enzymů E1, E2, E3 a pěti koenzymů
+    - změna volné energie je silně záporná, ACoA je tedy makroergní sloučenina
+}
+
+◊subsubsection{Struktura}
+
+◊todo{Předělat následující do tabulky.}
+
+◊ls[#:t "Přehled enzymů a koenzymů"]{
+    - E1 katalyzuje oxidativní dekarboxylaci pyruvátu
+        - pevně váže koenzym TPP (thiamin pyrofosfát)
+    - E2 (dihydrolipoyl-transacetyláza) katalyzuje přenos acetlyové skupiny vzniklé v první reakci na Acetyl-CoA
+        - pevně váže koenzym kyselinu lipoovou, která je vázána na amidovou skupinu (proto se jmenuje lipoamid)
+        - volně váže CoA, který pro E2 funguje jako substrát
+    - E3 (dihydrolipoyl-dehydrogenáza) regeneruje oxidovanou formu lipoamidu
+        - pevně váže koenzym FAD (flavin-adenin-dinukleotid), na který jdou elektrony
+        - volně váže koenzym ◊chem{NAD+} (nicotinamid adenin dinukleotid), který pro E3 funguje jako substrát
+    - v komplexu se u E. coli objevuje 24 krát E1, 24 krát E2 a 12 krát E3, celý komplex má ◊u{4500 Da}
+}
+
+Přiblížíme si ty pevně vázané a jeden z těch volných.
+
+◊img["tpp.png" #:w 300]{Thyamin-pyrofosfát, TPP}
+
+◊ls[#:t "Thyamin-pyrofosfát"]{
+    - ze dvou cyklických částí, je tam pyrofosfátová skupina
+    - vyskytuje se v celé řadě enzymů, kde se přenáší nějaké skupiny, zde přenáčí acetylovou
+    - jeho zdrojem je vitamín thiamin
+        - tělo jej neumí samo syntetizovat, nedostatek vede k nemoci beri-beri
+}
+
+◊img["lipoamide.png" #:w 300]{Lipoamid}
+
+◊ls[#:t "Liopamid"]{
+    - skládá se z vlastní kyseliny lipoové
+    - kyselina lipoová může být oxidovaná či redukovaná, protože síra může nést redukující ekvivalenty
+    - je možná ještě třetí forma --- síra může nést acetylovou skupinu
+    - funguje jako přenašeč, je připojený na molekulu lysinu
+        - Lys je dlouhý, kys. lipoová také => spolu tvoří dlouhé rameno, které se může pohybovat se mezi dvěma aktivními místy dvou enzymů
+        - rameno může v jedné pozici převzít redukční ekvivalenty a acetylovou skupinu, přehoupnout se jinam a tam náklad odevzdat a redukovat se
+        - někdy se tomu říká lipoyl-lysin
+}
+
+◊note{Na síru jsme narazili i u Cys. Ten umí dělat disulfidické můstky, které jsou důležité např. při tvorbě terciální struktury proteinu (např. u inzulinu).}
+
+◊img["coa.png"]{Koenzym A}
+
+◊ls[#:t "Koenzym A"]{
+    - poměrně veliká molekula, má motiv společný pro mnoho biomolekul
+    - obsahuje adenin, ribózu, pyrofosfát
+        - vypadá jako NAD nebo ADP ale je tam ribóza fosforylovaná na C3
+    - merkapto-ethylamin může tvořit vazbu s acetylovými skupinami (např. v ACoA)
+}
+
+◊img["pdc-cubes.jpg" #:w 400]{Celková struktura PDC u E. coli: (a) je vnitřní krychle s 24 E2, (b) je vnější krychle s 24 E1 (oranžová) a 12 E3 (červená)}, (c) je (a) + (b)
+
+◊ls[#:t "Celková struktura"]{
+    - u E. coli (a dalších prokaryot a ◊chem{G+} bakterií) je organizován do dvou pomyslných krychlí
+        - na vnitřní jsou E2 (8 vrcholů, na každém jsou tři E2, celkem 24)
+        - na vnější jsou E1 (2 na 12 hranách, tj. 24) a E3 (2 na 6 stěnách, tj. 12)
+        - dohromady máme 60 podjednotek tvořících PDC
+    - u lidí a ◊chem{G-} bakterií je to složitější, PDC je organizován do dvou vnořených dvanáctistěnů
+        - jeden vevnitř (20 krát E2), jeden vně (30 krát E1 tetramer na každé hraně, 12 krát E3 dimer na každé stěně)
+        - celkem 204 podjednotek, ◊u{10 MDa}
+        - tento komplex je v mitochondriální matrix a všechny proteiny jsou kódovány v jádře => musí se tam nějak dostat a pak se poskládat do dvanáctistěnu
+            - genetické vady ve struktuře/transportu/poskládání jsou letální
+}
+
+◊subsubsection{Funkce}
