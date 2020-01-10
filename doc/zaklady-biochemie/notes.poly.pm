@@ -1617,7 +1617,7 @@ Jsou součástí ◊strong{proteoglykanů}.
 
 ◊note{Der Krebs je německy cancer. Go figure.}
 
-◊img["metabolism-map.png" #:w 350]{Metabolická mapa, tečky jsou intermediáty enzymatických reakcí, čárky jsou přímo reakce}
+◊img["metabolic-map.png" #:w 500]{Metabolická mapa, tečky jsou intermediáty enzymatických reakcí, čárky jsou přímo reakce}
 
 ◊ls[#:t "Popis obrázku"]{
     - tlustou svislou čarou je vyznačena glykolýza, končí na ◊strong{pyruvátu} (kyselině pyrohroznové)
@@ -1661,9 +1661,9 @@ Některé AK se na ACoA nemění; vždy ale dochází k oxidaci (přenos elektro
             - na jednu molekulu glukózy vznikají redukované koenzymy na šesti místech a všechny nesou vysokoenergetické elektrony, které odejmuli při oxidačních reakcích
             - energie může být využita k syntéze ATP oxidací těchto koenzymů
     }
-}
 
-◊img["mini-krebs.png" #:w 300]{Krebsův cyklus, základní schéma}
+    ◊img["converging-pathways.png"]{Aerobní katabolismus, příklady konvergentních, cyklických i divergentních metabolických drah}
+}
 
 ◊ls[#:t "Cyklus zjednodušeně"]{
     # vstupuje dvojuhlíkatý (C2) ACoA a s C4 oxalacetátem tvoří C6
@@ -1672,6 +1672,8 @@ Některé AK se na ACoA nemění; vždy ale dochází k oxidaci (přenos elektro
     # další uvolňované molekuly jsou čtyři redukované koenzymy
     # jako bonus vzniká jedna molekula makroergního fosfátu (např. GTP, ale to záleží na organismu)
 }
+
+◊img["mini-krebs.png" #:w 300]{Krebsův cyklus, základní schéma}
 
 ◊box["O lokalizaci CKC"]{Krebsův cykus je lokalizován v mitochondrii, glykolýza byla v cytoplasmě, pyruvát po pyruvát-kinázovou reakci je ještě v cytoplasmě. Pyruvát pak přejde dovnitř mitochondrie, kde už je zbytek reakcí.}
 
@@ -1704,6 +1706,8 @@ Stará se přeměnu pyruvátu, který je výstupem glykolýzy, na ACoA, který p
         - volně váže koenzym ◊chem{NAD+} (nicotinamid adenin dinukleotid), který pro E3 funguje jako substrát
     - v komplexu se u E. coli objevuje 24 krát E1, 24 krát E2 a 12 krát E3, celý komplex má ◊u{4500 Da}
 }
+
+◊img["nad.png"]{NAD(H) a NADP(H)}
 
 Přiblížíme si ty pevně vázané a jeden z těch volných.
 
