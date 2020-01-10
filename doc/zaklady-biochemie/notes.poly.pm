@@ -559,7 +559,7 @@ Někdy se může protein dostat do "pasti" (je nutné překonat stav s vyšší 
 ◊subsubsection{Hemoglobin}
 
 ◊ls{
-    - tetramer se dvěma alfa a dvěma beta podjednotkami, každá z nich má konjugovaný heterocyklický systém s ◊chem{Fe2+} (HEM), hemoglobin tedy jejich prostřednictvím umí vázat 4 molekuly kyslíku
+    - tetramer se dvěma alfa a dvěma beta podjednotkami, každá z nich má konjugovaný heterocyklický systém s ◊chem{Fe^2+} (HEM), hemoglobin tedy jejich prostřednictvím umí vázat 4 molekuly kyslíku
     - po vazbě kyslíku se mění kvartérní struktura
         - např. u konce molekuly jedné podjednotky vůči druhému konci jiné
         - dále se mění i díra uprostřed (oxygenací se zmenší)
@@ -1557,7 +1557,7 @@ Příklad heteropolysacharidů.
     - mají v mezibuněčné hmotě funkci mechanickou (působí jako tlumiče nárazů na tkáně)
         - často se jmenují podle místa výskytu, napříkald chondroitin-sulfát v chrupavce, dermatan-sulfát v dermis, keratan-sulfát v rohovině
         - hyaluronát je v celé mezibuněčné hmotě
-    - jsou schopny se hydratovat či dehydratovat: umí vázat velké množství ◊chem{Na2+}, ◊chem{K+} či ◊chem{Ca2+} iontů a poté (de)hydratací jsou schopné až tisíckrát změnit svůj objem
+    - jsou schopny se hydratovat či dehydratovat: umí vázat velké množství ◊chem{Na^2+}, ◊chem{K+} či ◊chem{Ca^2+} iontů a poté (de)hydratací jsou schopné až tisíckrát změnit svůj objem
     - mají i důležitou signální funkci jako růstové faktory (směrování buněk v embryonálním vývoji, při migraci buněk i v dospělém organismu)
     - jsou důležité i pro imunitní systém a nádory, jejich proliferaci
 }
@@ -1940,7 +1940,7 @@ Sukcinyl-CoA je opět makroergní molekula.
     # fosfát je přenesen na GDP (nebo ADP a podobně), tvoří se GTP (nebo ATP a podobně)
 }
 
-Probíhá tedy tzv. ◊strong{syntéza ATP na substrátové úrovni}, která probíhá i v glykolýze. Druhý způsob syntézy ATP je v mitochondriích na základě oxidační fosforylace.
+Probíhá tedy tzv. ◊strong{syntéza ATP na substrátové úrovni}, která probíhá i v glykolýze. Druhý způsob syntézy ATP je v mitochondriích na základě oxidativní fosforylace.
 
 ◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 ◊subsubsection{Šestá reakce}
@@ -1949,7 +1949,7 @@ Probíhá tedy tzv. ◊strong{syntéza ATP na substrátové úrovni}, která pro
 
 ◊ls[#:t "Šestá reakce"]{
     - enzym sukcinát-dehydrogenáza, koenzym FAD
-        - FAD funguje zde, v reakci pyruvát -> ACoA a v oxidační fosforylaci (jako komplex II)
+        - FAD funguje zde, v reakci pyruvát -> ACoA a v oxidativní fosforylaci (jako komplex II)
     - na rozdíl od ostatních enzymů v KC je vázaný na membránu
         - je integrálním membránovým proteinem ve vnitřní mitochondriální membráně => může efektivně předávat elektrony
     - (doslova) učebnicový příklad enzymu manifestujícího ◊em{kompetitivní inhibici}
@@ -2049,4 +2049,131 @@ Proč jsou glyoxysomy v semenech?
     - olejnatá semena u klíčení potřebují cukry, protože samotné tuky nejdou pomocí KC zpracovat -> musí nasyntetizovat sacharidy z tuků
         - v KC nepřebývají žádné uhlíky, které by byly použitelné k syntéze sacharidů
         - z glyoxalátového cyklu se uvolní sukcinát, který se může účastnit KC, a později nepřímo poslouží k tvorbě glukózy (viz obrázek)
+}
+
+◊section{Oxidativní fosforylace}
+
+Dále již jen zkráceně OF.
+
+◊ls{
+    - dvě reakce: oxidace (transport elektronů z redukovaných koenzymů) a fosforylace
+    - ◊chem{ADP -> ATP}
+    - reakce bez sebe nemohou být, jsou spjaty
+    - probíhá v mitochondriích, kde se (při dostatku kyslíku) vyrábí 96% ATP (zbytek vzniká při glykolýze a jedna molekula v KC)
+    - mitochondrie mají všechny aerobní organismy (potažmo všechna eukaryota, jen některá je mají pozměněné
+}
+
+◊img["of-schema.png"]{Přehed oxydativní fosforylace}
+
+◊section{Mitochondrie}
+
+◊ls[#:t "Historie objevu mitochondrií"]{
+    - Otto Warburg dostal roku 1931 NC za objevy kolem mitochondrií
+    - mitochondrie byly popsány na přelomu 19. a 20. století, poměrně brzy byla zjištěna jejich úloha v oxidativním metabolismu
+    - až v 50. letech (George E. Palade) byla na Rockefelově univerzitě poprvé postavena dobrá centrifuga, která dovedla oddělovat buněčné kompartmenty
+        - až tehdy se dala studovat čistá mitochondriální frakce
+        - Palade dostal NC v roce 1974 spolu s Christianem de Duve (který objevil peroxisomy) a Albertem Palade
+}
+
+◊subsection{Struktura mitochondrií}
+
+◊img["mitochondrion.png" #:w 400]{Stavba mitochondrie}
+
+◊ls[#:t "Vnější membrána"]{
+    - má póry z porinů, které slouží k transportu proteinů do mitochondrie
+        – tedy je dost propustná
+}
+
+◊ls[#:t "Mezimembránový prostor"]{
+    - reakce s metabolismem nukleotidů, např. při udržování úrovně nukleotidů (◊chem{ADP <=> ATP}) dovede měnit nukleotidy v sebe sama
+    - jsou to i důležité signální molekuly ohledně energentického stavu buňky
+}
+
+◊ls[#:t "Vnitřní membrána"]{
+    - nařasená kristami
+        - původní představa velkých vchlípenin se ale opouští, současný názor je takový, že vchlípeniny jsou spíše tunýlky
+        - tunýlky teoreticky mohou měnit průměr svého vstupu (přelomu mezi tunýlkem a mezimembránovým prostorem), čímž by se mohl tvořit v mezimembránovém prostoru nějaký gradient
+    - jsou v ní zanořené komplexy OF
+    - je vlastně nepropustná, neprojde přes ní nic, pro co tam není transportní systém (kromě krátkých MK a plynů)
+        - ◊chem{CO2} vzniká v KC a kyslík je tam potřeba jako finální akceptor elektronů
+        - neprojdou ale třeba protony, to je základ OF
+}
+
+◊img["mitochondrion-fluorescent.png" #:w 200]{Buňka, fluorescenčně obarvená (červeně cytoskelet, zeleně mitochondrie) --- důkaz existence mch retikula}
+
+◊ls[#:t "Celková morfologie"]{
+    - původní představa: mch mají na délku asi ◊u{2 \mu m}, jsou tedy velikostní podobné bakteriím
+    - současná představa: mch jsou spíše ◊strong{dynamickým retikulem}
+        - existuje dynamická sít mch, které se neustále slučují, pohybují, mění tvar
+        - nejspíše ve všechn buňkách kromě svalových (tam není místo) a spermií (tam jsou mch kolem bičíku)
+    - v mch se tvoří kyslíkové radikály => rychle stárnou, jsou rychle odstraňovány (autofagocytózou) a obnovovány
+    - ke změnám ve tvaru a uspořádání mitochondrií může dojít otravou, zablokováním OF, ale tvar mohou měnit i v závislosti na energetickém stavu buňky
+        - potřeba vysoké produkce ATP => zvýšení objemu
+        - v opačném případě fragmentace a snížení objemu
+}
+
+◊subsection{Oxidace (elektron-transportní řetězec)}
+
+◊img["oxidation-of.png"]{Schéma elektron-transportního řetězce}
+
+◊ls[#:t "Transport elektronů"]{
+    - probíhá při redoxních reakcích (donor se oxiduje, akceptor redukuje)
+    - v oxidační části je elektronový pár nesen z primárního donoru (redukovaný koenzym ◊chem{NADH} nebo ◊chem{FADH2}) přes přenašeče až na finální akceptor ◊chem{O2}
+    - zjednodušený nákres ukazuje, že se řetězec skládá ze čtyř komplexů (I-IV), které jsou všechny ukotveny ve vnitřní mch membráně
+        - kromě těchto čtyř velikých proteinových komplexů jsou tam ještě dva mobilní přenašeče, kteří se pohybují mezi těmi velkými
+            - ◊strong{koenzym Q} (1 <-> 3, 2 <-> 3)
+            - ◊strong{cytochrom C} (3 <-> 4)
+    - látky vstupují buď na místě I, ◊chem{NADH}, nebo na II, kde je sukcinát-dehydrogenáza s flavinovým koenzymem ◊chem{FADH2}
+}
+
+◊img["redox-potential.jpg" #:w 200]{Redoxní potenciál jednotlivých komplexů}
+
+◊ls[#:t "Redoxní potenciál"]{
+    - jedna osa ukazuje redox potenciál v milivoltech, druhá osa ukazuje volnou energii, která se při přenosu uvolní
+    - nejvýše je soustava NADH-NAD
+    - obecně platí, že putují elektrony ze soustavy o nízkém redox potenciálu na soustavu s vyšším potenciálem
+    - zde je rozdíl více než ◊u{1 V}, a podle Nernstovy rovnice se dá spočítat, jak velká energie se při takovémto přenosu uvolní
+        - více než ◊u{200 kJ/mol}, tam se vejde cca 7 molekul ATP
+}
+
+◊subsubsection{Redoxní centra}
+
+◊ls{
+    - molekuly, které umí měnit svůj oxidační stav
+    - starají o to, aby byl elektron na jedné straně přijat a na druhé odevzdán
+}
+
+◊img["coenzyme-q.png"]{Koenzym Q}
+
+◊ls[#:t "Koenzym Q"]{
+    - jiné názvy: ubiquinon, ubichinon (byl nalezen všude možně po buňce, byl tedy ◊em{ubiquitous}), koenzym Q10 (viz níže)
+    - pohyblivý přenašeč elektronů, běhá ve vnitřní membráně a nosí elektrony mezi komplexy
+    - má dlouhý hydrofobní ocásek, celý je tedy také hydrofobní
+        - proto je uvnitř membrány
+        - v ocásku se desetkrát opakuje jeden motiv -> název koenzym Q10
+            - jsou různé typy koenzymů od Q1 až po Q10
+    - může být v ◊strong{radikálové formě} a vázat jen jeden elektron, nebo může být v plně oxidované a vázat dva
+}
+
+◊img["fe-s-complex.png" #:w 350]{
+    (A) Fe + 4Cys (u bakterií), (B) 2Fe + 2S + 4Cys (sír je celkově 6), (C) 4Fe + 4S + 4Cys (sír je celkově 8)
+}
+
+◊ls[#:t "Akonitáza"]{
+    - má v sobě železosirný komplex
+    - účastní se reakce tak, že uvolní ◊chem{Fe^2+} a supostí Fentonovu reakci
+}
+
+◊img["heme.png"]{Tři příklady porfyrinového cyklu}
+
+◊ls[#:t "Cytochromy"]{
+    - proteiny s hemovým železem, hemem
+    - tvoří se ◊strong{porfyrinový kruh} přes 4 ◊chem{N} je vázáno jedno ◊chem{Fe} (může přecházet na ◊chem{Fe^2+} a ◊chem{Fe^3+})
+    - je několik typů cytochromů
+        - dělí se podle toho, jaké typy hemů jsou v nich vázány --- A, B či C
+        - hemy A, B a C se liší ukotvením v proteinu a postranními řetězci navázanými na porfyrinový kruh
+    - ještě se tam podílí měď, ale není v žádném komplexu
+    - cytochromy jsou důležité pro experimenty, různě absorbují světlo
+        - CytC při třech vlnových délkách absorbuje silně
+        - navíc absorbuje různě v oxidovaném a redukovaném stavu -> dobrý způsob jak měřit průběh metabolismu v organismu je sledování změny absorbance
 }
