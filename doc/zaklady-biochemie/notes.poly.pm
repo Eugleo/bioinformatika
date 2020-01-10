@@ -1602,6 +1602,308 @@ Jsou součástí ◊strong{proteoglykanů}.
 
 ◊section{Glykolýza}
 
+◊ls{
+    - vlastní téměř všem živočichům (kromě pár bakterií)
+    - zdroj energie
+    - jedna z hlavních regulačních reakcí glykolýzy
+        - ty bývají na začátku (zablokování tvorby meziproduků)a an konci metabolických drah (pro hromadění meziproduktů)
+    - sestává se z deseti biochemických reakcí, behem kterých se glukóza mění na pyruvát
+    - další procesy závisejí na prostředí
+        - ◊strong{za anaerobních podmínek:}
+            - dochází k procesu fermentace = kvašení (mléčné, alkoholové)
+        - ◊strong{za areobnéch podmínek:}
+            - dochází k aerobní oxidaci v Krebsově (cytrátovém) cyklu a následně k oxidativní fosforylaci
+}
+
+◊ls[#:t "Historie studia glykolýzy"]{
+    - Pasteur se domníval, že za kvašení mohou mikroorganismy
+    - později se zjistilo, že proces probíhá i s mrtvými kvasinkami (díky jejich enzymům)
+    - na přelomu 19. a 20. století se zjistilo, že se glykolýzy účastní jak enzymy, tak neenzymatické látky
+    - mechanismus byl ve 40. letech 20. století objasněn
+}
+
+◊ls[#:t "Glykolýza má dvě části"]{
+    - ◊strong{přípravná}
+        - 5 fází
+        - přeměna glukózy na dvě změnitelné triózy
+    - ◊strong{výkonná}
+        - 5 fází
+        - generování ATP (energetický zisk)
+        - redukce koenzymu NADP
+}
+
+◊img["whole_glycolysis.png"]{Schéma celé glykolýzy}
+
+◊subsection{První reakce}
+
+◊img["first.PNG" #:w 400]{První reakce}
+
+◊ls[#:t "Hexokináza"]{
+    - nespecifický enzym (může katalyzovat celou řadu reakcí)
+    - katalyzuje první reakci
+    - kinázy patří mezi transferázy = enzymy přenášející fosfát
+        - mění glukózu na glukózu-6-fosfát
+                - tzn. přenese fosfát na hexózu
+    - hexokináza fosforyluje:
+        - ve většině tkáních glukózu, manózu, ...
+        - ve slinivce a játrech jen glukózu = glukokináza
+            - účastní se udržování hladiny glukózy v krvi
+}
+
+◊ls[#:t "Struktura hexokinázy"]{
+    - 2 laloky
+    - ◊strong{ glukóza nasedá na katalytické místo mezi laloky}
+    - ◊strong{změna konformace katalytického místa}
+        - uzavření katal. místa mezi laloky
+        - mimo jiné kvůli vytěsnění vody
+            - dojde ke změně elektrostatických sil, což umožní vazbu substrátu v konkrétním místě (fosfát by se jinak výrazně jednodušeji navázal na vodu)
+    - ◊strong{pevné navázání glukózy do buňky}
+        - bez fosforylace může procházet volně přes membránu
+        - glukóza může být zpracována
+}
+
+◊ls[#:t "Glukóza-6-fosfatáza"]{
+    - enzym z jaterních buněk
+    - schopný defosforylace, tj. uvolnění glukózy z buněk
+    - ve většině tkání není, a tak se tam musí glukóza spotřebovat
+}
+
+◊ls[#:t "Hořčíkové kationty"]{
+    - kofaktorem reakcí valné většiny kináz
+    - stíní náboj na kyslíkových atomech (na beta-galaktofosfátu na ATP)
+    - usnadňují přenos fosfátové skupiny
+}
+
+◊subsection{Druhá reakce}
+
+◊img["second.PNG" #:w 400]{Druhá reakce}
+
+◊ls[#:t "Druhá reakce"]{
+    - izomerizace glukóza-6-fosfátu na fruktóza-6-fosfát (aldosa na ketosu)
+    - katalyzováná glokóza-fosfát-izomerázou
+    - přípravná reakce
+        - fruktóza je lépe štěpitelná
+    - stereospecifická reakce
+    - acidobazická reakce
+        - otevření šestičetného cyklu kyselinou, zavření pětičetného bází
+}
+
+◊img["second-detail.png"]{Druhá reakce v detailu}
+
+◊definitions{
+    ◊term["Stereospecifická reakce"]{
+        Reakce, jejíž stereochemický výstup je dán konfigurací výchozích látek --- dává různé stereoizomery produktů pro různé stereoizomery reaktantů, nebo s určitými stereoizomery reaktantů vůbec nereaguje.
+    }
+}
+
+◊subsection{Třetí reakce}
+
+◊img["third.png" #:w 400]{Třetí reakce}
+
+◊ls[#:t "Třetí reakce"]{
+    - fosforylace fruktóza-6-fosfátu na fruktózu-1,6-bifosfát
+    - nejdůležitější regulační reakce glykolýzy
+    - katalyzována fosfofruktokinázou
+        - fosforyluje fruktóza-6 fosfát
+    - inhibována ATP (značí dostatek energie v buňce) a citrátem
+    - stimulována AMP (značí nedostatek energie v buňce)
+    - znovu dochází k uzavření aktivního místa a vytěsnění vody
+    - kofaktor: hořečnaté ionty
+}
+
+◊subsection{Čtvrtá reakce}
+
+◊img["fourth.png" #:w 450]{Čtvrtá reakce}
+
+◊ls[#:t "Čtvrtá reakce"]{
+    - fruktóza-1,6-bifosfát je štěpena na 2 triózy:
+        - glyceraldehyd-3-fosfát
+        - dihydroxyacetonfosfát
+    - ◊strong{aldolázová reakce}
+        - katalyzována aldolázou (Schiffova báze)
+        - dochází k aldolovému štěpení
+            - štěpení C-C vazeb (obtížné)
+            - fruktóza-1,6-bisfosfát spolu s aktivním centrem enzymu vytvářín tzv.protonovanou Schiffovu bázi, v důsledku toho se delokalizují elektrony a je busnadněno štěpení C-C vazby
+    - důležitá přítomnost karbonylové skupiny na C(2) a hydroxylové skupiny na C(4)
+    - dvě třídy aldoláz
+        - Schiffova báze
+        - zinečnaté kationty
+            - některé plísně
+            - využití: vývoj plísňových inhibitorů
+}
+
+◊img["fourth-detail.png"]{Čtvrtá reakce v detailu}
+
+◊subsection{Pátá reakce}
+
+◊img["fifth.PNG" #:w 400]{Pátá reakce}
+
+◊ls[#:t "Pátá reakce"]{
+    - poslední z přípravné fáze
+    - reakce enzymu trióza-fosfát-izomerázy
+        - schopný vzájemně izomerizovat vzniklé triózy (z minulé reakce)
+        - alfa-beta barel z osmi beta-listů ukotvených osmi alfahelixu (častá struktura enzymů)
+        - uvnitř soudku je katalytické centrum
+        - uzavíratelný
+        - dokonalý enzym
+            - rychlost reakce limitována pouze rychlostí srážky enzymu a substrátu
+    - acidobazická katalýza
+    - vzniká endiolový meziprodukt
+    - funguje v obou směrech
+}
+
+◊subsection{Šestá reakce}
+
+◊img["sixth.png" #:w 450]{Šestá reakce}
+
+◊ls[#:t "Šestá reakce"]{
+    - katalýza glyceraldehyd-3-fosfátdehydrogenázy
+    - dochází k uskladnění chemické energie, která je využitelná pro další reakce a tvorbu ATP
+}
+
+◊img["fifth-detail.png"]{Šestá reakce v detailu}
+
+◊ls[#:t "Průběh"]{
+    # glyceraldehyd-3-fosfát interaguje s ◊chem{SH} skupinou v aktivním centru enzymu a vzniká thiohemiacetál
+    # oxidace thiohemiacetálu pomocí oxidovaného koenzymu ◊chem{NAD+} na acylthioester (karboxylová kyselinu)
+    # uvolňuje se energie, s její pomocí dojde k zabudování anorganického fosfátu z prostředí do glyceraldehyd-3-fosfátu za vzniku 1,3-bisfosfoglycerové kyseliny
+    # tato energie bude využita v následující reakci k tvorbě ATP
+}
+
+Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných místech, kde je potřeba energie, např. ve spermiích.
+
+◊subsection{Sedmá reakce}
+
+◊img["seventh.png" #:w 500]{Sedmá reakce}
+
+◊ls[#:t "Sedmá reakce"]{
+    - katalyzována fosfoglycerátkinázou
+        - mění 1,3-bisfosfoglycerát na 3-fosfoglycerát
+        - tvorba ATP
+    - kofaktorem jsou hořčíkové kationty
+    - k tvorbě ATP je zde využit anorganický fosfát zabudovaný v šesté reakci
+    - v této reakci vzniká jedna molekula ATP na dvě molekuly glyceraldehyd-3-fosfátu, ale z původní molekuly glukózy jsou to 2 molekuly ATP (z jedné glukózy se získají dvě triózy)
+    - odbočka: vznik 2,3-bisfosfoglycerátu
+        - molekula snižující afinitu hemoglobinu pro kyslík
+        - důsledek:
+            - mutace v hexokináze:
+                - bude vznikat méně 2,3-bisfosfoglycerátu
+                - větší afinita ke kyslíku,
+            - defekt v pyruvát-kináze
+                - bude se hromadit 1,3-bisfosfoglycerát
+                - nižší afinita ke kyslíku
+}
+
+
+◊subsection{Osmá reakce}
+
+◊img["eighth.PNG" #:w 400]{Osmá reakce}
+
+◊ls[#:t "Osmá reakce"]{
+    - přípravná reakce (ale ne v přípravné fázy glykolýzy)
+    - katalyzována fosfoglycerátmutázou
+    - přeměnu 3-fosfoglycerátu na 2-fosfoglycerát
+    - přes meziprodukt 2,3-bisfosforlycerát
+    - v katalytickém centru AK je histidin, který předává fosfát na druhý uhlík a následně je prohodí
+}
+
+◊img["eigth-detail.png" #:w 400]{Osmá reakce v detailu}
+
+◊subsection{Devátá reakce}
+
+◊img["ninth.PNG" #:w 400]{Devátá reakce}
+
+◊ls[#:t "Devátá reakce"]{
+    - ◊strong{enolázová reakce}
+    - katalyzována enolázou
+    - 2-fosfoglycerát se mění na fosfoenolpyruvát
+    - dehydrogenace
+        - v první fázi dojde k odštěpení vodíkového protonu
+        - v druhé fázi k odštěpení hydroxylové skupiny
+    - vzniká makroergní sloučenina fosfoenolpyruvát
+        - ta bude v poslední reakci opět využita ke tvorbě ATP
+}
+
+◊subsection{Desátá reakce}
+
+◊img["tenth.png" #:w 450]{Desátá reakce}
+
+◊ls[#:t "Desátá reakce"]{
+    - katalyzuje pyruvátkináza
+    - kofaktory: Mg a K kationt (stabilizace meziproduktu)
+    - tvorba ATP za využití energie z fosfoenolpyruvátu vzniklém v předchozím kroku
+    - Fosfoenolpyruvát -> enolpyruvát -> pyruvát
+        - enolpyruvát tutomerizován na pyruvát
+            - vysoká změna energie, ta je využita k syntéze ATP
+    - na jednu molekulu glukózy další 2 molekuly ATP
+}
+
+◊subsection{Zpracování pyruvátu za anaerobních podmínek}
+
+◊img["all.PNG" #:w 400]{Kam se ubírá pyruvát poté, co vznikne v glykolýze}
+
+◊ls{
+    - po glykolýze v anaerobních podmínkách dochází k fermentaci
+    - jejím hlavním účelem je reoxidace koenzymu ◊chem{NADP} na ◊chem{NAD+}
+        - ◊chem{NAD+} je potřeba pro glyceraldehyd-3-fosfát dehydrogenázovou reakci
+}
+
+◊img["lactate-fermentation.png" #:w 400]{Laktátové kvašení}
+
+◊ls[#:t "Laktátové kvašení"]{
+    - pyruvát se mění na laktát
+    - dochází k reoxidaci ◊chem{NADP}
+}
+
+◊img["ethanol-fermentation.png" #:w 400]{Alkoholové kvašení}
+
+◊ls[#:t "Alkoholové kvašení"]{
+    - má dva kroky (viz obrázek), prochází před meziprodukt acetaldehyd
+    - důležitým kofaktorem té první reakce je thiaminpyrofosfát,
+        - obecně se účastní dekarboxylací v buňce (např. dekarboxylací AK, proto thiamin patří mezi vitamíny řady B)
+    - při druhé reakci dochází k reoxidaci, jako kofaktor zde slouží zinek
+}
+
+
+◊subsection{Regulace glykolýzy}
+
+◊ls[#:t "Úrovně regulace"]{
+    - lokální a globální
+        - pomocí hormonů
+    - geneticky
+        - ovlivněním exprese
+    - alostericky
+        - pomocí alosterických inhibitorů a aktivátorů
+    - posttranslačními modifikacemi
+        - fosforylací
+}
+
+Většina glykolytických enzymů navíc potřebuje kofaktory (u všech kináz jsou to ionty Mg).
+
+◊img["PFK_graph.PNG" #:w 300]{Vliv koncentrace ATP na funkci PFK}
+
+◊ls[#:t "Příklady"]{
+    - do glykolýzy mohou vstupovat i jiné substráty, než glukóza
+        - například fruktóza-6-fosfát ve svalových a jaterních buňkách
+            - hexokináza ve svalech schopná fosforylovat jak glukózu, tak fruktózu
+            - v jaterních buňkách není, jsou tam specifické enzymy fosfoglukokináza a fosfofruktokináza
+        - galaktósa-1-fosfát -> glukóza-6-fosfát
+        - manóza -> manóza-6-fosfát -> fruktóza-6-fosfát
+}
+
+◊box["Signální funkce glykolýzy"]{
+    ◊ls{
+        - glykolitické enzymy mají i signální funkce
+            - hexokináza
+                - regulace transkripce
+            - glyceraldehyd
+                - vazba ◊chem{NAD+}
+                - replikace
+                - transkripce
+        - nádorové buňky používají glykolýzu i za anaerobních podmínek, čímž tvoří kyselé vnější prostředí
+    }
+}
+
 ◊section{Cyklus kyseliny citronové}
 
 ◊ls{
@@ -2126,7 +2428,7 @@ Dále již jen zkráceně OF.
     - látky vstupují buď na místě I, ◊chem{NADH}, nebo na II, kde je sukcinát-dehydrogenáza s flavinovým koenzymem ◊chem{FADH2}
 }
 
-◊img["redox-potential.jpg" #:w 200]{Redoxní potenciál jednotlivých komplexů}
+◊img["redox-potential.jpg" #:w 400]{Redoxní potenciál jednotlivých komplexů}
 
 ◊ls[#:t "Redoxní potenciál"]{
     - jedna osa ukazuje redox potenciál v milivoltech, druhá osa ukazuje volnou energii, která se při přenosu uvolní

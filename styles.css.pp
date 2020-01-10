@@ -288,7 +288,7 @@ img {
   max-height: 100%;
   margin: 15px;
   margin: 15px;
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 .figure-caption {
