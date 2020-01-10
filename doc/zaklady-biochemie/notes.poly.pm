@@ -2463,7 +2463,7 @@ Dále již jen zkráceně OF.
 
 ◊ls[#:t "Akonitáza"]{
     - má v sobě železosirný komplex
-    - účastní se reakce tak, že uvolní ◊chem{Fe^2+} a supostí Fentonovu reakci
+    - účastní se reakce tak, že uvolní ◊chem{Fe^2+} a spustí Fentonovu reakci
 }
 
 ◊img["heme.png"]{Tři příklady porfyrinového cyklu}

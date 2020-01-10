@@ -376,6 +376,7 @@
                 "    \\label{" ,label "}\n"
                 "\\end{figure}\n"))]
     [else
+      (define wrapper-width (if w (format "~apx" (+ w 30)) "100%"))
       (define width (if w (format "~apx" w) "100%"))
       (define height (if h (format "~apx" h) "auto"))
       (define image
@@ -387,8 +388,8 @@
         [(empty? alt) image]
         [else
           `(div [[class "figure-wrapper"]
-                 [style ,(format "max-width: ~a; max-height: ~a;" width height)]]
-                ,image-no-size
+                 [style ,(format "max-width: ~a; max-height: ~a;" wrapper-width height)]]
+                ,image
                 (div [[class "figure-caption"]]
                      ,@alt))])]))
 

@@ -281,6 +281,15 @@ img {
   ◊(margin-bottom 1)
 }
 
+img {
+    transition:transform 0.25s ease;
+}
+
+img:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+
 .figure-wrapper img {
   ◊(margin-bottom 0.3)
   display: block;
