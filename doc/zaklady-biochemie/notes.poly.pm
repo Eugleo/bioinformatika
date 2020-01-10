@@ -2401,6 +2401,16 @@ Dále již jen zkráceně OF.
         - neprojdou ale třeba protony, to je základ OF
 }
 
+◊ls[#:t "Semiautonomie"]{
+    - mch jsou ◊strong{semiautonomní}, obsahují vlastní DNA
+    - mch genů je u člověka 13, všechny kódují nějaký protein patřící do komplexu z OF
+        - postupem času se geny přesouvaly z mch do jádra
+        - těch 13 proteinů zůstalo, protože jsou natolik hydrofobní, že by nemuseli přečkat cestu přes cytoplasmu
+    - komplexy se většinou skládají z mch i běžných proteinů, které jsou do mch transportovány z cytoplasmy
+        - ◊strong{mitopatie} = chyby v koordinaci skládání (celkem časté)
+}
+
+
 ◊img["mitochondrion-fluorescent.png" #:w 200]{Buňka, fluorescenčně obarvená (červeně cytoskelet, zeleně mitochondrie) --- důkaz existence mch retikula}
 
 ◊ls[#:t "Celková morfologie"]{
@@ -2436,6 +2446,23 @@ Dále již jen zkráceně OF.
     - obecně platí, že putují elektrony ze soustavy o nízkém redox potenciálu na soustavu s vyšším potenciálem
     - zde je rozdíl více než ◊u{1 V}, a podle Nernstovy rovnice se dá spočítat, jak velká energie se při takovémto přenosu uvolní
         - více než ◊u{200 kJ/mol}, tam se vejde cca 7 molekul ATP
+}
+
+◊ls[#:t "Přepompované elektrony"]{
+    -  za dvě "kola": 8 (I) + 0 (II) + 8 (III) + 4 (IV) = 20, průměrně za jedno kolo tedy 10
+        - to platí pouze pokud reoxidujeme ◊chem{NADH}
+    - pokud reoxidujeme ◊chem{FAD}, přeskakujeme první komplex a přepumpujeme tedy jen 6 elektronů
+}
+
+◊box["Produkce tepla rostlinami"]{
+    ◊ls{
+        - některé rostliny umí ten gradient využívat na teplo
+            - obsahují alternativní oxidázy redukovaných koenzymů, které tvoří teplo díky přenosu oněch redukčních ekvivalentů
+            - rostou díky tomu ve sněhu
+        - jiné rostliny gradient využívají k ryhlejší emitaci pachových molekul
+    }
+
+    U lidí se energie oxidace také využívá, k netřesové termogenezi.
 }
 
 ◊subsubsection{Redoxní centra}
@@ -2478,4 +2505,122 @@ Dále již jen zkráceně OF.
     - cytochromy jsou důležité pro experimenty, různě absorbují světlo
         - CytC při třech vlnových délkách absorbuje silně
         - navíc absorbuje různě v oxidovaném a redukovaném stavu -> dobrý způsob jak měřit průběh metabolismu v organismu je sledování změny absorbance
+}
+
+◊subsubsection{Komplex I}
+
+Jinými názvy též NADH dehydrogenáza, NADH:koenzym Q oxidoreduktáza.
+
+◊img["complex-1.png" #:w 300]{Struktura komplexu I}
+
+◊ls[#:t "Struktura"]{
+    - má tvar L, jsou rozlišitelné dvě domény
+    - transmembránový Lys, hlavička je zanořená do lumen
+    - jsou na něm redoxní centra
+        - na špičce je místo pro redukovaný koenzym
+    - je to jedno z největších takových center, má až 45 podjednotek
+        - bakteriální mají kolem 15 podjednotek, v průběhu evoluce se postupně přidávaly další a další
+        - 7/45 podjednotek se kóduje v mch DNA, zbytek v jádrovém DNA
+}
+
+◊ls[#:t "Funkce"]{
+    # na špičku se napojí redukovaný koenzym
+    # předá dva elektrony prvnímu redoxnímu centru, tím se oxiduje
+    # elektrony putují po dalších centrech
+        - těchto center je v komplexu 7--10
+            - flavín-mononukleotid (FMN) -> série železo-sirných center s různým proteinovým prostředím
+            - redoxní potenciál se postupně zvyšuje
+        -v průběhu se z matrix vypumpují čtyři protony
+}
+
+◊subsubsection{Komplex II}
+
+Jinými názvy též sukcinát-dehydrogenáza, sukcinát:koenzym Q oxidoreduktáza.
+
+◊img["complex-II.png" #:w 300]{Struktura komplexu II}
+
+◊ls[#:t "Struktura komplexu II"]{
+    - komplex ze 4 podjednotek
+        - žádná není kódována v mch
+    - několik redoxních center
+        - tři železo-sirná centra
+        - jeden FAD
+}
+
+Koenzym Q se však redukuje i jinými způsoby než přes komplexy I a II, viz obrázek níže. Jde zároveň vidět, že FAD figuruje i na jiných místech, např. v oxidaci mastných kyselin.
+
+◊img["electrons-to-q.png" #:w 400]{Různé způsoby redukce koenzymu II}
+
+◊subsubsection{Komplex III}
+
+Neboli cytochrom B-C1.
+
+◊img["complex-3.png" #:w 300]{Struktura komplexu III}
+
+◊ls[#:t "Struktura komplexu III"]{
+    - obsahuje cytochromy B a C1 (-> jméno) a kromě nich ještě obsahuje jeden Fe-S komplex, který se nazývá ◊strong{Rieskeho protein}
+    - funguje jako dimer (na obrázku světlejší a tmavší odstíny barev) a každý z monomerů je asi z 10 podjednotek (dodnes to není jisté a různé organismy to mají různě)
+        - pouze 1/10 je kódován v mch
+}
+
+◊img["complex-III-function.png" #:w 400]{Rozdělení dvojelektronového toku v komplexu III}
+
+◊ls[#:t "Funkce"]{
+    - dochází k rozdělení dvouelektronového přenosu na jednoelektronový --- dvoufázový ◊strong{Q cyklus}, viz obrázek
+    - během Q cyklu se přepumpují 4 protony (dvě fáze, ve kterých se obě H z ◊chem{QH2} vypumpuje mimo matrix)
+    - pro funkci je důležité, že jsou všechna vazebná místa lokalizována na různých místech komplexu
+    - pro pumpování je důležité, že je vazebné místo pro Q blízko transmembránové části (protony pak jednodušeji odletí)
+}
+
+◊subsubsection{Komplex IV}
+
+Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cytochrom A-A3, nebo COX.
+
+◊img["complex-IV.png" #:w 300]{Struktura komplexu IV}
+
+◊ls[#:t "Struktura komplexu IV"]{
+    - obsahuje asi 12 podjednotek, z toho 3 jsou kódovány v mch
+    - funguje jako dimer, důležité komponenty jsou čtyři redoxní centra
+        - všechna redox centra jsou kódována v mch
+    - dva cytochromy, A a A3
+    - obsahuje atomy mědi, které jsou koordinovány přes Cys a His
+}
+
+◊img["complex-iv-function.png" #:w 300]{Průchod elektronů komplexem IV}
+
+◊ls[#:t "Funkce"]{
+    - dovede elektrony a protony předávat na kyslík tak, že vznikne molekula vody
+        - primitivnější to nedokáží a dělají místo toho peroxid vodíku --- ten je však také radikálový a nebezpečný, katalázový systém ho musí pak tedy rozložit na vodu a kyslík, aby nedělal paseku
+    - průběh
+        # čtyři redukované ◊chem{H} jsou neseny přes podjednotku 2 na binukleární komplex s atomy mědi
+        # poté jsou přes hemy neseny na druhou měď
+        # zároveň jsou na kyslík předávány 4 elektrony a do jeho blízkosti i 4 protony
+        # nakonec vzniknou dvě molekuly vody
+    - při tom všem jsou přepumpovány 4 elektrony (dva páry)
+}
+
+◊subsection{Kyslíkové radikály (ROS)}
+
+◊ls{
+    - byly objeveny relativně nedávno a zpočátku se jim přisuzovala jen negativní úloha
+        - mohou však sloužit i jako signální molekuly
+– informují o hladině kyslíku,
+    - na jejich existenci a produkci je založena teorie stárnutí
+        - jejich produkce postupně ničí mitochondrie a snižuje výkonnost buněk a produkci energie -> organismus stárne a zahyne
+    - jako hlavní místo produkce ROS se uvádí koenzym Q, ale není to přesné, hlavním místem je komplex BC1, kde dochází k rozdělení přenosu elektronů
+}
+
+◊img["radicals.png" #:w 400]{Vznik a zpracování kyslíkových radikálů}
+
+◊ls[#:t "Aktivní způsoby ničení ROS"]{
+    - superoxid-dismutáza: ◊chem{O^. -> H2O2}
+    - glutathion-peroxidáza: ◊chem{H2O2 -> H2O + O2}
+        - nejdůležitější
+        - aktivní látka glutathiol
+}
+
+◊ls[#:t "Glutathiol"]{
+    - tripeptid, je tam důležitá molekula Cys
+    - síra může být redukována i oxidována, umí dělat disulfidický můstek
+        - jako dimer může být spojen disulfidickým můstkem a jako jedna molekula a může tuto peroxidázu pufrovat
 }
