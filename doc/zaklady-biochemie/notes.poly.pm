@@ -1707,8 +1707,6 @@ Stará se přeměnu pyruvátu, který je výstupem glykolýzy, na ACoA, který p
     - v komplexu se u E. coli objevuje 24 krát E1, 24 krát E2 a 12 krát E3, celý komplex má ◊u{4500 Da}
 }
 
-◊img["nad.png"]{NAD(H) a NADP(H)}
-
 Přiblížíme si ty pevně vázané a jeden z těch volných.
 
 ◊img["tpp.png" #:w 300]{Thyamin-pyrofosfát, TPP}
@@ -1743,7 +1741,9 @@ Přiblížíme si ty pevně vázané a jeden z těch volných.
     - merkapto-ethylamin může tvořit vazbu s acetylovými skupinami (např. v ACoA)
 }
 
-◊img["pdc-cubes.jpg" #:w 400]{Celková struktura PDC u E. coli: (a) je vnitřní krychle s 24 E2, (b) je vnější krychle s 24 E1 (oranžová) a 12 E3 (červená), (c) je (a) + (b)}
+A dále ještě NAD(H).
+
+◊img["nad.png"]{NAD(H) a NADP(H)}
 
 ◊ls[#:t "Celková struktura"]{
     - u E. coli (a dalších prokaryot a ◊chem{G+} bakterií) je organizován do dvou pomyslných krychlí
@@ -1756,6 +1756,8 @@ Přiblížíme si ty pevně vázané a jeden z těch volných.
         - tento komplex je v mitochondriální matrix a všechny proteiny jsou kódovány v jádře => musí se tam nějak dostat a pak se poskládat do dvanáctistěnu
             - genetické vady ve struktuře/transportu/poskládání jsou letální
 }
+
+◊img["pdc-cubes.jpg" #:w 400]{Celková struktura PDC u E. coli: (a) je vnitřní krychle s 24 E2, (b) je vnější krychle s 24 E1 (oranžová) a 12 E3 (červená), (c) je (a) + (b)}
 
 ◊subsubsection{Funkce}
 
