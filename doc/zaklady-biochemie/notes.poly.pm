@@ -1634,7 +1634,9 @@ Jsou součástí ◊strong{proteoglykanů}.
 
 ◊img["whole_glycolysis.png"]{Schéma celé glykolýzy}
 
-◊subsection{První reakce}
+◊subsection{Reakce glykolýzy}
+
+◊subsubsection{První reakce}
 
 ◊img["first.PNG" #:w 400]{První reakce}
 
@@ -1674,7 +1676,7 @@ Jsou součástí ◊strong{proteoglykanů}.
     - usnadňují přenos fosfátové skupiny
 }
 
-◊subsection{Druhá reakce}
+◊subsubsection{Druhá reakce}
 
 ◊img["second.PNG" #:w 400]{Druhá reakce}
 
@@ -1696,7 +1698,7 @@ Jsou součástí ◊strong{proteoglykanů}.
     }
 }
 
-◊subsection{Třetí reakce}
+◊subsubsection{Třetí reakce}
 
 ◊img["third.png" #:w 400]{Třetí reakce}
 
@@ -1711,7 +1713,7 @@ Jsou součástí ◊strong{proteoglykanů}.
     - kofaktor: hořečnaté ionty
 }
 
-◊subsection{Čtvrtá reakce}
+◊subsubsection{Čtvrtá reakce}
 
 ◊img["fourth.png" #:w 450]{Čtvrtá reakce}
 
@@ -1734,7 +1736,7 @@ Jsou součástí ◊strong{proteoglykanů}.
 
 ◊img["fourth-detail.png"]{Čtvrtá reakce v detailu}
 
-◊subsection{Pátá reakce}
+◊subsubsection{Pátá reakce}
 
 ◊img["fifth.PNG" #:w 400]{Pátá reakce}
 
@@ -1752,7 +1754,7 @@ Jsou součástí ◊strong{proteoglykanů}.
     - funguje v obou směrech
 }
 
-◊subsection{Šestá reakce}
+◊subsubsection{Šestá reakce}
 
 ◊img["sixth.png" #:w 450]{Šestá reakce}
 
@@ -1772,7 +1774,7 @@ Jsou součástí ◊strong{proteoglykanů}.
 
 Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných místech, kde je potřeba energie, např. ve spermiích.
 
-◊subsection{Sedmá reakce}
+◊subsubsection{Sedmá reakce}
 
 ◊img["seventh.png" #:w 500]{Sedmá reakce}
 
@@ -1795,7 +1797,7 @@ Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných míst
 }
 
 
-◊subsection{Osmá reakce}
+◊subsubsection{Osmá reakce}
 
 ◊img["eighth.PNG" #:w 400]{Osmá reakce}
 
@@ -1809,7 +1811,7 @@ Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných míst
 
 ◊img["eigth-detail.png" #:w 400]{Osmá reakce v detailu}
 
-◊subsection{Devátá reakce}
+◊subsubsection{Devátá reakce}
 
 ◊img["ninth.PNG" #:w 400]{Devátá reakce}
 
@@ -1824,7 +1826,7 @@ Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných míst
         - ta bude v poslední reakci opět využita ke tvorbě ATP
 }
 
-◊subsection{Desátá reakce}
+◊subsubsection{Desátá reakce}
 
 ◊img["tenth.png" #:w 450]{Desátá reakce}
 
@@ -1917,7 +1919,7 @@ Většina glykolytických enzymů navíc potřebuje kofaktory (u všech kináz j
             - podle objevitele (pozn. redaktora viz níže)
 }
 
-◊note{Der Krebs je německy cancer. Go figure.}
+◊meta{Der Krebs je německy cancer. Go figure.}
 
 ◊img["metabolic-map.png" #:w 500]{Metabolická mapa, tečky jsou intermediáty enzymatických reakcí, čárky jsou přímo reakce}
 
@@ -2367,7 +2369,7 @@ Dále již jen zkráceně OF.
 
 ◊img["of-schema.png"]{Přehed oxydativní fosforylace}
 
-◊section{Mitochondrie}
+◊subsection{Mitochondrie}
 
 ◊ls[#:t "Historie objevu mitochondrií"]{
     - Otto Warburg dostal roku 1931 NC za objevy kolem mitochondrií
@@ -2377,7 +2379,7 @@ Dále již jen zkráceně OF.
         - Palade dostal NC v roce 1974 spolu s Christianem de Duve (který objevil peroxisomy) a Albertem Palade
 }
 
-◊subsection{Struktura mitochondrií}
+◊subsubsection{Struktura mitochondrií}
 
 ◊img["mitochondrion.png" #:w 400]{Stavba mitochondrie}
 
@@ -2448,10 +2450,10 @@ Dále již jen zkráceně OF.
         - více než ◊u{200 kJ/mol}, tam se vejde cca 7 molekul ATP
 }
 
-◊ls[#:t "Přepompované elektrony"]{
+◊ls[#:t "Přepumpované protony"]{
     -  za dvě "kola": 8 (I) + 0 (II) + 8 (III) + 4 (IV) = 20, průměrně za jedno kolo tedy 10
         - to platí pouze pokud reoxidujeme ◊chem{NADH}
-    - pokud reoxidujeme ◊chem{FAD}, přeskakujeme první komplex a přepumpujeme tedy jen 6 elektronů
+    - pokud reoxidujeme ◊chem{FAD}, přeskakujeme první komplex a přepumpujeme tedy jen 6 protonů
 }
 
 ◊box["Produkce tepla rostlinami"]{
@@ -2599,7 +2601,17 @@ Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cyt
     - při tom všem jsou přepumpovány 4 elektrony (dva páry)
 }
 
-◊subsection{Kyslíkové radikály (ROS)}
+◊box["Respirazómy"]{
+    ◊ls[#:t "Respirazómy"]{
+        - superkomplexy oxidační fosforylace (komplexy I--V)
+        - metabolické celky -> ulehčení pohybu Q a cytochromu C, transport mezi komplexy je rychlý
+        - kontroverzní, neví se, zda existují
+    }
+
+    Co se ovšem ví, je fakt, že ATP syntázy se do větších celků shlukují. Jak se zdá, jsou tyto superkomplexy zčásti zodpovědné za morfologii vnitřní membrány v mch (konkrétně za kristy) --- vyskytují se totiž přesně v místech, kde kristy prudece zahýbají. Mutanti bez těchto superkomplexů mají strukturu krist silně narušenou .
+}
+
+◊subsubsection{Kyslíkové radikály (ROS)}
 
 ◊ls{
     - byly objeveny relativně nedávno a zpočátku se jim přisuzovala jen negativní úloha
@@ -2623,4 +2635,219 @@ Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cyt
     - tripeptid, je tam důležitá molekula Cys
     - síra může být redukována i oxidována, umí dělat disulfidický můstek
         - jako dimer může být spojen disulfidickým můstkem a jako jedna molekula a může tuto peroxidázu pufrovat
+}
+
+◊subsection{Fosforylace}
+
+◊img["chemiosmotic-model.png"]{Znázornění chemiosmotického modelu}
+
+◊ls[#:t "Chemiosmotická hypotéza"]{
+    - už je potvrzena
+    - Peter D. Mitchell
+    - tvrzení, že ATP se tvoří v mitochondriích na základě protonového gradientu
+        - po vytvoření gradientu během první fáze OF se poté v ◊strong{komplexu V}, častěji nazývanému ◊strong{mitochondriální ATP syntáza}, tvoří ATP
+}
+
+◊ls[#:t "Protonový gradient"]{
+    - někdy též proton-motivní síla
+    - chemická, koncentrační šložka
+    - elektrická složka
+        - hodnota potenciálu je asi ◊u{15 mV}
+    - rozdíl napětí na membráně a rozdíl koncentrace => je tam rozdílné pH
+}
+
+◊img["of-coupling.png"]{Spřaženost obou fází OF}
+
+Reakce jsou běžně spřažené, pouze když přidáme látku, která udělá díry v membráně a zruší tím protonový gradient, preparát začne spotřebovávat kyslík, ale už nedělá ATP.
+
+◊box["Vsuvka (solné můstky)"]{
+-dotaz na solný můstek: skutečně solný můstkem se rozumí zařízení, kterým se vyrovnává náboj při měření redox potenciálu: máme dvě soustavy ve dvou nádobkách a měříme napětí mezi nimi – tendenci přecházet z jedné na druhou a protože se přenáší i náboj, potřebuje se solný můstek, např. KCl nebo NaCl a ty náboj vyrovnávají.
+
+-sold-bridge-bold také existuje a je to slabá interakce zahrnující vodíkové můstky a elektrostatické interakce uplatňuje se to při skládání proteinu (aspartát, glutamát mohou reagovat a aminoskupinami např. lysinu vod. můstky a elektrostatickými silami) – takže se to může najít i v tomhle významu
+}
+
+◊ls[#:t "Bakteriální elemetární experiment"]{
+    # přidáme na membránu bakteriorodopsin
+        - bakteriorodopsin pumpuje protony poté, co je stimulován světlem
+    # přidáme na membránu mitochondriální ATP syntázu
+    # posvítíme na membránu -> začne se generovat ATP
+}
+
+◊subsubsection{Struktura ATP syntázy}
+
+◊img["atp-syntase.png"]{Struktura ATP syntázy}
+
+Skládá se ze dvou podjednotek, F1 a FO.
+
+◊ls[#:t "Podjednotka F1"]{
+    - název se odvíjí z historie
+        - při působení ureázou se F1 oddělil v jednom celku, kterému se říkalo faktor 1
+    - je z pěti podjednotek, jsou označeny řecky po ◊|alpha|--◊|epsilon|, jsou zde v poměru 3:3:1:1:1
+        - tato stechiometrie (poměr) je zachována v celém spektru sledovaných organismů, přestože samotné proteiny se liší
+            - očividně stechiometrie a struktura vyplývají z mechanismu
+}
+
+◊ls[#:t "Stavba F1"]{
+    - ◊|alpha| a ◊|beta| jsou v kruhu, střídají se (seskupení podobné pomeranči)
+        - tam, kde se stýkají, je vazebné místo pro nukleotidy/ATP
+    - dovnitř je zasunutá ◊|gamma| podjednotka
+        - je to taková asymetrická smyčka (na obrázku (c) světle zelená)
+        - protože je asymetrická, ovlivňuje konformaci ◊|alpha| a ◊|beta| podjednotek (viz níže)
+            - ◊|gamma| se v průběhu syntázy otáčí a periodicky mění konformace jednotlivých ◊|alpha| a ◊|beta| podjednotek
+    - podjednotky ◊|delta| a ◊|epsilon| zproztředkovávají kontakt ◊|gamma| s ostatními transmembránovými podjednotkami
+}
+
+◊ls[#:t "Konformace alfa a beta podjednotek"]{
+    # ◊strong{těsná (T)}(na obrázku oblé), je zde navázáno ATP
+    # ◊strong{volná (L)} (na obrázku oblé roky), je zde navázáno ADP
+    # ◊strong{otevřená (O)} nebo též ◊strong{empty} (na obrázku hranaté), není zde vázáno nic
+}
+
+Průběh změn konformace je T -> O -> L -> T -> ...
+
+◊ls[#:t "Podjednotka FO"]{
+    - FO proto, že je inhibována oligomycinem
+    - v tom nejjednodušším případě je ze tří podjednotek
+        # A, protonový kanál
+        # B, venkovní stonek
+        # C multimerní prstenec, jenž je uložen ve vnitřní mitochondriální membráně
+            - tužkový model C podjednotky: je to prstenec tvořený různým počtem podjednotek (u bakterií 12, u člověka 8) a je velice důležitý pro výkonnost celého enzymu
+    - u savců je v ní ještě více podjednotek, které se podílí především na stavbě vnějšího stonku (D, F6, atd.) a na stavbě kanálu
+        - mají hlavně regulační funkci
+}
+
+◊subsubsection{Princip funkce}
+
+◊ls{
+    - pracuje jako ◊em{molekulární motor}
+    - skládá se ze statoru a rotoru, otáčení rotoru způsobuje syntézu ATP
+}
+
+◊ls[#:t "Princip rotace"]{
+    # když protékají protony přes kanál tvořený A, roztáčí prstenec C (viz níže)
+    # na C je přes ◊|delta| a ◊|epsilon| připojená podjednotka ◊|gamma|, která se tedy otáčí s C
+        - celý ◊strong{rotor} je tedy C + ◊|gamma| + ◊|delta| + ◊|epsilon|
+        - samotná ◊|delta| se ale neotáčí, je pevně uchycena k B
+    # otáčení ◊|gamma| způsobuje syntézu ATP
+}
+
+◊img["rotation-detail.png" #:w 300]{Detailní rozkreslení rotace C prstence}
+
+◊ls[#:t "Princip rotace C prstence"]{
+    - A podjednotka má dva hydrofilní půlkanály, jeden vedoucí z P a druhý vedoucí na N stranu membrány
+    - každá C podjednotka (např. v kvasinkách jich je 10) má přibližně v polovině Asp zbytek, který může přijmout/odštěpit proton
+    - A podjednotka má Arg, který na počátku reaguje s Asp přilehlé C podjednotky
+    - průběh
+        # kanálem z P strany přijde proton
+        # proton se naváže na Asp, což oslabí jeho vazbu s Arg v A podjednotce
+        # Arg se otočí směrem k protonovanému Asp vedlejší C podjednotky a naváže se na něj
+        # uvolněný proton odejde kanálem na N stranu
+        # C prstenec se otočí tak, aby nový Arg-Asp pár byl natočený ke kanálu vedoucímu z P strany
+        # nový cyklus může započít
+    - počet protonů, které musí komplexem projít, aby se dokončila jedna otáčka, je tím pádem roven počtu podjednotek v C prstenci
+}
+
+Dle měření se zdá že proběhne přibližně ◊strong{100 otáček za sekundu}.
+
+◊box["Mindfuck — jak bylo dokázáno, že dochází k rotaci"]{
+    ◊img["atp-synthase-rotation.png"]{K rotující C podjednotce bylo připojeno dlouhé, fluorescenčně označené aktinové vlákno. Po přidání ATP se celá struktura dala do pohybu, rotace aktinového vlákna byla zaznamenána na obrázku napravo.}
+}
+
+◊ls[#:t "Princip syntézy"]{
+    - viz obrázek níže
+    - šipka  označuje orientaci ◊|gamma|
+    - když protečou tři protony, dojde k pootočení gamy o 120◊|deg|
+        - tím se změní konformace všech tří dvojic (T -> O -> L -> T -> ...)
+    - v kroce [L -> T] probíhá kinetická katalýza
+        - mezi ◊|alpha| a ◊|beta| jsou navázané ADP a P
+        - otočením se změní pozice substrátů tak, že se mezi nimi vytvoří makroergní vazba => sloučí se do ATP
+    - na jeden cyklus (tři otočení), při kterém vzniknou tři molekuly ATP, je potřeba 9 protonů
+}
+
+◊img["atp-synthesis.png" #:w 300]{Princip syntézy při rotaci ◊|gamma|}
+
+◊box["Reálný zisk ATP"]{
+    ◊ls{
+        - teoretický zisk: něco málo přes 3 ATP na jeden reoxidovaný NADH
+            - 10 protonů za jeden NADH, na jedno ATP potřebujeme 3 protony
+        - reálný zisk je kolem 2,5 ATP
+            - k výrobě ATP potřebujeme kromě protonů i ADP a fosfát
+                - k přenosu ADP do mch se používá adenindinukleotidový translokátor (prohodí ATP a ADP)
+                - anorganický substrát je transportován symportem s protony, tedy na jedno ATP reálně potřebujeme 3 + 1 protonů -> za 10 protonů získáme jen 2,5 ATP
+        - za FADH je to ještě méně, jen 1.5
+    }
+}
+
+◊box["Pohyb bakterií"]{
+    ◊img["flagellum.png" #:w 300]{Rotace bičíku}
+
+    Některé bakterie využívají mechanismus ATP syntázy k pohybu (v opačném směru, tedy ATP -> rotace).
+}
+
+◊subsubsection{Inhibitory}
+
+◊img["inhibitors-of.png"]{Inhibitory a jejich cíle}
+
+◊ls[#:t "Inhibitory"]{
+    - kromě výše uvedených ještě ◊strong{malonát}, což je inhibitor kompetující se sukcinátem
+        - objevil ho Krebs
+    - ◊strong{protonofory} (FCCP, dinitrofenol)
+        - hydrofobní molekuly, které se mohou protonovat
+        - mimo membránu se protonují, poté vstoupí do matrix a depronují se, čímž zničí protonový gradient
+}
+
+◊ls[#:t "Rozpřahovací proteiny"]{
+    - umí rozpřáhnout oxidaci a fosforylaci
+    - používají se v eperimentech, ale i v těle, kde mají podobu proteinů vnitřní mch membrány fungujících jako kanál
+        - vybíjejí protonový gradient -> netřesová termogeneze
+        - u člověka to umí jen děti těsně po narození, u savců jen při hibernaci
+        - děje se to v hnědé tukové tkáni
+}
+
+◊ls[#:t "Hnědá tuková tkáň"]{
+    - u člověka mezi lopatkami a v břišní dutině
+    - obsahují hodně cytochromů – pohybují se v absorpci světla cca ◊u{500} až ◊u{600 nm}
+    - slouží při adaptaci na změnu okolní teploty, slouží jako ohřívač krve vedoucí k mozku a dalším orgánům
+    - buňky mají elektron-transportní řetězec končící rozpřahujícím proteinem
+    - kanály jsou přísně regulované, jsou aktivovány mastnými kyselinami a inhibovány nukleotidy
+}
+
+◊subsubsection{Reoxidace glykolytického NADH}
+
+◊img["glycerol-shuttle.png" #:w 400]{Glycerolfosfátový člunek}
+
+◊ls[#:t "Glycerolfosfátový člunek"]{
+    - využívá různě orientované izoenzymy
+    - průběh viz obrázek
+        - pozn. NADH je využito na redukci dihydroxyacetonfosfátu v enolázové reakci (hexóza => dvě triózy) a pak je zas mitochondriální dehydrogenázou reoxidováno
+    - nevýhoda: FAD přeskočí komplex I, čili zbytečně přijdeme o 4 protony
+}
+
+◊definitions{
+    ◊term["Izoenzymy"]{
+        Izoenzymy jsou enzymy, které katalyzují stejnou reakci, ale mají odlišnou strukturu.
+    }
+}
+
+U člověka je častější následující cyklus.
+
+◊img["malate-asp-nadh.png"]{Malát-aspartátový člunek}
+
+◊ls[#:t "Malát-aspartátový člunek"]{
+    - přenos redukčních ekvivalentů je zabezpečen dvěma izoenzymy malát-dehydrogenázy
+    - zbytek viz obrázek (stačí znát základní cyklus, který je pod obrázkem v bodech popsán)
+}
+
+◊box["Energetické shrnutí glykolýzy"]{
+    ◊img["glycolysis-energy.png"]
+}
+
+◊subsection{Regulace OF}
+
+◊ls{
+    - typicky regulace produktem (aby se nehromadil)
+        - hexokinázová reakce, pyruvátdehydrogenázový komplex
+    - často jsou také enzymy aktivovány či inhibovány molekulami informujícími o tom, jak je na tom buňka energeticky
+        - dostatek energie –> hodně NADH a ATP -> inhibice nějakých kroků
+        - nedostatek energie -> hodně ADP, anorganického fosfátu a neredukovaných koenzymů -> stimulace nějakých kroků
 }
