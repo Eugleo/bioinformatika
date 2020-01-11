@@ -3166,3 +3166,118 @@ Během první reakce vzniká glukóza-1-fosfát, do glykolýzy však potřebujem
 }
 
 Kolem 90% glukózy z glykogenu se uvolňuje jako glukóza-6-fosfát, zbytek pochází z míst větvení a uvolňuje se jako glukóza.
+
+◊subsection{Syntéza glykogenu}
+
+◊subsubsection{První reakce}
+
+Nejprve je potřeba připravit energeticky nabitou glukózu.
+
+◊img["udp.png" #:w 400]{Syntéza UDP-glukózy}
+
+◊ls[#:t "Syntéza UDP-glukózy"]{
+    - do reakce vstupuje glukóza-1-fosfát a UTP (uridintrifosfát)
+    - katalyzuje ji ◊strong{UDP-glukózadifosforyláza}
+        - enzym je pojenovaný podle zpětné reakce
+    - vzniká pyrofosfát -> dělí se během reakce na dva fosfáty -> velké množství energie
+    - UTP je doplňováno reakcí ◊chem{UDP + ATP -> UTP + ADP}, celá reakce nás tedy "stojí" jedno ATP
+}
+
+◊subsubsection{Druhá reakce}
+
+Aktivovaná glukóza se dále využije k syntéze glykogenu.
+
+◊img["glycogen-synthesis.png"]{Syntéza glykogenu z UDP-glukózy}
+
+◊ls[#:t "Syntéza glykogenu z UDP-glukózy"]{
+    - glukóza se připojí na již existující řetězec (s # glukóz > 4)
+    - na začátku reakce je potřeba ◊em{primer}, tím je hydroxylová skupina na Tyr na ◊strong{glykogeninu}
+        - na tu se naváže první glukózová podjednotka -> poté několik dalších -> potom už to jede pomocí glykogensyntázy
+    - glykogensyntázová reakce je hlavní regulační reakcí syntézy glykogenu
+}
+
+◊subsubsection{Třetí reakce}
+
+Poslední reakcí je opak linearizace při rozkladu glykogenu --- zde máme naopak větvící reakci a větvící enzym.
+
+◊img["glycogen-branching.png"]{Větvení glykogenu}
+
+◊ls[#:t "Větvení glykogenu"]{
+    - jediný enzym, má ale více jmen
+        - (mé nejoblíbenější) amylo (◊|alpha|1->4) na (◊|alpha|1->6) transglykosyláza
+        - ◊|alpha|1,4 na ◊|alpha|1,6-transglykosyláza
+        - glykosyl-(4->6) transferáza
+    - na dostatečně dlouhé větvi, která je tvořená (◊|alpha|1->4) glykosidickými vazbami, odštěpí glukózu a přilepí ji jinde vazbou (◊|alpha|1->6)
+        - v tomto směru je to z energetického hlediska možné
+        - "dostatečně dlouhá větev" = alespoň 11 glukóz a alespoň 4 podjednotky od posledního místa větvení, z prostorových důvodů
+}
+
+◊img["glycogen-structure.png" #:w 300]{Výsledná struktura glykogenu}
+
+◊subsection{Regulace glykogenfosforylázy}
+
+◊ls{
+    - dochází jak k alosterické regulaci (na alosterickém místě), tak k regulaci posttranslačními modifikacemi
+    - oba druhy regulace jsou provázané
+}
+
+◊subsubsection{Alosterická regulace}
+
+◊definitions{
+    ◊term["R a T forma enzymu"]{
+        Enzym v R (relaxed) formě je, alespoň v kontextu metabolismu, vždy aktivnější než enzym v T (tense) formě. Jedná se o stejný enzym, ale ve dvou stavech.
+    }
+}
+
+◊img["glycogen-phosphorylase-regulation.png" #:w 400]{Přechod z forforylázy A na fosforylázu B a naopak}
+
+◊ls[#:t "A a B glykogenfosforyláza"]{
+    - kromě R a T má glykogenfosforyláza i A a B formu
+        - jediný strukturní rozdíl: A má fosforylovaný ◊chem{Ser14}, B ne
+    - funkční rozdíly
+        - fosforyláza A
+            - aktivnější, nereaguje tolik na alosterickou regulaci
+            - za normálních okolností je v R stavu
+            - do T stavu je převedena pouze vysokou koncentrací glukózy
+        - fosforyláza B
+            - je velice citlivá na alosterické regulátory
+            - je inhibována vysokou koncentrací ATP či glukózy-6-fosfátu
+            - za normálních okolností je v T stavu
+            - aktivována je vysokou koncentrací AMP
+    - přechod mezi A a B zajišťují dva různé enzymy
+        - o A -> B se stará ◊strong{fosfoprotein fosfatáza}
+        - a B -> A zajišťuje ◊strong{fosforyláza-kináza} (dříve ◊strong{kináza-fosforylázy B}, protože fosforyluje ◊chem{Ser14})
+        - k fosforylaci či defosforylaci dochází pouze v T formách
+}
+
+Fosforylace Ser u A a AMP na alosterickém místě u B podobným způsobem podporují R formu.
+
+◊subsubsection{Regulace posttranslačními modifikacemi}
+
+◊ls{
+    - metabolismus gylkogenu je regulován pomocí ◊strong{bicyklické kaskády}
+        - jeden enzym aktivuje druhý a ten aktivuje třetí.
+        - výhody: na každém "předání štafety" je možné znásobit signál, detailněji signál regulovat atd. (zvlášť, když se přidá více úrovní než jen dvě)
+}
+
+◊ls[#:t "Regulace glykogenfosforylázy a glykogensyntázy"]{
+    # vazba hormonu na receptor
+    # uvolňování cyklického AMP (cAMP)
+    # aktivace kinázy CDK (cAMP dependentní kináza)
+    # aktivace kinázy fosforylázy B, vede k aktivaci
+    # fosforylace glykogenfosforylázy a glykogensyntázy
+        - glykogenfosforyláza A je tím aktivována, glykogen se začne odbourávat
+        -naopak glykogensyntáza je fosforylací deaktivována
+}
+
+Po glukózové infuzi tedy stoupne odbourávání glykogenu a zpomalí se jeho opětovná syntéza.
+
+◊subsection{Coriho cyklus}
+
+◊ls{
+    # v odpočívajícím svalu se vytváří zásoby glykogenu, v aktivním probíhá reakce měnící glykogen -> laktát
+    # laktát je transportován do krve, a krví do jater
+    # v játrech se laktát účastní glukoneogeneze, tvoří se z něj opět glukóza
+}
+
+Cyklus je pojmenován podle manželů Coriových, absolventů Karlovy univerzity a nositelů Nobelovy ceny.
