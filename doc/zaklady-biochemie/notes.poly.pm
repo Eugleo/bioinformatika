@@ -3069,3 +3069,100 @@ V následující tabulce můžeme vidět zisk z ◊|beta| oxidace jedné molekul
             - lidem te poté z úst cítit aceton
     - přestupují hematoencefalickou bariéru => mohou sloužit v mozku (a dalších tkáních) jako zdroj energie
 }
+
+◊title{Metabolismus glykogenu a další dráhy metabolismu cukrů}
+
+◊section{Metabolismus glykogenu}
+
+◊ls{
+    - glykogen je zásobním polysacharidem živočichů,
+    - proč se vůbec využívá, když tuky poskytují dvakrát více energie
+        - získání energie z polysacharidů je rychlejší než z tuků
+        - z glykogenu lze získávat energii anaerobně
+        - odbouráváním glykogenu vzniká glukóza, která se může podílet na udržování hladiny glukózy v krvi a může být dodávána do tkání
+    - v buňkách se nachází v cytoplasmatických granulích o velikosti ◊u{10} až ◊u{40 nm}, u obratlovců převážně na dvou místech
+        - v játrech: glykogen může tvořit až 10 % hmotnosti jater a množství glykogenu v játrech závisí na stavu nasycenosti organismu (při hladovění klesá)
+        - ve svalech: může tvořit 1-2 % hmotnosti svalu. Množství nesouvisí ani tak s nasyceností, jako s trénovaností (člověk je trénovaný -> množství glykogenu ve svalech roste)
+            - svalů je ale více než jater, takže v absolutních číslech je glykogenu nejvíce ve svalech
+        - dále se malé množství nachází v mozku
+}
+
+◊ls[#:t "Struktura glykogenu"]{
+    - stejná jako struktura amylopektinu
+        - skládá se z glukózových podjednotek propojených ◊|alpha|-1,4-glykosidickými vazbami a v místě větvení jsou ◊|alpha|-1,6 glykosidické vazby
+    - glykogen je hustěji větven, než amylopektin, protože živočichové potřebují mobilizovat energii rychleji, než rostliny
+        - jednotky mohou být odbourávány a všech větvích současně
+        - 50% glukózových podjednotek ve struktuře se nachází před prvním místem větvení
+    - vždy má pouze jeden redukující konec
+}
+
+◊subsection{Odbourávání glykogenu}
+
+◊subsubsection{První reakce}
+
+◊ls{
+    - prvním a zároveň nejdůležitějším enzym odbourávání glykogenu je ◊strong{glykogenfosforyláza}
+        - dimer, každý z monomerů má C' a N' terminální doménu
+        - hlavní regulační enzym odbourávání glykogenu
+        - má důležitý kofaktor, ◊strong{pyridoxal-5-fosfát}
+            - pyridoxin je vitamín ◊chem{B6}
+}
+
+◊img["glycogen-phosphatase.png" #:w 300]{Struktura monomeru glykogen fosforylázy}
+
+◊ls[#:t "Struktura glykogen fosforylázy"]{
+    - katalytické místo
+        - nachází se na rozhraní mezi N a C koncovou doménou
+        - má též místo pro vazbu kofaktoru
+    - glykogen-vazebné místo
+        - na rozhraní Nterminálních domén
+        - vejde se do nej 4--5 glukózových podjednotek, avšak pouze v lineárním stavu (nevětvených)
+}
+
+◊img["glycogen-phosphorylase.png" #:w 400]{Glykogen fosforylázová reakce}
+
+◊ls[#:t "Reakční mechanismus"]{
+    - nemusíme znát v detailu
+    - dochází ke štěpení glykogenu v procesu ◊strong{fosforolýzy}
+        - podobné jako hydrolýza, ale místo vdy je zde kyselina fosforečná
+        - mechanismem reakce je tedy fosforolýza škrobu, jedná se o acidobazickou katalýzu
+    - úloha pyridoxal-5-fosfátu v reakci je půjčovat proton zbytku kyseliny fosforečné, která štěpí vazbu mezi glukózovými podjednotkami
+        - funguje jako protonové relé, které v průběhu reakce půjčí proton kyselině fosforečné a na konci si ho zase odebere
+    - enzym je s glykogenem stále v kontaku, nemusí disociovat a resociovat po každé reakci -> urychlení
+        - glykogen projíždí kapsou v enzymu
+}
+
+◊subsubsection{Druhá reakce}
+
+Během první reakce vzniká glukóza-1-fosfát, do glykolýzy však potřebujeme glukózu-6-fosfát. O změnu z jednoho na druhé se stará druhá reakce odbourávání glykogenu.
+
+◊img["phosphoglucomutase.png"]{Fosfoglukomutázová reakce}
+
+◊ls[#:t "Fosfoglukomutázová reakce"]{
+    - viz obrázek
+    - probíhá přes meziprodukt, kde jsou fosforylovaná obě místa: glukózu-1,6-bisfosfát
+        - v katalytickém centru enzymu tedy musí být skupina, která dodává ten druhý fosfát -> obsahuje Ser, který váže fosfát
+    - podobnou reakci jsme probírali v glykolýze, kde se pomocí fosfoglycerátmutázy mění 3fosfofgylcerát na 2-fosfoglycerát
+}
+
+◊subsubsection{Třetí reakce}
+
+◊ls{
+    - souvisí se strukturou glykogenfosforylázy, která umí zpracovat jen lineární glykogen
+    - když se dojde k místu větvení, nasedne linearizační enzym, který zbytky linearizuje
+}
+
+◊img["glycogen-third-reaction.png" #:w 400]{Linearizace glykogenu}
+
+◊ls[#:t "Průběh reakce"]{
+    - (◊|alpha|1 -> 4)-transglykosylázová aktivita
+        - krátká část řetězce (např. na obrázku 4 jednotky, tzv. limitující systém) pospojovaného (◊|alpha|1 -> 4) vazbami je přesunuta
+        - v původní větvi zůstává už jen jedna glukóza, která je připojena na větvící místo vazbou (◊|alpha|1 -> 6)
+        - ze dvou větví vytvoří jednu delší a jednu, která má už jen jednu glukózu
+    - (◊|alpha|1 -> 6)-glukosidázová aktivita
+        - hydrolyzuje glukózový zbytek v místě větvení, který byl připojen (◊|alpha|1 -> 6) vazbou
+        - tento se uvolňuje jako glukóza
+        - změna (◊|alpha|1 -> 6) na (◊|alpha|1 -> 4) není z energetického hlediska možná, proto dochází k hydrolýze
+}
+
+Kolem 90% glukózy z glykogenu se uvolňuje jako glukóza-6-fosfát, zbytek pochází z míst větvení a uvolňuje se jako glukóza.
