@@ -1933,9 +1933,9 @@ Na pyruvátu a dalších molekulách se dá demonstrovat vlastnost katabolismu, 
 ◊ls[#:t "Energeticky bohaté molekuly"]{
     - proteiny, lipidy, sacharidy
     - získáváme je zvenčí, v organismu jsou poté degradovány --- všechny tyto vysoce rozdílné molekuly se v rámci katabolismu sjednotí a setkají se v jedné univerzální molekule, acetyl koenzymu A
-    - získáváme je zvenčí, v organismu jsou poté degradovány --- všechny tyto vysoce rozdílné molekuly se v rámci katabolismu sjednotí a setkají se v jedné univerzální molekule, ◊strong{acetyl koenzymu A} (ACoA)
-        - ACoA je univerzální přenašeč acylových skupin (◊chem{COOH} po odtržení ◊chem{OH})
-        - ACoA je také přenašeč acetylové skupiny (◊chem{CH3CO})
+    - získáváme je zvenčí, v organismu jsou poté degradovány --- všechny tyto vysoce rozdílné molekuly se v rámci katabolismu sjednotí a setkají se v jedné univerzální molekule, ◊strong{acetyl koenzymu A} (acetyl-CoA)
+        - acetyl-CoA je univerzální přenašeč acylových skupin (◊chem{COOH} po odtržení ◊chem{OH})
+        - acetyl-CoA je také přenašeč acetylové skupiny (◊chem{CH3CO})
 }
 
 ◊note{
@@ -1943,15 +1943,15 @@ Na pyruvátu a dalších molekulách se dá demonstrovat vlastnost katabolismu, 
 
     ◊img["kc-bacteria.png" #:w 400]{Neúplný KC v anaerobních bakteriích}
 
-     Celá dráha kromě zpracování ACoA a uvolnění NADH tvoří také různé intermediáty, které jsou užitečné pro syntézy.
+     Celá dráha kromě zpracování acetyl-CoA a uvolnění NADH tvoří také různé intermediáty, které jsou užitečné pro syntézy.
 }
 
-Některé AK se na ACoA nemění; vždy ale dochází k oxidaci (přenos elektronů), což zařizuje ◊strong{glyceraldehydfosfát-dehydrogenáza}. Vzniká NADH, který je poté někdy použit v mitochondriích na syntézu ATP v rámci elektrontransportního řetězce.
+Některé AK se na acetyl-CoA nemění; vždy ale dochází k oxidaci (přenos elektronů), což zařizuje ◊strong{glyceraldehydfosfát-dehydrogenáza}. Vzniká NADH, který je poté někdy použit v mitochondriích na syntézu ATP v rámci elektrontransportního řetězce.
 
 ◊img["oxidation-pathway.png" #:w 400]{Pohled na metabolismus cukrů, tuků a bílkovin}
 
 ◊ls[#:t "Tři fáze katabolismu v metabolických drahách"]{
-    # konvergující dráhy vedoucí k ACoA
+    # konvergující dráhy vedoucí k acetyl-CoA
         - glykolýza, beta-oxidace mastných kyselin, rozštěpení na dvě triózy
     # Krebsův cyklus
     # oxidativní fosforylace
@@ -1960,7 +1960,7 @@ Některé AK se na ACoA nemění; vždy ale dochází k oxidaci (přenos elektro
 ◊box["Konvergující dráhy"]{
     ◊ls{
         - z různých látek vznikne jen několik produktů
-        - energetické molekuly směřují k ACoA
+        - energetické molekuly směřují k acetyl-CoA
         - pak je cyklus trikarboxylových kyselin, z nich se tvoří molekula GTP (nebo ATP), dvě molekuly ◊chem{CO2} a redukované koenzymy
             - na jednu molekulu glukózy vznikají redukované koenzymy na šesti místech a všechny nesou vysokoenergetické elektrony, které odejmuli při oxidačních reakcích
             - energie může být využita k syntéze ATP oxidací těchto koenzymů
@@ -1970,7 +1970,7 @@ Některé AK se na ACoA nemění; vždy ale dochází k oxidaci (přenos elektro
 }
 
 ◊ls[#:t "Cyklus zjednodušeně"]{
-    # vstupuje dvojuhlíkatý (C2) ACoA a s C4 oxalacetátem tvoří C6
+    # vstupuje dvojuhlíkatý (C2) acetyl-CoA a s C4 oxalacetátem tvoří C6
     # ta je ve sledu sedmi reakcí dvakrát dekarboxylována, uvolní se dvě molekuly ◊chem{CO2} (co je většina toho ◊chem{CO2}, který vydechujeme)
     # dva uhlíky se uvolní během cyklického pochodu
     # další uvolňované molekuly jsou čtyři redukované koenzymy
@@ -1985,14 +1985,14 @@ Některé AK se na ACoA nemění; vždy ale dochází k oxidaci (přenos elektro
 
 ◊subsection{Komplex pyruvát dehydrogenázy (PDC)}
 
-Stará se přeměnu pyruvátu, který je výstupem glykolýzy, na ACoA, který potřebujeme v KC.
+Stará se přeměnu pyruvátu, který je výstupem glykolýzy, na acetyl-CoA, který potřebujeme v KC.
 
-◊img["acoa.png" #:w 400]{Vznik ACoA, pyruvát dehydrogenázová reakce}
+◊img["acetyl-CoA.png" #:w 400]{Vznik acetyl-CoA, pyruvát dehydrogenázová reakce}
 
 ◊ls[#:t "O reakci"]{
     - oxidativní dekarboxyklace, ztratí se jeden ◊chem{CO2} a dva elektrony
     - průběh reakce není tak jednoduchý jak by napovídal obrázek, pyruvát-dehydrogenázový enzym je komplex enzymů E1, E2, E3 a pěti koenzymů
-    - změna volné energie je silně záporná, ACoA je tedy makroergní sloučenina
+    - změna volné energie je silně záporná, acetyl-CoA je tedy makroergní sloučenina
 }
 
 ◊subsubsection{Struktura}
@@ -2002,7 +2002,7 @@ Stará se přeměnu pyruvátu, který je výstupem glykolýzy, na ACoA, který p
 ◊ls[#:t "Přehled enzymů a koenzymů"]{
     - E1 katalyzuje oxidativní dekarboxylaci pyruvátu
         - pevně váže koenzym TPP (thiamin pyrofosfát)
-    - E2 (dihydrolipoyl-transacetyláza) katalyzuje přenos acetlyové skupiny vzniklé v první reakci na Acetyl-CoA
+    - E2 (dihydrolipoyl-transacetyláza) katalyzuje přenos acetlyové skupiny vzniklé v první reakci na acetyl-CoA
         - pevně váže koenzym kyselinu lipoovou, která je vázána na amidovou skupinu (proto se jmenuje lipoamid)
         - volně váže CoA, který pro E2 funguje jako substrát
     - E3 (dihydrolipoyl-dehydrogenáza) regeneruje oxidovanou formu lipoamidu
@@ -2042,7 +2042,7 @@ Přiblížíme si ty pevně vázané a jeden z těch volných.
     - poměrně veliká molekula, má motiv společný pro mnoho biomolekul
     - obsahuje adenin, ribózu, pyrofosfát
         - vypadá jako NAD nebo ADP ale je tam ribóza fosforylovaná na C3
-    - merkapto-ethylamin může tvořit vazbu s acetylovými skupinami (např. v ACoA)
+    - merkapto-ethylamin může tvořit vazbu s acetylovými skupinami (např. v acetyl-CoA)
 }
 
 A dále ještě NAD(H).
@@ -2085,7 +2085,7 @@ A dále ještě NAD(H).
         - jsou na ní Ser či Thr skupiny, kam se může fosfátová skupina vázat
         - kináza-pyruvátdehydrogenáza a fosfatázy, které ten fosfát zase odštěpí
     - regulace závisí na koncentraci produktuů a reaktantů
-        - když je nadbytek ACoA nebo NADH, čili jednoho z produktů, tak je kináza aktivní a PDC brzdí
+        - když je nadbytek acetyl-CoA nebo NADH, čili jednoho z produktů, tak je kináza aktivní a PDC brzdí
         - když je moc pyruvátu či ADP, tak se kináza inaktivuje a celé se to zrychlí
         - kináza je ke komplexu připojena stále
         - fosfatáza je aktivována hlavně vápníkem (důležitý ◊em{druhý posel}), připojuje se ke komplexu jen dočasně
@@ -2129,7 +2129,7 @@ Hlavní průběh (produkty, enzymy, atp.) viz obrázek. Následují pouze pozná
 
 ◊ls[#:t "První reakce (citrát-syntázová)"]{
     - exergonická
-    - typický příklad uspořádané enzymatické reakce: nejprve se naváže oxalacetát a až pak se může navázat ACoA
+    - typický příklad uspořádané enzymatické reakce: nejprve se naváže oxalacetát a až pak se může navázat acetyl-CoA
     - syntáza (ne syntetáza) => nepotřebuje makroergní molekulu
 
 }
@@ -2171,7 +2171,7 @@ Hlavní průběh (produkty, enzymy, atp.) viz obrázek. Následují pouze pozná
     - tzv. ◊em{sebevražedný substrát}
     -  látka sama o sobě inhibující není, až po vstupu do metabolismu se stane jedovatou a inhibuje
     - např. některé rostliny jako obranu proti nepřátelům tvoří fluoro-acetát
-        - fluoro-acetát -> fluoro-ACoA -> fluoro-citrát -> ireversibilní inhibice akonitázy
+        - fluoro-acetát -> fluoro-acetyl-CoA -> fluoro-citrát -> ireversibilní inhibice akonitázy
 }
 
 ◊img["aconitase.png" #:w 200]{Akonitáza}
@@ -2253,7 +2253,7 @@ Probíhá tedy tzv. ◊strong{syntéza ATP na substrátové úrovni}, která pro
 
 ◊ls[#:t "Šestá reakce"]{
     - enzym sukcinát-dehydrogenáza, koenzym FAD
-        - FAD funguje zde, v reakci pyruvát -> ACoA a v oxidativní fosforylaci (jako komplex II)
+        - FAD funguje zde, v reakci pyruvát -> acetyl-CoA a v oxidativní fosforylaci (jako komplex II)
     - na rozdíl od ostatních enzymů v KC je vázaný na membránu
         - je integrálním membránovým proteinem ve vnitřní mitochondriální membráně => může efektivně předávat elektrony
     - (doslova) učebnicový příklad enzymu manifestujícího ◊em{kompetitivní inhibici}
@@ -2339,7 +2339,7 @@ V poslední (reakce s jablečným enzymem) je zdrojem uhlíku místo ◊chem{CO2
     # citrát syntázová rekce, vznik citrátu
     # citrát je následně izomerizován na izocitrát, jako v KC (akonitáza)
     # ◊strong{izocitrát lyáza} rozštěpí šestiuhlíkatou kyselinu na sukcinát a glyoxalát
-    # glyoxalát vstupuje do ◊strong{malátsyntázové reakce}, jež z něj a z ACoA uděá malát
+    # glyoxalát vstupuje do ◊strong{malátsyntázové reakce}, jež z něj a z acetyl-CoA uděá malát
     # malát už zase vstupuje do klasické reakce KC (malát-dehydrogenáza)
     # a regeneruje se oxalacetát
 }
@@ -2850,4 +2850,222 @@ U člověka je častější následující cyklus.
     - často jsou také enzymy aktivovány či inhibovány molekulami informujícími o tom, jak je na tom buňka energeticky
         - dostatek energie –> hodně NADH a ATP -> inhibice nějakých kroků
         - nedostatek energie -> hodně ADP, anorganického fosfátu a neredukovaných koenzymů -> stimulace nějakých kroků
+}
+
+◊title{Lipidy, mastné kyseliny a jejich metabolismus}
+
+◊definitions{
+    ◊term["Lipidy"]{
+        Různorodá skupina látek, které spojuje to, že jsou rozpustné v nepolárních rozpouštědlech. Nejběžnějším příkladem jsou triacylglyceroly.
+    }
+
+    ◊term["Triacyglyceroly"]{
+        Estery glycerolu --- na glycerolu (trojsytném alkoholu) jsou esterovou (hydroxylová+karboxylová) vazbou napojeny tři mastné kyseliny (viz obrázek níže).
+    }
+
+    ◊term["Glycerofosfolipidy"]{
+        Hlavní složky membrán, ampfipatické molekuly, mají dva ocásky z MK a na třetím je navázáno něco polárního, např. fosfatydilcholin, alkohol atp.
+    }
+
+    ◊term["Vosky"]{
+        Estery MK a alkoholů s dlouhým řetězcem.
+    }
+
+    ◊term["Terpeny"]{
+        Molekuly z izoprenových podjednotek.
+
+        Izopren je 2-methyl-1,3-butadien, tvoří aromatické látky, a vyskytuje se hlavně v rostlinných hormonech.
+    }
+}
+
+◊img["triacyglycerol.png" #:w 300]{Příklad triacylglycerolu}
+
+◊section{Mastné kyseliny}
+
+◊ls{
+    - mají dlouhý řetězec, 4 a více uhlíků
+    - pojmenování
+        - často jsou pojmenované triviálně, podle toho, z čeho byly izolovány
+        - označují se i čísly, ◊code{[# uhlíků]:[# dvojných vazeb]:[umístění dvojných vazeb]?}
+            - stearová je 18:0 (18 uhlíků, žádná dvojná vazba)
+            - olejová je 18:1:9 (18 uhlíků, dvojná vazba na devátém z nich)
+}
+
+Velice důležitá (dokonce esenciální) je pro nás kyselina ◊strong{arachnidová} --- je prekurzorem pro syntézu hormonů prostacyklinu, tromboxynu atd.
+
+◊img["fatty-acids.png"]{Příklady mastných kyselin}
+
+◊definitions{
+    ◊term["Nasycené MK"]{
+        Nemají dvojnou vazbu. Opakem jsou nenasycené MK.
+    }
+
+    ◊term["Polynenasycené"]{
+        Mají více násobných vazeb.
+    }
+}
+
+O to, které jsou zdravé a nezdravé, se stále vedou spory --- v současnosti se prosazují ty s mnoha nenasycenými vazbami, jako např. kukuřičný olej a olej světlice barvířské.
+
+◊img["fa-packing.png" #:w 300]{Pro polynenasycené MK je složitější se uspořádat, proto mají nižší teplotu tání než nasycené MK, které u sebe dobře drží mnoha hydrofilními vazbami}
+
+◊section{Oxidace MK}
+
+◊ls[#:t "Ukládání energie do MK"]{
+    - oproti sacharidům a polysacharidům skladnější, v přepočtu uložené energie na hmotnost jsou výhodnější
+        - např. ptáci by pouze s cukrovými zásobami dlouhé migrace nezvládli (buďto by měli málo energie, nebo by se neunesli)
+        - i člověk má tuk jako zásobní substrát
+        - ale trvá dlouho, než se energie zmobilizuje
+    - zvířata závislá na tuku: zpravidla s omezeným přístupem k pitné vodě, jsou tedy závislé na metabolické vodě, ta vzniká na komplexu 4
+}
+
+◊img["stored-metabolic-fuel.png"]{Běžné množství uložené energie ve třech jedincích}
+
+◊ls[#:t "Sprinteři, mílaři a maratonci"]{
+    - sprinteři: ATP ve svalech -> kreatinfosfát -> anaerobní glykolýza
+    - mílaři: aerobní glykolýza (glykogen -> ◊chem{CO2}) -> nastupuje tuková tkáň
+    - maratonci: oxidace mastných kyselin
+}
+
+◊ls[#:t "Zpracování tuků pro energii"]{
+    # rozložení tuků na MK a transport MK do buněk
+    # rozložení MK v buňce
+        # aktivace MK
+        # transport MK do mitochondrie
+        # ◊|beta|-oxidace, rozložení MK
+        # KC, OF
+}
+
+◊subsection{Rozložení tuků na MK}
+
+◊img["lipid-path.png" #:w 500]{Cesta lipidů skrz člověka}
+
+◊ls[#:t "Rozložení tuků na MK"]{
+    # tuky v trávicí soustavě tvoří kapénky, jež jsou špatně napadnutelné enzymy
+        - <= tuky josu velice hydrofobní
+        - je nutné je ◊strong{emulgovat}
+    # žlučové kyseliny a jejich soli tuky emulgují, tvoří se micely
+    # lipázy ve střevě odštěpují jednotlivé MK
+    # MK se dostávají přes membránu, stávají se z nich ◊strong{chylomikrony}
+        - chylomikron je útvar tvořený jednovrstevnou membránou s triacylglyceroly a estery uvnitř
+    # chylomikrony jdou přes stěnu střevní sliznice do krve
+    # v krvi se rozpadnou na MK a jsou transportovány na místo určení
+        - pokud jsou potřeba hned tak do myocytů (svalů)
+        - pokud hned potřeba nejsou, jdou do bílé tukové tkáně, kde se z nich znovu tvoří glyceroly a tukové kapénky
+        - v krvi jsou MK vázány na sérový protein ◊strong{albumin}
+}
+
+◊img["chylomicron.png" #:w 400]{Chylomikron}
+
+◊subsection{Aktivace MK}
+
+MK se musí dostat do mitochondrie, kde probíhá ◊|beta|-oxidace. Aby ale prošla dovnitř, musí být nejprve ◊strong{aktivována} tím, že se z ní udělá acyl-CoA (ne acetyl, ten byl v KC).
+
+◊img["acyl-coa-synthesis.png" #:w 500]{Konverze MK na acyl-CoA}
+
+Celková přeměna je tedy
+
+◊$${\ce{MK + CoA + ATP -> MK-CoA + AMP + 2P_i},}
+
+a je silně exergonická (◊${\Delta G'^{\circ} = \pu{-34 kJ/mol}}). U reakce je použito pyrofosfátové štěpení (ATP -> AMP).
+
+◊subsection{Transport MK do mch}
+
+◊img["carnitine-cycle.png"]{Karnitinový cyklus}
+
+◊ls[#:t "Průchod acyl-CoA do mitochondrie"]{
+    - k tomu slouží molekula karnitin, součást acyl-CoA-karnitinového cyklu
+        - karnitin je mnohem menší, než CoA, proto se lépe dostává přes membránu; zásbonárny CoA v cytoplazmě a mch jsou oddělené
+    - v cyklu též figurují enzymy kartininacyltransferázy I (vnější membrána) a II (vnitřní membrána)
+        - kartininacyltransferázy reálně tvoří komplex procházející přes obě membrány
+    - viz obrázek
+}
+
+◊subsection{◊|beta|-oxidace}
+
+◊img["mk-metabolism-stages.png" #:w 350]{Fáze zpracování MK v mch}
+
+◊ls[#:t "Beta-oxidace"]{
+    - ve výsledku rozštípá MK na dvojuhlíkaté zbytky, které poté jako acetyl-CoA vstupují do KC a kromě toho také uvolní 64 elektronů v podobně redukovaných koenzymů, které se poté účastní OF
+    - skládá se ze čtyř reakcí
+}
+
+◊img["beta-oxidation.png" #:w 400]{Průběh ◊|beta|-oxidace}
+
+Viz obrázek, popisky jen doplňují detaily.
+
+◊ls[#:t "První reakce"]{
+    - acyl-CoA dehydrogenáza oxiduje MK
+    - jako koenzym má FAD, které se redukuje a postupuje do OF
+}
+
+◊ls[#:t "Druhá reakce"]{
+    - v enoyl-CoA je dvojná vazba mezi ◊|alpha| a ◊|beta| uhlíky, které se chceme zbavit
+    - ◊|alpha| uhlík proto hydratujeme
+}
+
+◊ls[#:t "Třetí reakce"]{
+    - na ◊|beta| uhlíku vytvoříme karbonylovou skupinu
+    - u toho se redukuje ◊chem{NAD+}
+}
+
+◊ls[#:t "Čtvrtá reakce"]{
+    - zbyde nám MK-acyl-CoA, přičemž MK je nyní o dva uhlíky kratší
+}
+
+◊|beta|-oxidaci se někdy říká též ◊strong{Lynenova spirála}
+
+◊img["lynen-spiral.png" #:w 200]{Lynenova spirála}
+
+◊box["Co když má MK lichý počet uhlíků"]{
+    ◊ls{
+        - na konci ◊|beta|-oxidace vznikne propionyl-CoA
+        - ten je potřeba přemenit tak, aby mohl vstoupit do KC
+            - přemění se na sukcinyl-CoA
+        - k procesu je potřeba vitamín ◊chem{B12}
+        - celou reakci není potřeba umět
+    }
+
+    ◊img["bo-odd-number.png" #:w 400]{Změna propionylu-CoA na sukcinyl-CoA}
+}
+
+◊box["Co když je MK nenasycená"]{
+    ◊ls{
+        - dvojné vazby je potřeba nahradit jednoduchými
+        - pak se normálně odbourávají (někdy probíhá například ◊|omega|-oxidace)
+        - celou reakci není potřeba umět
+    }
+
+    ◊img["unsaturated-bo.png" #:w 400]{Průběh ◊|beta|-oxidace na polynenasycené MK}
+}
+
+◊subsubsection{Zisk ATP}
+
+V následující tabulce můžeme vidět zisk z ◊|beta| oxidace jedné molekuly palmitoyl-CoA. Kdybychom počítali zisk z palmitátu, musíme ještě odečíst 2 ATP za jeho aktivaci na palmitoyl-CoA.
+
+◊img["atp-yield-bo.png"]{Zisk ATP z ◊|beta|-oxidace}
+
+◊subsubsection{Lokalizace}
+◊ls{
+    - kromě mitochondrie probíhá i v peroxisomech, u rostlin dokonce výhradně tam
+        - dráhy jsou vlastně principiálně shodné
+            - liší se tím, že v peroxisomech se oxidují MK s dlouhými řetězci (>20) na osmi-uhlíkaté zbytky a ty poté pokračují do mch
+            - navíc v prvním kroku v mitochonrdii vzniká o jeden redukovaný koenzym více
+    - enzymy pracují buďto jako samostatné entity, nebo v ◊strong{superkomplexech}
+        - peroxisomální a glyoxysomální komplexy mají různé počty vazebných míst pro MK různé délky
+}
+
+◊img["bo-localization.png" #:w 400]{Rozdíl průběhu ◊|beta|-oxidace v mch a v peroxisomu}
+
+◊subsection{Ketolátky}
+
+◊ls{
+    - aceton, acetoacetát, hydroxybutyrát
+    - běžný postup: MK -> acetly-CoA -> KC
+        - pokud je málo oxalacetátu, KC se zastaví
+        - oxalacetát se běžně doplňuje anaplerotickými reakcemi, ale pro ty jsou výchozím substrátem produkty glykolýzy
+            - KC se tedy při nedostatku cukru (např. u neléčených diabetiků, za okolností vyčerpání) zastaví
+            - za takových okolností vznikají ze dvou acetyl-CoA právě ketolátky
+            - lidem te poté z úst cítit aceton
+    - přestupují hematoencefalickou bariéru => mohou sloužit v mozku (a dalších tkáních) jako zdroj energie
 }
