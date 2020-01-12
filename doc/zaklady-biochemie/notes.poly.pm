@@ -3221,6 +3221,24 @@ Poslední reakcí je opak linearizace při rozkladu glykogenu --- zde máme naop
     - oba druhy regulace jsou provázané
 }
 
+◊box["Spřažení metabolismu glykogenu a glykolýzy"]{
+    ◊ls{
+        - v játrech je glykogen odbouráván tehdy, když je potřeba zvýšit hladinu glukózy v krvi
+            - např. při hladovění, nebo i při jiných zvýšených nárocích na svalovou práci, kterou signalizují stresové hormony
+            - odbourání glykogenu nemá to být rovnou spřaženo s glykolýzou, má glukózu jen uvolnit do krve, glykolýza je tedy inhibována
+        - ve svalech je odbouráván pro svalovou práci
+            - zde je odbourávání glykogenu přímo pro glykolýzu
+    }
+
+    Jak to ale zařídit?
+
+    ◊ls[#:t "Mechanismus spřažení"]{
+        - fruktóza-6-bisfosfát je nejsilnější alosterický regulátor fosfofruktokinázy, hlavního glykolytického enzymu
+            - ve svalech je při odbourávání glykogenu podporována tvorba tohoto produktu
+            - v játrech je podporováno jeho odbourávání
+    }
+}
+
 ◊subsubsection{Alosterická regulace}
 
 ◊definitions{
@@ -3272,6 +3290,60 @@ Fosforylace Ser u A a AMP na alosterickém místě u B podobným způsobem podpo
 
 Po glukózové infuzi tedy stoupne odbourávání glykogenu a zpomalí se jeho opětovná syntéza.
 
+◊subsubsection{Hormonální regulace metabolismu sacharidů}
+
+◊ls[#:t "Játra (stav: v krvi je málo glukózy)"]{
+    # pankreatické ◊|alpha| buňky vyplaví glukagon
+    # ten se váže na svůj receptor na jaterní buňce, jenž je spřažen s adenylát-cyklázou -> tvoří se cAMP (◊em{druhý posel})
+    # cAMP spustí bicyklickou kaskádu odbourávání glykogenu
+    # glukóza se uvolňuje do krve, zvyšuje se její hladina
+}
+
+◊ls[#:t "Játra (stav: v krvi je hodně glukózy)"]{
+    # glukóza přímo proniká do jaterních buněk a tam inhibuje glykogenfosforylázu
+}
+
+◊ls[#:t "Játra (stav: tělo je ve stresu)"]{
+    # na jaterní buňku se váže adrenalin, jsou tam na něj dva (◊|alpha| a ◊|beta|) receptory
+    # ◊|beta| receptory -> adenylát-cykláza -> cAMP -> bicyklická kaskáda
+    # ◊|alpha| receptory -> štěpení fosfatidyl-inozitol-trifosfátu -> inozitoltrisfosfáty a diacylglyceroly (druzí poslové, stejně jako cAMP)
+    # působením inozitoltrisfosfátu se uvolňuje vápník -> aktivace kinázy-fosforylázy -> odbourávání glykogenu
+    # glukóza se uvolňuje do krve
+        - tentokrát to není proto, aby se zvýšila její hladina, ale kvůli dopravení do svalů
+}
+
+◊img["hormons-glycogen.png" #:w 400]{Signalizační kaskáda ve svalových a jaterních buňkách (není potřeba umět v detailu)}
+
+◊ls[#:t "Svaly"]{
+    # aktivuje se adrenalinový receptor (svaly mají pouze ◊|beta|)
+    # adenylát-cykláza
+    # vznik cAMP
+    # odbourávání glykogenu
+        - ihned následuje glykolýza
+}
+
+Navíc při vysokých hladinách glukózy v krvi vyplavují buňky pankreasu do krve inzulín, který má (mimo jiné) za následek to, že jsou ve svalových buňkách transportéry pro glukózu ◊chem{GLU4} přenášeny z cytoplasmy na membránu a umožňují  glukóze vstupovat do buněk ve velkém množství.
+
+◊box["Choroby spojené s metabolismem glykogenu"]{
+    Označují se jako ◊strong{glykogenózy} a zpravidla jsou způsobeny tím, že je mutován nějaký enzym odbourávání nebo syntézy glykogenu ve svalech či játrech.
+
+    ◊img["mcardle.png"#:w 300]{Hladiny ATP (ADP) u zdravých jedinců a u jedinců trpících McArdleovou chorobou}
+
+    ◊ls[#:t "McArdleova choroba"]{
+        - defekt ve svalové glykogenfosforyláze
+        - při lehké zátěži se prudce zdvihne hladina ADP, protože svalová glykogenfosforyláza nereaguje na svalovou práci, dochází k odbourávání svalového glykogenu
+        - při dlouhotrvajícím cvičení je rozdíl menší, protože jsou svaly zásobeny z jaterního glykogenu
+    }
+}
+
+◊box["Metabolismus glykogenu a sport"]{
+    ◊ls{
+        - 6 dnů před vytrvalostní závodem se omezí příjem cukrů a glykogenu v potravě
+        - poslední 3 dny se jich naopak konzumuje větší množství
+        - tělo má signalizován nedostatek a tak nejen, že doplní ten ztracený, ale ještě zvětší zásoby
+    }
+}
+
 ◊subsection{Coriho cyklus}
 
 ◊ls{
@@ -3281,3 +3353,81 @@ Po glukózové infuzi tedy stoupne odbourávání glykogenu a zpomalí se jeho o
 }
 
 Cyklus je pojmenován podle manželů Coriových, absolventů Karlovy univerzity a nositelů Nobelovy ceny.
+
+◊section{Glukoneogeneze}
+
+◊ls{
+    - dále jen gng
+    - syntéza cukrů z necukrů
+    - cukry jsou substrát pro vznik energie, ale jsou důležité i pro další energetické substráty (např. pro zpracování tuků v KC)
+}
+
+◊img["gluconeogenesis.png" #:w 400]{Schéma toho, z čeho mohou cukry vznikat (zvlášť pro rostliny a živočichy)}
+
+◊ls[#:t "Popis schématu"]{
+    - živočichové mohou tvočit cukry z kyseliny mléčné
+    - rostliny z ◊chem{CO2}, používají ho jako zdroj uhlíku a budují jej do kostry cukrů
+    - střed je společný oběma: dokážou cukry dělat z triacylglycerolu (ale jen z té alkoholové části) a z glukogenních AK
+        - AK jsou ty, které na různých místech vstupují do KC: Ala, Arg, Asp, Cys, Glu, Gly, His, hydroxyprolin, Met, Pro, Ser, Thr, Val
+            - nevstupují samozřejmě samotné AK, ale AK přetvořené buďto v nějaký z intermediátů KC, nebo přímo na acetyl-CoA
+}
+
+◊img["glucogenic-aa.png"]{Obrázek glukogenních AK v souvislosti s KC}
+
+◊ls[#:t "Glukoneogeneze z AK"]{
+    - gng se mohou účastnit ty AK, které do KC vstupují až po 1. nebo 2. dekarboxylaci
+        - v opačném případě by přišly o dva uhlíky (a žádný by tedy nezbyl na glukoneogenezi)
+    - Lys a Leu vstupují do reakce jako acetyl-CoA (tedy před oběma dekarboxylacemi) a nemohou se tedy glukoneogeneze zúčastnit
+}
+
+◊ls[#:t "Vztah glykolýzy a gng"]{
+    - reakce gng jsou často jen obrácené reakce glykolýzy
+    - musí se ošetřit, aby se reakce glykolýzy a gng netočily pořád dokola (tzv. ◊em{jalové cykly})
+    - proto jsou v glykolýze tři ireversibilní reakce (na obrázku vyznačeny tučně)
+        # hexokinázová (glukokinázová) reakce je energeticky posunuta k produktu (je exergonická) a tím pádem prakticky nevratná
+        # při vzniku fruktózo-1,6-bisfosfátu je také velká změna volné energie, opět hodně exergionická reakce
+        # pyruvát-kinázová reakce, fosfoenolpyruvát je makroergní sloučenina, opět silně exergonická (i když v normálních podmínkách více než in vivo)
+    - tyto nevratné reakce se tedy musí obejít
+}
+
+◊img["glyconeogenesis.png" #:w 400]{Glykolýza a gng}
+
+◊subsection{Obcházení pyruvát-kinázové reakce}
+
+Viz obrázek --- skládá se ze dvou částí.
+
+◊ls[#:t "Pyruvát-karboxylázová reakce"]{
+    - pyruvát (tříuhlíkatá sloučenina) je karboxylován na oxaloacetát (čtyčuhlíkatá sloučenina)
+    - už jsme na ni narazili
+        - je to anaplerotická reakce, dodává oxalacetát do KC
+        - může ale sloužit i jako donor substrátu (oxalacetátu) pro glukoneogenezi
+}
+
+◊img["pyruvate-karboxylase.png"]{Detailní náhled do toho, jakou roli má biotin v pyruvát-karboxylázové reakci (není třeba se učit)}
+
+◊ls[#:t "Role biotinu"]{
+    - funguje jako koenzym přenášející karboxylovou skupinu
+    - mechanismus je podobný, jako jsme už jednou viděli
+        - biotin se pohybuje na dlouhém raménku Lys
+        - hýbe se z jednoho reakčního místa, kde naváže karboxylovou skupinu (která tam přichází jako bikarbonát), na druhé aktivní místo enzymu, kde ji předá na pyruvát
+}
+
+◊img["pep-ck.gif" #:w 300]{Fosfoenolpyruvátkarboxykinázová reakce}
+
+◊ls[#:t "PEP karboxykinázová reakce"]{
+    - oxaloacetát -> fosfoenolpyruvát (PEP)
+    - PEP je intermediátem glykolýzy, čili opět mohou pokračovat reverzibilní reakce
+}
+
+V pyruvát-kinázové reakci v glykolýze vznikne 1 ATP na jeden fosfoenolpyruvát, ale když reakci obracíme, potřebujeme hned dvě makroergní sloučeniny (pyruvát-karboxyláza potřebuje jednu ATP a fosfoenolpyruvátkarboxykináza zas jednu GTP).
+
+
+◊subsection{Obcházení zbývajících dvou kinázových reakcí}
+
+◊ls{
+    - obě kinázové reakce jsou nahrazeny fosfatázovými reakcemi
+    - ◊chem{fruktóza-1,6-bisfosfát ->[fruktóza-1,6-bisfosfatáza] fruktóza-6-fosfát + P_i}
+        - ireverzibilní kinázová reakce byla obejita hydrolázovou reakcí
+        – na této úrovni organismu se nikdy nemůže syntetizovat ATP, pouze se zde spotřebovává, fosfát se zde hydrolyzuje
+   - to samé platí i pro hexokinázovou reakci, glukóza-6-fosfatázovou reakcí dojde k odštěpení fosfátu a z z glukóza-6-fosfátu vznikne glukóza
+}
