@@ -3516,3 +3516,48 @@ A jak je regulováno množství F26BP?
         - inzulín -> fosfoprotein fosfatáza -> defosforylace proteinu
         - inzulín => glykolýza
 }
+
+◊section{Pentózofosfátová dráha}
+
+◊ls{
+    - rozklad glukózy-6-fosfátu (glukóza zpracovaná hexokinázou), avšak ne na triózy, ale na pentózy
+    - neobyčejně důležité – vzniká ◊strong{ribóza} (součást NK, ATP, koenzymu NADH, NADPH atd.)
+    - je amfipatická
+}
+
+◊img["pentose-phosphate-general.png" #:w 400]{Obecné schéma pentózofosfátové dráhy}
+
+◊ls[#:t "Neoxidativní část dráhy"]{
+    - ne vždy ribózu potřebujeme, dráha se někdy využívá pouze ke generování NADPH
+        - např. při laktaci potřebujeme hodně MK (hodně NADPH), ale ribózy nějak moc ne
+        - opačným příkladem by byla např. regenerace jater, při které místo MK potřebujeme hlavně NK (tedy hodně ribózy)
+    - glukózu je možné regenerovat (tedy pentózu vrátit zpět na hexózu), poté spustit celou oxidativní část znovu, získat opět dvě NADPH a tak dokola
+        - tato proměna (5->6) probíhá v ◊strong{neoxidativní části} dráhy
+        - pentóza se mění na hexózu pomocí ◊strong{transketolázových} a ◊strong{trans-aldolázových} reakcí
+}
+
+◊note{
+    NADH je součástí katabolických drah, zatímco NADPH je důležitý pro reduktivní syntézy, například syntézu MK.
+}
+
+◊subsection{Průběh oxidativní části}
+
+◊img["pentose-phosphatase-detail.png" #:w 300]{Detailní průběh oxidativní části dráhy}
+
+Reakce jsou zřetelné z obrázku, následují pouze drobné poznámky.
+
+◊ls[#:t "Třetí reakce"]{
+    - dekarboxylací se odrhne jeden uhlík, zbyde nám pentóza
+}
+
+Celkově vzniknou dvě molekuly NADPH a jedna molekula ribózy.
+
+◊subsection{Průběh neoxidativní části}
+
+◊img["trans-keto.png"]{Transketolázové a trans-aldolázové reakce. (a) popisuje změnu tří pentóz na dvě hexózy a jednu triózu, (b) pak ukazuje, jak se po dvou průbězích reakcí v (a) vytvoří z šesti pentóz pět hexóz.}
+
+◊ls[#:t "Transketolázové a trans-aldolázové reakce"]{
+    - probíhá v nich přehazování uhlíků, v konečném důsledku převádějí pentózy zpět na hexózy
+    - na začátku vstupuje ribóza-5-fosfát a xylulóza-5-fosfát, která vznikne izomerací z ribózy-5-fosfátu
+    - viz obrázek
+}
