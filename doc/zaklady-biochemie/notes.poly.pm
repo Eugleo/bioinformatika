@@ -3357,7 +3357,7 @@ Cyklus je pojmenován podle manželů Coriových, absolventů Karlovy univerzity
 ◊section{Glukoneogeneze}
 
 ◊ls{
-    - dále jen gng
+    - dále jen glukoneogeneze
     - syntéza cukrů z necukrů
     - cukry jsou substrát pro vznik energie, ale jsou důležité i pro další energetické substráty (např. pro zpracování tuků v KC)
 }
@@ -3375,14 +3375,30 @@ Cyklus je pojmenován podle manželů Coriových, absolventů Karlovy univerzity
 ◊img["glucogenic-aa.png"]{Obrázek glukogenních AK v souvislosti s KC}
 
 ◊ls[#:t "Glukoneogeneze z AK"]{
-    - gng se mohou účastnit ty AK, které do KC vstupují až po 1. nebo 2. dekarboxylaci
+    - glukoneogeneze se mohou účastnit ty AK, které do KC vstupují až po 1. nebo 2. dekarboxylaci
         - v opačném případě by přišly o dva uhlíky (a žádný by tedy nezbyl na glukoneogenezi)
     - Lys a Leu vstupují do reakce jako acetyl-CoA (tedy před oběma dekarboxylacemi) a nemohou se tedy glukoneogeneze zúčastnit
 }
 
-◊ls[#:t "Vztah glykolýzy a gng"]{
-    - reakce gng jsou často jen obrácené reakce glykolýzy
-    - musí se ošetřit, aby se reakce glykolýzy a gng netočily pořád dokola (tzv. ◊em{jalové cykly})
+◊box["Výroba cukrů z tuků"]{
+    ◊ls{
+        - z MK sice cukry (víceméně) vznikat nemohou, ale z glycerolu (součást  tuků) ano
+        - glycerol nám zbyde poté, co z něj lipázy odštěpí MK
+        - glycerol -> fosforylace na glycerol-3-fosfát -> dihydroxyacetonfosfát (viz obrázek níže, tam jsou i enzymy)
+        - dihydroxyacetonfosfát se pak může účastnit glykolýzy nebo glukoneogeneze
+            - v glykolýze může být v páté reakci zaměňován s glyceraldehyd-3-fosfátem, který je (podobně jako dihydroxyacetonfosfát) produktem čtvrté reakce
+        - malá část molekuly tuku tedy do glukoneogeneze vstoupit může
+    }
+
+    Navíc, propionyl-CoA vzniklý z ◊|beta|-oxidace MK s lichým počtem uhlíků může vstoupit do KC, kde unikne oběma dekarboxylacím a jeho uhlíky tedy také mohou sloužit k syntéze cukru.
+
+    ◊img["glycerol-into-gng.png" #:w 400]{Vstup glycerolu do glukoneogeneze}
+
+}
+
+◊ls[#:t "Vztah glykolýzy a glukoneogeneze"]{
+    - reakce glukoneogeneze jsou často jen obrácené reakce glykolýzy
+    - musí se ošetřit, aby se reakce glykolýzy a glukoneogeneze netočily pořád dokola (tzv. ◊em{jalové cykly})
     - proto jsou v glykolýze tři ireversibilní reakce (na obrázku vyznačeny tučně)
         # hexokinázová (glukokinázová) reakce je energeticky posunuta k produktu (je exergonická) a tím pádem prakticky nevratná
         # při vzniku fruktózo-1,6-bisfosfátu je také velká změna volné energie, opět hodně exergionická reakce
@@ -3390,7 +3406,7 @@ Cyklus je pojmenován podle manželů Coriových, absolventů Karlovy univerzity
     - tyto nevratné reakce se tedy musí obejít
 }
 
-◊img["glyconeogenesis.png" #:w 400]{Glykolýza a gng}
+◊img["glyconeogenesis.png" #:w 400]{Glykolýza a glukoneogeneze}
 
 ◊subsection{Obcházení pyruvát-kinázové reakce}
 
@@ -3432,6 +3448,21 @@ V pyruvát-kinázové reakci v glykolýze vznikne 1 ATP na jeden fosfoenolpyruv�
    - to samé platí i pro hexokinázovou reakci, glukóza-6-fosfatázovou reakcí dojde k odštěpení fosfátu a z z glukóza-6-fosfátu vznikne glukóza
 }
 
+◊img["g-6-pase-localization.png"]{Umístění glukóza-6-fosfatázy}
+
+◊ls[#:t "Činnost glukóza-6-fosfatázy"]{
+    - je umístěna na membráně ER
+    - jde o relativně velký komplex, jeho součástí jsou jeden enzym a tři přenašeče
+    - průběh reakce
+        # glukóza-6-fosfát je transportována do lumen hladkého ER, kde je aktivní místo enzymu
+        # enzym odhydrolyzuje fosfát, vznikne glukóza
+        # tyto produkty jdou z ER přes přenašeče
+    - glukóza v cytoplazmě je totiž vystavena nebezpečí, že bude transportována z buňky
+        - to je jedna z věcí, před kterou ji hexokináza fosforylací ochrání
+        - tím, že je tvořena v ER se tento její osud oddaluje
+
+}
+
 ◊subsection{Kompartmentalizace glukoneogeneze}
 
 ◊ls{
@@ -3443,4 +3474,45 @@ V pyruvát-kinázové reakci v glykolýze vznikne 1 ATP na jeden fosfoenolpyruv�
             # zasáhne malát-dehydrogenáza, oxalacetát -> malát, a poté v cytoplazmě opět malát -> oxalacetát
                 - při tom se však oxiduje jedno ◊chem{NADH} v mch a naopak redukuje se jedno ◊chem{NAD+} v cytoplazmě
                 - to může sloužit k transdehydrogenázovým reakcím
+}
+
+◊subsection{Regulace}
+
+◊ls{
+    - pyruvát má spousto možností, kam jít
+        - např. vstoupí do pyruvátdehydrogenázové reakce a vzniká z něj acetyl-CoA, ten jde do KC
+        - nebo např. může jít do glukoneogeneze, do pyruvátkarboxylázové reakce (a vznikne z něj oxalacetát)
+    - čili pokud buňka vyrábí acetyl-CoA z tuků, inhibuje pyruvátdehydrogenázu a aktivuje pyruvátkarboxylázu
+        - vzniklý oxalacetát může vstoupit jako produkt jako anaplerotické reakce do KC, nebo půjde do glukoneogeneze
+}
+
+◊img["fructose-16_p.png" #:w 150]{Fruktóza-1,6-bisfosfát}
+
+
+◊img["fructose-2-6-p.png" #:w 250]{Fruktóza-2,6-bisfosfát}
+
+◊ls[#:t "Fruktóza-2,6-bisfosfát"]{
+    - dále jen F26BP
+    - je podobná F16BP, až na polohu fosforu (viz obrázek výše)
+    - regulační molekula, stimuluje fosfofruktokinázu-1 (PFK-1) a inhibuje fruktózu-1,6-bisfosfatázu (FBPáza-1), viz obrázek níže
+        - tím inhibuje celou glukoneogenezi a aktivuje glykolýzu
+}
+
+◊img["f26bp.png" #:w 300]{Vliv F26BP na regulaci glukoneogeneze}
+
+A jak je regulováno množství F26BP?
+
+◊img["f26bp-regul.png"]{Regulace množství F26BP}
+
+◊ls[#:t "PFK-2 a FBPáza-2"]{
+    - jsou vlastně jedním proteinem se dvěma doménami
+    - PFK-2 -> F26BP, FBPáza-2 naopak
+        - aktivace PFK-2 části => F26BP => podpoření glykolýzy
+        - aktivace FBPázy-2 => podpoření glukoneogeneze
+    - FBPáza-2 část je nepřímo aktivována glukagonem
+        - glukagon -> adenyly cykláza -> cAMP -> CDK -> fosforylace proteinu
+        - glukagon => glukoneogeneze
+    - PFK-2 část je nepřímo aktivována inzulínem
+        - inzulín -> fosfoprotein fosfatáza -> defosforylace proteinu
+        - inzulín => glykolýza
 }
