@@ -3431,3 +3431,16 @@ V pyruvát-kinázové reakci v glykolýze vznikne 1 ATP na jeden fosfoenolpyruv�
         – na této úrovni organismu se nikdy nemůže syntetizovat ATP, pouze se zde spotřebovává, fosfát se zde hydrolyzuje
    - to samé platí i pro hexokinázovou reakci, glukóza-6-fosfatázovou reakcí dojde k odštěpení fosfátu a z z glukóza-6-fosfátu vznikne glukóza
 }
+
+◊subsection{Kompartmentalizace glukoneogeneze}
+
+◊ls{
+    - první část je v mch => problém transportu přes vnitřní membránu
+    - začíná se vždy u pyruvátu
+        - ten se ještě v mch přemění (pomocí pyruvát-karboxylázy) na oxalacetát
+        - jak dostat oxalacetát z mch?
+            # zasáhne mch PEP karboxykináza, oxalacetát -> PEP za spotřeby GTP (PEP má přenašeč)
+            # zasáhne malát-dehydrogenáza, oxalacetát -> malát, a poté v cytoplazmě opět malát -> oxalacetát
+                - při tom se však oxiduje jedno ◊chem{NADH} v mch a naopak redukuje se jedno ◊chem{NAD+} v cytoplazmě
+                - to může sloužit k transdehydrogenázovým reakcím
+}
