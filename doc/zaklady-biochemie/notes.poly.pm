@@ -3822,6 +3822,8 @@ Elongace a desaturace jsou často kombinované, napč. při tvorbě ◊em{arachi
     ◊img["glucagon-effect.png"]{Vliv glukagonu na játra a tukové buňky}
 }
 
+◊(add-abr "AMPK" "AMP-aktivovaná proteinkináza")
+
 ◊ls[#:t "Regulace ukládání tuků v tukových buňkách"]{
     - mechanismus ukládání žvočišných tuků
         # partikule tuku se z jater dostanou do krve
@@ -3831,7 +3833,7 @@ Elongace a desaturace jsou často kombinované, napč. při tvorbě ◊em{arachi
     - pokud je v tukových buňkách tímto způsobem ukládáno hodně tuků, začnou uvolňovat ◊strong{leptin}
         - hlavní receptory pro leptin jsou v hypotalamu, který poté různými cestami signalizuje člověku, že je sytý
             - patologie leptinu vedou často k obezitě
-        - leptin také aktivuje ◊abr[#:new "AMP-aktivovanou proteinkinázu"]{AMPK}, která poté v jaterních a svalových buňkách inhibuje ◊abr{FAS} a podporuje ◊|beta|-oxidaci
+        - leptin také aktivuje AMP-aktivovanou proteinkinázu (dále jen ◊em{AMPK}), která poté v jaterních a svalových buňkách inhibuje ◊abr{FAS} a podporuje ◊|beta|-oxidaci
 }
 
 ◊ls[#:t "Lipoproteinlipáza"]{

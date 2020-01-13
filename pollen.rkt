@@ -314,7 +314,7 @@
       (cond
         [whole-name
           (add-abr key whole-name)
-          (@ whole-name "(dále jen " (em key) ")")]
+          (@ whole-name " (dále jen " (em key) ")")]
         [else
           `(abr [[data-tippy-content ,(hash-ref abbreviations key)]]
             ,key)])]
