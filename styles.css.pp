@@ -302,6 +302,8 @@ img:hover {
 
 .figure-caption {
   ◊(font-size 0.8);
+  ◊(line-height 0.8);
+  padding: 5px;
   font-family: "IBM Plex Sans";
   text-align: center;
   background: #f6f6f6;

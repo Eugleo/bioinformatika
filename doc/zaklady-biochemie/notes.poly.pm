@@ -770,7 +770,7 @@ Koenzymů je celá řada.
 ◊ls[#:t "Koenzymy: anorganické ionty"]{
     - nabité molekuly, které se podílí na struktuře holoenzymu
     - měďnaté ionty
-        - důležitým enzymem je ◊strong{cytochrom oxidáza}, je členem elektrontransportního řetězce v mitochondrii, který se stará o přenos elektronů a tvorba ATP
+        - důležitým enzymem je ◊strong{cytochrom oxidáza}, je členem elektrontransportního řetězce uvnitř ◊abr[#:new "mitochondrie"]{mch}, který se stará o přenos elektronů a tvorbu ATP
         - cytochrom oxidáza je posledním enzymem této dráhy, kde se kyslík redukuje na vodu --- měďnaté ionty slouží jako akceptory elektronů, které jsou v rámci této dráhy přenášeny
     - železité ionty
         - opět cytochrom oxidáza, fungují úplně stejně jako ty měďnaté
@@ -1175,7 +1175,7 @@ V rámci metabolismu si ve větším detailu na několika příkladech popíšem
     - přinášejí schopnost katalyzovat reakce za (pro organismus) běžných podmínek
     - jsou specifické (např. konkrétní enzym reagovat jen s jediným cukrem)
         - s několika cukry může běžet několik reakcí katalyzováných různými enzymy, které mohou být nezávisle na sobě regulovány
-        - veliký počet reakcí probíhá v jediném kompartmentu či v několika málo kompartmentech (např. v ER nebo v mitochondrii); současně je tam ohromě moc regulovaných reakcí, ale ty se díky specifitě vzájemně neovlivňují
+        - veliký počet reakcí probíhá v jediném kompartmentu či v několika málo kompartmentech (např. v ER nebo v ◊abr{mch}); současně je tam ohromě moc regulovaných reakcí, ale ty se díky specifitě vzájemně neovlivňují
         - dává vzniknout danému konkrétnímu izomeru
     - jsou regulovatelné tím, že měníme dostupnost substrátu a reaktantů
         - když se koncentrace substrátu sníží pod určitou minimální hranici, enzym už ho neuvidí, s katalýzou se přestane
@@ -1946,7 +1946,7 @@ Na pyruvátu a dalších molekulách se dá demonstrovat vlastnost katabolismu, 
      Celá dráha kromě zpracování acetyl-CoA a uvolnění NADH tvoří také různé intermediáty, které jsou užitečné pro syntézy.
 }
 
-Některé AK se na acetyl-CoA nemění; vždy ale dochází k oxidaci (přenos elektronů), což zařizuje ◊strong{glyceraldehydfosfát-dehydrogenáza}. Vzniká NADH, který je poté někdy použit v mitochondriích na syntézu ATP v rámci elektrontransportního řetězce.
+Některé AK se na acetyl-CoA nemění; vždy ale dochází k oxidaci (přenos elektronů), což zařizuje ◊strong{glyceraldehydfosfát-dehydrogenáza}. Vzniká NADH, který je poté někdy použit v ◊abr{mch} na syntézu ATP v rámci elektrontransportního řetězce.
 
 ◊img["oxidation-pathway.png" #:w 400]{Pohled na metabolismus cukrů, tuků a bílkovin}
 
@@ -1979,15 +1979,15 @@ Některé AK se na acetyl-CoA nemění; vždy ale dochází k oxidaci (přenos e
 
 ◊img["mini-krebs.png" #:w 300]{Krebsův cyklus, základní schéma}
 
-◊box["O lokalizaci CKC"]{Krebsův cykus je lokalizován v mitochondrii, glykolýza byla v cytoplasmě, pyruvát po pyruvát-kinázovou reakci je ještě v cytoplasmě. Pyruvát pak přejde dovnitř mitochondrie, kde už je zbytek reakcí.}
+◊box["O lokalizaci CKC"]{Krebsův cykus je lokalizován v ◊abr{mch}, glykolýza byla v cytoplasmě, pyruvát po pyruvát-kinázovou reakci je ještě v cytoplasmě. Pyruvát pak přejde dovnitř ◊abr{mch}, kde už je zbytek reakcí.}
 
-◊note{H. Krebs na cyklus neobjevil sám, pracovali na tom i jiní; postupně objevovali jednotlivé molekuly, určovali pořadí, používali inhibitory, koukali, co se kde hromadí. Pracovali se na preparátu rozemletého prsního svalu holuba, protože je to hodně aerobně aktivní tkáň, a cyklus je zde také velmi aktivní. Když ale sval rozemleli, rozemleli s ním i mitochondrie. Krebs objevenou lineární dráhu uzavřel do cyklu, to je jeho přínos.}
+◊note{H. Krebs na cyklus neobjevil sám, pracovali na tom i jiní; postupně objevovali jednotlivé molekuly, určovali pořadí, používali inhibitory, koukali, co se kde hromadí. Pracovali se na preparátu rozemletého prsního svalu holuba, protože je to hodně aerobně aktivní tkáň, a cyklus je zde také velmi aktivní. Když ale sval rozemleli, rozemleli s ním i ◊abr{mch}. Krebs objevenou lineární dráhu uzavřel do cyklu, to je jeho přínos.}
 
 ◊subsection{Komplex pyruvát dehydrogenázy (PDC)}
 
 Stará se přeměnu pyruvátu, který je výstupem glykolýzy, na acetyl-CoA, který potřebujeme v KC.
 
-◊img["acetyl-CoA.png" #:w 400]{Vznik acetyl-CoA, pyruvát dehydrogenázová reakce}
+◊img["acoa.png" #:w 400]{Vznik acetyl-CoA, pyruvát dehydrogenázová reakce}
 
 ◊ls[#:t "O reakci"]{
     - oxidativní dekarboxyklace, ztratí se jeden ◊chem{CO2} a dva elektrony
@@ -2057,7 +2057,7 @@ A dále ještě NAD(H).
     - u lidí a ◊chem{G-} bakterií je to složitější, PDC je organizován do dvou vnořených dvanáctistěnů
         - jeden vevnitř (20 krát E2), jeden vně (30 krát E1 tetramer na každé hraně, 12 krát E3 dimer na každé stěně)
         - celkem 204 podjednotek, ◊u{10 MDa}
-        - tento komplex je v mitochondriální matrix a všechny proteiny jsou kódovány v jádře => musí se tam nějak dostat a pak se poskládat do dvanáctistěnu
+        - tento komplex je v ◊abr{mch} matrix a všechny proteiny jsou kódovány v jádře => musí se tam nějak dostat a pak se poskládat do dvanáctistěnu
             - genetické vady ve struktuře/transportu/poskládání jsou letální
 }
 
@@ -2199,7 +2199,7 @@ Hlavní průběh (produkty, enzymy, atp.) viz obrázek. Následují pouze pozná
             - mRNA je akonitázou stabilizována, míra translace se zvýší
 }
 
-Třetí role akonitázy souvisí s nukleotidy: shluky mitochondriální DNA a proteinů. V mitochondriích je u člověka několik set kopií cirkulárních molekul, jeden z proteinů, který je drží u sebe, je právě akonitáza.
+Třetí role akonitázy souvisí s nukleotidy: shluky ◊abr{mch} DNA a proteinů. V ◊abr{mch} je u člověka několik set kopií cirkulárních molekul, jeden z proteinů, který je drží u sebe, je právě akonitáza.
 
 ◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 ◊subsubsection{Třetí reakce}
@@ -2244,7 +2244,7 @@ Sukcinyl-CoA je opět makroergní molekula.
     # fosfát je přenesen na GDP (nebo ADP a podobně), tvoří se GTP (nebo ATP a podobně)
 }
 
-Probíhá tedy tzv. ◊strong{syntéza ATP na substrátové úrovni}, která probíhá i v glykolýze. Druhý způsob syntézy ATP je v mitochondriích na základě oxidativní fosforylace.
+Probíhá tedy tzv. ◊strong{syntéza ATP na substrátové úrovni}, která probíhá i v glykolýze. Druhý způsob syntézy ATP je v ◊abr{mch} na základě oxidativní fosforylace.
 
 ◊sidenote{Zpět na ◊link["#Reakce KC"]{obrázek celého cyklu}.}
 ◊subsubsection{Šestá reakce}
@@ -2255,7 +2255,7 @@ Probíhá tedy tzv. ◊strong{syntéza ATP na substrátové úrovni}, která pro
     - enzym sukcinát-dehydrogenáza, koenzym FAD
         - FAD funguje zde, v reakci pyruvát -> acetyl-CoA a v oxidativní fosforylaci (jako komplex II)
     - na rozdíl od ostatních enzymů v KC je vázaný na membránu
-        - je integrálním membránovým proteinem ve vnitřní mitochondriální membráně => může efektivně předávat elektrony
+        - je integrálním membránovým proteinem ve vnitřní ◊abr{mch} membráně => může efektivně předávat elektrony
     - (doslova) učebnicový příklad enzymu manifestujícího ◊em{kompetitivní inhibici}
         - kyselinoa malonová je stejně jako sukcinát také dikarboxylová a liší se od něj pouze v jedné skupině
         - řešením je přidat více sukcinátu
@@ -2363,8 +2363,8 @@ Dále již jen zkráceně OF.
     - dvě reakce: oxidace (transport elektronů z redukovaných koenzymů) a fosforylace
     - ◊chem{ADP -> ATP}
     - reakce bez sebe nemohou být, jsou spjaty
-    - probíhá v mitochondriích, kde se (při dostatku kyslíku) vyrábí 96% ATP (zbytek vzniká při glykolýze a jedna molekula v KC)
-    - mitochondrie mají všechny aerobní organismy (potažmo všechna eukaryota, jen některá je mají pozměněné
+    - probíhá v ◊abr{mch}, kde se (při dostatku kyslíku) vyrábí 96% ATP (zbytek vzniká při glykolýze a jedna molekula v KC)
+    - ◊abr{mch} mají všechny aerobní organismy (potažmo všechna eukaryota, jen některá je mají pozměněné
 }
 
 ◊img["of-schema.png"]{Přehed oxydativní fosforylace}
@@ -2372,19 +2372,19 @@ Dále již jen zkráceně OF.
 ◊subsection{Mitochondrie}
 
 ◊ls[#:t "Historie objevu mitochondrií"]{
-    - Otto Warburg dostal roku 1931 NC za objevy kolem mitochondrií
-    - mitochondrie byly popsány na přelomu 19. a 20. století, poměrně brzy byla zjištěna jejich úloha v oxidativním metabolismu
+    - Otto Warburg dostal roku 1931 NC za objevy kolem ◊abr{mch}
+    - ◊abr{mch} byly popsány na přelomu 19. a 20. století, poměrně brzy byla zjištěna jejich úloha v oxidativním metabolismu
     - až v 50. letech (George E. Palade) byla na Rockefelově univerzitě poprvé postavena dobrá centrifuga, která dovedla oddělovat buněčné kompartmenty
-        - až tehdy se dala studovat čistá mitochondriální frakce
+        - až tehdy se dala studovat čistá ◊abr{mch} frakce
         - Palade dostal NC v roce 1974 spolu s Christianem de Duve (který objevil peroxisomy) a Albertem Palade
 }
 
-◊subsubsection{Struktura mitochondrií}
+◊subsubsection{Struktura ◊abr{mch}}
 
-◊img["mitochondrion.png" #:w 400]{Stavba mitochondrie}
+◊img["mitochondrion.png" #:w 400]{Stavba ◊abr{mch}}
 
 ◊ls[#:t "Vnější membrána"]{
-    - má póry z porinů, které slouží k transportu proteinů do mitochondrie
+    - má póry z porinů, které slouží k transportu proteinů do ◊abr{mch}
         – tedy je dost propustná
 }
 
@@ -2404,24 +2404,24 @@ Dále již jen zkráceně OF.
 }
 
 ◊ls[#:t "Semiautonomie"]{
-    - mch jsou ◊strong{semiautonomní}, obsahují vlastní DNA
-    - mch genů je u člověka 13, všechny kódují nějaký protein patřící do komplexu z OF
-        - postupem času se geny přesouvaly z mch do jádra
+    - ◊abr{mch} jsou ◊strong{semiautonomní}, obsahují vlastní DNA
+    - ◊abr{mch} genů je u člověka 13, všechny kódují nějaký protein patřící do komplexu z OF
+        - postupem času se geny přesouvaly z ◊abr{mch} do jádra
         - těch 13 proteinů zůstalo, protože jsou natolik hydrofobní, že by nemuseli přečkat cestu přes cytoplasmu
-    - komplexy se většinou skládají z mch i běžných proteinů, které jsou do mch transportovány z cytoplasmy
+    - komplexy se většinou skládají z ◊abr{mch} i běžných proteinů, které jsou do ◊abr{mch} transportovány z cytoplasmy
         - ◊strong{mitopatie} = chyby v koordinaci skládání (celkem časté)
 }
 
 
-◊img["mitochondrion-fluorescent.png" #:w 200]{Buňka, fluorescenčně obarvená (červeně cytoskelet, zeleně mitochondrie) --- důkaz existence mch retikula}
+◊img["mitochondrion-fluorescent.png" #:w 200]{Buňka, fluorescenčně obarvená (červeně cytoskelet, zeleně ◊abr{mch}) --- důkaz existence ◊abr{mch} retikula}
 
 ◊ls[#:t "Celková morfologie"]{
-    - původní představa: mch mají na délku asi ◊u{2 \mu m}, jsou tedy velikostní podobné bakteriím
-    - současná představa: mch jsou spíše ◊strong{dynamickým retikulem}
-        - existuje dynamická sít mch, které se neustále slučují, pohybují, mění tvar
-        - nejspíše ve všechn buňkách kromě svalových (tam není místo) a spermií (tam jsou mch kolem bičíku)
-    - v mch se tvoří kyslíkové radikály => rychle stárnou, jsou rychle odstraňovány (autofagocytózou) a obnovovány
-    - ke změnám ve tvaru a uspořádání mitochondrií může dojít otravou, zablokováním OF, ale tvar mohou měnit i v závislosti na energetickém stavu buňky
+    - původní představa: ◊abr{mch} mají na délku asi ◊u{2 \mu m}, jsou tedy velikostní podobné bakteriím
+    - současná představa: ◊abr{mch} jsou spíše ◊strong{dynamickým retikulem}
+        - existuje dynamická sít ◊abr{mch}, které se neustále slučují, pohybují, mění tvar
+        - nejspíše ve všechn buňkách kromě svalových (tam není místo) a spermií (tam jsou ◊abr{mch} kolem bičíku)
+    - v ◊abr{mch} se tvoří kyslíkové radikály => rychle stárnou, jsou rychle odstraňovány (autofagocytózou) a obnovovány
+    - ke změnám ve tvaru a uspořádání ◊abr{mch} může dojít otravou, zablokováním OF, ale tvar mohou měnit i v závislosti na energetickém stavu buňky
         - potřeba vysoké produkce ATP => zvýšení objemu
         - v opačném případě fragmentace a snížení objemu
 }
@@ -2433,7 +2433,7 @@ Dále již jen zkráceně OF.
 ◊ls[#:t "Transport elektronů"]{
     - probíhá při redoxních reakcích (donor se oxiduje, akceptor redukuje)
     - v oxidační části je elektronový pár nesen z primárního donoru (redukovaný koenzym ◊chem{NADH} nebo ◊chem{FADH2}) přes přenašeče až na finální akceptor ◊chem{O2}
-    - zjednodušený nákres ukazuje, že se řetězec skládá ze čtyř komplexů (I-IV), které jsou všechny ukotveny ve vnitřní mch membráně
+    - zjednodušený nákres ukazuje, že se řetězec skládá ze čtyř komplexů (I-IV), které jsou všechny ukotveny ve vnitřní ◊abr{mch} membráně
         - kromě těchto čtyř velikých proteinových komplexů jsou tam ještě dva mobilní přenašeče, kteří se pohybují mezi těmi velkými
             - ◊strong{koenzym Q} (1 <-> 3, 2 <-> 3)
             - ◊strong{cytochrom C} (3 <-> 4)
@@ -2522,7 +2522,7 @@ Jinými názvy též NADH dehydrogenáza, NADH:koenzym Q oxidoreduktáza.
         - na špičce je místo pro redukovaný koenzym
     - je to jedno z největších takových center, má až 45 podjednotek
         - bakteriální mají kolem 15 podjednotek, v průběhu evoluce se postupně přidávaly další a další
-        - 7/45 podjednotek se kóduje v mch DNA, zbytek v jádrovém DNA
+        - 7/45 podjednotek se kóduje v ◊abr{mch} DNA, zbytek v jádrovém DNA
 }
 
 ◊ls[#:t "Funkce"]{
@@ -2543,7 +2543,7 @@ Jinými názvy též sukcinát-dehydrogenáza, sukcinát:koenzym Q oxidoreduktá
 
 ◊ls[#:t "Struktura komplexu II"]{
     - komplex ze 4 podjednotek
-        - žádná není kódována v mch
+        - žádná není kódována v ◊abr{mch}
     - několik redoxních center
         - tři železo-sirná centra
         - jeden FAD
@@ -2562,7 +2562,7 @@ Neboli cytochrom B-C1.
 ◊ls[#:t "Struktura komplexu III"]{
     - obsahuje cytochromy B a C1 (-> jméno) a kromě nich ještě obsahuje jeden Fe-S komplex, který se nazývá ◊strong{Rieskeho protein}
     - funguje jako dimer (na obrázku světlejší a tmavší odstíny barev) a každý z monomerů je asi z 10 podjednotek (dodnes to není jisté a různé organismy to mají různě)
-        - pouze 1/10 je kódován v mch
+        - pouze 1/10 je kódován v ◊abr{mch}
 }
 
 ◊img["complex-III-function.png" #:w 400]{Rozdělení dvojelektronového toku v komplexu III}
@@ -2581,9 +2581,9 @@ Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cyt
 ◊img["complex-IV.png" #:w 300]{Struktura komplexu IV}
 
 ◊ls[#:t "Struktura komplexu IV"]{
-    - obsahuje asi 12 podjednotek, z toho 3 jsou kódovány v mch
+    - obsahuje asi 12 podjednotek, z toho 3 jsou kódovány v ◊abr{mch}
     - funguje jako dimer, důležité komponenty jsou čtyři redoxní centra
-        - všechna redox centra jsou kódována v mch
+        - všechna redox centra jsou kódována v ◊abr{mch}
     - dva cytochromy, A a A3
     - obsahuje atomy mědi, které jsou koordinovány přes Cys a His
 }
@@ -2608,7 +2608,7 @@ Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cyt
         - kontroverzní, neví se, zda existují
     }
 
-    Co se ovšem ví, je fakt, že ATP syntázy se do větších celků shlukují. Jak se zdá, jsou tyto superkomplexy zčásti zodpovědné za morfologii vnitřní membrány v mch (konkrétně za kristy) --- vyskytují se totiž přesně v místech, kde kristy prudece zahýbají. Mutanti bez těchto superkomplexů mají strukturu krist silně narušenou .
+    Co se ovšem ví, je fakt, že ATP syntázy se do větších celků shlukují. Jak se zdá, jsou tyto superkomplexy zčásti zodpovědné za morfologii vnitřní membrány v ◊abr{mch} (konkrétně za kristy) --- vyskytují se totiž přesně v místech, kde kristy prudece zahýbají. Mutanti bez těchto superkomplexů mají strukturu krist silně narušenou .
 }
 
 ◊subsubsection{Kyslíkové radikály (ROS)}
@@ -2618,7 +2618,7 @@ Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cyt
         - mohou však sloužit i jako signální molekuly
 – informují o hladině kyslíku,
     - na jejich existenci a produkci je založena teorie stárnutí
-        - jejich produkce postupně ničí mitochondrie a snižuje výkonnost buněk a produkci energie -> organismus stárne a zahyne
+        - jejich produkce postupně ničí ◊abr{mch} a snižuje výkonnost buněk a produkci energie -> organismus stárne a zahyne
     - jako hlavní místo produkce ROS se uvádí koenzym Q, ale není to přesné, hlavním místem je komplex BC1, kde dochází k rozdělení přenosu elektronů
 }
 
@@ -2644,8 +2644,8 @@ Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cyt
 ◊ls[#:t "Chemiosmotická hypotéza"]{
     - už je potvrzena
     - Peter D. Mitchell
-    - tvrzení, že ATP se tvoří v mitochondriích na základě protonového gradientu
-        - po vytvoření gradientu během první fáze OF se poté v ◊strong{komplexu V}, častěji nazývanému ◊strong{mitochondriální ATP syntáza}, tvoří ATP
+    - tvrzení, že ATP se tvoří v ◊abr{mch} na základě protonového gradientu
+        - po vytvoření gradientu během první fáze OF se poté v ◊strong{komplexu V}, častěji nazývanému ◊strong{◊abr{mch} ATP syntáza}, tvoří ATP
 }
 
 ◊ls[#:t "Protonový gradient"]{
@@ -2669,7 +2669,7 @@ Reakce jsou běžně spřažené, pouze když přidáme látku, která udělá d
 ◊ls[#:t "Bakteriální elemetární experiment"]{
     # přidáme na membránu bakteriorodopsin
         - bakteriorodopsin pumpuje protony poté, co je stimulován světlem
-    # přidáme na membránu mitochondriální ATP syntázu
+    # přidáme na membránu ◊abr{mch} ATP syntázu
     # posvítíme na membránu -> začne se generovat ATP
 }
 
@@ -2710,7 +2710,7 @@ Průběh změn konformace je T -> O -> L -> T -> ...
     - v tom nejjednodušším případě je ze tří podjednotek
         # A, protonový kanál
         # B, venkovní stonek
-        # C multimerní prstenec, jenž je uložen ve vnitřní mitochondriální membráně
+        # C multimerní prstenec, jenž je uložen ve vnitřní ◊abr{mch} membráně
             - tužkový model C podjednotky: je to prstenec tvořený různým počtem podjednotek (u bakterií 12, u člověka 8) a je velice důležitý pro výkonnost celého enzymu
     - u savců je v ní ještě více podjednotek, které se podílí především na stavbě vnějšího stonku (D, F6, atd.) a na stavbě kanálu
         - mají hlavně regulační funkci
@@ -2772,7 +2772,7 @@ Dle měření se zdá že proběhne přibližně ◊strong{100 otáček za sekun
             - 10 protonů za jeden NADH, na jedno ATP potřebujeme 3 protony
         - reálný zisk je kolem 2,5 ATP
             - k výrobě ATP potřebujeme kromě protonů i ADP a fosfát
-                - k přenosu ADP do mch se používá adenindinukleotidový translokátor (prohodí ATP a ADP)
+                - k přenosu ADP do ◊abr{mch} se používá adenindinukleotidový translokátor (prohodí ATP a ADP)
                 - anorganický substrát je transportován symportem s protony, tedy na jedno ATP reálně potřebujeme 3 + 1 protonů -> za 10 protonů získáme jen 2,5 ATP
         - za FADH je to ještě méně, jen 1.5
     }
@@ -2798,7 +2798,7 @@ Dle měření se zdá že proběhne přibližně ◊strong{100 otáček za sekun
 
 ◊ls[#:t "Rozpřahovací proteiny"]{
     - umí rozpřáhnout oxidaci a fosforylaci
-    - používají se v eperimentech, ale i v těle, kde mají podobu proteinů vnitřní mch membrány fungujících jako kanál
+    - používají se v eperimentech, ale i v těle, kde mají podobu proteinů vnitřní ◊abr{mch} membrány fungujících jako kanál
         - vybíjejí protonový gradient -> netřesová termogeneze
         - u člověka to umí jen děti těsně po narození, u savců jen při hibernaci
         - děje se to v hnědé tukové tkáni
@@ -2819,7 +2819,7 @@ Dle měření se zdá že proběhne přibližně ◊strong{100 otáček za sekun
 ◊ls[#:t "Glycerolfosfátový člunek"]{
     - využívá různě orientované izoenzymy
     - průběh viz obrázek
-        - pozn. NADH je využito na redukci dihydroxyacetonfosfátu v enolázové reakci (hexóza => dvě triózy) a pak je zas mitochondriální dehydrogenázou reoxidováno
+        - pozn. NADH je využito na redukci dihydroxyacetonfosfátu v enolázové reakci (hexóza => dvě triózy) a pak je zas ◊abr{mch} dehydrogenázou reoxidováno
     - nevýhoda: FAD přeskočí komplex I, čili zbytečně přijdeme o 4 protony
 }
 
@@ -2931,7 +2931,7 @@ O to, které jsou zdravé a nezdravé, se stále vedou spory --- v současnosti 
     # rozložení tuků na MK a transport MK do buněk
     # rozložení MK v buňce
         # aktivace MK
-        # transport MK do mitochondrie
+        # transport MK do ◊abr{mch}
         # ◊|beta|-oxidace, rozložení MK
         # KC, OF
 }
@@ -2959,7 +2959,7 @@ O to, které jsou zdravé a nezdravé, se stále vedou spory --- v současnosti 
 
 ◊subsection{Aktivace MK}
 
-MK se musí dostat do mitochondrie, kde probíhá ◊|beta|-oxidace. Aby ale prošla dovnitř, musí být nejprve ◊strong{aktivována} tím, že se z ní udělá acyl-CoA (ne acetyl, ten byl v KC).
+MK se musí dostat do ◊abr{mch}, kde probíhá ◊|beta|-oxidace. Aby ale prošla dovnitř, musí být nejprve ◊strong{aktivována} tím, že se z ní udělá acyl-CoA (ne acetyl, ten byl v KC).
 
 ◊img["acyl-coa-synthesis.png" #:w 500]{Konverze MK na acyl-CoA}
 
@@ -2969,13 +2969,13 @@ Celková přeměna je tedy
 
 a je silně exergonická (◊${\Delta G'^{\circ} = \pu{-34 kJ/mol}}). U reakce je použito pyrofosfátové štěpení (ATP -> AMP).
 
-◊subsection{Transport MK do mch}
+◊subsection{Transport MK do ◊abr{mch}}
 
 ◊img["carnitine-cycle.png"]{Karnitinový cyklus}
 
-◊ls[#:t "Průchod acyl-CoA do mitochondrie"]{
+◊ls[#:t "Průchod acyl-CoA do ◊abr{mch}"]{
     - k tomu slouží molekula karnitin, součást acyl-CoA-karnitinového cyklu
-        - karnitin je mnohem menší, než CoA, proto se lépe dostává přes membránu; zásbonárny CoA v cytoplazmě a mch jsou oddělené
+        - karnitin je mnohem menší, než CoA, proto se lépe dostává přes membránu; zásbonárny CoA v cytoplazmě a ◊abr{mch} jsou oddělené
     - v cyklu též figurují enzymy kartininacyltransferázy I (vnější membrána) a II (vnitřní membrána)
         - kartininacyltransferázy reálně tvoří komplex procházející přes obě membrány
     - viz obrázek
@@ -2983,7 +2983,7 @@ a je silně exergonická (◊${\Delta G'^{\circ} = \pu{-34 kJ/mol}}). U reakce j
 
 ◊subsection{◊|beta|-oxidace}
 
-◊img["mk-metabolism-stages.png" #:w 350]{Fáze zpracování MK v mch}
+◊img["mk-metabolism-stages.png" #:w 350]{Fáze zpracování MK v ◊abr{mch}}
 
 ◊ls[#:t "Beta-oxidace"]{
     - ve výsledku rozštípá MK na dvojuhlíkaté zbytky, které poté jako acetyl-CoA vstupují do KC a kromě toho také uvolní 64 elektronů v podobně redukovaných koenzymů, které se poté účastní OF
@@ -3047,15 +3047,15 @@ V následující tabulce můžeme vidět zisk z ◊|beta| oxidace jedné molekul
 
 ◊subsubsection{Lokalizace}
 ◊ls{
-    - kromě mitochondrie probíhá i v peroxisomech, u rostlin dokonce výhradně tam
+    - kromě ◊abr{mch} probíhá i v peroxisomech, u rostlin dokonce výhradně tam
         - dráhy jsou vlastně principiálně shodné
-            - liší se tím, že v peroxisomech se oxidují MK s dlouhými řetězci (>20) na osmi-uhlíkaté zbytky a ty poté pokračují do mch
+            - liší se tím, že v peroxisomech se oxidují MK s dlouhými řetězci (>20) na osmi-uhlíkaté zbytky a ty poté pokračují do ◊abr{mch}
             - navíc v prvním kroku v mitochonrdii vzniká o jeden redukovaný koenzym více
     - enzymy pracují buďto jako samostatné entity, nebo v ◊strong{superkomplexech}
         - peroxisomální a glyoxysomální komplexy mají různé počty vazebných míst pro MK různé délky
 }
 
-◊img["bo-localization.png" #:w 400]{Rozdíl průběhu ◊|beta|-oxidace v mch a v peroxisomu}
+◊img["bo-localization.png" #:w 400]{Rozdíl průběhu ◊|beta|-oxidace v ◊abr{mch} a v peroxisomu}
 
 ◊subsection{Ketolátky}
 
@@ -3466,13 +3466,13 @@ V pyruvát-kinázové reakci v glykolýze vznikne 1 ATP na jeden fosfoenolpyruv�
 ◊subsection{Kompartmentalizace glukoneogeneze}
 
 ◊ls{
-    - první část je v mch => problém transportu přes vnitřní membránu
+    - první část je v ◊abr{mch} => problém transportu přes vnitřní membránu
     - začíná se vždy u pyruvátu
-        - ten se ještě v mch přemění (pomocí pyruvát-karboxylázy) na oxalacetát
-        - jak dostat oxalacetát z mch?
-            # zasáhne mch PEP karboxykináza, oxalacetát -> PEP za spotřeby GTP (PEP má přenašeč)
+        - ten se ještě v ◊abr{mch} přemění (pomocí pyruvát-karboxylázy) na oxalacetát
+        - jak dostat oxalacetát z ◊abr{mch}?
+            # zasáhne ◊abr{mch} PEP karboxykináza, oxalacetát -> PEP za spotřeby GTP (PEP má přenašeč)
             # zasáhne malát-dehydrogenáza, oxalacetát -> malát, a poté v cytoplazmě opět malát -> oxalacetát
-                - při tom se však oxiduje jedno ◊chem{NADH} v mch a naopak redukuje se jedno ◊chem{NAD+} v cytoplazmě
+                - při tom se však oxiduje jedno ◊chem{NADH} v ◊abr{mch} a naopak redukuje se jedno ◊chem{NAD+} v cytoplazmě
                 - to může sloužit k transdehydrogenázovým reakcím
 }
 
@@ -3560,4 +3560,66 @@ Celkově vzniknou dvě molekuly NADPH a jedna molekula ribózy.
     - probíhá v nich přehazování uhlíků, v konečném důsledku převádějí pentózy zpět na hexózy
     - na začátku vstupuje ribóza-5-fosfát a xylulóza-5-fosfát, která vznikne izomerací z ribózy-5-fosfátu
     - viz obrázek
+}
+
+◊title{Syntéza MK a metabolismus tuků}
+
+
+◊ls{
+    - když pro nějako sloučeninu existuje katabolická i anabolická dráha, musejí tyto být odlišné
+        - je to termodynamicky nutné a navíc to ulehčí nezávislou a jemnější regulaci
+    - proto se syntéza MK a ◊|beta|-oxidace musí lišit
+}
+
+◊ls[#:t "Srovnání beta-oxidace a syntézy MK"]{
+    - redoxnost
+        - ◊|beta|-oxidace je oxidativní proces
+        - syntéza MK je reduktivní proces
+    - lokalizace
+        - ◊|beta|-oxidace běží v ◊abr{mch}
+        - syntéza MK běží v reduktivním prostředí v cytoplazmě
+    - přenašeče acylu
+        - u ◊|beta|-oxidace je jím CoA
+        - u syntézy MK je jím speciální protein ◊strong{ACP} (acyl carrier protein)
+    - přenašeče elektronů
+        - ◊|beta|-oxidace je oxidativní => potřebuje akceptor, je jím FAD
+        - syntéza MK je reduktivní => potřebuje donor, je jím ◊chem{NADPH + H+}
+    - přenášení dvojuhlíkatých jednotek
+        - u ◊|beta|-oxidace se o to staral acetyl-CoA
+        - u syntézy MK jsou přidávány pomocí malonylu-CoA
+}
+
+Přestože je přenašečem acylu ACP, skupina, na kterou je acyl připojen, je stále stejná: ◊strong{fosfopanteteinová} skupina.
+
+◊img["phosphopatethein-acid.png" #:w 300]{Fosfopanteteinová skupina}
+
+◊section{Příprava malonylu-CoA}
+
+O přeměnu z acetyl-CoA na malonyl-CoA se stará enzym ◊abr[#:new "acetyl-CoA-karboxyláza"]{ack}.
+
+◊img["acetyl-coa-trancarboxylase.png" #:w 350]{Reakce acetyl-CoA-karboxylázy}
+
+◊ls[#:t "Acetyl-CoA-karboxyláza"]{
+    - potřebuje dodání energie v podobě ATP (katalyzuje endorgenický proces)
+    - kofaktorem je biotin (vitamín A)
+        - umí vázat karboxyl a pomocí pohyblivého raménka jej přenést jinam
+    - má dvě enzymatické aktivity
+        # biotin-karboxylázová aktivita (vazba ◊chem{COO-} na biotin)
+        # trans-karboxylázová aktivita (vazba ◊chem{COO-} z biotinu na acetyl-CoA)
+    - kromě svých dvou funkcí ještě plní funkci přenašeče biotinu
+}
+
+◊subsection{Regulace ◊abr{ack}}
+
+◊ls{
+    - hlavní regulační enzym syntézy MK
+    - regulace fosforylací a alostericky, působením lokálních metabolitů
+    - v nativní konformaci je ve formě polymeru vytvářejícím dlouhé filamenty
+        - při deatkivaci se polymer rozpadá na jednotlivé protomery
+}
+
+◊subsubsection{Regulace fosforylací}
+
+◊ls{
+    - ◊abr{ack}
 }

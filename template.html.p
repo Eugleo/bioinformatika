@@ -12,6 +12,8 @@
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <title>◊(select-from-metas 'header "lecture-page.html"):◊(select-from-metas 'header here)</title>
     <link rel="stylesheet" type="text/css" media="all" href="../../styles.css" />
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
     <script type="text/x-mathjax-config">
         MathJax.Ajax.config.path["mhchem"] = "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.2";
         MathJax.Hub.Config({
@@ -45,6 +47,7 @@
         document.onreadystatechange = function() {
             if (document.readyState == "interactive") {
                 h = document.getElementById('sticky-header');
+                tippy("abr");
             }
         }
 

@@ -304,7 +304,21 @@
 
 #| Basic elements|#
 
-(provide link $ $$ align$ u chem img highlight code)
+(provide link $ $$ align$ u chem img highlight code abr)
+
+(define abbreviations (make-hash))
+(define (abr #:new [whole-name #f] . elements)
+  (define key (apply string-append elements))
+  (case (current-poly-target)
+    [(html)
+      (cond
+        [whole-name
+          (hash-set! abbreviations key whole-name)
+          (@ whole-name "(dále jen " (em key) ")")]
+        [else
+          `(abr [[data-tippy-content ,(hash-ref abbreviations key)]]
+            ,key)])]
+    [(md tex pdf) key]))
 
 (define (u str)
   (case (current-poly-target)
