@@ -1702,8 +1702,10 @@ Jsou součástí ◊strong{proteoglykanů}.
 
 ◊img["third.png" #:w 400]{Třetí reakce}
 
+◊(add-abr "F16BP" "fruktóza-1,6-bifosfát")
+
 ◊ls[#:t "Třetí reakce"]{
-    - fosforylace fruktóza-6-fosfátu na fruktózu-1,6-bifosfát
+    - fosforylace fruktóza-6-fosfátu na fruktózu-1,6-bisfosfát (dále jen ◊em{F16BP})
     - nejdůležitější regulační reakce glykolýzy
     - katalyzována fosfofruktokinázou
         - fosforyluje fruktóza-6 fosfát
@@ -1718,14 +1720,14 @@ Jsou součástí ◊strong{proteoglykanů}.
 ◊img["fourth.png" #:w 450]{Čtvrtá reakce}
 
 ◊ls[#:t "Čtvrtá reakce"]{
-    - fruktóza-1,6-bifosfát je štěpena na 2 triózy:
+    - ◊abr{F16BP} je štěpena na 2 triózy:
         - glyceraldehyd-3-fosfát
         - dihydroxyacetonfosfát
     - ◊strong{aldolázová reakce}
         - katalyzována aldolázou (Schiffova báze)
         - dochází k aldolovému štěpení
             - štěpení C-C vazeb (obtížné)
-            - fruktóza-1,6-bisfosfát spolu s aktivním centrem enzymu vytvářín tzv.protonovanou Schiffovu bázi, v důsledku toho se delokalizují elektrony a je busnadněno štěpení C-C vazby
+            - ◊abr{F16BP} spolu s aktivním centrem enzymu vytvářín tzv.protonovanou Schiffovu bázi, v důsledku toho se delokalizují elektrony a je busnadněno štěpení C-C vazby
     - důležitá přítomnost karbonylové skupiny na C(2) a hydroxylové skupiny na C(4)
     - dvě třídy aldoláz
         - Schiffova báze
@@ -3278,10 +3280,13 @@ Fosforylace Ser u A a AMP na alosterickém místě u B podobným způsobem podpo
         - výhody: na každém "předání štafety" je možné znásobit signál, detailněji signál regulovat atd. (zvlášť, když se přidá více úrovní než jen dvě)
 }
 
+◊(add-abr "cAMP" "cyklický adenosinmonofosfát")
+◊(add-abr "PKA" "proteinkináza A, cAMP-dependentní proteinkináza")
+
 ◊ls[#:t "Regulace glykogenfosforylázy a glykogensyntázy"]{
     # vazba hormonu na receptor
-    # uvolňování cyklického AMP (cAMP)
-    # aktivace kinázy CDK (cAMP dependentní kináza)
+    # uvolňování cyklického AMP (dále jen ◊em{cAMP})
+    # aktivace ◊abr{cAMP}-dependentní kináza (jinak též proteinkináza A, dále jen ◊em{PKA})
     # aktivace kinázy fosforylázy B, vede k aktivaci
     # fosforylace glykogenfosforylázy a glykogensyntázy
         - glykogenfosforyláza A je tím aktivována, glykogen se začne odbourávat
@@ -3294,8 +3299,8 @@ Po glukózové infuzi tedy stoupne odbourávání glykogenu a zpomalí se jeho o
 
 ◊ls[#:t "Játra (stav: v krvi je málo glukózy)"]{
     # pankreatické ◊|alpha| buňky vyplaví glukagon
-    # ten se váže na svůj receptor na jaterní buňce, jenž je spřažen s adenylát-cyklázou -> tvoří se cAMP (◊em{druhý posel})
-    # cAMP spustí bicyklickou kaskádu odbourávání glykogenu
+    # ten se váže na svůj receptor na jaterní buňce, jenž je spřažen s adenylát-cyklázou -> tvoří se ◊abr{cAMP} (◊em{druhý posel})
+    # ◊abr{cAMP} spustí bicyklickou kaskádu odbourávání glykogenu
     # glukóza se uvolňuje do krve, zvyšuje se její hladina
 }
 
@@ -3305,8 +3310,8 @@ Po glukózové infuzi tedy stoupne odbourávání glykogenu a zpomalí se jeho o
 
 ◊ls[#:t "Játra (stav: tělo je ve stresu)"]{
     # na jaterní buňku se váže adrenalin, jsou tam na něj dva (◊|alpha| a ◊|beta|) receptory
-    # ◊|beta| receptory -> adenylát-cykláza -> cAMP -> bicyklická kaskáda
-    # ◊|alpha| receptory -> štěpení fosfatidyl-inozitol-trifosfátu -> inozitoltrisfosfáty a diacylglyceroly (druzí poslové, stejně jako cAMP)
+    # ◊|beta| receptory -> adenylát-cykláza -> ◊abr{cAMP} -> bicyklická kaskáda
+    # ◊|alpha| receptory -> štěpení fosfatidyl-inozitol-trifosfátu -> inozitoltrisfosfáty a diacylglyceroly (druzí poslové, stejně jako ◊abr{cAMP})
     # působením inozitoltrisfosfátu se uvolňuje vápník -> aktivace kinázy-fosforylázy -> odbourávání glykogenu
     # glukóza se uvolňuje do krve
         - tentokrát to není proto, aby se zvýšila její hladina, ale kvůli dopravení do svalů
@@ -3317,7 +3322,7 @@ Po glukózové infuzi tedy stoupne odbourávání glykogenu a zpomalí se jeho o
 ◊ls[#:t "Svaly"]{
     # aktivuje se adrenalinový receptor (svaly mají pouze ◊|beta|)
     # adenylát-cykláza
-    # vznik cAMP
+    # vznik ◊abr{cAMP}
     # odbourávání glykogenu
         - ihned následuje glykolýza
 }
@@ -3356,8 +3361,10 @@ Cyklus je pojmenován podle manželů Coriových, absolventů Karlovy univerzity
 
 ◊section{Glukoneogeneze}
 
+◊(add-abr "gng" "glukoneogeneze")
+
 ◊ls{
-    - dále jen glukoneogeneze
+    - dále jen ◊em{gng}
     - syntéza cukrů z necukrů
     - cukry jsou substrát pro vznik energie, ale jsou důležité i pro další energetické substráty (např. pro zpracování tuků v KC)
 }
@@ -3375,9 +3382,9 @@ Cyklus je pojmenován podle manželů Coriových, absolventů Karlovy univerzity
 ◊img["glucogenic-aa.png"]{Obrázek glukogenních AK v souvislosti s KC}
 
 ◊ls[#:t "Glukoneogeneze z AK"]{
-    - glukoneogeneze se mohou účastnit ty AK, které do KC vstupují až po 1. nebo 2. dekarboxylaci
-        - v opačném případě by přišly o dva uhlíky (a žádný by tedy nezbyl na glukoneogenezi)
-    - Lys a Leu vstupují do reakce jako acetyl-CoA (tedy před oběma dekarboxylacemi) a nemohou se tedy glukoneogeneze zúčastnit
+    - ◊abr{gng} se mohou účastnit ty AK, které do KC vstupují až po 1. nebo 2. dekarboxylaci
+        - v opačném případě by přišly o dva uhlíky (a žádný by tedy nezbyl na ◊abr{gng})
+    - Lys a Leu vstupují do reakce jako acetyl-CoA (tedy před oběma dekarboxylacemi) a nemohou se tedy ◊abr{gng} zúčastnit
 }
 
 ◊box["Výroba cukrů z tuků"]{
@@ -3385,28 +3392,28 @@ Cyklus je pojmenován podle manželů Coriových, absolventů Karlovy univerzity
         - z MK sice cukry (víceméně) vznikat nemohou, ale z glycerolu (součást  tuků) ano
         - glycerol nám zbyde poté, co z něj lipázy odštěpí MK
         - glycerol -> fosforylace na glycerol-3-fosfát -> dihydroxyacetonfosfát (viz obrázek níže, tam jsou i enzymy)
-        - dihydroxyacetonfosfát se pak může účastnit glykolýzy nebo glukoneogeneze
+        - dihydroxyacetonfosfát se pak může účastnit glykolýzy nebo ◊abr{gng}
             - v glykolýze může být v páté reakci zaměňován s glyceraldehyd-3-fosfátem, který je (podobně jako dihydroxyacetonfosfát) produktem čtvrté reakce
-        - malá část molekuly tuku tedy do glukoneogeneze vstoupit může
+        - malá část molekuly tuku tedy do ◊abr{gng} vstoupit může
     }
 
     Navíc, propionyl-CoA vzniklý z ◊|beta|-oxidace MK s lichým počtem uhlíků může vstoupit do KC, kde unikne oběma dekarboxylacím a jeho uhlíky tedy také mohou sloužit k syntéze cukru.
 
-    ◊img["glycerol-into-gng.png" #:w 400]{Vstup glycerolu do glukoneogeneze}
+    ◊img["glycerol-into-gng.png" #:w 400]{Vstup glycerolu do ◊abr{gng}}
 
 }
 
 ◊ls[#:t "Vztah glykolýzy a glukoneogeneze"]{
-    - reakce glukoneogeneze jsou často jen obrácené reakce glykolýzy
-    - musí se ošetřit, aby se reakce glykolýzy a glukoneogeneze netočily pořád dokola (tzv. ◊em{jalové cykly})
+    - reakce ◊abr{gng} jsou často jen obrácené reakce glykolýzy
+    - musí se ošetřit, aby se reakce glykolýzy a ◊abr{gng} netočily pořád dokola (tzv. ◊em{jalové cykly})
     - proto jsou v glykolýze tři ireversibilní reakce (na obrázku vyznačeny tučně)
         # hexokinázová (glukokinázová) reakce je energeticky posunuta k produktu (je exergonická) a tím pádem prakticky nevratná
-        # při vzniku fruktózo-1,6-bisfosfátu je také velká změna volné energie, opět hodně exergionická reakce
+        # při vzniku ◊abr{F16BP} je také velká změna volné energie, opět hodně exergionická reakce
         # pyruvát-kinázová reakce, fosfoenolpyruvát je makroergní sloučenina, opět silně exergonická (i když v normálních podmínkách více než in vivo)
     - tyto nevratné reakce se tedy musí obejít
 }
 
-◊img["glyconeogenesis.png" #:w 400]{Glykolýza a glukoneogeneze}
+◊img["glyconeogenesis.png" #:w 400]{Glykolýza a ◊abr{gng}}
 
 ◊subsection{Obcházení pyruvát-kinázové reakce}
 
@@ -3416,7 +3423,7 @@ Viz obrázek --- skládá se ze dvou částí.
     - pyruvát (tříuhlíkatá sloučenina) je karboxylován na oxaloacetát (čtyčuhlíkatá sloučenina)
     - už jsme na ni narazili
         - je to anaplerotická reakce, dodává oxalacetát do KC
-        - může ale sloužit i jako donor substrátu (oxalacetátu) pro glukoneogenezi
+        - může ale sloužit i jako donor substrátu (oxalacetátu) pro ◊abr{gng}
 }
 
 ◊img["pyruvate-karboxylase.png"]{Detailní náhled do toho, jakou roli má biotin v pyruvát-karboxylázové reakci (není třeba se učit)}
@@ -3442,7 +3449,7 @@ V pyruvát-kinázové reakci v glykolýze vznikne 1 ATP na jeden fosfoenolpyruv�
 
 ◊ls{
     - obě kinázové reakce jsou nahrazeny fosfatázovými reakcemi
-    - ◊chem{fruktóza-1,6-bisfosfát ->[fruktóza-1,6-bisfosfatáza] fruktóza-6-fosfát + P_i}
+    - ◊chem{F16BP ->[fruktóza-1,6-bisfosfatáza] fruktóza-6-fosfát + P_i}
         - ireverzibilní kinázová reakce byla obejita hydrolázovou reakcí
         – na této úrovni organismu se nikdy nemůže syntetizovat ATP, pouze se zde spotřebovává, fosfát se zde hydrolyzuje
    - to samé platí i pro hexokinázovou reakci, glukóza-6-fosfatázovou reakcí dojde k odštěpení fosfátu a z z glukóza-6-fosfátu vznikne glukóza
@@ -3463,7 +3470,7 @@ V pyruvát-kinázové reakci v glykolýze vznikne 1 ATP na jeden fosfoenolpyruv�
 
 }
 
-◊subsection{Kompartmentalizace glukoneogeneze}
+◊subsection{Kompartmentalizace ◊abr{gng}}
 
 ◊ls{
     - první část je v ◊abr{mch} => problém transportu přes vnitřní membránu
@@ -3481,37 +3488,38 @@ V pyruvát-kinázové reakci v glykolýze vznikne 1 ATP na jeden fosfoenolpyruv�
 ◊ls{
     - pyruvát má spousto možností, kam jít
         - např. vstoupí do pyruvátdehydrogenázové reakce a vzniká z něj acetyl-CoA, ten jde do KC
-        - nebo např. může jít do glukoneogeneze, do pyruvátkarboxylázové reakce (a vznikne z něj oxalacetát)
+        - nebo např. může jít do ◊abr{gng}, do pyruvátkarboxylázové reakce (a vznikne z něj oxalacetát)
     - čili pokud buňka vyrábí acetyl-CoA z tuků, inhibuje pyruvátdehydrogenázu a aktivuje pyruvátkarboxylázu
-        - vzniklý oxalacetát může vstoupit jako produkt jako anaplerotické reakce do KC, nebo půjde do glukoneogeneze
+        - vzniklý oxalacetát může vstoupit jako produkt jako anaplerotické reakce do KC, nebo půjde do ◊abr{gng}
 }
 
 ◊img["fructose-16_p.png" #:w 150]{Fruktóza-1,6-bisfosfát}
 
-
 ◊img["fructose-2-6-p.png" #:w 250]{Fruktóza-2,6-bisfosfát}
 
+◊(add-abr "F26BP" "fruktóza-2,6-bisfosfát")
+
 ◊ls[#:t "Fruktóza-2,6-bisfosfát"]{
-    - dále jen F26BP
-    - je podobná F16BP, až na polohu fosforu (viz obrázek výše)
+    - dále jen ◊em{F26BP}
+    - je podobná ◊abr{F16BP}, až na polohu fosforu (viz obrázek výše)
     - regulační molekula, stimuluje fosfofruktokinázu-1 (PFK-1) a inhibuje fruktózu-1,6-bisfosfatázu (FBPáza-1), viz obrázek níže
-        - tím inhibuje celou glukoneogenezi a aktivuje glykolýzu
+        - tím inhibuje celou ◊abr{gng} a aktivuje glykolýzu
 }
 
-◊img["f26bp.png" #:w 300]{Vliv F26BP na regulaci glukoneogeneze}
+◊img["f26bp.png" #:w 300]{Vliv ◊abr{F26BP} na regulaci ◊abr{gng}}
 
-A jak je regulováno množství F26BP?
+A jak je regulováno množství ◊abr{F26BP}?
 
-◊img["f26bp-regul.png"]{Regulace množství F26BP}
+◊img["f26bp-regul.png"]{Regulace množství ◊abr{F26BP}}
 
 ◊ls[#:t "PFK-2 a FBPáza-2"]{
     - jsou vlastně jedním proteinem se dvěma doménami
-    - PFK-2 -> F26BP, FBPáza-2 naopak
-        - aktivace PFK-2 části => F26BP => podpoření glykolýzy
-        - aktivace FBPázy-2 => podpoření glukoneogeneze
+    - PFK-2 -> ◊abr{F26BP}, FBPáza-2 naopak
+        - aktivace PFK-2 části => ◊abr{F26BP} => podpoření glykolýzy
+        - aktivace FBPázy-2 => podpoření ◊abr{gng}
     - FBPáza-2 část je nepřímo aktivována glukagonem
-        - glukagon -> adenyly cykláza -> cAMP -> CDK -> fosforylace proteinu
-        - glukagon => glukoneogeneze
+        - glukagon -> adenyly cykláza -> ◊abr{cAMP} -> CDK -> fosforylace proteinu
+        - glukagon => ◊abr{gng}
     - PFK-2 část je nepřímo aktivována inzulínem
         - inzulín -> fosfoprotein fosfatáza -> defosforylace proteinu
         - inzulín => glykolýza
@@ -3580,7 +3588,7 @@ Celkově vzniknou dvě molekuly NADPH a jedna molekula ribózy.
         - syntéza MK běží v reduktivním prostředí v cytoplazmě
     - přenašeče acylu
         - u ◊|beta|-oxidace je jím CoA
-        - u syntézy MK je jím speciální protein ◊strong{ACP} (acyl carrier protein)
+        - u syntézy MK je jím speciální protein ◊abr[#:new "acyl carrier protein"]{ACP}
     - přenašeče elektronů
         - ◊|beta|-oxidace je oxidativní => potřebuje akceptor, je jím FAD
         - syntéza MK je reduktivní => potřebuje donor, je jím ◊chem{NADPH + H+}
@@ -3599,7 +3607,7 @@ O přeměnu z acetyl-CoA na malonyl-CoA se stará enzym ◊abr[#:new "acetyl-CoA
 
 ◊img["acetyl-coa-trancarboxylase.png" #:w 350]{Reakce acetyl-CoA-karboxylázy}
 
-◊ls[#:t "Acetyl-CoA-karboxyláza"]{
+◊ls[#:t "Acetyl-CoA karboxyláza"]{
     - potřebuje dodání energie v podobě ATP (katalyzuje endorgenický proces)
     - kofaktorem je biotin (vitamín A)
         - umí vázat karboxyl a pomocí pohyblivého raménka jej přenést jinam
@@ -3621,5 +3629,214 @@ O přeměnu z acetyl-CoA na malonyl-CoA se stará enzym ◊abr[#:new "acetyl-CoA
 ◊subsubsection{Regulace fosforylací}
 
 ◊ls{
-    - ◊abr{ack}
+    - ◊abr{ack} je inhibována fosforylací (tedy kinázami) a aktivována fosfatázami
+}
+
+◊ls[#:t "AMP-aktivovaná kináza"]{
+    - funguje jako senzor nízké hladiny energie v buňce
+        - koncentrace AMP je vysoká <=> koncentrace ATP je nízká
+    - když je aktivní, inhibuje ◊abr{ack}, protože v době nízké hladiny energie nechceme provádět dložitou syntézu MK
+}
+
+◊ls[#:t "cAMP-dependentní proteinkináza"]{
+    - je aktivována v odpovědi na hormonální reakci glukagonu a adrenalinu
+    - funguje něpřímo jako senzor nízké hladiny cukru v krvi
+    - když je aktivní, inhibuje ◊abr{ack}, protože chceme využít acetyl-CoA na syntézu ketolátek (energetických náhražek glukózy)
+}
+
+◊ls[#:t "Aktivace ack"]{
+    - inzulín aktivuje ◊abr{cAMP}-dependentní proteinfosfatázu, která ◊abr{ack} defosforyluje a tím aktivuje
+}
+
+◊subsubsection{Regulace lokálními metabolity}
+
+◊ls{
+    - zpětnovazební inhibice produktem, palmitoyl-CoA (nejběžnější produkt syntézy MK)
+    - aktivace citrátem
+        - hodně citrátu => nejspíše i hodně acetyl-CoA => využijeme ho k syntéze MK
+}
+
+◊section{Syntéza MK}
+
+◊(add-abr "FAS" "syntáza mastných kyselin")
+
+◊ls{
+    - u obratlovců běží na jednom z největších multienzymových komplexů v buňce, syntáze MK (dále jen ◊em{FAS}, fatty-acid-synthase)
+        - dimer, každý monomer má sedm různých katalytických aktivit + přenašeč acylu
+    - donorem prvních dvou uhlíků je acetyl-CoA, všechny ostatní uhlíky jsou z malonylu
+    - nejdelší mastná kyselina, která se takto syntetizuje, je palmitát (C16)
+    - je velmi energeticky náročná
+        - v sedmi kolech prodlužování nutných k výrobě C16 je investováno 7 ATP a 14 NADPH
+}
+
+◊img["fa-synthesis.png"]{Průběh syntézy MK na ◊abr{FAS}}
+
+Viz obrázek, následují pouze drobné poznámky.
+
+◊ls[#:t "Úvodní reakce 1"]{
+    - přenos acylu: acetyl-CoA -> ◊abr{ACP}
+    - katalyzována acetyl-CoA-ACP-transacyláza (na obrázku MAT)
+}
+
+◊ls[#:t "Úvodní reakce 2"]{
+    - přenos acylu: ◊abr{ACP} -> kondenzační enzym (na obrázku KS)
+}
+
+Předchozí dvě reakce probíhají pouze v prvním cyklu, v druhém by byly nahrazeny přenesením malonylu z CoA na ◊abr{ACP}.
+
+◊ls[#:t "První reakce"]{
+    - acetyl + malonyl -> acetoacetyl-ACP (někdy také ◊|beta|-ketobutyryl-ACP)
+    - kondenzační reakce
+    - acetoacetyl je ketolátka, v dalších reakcích bude potřeba ji přeměnit na lineární řetězec budoucí MK (butyryl)
+}
+
+V ◊|beta|-oxidaci jsou dvě oxidace, tedy v rámci syntézy MK budou dvě redukce.
+
+◊ls[#:t "Druhá reakce"]{
+    - první z redukčních reakcí (došlo k redukci jedné ze skupin hydroxylu)
+    - acetoacetyl-ACP -> D-◊|beta|-hydroxybutyryl-ACP
+}
+
+◊ls[#:t "Třetí reakce"]{
+    - dehydratace (v ◊|beta|-oxidaci je naopak hydratace)
+    - už tam není ani alkoholová skupina, zbyla jen ketoskupina
+}
+
+◊ls[#:t "Čtvrtá reakce"]{
+    - druhá z redukční reakcí
+    - redukuje se hydrogenací, ruší se dvojná vazba
+    - vzniká butyryl-ACP
+}
+
+Butyryl má poue 4 uhlíky, palmitát je C16, proto musí výše zmíněná reakce proběhnout ještě šestkrát (pokaždé se přidají dva uhlíky). Výsledným produktem (po celkem sedmi cyklech) je ◊strong{palmitoyl-ACP}.
+
+◊ls[#:t "Závěrečná reakce"]{
+    - z palmitoyl-ACP je nutné odštěpit ◊abr{ACP}
+    - to dělá palmitoyl-thioesteráza
+}
+
+◊meta{Syntéza MK je velice důležitá, je prý i u státnic. Good luck to all of us.}
+
+◊ls[#:t "FAS"]{
+    - celá reakce je díky ◊abr{FAS} velice efektivní
+        - fosfopanteteinové rameno přenáší acylový zbytek mezi jednotlivými reakcemi, takže se jednotlivé reaktatnty nemusí tolik hledat
+        - ◊abr{FAS} je dimer a obě podjednotky spolu spolupracují, vyrábějí dvě MK najednou
+            - kooperuje jeden ◊abr{ACP} z jedné podjednotky a kondenzační enzym z druhé podjednotky
+    - v bakteriích a chloroplastech nejsou podjednotky v dimerech, ale volně v cytoplasmě
+}
+
+◊subsection{Přenos důležitých reaktantů na místo reakce}
+
+◊img["transfer-of-acetyl-groups.png"]{Transport acetylu-CoA z ◊abr{mch}}
+
+◊ls[#:t "Acetyl-CoA "]{
+    - vyrábí se v ◊abr{mch}, je nutné jej nějak dostat přes membránu
+        - trikarboxylový transportní systém
+    - výměnou do ◊abr{mch} je nesen malát nebo pyruvát
+}
+
+◊ls[#:t "NADPH"]{
+    - zdroje: penztózo-fosfátový cyklus a přeměna malátu na pyruvát
+}
+
+◊subsection{Elongace a desaturace MK}
+
+Buňka někdy potřebuje delší MK než je palmitát, nebo nenasycené MK.
+
+◊ls[#:t "Elongace"]{
+    - běží hlavně v ER, ale zčásti i v ◊abr{mch}
+        - v ER je zdrojem dvouhlíkatých podjednotek pro prodlužování také malonyl
+        - v ◊abr{mch} je to acetyl-CoA
+        - v ER je reakce závislá na syntéze MK, jednotlivé enzymatické aktivity jsou odděleny na různých enzymech
+        - v ◊abr{mch} elongace na syntéze závislá není a probíhá spíš jako obrácená ◊|beta|-oxidace
+    - přenašečem acylů je na rozdíl od syntézy MK CoA, nikoli ◊abr{ACP}
+}
+
+◊img["af-desaturation.png"]{Desaturace MK (přesný mechanismus není třeba umět)}
+
+◊ls[#:t "Desaturace"]{
+    - hrozí nebezpečí, že by při tvorbě dvojných vazeb mohly vznikat nebezpečné peroxidy
+    - vázané na membránu ER, spojeno s elektrotransportním řetězcem, který zabrání vzniku peroxidu
+    - provádí ji ◊strong{desaturázy}
+}
+
+◊ls[#:t "Savčí desaturázy"]{
+    - savčí desaturázy neumí desaturovat dále než na ◊|Delta|9, tj. maximálně 9 uhlíků od karboxylové skupiny
+    - všechny MK, které jsou desaturované dále než na devátém uhlíku musíme přijímat v potravě, jsou tzv. ◊strong{esenciální}
+        - linoelová, linolenová
+}
+
+Elongace a desaturace jsou často kombinované, napč. při tvorbě ◊em{arachidonátu}.
+
+◊subsection{Syntéza triacylglycerolů}
+
+◊ls{
+    - poté, co máme nasyntetizovány MK a máme k dispozici glycerol, může začít syntéza živočiných tuků --- triacylglycerolů
+    - glycerol je esterifikován třemi zbytky MK
+    - vychází z dihydroxyacetonfosfátu a z glycerolfosfátu
+        - dihydroxyacetonfosfát vzniká v glykolýze, ve čtvrté (aldolázové) reakci
+    - při hladovění může docházet ke glycerogenezi
+        - zkrácená dráha ◊abr{gng} z oxaloacetátu, která končí dihydroxyacetonfosfátem a jeho redukcí na glycerolfosfát
+}
+
+◊img["phospatidic-acid-biosynthesis.png" #:w 400]{Biosyntéza kyseliny fosfatidové (není třeba umět detaily)}
+
+◊ls[#:t "Meziprodukty syntézy triacylglycerolů"]{
+    - kyselina lyzofosfatidová a kyselina fosfatidová
+        - z fosfatidové vychází syntéza živočišných tuků i fosfolipidů
+        - lyzofosfatidová umí aktivovat malé GTPázy nebo kinázy z rodiny SAR
+}
+
+◊img["phosphatidic-acid-pathways.png" #:w 300]{Přeměna kyseliny fosfatidové na triacylglyceroly a fosfolipidy}
+
+◊section{Regulace metabolismu tuků}
+
+◊ls{
+    - syntéza MK je regulována na transkripční úrovni
+    - při syntéze MK nechceme mít spuštěnou i ◊|beta|-oxidaci, protože by se obě reakce navzájem vyrušily
+        - existence dvou stavů, buňka zájem buď na syntéze, nebo na odbourávání
+}
+
+◊img["well-fed-liver.png"]{Játra ve stavu sytosti (lipogenní). TAG označují triacylglyceroly.}
+
+◊ls[#:t "Stav sytosti"]{
+    - tento stav je v játrech stimulován inzulínem, buňka chce provádět syntézu
+        - inzulín stimuluje i expresi ◊abr{FAS}, naopak nenasycené MK tuto expresi inhibují
+    - když je aktivní ◊abr{ack}, vzniká malonyl-CoA
+        - ten je nejen prekurzorem pro reakci ◊abr{FAS}, ale také inhibuje karnitin-palmitoyl-transferázu I, což je přenašeč MK v ◊abr{mch}
+        - ◊|beta|-oxidace neprobíhá, protože se do ◊abr{mch} MK nedostanou
+}
+
+◊img["hungry-liver.png"]{Hladovějící játra (glukogenní)}
+
+◊ls[#:t "Stav hladu"]{
+    - tento stav je v játrech stimulován glukagonem a adrenalinem, které aktivuje ◊abr{cAMP}-dependentní proteinkinázu
+    - v tomto stavu je ◊abr{ack}, která svou činností nepřímo inhibuje ◊|beta|-oxidaci, sama inhibována pomocí AMP
+        - pokles malonyl-CoA -> konec inhibice karnitin-palmitoyl-transferázy I -> přenos MK do ◊abr{mch} -> spuštění ◊|beta|-oxidace -> tvorba acetyl-CoA -> KC -> doplnění ATP
+}
+
+◊box["Vliv inzulínu a glukagonu"]{
+    Hlavním regulačním mechanismem, který řídí syntézu a degradaci MK, je tedy ◊strong{poměr mezi inzulínem a glukagonem}.
+
+    ◊img["insulin-effect.png"]{Vliv inzulínu na játra a tukové buňky}
+    ◊img["glucagon-effect.png"]{Vliv glukagonu na játra a tukové buňky}
+}
+
+◊ls[#:t "Regulace ukládání tuků v tukových buňkách"]{
+    - mechanismus ukládání žvočišných tuků
+        # partikule tuku se z jater dostanou do krve
+        # zachytí je ◊strong{lipoproteinlipáza} na membráně tukových buněk
+        # odštěpí z partikulí volné MK
+        # přemění MK na živočišné tuky
+    - pokud je v tukových buňkách tímto způsobem ukládáno hodně tuků, začnou uvolňovat ◊strong{leptin}
+        - hlavní receptory pro leptin jsou v hypotalamu, který poté různými cestami signalizuje člověku, že je sytý
+            - patologie leptinu vedou často k obezitě
+        - leptin také aktivuje ◊abr[#:new "AMP-aktivovanou proteinkinázu"]{AMPK}, která poté v jaterních a svalových buňkách inhibuje ◊abr{FAS} a podporuje ◊|beta|-oxidaci
+}
+
+◊ls[#:t "Lipoproteinlipáza"]{
+    - je schopná v tukových buňkách odbourávat tuky
+    - reaguje na fosforylaci ◊abr{PKA} (čili vlastně nepřímo na hormonální signály)
+        - snížená hladina glukózy => aktivace, MK poté slouží jako zdroj energie při nízké glykémii
+        - při dlouhodobě zvýšené koncentraci glukózy je naopak rovnováha posunutá k tvorbě živočišných tuků
 }
