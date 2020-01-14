@@ -3842,3 +3842,111 @@ Elongace a desaturace jsou často kombinované, napč. při tvorbě ◊em{arachi
         - snížená hladina glukózy => aktivace, MK poté slouží jako zdroj energie při nízké glykémii
         - při dlouhodobě zvýšené koncentraci glukózy je naopak rovnováha posunutá k tvorbě živočišných tuků
 }
+
+◊section{Cholesterol}
+
+◊ls{
+    - komplexní steroidní složka
+    - vzniká z acetátu (potažmo z acetyl-CoA), všechny uhlíky cholesterolu mají původ v acetyl-CoA
+    - při syntéze vzniká spousta biologicky aktivních látek
+        - koenzym Q10, který je aktivní např. v OF
+        - dolichol, přenáší cukerné zbytky při syntéze glykoproteinu
+        - geranyl, izoprenodní látka, která posttranslačně modifikuje proteiny
+}
+
+◊ls[#:t "Užitečnost cholesterolu"]{
+    - může ucpávat cévy, ale je pro organismus zásadně důležitý
+    - zvyšuje stabilitu biologických membrán
+    - při jeho syntéze vzniká spousta důležitých látek
+    - mnoho důležitých látek vzinká i přímo z něj
+        - např. steroidní hormony
+            - kortikoidy, androgeny, mineralokortikoidy, estrogeny (progesteron, testosteron, estradiol, kortizol, aldosterol)
+    - také z něj vychází syntéza žlučových kyselin, které jsou nezbytné pro účinné trávení tuků
+        - kyselina glykocholová, taurocholová, cholová
+        - výhradně v této formě je cholesterol vylučován z těla (jinak se skoro nevylučuje)
+}
+
+◊subsection{Syntéza cholesterolu}
+
+◊img["cholesterol-synthesis.png" #:w 400]{Syntéza cholesterolu v hrubých obrysech}
+
+◊subsubsection{První fáze}
+
+◊img["chiol-first-reaction.png" #:w 350]{První fáze}
+
+◊ls[#:t "První fáze"]{
+    - acetyl-CoA -> ketolátka hydroxymetylgutaryl-CoA -> mevalonát
+    - v druhé polovině figuruje ◊strong{HMG-CoA-reduktáza}
+    - přeměna HMG-CoA je hlavní redukční reakcí celé syntézy
+    - probíhá s pomocí dvou molekul NADPH
+}
+
+◊ls[#:t "Regulace HMG-CoA-reduktázy"]{
+    - inhibováno fosforylací, a to buďto ◊abr{PKA} nebo ◊abr{AMPK}
+    - farmaka inhibující tvorbu cholesterolu v těle cílí právě na tuto reakci
+}
+
+◊subsubsection{Druhá fáze}
+
+◊img["chol-second-reaction.png" #:w 350]{Druhá fáze. Je třeba znát pouze konečné produkty.}
+
+◊ls[#:t "Druhá fáze"]{
+    - mevalonát se pak mění na izopentenyl pyrofosfát a 5-pyrofosfomevalonát (též dimetylalyl pyrofosfát), což jsou obojí 5C látky s izoprenovou skupinou
+}
+
+Vzniknou tedy dvě 5C látky, my chceme však získat 30C cholesterol. Musíme je tedy nějak prodloužit.
+
+◊subsubsection{Třetí fáze}
+
+◊img["chol-third.png" #:w 450]{Třetí fáze}
+
+◊ls[#:t "Třetí fáze"]{
+    - ve třetí fázi se spoují produkty druhé fáze, tak, abychom získali 30C skvalen
+        # izopentenyl pyrofosfát [◊strong{5}] + 5-pyrofosfomevalonát [◊strong{5}] = geranylfosfát [◊strong{10}]
+        # geranylfosfát [◊strong{10}] + izopentenyl pyrofosfát [◊strong{5}] = farnesyl pyrofosfát [◊strong{15}]
+        # ◊${2 \times} farnesyl pyrofosfát [◊strong{15}] = skvalen [◊strong{30}]
+    - pyrofosfáty se odštěpují a energeticky pohánějí reakci
+        - při spojení dvou farnesylů se odštěpí ◊chem{2PP_i}, a při tom vždy vznikne reaktivní karbokationt
+}
+
+◊subsubsection{Čtvrtá fáze}
+
+◊img["chol-fourth.png"]{Čtvrtá fáze. Detaily opět není třeba znát.}
+
+◊ls[#:t "Čtvrtá fáze"]{
+    - skvalen se zacyklí na lanosterol
+    - lanosterol se poté v průběhu další devatenácti reakcí přetvoří na cholesterol (◊em{multistep} na obrázku)
+        - účastní se toho enzymy asociované s membránou ER
+        - reakce jsou často oxidacemi, katalýzy se účastní cytochromy z rodiny P450
+    - tato syntéza je velmi náročná na NADPH
+}
+
+◊subsection{Transport cholesterolu do buňky a jeho regulace}
+
+◊img["chol-transport.png"]{Transport cholesterolu do buňky (ACAT je acyl-CoA-cholesterol acyltransferáza)}
+
+◊(add-abr "LDL" "low-density lipoprotein")
+
+◊ls[#:t "Transport cholesterolu do buňky"]{
+    - cholesterol se dovnitř dostává v podobě LDL (low-density lipoprotein) partikulí
+    - buňka tedy musí mít ◊abr{LDL} receptory
+        - vazba cholesterolu -> opláštěný váček -> endozom -> recyklace (viz obrázek)
+    - choloesterol v (jaterních) buňkách je zčásti esterifikován a uložen a zčásti se z něj tvoří cholesterolové kapénky
+        - velké množství těhcto kapének vede k snížení syntézy ◊abr{LDL} receptoru a snížení syntézy HMG-CoA reduktázy
+}
+
+Asi 2/3 cholesterolu, který máme v těle, si syntetizujeme a 1/3 přijímáme v potravě. Z těla se dostává výhradně v podobě žluči, žlučových kyselin. Jeho vylučování může podnítit příjem rostlinných fytosterolů.
+
+◊(add-abr "VLDL" "very low-density lipoprotein")
+
+◊ls[#:t "Komunikace mezi játerní tkání a periférií"]{
+    # normální stav
+        - játra přijímají hodně ◊abr{LDL}, pak je uvolnují do krve jako VLDL (very low-density lipoprotein) a ony se do nich vrací zase jako ◊abr{LDL}
+    # familiární hypercholesterolémie
+        - defekt při syntéze ◊abr{LDL} receptorů
+        - ◊abr{LDL} receptory se špatně vstřebávají a zvyšuje se hladina těch "špatných" cholesterolů v krvi
+    # dieta s vysokým obsahem cholesterolu
+        - receptory jsou ze začátku v pořádku, ale pak dojde k adaptacím, sníží se syntéza HMG-CoA reduktázy
+        - jaterní tkáň nestíhá cholesterol vstřebávat a zpracovávat a opět to vede k poruchám
+        - naopak fyzická aktivita vede ke snížení ◊abr{LDL} v oběhu a zvýšení exprese HGM-CoA reduktázy
+}
