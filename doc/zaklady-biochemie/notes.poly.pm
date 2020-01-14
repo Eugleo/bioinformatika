@@ -3953,4 +3953,217 @@ Asi 2/3 cholesterolu, který máme v těle, si syntetizujeme a 1/3 přijímáme 
 
 ◊section{Ikosanoidy}
 
-◊section{Glycerolipidy a sfingoziny}
+◊ls{
+    - někdy také eikosanoidy
+    - mají dvacet uhlíků
+    - prostaglandiny, prostacykliny, tromboxany, leukotrieny, hydro-peroxy-ikosatetraenové kyseliny
+    - jsou v mnohém podobné hormonům, ale jedná se o lokální mediátory
+        - působí ve velmi nízkých koncentracích, nižších než hormony
+        - signalizují přes G proteiny a druhé posly, jako je ◊abr{cAMP}
+        - stejně jako hormony ovlivňují řadu biologických dějů
+            - regulace krevního tlaku, bolest, reprodukční funkce, cyklus spánku a bdění, srážení krve a vlastně skoro jakýkoliv fyziologický proces
+    - jsou odvozeny od esenciálních mastných kyselin, většinu jsou při jejich příjmu syntetizovány, nebo mohou být přímo přijímány v potravě
+        - přijmeme esenciální MK, ta se zabuduje do fosfolipidu a z toho je potom uvolňován ikosanoid
+}
+
+◊ls[#:t "Názvosloví"]{
+    - jak už bylo zmíněno v kapitole o MK, MK se někdy značí dvěma čísly (tzv. ◊strong{skóre})
+        - ◊code{[# uhlíků]:[# dvojných vazeb]}
+        - např. 18:2 je kyselina linoelová
+    - označení ◊|omega|◊${k}
+        - dvojná vazba nejvzdáleneší od karboxylu je ◊${k} uhlíků od ◊em{konce} řetězce
+        - podobné jako ◊|Delta|◊${k}, což značilo, že dvojná vazba nejvzdáleněší od karboxylo je ◊${k} uhlíků od ◊em{začátku} řetězce
+    - např. kyselina arachidonová ◊|omega|6 (20:4), kyselina eikosapentaenolová ◊|omega|3 (20:4)
+}
+
+◊ls[#:t "Účinky"]{
+    - mohou často způsobovat zánětlivé reakce
+        - na tomto stojí princip kortikoidů: aktivují syntézu lipokortinu -> inhibice A-2 -> inhibice syntézy ikosanoidů
+            - kortikoidy ale bohužel inhibují i ikosanoidy, které jsou pro tělo dobré
+}
+
+◊subsection{Tvorba a účinky ikosanoidů}
+
+◊ls{
+    - ikosanoidy se mohou uvolňovat z fosfolipidů
+        - např. fosfatidylinositol
+    - fosfolipáza, která ikosanoidy uvolňuje, se jmenuje ◊strong{A-2} (odštěpuje druhý acyl)
+        - po její aktivaci se uvolní arachidonát a tím může být zahájena syntéza ikosanoidů
+        - je třeba součástí hadích jedů --- v odpovědi na uštknutí se masivně uvolňují ikosanoidy v organismu.
+    - vznikají v ◊strong{cyklizující} (prostaglandiny, PG, a prostacykliny) a ◊strong{linearizující} dráze (leukotrieny)
+}
+
+◊img["phosphatidylinositol.png" #:w 200]{Fosfatidylinositol, s navázanou kyselinou arachidonovou a stearovou}
+
+Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, mohou být aktivovány např. v odpovědi na adrenalin.
+
+◊ls[#:t "Účinky leuktrienů"]{
+    - hrají roli v imunitní odpovědi
+        - chemotaxe (přivolávání) leukocytů
+    - hrají roli také při alergických reakcích a anafylaktickém šoku
+}
+
+◊subsection{Cyklizující dráha}
+
+◊(add-abr "PGH2" "prostaglandin H2")
+◊(add-abr "COX-1" "cyklooxigenáza-1, prostaglandin-H2 syntáza 1")
+
+◊img["pgs.png" #:w 350]{Příklady prostaglandinů}
+
+◊ls[#:t "Prostaglandiny"]{
+    - odvozeny od teoretické kyseliny prostaglandinové
+    - označují se písmenem a číslem
+        - písmeno: typ organického cyklu, který se vyskytuje na konci kyseliny
+        - číslo: počet dvojných vazeb
+    - malé strukturní změny znamenají velmi odlišné biologické účinky
+}
+
+◊img["cyclic-pathway.png" #:w 400]{Cyklická dráha}
+
+◊ls[#:t "Reakce prostaglandin-H2 syntázy"]{
+    - z arachidonátu je přeměňován prostaglandin-H2 syntázou na ◊abr{PGH2}
+    - z ◊abr{PGH2} mohou vzniknout další prostaglandiny a prostacykliny¨
+    - toto je klíčová reakce
+}
+
+◊ls[#:t "Prostaglandin-endoperoxid syntáza (PTGS)"]{
+    - oficiální název enzymu z předchozí reakce
+    - má dvě aktivity, cyklooxigenázovou a endoperoxidázovou
+        - zajímá nás hlavně ta první, cyklooxigenázová, proto se tomuto enzymu častěji říká ◊strong{cyklooxygenáza} (COX)
+    - má dvě formy (izozymy)
+        - COX-1, nebo též PGH syntáza 1
+            - konstitutivní, stabilně existuje v těle
+        - COX-2, nebo též PGH syntáza 2
+            - inducibilní, tato forma se vyskytuje jen při patologických stavech, jako je např. revmatoidní artritida (chronické záněty)
+    - běžné protizánětlivé látky (např. aspirin) blokují ◊abr{COX-1}, brání syntéze ◊abr{PGH2}
+}
+
+◊img["proglandoids.png"]{Příklady prostanoidů vznikajících z ◊abr{PGH2}}
+
+◊definitions{
+    ◊term["Prostanoidy"]{
+        Podskupina ikosanoidů, která zahrnuje prostaglandiny, tromboxany a prostacykliny.
+    }
+}
+
+◊box["Účinky prostanoidů"]{
+    ◊ls{
+        - ◊chem{TXA2}
+            - agregace trombocytů
+            - konratkce hladkého svalstva cév
+        - ◊chem{PGI2}, ◊chem{PGI3}
+            - antiagregační účinek
+            - stimulace relaxace hladkého svalstva
+            - zvýšení intenzity a trvání bolesti
+        - ◊chem{PGE2}
+            - inhibice kontrakce hladkého svalstva
+            - vasodilatace cév a zvýšení permeability cév
+            - inhibice sekrece ◊chem{HCl}
+            - stimulace sekrece mucinu
+            - zvýšení teploty
+            - zvýšení intenzity a trvání bolesti
+        - ◊chem{PGD2}
+            - navození spánku
+            - kontrakce bronchiálního svalstva
+        - ◊chem{PGF2}
+            - kontrakce hladkého svalstva
+            - zvýšení teploty
+    }
+}
+
+◊img["aspirin.png" #:w 400]{Aspirin, ibuprofen a naxprofen}
+
+◊ls[#:t "Aspirin"]{
+    - acetylsalicylová kyselina
+    - inaktivuje ◊abr{COX-1} tím, že acyluje jeden serinový zbytek v katalytickém místě na syntáze
+    - doporučuje se brát u starších lidí kvůli prevenci mozkové příhody
+        - brání tvorbě ◊abr{PGH2} a tím i prostacyklinu
+}
+
+◊section{Glycerolipidy a glykolipidy}
+
+◊definitions{
+    ◊term["Glycerolipidy"]{
+        Lipidy odvozené od glycerolu.
+    }
+
+    ◊term["Sfingolipidy"]{
+        Lipidy odvozené od sfingosinu, 18C alkoholu, jehož první tři uhlíky hrají ve stavbě lipidů roli glycerolu.
+    }
+
+    ◊term["Fosfolipidy"]{
+        Podtřída glycerolipidů, mají na glycerolu navázán i fosfor.
+    }
+
+◊img["phospholipids.png" #:w 200]{Obecná struktura fosfolipidu}
+
+◊definitions{
+    ◊term["Glykolipidy"]{
+        Mají v molekule cukernou složku.
+    }
+}
+
+◊img["membrane-lipids.png"]{Bežné typy zásobních a membránových lipidů}
+
+◊subsection{Fosfolipidy}
+
+◊ls[#:t "Fosfolipidy"]{
+    - jsou syntetizovány na membráně ER, přenášeny na vnitřní stranu cytoplazmatické membrány a pomocí ◊strong{flipáz} přenášeny na její vnější stranu
+    - funkce
+        - kotvení proteinů v membráně (GPI kotva)
+        - strukturní složka membrán, součást lipoproteinů
+        - prekurzory spousty věcí, např. inozytoltrifosfátů, triacylglycerolů a druhých poslů
+}
+
+◊ls[#:t "Alkylacylglycerolfosfolipidy a plasmalogeny"]{
+    - z plasmalogenů vzniká faktor, který aktivuje krevní destičky
+    - jsou hodně v nervové a svalové tkáni, podílí se na zvýšené tekutosti membrán
+}
+
+◊subsubsection{Syntéza fosfolipidů}
+
+◊ls{
+    - vždycky musí docházet k energetickému nabití jednoho z prekurzorů
+    - existují v zásadě tři způsoby vzniku
+        # fosfátový ester je nabitý pomocí CDP
+            - vzniká fosfatidylethanolamin, neboli fosfatidylcholin
+        # záměna fosfátového esteru
+            - fosfatydylethanolamin + serin -> fosfatidylserin
+        # nabití esteru pomocí CDP-diacylglycerolu
+}
+
+◊note{
+    ◊ls[#:t "Fosfatidylcholin"]{
+        - je důležité přijímat v potravě, podílí se na vodivosti nervových buněk
+            - může reagovat s ceramidem za vzniku sfingomyelinu, který je důležitý pro tvorbu myelinové pochvy
+        - alternativně může být syntetizován z fosfoetaloaminu pomocí trimethylace
+    }
+
+    ◊ls[#:t "Fosfatidylinositol"]{
+        - důležitá signální molekula
+        - může být štěpena na druhé posly (IP3 a DAG)
+        - může z něj vznikat difosfatidylglycerol neboli kardiolipin
+            - je ve vnitřní membráně mitochondrií a je důležitý pro její správné fungování
+            - je ho hodně v srdečním svalu
+            - je nezbytný pro dýchací řetězec
+    }
+}
+
+◊subsection{Sfingolipidy}
+
+◊img["sphingolipids.png" #:w 500]{Sfingolipidy}
+
+◊ls[#:t "Glykosfingolipidy"]{
+    - jsou odvozeny od ceramidu
+        - ceramid je sfingolipid, který má přes esterovou vazbu připojen ke sfingosinu pouze vodík
+    - jejich součástí jsou cukerné zbytky; podle toho, jaké konkrétně, se pak sfingolipidy dále dělí
+        - cereprosidy, s jednoduchým cukrem (glukóza, galaktóza)
+        - sulfatidy (cukr je sulfatován)
+        - globosidy (mají více cukerných podjednotek)
+        - gangliosidy (více cukerných podjednotek a ještě kyselina sialová)
+    - nacházejí se v nervové tkáni
+        - nikdo nevěděl, co dělají, byli proto nazvány podle mytické sfingy
+        - glykosfingolipázy (poruchy v glykosfingolipidech) mají často za následek problémy s nervovým systémem, bývají letální
+}
+
+◊img["glycerolipid-vs-sphingolipid.png" #:w 300]{Srovnání struktury svou membránových lipidů, fosfatidilcholinu (glycerofosfolipidu) a sfingomyelinu (glykosfingolipidu). Jde vidět, že jejich struktura fyzikální parametry jsou velice podobné, přestože mají chemicky jiný původ.}
