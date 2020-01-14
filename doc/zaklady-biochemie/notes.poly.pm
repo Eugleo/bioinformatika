@@ -3574,7 +3574,7 @@ Celkově vzniknou dvě molekuly NADPH a jedna molekula ribózy.
 
 
 ◊ls{
-    - když pro nějako sloučeninu existuje katabolická i anabolická dráha, musejí tyto být odlišné
+    - když pro nějakousloučeninu existuje katabolická i anabolická dráha, musejí tyto být odlišné
         - je to termodynamicky nutné a navíc to ulehčí nezávislou a jemnější regulaci
     - proto se syntéza MK a ◊|beta|-oxidace musí lišit
 }
@@ -3645,7 +3645,7 @@ O přeměnu z acetyl-CoA na malonyl-CoA se stará enzym ◊abr[#:new "acetyl-CoA
 }
 
 ◊ls[#:t "Aktivace ack"]{
-    - inzulín aktivuje ◊abr{cAMP}-dependentní proteinfosfatázu, která ◊abr{ack} defosforyluje a tím aktivuje
+    - inzulín aktivuje ◊abr{PKA}, která ◊abr{ack} defosforyluje a tím aktivuje
 }
 
 ◊subsubsection{Regulace lokálními metabolity}
@@ -3950,3 +3950,7 @@ Asi 2/3 cholesterolu, který máme v těle, si syntetizujeme a 1/3 přijímáme 
         - jaterní tkáň nestíhá cholesterol vstřebávat a zpracovávat a opět to vede k poruchám
         - naopak fyzická aktivita vede ke snížení ◊abr{LDL} v oběhu a zvýšení exprese HGM-CoA reduktázy
 }
+
+◊section{Ikosanoidy}
+
+◊section{Glycerolipidy a sfingoziny}

@@ -47,7 +47,10 @@
         document.onreadystatechange = function() {
             if (document.readyState == "interactive") {
                 h = document.getElementById('sticky-header');
-                tippy("abr");
+                tippy("abr", {
+                    boundary: "window",
+                    maxWidth: "none"
+                });
             }
         }
 

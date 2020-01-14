@@ -453,6 +453,20 @@ slide-link {
     text-align: right;
 }
 
+abr {
+  cursor: default;
+  transition: color 0.2s ease;
+}
+
+abr:hover {
+  color: olivedrab;
+}
+
+abr::after {
+  content: "*";
+  color: olivedrab;
+}
+
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––– */
 
