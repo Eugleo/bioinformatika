@@ -4080,7 +4080,7 @@ Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, moho
         - brání tvorbě ◊abr{PGH2} a tím i prostacyklinu
 }
 
-◊section{Glycerolipidy a glykolipidy}
+◊section{Glycerolipidy a sfingolipidy}
 
 ◊definitions{
     ◊term["Glycerolipidy"]{
