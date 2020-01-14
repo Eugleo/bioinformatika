@@ -4094,6 +4094,7 @@ Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, moho
     ◊term["Fosfolipidy"]{
         Podtřída glycerolipidů, mají na glycerolu navázán i fosfor.
     }
+}
 
 ◊img["phospholipids.png" #:w 200]{Obecná struktura fosfolipidu}
 
