@@ -12,6 +12,7 @@
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <title>◊(select-from-metas 'header "lecture-page.html"):◊(select-from-metas 'header here)</title>
     <link rel="stylesheet" type="text/css" media="all" href="../../styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/popper.js@1"></script>
     <script src="https://unpkg.com/tippy.js@5"></script>
     <script type="text/x-mathjax-config">
@@ -50,6 +51,21 @@
                 tippy("abr", {
                     boundary: "window",
                     maxWidth: "none"
+                });
+
+                $("img").click(function() {
+                    var src = $(this).attr('src');
+                    $('<div>').css({
+                        background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+                        backgroundSize: 'contain',
+                        width:'100%', height:'100%',
+                        position:'fixed',
+                        zIndex:'10000',
+                        top:'0', left:'0',
+                        cursor: 'zoom-out'
+                    }).click(function(){
+                        $(this).remove();
+                    }).appendTo('body');
                 });
             }
         }

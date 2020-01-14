@@ -282,12 +282,7 @@ img {
 }
 
 img {
-    transition:transform 0.25s ease;
-}
-
-img:hover {
-    -webkit-transform:scale(1.5); /* or some other value */
-    transform:scale(1.5);
+  cursor: "zoom-in";
 }
 
 .figure-wrapper img {
@@ -298,6 +293,7 @@ img:hover {
   margin: 15px;
   margin: 15px;
   object-fit: contain;
+  cursor: zoom-in;
 }
 
 .figure-caption {

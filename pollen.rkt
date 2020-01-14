@@ -397,10 +397,11 @@
       (define width (if w (format "~apx" w) "100%"))
       (define height (if h (format "~apx" h) "auto"))
       (define image
-        `(img [[src ,loc]
-              [style ,(format "max-width: ~a; max-height: ~a;" width height)]]))
+        `(img [[data-lightbox "pollen"]
+               [src ,loc]
+               [style ,(format "max-width: ~a; max-height: ~a;" width height)]]))
       (define image-no-size
-        `(img [[src ,loc]]))
+        `(img [[data-lightbox "pollen"] [src ,loc]]))
       (cond
         [(empty? alt) image]
         [else
