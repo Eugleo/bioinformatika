@@ -4156,7 +4156,7 @@ Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, moho
 
 ◊ls[#:t "Glykosfingolipidy"]{
     - jsou odvozeny od ceramidu
-        - ceramid je sfingolipid, který má přes esterovou vazbu připojen ke sfingosinu pouze vodík
+        - ceramid je sfingolipid, který má přes esterovou vazbu připojen ke sfingosinu pouze vodík, viz obrázek
     - jejich součástí jsou cukerné zbytky; podle toho, jaké konkrétně, se pak sfingolipidy dále dělí
         - cereprosidy, s jednoduchým cukrem (glukóza, galaktóza)
         - sulfatidy (cukr je sulfatován)
@@ -4168,3 +4168,154 @@ Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, moho
 }
 
 ◊img["glycerolipid-vs-sphingolipid.png" #:w 300]{Srovnání struktury svou membránových lipidů, fosfatidilcholinu (glycerofosfolipidu) a sfingomyelinu (glykosfingolipidu). Jde vidět, že jejich struktura fyzikální parametry jsou velice podobné, přestože mají chemicky jiný původ.}
+
+◊title{Metabolismus aminokyselin}
+
+◊img["aa-catabolism.png" #:w 400]{Odbourávání aminokyselin v savcích}
+
+◊ls[#:t "Metabolismus aminokyselin"]{
+    - amino skupiny se zpracovávají odděleně od uhlíkatých koster AK, viz obrázek
+        - v katabolických drahách vzniká amoniak, který je pro organismus silně toxický (např. interferuje s buněčnými drahami)
+    - metabolické produkty k exkreci dusíku se liší podle potřeb daného organismu
+}
+
+◊ls[#:t "Odbourávání amoniaku"]{
+    # mořští bezobratlí a larvy obojživelníků prostě nechávají volný amoniak difundovat z těla
+    # pokud má organismus dostatek vody, je možné vylučovat dusík v podobě ◊strong{močoviny}
+        - složitější než prostý amoniak, není ale tak toxická, nepotřebuje tolik vody k vyloučení
+        - když není k dispozici voda, je možné ji vylučovat v mikrokrystalech nebo v pastě
+    # další možností je ◊strong{kyselina močová} (derivát purinové báze, hypoxanthinu, xanthinu)
+        - náročná sytéza, viz níže, samotné její vyloučení spotřebuje velice málo vody
+    # pavouci a škorpióni používají ◊strong{guanin}
+}
+
+◊ls[#:t "Průběh"]{
+    # transaminace: přenos aminoskupiny z obourávané AK na nějakou jinou ketokyselinu
+    # deaminace: samotné uvolnění amoniaku
+    # zpracování amoniaku a jeho vyloučení (u lidí: cyklus močoviny)
+}
+
+◊section{Transaminace}
+
+◊ls{
+    - obecně se při ní přenáší aminová skupina z AK na oxokyselinu, čímž se tato oxokyselina mění na nějakou jinou AK
+    - v rámci metabolismu AK se uplatňuje tak, že se většina AK přemění na Glu nebo Asp, které se pak dále zpracovávají
+        - lepší, než kdyby měla každá AK svou vlastní katabolickou cestu
+        - výjimku tvoří Lys, Thr a Pro, které jsou někdy zpracovány svými příslušnými dehydrogenázami
+    - transaminace jako taková se skládá ze dvou fází, které obě katalyzuje nějaká transamináza
+}
+
+◊meta{Oxo-něco v rámci této kapitoly odpovídá keto-něčemu na obrázcích.}
+
+Obecný sumární popis transaminace je tedy
+◊$${\ce{AK1 + \alpha-ketokyselina1 <=>[enzym] AK2 + \alpha-ketokyselina2},}
+
+a pokud bychom ji chtěli rozdělit na fáze, vypadal by průběh takto
+
+◊align${
+    \ce{AK1 + enzym} & \ce{<=> \alpha-ketokyselina2 + enzym-NH2} \\
+    \ce{\alpha-ketokyselina1 + enzym-NH2} & \ce{<=> AK2 + enzym}.
+}
+
+◊ls[#:t "Obecný popis fází"]{
+    - obě fáze jsou si vlastně opačné
+    - obě navíc musí proběhnout přesně v tomto pořadí, jde tedy o ◊strong{uspořádáné reakce}
+    - akceptorem aminoskupiny (tedy ◊chem{\alpha-ketokyselina2}) je nejčastěji ◊|alpha|-oxoglutarát, viz příklad A níže, ale mohou to být i jiné látky
+}
+
+◊subsection{Obecný průběh reakce}
+
+◊(add-abr "PMP" "pyridoxamin-5-fosfát")
+
+◊ls[#:t "Transaminázy"]{
+    - někdy též aminotransferázy (v jiných zápiscích byl ještě pojem "aminoenzym", ale nikde jinde jsem jej nenašel)
+    - enzymy pohánějící celou transaminaci
+    - pracují oligospecificky: existují specifické transaminázy pro konkrétní kombinaci AK a oxokyseliny
+    - všechny ale mají společný koenzym, ◊abr[#:new "pyridoxal-5-fosfát"]{PLP}
+}
+
+◊img["plp-pmp.png" #:w 150]{◊abr{PLP} a ◊abr{PMP}}
+
+◊ls[#:t "PLP"]{
+    - odvozený od pyridoxaminu (vitamín B6)
+        - heterocyklická sloučenina s aromatickým charakterem
+        - je v ní mnoho delokalizovaných ◊|pi|-elektronů, které jsou v rovinách nad i pod rovinou kruhu
+    - v průběhu první fáze reakce se mění na pyridoxamin-5-fosfát (PMP)
+        - v průběhu druhé fáze se pak ◊abr{PMP} mění steiným zpsobem zpět na ◊abr{PLP}
+    - účastní se nejen transaminací, ale také racemací (prohození L-formy za D-formu a naopak) a dekarboxylací, viz obrázek
+}
+
+◊img["plp-reaction.png"]{Různé reakce s ◊abr{PLP} a AK. Nejdůležitější je pro nás ta žlutá nahoře (transaminace), pro ilustraci jsou ale uvedeny i další dvě: racemace (B) a dekarboxylace (C). Na obrázku není celý průběh transaminace, pouze její první fáze; druhá fáze probíhá stejně, jen zprava doleva a s jinou ◊|alpha|-ketokyselinou. Úplné detaily není třeba umět.}
+
+Konkrétní průběh reakce viz obrázek a následující popis.
+
+◊ls[#:t "Průběh první fáze reakce"]{
+    # ◊abr{PLP} je na enzym připojen Shiffovou bází přes ◊|epsilon|-aminoskupinu lysinu na aktivním cetru enzymu (viz obrázek níže)
+        - kromě Lys se vazby účastní i řada nekovalentních vazeb
+    # dochází k výměně Shiffovy báze mezi enzymem a substrátem
+        - máme samotný enzym a poté ◊abr{PLP} přes Shiffovu bázi kovalentně navázané na substrát
+    # delokalizované elektrony koenzymu destabilizují vazby na C◊|alpha| AK, které jsou mimo rovinu kruhu
+        - je to taková elektronová jímka, která umožňuje štěpení vazeb kolmých na heterocyklus
+    # vazba ◊chem{C-NH} se štěpí, vzniká ◊abr{PLP} a z AK se stane jen ◊|alpha|-oxokyselina
+}
+
+Druhá fáze probíhá analogicky, ale od konce; ◊abr{PMP} se v jejím průběhu mění opět na ◊abr{PLP}.
+
+◊img["shiff-base.png" #:w 200]{Spojení enzymu a ◊abr{PLP}}
+
+◊subsection{Příklady transaminačních reakcí}
+
+◊img["transamination.png" #:w 200]{Příklad A}
+
+◊ls[#:t "Reakce AK -> Glu"]{
+    - většina AK je tímto způsobem přeměněna na Glu
+        - Lys, Pro a Thr se někdy transaminaci přímo vyhnou
+        - Asp může být zpracován přímo v močovinovém cyklu, i bez transaminace
+        - Glu se nemění na Glu (ofc), ale právě na Asp (v reakci níže)
+}
+
+◊$${\ce{AK + \alpha-oxoglutarát <=>[enzym] Glu + \alpha-oxokyselina}}
+
+Glu se tedy mění na Asp, a to v následující reakci (druhý příklad transaminace):
+
+◊$${\ce{Glu + oxalacetát <=>[enzym] Asp + \alpha-oxoglutarát}.}
+
+◊ls[#:t "Glu a Asp v metabolismu"]{
+    - hlavní intermediáty metabolismu AK
+    - všechny AK (s výjimkami) jsou převedeny na Glu nebo Asp a v této podobě dále zpracovány
+        - výjimku tvoří Lys, Pro a Thr, které někdy místo transaminace projdou reakcí se svou příslušnou dehydrogenázou
+}
+
+Třetím příkladem transaminace je tzv. glukózo-alaninový cyklus.
+
+◊img["gluco-ala-cycle.png" #:w 350]{Glukózo-alaninový cyklus}
+
+◊ls[#:t "Glukózo-alaninový cyklus"]{
+    - existují svalově specifické aminotransferázy, které pomáhají netoxicky odstranit dusík z buňky
+    - pyruvát (jako ketokyselina) + AK -> jiná ketokyselina + Ala
+        - transaminační reakce (Ala je AK odvozená právě od pyruvátu)
+    - Ala pokračuje do jater, kde může být v reakci výše (za vzniknu pyruvátu) přeměněn na Glu
+        - pyruvát se poté může v játrech uplatnit např. v ◊abr{gng}, vzniklá glukóza poté může přes krev opět do svalů => cyklus
+}
+
+◊section{Oxidativní deaminace glutamátu}
+
+◊ls{
+    - reakce, kde se uvolní amoniak
+    - enzym glutamátdehydrogenáza
+    - oxidoreduktivní reakce, savčí verze enzymu umí pracovat s ◊chem{NAD+} i ◊chem{NADP+} (což je neobvyklé)
+        - ◊chem{NAD+} se většinou účastní oxidativního metabolismu v ◊abr{mch}
+        - ◊chem{NADP+} naopak bývá účasten cytosolických reduktivních syntéz
+    - (především) v hepatocytech tak vzniknou amonné ionty
+    - vzniklé redukované NAD(P)H se využije dále v metabolismu (reduktivní syntézy atp.)
+}
+
+◊img["deamination.png" #:w 300]{Deaminace glutarátu}
+
+K transportu dusíku se někdy používá také ◊strong{glutamin}.
+
+◊img["glutamine.png" #:w 300]{Vznik a zpracování glutaminu (detaily reakcí není třeba umět)}
+
+◊section{Cyklus močoviny}
+
+◊img["urea-cycle.png"]{Cyklus močoviny}
