@@ -2613,7 +2613,9 @@ Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cyt
     Co se ovšem ví, je fakt, že ATP syntázy se do větších celků shlukují. Jak se zdá, jsou tyto superkomplexy zčásti zodpovědné za morfologii vnitřní membrány v ◊abr{mch} (konkrétně za kristy) --- vyskytují se totiž přesně v místech, kde kristy prudece zahýbají. Mutanti bez těchto superkomplexů mají strukturu krist silně narušenou .
 }
 
-◊subsubsection{Kyslíkové radikály (ROS)}
+◊subsubsection{Kyslíkové radikály}
+
+◊(add-abr "ROS" "kyslíkové radikály")
 
 ◊ls{
     - byly objeveny relativně nedávno a zpočátku se jim přisuzovala jen negativní úloha
@@ -2621,7 +2623,7 @@ Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cyt
 – informují o hladině kyslíku,
     - na jejich existenci a produkci je založena teorie stárnutí
         - jejich produkce postupně ničí ◊abr{mch} a snižuje výkonnost buněk a produkci energie -> organismus stárne a zahyne
-    - jako hlavní místo produkce ROS se uvádí koenzym Q, ale není to přesné, hlavním místem je komplex BC1, kde dochází k rozdělení přenosu elektronů
+    - jako hlavní místo produkce kyslíkových radikálů (◊em{reactive oxygen species}, ROS) se uvádí koenzym Q, ale není to přesné, hlavním místem je komplex BC1, kde dochází k rozdělení přenosu elektronů
 }
 
 ◊img["radicals.png" #:w 400]{Vznik a zpracování kyslíkových radikálů}
@@ -4492,7 +4494,7 @@ To byly tři největší skupiny. Následuje výčet těch zbývajících.
 
     ◊ls[#:t "SAM"]{
         - je v ní pouze Met, ◊em{sám}
-        - v rámci jeho metabolismu vzniká sloučenina ◊strong{S-adenosylmethionin}
+        - v rámci jeho metabolismu vzniká sloučenina ◊abr[#:new "S-adenosylmethionin"]{SAM}
             - prekurzor pro biologické methylace
     }
 }
@@ -4567,7 +4569,7 @@ A proč potřebujeme nějaký přenašeč jednouhlíkové skupiny?
     - nezbytný pro biologické methylace
     - syntéza RNA a DNA (puriny)
     - buněčné dělení
-    - funguje jako soustava rezervoárů, které nesou uhlíkaté zbytky různého oxidačního stupně interkonvertovatené mezi sebou
+    - funguje jako soustava rezervoárů, které nesou uhlíkaté zbytky různého oxidačního stupně interkonvertovatené mezi sebou navzájem
 }
 
 ◊subsection{Skupina SAM}
@@ -4583,14 +4585,14 @@ A proč potřebujeme nějaký přenašeč jednouhlíkové skupiny?
 ◊img["methyl-cycle.png"]{Syntéza Met a S-anedosylmethioninu}
 
 ◊ls[#:t "První reakce"]{
-    - Met se váže na ATP za vzniku ◊chem{PP_i + P} a S-adenozylmethioninu
+    - Met se váže na ATP za vzniku ◊chem{PP_i + P} a ◊abr{SAM}
         - je zajímavé, že se z ATP uvolní ◊em{všechny tři} fosfáty, to se děje už jen v jedné další reakci
 }
 
-S-adenozylmethionin je substrátem pro biologické aminy (adrenalin, noradrenalin), fosfolipidy (fosfatidylcholin), a účastní se i methylací týkajících se chromatinu, histonů a nukleotidů.
+◊abr{SAM} je substrátem pro biologické aminy (adrenalin -> noradrenalin), fosfolipidy (phosphatidylethanolamine -> fosfatidylcholin), a účastní se i methylací týkajících se chromatinu, histonů (◊chem{H3K4} -> ◊chem{H3K4 me3}) a nukleotidů.
 
 ◊ls[#:t "Druhá reakce"]{
-    - S-adenozylmethionin něco methyloval, vznikl S-adenozylhomocystein
+    - ◊abr{SAM} něco methyloval -> vznikl S-adenozylhomocystein
 }
 
 ◊ls[#:t "Třetí reakce"]{
@@ -4642,4 +4644,77 @@ S-adenozylmethionin je substrátem pro biologické aminy (adrenalin, noradrenali
 
 ◊img["phe-tyr.png"]{NIH klička v reakci Phe -> Tyr (byla objevena v National Institute of Health)}
 
-◊section{AK jako syntetické prekurzory}
+◊section{AK jako prekurzory syntézy}
+
+◊ls{
+    - AK jsou prekurzory biologicky aktivních aminů, Gly je prekurzorem hemu
+    - glutathiol je důležitý pro udržování redukčních rovnováhách a transport AK, zejména těch se sírou
+}
+
+◊ls[#:t "Biologické aminy"]{
+    - např. dopamin, adrenalin, epinefrin, melanin
+    - jsou odvoditelné z Tyr a Phe prostřednictvím hydroxylačních a dekarboxylačních reakcí
+        - hydroxylační jsou závislé na pyridoxalfosfátu
+        - ty s kyslíkem používají NIH přesmyk
+}
+
+◊note{
+    ◊ls[#:t "Zbrarvení siamské kočky"]{
+        - způsobeno termosenzitivní mutací jednoho z enzymů syntézy melaninu
+        - deriváty pokožky blíže k tělnímu jádru jej netvoří, jen na čumáčku a tlapkách už se tvoří, protože je tam víc zima
+    }
+}
+
+◊ls[#:t "Dopamin"]{
+    - klíčový přenašeč v CNS
+    - je blízce příbuzný fenylethylaminu, což je podobně odvoditelná látka a vlastně nehydroxylovaná varianta dopaminu
+    - slavný mediátor, který doprovází stavy zamilovanosti
+}
+
+◊img["heme-sructure.png" #:w 300]{Hem, a původ atomů v něm}
+
+◊ls[#:t "Hem"]{
+    - jeho prekurzor je Gly
+    - všechny čtyři dusíky pyrolových jader jsou z Gly, kromě toho už tam jsou jen acetylové skupiny a dvě karboxylové skupiny
+    - složitá struktura je vytvořena šesti reakcemi
+        - i zde platí, že intermediáty jsou nebezpečné --- změny jejich koncentrací se projevují patologicky
+}
+
+◊meta{Máme prý ke zkoušce vědět, odkud se vzala jaká část hemu.}
+
+◊img["ros.png" #:w 400]{Zpracování ◊abr{ROS} pomocí ◊chem{NADPH} a glutathiolperoxidázy}
+
+◊ls[#:t "Glutathiol"]{
+    - ◊|gamma|-glutamyl-cysteinyl-glycin
+    - vytvořen izopeptidovou vazbou mezi Glu (karboxylová skupina) a Cys (aminoskupina)
+    - účastní se jednoho cyklu, u nějž je třetí reakce lokalizovaná na cytoplazmatické membráně (viz obrázek níže)
+        # aktivní centrum glutathiolu naváže AK se sírou z extrabuněčného prostoru
+        # přenese svůj náklad na Glu
+        # AK se uvolní do buňky, s ní se uvolní i cysteinoglycin
+        # glutathiol je resyntetizován
+    - vzhledem ke své ◊chem{-SH} skupině a schopnosti tvořit dimer je kofaktorem enzymů, které se starají o inaktivaci ◊abr{ROS}
+        - viz obrázek výše
+        - ◊strong{glutathiolperoxidáza} + redukovaná forma glutathiolu -> oxidovaný dimer glutathiolu, zároveň ROS -> alkohol
+        - ◊strong{glutathiolreduktáza} se stará o jeho redukci
+    - důležitý je i pro reakce thioltransferáz, které regulují počet ◊chem{S-S} můstků v proteinech
+    - v neposlední řadě se ◊strong{glutathion-S-transferáza} účastní syntézy leukotrienů
+}
+
+◊img["glutathione-cycle.png"]{Import AK pomocí glutathionu}
+
+◊section{Syntéza AK}
+
+◊img["aa-essential.png" #:w 400]{AK podle jejich prekurzoru, esenciální AK jsou označeny ◊strong{*}. Arg, Cys a Tyr jsou sice odvoditelné z jiné AK, ale ta už je esenciální (Phe, HCys). His má jako prekurzor v přednáškách uveden 5-fosforibosyl-◊|alpha|-pyrofosfát + ATP.}
+
+◊ls[#:t "Eseciální AK"]{
+    - vlastně všechny ty složitější
+    - očividně se vyplatí spoléhat na potravu a ušetřit na dlouhých a složitých metabolických drahách
+    - aminoskupina v AK je esenciální živina, ◊strong{neumíme ji syntetizovat}
+        - AK se nikdy nesyntetizuje z nějaké ketokyseliny
+}
+
+◊box["Kolibříci"]{
+    V trusu malých kolibříků bylo nalezeno mnoho amoniaku, chvíli se myslelo, že si s ním malí ptáčci někdy vystačí jako s odpadním materiálem místo kyseliny močové. Ukázalo se ale, že má tento druh kolibříků speciální mikrobiom, který z kyseliny močové zpětně resorbuje materiál, který poté kolibřík zpracovává, a vylučuje amoniak.
+
+    ◊img["hummingbird.jpg" #:w 400]{Kolibřík skvostný, ◊em{Eugenes fulgens}. Kamarádi mu říkají zkráceně skvostný Eugenes.}
+}
