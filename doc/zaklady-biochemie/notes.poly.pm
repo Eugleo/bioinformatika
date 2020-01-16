@@ -4422,10 +4422,12 @@ Následuje výčet sedmi skupin, do kterých se AK podle svých koncových produ
     ◊ls{
         - ◊green{Ala} -> ◊green{pyruvát}
         - ◊green{Cys} -> ◊green{pyruvát}
-        - ◊green{Gly} -> ◊green{pyruvát}
+        - ◊green{Gly} -> ◊green{Ser}
         - ◊green{Ser} -> ◊green{pyruvát}
         - ◊red{Thr} -> ◊green{Gly} + ◊blue{acetyl-CoA}
     }
+
+    Důležitým koenzymem je zde ◊abr{PLP}, opět dochází ke vzniku komplexu mezi ním a AK, prodobně jako v transaminaci.
 }
 
 ◊box["oxoG"]{
@@ -4436,6 +4438,8 @@ Následuje výčet sedmi skupin, do kterých se AK podle svých koncových produ
         - ◊green{His} -> ◊green{Glu}
         - ◊green{Pro} -> ◊green{Glu}
     }
+
+    Gln je konvertován ◊strong{konvertázou} na Glu.
 }
 
 ◊box["oxoisoV [L, I, V]"]{
@@ -4444,6 +4448,17 @@ Následuje výčet sedmi skupin, do kterých se AK podle svých koncových produ
         - ◊red{Ile} -> ◊green{sukcinyl-CoA} + ◊blue{acetyl-CoA}
         - ◊green{Val} -> ◊green{sukcinyl-CoA}
     }
+
+    Klíčovou dráhu metabolismu katalyzuje ◊strong{oxo-izovalerátdehydrogenázový komplex}.
+
+    ◊ls[#:t "Oxo-izovalerátdehydrogenázový komplex"]{
+        - podobný pyruvát-dehydrogenázovéhu komplexu a také oxoglutarát-dehydrogenázovému komplexu (z KC)
+        - katalyzuje oxidativní dekarboxylaci pyruvátu
+            - dochází k přenosu dvouhlíkatého zbytku na CoA
+        - multienzymový komplex, tři hlavní enzymové aktivity
+    }
+
+    Nejenže zde najdeme enzym podobný enzymům z KC, ale některé rozkladné reakce této skupiny jsou analogické odbourávání alifatických řetězců v MK.
 }
 
 To byly tři největší skupiny. Následuje výčet těch zbývajících.
@@ -4453,6 +4468,12 @@ To byly tři největší skupiny. Následuje výčet těch zbývajících.
         - ◊blue{Lys} -> ◊blue{acetoacetát}
         - ◊red{Trp} -> ◊green{Ala} + ◊blue{acetyl-CoA}
     }
+
+    ◊ls[#:t "oxoA"]{
+        - nejdelší a nejsložitější reakce
+        - ◊strong{oxoadipátdehydrogenázový komplex} je další ze skupiny dehydrogenázových komplexů (již čtvrtý)
+        - typickým produktem je acetoacetát
+    }
 }
 
 ◊box["Oxalacetát"]{
@@ -4460,11 +4481,19 @@ To byly tři největší skupiny. Následuje výčet těch zbývajících.
         - ◊green{Asp} -> ◊green{oxalacetát}
         - ◊green{Asn} -> ◊green{oxalacetát}
     }
+
+    Transaminacemi a deaminacemi jsou převoditelné přímo na oxalacetát, již intermediát KC.
 }
 
 ◊box["SAM"]{
     ◊ls{
         - ◊green{Met} -> ◊green{sukcinyl-CoA}
+    }
+
+    ◊ls[#:t "SAM"]{
+        - je v ní pouze Met, ◊em{sám}
+        - v rámci jeho metabolismu vzniká sloučenina ◊strong{S-adenosylmethionin}
+            - prekurzor pro biologické methylace
     }
 }
 
@@ -4473,4 +4502,144 @@ To byly tři největší skupiny. Následuje výčet těch zbývajících.
         - ◊red{Phe} -> ◊green{fumarát} + ◊blue{acetoacetát}
         - ◊red{Tyr} -> ◊green{fumarát} + ◊blue{acetoacetát}
     }
+
+    ◊ls[#:t "NIH"]{
+        - průběh katabolismu zahrnuje oxygenázové reakce (s kyslíkem)
+        - uplatňuje se unikátní mechanismus, tzv. ◊em{NIH přesmyk}
+    }
 }
+
+◊subsection{Skupina [A, C, G, S, T]}
+
+◊img["acgst-path.png"]{Katabolické cesty skupiny [A, C, G, S, T]}
+
+◊ls[#:t "Seznam drah"]{
+    - Cys -> pyruvát
+        - existuje více drah, řídí se ale podobnými strategiemi
+    - Ala -> pyruvát
+        - prostá deaminace
+    - Ser -> pyruvát
+        - reakce ◊strong{serin-hydroxymethyltransferázy}, která spolupracuje s ◊abr{PLP}
+        - i Ser je relativně jednoduše převoditelný na ketokyselinu
+    - Thr -> Gly (+ acetyl-CoA)
+        - složitější
+        - katalyzováno ◊strong{serin-hydroxymethyltransferázou} a ◊abr{PLP}
+    - Gly -> Ser (potažmo -> pyruvát)
+        - opět katalyzováno ◊strong{serin-hydroxymethyltransferázou}
+}
+
+◊subsubsection{THF systém}
+
+◊(add-abr "THF" "tetrahydrofolát")
+
+◊ls[#:t "Reakce Gly + THF"]{
+    - tato reakce přesahuje metabolismus AK
+    - pomocí rozložení Gly a tetrahydrofolátu (dále jen THF) zásobuje organimus jednouhlíkatými zbytky
+    - molekula Gly se rozebere na prvočinitele, amonný iont, oxid uhličitý, zbylý uhlík se ve formě methylenové skupiny ocitá jako součást ◊abr{THF}
+    - reakci katalzuje ◊strong{vícepodjednotkový systém}, ne však přímo komplex
+}
+
+◊img["glycine-cleavage.png" #:w 300]{Detaily štěpení Gly (není třeba vše umět). Enzym H je jedna podjednotka enzymu (další jsou P, T, L).}
+
+◊ls[#:t "Průběh reakce"]{
+    # ◊abr{THF} vytváří Shiffovu bázi s ◊abr{PLP}
+    # Gly je za pomoci ◊abr{PLP} štěpen, uvolňuje se ◊chem{CO2}
+    # amino-methylová skupina, která zbyde po štěpení Gly, je přenášena na rameno
+    # uvolňuje se amoniak, zatímco methylen je přenesen na ◊abr{THF}
+}
+
+◊img["thf.png" #:w 300]{◊abr{THF}}
+
+◊ls[#:t "THF systém"]{
+    - ◊abr{THF} je koenzym, který je pro nás esenciální (v podobě kyseliny listové)
+    - derivát pteridinu, který ještě obsahuje kyselinu p-aminobenzovou a nějaké zbytky z Glu vázané izopeptidovou vazbou
+    - metylace kofaktoru bude kromě štěpení Gly probíhat i během reakce Ser -> Gly, který katalyzuje ◊strong{hydroxymethyltransferáza}
+    - z methylu-◊abr{THF} může být vyroben methylen-◊abr{THF} a z něj methenyl-◊abr{THF}
+        - methylen-◊abr{THF} -> methyl-◊abr{THF} nás stojí jedno NADH, je to redukční reakce
+        - methylen-◊abr{THF} -> methenyl-◊abr{THF} je naopak oxidace, dostáváme se tím do metabolismu purinu
+}
+
+◊img["thf-pathways.png"]{Konverze jednouhlíkové skupiny na ◊abr{THF} (reakce není třeba umět)}
+
+A proč potřebujeme nějaký přenašeč jednouhlíkové skupiny?
+
+◊ls[#:t "Užitečnost THF"]{
+    - nezbytný pro biologické methylace
+    - syntéza RNA a DNA (puriny)
+    - buněčné dělení
+    - funguje jako soustava rezervoárů, které nesou uhlíkaté zbytky různého oxidačního stupně interkonvertovatené mezi sebou
+}
+
+◊subsection{Skupina SAM}
+
+◊ls{
+    - k syntéze Met budeme potřebovat methyl-◊abr{THF} a homocystein
+        - homocystein je také AK, není však běžně v proteinech
+    - probíhá tzv. cyklus aktivovaného methylu
+        - slouží k regulaci biologických methylací
+        - mimo to slouží jeden jeho intermediát (homocystein) k syntéze cysteinu
+}
+
+◊img["methyl-cycle.png"]{Syntéza Met a S-anedosylmethioninu}
+
+◊ls[#:t "První reakce"]{
+    - Met se váže na ATP za vzniku ◊chem{PP_i + P} a S-adenozylmethioninu
+        - je zajímavé, že se z ATP uvolní ◊em{všechny tři} fosfáty, to se děje už jen v jedné další reakci
+}
+
+S-adenozylmethionin je substrátem pro biologické aminy (adrenalin, noradrenalin), fosfolipidy (fosfatidylcholin), a účastní se i methylací týkajících se chromatinu, histonů a nukleotidů.
+
+◊ls[#:t "Druhá reakce"]{
+    - S-adenozylmethionin něco methyloval, vznikl S-adenozylhomocystein
+}
+
+◊ls[#:t "Třetí reakce"]{
+    - hydrolýzou se uvolňuje homocystein
+}
+
+◊ls[#:t "Čtvrtá reakce"]{
+    - pomocí ◊abr{THF} opět vznikne Met
+}
+
+◊box["Vitamíny B6 a B12"]{
+    ◊ls{
+        - B6 (biotin), B12: vitamíny, koenzymy, které jsou důležité pro průběh reakcí
+            - B12 je nezbytný pro zajištění průběhu reakcí zajišťujících homocystein -> Met
+            - kromě této reakce byl (derivát) B12 důležitý i ve štěpení MK s lichým počtem uhlíků, kde jsme potřebovali nějak zpracovat sukcinyl-CoA
+        - B12 je nejsložitější malá molekula, kterou přijímáme
+    }
+
+    ◊img["b12.png" #:w 400]{Vitamín B12}
+
+    ◊ls[#:t "Struktura B12"]{
+        - vazba kobalt-uhlík je pro jeho funkci velice důležitá (a je v přírodě velice neobvyklá)
+        - vazba je štěpena homolyticky => vznikají radikály => využití v reakci (B12 se chová jako generátor radikálů)
+    }
+
+    Pokud máme málo B6/B12 a nějakou špatnou alelu, může se nám v těle hromadit homocystein. To může souviset s Alzheimrem nebo s kardiovaskulárními problémy. Obecně je mnoho různých patologických stavů způsobeno hromaděním produktu (ať už je toxický, nebo ne) nad nějakou jeho únosnou mez.
+}
+
+◊subsection{Skupina NIH}
+
+◊ls{
+    - Tyr, Phe -> fumarát + acetoacetát
+    - reakční mechanismy jsou složité, ale metabolismus Tyr a Phe spolu souvisí (Phe hydroxylujeme na Tyr)
+}
+
+◊img["nih.png"]{Metabolická dráha Tyr a Phe. Detaily není třeba umět. Žlutě jsou vyznačeny lidské choroby způsobené genetickými mutacemi ovlivňujícími dané reakce.}
+
+◊ls[#:t "Hydroxylace Phe -> Tyr"]{
+    - pracují s molekulovým kyslíkem
+    - jako kofaktor mají biopterin, resp. jiný derivát pteridinu
+    - průběh
+        # použití kyslíku a nehemového železa k tvorbě oxyfenylového aniontu
+            - součástí je hydroxylace kofaktoru
+        # oxyfenolový aniont je použit ke torbě epoxidu, který se tvoří na původně aromatickém jádře
+        # oxyfenolový aniont se štěpí a výsledkem je tyrosin
+            - důležitá je odlišná pozice substituentu --- došlo k migraci vodíku (viz barvy na obrázku níže)
+    - průběh byl objeven v americkém NIH pomocí izotopového značení a nazván ◊strong{NIH přesmykem}
+}
+
+◊img["phe-tyr.png"]{NIH klička v reakci Phe -> Tyr (byla objevena v National Institute of Health)}
+
+◊section{AK jako syntetické prekurzory}
