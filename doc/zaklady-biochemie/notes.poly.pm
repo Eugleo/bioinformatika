@@ -3372,7 +3372,7 @@ Cyklus je pojmenován podle manželů Coriových, absolventů Karlovy univerzity
 ◊img["gluconeogenesis.png" #:w 400]{Schéma toho, z čeho mohou cukry vznikat (zvlášť pro rostliny a živočichy)}
 
 ◊ls[#:t "Popis schématu"]{
-    - živočichové mohou tvočit cukry z kyseliny mléčné
+    - živočichové mohou tvořit cukry z kyseliny mléčné
     - rostliny z ◊chem{CO2}, používají ho jako zdroj uhlíku a budují jej do kostry cukrů
     - střed je společný oběma: dokážou cukry dělat z triacylglycerolu (ale jen z té alkoholové části) a z glukogenních AK
         - AK jsou ty, které na různých místech vstupují do KC: Ala, Arg, Asp, Cys, Glu, Gly, His, hydroxyprolin, Met, Pro, Ser, Thr, Val
@@ -4265,7 +4265,11 @@ Druhá fáze probíhá analogicky, ale od konce; ◊abr{PMP} se v jejím průbě
 
 ◊subsection{Příklady transaminačních reakcí}
 
-◊img["transamination.png" #:w 200]{Příklad A}
+◊img["transamination.png" #:w 200]{Reakce AK -> Glu}
+
+První příklad transaminace:
+
+◊$${\ce{AK + \alpha-oxoglutarát <=>[enzym] Glu + \alpha-oxokyselina}.}
 
 ◊ls[#:t "Reakce AK -> Glu"]{
     - většina AK je tímto způsobem přeměněna na Glu
@@ -4274,9 +4278,7 @@ Druhá fáze probíhá analogicky, ale od konce; ◊abr{PMP} se v jejím průbě
         - Glu se nemění na Glu (ofc), ale právě na Asp (v reakci níže)
 }
 
-◊$${\ce{AK + \alpha-oxoglutarát <=>[enzym] Glu + \alpha-oxokyselina}}
-
-Glu se tedy mění na Asp, a to v následující reakci (druhý příklad transaminace):
+Určité množství Glu se tedy mění na Asp, a to v následující reakci (druhý příklad transaminace):
 
 ◊$${\ce{Glu + oxalacetát <=>[enzym] Asp + \alpha-oxoglutarát}.}
 
@@ -4332,13 +4334,13 @@ K transportu dusíku se někdy používá také ◊strong{glutamin}.
         - vzniklá transaminací Glu -> Asp, dodá druhý dusík
 }
 
-Poté je potřeba ještě 3 (energeticky 4, viz popis druhé reakce) ATP.
+Poté je potřeba ještě 3 ATP (energeticky 4, viz popis druhé reakce).
 
 ◊ls[#:t "Produkty"]{
     # močovina (karbamid, urea, diamid kyseliny uhličité)
     # fumarát
         - ten odnáší tu uhlíkovou kostru, kterou tam přinesl Asp
-        - pokračuje do KC
+        - pokračuje do KC, nebo do transaminázové reakce, kde se mění na Asp
 }
 
 ◊subsection{Průběh}
@@ -4376,5 +4378,99 @@ Poté je potřeba ještě 3 (energeticky 4, viz popis druhé reakce) ATP.
 
 ◊ls[#:t "Čtvrtá reakce"]{
     - katalyzována ◊strong{5-arginázou}
-    - štěpení argininu -> uvolnění karbamidu + ornitin
+    - štěpení argininu -> uvolnění karbamidu (ureová skupina) + ornitin
+}
+
+◊section{Ketogenní a glukogenní metabolismus AK}
+
+Nyní se zabýváme tím, co se stane s uhlíkovou kostrou AK, která nám zůstala po deaminaci.
+
+◊meta{
+    Pro účely zkoušky budeme muset vědět, kde jednotlivé dráhy končí a na co jsou jaké aminokyseliny odbourávány (viz obrázek). Není nutné do detailu znát, jak konkrétně každá dráha probíhá, pouze rámcově chápat, jaké typy reakcí probíhají.
+}
+
+◊img["glucogenic-aa.png"]{Glukogenní a ketogenní AK}
+
+◊ls[#:t "Glukogenní a ketogenní AK"]{
+    - základní rozlišení intermediátů, na kterých končí dráhy odbourávání AK
+    - oxokyseliny vzniklé z různých AK se ubírají různými metabolickými drahami a nakonec konvergují do jedné z pěti látek jejímž prostřednictvím se dostanou do KC --- tyto "konečné" látky se dále dělí
+        - ◊strong{ketogenní látky}
+            - 2C látky, které se nemohou se účastnit ◊abr{gng}, protože o oba uhlíky přijdou v dekarboxylacích
+            - účastní se tedy pouze syntézy ketolátek
+            - konečnými látkami jsou acetyl-CoA nebo acetoacetyl-CoA
+        - ◊strong{glukogenní látky}
+            - >2C látky, které vstupují do cyklu až po dekarboxylaci a jejich uhlík tedy může být využit v rámci ◊abr{gng}
+            - pyruvát, oxoglutarát/ketoglutarát, sukcinyl-CoA, fumarát, oxaloacetát
+}
+
+◊ls[#:t "Rozdělení AK"]{
+    - AK, které se rozkládají ◊em{výhradně} na ◊em{ketogenní} látky
+        - pomůcka: všechny, které začínají na L
+        - ◊strong{Lys}, ◊strong{Leu}
+    - AK, které se někdy rozkládají na ◊em{ketogenní} i na ◊em{glukogenní} látky
+        - pomůcka: PITTT
+        - ◊strong{Phe}, ◊strong{Ile}, ◊strong{Tyr}, ◊strong{Trp}, ◊strong{Thr}
+    - AK, které se rozkládají ◊em{výhradně} na ◊em{glukogenní}  látky
+        - to je ten zbytek
+}
+
+◊meta{Je to stejně hezky vymyšlené, že se dá všechno hezky nakonec hodit do KC a jednoduše zpracovat, když už to není potřeba.}
+
+Následuje výčet sedmi skupin, do kterých se AK podle svých koncových produktů (a jiných okolností) rozřazují. ◊blue{Modrá} značí ketogenní látky (potažmo AK na ně se rozkládající), ◊green{zelená} glukogenní a ◊red{červená} látky, které mohou být oboje.
+
+◊box["Pyruvát [A, C, G, S, T]"]{
+    ◊ls{
+        - ◊green{Ala} -> ◊green{pyruvát}
+        - ◊green{Cys} -> ◊green{pyruvát}
+        - ◊green{Gly} -> ◊green{pyruvát}
+        - ◊green{Ser} -> ◊green{pyruvát}
+        - ◊red{Thr} -> ◊green{Gly} + ◊blue{acetyl-CoA}
+    }
+}
+
+◊box["oxoG"]{
+    ◊ls{
+        - ◊green{Glu} -> ◊green{2-oxo-glutarát}
+        - ◊green{Arg} -> ◊green{Glu}
+        - ◊green{Gln} -> ◊green{Glu}
+        - ◊green{His} -> ◊green{Glu}
+        - ◊green{Pro} -> ◊green{Glu}
+    }
+}
+
+◊box["oxoisoV [L, I, V]"]{
+    ◊ls{
+        - ◊blue{Leu} -> ◊blue{text} + ◊blue{acetyl-CoA}
+        - ◊red{Ile} -> ◊green{sukcinyl-CoA} + ◊blue{acetyl-CoA}
+        - ◊green{Val} -> ◊green{sukcinyl-CoA}
+    }
+}
+
+To byly tři největší skupiny. Následuje výčet těch zbývajících.
+
+◊box["oxoA"]{
+    ◊ls{
+        - ◊blue{Lys} -> ◊blue{acetoacetát}
+        - ◊red{Trp} -> ◊green{Ala} + ◊blue{acetyl-CoA}
+    }
+}
+
+◊box["Oxalacetát"]{
+    ◊ls{
+        - ◊green{Asp} -> ◊green{oxalacetát}
+        - ◊green{Asn} -> ◊green{oxalacetát}
+    }
+}
+
+◊box["SAM"]{
+    ◊ls{
+        - ◊green{Met} -> ◊green{sukcinyl-CoA}
+    }
+}
+
+◊box["NIH"]{
+    ◊ls{
+        - ◊red{Phe} -> ◊green{fumarát} + ◊blue{acetoacetát}
+        - ◊red{Tyr} -> ◊green{fumarát} + ◊blue{acetoacetát}
+    }
 }
