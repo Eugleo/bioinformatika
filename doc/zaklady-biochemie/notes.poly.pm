@@ -4302,7 +4302,7 @@ Třetím příkladem transaminace je tzv. glukózo-alaninový cyklus.
 
 ◊ls{
     - reakce, kde se uvolní amoniak
-    - enzym glutamátdehydrogenáza
+    - enzym ◊strong{glutamátdehydrogenáza}
     - oxidoreduktivní reakce, savčí verze enzymu umí pracovat s ◊chem{NAD+} i ◊chem{NADP+} (což je neobvyklé)
         - ◊chem{NAD+} se většinou účastní oxidativního metabolismu v ◊abr{mch}
         - ◊chem{NADP+} naopak bývá účasten cytosolických reduktivních syntéz
@@ -4310,7 +4310,7 @@ Třetím příkladem transaminace je tzv. glukózo-alaninový cyklus.
     - vzniklé redukované NAD(P)H se využije dále v metabolismu (reduktivní syntézy atp.)
 }
 
-◊img["deamination.png" #:w 300]{Deaminace glutarátu}
+◊img["deamination.png" #:w 300]{Deaminace glutarátu glutamátdehydrogenázou}
 
 K transportu dusíku se někdy používá také ◊strong{glutamin}.
 
@@ -4318,4 +4318,63 @@ K transportu dusíku se někdy používá také ◊strong{glutamin}.
 
 ◊section{Cyklus močoviny}
 
+◊ls{
+    - objeven Krebsem
+    - kompartmentalizován mezi mitochondrii a cytoplasmu
+    - pokud bychom svévolně přidávali nebo odebírali nějaký meziprodukt, změnili bychom tím koncentrace a cyklus by se zastavil
+}
+
+◊ls[#:t "Substráty"]{
+    # amoniak z glutamát-dehydrogenázové reakce
+        - prostřednictvím karbamoyl-fosfátu, dodá první dusík
+    # kyselina uhličitá (přesněji hydrogenuhličitan)
+    # kyselina asparagová
+        - vzniklá transaminací Glu -> Asp, dodá druhý dusík
+}
+
+Poté je potřeba ještě 3 (energeticky 4, viz popis druhé reakce) ATP.
+
+◊ls[#:t "Produkty"]{
+    # močovina (karbamid, urea, diamid kyseliny uhličité)
+    # fumarát
+        - ten odnáší tu uhlíkovou kostru, kterou tam přinesl Asp
+        - pokračuje do KC
+}
+
+◊subsection{Průběh}
+
 ◊img["urea-cycle.png"]{Cyklus močoviny}
+
+◊ls[#:t "Přípravná reakce"]{
+    - tvorba karbamoyl-fosfátu v ◊abr{mch}
+        - toho jsou obecně schopny karbamoyl-P syntetáza I a II
+    - cyklu močoviny se účastní ◊strong{karbamoyl-P syntetáza I}
+        - karbamoyl-P syntetáza II je cytosolická a katalyzuje syntézu purinových nukleotidů
+    - spotřeba 2 ATP
+}
+
+◊ls[#:t "První reakce"]{
+    - katalyzována ◊strong{2-ornitin-transkarbamoylázou}
+    - ornitin (který v cyklu zbyl z předchozí iterace)+ karamoyl-fosfát -> citrulin
+    - ortinin je podobný Lys, citrulin je podobný Arg
+        - ani jeden ale není inkorporován v proteinech
+    - ornitin a citrulin přechází z ◊abr{mch} do cytosolu a zpět
+}
+
+◊ls[#:t "Druhá reakce"]{
+    - katalyzována ◊strong{3-argininosukcinát-syntetázou}
+    - citrulín + ◊em{příchozivší Asp} -> arginino-sukcinát
+    - spotřeba 1 ATP (reakce prochází přes intermediát citrulin-AMP)
+        - reálně se vlastně dá počítat jako 2 ATP, protože ji poté někdy musíme resyntetizovat
+}
+
+◊ls[#:t "Třetí reakce"]{
+    - katalyzována ◊strong{4-argininosukcinát-lyázou}
+    - štěpení arginino-sukcinátu -> Arg + ◊em{fumarát}, který z cyklu vystupuje
+        - fumarát -> malát -> oxaloacetát -> vstup do ◊abr{mch} -> KC (nebo transaminázová reakce -> Asp)
+}
+
+◊ls[#:t "Čtvrtá reakce"]{
+    - katalyzována ◊strong{5-arginázou}
+    - štěpení argininu -> uvolnění karbamidu + ornitin
+}
