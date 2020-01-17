@@ -4718,3 +4718,141 @@ A proč potřebujeme nějaký přenašeč jednouhlíkové skupiny?
 
     ◊img["hummingbird.jpg" #:w 400]{Kolibřík skvostný, ◊em{Eugenes fulgens}. Kamarádi mu říkají zkráceně skvostný Eugenes.}
 }
+
+◊title{Metabolismus nukleotidů}
+
+◊ls{
+    - všechny buňky nukleotidy syntetizují (s výjimkou speciálních případů buněčných typů)
+    - mají evolučně konzervované, společné dráhy
+}
+
+◊img["nuc-structure.png" #:w 300]{Obecné struktura nukleotidu (a), purin a pyrimidin (B)}
+
+◊img["nuc-bases.png" #:w 300]{Základní nukleotidové báze}
+
+◊img["hypox-xanthin.png" #:w 300]{Xanthin a hypoxanthin, nestandartní purinové báze, které jsou odvozené z G a A, respektive. Nukleosidům se říká xanthosin a inosin, respektive.}
+
+◊ls[#:t "Struktura nukleotidů"]{
+    - báze jsou na (deoxy)ribózu vázány C1-glykosidickou vazbou
+    - nukleotidy se vážou 5'-3' fosfodiesterovou vazbou, takto tvoří kostru DNA i RNA
+    - v případě DNA vzniká dvoušroubovice, kde báze v komplementárních patrech interagují vodíkovými vazbami
+    - jak je vidět, odlišují se puriny substituenty na C2 a C6 (oxo, amino) a pyrimidiny na C2 a C4 (oxo, amino) popř. methylací na C5
+    - báze + cukr = nukleosid, fosforylovaný nukleosid = nukleotid (viz obrázek níže)
+}
+
+◊img["nuc-monophosphate.png"]{Nukleotidy a nukleosidy (vyznačeny barevně) nalézající se běžně v DNA (a) a RNA (b)}
+
+Nukleotidy se mohou vyskytovat v ◊em{keto} a ◊em{enol} tautomerické formě.
+
+◊img["keto-enol.png" #:w 300]{Keto a enol formy T a G}
+
+◊ls[#:t "Kyselina močová"]{
+    - 8-oxo derivát xanthinu, celkově tedy 2,6,8-trioxo derivát purinu
+    - produkt metabolismu purinových bazí, zejména vylučována ptáky a plazy
+    - může být degradována až na močovinu a amoniak, různí živočichové ji vylučují v různých fázích této přeměny
+        # kyselina močová
+        # alantoin
+            - zde končíme hlavně u některých druhů savců
+        # kyselina alantolová
+        # glyoxylová kyselina
+        # močovina
+            - zde končíme u chrupavčitých ryb či obojživelníků
+        # degradace močoviny na volný amoniak
+            - typicky jen bezobratlí, amoniak je jinak problematický
+    - dále může být tento dusíkatý odpad dále zpracován mikrobiomem
+}
+
+◊img["uric-acid.png" #:w 100]{Kyselina močová}
+
+Derivátem xanthinu je i kofein (1,3,7-trimethylxanthin).
+
+◊section{Syntéza nukleotidů}
+
+Prekurzorem pro pyrimidiny i puriny je ribóza-5-fosfát, kterou získáme v ◊link["#Pentózofosfátová dráha"]{pentózofosfátové dráze}.
+
+◊subsection{Syntéza purinů}
+
+◊img["purine-path.png" #:w 300]{Schéma metabolických drah u syntézy purinů}
+
+◊ls[#:t "Hrubý pohled na celou dráhu"]{
+    - potřebuje syntetizovat ATP, GTP, dATP, dGTP
+    - do dráhy vstupuje ◊|alpha| anomer, ◊abr[#:new "5-fosforibóza-pyrofosfát"]{PRPP}
+}
+
+◊subsubsection{◊abr{PRPP} -> IMP}
+
+◊img["purine-synthesis.png"]{První fáze syntézy, ◊abr{PRPP} -> IMP. Reakce není třeba umět (jen prekurzory ano), jsou zde znázorněny pouze jako ilustrace legovitosti celé syntézy --- purin se skládá prakticky atom po atomu na kostře ◊abr{PRPP}. Barvy znázorňují původ jednotlivých atomů.}
+
+◊ls[#:t "První fáze"]{
+    - má charakter lega (viz obrázek výše a níže)
+    - hypoxantin je stavěn postupně na N9, atom po atomu
+    - zásadní rozdíl s pyrimidiny, kde nejdřív vznikne nějaká báze a pak se připojí na cukr
+    - reakce jsou poháněny ATP
+    - prekurzory (i.e. z čeho se skládá finální hypoxanthin)
+        - Gln, které dodává dusíky, N9 a poté i N3
+        - Gly, z něho máme uhlíky
+        -  ◊abr{THF}, ten přinese formylovou skupinu (další uhlíky)
+        - Asp, které se rozloží na fumarát a jeho aminoskupina se stane součástí hypoxanthinu
+}
+
+◊img["lego.png" #:w 200]{Původ atomů na pyrimidinu}
+
+◊ls[#:t "Stabilita intermediátů"]{
+    - intermediáty jsou často nestabilní, mohly by se rozložit než by stihly zreagovat
+        - např. 5-fosforibozylamin je nestabilní
+    - dvě možnosti řešení
+        - ◊strong{chanelling}, aktivní centrum enzymu, kde nestabilní intermediát vzniká, je kanálem spojeno s aktivním centrem následujícího enzymu
+        - nebo se enzymové aktivity stávají součástí jednoho peptidového řetězce
+            - podobně jako u syntézy MK
+            - zde (u živočichů): reakce [3, 4, 6],  reakce [7, 8] a reakce [10, 11]
+        - v obou případech spolu komunikují a bezprostředně si produkty předávají a ty se do cytoplazmy ani nedostanou
+}
+
+◊subsubsection{IMP -> AMP/GMP}
+
+◊ls{
+    - reakce používají Asp k náhradě oxoskupiny aminoskupinou
+    - syntézu AMP pohání GTP, syntézu GMP pohání ATP
+        - je to přesně do kříže, význam pro regulaci
+        - obě reakce se tím pádem vzájemně podporují
+}
+
+◊img["amp-gmp-synthesis.png"]{IMP -> GMP a AMP}
+
+AMP a GMP poté slouží jako inhibitory přechozích reakcí.
+
+◊img["regulatory-mechanisms.png" #:w 400]{Regulace prních dvou fází}
+
+◊subsubsection{AMP/GMP -> ADP/GDP}
+
+◊ls{
+    - katalyzováno ◊strong{nukleosid-monofosfátkinázami}
+        - jsou ◊strong{specifické pro danou bázi}
+        - dané kináze ale bude jedno, zda pracuje s normální, nebo deoxy bazí
+    - syntéza probíhá de novo (z jednoduchých částí, nejedná se o recyklaci), stojí tedy energii
+        - energii dodává ATP, které tedy není jen prekurzorem, ale také energetickým platidlem
+    - dojde k reakci AMP -> ADP, a zároveň ATP -> ADP
+        - skončíme tedy se dvěma ADP
+}
+
+◊subsubsection{ADP/GDP -> ATP/GTP}
+
+◊ls{
+    - katalyzováno ◊strong{nukleosid-difosfátkinázami}
+        - jsou ◊strong{oligospecifické}, fosforylují více věcí
+        - dané kináze bude jedno, zda pracuje s normální, nebo deoxy bazí
+}
+
+Obecná rovnice vypadá následovně: ◊$${\chem{XDP + YTP <=> YDP + XTP}.}
+
+ATP pochází z egergetického metabolismu (z OF).
+
+◊note{Dinukleotidy (u purinů i pyrimidinů) jsou prekurzorem vzniku deoxynukleotidů, minimálně u vyšších eukaryot.}
+
+◊subsection{Syntéza pyrimidinů}
+
+◊img["pyrimidine-synthesis.png" #:w 400]{Schéma metabolických drah u syntézy pyrimidinů}
+
+◊ls[#:t "Hrubý pohled na dráhu"]{
+    - potřebuje syntetizovat UTP, CTP, dTMP, dCTP
+}
