@@ -385,13 +385,15 @@
   (define loc (string-append root link))
   (case (current-poly-target)
     [(md) `("![" ,@alt "]" "(" ,loc ")")]
-    [(tex pdf) (apply string-append
-              `("\\begin{figure}\n"
-                "    \\caption{" ,@alt "}\n"
-                "    \\includegraphics[width=0.85\\textwidth]{" ,link "}\n"
-                "    \\centering\n"
-                "    \\label{" ,label "}\n"
-                "\\end{figure}\n"))]
+    [(tex pdf)
+      (define alt-2 (if alt alt '("")))
+      (apply string-append
+        `("\\begin{figure}\n"
+          "    \\caption{" ,@alt-2 "}\n"
+          "    \\includegraphics[width=0.85\\textwidth]{" ,link "}\n"
+          "    \\centering\n"
+          "    \\label{" ,label "}\n"
+          "\\end{figure}\n"))]
     [else
       (define wrapper-width (if w (format "~apx" (+ w 30)) "100%"))
       (define width (if w (format "~apx" w) "100%"))
@@ -613,6 +615,25 @@
       `(,(hash-ref HDR-LVL (get-tag heading)) (strong ,@(get-elements heading)) "\n")
       `(,(hash-ref HDR-LVL (get-tag heading)) ,@(get-elements heading) "\n")))
 
+(provide red green blue)
+
+(define (red . elements)
+  (case (current-poly-target)
+    [(md) (@ elements)]
+    [(html) `(red ,@elements)]
+    [(tex pdf) (apply string-append `("\\textcolor{red}{" ,@elements "}"))]))
+
+(define (blue . elements)
+  (case (current-poly-target)
+    [(md) (@ elements)]
+    [(html) `(red ,@elements)]
+    [(tex pdf) (apply string-append `("\\textcolor{blue}{" ,@elements "}"))]))
+
+(define (green . elements)
+  (case (current-poly-target)
+    [(md) (@ elements)]
+    [(html) `(red ,@elements)]
+    [(tex pdf) (apply string-append `("\\textcolor{green}{" ,@elements "}"))]))
 
 #| Sidenotes |#
 (define (sidenote . elements)

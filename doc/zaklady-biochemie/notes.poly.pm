@@ -1225,7 +1225,7 @@ se po katalýze stane reakce
 
 ◊subsubsection{Katalýza kovovými ionty}
 
-◊definitons{
+◊definitions{
     ◊term["Metaloenzymy"]{
          Mají pevně vázané kovy (Fe, Cu, Zn, Mn, Co), využívají je pro vazbu a orientaci substrátu, pro oxido-redukční reakce. Polarizují substrát.
     }
