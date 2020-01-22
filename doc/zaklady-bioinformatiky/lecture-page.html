@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>notes:bioinf</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../styles.css" />
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    <script type="text/javascript">
+        let h;
+
+        document.onreadystatechange = function () {
+            if (document.readyState == "interactive") {
+                h = document.getElementById('sticky-header');
+            }
+        }
+
+        let lastOffset = 10;
+        let first = true;
+        window.onscroll = function() {
+            var doc = document.documentElement;
+            var o = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+            if (o <= 8 && (lastOffset > 8 || first)) {
+                first = false;
+                h.style.boxShadow = 'none';
+                h.style.backgroundColor = 'rgb(255, 255, 255)';
+            } else if (o > 8 && (lastOffset <= 8 || first)) {
+                first = false;
+                h.style.boxShadow = '0px 1px 3px lightgrey';
+                h.style.backgroundColor = 'rgb(255, 255, 255)';
+            }
+            lastOffset = window.pageYOffset;
+        };
+    </script>
+</head>
+
+<body>
+    <div class="sticky-header" id="sticky-header">
+        <div class="wrapper">
+            <span class="page-title"><a class="no-style" href="/bioinformatika" title="Úvodní stránka">notes</a>:<strong>bioinf</strong></span>
+        </div>
+    </div>
+    <div class="container">
+         <h1 id="Základy bioinformatiky"><a class="internal-link" href="#Základy bioinformatiky">Základy bioinformatiky</a></h1><box class="plain"><div class="title">Zápisky (v1.1.0, poslední update 16. 5. 2019)</div><div class="body"><p>K dispozici je odkaz na <a href="notes.html">webovou verzi</a> a na <a href="notes.pdf">dokument pdf</a>. PDF verze je WIP, prosím, hlašte chyby nebo nápady na vylepšení.</p><p>Řešení bonusových úkolů jsou k dispozici <a href="tasks.html">zde</a>.</p></div></box><h2 id="Informace o zkoušce"><a class="internal-link" href="#Informace o zkoušce">Informace o zkoušce</a></h2><ul><li>zkouška se skládá ze dvou částí, celkově je za 50 bodů: písemná část (80%) a paper (20%), plus je možno získat bonusové body (maximálně 14)</li><li>většina informací (úkoly, cvičný test, témata na paper, termíny cvičení) bude na Moodlu</li><li>písmená část (40 bodů)
+         <ul><li>dlouhý test, zkušební bude na Moodlu</li><li>otestována budou dosti podrobně všechna témata</li><li>doporočeno vzít si s sebou pití a jídlo</li></ul></li><li>paper (10 bodů + 3 bonusové)
+         <ul><li>zpracovat téma jednoho ze zadaných článků (použít ale i jiné zdroje)</li><li>uvést i osobní komentář: jaký to má přínos, jak to funguje, co si o tom myslím (viz News and views v časopise Nature)</li><li>nejlepší papery budou v zápočtovém týdnu prezentovány</li></ul></li><li>domácí úkoly (dva po 3 bodech)
+         <ul><li>nepovinné (narozdíl od úkolů ve cvičení, viz níže)</li><li>lze je plnit samostastně nebo ve skupinách</li><li>jsou za bonusové body, které se počítají u zkoušky</li></ul></li><li>rozšíření wikipedie (5 bodů)
+         <ul><li>rozpracovat téma týkající se bioinformatiky (nejprve konzultovat s Mariánem)</li><li>opět bonusové body ke zkoušce</li></ul></li></ul><h2 id="Informace o cvičeních"><a class="internal-link" href="#Informace o cvičeních">Informace o cvičeních</a></h2><ul><li>vypracování všech cvičení je povinné</li><li>není nutné vypracovávat je osobně na cvičeních, ale do zkoušky je nutné všechna cvičení odevzdat</li><li>návod na jednotlivá cvičení je na Moodlu</li></ul><h2 id="Doporučená literatura"><a class="internal-link" href="#Doporučená literatura">Doporučená literatura</a></h2><ul><li>Lesk, A. (2008): Introduction to Bioinformatics</li><li>Jones, N. C. &amp; Pevzner, P. A. (2004): An Introduction to Bioinformatics Algorithms</li><li>Zvelebil, M. &amp; Baum, J. (2007): Understanding Bioinformatics
+         <ul><li>dostupná v knihovně</li></ul></li></ul>
+    </div>
+</body>
+
+</html>
