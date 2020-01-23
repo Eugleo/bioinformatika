@@ -1,18 +1,20 @@
 ◊(local-require racket/file racket/system racket/string)
 ◊(define latex-source ◊string-append{
-    \documentclass[DIV=9]{scrreprt}
+    \documentclass[DIV=12]{scrreprt}
     \usepackage[czech]{babel}
     \addto\captionsczech{\renewcommand{\chaptername}{}}
     \usepackage{geometry}
 
     \usepackage{placeins} % Don't move figures beyond sections
     \usepackage{siunitx}
+    \usepackage{textgreek}
     \usepackage{amsmath}
     \usepackage[version=4]{mhchem}
     \usepackage{listings}
-    \usepackage{hyperref}
+    \usepackage[unicode]{hyperref}
     \newcommand{\inlinecode}{\texttt}
     \usepackage{graphicx}
+    \usepackage{caption}
     \graphicspath{{./resources/images/}}
 
     \usepackage[explicit]{titlesec}
@@ -85,19 +87,22 @@
 \usepackage[some]{background}
 
     \newcommand{\meta}[1]{
-        \begin{metapar}
-        {\scshape\color{mediumelectricblue} META} \quad #1
-        \end{metapar}
+        {\scshape\color{mediumelectricblue} META} \\ #1
+
+
+        \hrulefill
     }
     \newcommand{\todo}[1]{
-        \begin{todopar}
-        {\scshape\color{amber} TODO} \quad #1
-        \end{todopar}
+        {\scshape\color{amber} TODO} \\ #1
+
+
+        \hrulefill
     }
     \newcommand{\mybox}[2]{
-        \begin{boxpar}
-        {\scshape\color{mediumjunglegreen} [#1]} \quad #2
-        \end{boxpar}
+        {\scshape\color{mediumjunglegreen} [#1]} \\ #2
+
+
+        \hrulefill
     }
     \lstset{
         basicstyle=\ttfamily,

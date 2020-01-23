@@ -7,5 +7,5 @@
 ◊title{Základy biochemie}
 
 ◊box["Zápisky (v0.0.1)"]{
-    K dispozici je odkaz na ◊link["notes.html"]{webovou verzi}.
+    K dispozici je odkaz na ◊link["notes.html"]{webovou verzi} a ◊link["notes.pdf"]{pdf verzi}.
 }

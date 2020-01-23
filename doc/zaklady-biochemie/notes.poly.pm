@@ -4,7 +4,11 @@
 ◊define-meta[header]{zápisy}
 ◊(define-meta toc #t)
 
-◊define-meta[authors ("Evžen Wybitul")]
+◊define-meta[authors ("Evžen Wybitul" "Lucie Drahoňovská")]
+◊define-meta[date]{23.1.2020}
+◊define-meta[version-number]{v0.9.0}
+◊define-meta[version-name]{dokončení nukleotidů}
+◊define-meta[color]{3662B3}
 
 ◊title{Úvod}
 
@@ -235,7 +239,7 @@ Pokud budeme vybírat pufr, musím volit tak, aby poměr soli a kyseliny byl rov
 
 ◊section{Aminokyseliny}
 
-◊meta{Předpokládají se základní znalosti struktury a vlastností AK, viz např. ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Struktura%20proteinů"]{Zápisy z bioinformatiky} nebo ◊link["https://eugleo.github.io/bioinformatika/doc/biopolymery/notes.html#Stavba%20proteinů"]{zápisy z biopolymerů}. Je nutné znát i jendotlivé zkratky a umět nakreslit chemickou strukturu každé AK.}
+◊meta{Předpokládají se základní znalosti struktury a vlastností AK, viz např. ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html"]{Zápisy z bioinformatiky} nebo ◊link["https://eugleo.github.io/bioinformatika/doc/biopolymery/notes.html"]{zápisy z biopolymerů}. Je nutné znát i jednotlivé zkratky a umět nakreslit chemickou strukturu každé AK.}
 
 ◊img["aa-venn.png" #:w 400]{Základní vlastnosti AK}
 
@@ -340,7 +344,7 @@ dásní, způsobené problémy s extracelulární matrix.
 
 ◊section{Kovalentní struktura proteinů}
 
-◊meta{Primární, sekundární, terciární i kvarterní struktura proteinů je rozebrána i zde: ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Struktura%20proteinů"]{Zápisy z bioinformatiky} nebo ◊link["https://eugleo.github.io/bioinformatika/doc/biopolymery/notes.html#Stavba%20proteinů"]{zápisy z biopolymerů}.}
+◊meta{Primární, sekundární, terciární i kvarterní struktura proteinů je rozebrána i zde: ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html"]{Zápisy z bioinformatiky} nebo ◊link["https://eugleo.github.io/bioinformatika/doc/biopolymery/notes.html"]{zápisy z biopolymerů}.}
 
 Proteiny jsou tvořeny AK spojenými peptidickou vazbou, nebo ◊chem{S-S} vazbou mezi cysteiny (nejedná se o můstek, nýbrž o plnohodnotnou vazbu). Např. u inzulinu tím vzniká složitejší kovalentní struktura.
 
@@ -375,7 +379,7 @@ Všechny tyto pojmy lze nalézt popsány v odkazech výše.
     - stabilita záleží na řetězcích R (např. dva kladně nabité R vedle sebe by mohly snižovat stabilitu helixu)
 }
 
-AK tedy můžeme rozdělit dle dalšího kritéria, ◊em{kompatibility s helikální strukturou} --- dá se změřit např. tak, že z helixu odebíráme jednu AK po druhé a vždy změříme jeho stabilitu. Díky toho lze poté z (části) primární struktury proteinu predikovat, zda zaujme tvar helixu, či nikoli.
+AK tedy můžeme rozdělit dle dalšího kritéria, ◊em{kompatibility s helikální strukturou} --- dá se změřit např. tak, že z helixu odebíráme jednu AK po druhé a vždy změříme jeho stabilitu. Díky tomu lze poté z (části) primární struktury proteinu predikovat, zda zaujme tvar helixu, či nikoli.
 
 Podobně se dají predikovat i jiné sekundární struktury, například levotočivý ◊strong{polyprolinový II helix}, který se nachází v kolagenu a obecně všude tam, kde je mnoho Pro.
 
@@ -597,7 +601,7 @@ Ve interakci podjenotek spočívá sigmoidní chování.
 
 Podjetnotky α1 + β1 jsou tedy téměř nepohyblivě spojené, struktura se tedy dá vnímat jako dva dimery spíše čtyři monomery. Mezi těmito dvěma podjednotkami bude docházet k pohybům, při oxygenaci se vůči sobě otočí o 15 ◊|deg|. Také sezmění pozice tyrosinu z C helixu vůči histidinu, viz obrázek.
 
-◊img["t-r-state.gif" #:w 300]{Stavy T a R na rozhraní podjednotek}
+◊img["t-r-state.png" #:w 300]{Stavy T a R na rozhraní podjednotek}
 
 ◊note{
     Změny stavů a posouvání molekul se dají srovnat s pohybem a vzájemným posunem dvou pěstí; vždy se posunou o jeden prst, jakýkoli mezistav bude náročné udržet.
@@ -1216,7 +1220,7 @@ Např. z reakce
 
 se po katalýze stane reakce
 
-◊$${\ce{AB + X: -> AX + B ->[H2O] A + X: + B}.}
+◊$${\ce{AB + X^{..} -> AX + B ->[H2O] A + X^{..} + B}.}
 
 ◊ls[#:t "Příklady"]{
     - aminoskupina Lys, thiolová Cys, karboxylová Asp, hydroxylová Ser, imidazolová His
@@ -2971,7 +2975,7 @@ Celková přeměna je tedy
 
 ◊$${\ce{MK + CoA + ATP -> MK-CoA + AMP + 2P_i},}
 
-a je silně exergonická (◊${\Delta G'^{\circ} = \pu{-34 kJ/mol}}). U reakce je použito pyrofosfátové štěpení (ATP -> AMP).
+a je silně exergonická (◊${\Delta G'^{\circ} =} ◊u{-34 kJ/mol}). U reakce je použito pyrofosfátové štěpení (ATP -> AMP).
 
 ◊subsection{Transport MK do ◊abr{mch}}
 
@@ -2985,7 +2989,7 @@ a je silně exergonická (◊${\Delta G'^{\circ} = \pu{-34 kJ/mol}}). U reakce j
     - viz obrázek
 }
 
-◊subsection{◊|beta|-oxidace}
+◊subsection{Beta-oxidace}
 
 ◊img["mk-metabolism-stages.png" #:w 350]{Fáze zpracování MK v ◊abr{mch}}
 
@@ -3074,7 +3078,7 @@ V následující tabulce můžeme vidět zisk z ◊|beta| oxidace jedné molekul
     - přestupují hematoencefalickou bariéru => mohou sloužit v mozku (a dalších tkáních) jako zdroj energie
 }
 
-◊title{Metabolismus glykogenu a další dráhy metabolismu cukrů}
+◊title{Další metabolické dráhy cukrů}
 
 ◊section{Metabolismus glykogenu}
 
@@ -3437,7 +3441,7 @@ Viz obrázek --- skládá se ze dvou částí.
         - hýbe se z jednoho reakčního místa, kde naváže karboxylovou skupinu (která tam přichází jako bikarbonát), na druhé aktivní místo enzymu, kde ji předá na pyruvát
 }
 
-◊img["pep-ck.gif" #:w 300]{Fosfoenolpyruvátkarboxykinázová reakce}
+◊img["pep-ck.png" #:w 300]{Fosfoenolpyruvátkarboxykinázová reakce}
 
 ◊ls[#:t "PEP karboxykinázová reakce"]{
     - oxaloacetát -> fosfoenolpyruvát (PEP)
@@ -3572,7 +3576,7 @@ Celkově vzniknou dvě molekuly NADPH a jedna molekula ribózy.
     - viz obrázek
 }
 
-◊title{Syntéza MK a metabolismus tuků}
+◊title{Metabolismus tuků}
 
 
 ◊ls{
@@ -4383,7 +4387,7 @@ Poté je potřeba ještě 3 ATP (energeticky 4, viz popis druhé reakce).
     - štěpení argininu -> uvolnění karbamidu (ureová skupina) + ornitin
 }
 
-◊section{Ketogenní a glukogenní metabolismus AK}
+◊section{Metabolismus C-kostry AK}
 
 Nyní se zabýváme tím, co se stane s uhlíkovou kostrou AK, která nám zůstala po deaminaci.
 

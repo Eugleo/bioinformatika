@@ -343,8 +343,12 @@
       `("[" ,description "]" "(" ,url+title ")")]
     [(tex pdf)
       (cond
-        [(string-prefix? url "#") (apply string-append `("\\hyperref[" ,(string-trim url "#" #:right? #f) "]" "{" ,@description "}"))]
-        [else (apply string-append `("\\href{" ,(string-replace (string-trim url "#" #:right? #f) "#" "\\#") "}" "{" ,@description "}"))])]
+        [(string-prefix? url "#")
+          (apply string-append
+                 `("\\hyperref[" ,(string-trim url "#" #:right? #f) "]" "{" ,@description "}"))]
+        [else
+          (define cleaned-url (string-trim (string-replace* url '("%" "\\%") '("#" "\\#")) #:right? #f))
+          (apply string-append `("\\href{" ,cleaned-url "}" "{" ,@description "}"))])]
     [else
       (define attr-list
         (if title
@@ -356,25 +360,46 @@
 (define ($ . elements)
   (case (current-poly-target)
     [(md) `("$" ,@elements "$")]
-    [(tex pdf) (apply string-append `("\\(" ,@elements "\\)"))]
+    [(tex pdf) (apply string-append `("\\(" ,@(map clear-for-latex elements) "\\)"))]
     [else `(mathjax  ,(apply string-append `("\\(" ,@elements "\\)")))]))
 
 (define ($$ . elements)
   (case (current-poly-target)
     [(md) `("$$" ,@elements "$$")]
-    [(tex pdf) (apply string-append `("\\[" ,@elements "\\]"))]
+    [(tex pdf) (apply string-append `("\\[" ,@(map clear-for-latex elements) "\\]"))]
     [else
       `(div [[class "scrollable"]]
         (mathjax ,(apply string-append `("\\[" ,@elements "\\]"))))]))
 
+(define (clear-for-latex s)
+  (cond
+    [(string? s)
+      (define (remove-diacritics str)
+        (string-replace* str '("ď" "d") '("ú" "u") '("ů" "u") '("ť" "t") '("č" "c") '("ř" "r")
+                             '("š" "s") '("í" "i") '("ý" "y") '("ž" "z") '("ě" "e") '("é" "e")
+                             '("á" "a") '("ó" "o")))
+      (remove-diacritics s)]
+    [else s]))
+
 (define (align$ . elements)
   (case (current-poly-target)
     [(md) `("$$" ,@elements "$$")]
-    [(tex pdf) (apply string-append `("\\begin{align*}" ,@elements "\\end{align*}\n"))]
+    [(tex pdf) (apply string-append `("\\begin{align*}" ,@(map clear-for-latex elements) "\\end{align*}\n"))]
     [else `(mathjax ,(apply string-append `("\\begin{align*}" ,@elements "\\end{align*}")))]))
 
 (define (chem str)
-  ($ (string-append "\\ce{" str "}")))
+  (case (current-poly-target)
+    [(md html) ($ (string-append "\\ce{" str "}"))]
+    [(tex pdf) ($ (string-append "\\ce{" (clear-for-latex str) "}"))]))
+
+(define (img-size-tex n)
+  (cond
+    [(not n) "0.85"]
+    [(<= n 200) "0.25"]
+    [(<= n 250) "0.3"]
+    [(<= n 300) "0.35"]
+    [(<= n 400) "0.5"]
+    [(<= n 800) "0.85"]))
 
 (define (img #:root [root "resources/images/"]
              #:label [label ""]
@@ -388,12 +413,11 @@
     [(tex pdf)
       (define alt-2 (if alt alt '("")))
       (apply string-append
-        `("\\begin{figure}\n"
-          "    \\caption{" ,@alt-2 "}\n"
-          "    \\includegraphics[width=0.85\\textwidth]{" ,link "}\n"
-          "    \\centering\n"
+        `("\\noindent\\begin{minipage}{\\linewidth}\n"
+          "\\makebox[\\linewidth]{\\includegraphics[width=" ,(img-size-tex w) "\\textwidth]{" ,link "}}\n"
+          "    \\captionof{figure}{" ,@alt-2 "}\n"
           "    \\label{" ,label "}\n"
-          "\\end{figure}\n"))]
+          "\\end{minipage}\n"))]
     [else
       (define wrapper-width (if w (format "~apx" (+ w 30)) "100%"))
       (define width (if w (format "~apx" w) "100%"))
@@ -439,18 +463,23 @@
     [(tex pdf) `("\\(" ,latex "\\)")]
     [else unicode]))
 
+(define (special-letter unicode latex)
+  (case (current-poly-target)
+    [(tex pdf) (format "\\text~a{}" latex)]
+    [else unicode]))
+
 (define angs "Å")
-(define alpha "α" )
-(define beta "β")
-(define gamma "γ")
-(define delta "δ")
-(define Delta "Δ")
-(define epsilon "ε")
-(define lambda "λ")
-(define pi "π")
-(define sigma "σ")
-(define omega "ω")
-(define Omega "Ω")
+(define alpha (special-letter "α" "alpha") )
+(define beta (special-letter "β" "beta"))
+(define gamma (special-letter "γ" "gamma"))
+(define delta (special-letter "δ" "delta"))
+(define Delta (special-letter "Δ" "Delta"))
+(define epsilon (special-letter "ε" "epsilon"))
+(define lambda (special-letter "λ" "lambda"))
+(define pi (special-letter "π" "pi"))
+(define sigma (special-letter "σ" "sigma"))
+(define omega (special-letter "ω" "omega"))
+(define Omega (special-letter "Ω" "Omega"))
 
 #| Boxes |#
 
@@ -577,7 +606,7 @@
     [(tex pdf)
       (define (depercent el)
         (cond
-          [(string? el) (string-replace* el '("%" "\\%"))]
+          [(string? el) (string-replace* el '("%" "\\%") '("#" "\\#"))]
           [else el]))
       (elements-recurse depercent elements)]
     [(html)
@@ -639,4 +668,5 @@
 (define (sidenote . elements)
   (case (current-poly-target)
     [(md) `("> Poznámka <\n" ,@elements)]
-    [(html) `(div [[class "sidenote"]] ,@elements)]))
+    [(html) `(div [[class "sidenote"]] ,@elements)]
+    [(tex pdf) "POZNÁMKA BOKEM"]))

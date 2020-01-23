@@ -38,5 +38,6 @@
             (sort lectures less-than))))
 
 (define (generate-pagetree)
+    (print list-of-files)
     (define pt `(index.html ,@list-of-files))
     (if (pagetree? pt) pt "Error: Invalid pagetree"))

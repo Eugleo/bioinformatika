@@ -16,7 +16,7 @@
 
 DNA má několik forem, konkrétně především B, A a Z. Tyto se liší velikostí žlábku, tvarem ribóz a případně orientací báze (synklinální/antiklinální).
 
-◊meta{Další informace též odpovídající část zápisů ze základů bioinformatiky (◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Struktura%20nukleových%20kyselin"]{DNA}, ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Struktura%20proteinů"]{proteiny}) a také zápisy z ◊link["https://eugleo.github.io/bioinformatika/doc/biopolymery/notes.html"]{celého druhého předmětu}.}
+◊meta{Další informace též odpovídající část zápisů ze ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html"]{základů bioinformatiky} a také zápisy z ◊link["https://eugleo.github.io/bioinformatika/doc/biopolymery/notes.html"]{celého druhého předmětu}.}
 
 ◊section{Interakce mezi molekulami}
 
@@ -330,7 +330,7 @@ Narozdíl od RTG krystalografie pozorujeme u NMR ◊strong{přímou odezvu konkr
 
 Výpočetní metody studují stejné problémy jako NMR a hmotnostní spektrometrie: prostorové uspořádání molekul, jejich dynamické chování a vzájemné interakce.
 
-◊meta{Další informace lze najít v oddílu ◊link["https://eugleo.github.io/bioinformatika/doc/zaklady-bioinformatiky/notes.html#Predikce%20struktury"]{predikce struktury}.}
+◊meta{Další informace lze najít v oddílu ◊link["#Predikce struktury"]{predikce struktury}.}
 
 ◊ls[#:t "Dělení"]{
     - homologní modelování
