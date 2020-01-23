@@ -4353,7 +4353,7 @@ Poté je potřeba ještě 3 ATP (energeticky 4, viz popis druhé reakce).
     - tvorba karbamoyl-fosfátu v ◊abr{mch}
         - toho jsou obecně schopny karbamoyl-P syntetáza I a II
     - cyklu močoviny se účastní ◊strong{karbamoyl-P syntetáza I}
-        - karbamoyl-P syntetáza II je cytosolická a katalyzuje syntézu purinových nukleotidů
+        - karbamoyl-P syntetáza II je cytosolická a katalyzuje ◊link["#Průběh syntézy"]{syntézu purinových nukleotidů}
     - spotřeba 2 ATP
 }
 
@@ -4843,7 +4843,7 @@ AMP a GMP poté slouží jako inhibitory přechozích reakcí.
         - dané kináze bude jedno, zda pracuje s normální, nebo deoxy bazí
 }
 
-Obecná rovnice vypadá následovně: ◊$${\chem{XDP + YTP <=> YDP + XTP}.}
+Obecná rovnice vypadá následovně: ◊$${\ce{XDP + YTP <=> YDP + XTP}.}
 
 ATP pochází z egergetického metabolismu (z OF).
 
@@ -4855,4 +4855,162 @@ ATP pochází z egergetického metabolismu (z OF).
 
 ◊ls[#:t "Hrubý pohled na dráhu"]{
     - potřebuje syntetizovat UTP, CTP, dTMP, dCTP
+    - na rozdíl od purinů je nutné postavit celou dusíkatou strukturu a pak ji přenést na ribózu
+        - prekurzory jsou tedy jen tři: kostra Asp, Glu a ◊chem{HCO3-}
+}
+
+◊img["pyrimidine-synthesis-schema.png" #:w 400]{Průběh syntézy pyrimidinů}
+
+◊subsubsection{prekurzory -> karbamoyl-P}
+
+
+◊img["carbamoyl-p-synthesis.png"]{Syntéza karbamoylu-P. Amoniak se v cytosolu nevyskytuje ve volné formě, ale je do reakce dodán přes Gln. Není třeba znát detaily.}
+
+◊ls[#:t "Detaily reakce"]{
+    - katalyzováno ◊strong{karbamoyl-P-syntetázou II}
+    - reakce probíhala už v ◊abr{mch} v játrech, tam ji katalyzovala karbamoyl-P-syntetáza I
+}
+
+◊img["pyrimidine-atom-origin.png" #:w 250]{Původ atomů v pyrimidinovém cyklu. V českých skriptech je uveden původ ◊chem{N3} jako Glu a ◊chem{C2} jako ◊chem{HCO3-}}
+
+◊subsubsection{karbamoyl-P -> orotát}
+
+◊ls{
+    - karbamoyl-P reaguje s Asp -> vzniká konjugovaná sloučenina -> cyklizace a dehydrogenace
+    - probíhá na membráně ◊abr{mch}
+        - potřebuje ubichinon z dýchacícho řetězce v ◊abr{mch}
+        - využívá systém dýchacího řetězce k ekvilibraci, reoxidaci ubichinonu
+}
+
+◊subsubsection{orotát -> UMP}
+
+◊ls{
+    - orotát je přenesen na ribózu
+    - jako bázi můžeme ribóze nabídnout třeba i uracil, podle toho vznikne odpovídající nukleotid
+        - tedy nemusíme syntetizvat vše de novo, ale buňka umí využít něco, co už má (tzv. ◊strong{salvage})
+}
+
+◊ls[#:t "Dekarboylační reakce orotidylátu"]{
+    - u dekarboxylací AK jsme potřebovali B6 (elektronovou jímku), zde je však něco jiného, unikátního
+    - využívá se těsné vazby mezi enzymem a celou molekulou substrátu přěsně do aktivního místa
+    - tím, jak se na sebe molekuly natlačí, destabilizuje se vazba (protože se přiblíží k jiné záporné skupině) -> jde lehce štěpit
+}
+
+◊ls[#:t "Regulace"]{
+    - produkty UTP a CTP inhibují první reakci syntézy, naopak ATP ji reguluje pozitivně
+    - u prokaryot UTP/CTP inhibují spíše tu transferázovou reakci, ale výsledek je podobný
+        - prokaryotická Asp-transkarbamoyláza je principem typické alosterické regulace
+}
+
+◊subsubsection{UMP -> CTP}
+
+◊ls{
+    - vnesení amidové skupiny z Gln
+    - potřebujeme aktivaci pomocí ATP
+}
+
+◊subsubsection{dUDP -> dTMP}
+
+◊em{Pro vznik dUDP (a obecně dčehokoli) viz oddíl ◊link["#Syntéza deoxyribonukleotidů"]{syntéza deoxyribonukleotidů}.}
+
+◊img["dtmp-synthesis.png" #:w 400]{Cyklus syntézy dTMP}
+
+◊ls[#:t "Přípavná fáze"]{
+    - dUDP -> dUTP -> dUMP + ◊chem{PP_i}
+    - dUTP je přítomno velice málo, rychle se štěpí, jinak by se inkorpovalo do DNA a to nechceme
+}
+
+◊(add-abr "DHF" "dihydrofolát")
+
+◊ls[#:t "Průběh reakce"]{
+    # v reakci dUMP -> dTMP je převeden ◊chem{CH2} z methylenu-◊abr{THF}, vzniká ◊abr{DHF}
+    # ◊abr{DHF} je redukován ◊chem{NADPH + H+} na ◊abr{THF}
+        - zde jsou mířena různá cytostatika a antibiotika
+        - když dokážeme dráhu zablokovat, buňka se nemůže dělit (protože nemůže syntatizovat vitální část DNA)
+}
+
+◊subsection{Syntéza deoxyribonukleotidů}
+
+◊ls{
+    - aplikovatelná na puriny i pyrimidiny
+    - dochází k výměně redukčních ekvivalentů
+    - katalyzuje ji ◊strong{ribonukleotid-reduktáza třídy I}
+}
+
+◊img["ribonucleotide-reductase.png" #:w 400]{Struktura ribonukleotid-reduktázy. Podjednotky R1 a R2, obojí dimery. ◊strong{S} místo ovlivňuje specificitu, ◊strong{A} místo aktivitu a ◊strong{C} místo je samotným aktivním místem enzymu, na které vstupují substráty.}
+
+◊box["Třídy ribonukleotid-reduktázy"]{
+    ◊ls{
+        - třída III je typická pro anaerobní prokaryota
+        - třída II je typická pro fakultativní anaeroby
+        - třídu I mají všichni ostatní
+        - jsou nejspíše stejného původy, nejprve byly čistě anaerobní (III) -> schopnost fungovat i aerobně (II) -> čistě aerobní (I)
+    }
+}
+
+◊img["redox-cycle.png" #:w 400]{Cykly účastnící se redukce NDP, kterých se účastní NADP, thioredoxin-reduktáza, thioredoxin, ribonukleotid-reduktáza a konečně samotný NDP.}
+
+◊ls[#:t "Ribonukleotid-reduktáza"]{
+    - redukuje NDP na dNDP
+        - je poté potřeba enzym samotný (resp. jeho oxidovanou část, thioredoxin) zpět redukovat, o to se stará NADPH
+    - má centrum s železem ve III. oxidačním stupni
+        – umí provést redukci kyslíku za vzniku Tyr radikálu
+        - Tyr radikál vzniká v jedné z podjednotek enzymu a pak se to využívá dál v reakci
+    - radikál vzniká na R2, R1 zprostředkovává regulace
+        - radikál může být generován homolytickým štěpením; zatím se přesně neví, ja kto třída I dělá
+            - kandidátem je např. vazba ◊chem{Co-C} na derivátu vitamínu B12
+    - radikál je stabilní, protože vzniká uvnitř, chráněn proti okolí
+    - radikál je vyměňován s dalšími skupinami
+}
+
+◊img["rbn-reductase-mechanism.png"]{Navržený mechanismus reakce ribonukleotid-reduktázy třídy I. Detaily není třeba umět, přidávám jej zde pouze pro ilustraci funkce radikálu při redukování NDP.}
+
+◊section{Degradace nukleotidů}
+
+Zajímá nás především katabolismus purinů.
+
+◊ls[#:t "Katabolsimus purinů"]{
+    # NTP -> NMP
+    # NMP hydrolyzovány na nukleosidy
+    # štěpeny v reakci fosforylázy
+        - báze se uvolňuje a pokračuje dál katabolickou drahou
+        - ribóza je recyklována jako ribóza-1-fosfát, z toho můžeme ve fosfomutázové reakci získat ribóza-5-fosfát
+}
+
+◊img["purine-catabolism.png"]{Katabolismus purinových bazí}
+
+Fosforylázové reakce (ty s PNP) jsou zajímavé, protože pokud v nich nějaký enzym nefunguje, výsledky mohou být fatální. PNP je avšak také cílem chemoterapeutických zásahů při léčbě autoimunitních či leukemických onemocnění.
+
+◊box["Cyklus AMP"]{
+    AMP někdy vybočuje z mechanismu uvedeného výše, místo toho se účastní cyklu, který doplňuje intermediát KC.
+
+    ◊img["fumatate-cycle.png" #:w 400]{Cyklus AMP}
+}
+
+◊box["Problémy s adenosin-deaminázou"]{
+    ◊ls{
+        - katalyzuje pouze oxidativní deaminaci adenosinu
+        - pokud nefunguje, adenosin se hromadí
+            # hromadění adenosinu
+            # zpětnovazebně dochází k dalším změnám koncentrací nukleotidů v metabolismu, např. dATP
+            # dochází mimo jiné k inhibici ribonukleotid-reduktázy
+            # dělící se buňky mají problém, což se projeví kombinovanou imunodeficiencí
+        - léčba: genetická terapie nebo dodávání funkční adenosin-deaminázy
+    }
+
+    Mutace AMP-deaminázy vede k deficienci svalové myoadenylátdeaminázy.
+}
+
+Výsledkem tohoto oxidativního metabolismu je kyselina močová (kyselina, protože odpovídající enolový tautomer slabě disociuje).
+
+◊img["pyrimidine-cata.png"]{Katabolismus pyrimidinů, konrétně thyminu. Detaily není třeba umět. (methyl)malonoyl-CoA je poté degradován až na sukcinyl-CoA.}
+
+◊ls[#:t "Katabolismus pyrimidinů"]{
+    # nukleosid je defosforylován na nukleosid-monofosát
+    # štěpení, uvolnění ribózy-1-fosfátu a báze
+    # následuje metabolismus U nebo T na malonyl-CoA
+        - viz obrázek výše
+    # nikoliv oxidativní, ale reduktivní krok umožní pak linearizovat molekulu
+        - je zde potřeba vitamín B12 (druhé z těch dvou použití, o kterých jsme hovořili)
+    # báze je odbourávána, u pyrimidinových je to reduktivní odbourávání na dvouhulíkaté zbytky
 }
