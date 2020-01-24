@@ -511,7 +511,7 @@ Někdy se může protein dostat do "pasti" (je nutné překonat stav s vyšší 
     - alfa-keratin je příkladem superhelixu
         - helixy se skládají do dimerů, ty do protofilament a ty do mikrofibril
             - na obrátku je ve dvojitém helixu pouze 5.1, na rozdíl od 5.4 v alfa-helixu
-            - každá 4. a 6. (tj. poslední na otáčku) AK je hydrofobní a dva helixy se tak zazipují do dimeru (hydrofovními AK k sobě)
+            - každá 4. a 6. (tj. poslední na otáčku) AK je hydrofobní a dva helixy se tak zazipují do dimeru (hydrofobními AK k sobě)
         - pružnost keratinu klesá s rostoucím množstvím příčných disulfidových vazeb mezi protofibrilami
     - fibroin je příkladem beta skládaného listu, je to složka např. hedvábí nebo pavučin
         - v β-strukturách se střídají vrstvy postranních řetězců glycinu s řetězci alaninu a serinu
@@ -543,7 +543,7 @@ Někdy se může protein dostat do "pasti" (je nutné překonat stav s vyšší 
 
 ◊definitions{
     ◊term["Saturační křivka"]{
-        Na ose ◊${x} je tlak ◊chem{O2} v torrech, na ose ◊${y} je saturace ◊chem{O2} v procentech. ◊${p50} je parciální tlak, při kterém jsou přenašeče saturována z 50%.
+        Na ose ◊${x} je tlak ◊chem{O2} v torrech, na ose ◊${y} je saturace ◊chem{O2} v procentech. ◊${p50} je parciální tlak, při kterém jsou přenašeče saturovány z 50%.
     }
 
     ◊term["Hemerythrin"]{
@@ -587,7 +587,7 @@ Ve interakci podjenotek spočívá sigmoidní chování.
     - v deoxygenovaném stavu (= ◊strong{R}, relaxed) je molekula porfyrinu deformována, není rovinná => vázaný hem je umístěn v dutině (kavitě)
         - to má za následek řadu dalších změn, ke kterým v rámci podjednotky dochází
         - mám tzv. ◊em{domovou strukturu}, kyslík se setkává s nižší afinitou, než kdyby byl hem "vystrčený"
-        - je to způsobeno vazbavi u železa, které jsou bez vázaného kyslíku delší a vytvoří onu proláklinu
+        - je to způsobeno vazbami u železa, které jsou bez vázaného kyslíku delší a vytvoří onu proláklinu
     - po vazbě kyslíku (= ◊strong{T}, tense) se porfyrin narovná a přes blízký histidin (◊em{proximální histidin}) přesune část pohybu i na helix F (viz obrázek), ten přesune pohyb i na zbývající podjednotky v molekule
         - struktura funguje jako mechanický převodník
         - hem se trochu vystrčí a má vyšší afinitu ke kyslíku
@@ -600,7 +600,7 @@ Ve interakci podjenotek spočívá sigmoidní chování.
     - analogicky pro α2
 }
 
-Podjetnotky α1 + β1 jsou tedy téměř nepohyblivě spojené, struktura se tedy dá vnímat jako dva dimery spíše čtyři monomery. Mezi těmito dvěma podjednotkami bude docházet k pohybům, při oxygenaci se vůči sobě otočí o 15 ◊|deg|. Také sezmění pozice tyrosinu z C helixu vůči histidinu, viz obrázek.
+Podjetnotky α1 + β1 jsou tedy téměř nepohyblivě spojené, struktura se tedy dá vnímat jako dva dimery spíše čtyři monomery. Mezi těmito dvěma podjednotkami bude docházet k pohybům, při oxygenaci se vůči sobě otočí o 15 ◊|deg|. Také se změní pozice tyrosinu z C helixu vůči histidinu, viz obrázek.
 
 ◊img["t-r-state.png" #:w 300]{Stavy T a R na rozhraní podjednotek}
 
@@ -614,7 +614,7 @@ Pokud bychom oslabili nějaká spojení, získali bychom plošší křivku, osla
 
 ◊definitions{
     ◊term["Homotropní efekt"]{
-        Druh alosterického efektu, při kterém látka ovlivňuji afinitu molekuly k sobě samé (jako např. zde s kyslíkem, kdy kyslík usnadňuje vázání kyslíku). Rozděluje se na pozitivní a negativní (kyslík je příkladem toho pozitivního). Opakem by byl heterotropní efekt.
+        Druh alosterického efektu, při kterém látky ovlivňují afinitu molekuly k sobě samé (jako např. zde s kyslíkem, kdy kyslík usnadňuje vázání kyslíku). Rozděluje se na pozitivní a negativní (kyslík je příkladem toho pozitivního). Opakem by byl heterotropní efekt.
     }
 }
 
@@ -742,7 +742,7 @@ Popisujeme v nich chování hemoglobinu jako modelu, obdobně se budou chovat i 
 
 ◊note{James B. Sumner měl jen jednu ruku, tu druhou mu v mládí ustřelili při honu. ◊em{insert joke about single-handedly solving big enzymology problems}}
 
-Enzymy urychlují reakce, jsou tedy nezbytné pro život --- například energie z cukru by bez nich nešla vydolovat, protože cukr se sám o sobě protě nerozloží a energii neuvolní.
+Enzymy urychlují reakce, jsou tedy nezbytné pro život --- například energie z cukru by bez nich nešla vydolovat, protože cukr se sám o sobě prostě nerozloží a energii neuvolní.
 
 ◊ls[#:t "Zásadní vlastnosti enzymů"]{
     - pro reakce stačí mírnější podmínky
@@ -2869,6 +2869,7 @@ U člověka je častější následující cyklus.
     - probíhá v řasách i vyšších rostlinách
     - jedná se o redoxní reakci (jako OF), pořebuje ale vytvořit dobrého donora a akceptora elektronů
     - má dvě fáze, ◊strong{světelnou} a ◊strong{temnostní} (na obrázku výše ◊em{carbon-assimilation reactions})
+        - temnostní ale reálně ve tmě také neprobíhá, přestože sama s fotony neoperuje --- je totiž závislá na produktech světelné fáze
 }
 
 Obecná reakce fotosyntézy vypadá následovně:
@@ -3026,6 +3027,94 @@ přičemž na ◊abr{FSII} (a analogicky na ◊abr{FSI}) probíhá reakce ◊$${
 }
 
 ◊img["atp-oritentation.png" #:w 400]{Orientace ATP syntázy}
+
+◊section{Biosyntéza sacharidů v rostlinách}
+
+◊ls{
+    - probíhá redukce ◊chem{CO2} a jeho asimilace do jednoduchých organických sloučenin
+    - klíčové enzymy jsou kromě fosforylace a alosterické regulace regulovány redukcí disulfidických můstků elektrony z ◊abr{FSI} a změnami pH a koncentrace ◊chem{Mg^{2+}}
+}
+
+◊img["dark-phase.png"]{Shrnutí syntézy sacharidů v rostlinách}
+
+◊ls[#:t "Plastidy"]{
+    - samorozmnožující se organely s dvojitou membránou
+    - řadí se sem chloroplasty, proplastidy a amyloplastidy (nemají tylakoidy, zato mají granula plná škrobu)
+    - většina biosyntetické aktivity, včetně asimilace ◊chem{CO2}, probíhá v plastidech
+    - kódují některé své proteiny, většina je z jádra
+    - většina enzymů nutných k asimilaci ◊chem{CO2} je v chloroplastech ve stromě
+}
+
+Temnostní fáze, neboli asimilace ◊chem{CO2}, probíhá ve třech fázích, které jsou znázorněny na obrázku níže. Všem třem dohromady se podle jejich objevitele říká ◊strong{Calvinův cyklus}.
+
+◊img["calvin.png" #:w 400]{Calvinův cyklus, nebo též ◊chem{C3}-cyklus}
+
+◊ls[#:t "Calvinův cyklus"]{
+    - tři fáze
+        # 5C + 1C -> dvě 3C
+        # dvě 3C molekuly jsou redukovány na dvě 3C-H
+        # z 3C-H je buďto regenerována původní 5C molekula, nebo je přetvořena dalšími reakcemi na hexózu
+    - za každých 6 vzniklých 3C-H (tedy tři běhy cyklu) se pět použije na regeneraci tří původních 5C molekul a jedna 3C-H se uvolní a použije se k syntéze hexózy
+    - na tři běhy je tedy výtěžek jedna 3C molekula
+}
+
+◊box["Stechometrie Calvinova cyklu"]{
+    Za tři otáčky se promění tři molekuly ◊chem{CO2} a jedna molekula fosfátu na jednu triózu. V průběhu toho se spotřebuje 6 molekul NADPH a 9 molekul ATP.
+
+    ◊img["calvin-stoichiometry.png" #:w 400]{Tři otáčky Calvinova cyklu}
+}
+
+◊subsubsection{První fáze}
+
+◊(add-abr "R15BP" "ribulóza-1,5-bisfosfát")
+
+◊ls{
+    - ◊abr{R15BP} + ◊chem{CO2} -> 3-fosfoglycerát
+    - 3-fosfoglycerát je ◊chem{C3} molekula, proto se těmto rostlinám říká ◊chem{C3} rostliny
+    - reakci katalyzuje ribulóza-1,5-bisfosfát-karboxyláza/oxygenáza, neboli ◊strong{rubisco}
+}
+
+◊ls[#:t "Rubisco"]{
+    - katalyzuje připojení ◊chem{CO2} i následné štěpení nestabilní 6C molekuly
+    - rubisco I je v cévnatých rostlinách, řasách a cyanobakteriích, rubisco II je v určitých fotosyntetických bakteriích
+    - je pomalý, fixuje tři molekuly ◊chem{CO2} za sekundu => rostliny jej musí mít velké množství
+    - rubisco I se skládá z osmi malých a osmi velkých podjednotek
+    - klíčovou roli hraje karbamoylovaný Lys a ◊chem{Mg^{2+}}
+}
+
+◊ls[#:t "Regulace rubisca"]{
+    - karbamoylace Lys je hlavní regulační bod rubisca, provádí ho rubisco aktiváza, naopak inhibuje ho ◊abr{R15BP}
+    - někdy je inhibován i ◊em{nočním inhibitorem} (2-karboxyarabinitol-fosfát), který některé rostliny v noci produkují
+}
+
+◊img["rubisco.png"]{Odhadovaný mechanismus práce rubisca. Detaily není třeba umět, stačí si zapamatovat, že se toho všeho účastní Lys a ◊chem{Mg^{2+}}.}
+
+◊subsubsection{Druhá fáze}
+
+◊ls{
+    - 3-fosfoglycerát -> glyceraldehyd-3-fosfát -> případně dihydroxyaceton-fosfát
+        - další osudy trióz jsou znázorněny a popsány na obrázku
+    - podobná příslušným reakcím v glykolýze, ale naopak
+        - redukčním kofaktorem je ale NADPH místo NADH
+        - stroma obsahuje všechny glykolytické enzymy (kromě fosfoglycerát-mutázy), jsou ale kódované jinými geny; jsou to tedy ◊strong{izozymy}
+    - detaily reakce (enzymy, intermediáty) viz červená šipka na obrázku
+    - reakce běží v tomto směru díky vysoké koncentraci NADPH ve stromě
+}
+
+◊img["second-stage.png"]{Schematické znázornění druhé fáze}
+
+◊subsubsection{Třetí fáze}
+
+◊img["third-stage.png"]{Třetí fáze zobrazující konverze mezi triózami a pentózami}
+
+
+◊ls[#:t "Třetí fáze"]{
+    - regenerace ◊abr{R15BP} z trióz
+    - intermediáty zahrnují 3C, 4C, 5C, 6C a 7C cukry (viz obrázek)
+    - některé kroky jsou ireverzibilní (na obrázku vyznačeny modře), protože jsou exergonické
+}
+
+◊img["third-bonus.png"]{(a) Obecná reakce katalyzovaná transketolázou (kroky 3 a 6) s thyamin-pyrofosfátem, (b) krok 3 (5C + 3C -> dvě 4C), (c) krok 6 (7C + 3C -> dvě 5C)}
 
 ◊title{Lipidy, mastné kyseliny a jejich metabolismus}
 
