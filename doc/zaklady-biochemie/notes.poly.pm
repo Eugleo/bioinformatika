@@ -432,6 +432,12 @@ K pro rozrušení nativní konformace proteinu dlouhého ~100 AK je třeba dodat
     ◊term["Solvatace"]{
         Obalení rozpuštěné látky molekulami rozpouštědla.
     }
+
+    ◊term["Chaotropní látky"]{
+        Látky, které narušují nekovalentní vazby (jako např. H-můstky); u proteinů tedy přidáním chaotropního agens může dojít k denaturaci.
+
+        Chaotropní soli odstiňují náboje, zatímco jiné chaotropní látky (např. ethanol) samy interferují s nekovaletními vazbami.
+    }
 }
 
 ◊ls[#:t "Iontové elektrostatické interakce"]{
@@ -464,11 +470,6 @@ K pro rozrušení nativní konformace proteinu dlouhého ~100 AK je třeba dodat
 }
 
 Například sbalení hemoglobinu (globulární struktura) je zapříčiněno především hydrofobními interakcemi --- uvnitř sbaleného proteinu skončí AK s hydrofobními skupinami, na povrchu AK polární. Kdybychom tuto strukturu narušili nějakým činidlem (např. 8M močovina), a pak jím přestali působit, opět se sbalí do původního tvaru.
-
-◊ls[#:t "Chaotropní ionty"]{
-    - soli, které mají destabilizující vliv na hydrataci proteinu a způsobují jeho denaturaci
-    - reagují s vodou méně, než molekuly vody samotné, a proto málo interferují s H-můstky
-}
 
 ◊definitions{
     ◊term["Hofmeisterova lyotropní řada"]{
@@ -2859,6 +2860,172 @@ U člověka je častější následující cyklus.
         - dostatek energie –> hodně NADH a ATP -> inhibice nějakých kroků
         - nedostatek energie -> hodně ADP, anorganického fosfátu a neredukovaných koenzymů -> stimulace nějakých kroků
 }
+
+◊section{Fotosyntéza}
+
+◊img["ps-assimilation.png" #:w 200]{Sluneční energie je využívána k syntéze energeticky bohatých sloučenin}
+
+◊ls[#:t "Fotosyntéza"]{
+    - probíhá v řasách i vyšších rostlinách
+    - jedná se o redoxní reakci (jako OF), pořebuje ale vytvořit dobrého donora a akceptora elektronů
+    - má dvě fáze, ◊strong{světelnou} a ◊strong{temnostní} (na obrázku výše ◊em{carbon-assimilation reactions})
+}
+
+Obecná reakce fotosyntézy vypadá následovně:
+
+◊$${\ce{CO2 + H2O ->[světlo] O2 + (CH2O)},}
+
+voda zde předává elektrony (v podobě vodíku) a redukuje ◊chem{CO2}.
+
+◊img["chloroplast.png" #:w 450]{Struktura chloroplastu}
+
+◊(add-abr "fs" "fotosyntéza")
+
+◊ls[#:t "Chloroplasty"]{
+    - v lamelách (membránách tylakoidů) jsou ◊abr{fs} pigmenty
+    - ve stromě je většina enzymů, které jsou potřeba k ◊abr{fs}
+    - Robert Hill přišel na to, že po osvícení produkují výtažky z listů ◊chem{O2} a že redukují elektronový akceptor (◊em{Hillův reagens})
+        - jeden z akceptorů při redukci měnil barvu, takže šla dobře sledovat
+}
+
+◊subsection{Světlá fáze}
+
+◊img["spectrum.png" #:w 400]{Elektromagnetické spektrum, udávající energii fotonu (◊u{1 Einstein = 1 mol} fotonů)}
+
+◊ls[#:t "Absorbce světla obecně"]{
+    - po dopadu fotonu je excitován elektron
+    - energie fotonu musí přesně odpovídat rozdílu energie mezi dvěma stavy elektronu
+    - elektron po chvíli přechází do původního stavu
+        - energii vyzáří jako světlo (fluorescence), teplo, nebo ji vydá v nějakém chemickém ději
+}
+
+◊img["chlorophyl.png" #:w 500]{Struktura chlorofylu A (a znározněny jsou také rozdíly s chlorofylem B a bakteriochlorofylem)}
+
+◊ls[#:t "Chlorofyly"]{
+    - nejdůležitější pigmenty absorbující světlo
+    - struktura podobná protoporfyrinu z hemoglobinu, uprostřed je ale ◊chem{Mg^{2+}}
+        - koordinován dusíky
+    - všechny mají dlouhý fytolový řetězec
+    - úseky se střídajícími se jednoduchými a dvojnými vazbami vykazují silnou absorbci ve viditelném spektru
+    - všechny rostliny mají A i B (v poměru cca 2:1), absorbují totiž v různých spektrech (viz obrázek níže)
+    - bakterie a červené řasy místo nich používají fylocybiny
+    - jsou často používány s doplňkovými proteiny (◊strong{karotenoidy}), které rozšiřují hlavní absorbční spektrum
+}
+
+◊img["absorption.png" #:w 350]{Absorbční spektra chlorofylů a jim podobných látek (obecně fotopigmentů)}
+
+Cholorofyly vždy tvoří ještě s dalšími proteiny ◊abr[#:new "light-harvesting complex"]{LHC}.
+
+◊img["lhc.png" #:w 250]{LHCII, v buňce jako trimer (zde monomer). Skládá se ze 7 molekul chA, 5 molekul chB a 2 molekul luteinu.}
+
+◊box["Evoluce chloroplastů"]{
+    ◊ls{
+        - oxygenní fotosyntéza je velice důležitá pro život na zemi, vznikla před cca ◊strong{2.5 miliardami let}
+            - nejen proto, že z vody vyrábí organické sloučeniny, ale také proto, že uvolňuje kyslík
+        - chloroplasty vznikly nejspíše endosymbiózou (jako ◊abr{mch}), nejpíše cyanobakterií
+            - mají své DNA, transkripční a translační mechanismy
+            - umí se dělit
+            - část proteinů je ovšem importována z cytoplazmy
+        - cyanobakterie samotné mají jak fotosystém I, tak fotosystém II
+            - zdá se, že u nich došlo ke kombinaci genetického materiálu dvou různých typů bakterií
+    }
+
+    Více než polovinu veškeré fotosyntetické aktivity obstarávají mikroorganismy, mnoho z nich však není oxygenních (jako donor nepoužívají ◊chem{H2O}, ale ◊chem{H2S}, laktát, atp.).
+
+    ◊img["of-ff.png" #:w 300]{OF a FF mají v cyanobakteriích tři společné proteiny}
+
+    ◊ls[#:t "Vztah fotofosforylace a OF"]{
+        - moderní cyanobakterie umí obojí
+        - cyanobakterie mají tři proteiny, které se účastní obou procesů => oba procesy jsou nejspíše příbuzné
+    }
+
+    Halofilní archea vyvinula jiný způsob pumpování protonů přes membránu; používají ◊strong{bakteriorodopsin} (který obsahuje retinal, derivát vitamínu A). Po jeho osvícení dojde k fotoizomeraci (protein změní tvar), při návratu do původního stavu se přenese proton. Jedná se o nejmenší protonovou pumpu, která byla objevena (247 AK).
+}
+
+◊subsubsection{Tok elektronů}
+
+◊definitions{
+    ◊term["Exciton"]{
+        Kvantum energie přenášené z jedné molekuly na druhou, podobně jako foton je kvantum energie přenášené jako světlo.
+    }
+}
+
+◊img["energy-transfer.png" #:w 350]{Přenos excitonů a elektronů}
+
+Jak obecně probíhá celá absorbce světla lze vidět na obrázku výše.
+
+◊ls[#:t "Fotochemická reakční centra"]{
+    - světelný impuls o konkrétní vlnové délce způsobil, že bakterie následně chvíli na této vlnové délce absorbovaly méně
+        - bylo to tím, že fotochemické reakční centrum ztratilo elektron a muselo se znovu "nabít"
+    - byly objeveny tři základní pigmenty a pijmenovány podle toho, na jaké vlnové délce byl efekt nejsilnější: ◊strong{P870}, ◊strong{P680} a ◊strong{P700}
+    - liší se pro purpurové bakterie, chlorobi (zelené sirné bakterie) a pro rostliny+cyanobakterie
+}
+
+◊subsubsection{Purpurové bakterie a chlorobi}
+
+◊img["green-purple.png"]{Fotosyntetický mechanismus u purpurových (a) a zelených (b) bakterií}
+
+◊ls[#:t "Purpurové bakterie"]{
+    - reakční centrum P870, cytochrom-BC1 elektron-transferový komplex (podobný komplexu III v OF) a ATP syntáza (podobná té v ◊abr{mch})
+    - cesta elektronu: feofytin -> koenzym Q -> cytochrom-BC1 komplex -> přes cytochtom C2 zpět do reakčního centra
+    - cytochrom-BC1 komplex generuje protonový gradient, který pohání ATP syntázu
+}
+
+◊ls[#:t "Chlorobi"]{
+    - reakční centrum P840, zbytek modulů je stejný
+    - elektron je na cytochrom BC1 komplex přenášen jen koenzymem Q
+    - některé elektrony putují přes ◊strong{feredoxin} na ◊strong{feredoxin:NAD reduktázu}, která produkuje NADH
+        - tyto elektrony se "ztratí" a musí být v reakčním centru nahrazeny přes oxidaci ◊chem{H2S} --- to je reakce typická pro zelené sirné bakterie
+}
+
+◊subsubsection{Rostliny}
+
+◊img["ps-1-ps-2.png" #:w 400]{Integrace fotosystému I a II v chloroplastech (tzv. z-schéma)}
+
+◊(add-abr "FSI" "fotosystém I")
+◊(add-abr "FSII" "fotosystém II")
+
+◊ls[#:t "Rostliny (a cyanobakterie)"]{
+    - spolupráce dvou fotosystémů (FSI a FSII)
+        - ◊abr{FSII} je podobný systému v purpurových bakteriích, má přibližně stejně chlorofylu A a B
+        - ◊abr{FSI} je podobný systému v chlorobech, má více chlorofylu A než B
+    - elektron z vody je nutné excitovat nadvakrát, aby byl schopen redukovat ◊chem{NADP+}
+    - cyklický a acyklický průběh (viz obrázek)
+        - cyklický generuje spíše ATP (protonový gradient)
+        - acyklický generuje spíše NADPH
+    - elektron ztracený v acyklické cestě se nahrazuje lýzou vody
+        - podobně jako se u chlorobů nahrazoval lýzou ◊chem{H2S})
+        - u tohoto se uvolňuje kyslík, jde o ◊strong{oxygenní fotosyntézu}
+    - protonový gradient vzniká při rozkladu vody a při průchodu elektronu komplexem cytochromu B6F
+    - vazebné místo pro ◊chem{PQ_B} je častým cílem herbicidů
+}
+
+Zápis celé reakce je pak ◊$${\ce{2H2O + NADP+ + 8f -> O2 + 2NADPH + 2H+},}
+
+přičemž na ◊abr{FSII} (a analogicky na ◊abr{FSI}) probíhá reakce ◊$${\ce{4P680 + 4H+ + 2PQ_B + 4f -> 4P680+ + 2PQ_BH2}.}
+
+◊subsubsection{Fotofosforylace}
+
+◊ls{
+    - velice podobná průběhu fosforylaci v ◊abr{mch}
+        - reakční centra, přenašeče elektronů a ATP syntáza jsou v membráně tylakoidů, která je neprostupná pro protony
+        - fotofosforylaci lze zablokovat stejnými látkami, které blokují fosforylaci v ◊abr{mch} (např. ventrucidin)
+        - syntéza ATP je katalyzována ◊chem{F_OF1} komplexy, které jsou podobné těm v ◊abr{mch}
+    - přenašeče elektronů v ◊abr{FSI} a ◊abr{FSII} jsou v membráně orientovány tak, aby dovnitř tylakoidů byly pumpovány protony
+    - za každé čtyři elektrony (tedy jednu molekulu ◊chem{O2}) se přepumpuje asi 12 protonů, což je cca 3ATP
+}
+
+◊img["photophosphorylation.png" #:w 400]{Pohyb protonů a elektronů během fotofosforylace}
+
+◊ls[#:t "ATP syntáza"]{
+    - velice podobná ATP syntáze v ◊abr{mch}, liší se pouze orientací
+        - v ◊abr{mch} je P strana v mezimembránovém prostoru, zatímco v chroloplastech je uvnitř tylakoidu (viz obrázek níže)
+    - podjednotky ◊chem{CF_O} a ◊chem{CF1} (C jako chloroplast)
+    - mechanismus je prakticky stejný jako v ◊abr{mch}
+        - ATP syntáza špenátu má 14 C podjednotek, tedy nejspíše má i menší "výkon" než savčí ATP syntázy s méně podjednotkami
+}
+
+◊img["atp-oritentation.png" #:w 400]{Orientace ATP syntázy}
 
 ◊title{Lipidy, mastné kyseliny a jejich metabolismus}
 
