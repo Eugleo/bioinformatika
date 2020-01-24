@@ -2914,18 +2914,18 @@ voda zde předává elektrony (v podobě vodíku) a redukuje ◊chem{CO2}.
 
 ◊img["absorption.png" #:w 350]{Absorbční spektra chlorofylů a jim podobných látek (obecně fotopigmentů)}
 
-Cholorofyly vždy tvoří ještě s dalšími proteiny ◊abr[#:new "light-harvesting complex"]{LHC}.
+Cholorofyly vždy tvoří ještě s dalšími proteiny tzv. light-harvesting complex.
 
-◊img["lhc.png" #:w 250]{LHCII, v buňce jako trimer (zde monomer). Skládá se ze 7 molekul chA, 5 molekul chB a 2 molekul luteinu.}
+◊img["lhc.png" #:w 250]{LHCII (v buňce jako trimer, na obrázku monomer). Skládá se ze 7 molekul chlorofylu A, 5 molekul chlorofylu B a 2 molekul luteinu.}
 
 ◊box["Evoluce chloroplastů"]{
     ◊ls{
         - oxygenní fotosyntéza je velice důležitá pro život na zemi, vznikla před cca ◊strong{2.5 miliardami let}
             - nejen proto, že z vody vyrábí organické sloučeniny, ale také proto, že uvolňuje kyslík
-        - chloroplasty vznikly nejspíše endosymbiózou (jako ◊abr{mch}), nejpíše cyanobakterií
-            - mají své DNA, transkripční a translační mechanismy
-            - umí se dělit
-            - část proteinů je ovšem importována z cytoplazmy
+        - chloroplasty vznikly nejspíše endosymbiózou, jako ◊abr{mch}
+            - konkrétně endosymbiózou cyanobakterií
+            - mají své DNA, transkripční a translační mechanismy, umí se dělit
+                - část proteinů je ovšem importována z cytoplazmy
         - cyanobakterie samotné mají jak fotosystém I, tak fotosystém II
             - zdá se, že u nich došlo ke kombinaci genetického materiálu dvou různých typů bakterií
     }
