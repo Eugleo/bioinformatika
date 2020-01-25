@@ -44,7 +44,7 @@ Biochemie pomáhá vysvětlovat rozmanitost přírody --- všechno tvorstvo stav
     - dále pak výzkumy malých molekul (byly dobře dostupné), objevy vitamínů, základních metabolických drah
     - J. Summer (1926)
         - krystalizace proteinu ureázy z bobů: velký milník, čistý materiál, navíc uměl katalyzovat štěpení močoviny => proteiny jako nositelé enzymové aktivity
-    - popisy glykolýzy, cyklu kyseliny citrónové, určení struktury DNA, krátce na to určení krystalové struktury myoglobinu(protein z vorvaně)
+    - popisy glykolýzy, cyklu kyseliny citrónové, určení struktury DNA, krátce na to určení krystalové struktury myoglobinu (protein z vorvaně)
     - poznání transformace energie (oxidativní fosforylace), fungování buňky a regulace jejího metabolismu
         - objevy všech velkých metabolických drah, počátek hledání jejich regulace
     - později (90. léta -- součastnost) spíše už ◊strong{systémové studium}
@@ -93,7 +93,7 @@ Biochemie pomáhá vysvětlovat rozmanitost přírody --- všechno tvorstvo stav
         }
 
         ◊term["Elektrofil"]{
-            Molekula, kteréchybí elektrony, chtěla by nějaké dostat. Často jí jsou předány nukleofilem.
+            Molekula, které chybí elektrony, chtěla by nějaké dostat. Často jí jsou předány nukleofilem.
         }
     }
 
@@ -141,7 +141,7 @@ Strukturu a vlastnosti vody silně ovlivňuje tvorba vodíkových můstků.
     - vzdálenost je jen 1.8 ◊angs, což je méně než VdW vzdálenost (2.6 ◊angs) bez této interakce
     - každá molekula vody může vázat 4 partnery (dva jako donor, dva jako akceptor)
         - u ledu tomu tak opravdu je, jeho krystaly mají hexagonální tvar => má nižší hustotu než voda
-        - v kapalině je tato vlastnost také skoro zachována: vysoké procentomoekul má 4 partnery, samotní konkrétní partneři se ale stále mění
+        - v kapalině je tato vlastnost také skoro zachována: vysoké procento molekul má 4 partnery, samotní konkrétní partneři se ale stále mění
             - fluktuující struktury obsahující desítky molekul: stále se tvoří a zanikají (co 10--11 sekund) => tvorba až sedmičlenných clusterů
             - vysoká mobilita molekul; donedávna jsme netušili, jak extenzivní ty interakce jsou (jde o celou jejich síť)
     - ionty ◊chem{OH-} a ◊chem{H3O+} jsou vysoce mobilní (viz obrázek)
@@ -198,7 +198,7 @@ Hydrofobní interakce jsou vlastně ◊strong{negativně vyvolané reakce}: jsou
 }
 
 ◊$${
-    \text{pH} = \log \frac{1}{[\ce{H+}]} = -\log [\ce{H+}] = pK_a - \log \frac{[\ce{HA}]}{\ce{A-}} \stackrel{\text{pro vodu}}{=} -\log [\ce{H3O+}],
+    \text{pH} = \log \frac{1}{[\ce{H+}]} = -\log [\ce{H+}] = pK_a - \log \frac{[\ce{HA}]}{[\ce{A-}]} \stackrel{\text{pro vodu}}{=} -\log [\ce{H3O+}],
 }
 
 přičemž předposlední rovnosti se říká Hendersonova-Hasselbalchova rovnice a popisuje vztah mezi složením pufru a jeho kyselostí. Pro vodu zároveň platí
@@ -227,7 +227,7 @@ kde ◊${K_w} značí ◊em{iontový součin} vody a je za běžných podmínek 
 
 ◊img["titration-curve.png" #:w 400 #:label "Titrační křivka"]{Titrační křivka}
 
-Pokud budeme vybírat pufr, musím volit tak, aby poměr soli a kyseliny byl roven jedné právě v oblasti, ve které budeme pracovat.
+Pokud budeme vybírat pufr, musíme jej zvolit tak, aby poměr soli a kyseliny byl roven jedné právě v oblasti, ve které budeme pracovat.
 
 ◊ls[#:t "Polyprotní kyseliny"]{
     - acidobazické skupiny v jedné molekule se navzájem ovlivňují
@@ -281,7 +281,7 @@ Existuje i jiný systém pojmenovávání stereoizomerů L a D, a to tzv. ◊em{
         - priorita substituentů je určována podle velikosti skupiny
         - vodík se umístí tak, aby byl za uhlíkem
     - pokud jde šipka po směru hodinových ručiček, jedná se o R sloučeninu (rectus = pravý), jinak se jedná o S sloučeninu (sinister = levý)
-    - všechny AK v těle, s výjimkou cysteinu, jsou (S)- sloučeniny
+    - všechny AK v těle, s výjimkou cysteinu, jsou S-sloučeniny
 }
 
 ◊img["r-s-enantiomer.png" #:w 400]{Pojmenování R/S systémem}
@@ -290,10 +290,10 @@ Existuje i jiný systém pojmenovávání stereoizomerů L a D, a to tzv. ◊em{
     - histamin: význam v alergických reakcích (nastane dekarboxylace histidinu, vznikne histamin)
         - histidin získáváme z potravy, neumíme ho syntetizovat
     - dopamin: prekurzor neurotransmiterů, regulačně aktivní látka
-    - kyselina gama-aminomáselná (vzniká dekarboxylací kyseliny glutamové)
+    - kyselina ◊|gamma|-aminomáselná (vzniká dekarboxylací kyseliny glutamové)
     - látky odvozeny jednoduchými reakcemi z AK (velmi důležité)
-    - některé AK jsou součástí metabolismu látek, které se běžně v proteinech nevyskytují
-        - citrulin (~ Arg) a ornitin (~ Lys) jsou součástí cyklu močoviny
+    - některé AK, které se běžně v proteinech nevyskytují, jsou součástí nějaké metabolické dráhy
+        - např. citrulin (~ Arg) a ornitin (~ Lys) jsou součástí cyklu močoviny
 }
 
 ◊subsection{Acidobazické vlastnosti AK}
@@ -334,7 +334,7 @@ Důležitá je imidazolová skupina, která ma jako ◊em{jediná} ◊${pK_a} bl
     - methylace: důležité na histonech
     - fosforylace: zásadní regulační funkce
         - serin, threonin, tyrosin
-    - acetyace: typicky Lys, vnik amidové vazby, která mění pH (při pH 7 pak už Lys nebude kladně nabitý)
+    - acetylace: typicky Lys, vnik amidové vazby, která mění pH (při pH 7 pak už Lys nebude kladně nabitý)
         - když Lys acetylujeme v jádře, ovlivňujeme interakce proteinů s NK (ty jsou totiž záporně nabité)
     - karboxylace
 }
@@ -361,7 +361,7 @@ Proteiny jsou tvořeny AK spojenými peptidickou vazbou, nebo ◊chem{S-S} vazbo
         - fibrilární jsou založené na neustálém opakování sekundárních struktur
         - první analýzy se dělaly na fibrilárních proteinech, je to jednodušší
     - tři druhy helixů
-    - paralelní a antiparalelní uspořádání beta-řetězců
+    - paralelní a antiparalelní uspořádání ◊|beta|-řetězců
 }
 
 Všechny tyto pojmy lze nalézt popsány v odkazech výše.
@@ -385,13 +385,13 @@ Podobně se dají predikovat i jiné sekundární struktury, například levoto�
 
 ◊ls[#:t "Beta list"]{
     - R míří nad a pod řetězec, můžeme opět tvořit strukturu s různými vlastnostmi na dvou stranách
-    - většinou max 6 AK na 6 AK, někdy ale i větší (např. beta-keratiny)
+    - většinou max 6 AK na 6 AK, někdy ale i větší (např. ◊|beta|-keratiny)
 }
 
 ◊ls[#:t "Supersekundární motivy"]{
-    - beta-alfa-beta
-    - beta vlásenka
-    - alfa-alfa
+    - ◊|beta|-◊|alpha|-beta
+    - ◊|beta| vlásenka
+    - ◊|alpha|-◊|alpha|
     - motiv řeckého klíče
 }
 
@@ -400,19 +400,19 @@ Podobně se dají predikovat i jiné sekundární struktury, například levoto�
 Kombinace sekundárních a supersekundárních struktur tvoří ◊strong{domény} --- útvary, které zaujmou stabilní konformaci i když jsou exprimovány odděleně od zbytku proteinu (= samostatné jednotky, co se foldu týče).
 
 ◊ls[#:t "Domény"]{
-    - alfa domény
+    - ◊|alpha| domény
         - svazky čtyř helixů v cytochromu b562 u E. coli, lidský růstový hormon
-    - beta domény
-        - beta sendvič: imunoglobulinový motiv
-            - dva přeložené beta-listy tvoří sendvič, stabilizace je dána tím,že vnitřní strana je hydrofobní
-        - beta barel: retinol-vazebný proteinu
-            - pokud budeme beta list stáčet jako papír, bude mít tendenci se zkrucovat, vytvoří soudek (beta barel)
+    - ◊|beta| domény
+        - ◊|beta| sendvič: imunoglobulinový motiv
+            - dva přeložené ◊|beta|-listy tvoří sendvič, stabilizace je dána tím,že vnitřní strana je hydrofobní
+        - ◊|beta| barel: retinol-vazebný proteinu
+            - pokud budeme ◊|beta| list stáčet jako papír, bude mít tendenci se zkrucovat, vytvoří soudek (◊|beta| barel)
             - může sloužit jako pór pro molekuly vody
         - kombinace řeckých klíčů: bakteriální amidáza
-        - beta-listy, které dělají částečně plošné struktury
+        - ◊|beta|-listy, které dělají částečně plošné struktury
             - na okrajích listů se tvoří vazebná místa, aktivní centra
-    - alfa-beta domény
-        - alfa-beta barel: součást trióza-fosfát-izomerázy
+    - ◊|alpha|-◊|beta| domény
+        - ◊|alpha|-◊|beta| barel: součást trióza-fosfát-izomerázy
             - jeden z nejstabilnějších proteinových tvarů v přírodě
 }
 
@@ -508,12 +508,12 @@ Jak se zdá z Levinthalova paradoxu, dělá to příroda nějak jinak.
 Někdy se může protein dostat do "pasti" (je nutné překonat stav s vyšší energií, než se bude možné dostat ke globálnímu minimu) --- tu mu mohou pomoci překonat ◊strong{chaperony}.
 
 ◊ls[#:t "Proteinové struktury"]{
-    - alfa-keratin je příkladem superhelixu
+    - ◊|alpha|-keratin je příkladem superhelixu
         - helixy se skládají do dimerů, ty do protofilament a ty do mikrofibril
-            - na obrátku je ve dvojitém helixu pouze 5.1, na rozdíl od 5.4 v alfa-helixu
+            - na obrátku je ve dvojitém helixu pouze 5.1, na rozdíl od 5.4 v ◊|alpha|-helixu
             - každá 4. a 6. (tj. poslední na otáčku) AK je hydrofobní a dva helixy se tak zazipují do dimeru (hydrofobními AK k sobě)
         - pružnost keratinu klesá s rostoucím množstvím příčných disulfidových vazeb mezi protofibrilami
-    - fibroin je příkladem beta skládaného listu, je to složka např. hedvábí nebo pavučin
+    - fibroin je příkladem ◊|beta| skládaného listu, je to složka např. hedvábí nebo pavučin
         - v β-strukturách se střídají vrstvy postranních řetězců glycinu s řetězci alaninu a serinu
     - kolagen, složka např. chrupavek, je příkladem trojitého helixu
         - každým třetím zbytkem jeho polypeptidu je glycin, obsahuje ale také relativně mnoho prolinu a hydroxyprolinu
@@ -564,7 +564,7 @@ Někdy se může protein dostat do "pasti" (je nutné překonat stav s vyšší 
 ◊subsubsection{Hemoglobin}
 
 ◊ls{
-    - tetramer se dvěma alfa a dvěma beta podjednotkami, každá z nich má konjugovaný heterocyklický systém s ◊chem{Fe^2+} (HEM), hemoglobin tedy jejich prostřednictvím umí vázat 4 molekuly kyslíku
+    - tetramer se dvěma ◊|alpha| a dvěma ◊|beta| podjednotkami, každá z nich má konjugovaný heterocyklický systém s ◊chem{Fe^2+} (HEM), hemoglobin tedy jejich prostřednictvím umí vázat 4 molekuly kyslíku
     - po vazbě kyslíku se mění kvartérní struktura
         - např. u konce molekuly jedné podjednotky vůči druhému konci jiné
         - dále se mění i díra uprostřed (oxygenací se zmenší)
@@ -584,11 +584,11 @@ Ve interakci podjenotek spočívá sigmoidní chování.
 ◊img["porphyrin.png" #:w 400]{Změny ve struktuře po vazbě kyslíku}
 
 ◊ls[#:t "Změny při vazbě kyslíku"]{
-    - v deoxygenovaném stavu (= ◊strong{R}, relaxed) je molekula porfyrinu deformována, není rovinná => vázaný hem je umístěn v dutině (kavitě)
+    - v deoxygenovaném stavu (= ◊strong{T}, tense) je molekula porfyrinu deformována, není rovinná => vázaný hem je umístěn v dutině (kavitě)
         - to má za následek řadu dalších změn, ke kterým v rámci podjednotky dochází
-        - mám tzv. ◊em{domovou strukturu}, kyslík se setkává s nižší afinitou, než kdyby byl hem "vystrčený"
+        - má tzv. ◊em{domovou strukturu}, kyslík se setkává s nižší afinitou, než kdyby byl hem "vystrčený"
         - je to způsobeno vazbami u železa, které jsou bez vázaného kyslíku delší a vytvoří onu proláklinu
-    - po vazbě kyslíku (= ◊strong{T}, tense) se porfyrin narovná a přes blízký histidin (◊em{proximální histidin}) přesune část pohybu i na helix F (viz obrázek), ten přesune pohyb i na zbývající podjednotky v molekule
+    - po vazbě kyslíku (= ◊strong{R}, relaxed) se porfyrin narovná a přes blízký histidin (◊em{proximální histidin}) přesune část pohybu i na helix F (viz obrázek), ten přesune pohyb i na zbývající podjednotky v molekule
         - struktura funguje jako mechanický převodník
         - hem se trochu vystrčí a má vyšší afinitu ke kyslíku
 }
@@ -600,7 +600,7 @@ Ve interakci podjenotek spočívá sigmoidní chování.
     - analogicky pro α2
 }
 
-Podjetnotky α1 + β1 jsou tedy téměř nepohyblivě spojené, struktura se tedy dá vnímat jako dva dimery spíše čtyři monomery. Mezi těmito dvěma podjednotkami bude docházet k pohybům, při oxygenaci se vůči sobě otočí o 15 ◊|deg|. Také se změní pozice tyrosinu z C helixu vůči histidinu, viz obrázek.
+Podjetnotky α1 + β1 jsou tedy téměř nepohyblivě spojené, struktura se tedy dá vnímat jako dva dimery spíše než čtyři monomery. Mezi těmito dvěma podjednotkami bude docházet k pohybům, při oxygenaci se vůči sobě otočí o 15 ◊|deg|. Také se změní pozice tyrosinu z C helixu vůči histidinu, viz obrázek.
 
 ◊img["t-r-state.png" #:w 300]{Stavy T a R na rozhraní podjednotek}
 
@@ -608,7 +608,7 @@ Podjetnotky α1 + β1 jsou tedy téměř nepohyblivě spojené, struktura se ted
     Změny stavů a posouvání molekul se dají srovnat s pohybem a vzájemným posunem dvou pěstí; vždy se posunou o jeden prst, jakýkoli mezistav bude náročné udržet.
 }
 
-Sigmoidní tvar je tedy způsoben tím, že první kyslík se váže relativně složitě (hem je zastrčený), po jeho navázání ale vnutní daná podjednotka rovnější tvar porfyrinu i ostatním podjednotkám a další kyslíky se už váží čím dál snadněji. Po nasycení hemoglobinu se saturační křivka opět vyrovná. Kdybychom měli oligomer s více než čtyřmi podjednotkami, mohl by se chovat ještě více kooperativně a mít ještě prudší křivku.
+Sigmoidní tvar je tedy způsoben tím, že první kyslík se váže relativně složitě (hem je zastrčený), po jeho navázání ale vnutí daná podjednotka rovnější tvar porfyrinu i ostatním podjednotkám a další kyslíky se už váží čím dál snadněji. Po nasycení hemoglobinu se saturační křivka opět vyrovná. Kdybychom měli oligomer s více než čtyřmi podjednotkami, mohl by se chovat ještě více kooperativně a mít ještě prudší křivku.
 
 Pokud bychom oslabili nějaká spojení, získali bychom plošší křivku, oslabilo se kooperativní chování (jednotky by se tak neovlivňovaly). Pokud by se naopak posílily vazby, dlouho by se nic nevázalo, dokud by parciální tlak nevzrostl až do určité hodnoty --- první navázání kyslíku by mělo před sebou více práce; čím pevnější vazby mezi podjednotkami budou, tím se bude celek chovat kooperativněji, stylem všechno nebo nic.
 
@@ -673,7 +673,7 @@ Celý orchestr je zorganizován tak, aby se využila maximální transportní ka
             - v pH 6.5, což je pK' imidazolu, by ho byla protonována cca polovina, ale je-li tam přiblížený aspatát, tak je protonována větší část
 }
 
-Bohrův efekt je vlastně v principu analogický k působení bisosfoglycerové kyseliny, chloridových iontů a podobně.
+Bohrův efekt je vlastně v principu analogický k působení bifosfoglycerové kyseliny, chloridových iontů a podobně.
 
 BPG nemění strmost křivky, pouze ji celou posouvá doprava (měníme p50). Strmost křivky se mění pouze změnou proteinu samotného, protože je závislá na míře kooperativního chování. Je sice jednoduché udělat křivku méně strmou (např. denaturací), ovšem opaku je relativně složité dosáhnout.
 
@@ -700,7 +700,7 @@ Popisujeme v nich chování hemoglobinu jako modelu, obdobně se budou chovat i 
         - na počátku jsou všechny ve stavu T
     - afinita protomeru pro vazbu ligandu se mění s množstvím ligandu navázaného v oligomeru
     - není to vše nebo nic
-        - vazba ligandu vede k částečné změn, tzv. ◊em{iduced fit}
+        - vazba ligandu vede k částečné změně, tzv. ◊em{induced fit}
         - tento model proto více odpovídá realitě
 }
 
@@ -732,9 +732,9 @@ Popisujeme v nich chování hemoglobinu jako modelu, obdobně se budou chovat i 
     - Emil Fischer
         - pracoval na cukrech; cukry mají spoustu izomerů, které se jen mírně liší strukturou, ale přesto jen některé z nich jsou katalyzovány enzymy
         - přišel s teorií zámku a klíče, která tvrdí, že enzym má vazebné místo, které tvarově odpovídá molekule substrátu a to tak dokonale, že většina enzymů může katalyzovat jen jeden substrát
-     - Maud Leonora Mentenová
+    - Maud Leonora Mentenová
         - kanadská badatelka, pracovala v Německu, věnovala se enzymové kinetice
-     - James B. Sumner
+    - James B. Sumner
         - jako první izoloval čistý enzym, ureázu
             - ureáza je protein, který rozkládá močovinu
         - dokázal, že enzymy jsou proteiny
@@ -750,7 +750,7 @@ Enzymy urychlují reakce, jsou tedy nezbytné pro život --- například energie
         - většina dalších organismů žije a má teplotní optimum v normálním tlaku, neutrálním pH a teplotě 30--40◊|deg|
     - vyšší specificita reakce
         - enzymy se málokdy pletou, pracují jen se svým substrátem a to ještě k tomu velice rychle
-        - např. proteosyntéza umí syntetizovat dlouhý řetězec bez chyby, naproti tomu u anorganické syntézy je pouze 30--40 AK nasyntetizováno neomylně
+        - např. proteosyntáza umí syntetizovat dlouhý řetězec bez chyby, naproti tomu u anorganické syntézy je pouze 30--40 AK nasyntetizováno neomylně
     - schopnost regulace
         - anorganické katalyzátory někam nasypeme a tam dělají to, čeho jsou schopny, zatímco enzymy mohou být regulovány
         - regulace rychlosti je velice důležitá pro spolupráci katabolických drah s anabolickými
@@ -760,7 +760,7 @@ Enzymy urychlují reakce, jsou tedy nezbytné pro život --- například energie
 
 ◊definitions{
     ◊term["Koenzym"]{
-        Neproteinová část enzymu; ne všech enzymy ji však mají.
+        Neproteinová část enzymu; ne všechny enzymy ji však mají.
     }
 
     ◊term["Apoenzym"]{
@@ -782,7 +782,7 @@ Koenzymů je celá řada.
         - hemoglobin
     - draslík
         - pyruvát kináza, důležitý enzym glykolýzy
-     - hořečnaté ionty
+    - hořečnaté ionty
         - většina enzymů, které pracují s ATP, obsahují hořečnaté ionty, protože jejich náboje interagují s fosfátovými skupinami ATP
     - zinek
         - alkohol dehydrogenáza, důležitý enzym sloužící k syntéze nebo k odbourávání ethanolu
@@ -800,7 +800,7 @@ Druhý zmíněný druh poté může sloužit k různým účelům:
 ◊ls{
     - mohou akceptovat nějakou funkční skupinu, pak se zase odpojit a přenést ji dále
     - podílejí se na karboxylacích (přenáší karboxylovou skupinu z jedné části enzymu na jinou, slouží jako takové pohyblivé raménko)
-    - důležité jsou koenzymy flavin adenin dinukleotid (FAD), který přenáší elektrony, a nikotinamid adenin dinukleotid (NAAD), který přenáší hydridové ionty
+    - důležité jsou koenzymy flavin adenin dinukleotid (FAD), který přenáší elektrony, a nikotinamid adenin dinukleotid (NAD), který přenáší hydridové ionty
 }
 
 ◊section{Názvosloví enzymů}
@@ -821,12 +821,12 @@ První číslo je vždy v rozmezí 1--6, protože se jedná o rozdělení enzymu
         - např. spojování Okazakiho fragmentů
 }
 
-◊note{Enzymy katalyzující syntézy se nazívají ◊strong{sytázy} nebo ◊strong{syntetázy}. Rozdíl mezi nimi je ten, že ◊em{syntetázy} potřebují makroergní molekulu, zatímco ◊em{syntázy} ne.}
+◊note{Enzymy katalyzující syntézy se nazívají ◊strong{syntázy} nebo ◊strong{syntetázy}. Rozdíl mezi nimi je ten, že ◊em{syntetázy} potřebují makroergní molekulu, zatímco ◊em{syntázy} ne.}
 
 ◊box["Příklad 1"]{
     Pokud máme například následující reakci:
 
-    ◊$${\ce{ATP + glukosa -> ADP + glugosa-6-fosfat}}
+    ◊$${\ce{ATP + glukóza -> ADP + glukóza-6-fosfát}}
 
     Jedná se o první reakci glykolýzy;  glukóza, která vstoupila do buňky, je fosforylována. Význam této reakce je dvojí:
     ◊ls{
@@ -852,7 +852,7 @@ První číslo je vždy v rozmezí 1--6, protože se jedná o rozdělení enzymu
     ◊ls{
         - oxido-reduktáza
         - působí na ◊chem{CHOH} skupinu donoru
-        - využívá NAAD
+        - využívá NAD
         - donorem ◊chem{CHOH} skupiny je ethanol
     }
 
@@ -868,7 +868,7 @@ Probíhá buďto změnou kvantity samotného enzymu (musí nastat aktivace prote
         - netýká se to přímo regulace aktivity enzymu, ale pokud nedodáme substrát, nemůže reakce běžet
         - např. glykolýza
     - alosterická regulace
-        - alosterické enzymy jsou takové, jejichž aktivita je regulována navázáním molekuly, jiné, než samotný substrát
+        - alosterické enzymy jsou takové, jejichž aktivita je regulována navázáním molekuly, jiné, než samotného substrátu
     - regulace kovalentními modifikacemi
         - např. pomocí protein-kinázy (adenylát-cykláza aktivuje protein-kinázu A a ta zase fosforyluje něco jiného)
         - opět dochází ke změnám konformace
@@ -933,7 +933,7 @@ O tom, jak konkrétně enzym snižuje potřebnou energii se zmiňuje několik r�
     - kdyby to tak ale bylo ve skutečnosti, molekula prostě do enzymu zapadne a v klidu tam zůstane --- k žádnému snižování energie by nedošlo
 }
 
-◊ls[#:t "Teorie indukovaného přizpůsobení."]{
+◊ls[#:t "Teorie indukovaného přizpůsobení"]{
     - vazebné místo odpovídá klíči jen přibližně a teprve při přichycení se začínají tvořit další vazby
     - vznikne napětí a dojde ke změnám konformace substrátu i enzymu
         - u toho se uvolňuje vazbená energie, takže reakce může probíhat snadněji
@@ -958,7 +958,7 @@ Nechť sledujeme rovnici
 
 ◊$${\ce{E + S <=>[k_1, k_{-1}] ES ->[k_2] P + E},}
 
-poté základní rovnice M-M rovnice vypadá následovně
+poté základní rovnice M-M vypadá následovně
 
 ◊$${v_0 = \frac{V_{max}[S]}{K_M + [S]},}
 
@@ -978,7 +978,7 @@ Někdy se uvádí také ◊strong{katalytická konstanta} ◊${k_{cat}},
 
 kde ◊${[E]_T} značí celkovou koncentraci enzymu. Vyjadřuje, kolik molekul substrátu je enzym za vysoké koncentrace za jednotku času schopen přeměnit.
 
-Protože koncentrace substranu in vivo je mnohem nižší než aby mohlo být dosaženo maximální rychlosti, zavádí se ještě ◊strong{konstanta specificity}, která se počítá jako poměr ◊${k_cat} a ◊${K_M}.
+Protože koncentrace substrátu in vivo je mnohem nižší než aby mohlo být dosaženo maximální rychlosti, zavádí se ještě ◊strong{konstanta specificity}, která se počítá jako poměr ◊${k_{cat}} a ◊${K_M}.
 
 ◊img["k-m-k-cat.png"]{Michaelisova konstanta, katalytická konstanta a konstanta specificity pro vybrané enzymy}
 
@@ -1104,7 +1104,7 @@ Bisubstrátové reakce jsou v těle vůbec nejčastější.
         - ◊strong{fosfageny}: zásobní látky
             - např. fosfokreatin (◊u{43 kJ/mol}), u člověka je ve svalech jako nejrychlejší zásobárna energie
                 - může vstupovat do reakce kreatin + ATP, vzniká fosfokreatin a ADP, to se děje, je-li fosfát v nadbytku; jinak se reakce otočí
-        ◊strong{sloučeniny s pyrofosfátovou vazbou}: všechny nukleosid-triosfáty
+        - ◊strong{sloučeniny s pyrofosfátovou vazbou}: všechny nukleosid-trifosfáty
             - ATP, GTP, UTP, CTP atd.
             - účastní se tvorby nukleotidů
             - mohou se štěpit různými způsoby, v buňce však probíhá pouze hydrolýza ATP na ADP a fosfát
@@ -1236,7 +1236,7 @@ se po katalýze stane reakce
     }
 
     ◊term["Enzymy aktivované kovovými ionty"]{
-        Volně váží kovové ionty (především ionty kovů alkalických zemin: Na, K, Mg, Ca. ) z roztoku, vyžadují je pro svoji aktivitu.
+        Volně váží kovové ionty (především ionty kovů alkalických zemin: Na, K, Mg, Ca) z roztoku, vyžadují je pro svoji aktivitu.
     }
 }
 
@@ -1273,7 +1273,7 @@ Například ◊em{hexokinázová reakce}, ve které figuruje i hořečnatý iont
 ◊ls{
     - stabilizace relativní orientace skupin vůči sobě a omezení jejich pohybu
     - opět např. u hexokinázové reakce
-        - hydroxylová skupina glukózy atakuje elektrondeficientní na gama fosfátu ATP
+        - hydroxylová skupina glukózy atakuje elektrondeficientní ◊|gamma|-fosfát ATP
         - skupina musí přistupovat ke druhé molekule reaktantu (◊|gamma|-fosfátu) tak, že je orientována ve směru osy vazby
 }
 
@@ -1385,15 +1385,15 @@ Další možnosti regulace jsou např. existence neštěpitelného pseudosubstr�
 
 ◊definitions{
     ◊term["Monosacharidy"]{
-        Monosacharidy jsou aldehydové (◊strong{aldózy}) nebo ketonové deriváty polyhydroxyalkoholů s alespoň třemi uhlíky v řetězci, nelze je hydrolyzovat na jednodušší.
+        Monosacharidy jsou aldehydové (◊strong{aldózy}) nebo ketonové (◊strong{ketózy}) deriváty polyhydroxyalkoholů s alespoň třemi uhlíky v řetězci. Od složitějších sacharidů se liší tím, že je nelze hydrolyzovat na jednodušší látky.
 
         Nejstabilnější jsou cyklické sacharidy, většinou mají 5 nebo 6 uhlíků.
     }
 
     ◊term["D a L forma"]{
-        Sacharidy jsou opticky aktivní látky, monosacharidy mají jedno chirání centrum, delší řetězce pak i více (tvoří ◊${2^n} izomerů, kde ◊${n} je počet chirálních uhlíků).
+        Sacharidy jsou opticky aktivní látky: aldóza s ◊${n} uhlíky má ◊${n-2} chirálních center (všechny kromě prvního a posledního), ketóza by měla ◊${n-3} (ještě minus ten s keto skupinou). Takové látky pak tvoří ◊${2^k} izomerů, kde ◊${k} je počet chirálních uhlíků.
 
-        D forma je taková, kdy nejvzdálenější ◊chem{OH} skupina od chirálního uhlíku má stejnou konformaci jako D-glyceraldehyd ---  hydroxylovou skupinu má ◊strong{napravo}.
+        D forma je taková, kdy ◊chem{OH} skupina nejvzdálenější od ◊chem{C=O} skupiny (na obrázcích většinou ta spodní) má stejnou konformaci jako D-glyceraldehyd ---  je ◊strong{napravo}.
     }
 }
 
@@ -1419,7 +1419,7 @@ Další možnosti regulace jsou např. existence neštěpitelného pseudosubstr�
 
 ◊img["glucose.png" #:w 100]{D-glukóza}
 
-Dále ještě galaktóza (je součástí laktózy, sacharidu, který se vyskytuje v mléce placentálů), manóza a idóza --- poslední dvě zmíněné jsou v mezibuněčné hmotě v podobně glykosamidoglykanů. Z aldopentóz poté ribóze, která je součástí DNA a RNA.
+Dále ještě galaktóza (je součástí laktózy, sacharidu, který se vyskytuje v mléce placentálů), manóza a idóza --- poslední dvě zmíněné jsou v mezibuněčné hmotě v podobně glykosamidoglykanů. Z aldopentóz poté ribóza, která je součástí DNA a RNA.
 
 ◊img["ketoses.jpg"]{D-ketózy}
 
@@ -1445,9 +1445,13 @@ D-fruktóza (častý zdroj energie, důležitý metabolit některých drah, je v
     - podobně pro fruktózu (◊|alpha|/◊|beta| D-frukto◊em{furanóza})
 }
 
-Z lineární glukózy vznikají ◊|alpha|/◊|beta| formy v určitém poměru, který je typický pro každý sacharid. Po určité době nastane v roztoku rovnováha, výsledný úhel stočení světla je dán váženým průměrem obou forem. Tomuto jevu ustanovení rovnováhy se říká ◊strong{mutarotace}. Kdyby stáčely stejně a vznikaly půl na půl, tak úhel bude ve výsledku nula (◊strong{racemická směs}).
+◊ls[#:t "Mutarotace"]{
+    - ◊|alpha|/◊|beta| formy vznikají v určitém poměru (typickém pro daný cukr)
+    - po určité době nastane v roztoku rovnováha, výsledný úhel stočení světla je dán váženým průměrem obou forem
+        - kdyby obě formy stáčely o stejně velký úhel (s opačným znaménkem), a byly v roztoku v poměru 1:1, výsledný roztok by světlo nestáčel (tzv. ◊strong{racemát})
+}
 
-Cyklické sacharidy se vyskytují ve vaničkové a židličové konformai; židličková je ta stabilnější => častější.
+Cyklické sacharidy se vyskytují ve vaničkové a židličové konformaci; židličková je ta stabilnější => častější.
 
 ◊section{Deriváty monosacharidů}
 
@@ -1496,17 +1500,17 @@ Cyklické sacharidy se vyskytují ve vaničkové a židličové konformai; židl
 ◊ls{
     - podjednotky jsou spojené glykosidickou vazbou
     - příklady
-        - sacharóza se skládá z glukózy a fruktózy spojených ◊|alpha|-1,2 glykosidickou vazba,
-        - laktóza, mléčný cukr, z glukózy a galaktózy propojených ◊|beta|-1,4 glykosidickou vazbou
+        - sacharóza se skládá z glukózy a fruktózy spojených ◊|alpha|1->2 glykosidickou vazbou
+        - laktóza, mléčný cukr, z glukózy a galaktózy propojených ◊|beta|1->4 glykosidickou vazbou
         - ostatní ze dvou glukóz, různě propojených
     - způsob propojení má zásadní podíl na vlastnostech vzniklé látky
-        - redukující disacharidy mají glykosidickou vazbu 1,4 nebo 1,6 (např. laktóza, maltóza)
-        - neredukující disacharidy mají glykosidickou vazbu 1,1, nebo 1,2 a jsou tak obsazeny obě poloacetalové ◊chem{OH} skupiny
+        - redukující disacharidy mají glykosidickou vazbu 1->4 nebo 1->6 (např. laktóza, maltóza)
+        - neredukující disacharidy mají glykosidickou vazbu 1->1, nebo 1->2 a jsou tak obsazeny obě poloacetalové ◊chem{OH} skupiny
 }
 
 ◊img["glykosidic-bond.png" #:w 400]{Glykosidická vazba}
 
-◊note{Některé druhy placentálů, zejména ty v polárních oblastech, nemají v mléca laktózu; její úlohu zastanou tuky a bílkoviny.}
+◊note{Některé druhy placentálů, zejména ty v polárních oblastech, nemají v mléce laktózu; její úlohu zastanou tuky a bílkoviny.}
 
 ◊ls[#:t "Trehalóza"]{
     - důležitý pro odolnost organismu vůči mrazovému stresu napříč organismy od kvasinek po obratlovce
@@ -1540,7 +1544,7 @@ Cyklické sacharidy se vyskytují ve vaničkové a židličové konformai; židl
 ◊ls[#:t "Zásobní polysacharidy"]{
     - např. škrob u rostlin, glykogen u živočichů
     - škrob se vyskytuje ve 2 formách, ◊em{amylóza} a ◊em{amylopektin}
-        - glukózy, ◊|alpha|-1,4
+        - glukózy, ◊|alpha|1->4
         - 20% je tvořeno amylózou jejíž helixy nejsou příliš pevné
         - 80% je tořeno amylopektinem, po cca 24--30 jednotkách se větví
             - => mnoho neredukčních konců => rychlejší odbourávání (probíhá právě od těch neredukčních konců)
@@ -1558,7 +1562,7 @@ Příklad heteropolysacharidů.
 }
 
 ◊ls[#:t "Funkce"]{
-    - jsou jednou z nejdůležitějších složek mezibuněčné hmoty živočichů, složkou proteoglykanů
+    - jsou jednou z nejdůležitějších složek mezibuněčné hmoty živočichů a jsou i složkou proteoglykanů
     - mají v mezibuněčné hmotě funkci mechanickou (působí jako tlumiče nárazů na tkáně)
         - často se jmenují podle místa výskytu, napříkald chondroitin-sulfát v chrupavce, dermatan-sulfát v dermis, keratan-sulfát v rohovině
         - hyaluronát je v celé mezibuněčné hmotě
@@ -1580,7 +1584,7 @@ Jsou součástí ◊strong{proteoglykanů}.
 ◊ls[#:t "Proteoglykany"]{
     - velké komplexy proteinů a heteropolysacharidů v bezbuněčné hmotě
     - jejich struktura se označuje jako ◊strong{kartáčová} (viz obrázek)
-        - páteř tvoří kyselina hyaluronová, na ní jsou vázány ◊em{Core} proteiny a na ně pak řetězce gylkosaminogylkanů
+        - páteř tvoří kyselina hyaluronová, na ní jsou vázány ◊em{Core} proteiny a na ně pak řetězce glykosaminogylkanů
         - core protein na sobě má navázány ◊chem{N}- a ◊chem{O}- glykosylované sacharidy a řetězce glykosaminoglykanu
     - jen asi 5% proteoglykanů tvoří proteinová složka, 95 % je cukerná
 }
@@ -1611,7 +1615,7 @@ Jsou součástí ◊strong{proteoglykanů}.
     - vlastní téměř všem živočichům (kromě pár bakterií)
     - zdroj energie
     - jedna z hlavních regulačních reakcí glykolýzy
-        - ty bývají na začátku (zablokování tvorby meziproduků)a an konci metabolických drah (pro hromadění meziproduktů)
+        - ty bývají na začátku (zablokování tvorby meziproduků) a na konci metabolických drah (pro hromadění meziproduktů)
     - sestává se z deseti biochemických reakcí, behem kterých se glukóza mění na pyruvát
     - další procesy závisejí na prostředí
         - ◊strong{za anaerobních podmínek:}
@@ -1630,7 +1634,7 @@ Jsou součástí ◊strong{proteoglykanů}.
 ◊ls[#:t "Glykolýza má dvě části"]{
     - ◊strong{přípravná}
         - 5 fází
-        - přeměna glukózy na dvě změnitelné triózy
+        - přeměna glukózy na dvě zaměnitelné triózy
     - ◊strong{výkonná}
         - 5 fází
         - generování ATP (energetický zisk)
@@ -1649,10 +1653,9 @@ Jsou součástí ◊strong{proteoglykanů}.
     - nespecifický enzym (může katalyzovat celou řadu reakcí)
     - katalyzuje první reakci
     - kinázy patří mezi transferázy = enzymy přenášející fosfát
-        - mění glukózu na glukózu-6-fosfát
-                - tzn. přenese fosfát na hexózu
+        - mění glukózu na glukózu-6-fosfát (tzn. přenese fosfát na hexózu)
     - hexokináza fosforyluje:
-        - ve většině tkáních glukózu, manózu, ...
+        - ve většině tkání glukózu, manózu, ...
         - ve slinivce a játrech jen glukózu = glukokináza
             - účastní se udržování hladiny glukózy v krvi
 }
@@ -1677,7 +1680,7 @@ Jsou součástí ◊strong{proteoglykanů}.
 
 ◊ls[#:t "Hořčíkové kationty"]{
     - kofaktorem reakcí valné většiny kináz
-    - stíní náboj na kyslíkových atomech (na beta-galaktofosfátu na ATP)
+    - stíní náboj na kyslíkových atomech (na ◊|beta|-galaktofosfátu na ATP)
     - usnadňují přenos fosfátové skupiny
 }
 
@@ -1687,7 +1690,7 @@ Jsou součástí ◊strong{proteoglykanů}.
 
 ◊ls[#:t "Druhá reakce"]{
     - izomerizace glukóza-6-fosfátu na fruktóza-6-fosfát (aldosa na ketosu)
-    - katalyzováná glokóza-fosfát-izomerázou
+    - katalyzováná glukóza-fosfát-izomerázou
     - přípravná reakce
         - fruktóza je lépe štěpitelná
     - stereospecifická reakce
@@ -1707,15 +1710,15 @@ Jsou součástí ◊strong{proteoglykanů}.
 
 ◊img["third.png" #:w 400]{Třetí reakce}
 
-◊(add-abr "F16BP" "fruktóza-1,6-bifosfát")
+◊(add-abr "F16BP" "fruktóza-1,6-bisfosfát")
 
 ◊ls[#:t "Třetí reakce"]{
     - fosforylace fruktóza-6-fosfátu na fruktózu-1,6-bisfosfát (dále jen ◊em{F16BP})
     - nejdůležitější regulační reakce glykolýzy
+        - inhibována ATP (značí dostatek energie v buňce) a citrátem
+        - stimulována AMP (značí nedostatek energie v buňce)
     - katalyzována fosfofruktokinázou
-        - fosforyluje fruktóza-6 fosfát
-    - inhibována ATP (značí dostatek energie v buňce) a citrátem
-    - stimulována AMP (značí nedostatek energie v buňce)
+        - fosforyluje fruktóza-6-fosfát
     - znovu dochází k uzavření aktivního místa a vytěsnění vody
     - kofaktor: hořečnaté ionty
 }
@@ -1732,7 +1735,7 @@ Jsou součástí ◊strong{proteoglykanů}.
         - katalyzována aldolázou (Schiffova báze)
         - dochází k aldolovému štěpení
             - štěpení C-C vazeb (obtížné)
-            - ◊abr{F16BP} spolu s aktivním centrem enzymu vytvářín tzv.protonovanou Schiffovu bázi, v důsledku toho se delokalizují elektrony a je busnadněno štěpení C-C vazby
+            - ◊abr{F16BP} spolu s aktivním centrem enzymu vytvářín tzv. protonovanou Schiffovu bázi, v důsledku toho se delokalizují elektrony a je usnadněno štěpení C-C vazby
     - důležitá přítomnost karbonylové skupiny na C(2) a hydroxylové skupiny na C(4)
     - dvě třídy aldoláz
         - Schiffova báze
@@ -1751,7 +1754,7 @@ Jsou součástí ◊strong{proteoglykanů}.
     - poslední z přípravné fáze
     - reakce enzymu trióza-fosfát-izomerázy
         - schopný vzájemně izomerizovat vzniklé triózy (z minulé reakce)
-        - alfa-beta barel z osmi beta-listů ukotvených osmi alfahelixu (častá struktura enzymů)
+        - ◊|alpha|-◊|beta| barel z osmi ◊|beta|-listů ukotvených osmi ◊|alpha|-helixy (častá struktura enzymů)
         - uvnitř soudku je katalytické centrum
         - uzavíratelný
         - dokonalý enzym
@@ -1774,12 +1777,24 @@ Jsou součástí ◊strong{proteoglykanů}.
 
 ◊ls[#:t "Průběh"]{
     # glyceraldehyd-3-fosfát interaguje s ◊chem{SH} skupinou v aktivním centru enzymu a vzniká thiohemiacetál
-    # oxidace thiohemiacetálu pomocí oxidovaného koenzymu ◊chem{NAD+} na acylthioester (karboxylová kyselinu)
+    # oxidace thiohemiacetálu pomocí oxidovaného koenzymu ◊chem{NAD+} na acylthioester (karboxylová kyselina)
     # uvolňuje se energie, s její pomocí dojde k zabudování anorganického fosfátu z prostředí do glyceraldehyd-3-fosfátu za vzniku 1,3-bisfosfoglycerové kyseliny
     # tato energie bude využita v následující reakci k tvorbě ATP
 }
 
 Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných místech, kde je potřeba energie, např. ve spermiích.
+
+◊box["Poznámka"]{
+    1,3-bisfosfoglycerát snižuje afinitu hemoglobinu pro kyslík. Proto:
+    ◊ls{
+        - mutace v hexokináze:
+            - bude vznikat méně 2,3-bisfosfoglycerátu
+            - větší afinita ke kyslíku,
+        - defekt v pyruvát-kináze:
+            - bude se hromadit 1,3-bisfosfoglycerát
+            - nižší afinita ke kyslíku
+    }
+}
 
 ◊subsubsection{Sedmá reakce}
 
@@ -1791,18 +1806,8 @@ Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných míst
         - tvorba ATP
     - kofaktorem jsou hořčíkové kationty
     - k tvorbě ATP je zde využit anorganický fosfát zabudovaný v šesté reakci
-    - v této reakci vzniká jedna molekula ATP na dvě molekuly glyceraldehyd-3-fosfátu, ale z původní molekuly glukózy jsou to 2 molekuly ATP (z jedné glukózy se získají dvě triózy)
-    - odbočka: vznik 2,3-bisfosfoglycerátu
-        - molekula snižující afinitu hemoglobinu pro kyslík
-        - důsledek:
-            - mutace v hexokináze:
-                - bude vznikat méně 2,3-bisfosfoglycerátu
-                - větší afinita ke kyslíku,
-            - defekt v pyruvát-kináze
-                - bude se hromadit 1,3-bisfosfoglycerát
-                - nižší afinita ke kyslíku
+    - v této reakci vzniká jedna molekula ATP na jednu molekulu glyceraldehyd-3-fosfátu, ale z původní glukózy jsou to celkem 2 molekuly ATP (z jedné glukózy se získají dvě triózy)
 }
-
 
 ◊subsubsection{Osmá reakce}
 
@@ -1812,7 +1817,7 @@ Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných míst
     - přípravná reakce (ale ne v přípravné fázy glykolýzy)
     - katalyzována fosfoglycerátmutázou
     - přeměnu 3-fosfoglycerátu na 2-fosfoglycerát
-    - přes meziprodukt 2,3-bisfosforlycerát
+    - přes meziprodukt 2,3-bisfosfoglycerát
     - v katalytickém centru AK je histidin, který předává fosfát na druhý uhlík a následně je prohodí
 }
 
@@ -1841,7 +1846,7 @@ Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných míst
     - katalyzuje pyruvátkináza
     - kofaktory: Mg a K kationt (stabilizace meziproduktu)
     - tvorba ATP za využití energie z fosfoenolpyruvátu vzniklém v předchozím kroku
-    - Fosfoenolpyruvát -> enolpyruvát -> pyruvát
+    - fosfoenolpyruvát -> enolpyruvát -> pyruvát
         - enolpyruvát tutomerizován na pyruvát
             - vysoká změna energie, ta je využita k syntéze ATP
     - na jednu molekulu glukózy další 2 molekuly ATP
@@ -1853,7 +1858,7 @@ Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných míst
 
 ◊ls{
     - po glykolýze v anaerobních podmínkách dochází k fermentaci
-    - jejím hlavním účelem je reoxidace koenzymu ◊chem{NADP} na ◊chem{NAD+}
+    - jejím hlavním účelem je reoxidace koenzymu ◊chem{NADH} na ◊chem{NAD+}
         - ◊chem{NAD+} je potřeba pro glyceraldehyd-3-fosfát dehydrogenázovou reakci
 }
 
@@ -1861,14 +1866,14 @@ Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných míst
 
 ◊ls[#:t "Laktátové kvašení"]{
     - pyruvát se mění na laktát
-    - dochází k reoxidaci ◊chem{NADP}
+    - dochází k reoxidaci ◊chem{NADH}
 }
 
 ◊img["ethanol-fermentation.png" #:w 400]{Alkoholové kvašení}
 
 ◊ls[#:t "Alkoholové kvašení"]{
     - má dva kroky (viz obrázek), prochází před meziprodukt acetaldehyd
-    - důležitým kofaktorem té první reakce je thiaminpyrofosfát,
+    - důležitým kofaktorem té první reakce je thiaminpyrofosfát
         - obecně se účastní dekarboxylací v buňce (např. dekarboxylací AK, proto thiamin patří mezi vitamíny řady B)
     - při druhé reakci dochází k reoxidaci, jako kofaktor zde slouží zinek
 }
@@ -1902,7 +1907,7 @@ Většina glykolytických enzymů navíc potřebuje kofaktory (u všech kináz j
 
 ◊box["Signální funkce glykolýzy"]{
     ◊ls{
-        - glykolitické enzymy mají i signální funkce
+        - glykolytické enzymy mají i signální funkce
             - hexokináza
                 - regulace transkripce
             - glyceraldehyd
@@ -1959,7 +1964,7 @@ Některé AK se na acetyl-CoA nemění; vždy ale dochází k oxidaci (přenos e
 
 ◊ls[#:t "Tři fáze katabolismu v metabolických drahách"]{
     # konvergující dráhy vedoucí k acetyl-CoA
-        - glykolýza, beta-oxidace mastných kyselin, rozštěpení na dvě triózy
+        - glykolýza, ◊|beta|-oxidace mastných kyselin, rozštěpení na dvě triózy
     # Krebsův cyklus
     # oxidativní fosforylace
 }
@@ -2294,7 +2299,7 @@ Probíhá ◊strong{regenerace oxalacetátu}.
     - nejdůležitější jsou následující tři enzymy (jejich inhibice/aktivace)
         - citrát-syntázová reakce
         - izocitrát-dehydrogenáza
-        - alfa-ktetoglutarát-dehydrogenáza
+        - ◊|alpha|-ktetoglutarát-dehydrogenáza
 }
 
 ◊section{Intermediáty KC}
@@ -2889,7 +2894,7 @@ voda zde předává elektrony (v podobě vodíku) a redukuje ◊chem{CO2}.
         - jeden z akceptorů při redukci měnil barvu, takže šla dobře sledovat
 }
 
-◊subsection{Světlá fáze}
+◊subsection{Světelná fáze}
 
 ◊img["spectrum.png" #:w 400]{Elektromagnetické spektrum, udávající energii fotonu (◊u{1 Einstein = 1 mol} fotonů)}
 
@@ -3537,7 +3542,7 @@ Fosforylace Ser u A a AMP na alosterickém místě u B podobným způsobem podpo
 ◊subsubsection{Regulace posttranslačními modifikacemi}
 
 ◊ls{
-    - metabolismus gylkogenu je regulován pomocí ◊strong{bicyklické kaskády}
+    - metabolismus glykogenu je regulován pomocí ◊strong{bicyklické kaskády}
         - jeden enzym aktivuje druhý a ten aktivuje třetí.
         - výhody: na každém "předání štafety" je možné znásobit signál, detailněji signál regulovat atd. (zvlášť, když se přidá více úrovní než jen dvě)
 }
