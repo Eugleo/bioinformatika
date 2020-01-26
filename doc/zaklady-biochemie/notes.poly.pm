@@ -1584,9 +1584,13 @@ Jsou součástí ◊strong{proteoglykanů}.
 ◊ls[#:t "Proteoglykany"]{
     - velké komplexy proteinů a heteropolysacharidů v mezibuněčné hmotě
     - jejich struktura se označuje jako ◊strong{kartáčová} (viz obrázek)
-        - páteř tvoří kyselina hyaluronová, na ní jsou vázány ◊em{Core} proteiny a na ně pak řetězce glykosaminoglykanů
+        - páteř tvoří kyselina hyaluronová, na ní jsou vázány ◊em{Core} proteiny a na ně pak řetězce glykosaminoglykanů (často ◊strong{chondroitin-sulfát} a ◊strong{keratansulfát})
         - core protein na sobě má navázány ◊chem{N}- a ◊chem{O}- glykosylované sacharidy a řetězce glykosaminoglykanu
     - jen asi 5% proteoglykanů tvoří proteinová složka, 95 % je cukerná
+}
+
+◊box["Buněčná stěna bakterií"]{
+    ◊img["g-neg-cell-wall.png" #:w 400]{Buněčná stěna ◊chem{G^-} bakterií. NAG je N-acetylglukosamin a NAM je kyselina N-acetylmuramová. Lysosym stěpí glykosidové vazby mezi NAG a NAM (na obrázku nejsou zvýrazněny). Penicilin specificky inaktivuje enzymy účastnící se zesíťování peptidoglykanů.}
 }
 
 ◊img["glycoproteins.png" #:w 450]{Spojení sacharidu a proteinu v glykoproteinech}
@@ -1594,10 +1598,17 @@ Jsou součástí ◊strong{proteoglykanů}.
 ◊ls[#:t "Glykoproteiny"]{
     - většina proteinů v těle
     - vazba přes N- a O- glykosylaci
-        - N- je přes ◊chem{NH} skupinu (na Asp)
-            - např. imunoglobuliny: funkce mohou ovlivňovat dobu života proteinů v oběhu, jeho aktivitu včetně katalytické aktivity, rozpoznávací funkci, jeho rozpoznávání jiným signálním proteinem, účastní se mezibuněčných interakcí atd.
-        - O- je ta běžná přes ◊chem{OH} (na Ser nebo Thr)
-            - kromě výše zmíněých funkcí ještě může alternovat s fosforylací, což slouží k signalizaci
+        - N- je přes ◊chem{NH} skupinu (většinou na Asp)
+            - strukturní komponenty extracelulární matrix (ECM) a buněčných stěn
+            - účast na signalizaci buněk
+            - modifikace stability a aktivity proteinů
+            - podíl na transportu glykoproteinů
+            - např. u imunoglobulinů
+        - O- je ta běžná přes ◊chem{OH} (většinou na Ser nebo Thr)
+            - strukturní komponenty ECM a buněčných stěn
+            - účast na signalizaci buněk
+            - složka mukózních sekretů
+            - modifikace stability a aktivity proteinů (může alternovat s fosforylací)
             - je také zodpovědná za krevní skupiny a za rozdílnost antigenů
     - glykoproteiny na vnějšku plasmatické membrány jsou modifikovány kyselinou sialovou, která je zodpovědná za jejich záporný náboj
 }
@@ -3136,17 +3147,17 @@ Temnostní fáze, neboli asimilace ◊chem{CO2}, probíhá ve třech fázích, k
         - z glykogenu lze získávat energii anaerobně
         - odbouráváním glykogenu vzniká glukóza, která se může podílet na udržování hladiny glukózy v krvi a může být dodávána do tkání
     - v buňkách se nachází v cytoplasmatických granulích o velikosti ◊u{10} až ◊u{40 nm}, u obratlovců převážně na dvou místech
-        - v játrech: glykogen může tvořit až 10 % hmotnosti jater a množství glykogenu v játrech závisí na stavu nasycenosti organismu (při hladovění klesá)
-        - ve svalech: může tvořit 1-2 % hmotnosti svalu. Množství nesouvisí ani tak s nasyceností, jako s trénovaností (člověk je trénovaný -> množství glykogenu ve svalech roste)
+        - v játrech: glykogen může tvořit až 10 % hmotnosti jater, množství glykogenu v játrech závisí na stavu nasycenosti organismu (při hladovění klesá)
+        - ve svalech: může tvořit 1--2% hmotnosti svalu. Množství nesouvisí ani tak s nasyceností, jako s trénovaností (člověk je trénovaný -> množství glykogenu ve svalech roste)
             - svalů je ale více než jater, takže v absolutních číslech je glykogenu nejvíce ve svalech
         - dále se malé množství nachází v mozku
 }
 
 ◊ls[#:t "Struktura glykogenu"]{
     - stejná jako struktura amylopektinu
-        - skládá se z glukózových podjednotek propojených ◊|alpha|-1,4-glykosidickými vazbami a v místě větvení jsou ◊|alpha|-1,6 glykosidické vazby
-    - glykogen je hustěji větven, než amylopektin, protože živočichové potřebují mobilizovat energii rychleji, než rostliny
-        - jednotky mohou být odbourávány a všech větvích současně
+        - skládá se z glukózových podjednotek propojených ◊|alpha|1->4 glykosidickými vazbami, v místě větvení jsou ◊|alpha|1->6 glykosidické vazby
+    - glykogen je větven hustěji než amylopektin, protože živočichové potřebují mobilizovat energii rychleji než rostliny
+        - jednotky mohou být odbourávány na všech větvích současně
         - 50% glukózových podjednotek ve struktuře se nachází před prvním místem větvení
     - vždy má pouze jeden redukující konec
 }
@@ -3156,7 +3167,7 @@ Temnostní fáze, neboli asimilace ◊chem{CO2}, probíhá ve třech fázích, k
 ◊subsubsection{První reakce}
 
 ◊ls{
-    - prvním a zároveň nejdůležitějším enzym odbourávání glykogenu je ◊strong{glykogenfosforyláza}
+    - prvním a zároveň nejdůležitějším enzymem odbourávání glykogenu je ◊strong{glykogenfosforyláza}
         - dimer, každý z monomerů má C' a N' terminální doménu
         - hlavní regulační enzym odbourávání glykogenu
         - má důležitý kofaktor, ◊strong{pyridoxal-5-fosfát}
