@@ -4442,7 +4442,7 @@ Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, moho
         # nabití esteru pomocí CDP-diacylglycerolu
 }
 
-◊img["phospholipid-synthesis.png"]{Syntéza glycerofosfolipidů, spojetá s CTP. Detaily není třeba znát.}
+◊img["phospholipid-synthesis.png"]{Syntéza glycerofosfolipidů, spojetá s CTP, přechází přes CDP-diacylglycerol. Detaily není třeba znát.}
 
 ◊note{
     ◊ls[#:t "Fosfatidylcholin"]{
