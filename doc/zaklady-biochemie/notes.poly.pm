@@ -3648,27 +3648,40 @@ Celkově vzniknou dvě molekuly NADPH a jedna molekula ribózy.
     ◊term["Lipidy"]{
         Různorodá skupina látek, které spojuje to, že jsou rozpustné v nepolárních rozpouštědlech. Nejběžnějším příkladem jsou triacylglyceroly.
     }
+}
 
+◊img["triacyglycerol.png" #:w 300]{Příklad triacylglycerolu}
+
+◊definitions{
     ◊term["Triacyglyceroly"]{
         Estery glycerolu --- na glycerolu (trojsytném alkoholu) jsou esterovou (hydroxylová+karboxylová) vazbou napojeny tři mastné kyseliny (viz obrázek níže).
     }
 
+}
+
+◊img["glycerophospholipids.png"]{Glycerofosfolipidy}
+
+◊definitions{
     ◊term["Glycerofosfolipidy"]{
-        Hlavní složky membrán, ampfipatické molekuly, mají dva ocásky z MK a na třetím je navázáno něco polárního, např. fosfatydilcholin, alkohol atp.
+        Hlavní složky membrán, ampfipatické molekuly, mají dva ocásky z MK a na třetím je navázáno něco polárního, např. fosfatydilcholin, alkohol atp. Jsou prekurzory druhých poslů (jako např. ◊abr{cAMP}) a slouží k ukotvení proteinů v membráně pomocí tzv. ◊em{GPI kotvy}.
     }
 
     ◊term["Vosky"]{
-        Estery MK a alkoholů s dlouhým řetězcem.
-    }
-
-    ◊term["Terpeny"]{
-        Molekuly z izoprenových podjednotek.
-
-        Izopren je 2-methyl-1,3-butadien, tvoří aromatické látky, a vyskytuje se hlavně v rostlinných hormonech.
+        Estery MK a alkoholů s dlouhým řetězcem, např. včelí vosk, vorvaňový vosk a lanolin.
     }
 }
 
-◊img["triacyglycerol.png" #:w 300]{Příklad triacylglycerolu}
+◊img["isoprene.png" #:w 400]{Izopren a možnosti jeho spojování.}
+
+◊definitions{
+    ◊term["Terpeny"]{
+        Molekuly z izoprenových podjednotek, řadí se mezi izoprenoidy.
+
+        Izopren je 2-methyl-1,3-butadien, tvoří aromatické látky, a vyskytuje se hlavně v rostlinných hormonech. Blue Ridge Mountains ve Virgínii dostaly své jméno podle modrého oparu způsobeného právě izoprenem, který rostliny přes léto uvolňují.
+    }
+}
+
+◊img["terpenes.png"]{Příklady terpenů}
 
 ◊section{Mastné kyseliny}
 
@@ -3681,7 +3694,7 @@ Celkově vzniknou dvě molekuly NADPH a jedna molekula ribózy.
             - olejová je 18:1:9 (18 uhlíků, dvojná vazba na devátém z nich)
 }
 
-Velice důležitá (dokonce esenciální) je pro nás kyselina ◊strong{arachnidová} --- je prekurzorem pro syntézu hormonů prostacyklinu, tromboxynu atd.
+Velice důležitá (dokonce esenciální) je pro nás kyselina ◊strong{arachnidová (20:4:5,8,11,14)} --- je prekurzorem pro syntézu hormonů prostacyklinu, tromboxynu atd.
 
 ◊img["fatty-acids.png"]{Příklady mastných kyselin}
 
@@ -4146,7 +4159,8 @@ Elongace a desaturace jsou často kombinované, napč. při tvorbě ◊em{arachi
 
 ◊ls[#:t "Užitečnost cholesterolu"]{
     - může ucpávat cévy, ale je pro organismus zásadně důležitý
-    - zvyšuje stabilitu biologických membrán
+    - za nízkých teplot zvyšuje tekutost membrány a za vysokých teplot tuhost membrány
+        - interferuje s uspořádaným obalem z MK na postranních řetězcích lipidů
     - při jeho syntéze vzniká spousta důležitých látek
     - mnoho důležitých látek vzinká i přímo z něj
         - např. steroidní hormony
@@ -4155,6 +4169,8 @@ Elongace a desaturace jsou často kombinované, napč. při tvorbě ◊em{arachi
         - kyselina glykocholová, taurocholová, cholová
         - výhradně v této formě je cholesterol vylučován z těla (jinak se skoro nevylučuje)
 }
+
+◊img["membrane-levels.png" #:w 300]{Složení různých membrán v buňce}
 
 ◊subsection{Syntéza cholesterolu}
 
@@ -4406,7 +4422,10 @@ Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, moho
         - prekurzory spousty věcí, např. inozytoltrifosfátů, triacylglycerolů a druhých poslů
 }
 
+
+
 ◊ls[#:t "Alkylacylglycerolfosfolipidy a plasmalogeny"]{
+    - obsahují dlouhý alkylový řetězec spojený u první skupiny vinyletherovou vazbou a u druhé skupiny etherovou s ◊chem{C1} na glycerolu
     - z plasmalogenů vzniká faktor, který aktivuje krevní destičky
     - jsou hodně v nervové a svalové tkáni, podílí se na zvýšené tekutosti membrán
 }
@@ -4422,6 +4441,8 @@ Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, moho
             - fosfatydylethanolamin + serin -> fosfatidylserin
         # nabití esteru pomocí CDP-diacylglycerolu
 }
+
+◊img["phospholipid-synthesis.png"]{Syntéza glycerofosfolipidů, spojetá s CTP. Detaily není třeba znát.}
 
 ◊note{
     ◊ls[#:t "Fosfatidylcholin"]{
