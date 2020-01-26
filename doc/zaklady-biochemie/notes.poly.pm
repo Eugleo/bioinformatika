@@ -1485,7 +1485,7 @@ Cyklické sacharidy se vyskytují ve vaničkové a židličové konformaci; žid
 
 ◊ls[#:t "Glykosidická vazba"]{
     - monosacharidy mohou reagovat s alkoholy za vzniku glykosidů
-    - methylglukosid, methylalfa-gukosid a methylbeta-glukosid
+    - methyl-◊|alpha|-glukosid a mehtyl-◊|beta|-glukosid
     - glykosidická vazba je zodpovědná za spojovnání monosacharidových podjednotek do disacharidů, oligosacharidů, polysacharidů
 }
 
@@ -1783,7 +1783,7 @@ Jsou součástí ◊strong{proteoglykanů}.
 ◊img["sixth.png" #:w 450]{Šestá reakce}
 
 ◊ls[#:t "Šestá reakce"]{
-    - katalýza glyceraldehyd-3-fosfátdehydrogenázy
+    - katalyzována glyceraldehyd-3-fosfátdehydrogenázou
     - dochází k uskladnění chemické energie, která je využitelná pro další reakce a tvorbu ATP
 }
 
@@ -1803,7 +1803,7 @@ Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných míst
     ◊ls{
         - mutace v hexokináze:
             - bude vznikat méně 2,3-bisfosfoglycerátu
-            - větší afinita ke kyslíku,
+            - větší afinita ke kyslíku
         - defekt v pyruvát-kináze:
             - bude se hromadit 1,3-bisfosfoglycerát
             - nižší afinita ke kyslíku
@@ -3181,8 +3181,8 @@ Temnostní fáze, neboli asimilace ◊chem{CO2}, probíhá ve třech fázích, k
         - nachází se na rozhraní mezi N a C koncovou doménou
         - má též místo pro vazbu kofaktoru
     - glykogen-vazebné místo
-        - na rozhraní Nterminálních domén
-        - vejde se do nej 4--5 glukózových podjednotek, avšak pouze v lineárním stavu (nevětvených)
+        - na rozhraní N terminálních domén
+        - vejde se do něj 4--5 glukózových podjednotek, avšak pouze v lineárním stavu (nevětvených)
 }
 
 ◊img["glycogen-phosphorylase.png" #:w 400]{Glykogen fosforylázová reakce}
@@ -3190,7 +3190,7 @@ Temnostní fáze, neboli asimilace ◊chem{CO2}, probíhá ve třech fázích, k
 ◊ls[#:t "Reakční mechanismus"]{
     - nemusíme znát v detailu
     - dochází ke štěpení glykogenu v procesu ◊strong{fosforolýzy}
-        - podobné jako hydrolýza, ale místo vdy je zde kyselina fosforečná
+        - podobné jako hydrolýza, ale místo vody je zde kyselina fosforečná
         - mechanismem reakce je tedy fosforolýza škrobu, jedná se o acidobazickou katalýzu
     - úloha pyridoxal-5-fosfátu v reakci je půjčovat proton zbytku kyseliny fosforečné, která štěpí vazbu mezi glukózovými podjednotkami
         - funguje jako protonové relé, které v průběhu reakce půjčí proton kyselině fosforečné a na konci si ho zase odebere
@@ -3207,8 +3207,8 @@ Během první reakce vzniká glukóza-1-fosfát, do glykolýzy však potřebujem
 ◊ls[#:t "Fosfoglukomutázová reakce"]{
     - viz obrázek
     - probíhá přes meziprodukt, kde jsou fosforylovaná obě místa: glukózu-1,6-bisfosfát
-        - v katalytickém centru enzymu tedy musí být skupina, která dodává ten druhý fosfát -> obsahuje Ser, který váže fosfát
-    - podobnou reakci jsme probírali v glykolýze, kde se pomocí fosfoglycerátmutázy mění 3fosfofgylcerát na 2-fosfoglycerát
+        - podobnou reakci jsme probírali v glykolýze (á. reakce), kde se pomocí fosfoglycerátmutázy mění 3-fosfofglycerát na 2-fosfoglycerát
+        - v katalytickém centru enzymu je Ser, který váže ten extra fosfát (u glykolýzy to byl His)
 }
 
 ◊subsubsection{Třetí reakce}
@@ -3221,11 +3221,11 @@ Během první reakce vzniká glukóza-1-fosfát, do glykolýzy však potřebujem
 ◊img["glycogen-third-reaction.png" #:w 400]{Linearizace glykogenu}
 
 ◊ls[#:t "Průběh reakce"]{
-    - (◊|alpha|1 -> 4)-transglykosylázová aktivita
+    # (◊|alpha|1 -> 4)-transglykosylázová aktivita
         - krátká část řetězce (např. na obrázku 4 jednotky, tzv. limitující systém) pospojovaného (◊|alpha|1 -> 4) vazbami je přesunuta
         - v původní větvi zůstává už jen jedna glukóza, která je připojena na větvící místo vazbou (◊|alpha|1 -> 6)
         - ze dvou větví vytvoří jednu delší a jednu, která má už jen jednu glukózu
-    - (◊|alpha|1 -> 6)-glukosidázová aktivita
+    # (◊|alpha|1 -> 6)-glukosidázová aktivita
         - hydrolyzuje glukózový zbytek v místě větvení, který byl připojen (◊|alpha|1 -> 6) vazbou
         - tento se uvolňuje jako glukóza
         - změna (◊|alpha|1 -> 6) na (◊|alpha|1 -> 4) není z energetického hlediska možná, proto dochází k hydrolýze
@@ -3256,8 +3256,8 @@ Aktivovaná glukóza se dále využije k syntéze glykogenu.
 ◊img["glycogen-synthesis.png"]{Syntéza glykogenu z UDP-glukózy}
 
 ◊ls[#:t "Syntéza glykogenu z UDP-glukózy"]{
-    - glukóza se připojí na již existující řetězec (s # glukóz > 4)
-    - na začátku reakce je potřeba ◊em{primer}, tím je hydroxylová skupina na Tyr na ◊strong{glykogeninu}
+    - glukóza se připojí na již existující řetězec (s počtem glukóz > 4), katalyzuje to ◊strong{glykogen syntáza}
+    - na začátku reakce je potřeba ◊em{primer}, tím je hydroxylová skupina Tyr na ◊strong{glykogeninu}
         - na tu se naváže první glukózová podjednotka -> poté několik dalších -> potom už to jede pomocí glykogensyntázy
     - glykogensyntázová reakce je hlavní regulační reakcí syntézy glykogenu
 }
@@ -3269,10 +3269,7 @@ Poslední reakcí je opak linearizace při rozkladu glykogenu --- zde máme naop
 ◊img["glycogen-branching.png"]{Větvení glykogenu}
 
 ◊ls[#:t "Větvení glykogenu"]{
-    - jediný enzym, má ale více jmen
-        - (mé nejoblíbenější) amylo (◊|alpha|1->4) na (◊|alpha|1->6) transglykosyláza
-        - ◊|alpha|1,4 na ◊|alpha|1,6-transglykosyláza
-        - glykosyl-(4->6) transferáza
+    - enzym ◊strong{amylo (◊|alpha|1->4) na (◊|alpha|1->6) transglykosyláza} (jiným jménem glykosyl-(4->6) transferáza)
     - na dostatečně dlouhé větvi, která je tvořená (◊|alpha|1->4) glykosidickými vazbami, odštěpí glukózu a přilepí ji jinde vazbou (◊|alpha|1->6)
         - v tomto směru je to z energetického hlediska možné
         - "dostatečně dlouhá větev" = alespoň 11 glukóz a alespoň 4 podjednotky od posledního místa větvení, z prostorových důvodů
@@ -3290,8 +3287,8 @@ Poslední reakcí je opak linearizace při rozkladu glykogenu --- zde máme naop
 ◊box["Spřažení metabolismu glykogenu a glykolýzy"]{
     ◊ls{
         - v játrech je glykogen odbouráván tehdy, když je potřeba zvýšit hladinu glukózy v krvi
-            - např. při hladovění, nebo i při jiných zvýšených nárocích na svalovou práci, kterou signalizují stresové hormony
-            - odbourání glykogenu nemá to být rovnou spřaženo s glykolýzou, má glukózu jen uvolnit do krve, glykolýza je tedy inhibována
+            - např. při hladovění, nebo při zvýšených nárocích na svalovou práci, kterou signalizují stresové hormony
+            - odbourání glykogenu nemá být rovnou spřaženo s glykolýzou, má glukózu jen uvolnit do krve -> glykolýza je tedy inhibována
         - ve svalech je odbouráván pro svalovou práci
             - zde je odbourávání glykogenu přímo pro glykolýzu
     }
@@ -3299,7 +3296,7 @@ Poslední reakcí je opak linearizace při rozkladu glykogenu --- zde máme naop
     Jak to ale zařídit?
 
     ◊ls[#:t "Mechanismus spřažení"]{
-        - fruktóza-6-bisfosfát je nejsilnější alosterický regulátor fosfofruktokinázy, hlavního glykolytického enzymu
+        - fruktóza-2,6-bisfosfát je nejsilnější alosterický regulátor fosfofruktokinázy, hlavního glykolytického enzymu
             - ve svalech je při odbourávání glykogenu podporována tvorba tohoto produktu
             - v játrech je podporováno jeho odbourávání
     }
@@ -3329,12 +3326,12 @@ Poslední reakcí je opak linearizace při rozkladu glykogenu --- zde máme naop
             - za normálních okolností je v T stavu
             - aktivována je vysokou koncentrací AMP
     - přechod mezi A a B zajišťují dva různé enzymy
-        - o A -> B se stará ◊strong{fosfoprotein fosfatáza}
-        - a B -> A zajišťuje ◊strong{fosforyláza-kináza} (dříve ◊strong{kináza-fosforylázy B}, protože fosforyluje ◊chem{Ser14})
+        - o A -> B se stará ◊strong{fosfoprotein fosfatáza} (neboli fosfatáza fosforylázy A)
+        - a B -> A zajišťuje ◊strong{fosforyláza-kináza} (neboli kináza fosforylázy B)
         - k fosforylaci či defosforylaci dochází pouze v T formách
 }
 
-Fosforylace Ser u A a AMP na alosterickém místě u B podobným způsobem podporují R formu.
+Fosforylace Ser u A a přítomnost AMP na alosterickém místě u B podporují R formu podobným způsobem.
 
 ◊subsubsection{Regulace posttranslačními modifikacemi}
 
@@ -3350,8 +3347,8 @@ Fosforylace Ser u A a AMP na alosterickém místě u B podobným způsobem podpo
 ◊ls[#:t "Regulace glykogenfosforylázy a glykogensyntázy"]{
     # vazba hormonu na receptor
     # uvolňování cyklického AMP (dále jen ◊em{cAMP})
-    # aktivace ◊abr{cAMP}-dependentní kináza (jinak též proteinkináza A, dále jen ◊em{PKA})
-    # aktivace kinázy fosforylázy B, vede k aktivaci
+    # aktivace ◊abr{cAMP}-dependentní kinázy (jinak též proteinkináza A, dále jen ◊em{PKA})
+    # fosforylace kinázy fosforylázy B (tím se kináza fosforylázy B aktivuje)
     # fosforylace glykogenfosforylázy a glykogensyntázy
         - glykogenfosforyláza A je tím aktivována, glykogen se začne odbourávat
         -naopak glykogensyntáza je fosforylací deaktivována
@@ -3369,7 +3366,15 @@ Po glukózové infuzi tedy stoupne odbourávání glykogenu a zpomalí se jeho o
 }
 
 ◊ls[#:t "Játra (stav: v krvi je hodně glukózy)"]{
-    # glukóza přímo proniká do jaterních buněk a tam inhibuje glykogenfosforylázu
+    - glukóza přímo proniká do jaterních buněk a tam inhibuje glykogenfosforylázu (-> zabrání se štepení glykogenu)
+    - jaterní buňky vyplavují ◊strong{inzulín} -> ve svalových buňkách jsou přenášeny ◊chem{GLU4} (transportéry pro glukózu) z cytoplasmy na membránu
+        - po snížení hladiny inzulínu jsou ◊chem{GLU4} endocytovány zpět.
+}
+
+◊box["Poznámka"]{
+    Snížená signalizace přes inzulínový receptor prodlužuje život u hlístice, myši i u člověka --- to ukazuje na význam kalorické restrikce (i v prevenci nádorů).
+
+    Inzulínová signalizace (a signalizace přes mTOR) ovlivňuje také rozdělení včel do kast. Kombinace hormonálních a nutričních signálů vytvoří odlišné fenotypy při stejném genotypu.
 }
 
 ◊ls[#:t "Játra (stav: tělo je ve stresu)"]{
@@ -3391,8 +3396,6 @@ Po glukózové infuzi tedy stoupne odbourávání glykogenu a zpomalí se jeho o
         - ihned následuje glykolýza
 }
 
-Navíc při vysokých hladinách glukózy v krvi vyplavují buňky pankreasu do krve inzulín, který má (mimo jiné) za následek to, že jsou ve svalových buňkách transportéry pro glukózu ◊chem{GLU4} přenášeny z cytoplasmy na membránu a umožňují  glukóze vstupovat do buněk ve velkém množství.
-
 ◊box["Choroby spojené s metabolismem glykogenu"]{
     Označují se jako ◊strong{glykogenózy} a zpravidla jsou způsobeny tím, že je mutován nějaký enzym odbourávání nebo syntézy glykogenu ve svalech či játrech.
 
@@ -3407,9 +3410,9 @@ Navíc při vysokých hladinách glukózy v krvi vyplavují buňky pankreasu do 
 
 ◊box["Metabolismus glykogenu a sport"]{
     ◊ls{
-        - 6 dnů před vytrvalostní závodem se omezí příjem cukrů a glykogenu v potravě
+        - 6 dnů před vytrvalostním závodem se omezí příjem cukrů a glykogenu v potravě
         - poslední 3 dny se jich naopak konzumuje větší množství
-        - tělo má signalizován nedostatek a tak nejen, že doplní ten ztracený, ale ještě zvětší zásoby
+        - tělo má signalizován nedostatek a tak nejen, že doplní ten ztracený glykogen, ale ještě zvětší zásoby
     }
 }
 
