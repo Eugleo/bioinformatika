@@ -1908,7 +1908,7 @@ Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných míst
 
 Většina glykolytických enzymů navíc potřebuje kofaktory (u všech kináz jsou to ionty ◊chem{Mg^{2+}}).
 
-◊img["PFK_graph.PNG" #:w 300]{Vliv koncentrace ATP na funkci PFK}
+◊img["PFK_graph.PNG" #:w 300]{Vliv koncentrace ATP na funkci fosfofruktokinázy}
 
 ◊ls[#:t "Příklady"]{
     - do glykolýzy mohou vstupovat i jiné substráty, než glukóza
@@ -1951,7 +1951,7 @@ Většina glykolytických enzymů navíc potřebuje kofaktory (u všech kináz j
 
 ◊ls[#:t "Popis obrázku"]{
     - tlustou svislou čarou je vyznačena glykolýza, končí na ◊strong{pyruvátu} (kyselině pyrohroznové)
-    - pyruvát vstupuje do velkého množství reakcí, např. mléčného kvašení, lakteátdehydrogenázové reakce a alkoholového kvašení, většinou však přes další molekulu vstupuje právě do CKC
+    - pyruvát vstupuje do velkého množství reakcí, např. mléčného kvašení, laktátdehydrogenázové reakce a alkoholového kvašení, většinou však přes další molekulu vstupuje právě do CKC
 }
 
 Na pyruvátu a dalších molekulách se dá demonstrovat vlastnost katabolismu, který využívá energeticky bohaté sloučeniny z potravy na ATP a zisk buněčné energie.
@@ -2006,11 +2006,11 @@ Některé AK se na acetyl-CoA nemění; vždy ale dochází k oxidaci (přenos e
 
 ◊box["O lokalizaci CKC"]{Krebsův cykus je lokalizován v ◊abr{mch}, glykolýza byla v cytoplasmě, pyruvát po pyruvát-kinázové reakci je také ještě v cytoplasmě. Pyruvát pak přejde dovnitř ◊abr{mch}, kde už je zbytek reakcí.}
 
-◊note{H. Krebs cyklus neobjevil sám, pracovali na tom i jiní; postupně objevovali jednotlivé molekuly, určovali pořadí, používali inhibitory, koukali, co se kde hromadí. Pracovali se na preparátu rozemletého prsního svalu holuba, protože je to hodně aerobně aktivní tkáň, a cyklus je zde také velmi aktivní. Když ale sval rozemleli, rozemleli s ním i ◊abr{mch}. Krebs objevenou lineární dráhu uzavřel do cyklu.}
+◊note{H. Krebs cyklus neobjevil sám, pracovali na tom i jiní; postupně objevovali jednotlivé molekuly, určovali pořadí, používali inhibitory, koukali, co se kde hromadí. Pracovali na preparátu rozemletého prsního svalu holuba, protože je to hodně aerobně aktivní tkáň, a cyklus je zde také velmi aktivní. Když ale sval rozemleli, rozemleli s ním i ◊abr{mch}. Krebs objevenou lineární dráhu uzavřel do cyklu.}
 
 ◊subsection{Přípravná reakce}
 
-Stará se o přeměnu pyruvátu, který je výstupem glykolýzy, na acetyl-CoA, který potřebujeme v KC. Účastní se jí komplex pyruvát dehydrogenázy (PDC).
+Stará se o přeměnu pyruvátu, který je výstupem glykolýzy, na acetyl-CoA, který potřebujeme v KC. Účastní se jí ◊strong{ komplex pyruvát dehydrogenázy (PDC)}.
 
 ◊img["acoa.png" #:w 400]{Vznik acetyl-CoA, pyruvát dehydrogenázová reakce}
 
@@ -2020,7 +2020,7 @@ Stará se o přeměnu pyruvátu, který je výstupem glykolýzy, na acetyl-CoA, 
     - změna volné energie je silně záporná, acetyl-CoA je tedy makroergní sloučenina
 }
 
-◊subsubsection{Struktura}
+◊subsubsection{Struktura PDC}
 
 ◊todo{Předělat následující do tabulky.}
 
@@ -2050,12 +2050,12 @@ Přiblížíme si ty pevně vázané a jeden z těch volných.
 
 ◊img["lipoamide.png" #:w 300]{Lipoamid a Lys zbytek E2}
 
-◊ls[#:t "Liopamid"]{
+◊ls[#:t "Lipoamid"]{
     - skládá se z vlastní kyseliny lipoové
     - kyselina lipoová může být oxidovaná či redukovaná, protože síra může nést redukující ekvivalenty
     - je možná ještě třetí forma --- síra může nést acetylovou skupinu
     - funguje jako přenašeč, je připojený na molekulu lysinu
-        - Lys je dlouhý, kys. lipoová také => spolu tvoří dlouhé rameno, které se může pohybovat se mezi aktivními místy dvou enzymů
+        - Lys je dlouhý, kys. lipoová také => spolu tvoří dlouhé rameno, které se může pohybovat mezi aktivními místy dvou enzymů
         - rameno může v jedné pozici převzít redukční ekvivalenty a acetylovou skupinu, přehoupnout se jinam a tam náklad odevzdat a redukovat se
         - někdy se tomu říká lipoyl-lysin
 }
@@ -2075,7 +2075,7 @@ A dále ještě NAD(H).
 
 ◊img["nad.png"]{NAD(H) a NADP(H)}
 
-◊ls[#:t "Celková struktura PDV"]{
+◊ls[#:t "Celková struktura PDC"]{
     - u E. coli (a dalších prokaryot a ◊chem{G+} bakterií) je organizován do dvou pomyslných krychlí
         - na vnitřní jsou E2 (8 vrcholů, na každém jsou tři E2, celkem 24)
         - na vnější jsou E1 (2 na 12 hranách, tj. 24) a E3 (2 na 6 stěnách, tj. 12)
@@ -2089,7 +2089,7 @@ A dále ještě NAD(H).
 
 ◊img["pdc-cubes.jpg" #:w 400]{Celková struktura PDC u E. coli: (a) je vnitřní krychle s 24 E2, (b) je vnější krychle s 24 E1 (oranžová) a 12 E3 (červená), (c) je (a) + (b)}
 
-◊subsubsection{Funkce}
+◊subsubsection{Funkce PDC}
 
 ◊img["pdc-function.png"]{Oxidativní dekarboxylace pyruvátu na acetyl-CoA PDH komplexem}
 
@@ -2478,23 +2478,6 @@ Dále již jen zkráceně OF.
         - více než ◊u{200 kJ/mol}, tam se vejde cca 7 molekul ATP
 }
 
-◊ls[#:t "Přepumpované protony"]{
-    -  za dvě "kola": 8 (I) + 0 (II) + 8 (III) + 4 (IV) = 20, průměrně za jedno kolo tedy 10
-        - to platí pouze pokud reoxidujeme ◊chem{NADH}
-    - pokud reoxidujeme ◊chem{FAD}, přeskakujeme první komplex a přepumpujeme tedy jen 6 protonů
-}
-
-◊box["Produkce tepla rostlinami"]{
-    ◊ls{
-        - některé rostliny umí protonový gradient využívat na teplo
-            - obsahují alternativní oxidázy redukovaných koenzymů, které díky přenosu redukčních ekvivalentů tvoří teplo
-            - rostou díky tomu ve sněhu
-        - jiné rostliny gradient využívají k rychlejšímu emitování pachových molekul
-    }
-
-    U lidí se energie oxidace také využívá, k netřesové termogenezi.
-}
-
 ◊subsubsection{Redoxní centra}
 
 ◊ls{
@@ -2558,7 +2541,7 @@ Jinými názvy též NADH dehydrogenáza, NADH:koenzym Q oxidoreduktáza.
     # předá dva elektrony prvnímu redoxnímu centru, tím se oxiduje
     # elektrony putují po dalších centrech
         - těchto center je v komplexu 7--10
-            - flavín-mononukleotid (FMN) -> série železo-sirných center s různým proteinovým prostředím
+            - flavin-mononukleotid (FMN) -> série železo-sirných center s různým proteinovým prostředím
             - redoxní potenciál se postupně zvyšuje
         -v průběhu se z matrix vypumpují čtyři protony
 }
@@ -2637,6 +2620,25 @@ Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cyt
     }
 
     Co se ovšem ví, je fakt, že ATP syntázy se do větších celků shlukují. Jak se zdá, jsou tyto superkomplexy zčásti zodpovědné za morfologii vnitřní membrány v ◊abr{mch} (konkrétně za kristy) --- vyskytují se totiž přesně v místech, kde kristy prudece zahýbají. Mutanti bez těchto superkomplexů mají strukturu krist silně narušenou.
+}
+
+◊box["Shrnutí získané enerige"]{
+    ◊ls{
+        -  za dvě "kola": 8 (I) + 0 (II) + 8 (III) + 4 (IV) = 20, průměrně za jedno kolo tedy 10
+            - to platí pouze pokud reoxidujeme ◊chem{NADH}
+        - pokud reoxidujeme ◊chem{FAD}, přeskakujeme první komplex a přepumpujeme tedy jen 6 protonů
+    }
+}
+
+◊box["Produkce tepla rostlinami"]{
+    ◊ls{
+        - některé rostliny umí protonový gradient využívat na teplo
+            - obsahují alternativní oxidázy redukovaných koenzymů, které díky přenosu redukčních ekvivalentů tvoří teplo
+            - rostou díky tomu ve sněhu
+        - jiné rostliny gradient využívají k rychlejšímu emitování pachových molekul
+    }
+
+    U lidí se energie oxidace také využívá, k netřesové termogenezi.
 }
 
 ◊subsubsection{Kyslíkové radikály}
@@ -3776,9 +3778,9 @@ a je silně exergonická (◊${\Delta G'^{\circ} =} ◊u{-34 kJ/mol}). U reakce 
 
 ◊img["carnitine-cycle.png"]{Karnitinový cyklus}
 
-◊ls[#:t "Průchod acyl-CoA do ◊abr{mch}"]{
+◊ls[#:t "Průchod acyl-CoA do mch"]{
     - k tomu slouží molekula karnitin, součást acyl-CoA-karnitinového cyklu
-        - karnitin je mnohem menší, než CoA, proto se lépe dostává přes membránu; zásbonárny CoA v cytoplazmě a ◊abr{mch} jsou oddělené
+        - karnitin je mnohem menší, než CoA, proto se lépe dostává přes membránu; zásobárny CoA v cytoplazmě a ◊abr{mch} jsou oddělené
     - v cyklu též figurují enzymy kartininacyltransferázy I (vnější membrána) a II (vnitřní membrána)
         - kartininacyltransferázy reálně tvoří komplex procházející přes obě membrány
     - viz obrázek
@@ -3789,7 +3791,7 @@ a je silně exergonická (◊${\Delta G'^{\circ} =} ◊u{-34 kJ/mol}). U reakce 
 ◊img["mk-metabolism-stages.png" #:w 350]{Fáze zpracování MK v ◊abr{mch}}
 
 ◊ls[#:t "Beta-oxidace"]{
-    - ve výsledku rozštípá MK na dvojuhlíkaté zbytky, které poté jako acetyl-CoA vstupují do KC a kromě toho také uvolní 64 elektronů v podobně redukovaných koenzymů, které se poté účastní OF
+    - ve výsledku rozštípá MK na dvojuhlíkaté zbytky, které poté jako acetyl-CoA vstupují do KC a kromě toho také uvolní elektrony v podobně redukovaných koenzymů, které se poté účastní OF
     - skládá se ze čtyř reakcí
 }
 
@@ -3799,7 +3801,7 @@ Viz obrázek, popisky jen doplňují detaily.
 
 ◊ls[#:t "První reakce"]{
     - acyl-CoA dehydrogenáza oxiduje MK
-    - jako koenzym má FAD, které se redukuje a postupuje do OF
+    - jako koenzym má FAD, který se redukuje a postupuje do OF
 }
 
 ◊ls[#:t "Druhá reakce"]{
@@ -3869,7 +3871,7 @@ V následující tabulce můžeme vidět zisk z ◊|beta| oxidace jedné molekul
         - oxalacetát se běžně doplňuje anaplerotickými reakcemi, ale pro ty jsou výchozím substrátem produkty glykolýzy
             - KC se tedy při nedostatku cukru (např. u neléčených diabetiků, za okolností vyčerpání) zastaví
             - za takových okolností vznikají ze dvou acetyl-CoA právě ketolátky
-            - lidem te poté z úst cítit aceton
+            - lidem jde poté z úst cítit aceton
     - přestupují hematoencefalickou bariéru => mohou sloužit v mozku (a dalších tkáních) jako zdroj energie
 }
 
@@ -3877,7 +3879,7 @@ V následující tabulce můžeme vidět zisk z ◊|beta| oxidace jedné molekul
 
 
 ◊ls{
-    - když pro nějakousloučeninu existuje katabolická i anabolická dráha, musejí tyto být odlišné
+    - když pro nějakou sloučeninu existuje katabolická i anabolická dráha, musí být odlišné
         - je to termodynamicky nutné a navíc to ulehčí nezávislou a jemnější regulaci
     - proto se syntéza MK a ◊|beta|-oxidace musí lišit
 }
@@ -3911,7 +3913,7 @@ O přeměnu z acetyl-CoA na malonyl-CoA se stará enzym ◊abr[#:new "acetyl-CoA
 ◊img["acetyl-coa-trancarboxylase.png" #:w 350]{Reakce acetyl-CoA-karboxylázy}
 
 ◊ls[#:t "Acetyl-CoA karboxyláza"]{
-    - potřebuje dodání energie v podobě ATP (katalyzuje endorgenický proces)
+    - potřebuje dodání energie v podobě ATP (katalyzuje endergonický proces)
     - kofaktorem je biotin (vitamín A)
         - umí vázat karboxyl a pomocí pohyblivého raménka jej přenést jinam
     - má dvě enzymatické aktivity
@@ -3938,7 +3940,7 @@ O přeměnu z acetyl-CoA na malonyl-CoA se stará enzym ◊abr[#:new "acetyl-CoA
 ◊ls[#:t "AMP-aktivovaná kináza"]{
     - funguje jako senzor nízké hladiny energie v buňce
         - koncentrace AMP je vysoká <=> koncentrace ATP je nízká
-    - když je aktivní, inhibuje ◊abr{ack}, protože v době nízké hladiny energie nechceme provádět dložitou syntézu MK
+    - když je aktivní, inhibuje ◊abr{ack}, protože v době nízké hladiny energie nechceme provádět složitou syntézu MK
 }
 
 ◊ls[#:t "cAMP-dependentní proteinkináza"]{
@@ -3978,7 +3980,7 @@ Viz obrázek, následují pouze drobné poznámky.
 
 ◊ls[#:t "Úvodní reakce 1"]{
     - přenos acylu: acetyl-CoA -> ◊abr{ACP}
-    - katalyzována acetyl-CoA-ACP-transacyláza (na obrázku MAT)
+    - katalyzována acetyl-CoA-ACP-transacylázou (na obrázku MAT)
 }
 
 ◊ls[#:t "Úvodní reakce 2"]{
@@ -3996,7 +3998,7 @@ Předchozí dvě reakce probíhají pouze v prvním cyklu, v druhém by byly nah
 V ◊|beta|-oxidaci jsou dvě oxidace, tedy v rámci syntézy MK budou dvě redukce.
 
 ◊ls[#:t "Druhá reakce"]{
-    - první z redukčních reakcí (došlo k redukci jedné ze skupin hydroxylu)
+    - první z redukčních reakcí (redukuje se keto skupina na ◊|beta| uhlíku)
     - acetoacetyl-ACP -> D-◊|beta|-hydroxybutyryl-ACP
 }
 
@@ -4011,7 +4013,7 @@ V ◊|beta|-oxidaci jsou dvě oxidace, tedy v rámci syntézy MK budou dvě redu
     - vzniká butyryl-ACP
 }
 
-Butyryl má poue 4 uhlíky, palmitát je C16, proto musí výše zmíněná reakce proběhnout ještě šestkrát (pokaždé se přidají dva uhlíky). Výsledným produktem (po celkem sedmi cyklech) je ◊strong{palmitoyl-ACP}.
+Butyryl má pouze 4 uhlíky, palmitát je C16, proto musí výše zmíněná reakce proběhnout ještě šestkrát (pokaždé se přidají dva uhlíky). Výsledným produktem (po celkem sedmi cyklech) je ◊strong{palmitoyl-ACP}.
 
 ◊ls[#:t "Závěrečná reakce"]{
     - z palmitoyl-ACP je nutné odštěpit ◊abr{ACP}
@@ -4039,7 +4041,7 @@ Butyryl má poue 4 uhlíky, palmitát je C16, proto musí výše zmíněná reak
 }
 
 ◊ls[#:t "NADPH"]{
-    - zdroje: penztózo-fosfátový cyklus a přeměna malátu na pyruvát
+    - zdroje: pentózo-fosfátový cyklus a přeměna malátu na pyruvát
 }
 
 ◊subsection{Elongace a desaturace MK}
@@ -4097,7 +4099,7 @@ Elongace a desaturace jsou často kombinované, napč. při tvorbě ◊em{arachi
 ◊ls{
     - syntéza MK je regulována na transkripční úrovni
     - při syntéze MK nechceme mít spuštěnou i ◊|beta|-oxidaci, protože by se obě reakce navzájem vyrušily
-        - existence dvou stavů, buňka zájem buď na syntéze, nebo na odbourávání
+        - existence dvou stavů, buňka má zájem buď na syntéze, nebo na odbourávání
 }
 
 ◊img["well-fed-liver.png"]{Játra ve stavu sytosti (lipogenní). TAG označují triacylglyceroly.}
@@ -4113,7 +4115,7 @@ Elongace a desaturace jsou často kombinované, napč. při tvorbě ◊em{arachi
 ◊img["hungry-liver.png"]{Hladovějící játra (glukogenní)}
 
 ◊ls[#:t "Stav hladu"]{
-    - tento stav je v játrech stimulován glukagonem a adrenalinem, které aktivuje ◊abr{cAMP}-dependentní proteinkinázu
+    - tento stav je v játrech stimulován glukagonem a adrenalinem, které aktivují ◊abr{PKA}
     - v tomto stavu je ◊abr{ack}, která svou činností nepřímo inhibuje ◊|beta|-oxidaci, sama inhibována pomocí AMP
         - pokles malonyl-CoA -> konec inhibice karnitin-palmitoyl-transferázy I -> přenos MK do ◊abr{mch} -> spuštění ◊|beta|-oxidace -> tvorba acetyl-CoA -> KC -> doplnění ATP
 }
@@ -4128,7 +4130,7 @@ Elongace a desaturace jsou často kombinované, napč. při tvorbě ◊em{arachi
 ◊(add-abr "AMPK" "AMP-aktivovaná proteinkináza")
 
 ◊ls[#:t "Regulace ukládání tuků v tukových buňkách"]{
-    - mechanismus ukládání žvočišných tuků
+    - mechanismus ukládání živočišných tuků
         # partikule tuku se z jater dostanou do krve
         # zachytí je ◊strong{lipoproteinlipáza} na membráně tukových buněk
         # odštěpí z partikulí volné MK
@@ -4197,18 +4199,19 @@ Elongace a desaturace jsou často kombinované, napč. při tvorbě ◊em{arachi
 ◊img["chol-second-reaction.png" #:w 350]{Druhá fáze. Je třeba znát pouze konečné produkty.}
 
 ◊ls[#:t "Druhá fáze"]{
-    - mevalonát se pak mění na izopentenyl pyrofosfát a 5-pyrofosfomevalonát (též dimetylalyl pyrofosfát), což jsou obojí 5C látky s izoprenovou skupinou
+    - mevalonát ->  5-pyrofosfomevalonát -> izopentenyl pyrofosfát (případně ještě -> dimetylalyl pyrofosfát)
+    - oba možné produkty jsou 5C látky s izoprenovou skupinou
 }
 
-Vzniknou tedy dvě 5C látky, my chceme však získat 30C cholesterol. Musíme je tedy nějak prodloužit.
+Nyní potřebujeme z vzniklé 5C moleuly vyrobit 30C cholesterol.
 
 ◊subsubsection{Třetí fáze}
 
 ◊img["chol-third.png" #:w 450]{Třetí fáze}
 
 ◊ls[#:t "Třetí fáze"]{
-    - ve třetí fázi se spoují produkty druhé fáze, tak, abychom získali 30C skvalen
-        # izopentenyl pyrofosfát [◊strong{5}] + 5-pyrofosfomevalonát [◊strong{5}] = geranylfosfát [◊strong{10}]
+    - ve třetí fázi se spojují produkty druhé fáze, tak, abychom získali 30C skvalen
+        # izopentenyl pyrofosfát [◊strong{5}] + dimethylalyl pyrofosfát [◊strong{5}] = geranylfosfát [◊strong{10}]
         # geranylfosfát [◊strong{10}] + izopentenyl pyrofosfát [◊strong{5}] = farnesyl pyrofosfát [◊strong{15}]
         # ◊${2 \times} farnesyl pyrofosfát [◊strong{15}] = skvalen [◊strong{30}]
     - pyrofosfáty se odštěpují a energeticky pohánějí reakci
@@ -4237,7 +4240,7 @@ Vzniknou tedy dvě 5C látky, my chceme však získat 30C cholesterol. Musíme j
     - cholesterol se dovnitř dostává v podobě LDL (low-density lipoprotein) partikulí
     - buňka tedy musí mít ◊abr{LDL} receptory
         - vazba cholesterolu -> opláštěný váček -> endozom -> recyklace (viz obrázek)
-    - choloesterol v (jaterních) buňkách je zčásti esterifikován a uložen a zčásti se z něj tvoří cholesterolové kapénky
+    - cholesterol v (jaterních) buňkách je zčásti esterifikován a uložen a zčásti se z něj tvoří cholesterolové kapénky
         - velké množství těhcto kapének vede k snížení syntézy ◊abr{LDL} receptoru a snížení syntézy HMG-CoA reduktázy
 }
 
@@ -4278,7 +4281,7 @@ Asi 2/3 cholesterolu, který máme v těle, si syntetizujeme a 1/3 přijímáme 
         - např. 18:2 je kyselina linoelová
     - označení ◊|omega|◊${k}
         - dvojná vazba nejvzdáleneší od karboxylu je ◊${k} uhlíků od ◊em{konce} řetězce
-        - podobné jako ◊|Delta|◊${k}, což značilo, že dvojná vazba nejvzdáleněší od karboxylo je ◊${k} uhlíků od ◊em{začátku} řetězce
+        - podobné jako ◊|Delta|◊${k}, což značilo, že dvojná vazba nejvzdáleněší od karboxylu je ◊${k} uhlíků od ◊em{začátku} řetězce
     - např. kyselina arachidonová ◊|omega|6 (20:4), kyselina eikosapentaenolová ◊|omega|3 (20:4)
 }
 
@@ -4303,7 +4306,7 @@ Asi 2/3 cholesterolu, který máme v těle, si syntetizujeme a 1/3 přijímáme 
 
 Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, mohou být aktivovány např. v odpovědi na adrenalin.
 
-◊ls[#:t "Účinky leuktrienů"]{
+◊ls[#:t "Účinky leukotrienů"]{
     - hrají roli v imunitní odpovědi
         - chemotaxe (přivolávání) leukocytů
     - hrají roli také při alergických reakcích a anafylaktickém šoku
@@ -4328,7 +4331,7 @@ Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, moho
 
 ◊ls[#:t "Reakce prostaglandin-H2 syntázy"]{
     - z arachidonátu je přeměňován prostaglandin-H2 syntázou na ◊abr{PGH2}
-    - z ◊abr{PGH2} mohou vzniknout další prostaglandiny a prostacykliny¨
+    - z ◊abr{PGH2} mohou vzniknout další prostaglandiny a prostacykliny
     - toto je klíčová reakce
 }
 
@@ -4415,7 +4418,7 @@ Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, moho
 ◊subsection{Fosfolipidy}
 
 ◊ls[#:t "Fosfolipidy"]{
-    - jsou syntetizovány na membráně ER, přenášeny na vnitřní stranu cytoplazmatické membrány a pomocí ◊strong{flipáz} přenášeny na její vnější stranu
+    - jsou syntetizovány na membráně ER, přenášeny na vnější stranu cytoplazmatické membrány a pomocí ◊strong{flipáz} přenášeny na její vnitřní stranu
     - funkce
         - kotvení proteinů v membráně (GPI kotva)
         - strukturní složka membrán, součást lipoproteinů
@@ -4469,12 +4472,12 @@ Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, moho
     - jsou odvozeny od ceramidu
         - ceramid je sfingolipid, který má přes esterovou vazbu připojen ke sfingosinu pouze vodík, viz obrázek
     - jejich součástí jsou cukerné zbytky; podle toho, jaké konkrétně, se pak sfingolipidy dále dělí
-        - cereprosidy, s jednoduchým cukrem (glukóza, galaktóza)
+        - cerebrosidy, s jednoduchým cukrem (glukóza, galaktóza)
         - sulfatidy (cukr je sulfatován)
         - globosidy (mají více cukerných podjednotek)
         - gangliosidy (více cukerných podjednotek a ještě kyselina sialová)
     - nacházejí se v nervové tkáni
-        - nikdo nevěděl, co dělají, byli proto nazvány podle mytické sfingy
+        - nikdo nevěděl, co dělají, byly proto nazvány podle mytické sfingy
         - glykosfingolipázy (poruchy v glykosfingolipidech) mají často za následek problémy s nervovým systémem, bývají letální
 }
 
@@ -4501,7 +4504,7 @@ Tvorba ikosanoidů je podobně jako u hormonů spřažena s druhými posly, moho
 }
 
 ◊ls[#:t "Průběh"]{
-    # transaminace: přenos aminoskupiny z obourávané AK na nějakou jinou ketokyselinu
+    # transaminace: přenos aminoskupiny z odbourávané AK na nějakou jinou ketokyselinu
     # deaminace: samotné uvolnění amoniaku
     # zpracování amoniaku a jeho vyloučení (u lidí: cyklus močoviny)
 }
@@ -4531,7 +4534,7 @@ a pokud bychom ji chtěli rozdělit na fáze, vypadal by průběh takto
 ◊ls[#:t "Obecný popis fází"]{
     - obě fáze jsou si vlastně opačné
     - obě navíc musí proběhnout přesně v tomto pořadí, jde tedy o ◊strong{uspořádáné reakce}
-    - akceptorem aminoskupiny (tedy ◊chem{\alpha-ketokyselina2}) je nejčastěji ◊|alpha|-oxoglutarát, viz příklad A níže, ale mohou to být i jiné látky
+    - akceptorem aminoskupiny (tedy ◊chem{\alpha-ketokyselina2}) je nejčastěji ◊|alpha|-oxoglutarát, viz první příklad transaminace níže, ale mohou to být i jiné látky
 }
 
 ◊subsection{Obecný průběh reakce}
@@ -4668,7 +4671,7 @@ Poté je potřeba ještě 3 ATP (energeticky 4, viz popis druhé reakce).
 
 ◊ls[#:t "První reakce"]{
     - katalyzována ◊strong{2-ornitin-transkarbamoylázou}
-    - ornitin (který v cyklu zbyl z předchozí iterace)+ karamoyl-fosfát -> citrulin
+    - ornitin (který v cyklu zbyl z předchozí iterace) + karbamoyl-fosfát -> citrulin
     - ortinin je podobný Lys, citrulin je podobný Arg
         - ani jeden ale není inkorporován v proteinech
     - ornitin a citrulin přechází z ◊abr{mch} do cytosolu a zpět

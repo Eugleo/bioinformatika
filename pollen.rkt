@@ -655,13 +655,13 @@
 (define (blue . elements)
   (case (current-poly-target)
     [(md) (@ elements)]
-    [(html) `(red ,@elements)]
+    [(html) `(blue ,@elements)]
     [(tex pdf) (apply string-append `("\\textcolor{blue}{" ,@elements "}"))]))
 
 (define (green . elements)
   (case (current-poly-target)
     [(md) (@ elements)]
-    [(html) `(red ,@elements)]
+    [(html) `(green ,@elements)]
     [(tex pdf) (apply string-append `("\\textcolor{green}{" ,@elements "}"))]))
 
 #| Sidenotes |#
