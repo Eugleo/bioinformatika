@@ -1598,7 +1598,7 @@ Jsou součástí ◊strong{proteoglykanů}.
 ◊ls[#:t "Glykoproteiny"]{
     - většina proteinů v těle
     - vazba přes N- a O- glykosylaci
-        - N- je přes ◊chem{NH} skupinu (většinou na Asp)
+        - N- je přes ◊chem{NH} skupinu (většinou na Asn)
             - strukturní komponenty extracelulární matrix (ECM) a buněčných stěn
             - účast na signalizaci buněk
             - modifikace stability a aktivity proteinů
@@ -1802,7 +1802,7 @@ Glyceraldehyd-3-fosfátdehydrogenáza se tak vyskytuje na všech možných míst
     1,3-bisfosfoglycerát snižuje afinitu hemoglobinu pro kyslík. Proto:
     ◊ls{
         - mutace v hexokináze:
-            - bude vznikat méně 2,3-bisfosfoglycerátu
+            - bude vznikat méně 1,3-bisfosfoglycerátu
             - větší afinita ke kyslíku
         - defekt v pyruvát-kináze:
             - bude se hromadit 1,3-bisfosfoglycerát
@@ -2587,7 +2587,7 @@ Neboli cytochrom B-C1.
 
 ◊subsubsection{Komplex IV}
 
-Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cytochrom A-A3, nebo COX.
+Jiným názvy též cytochromoxidáza, cytochrom C:kyslík oxido-reduktáza, cytochrom A-A3.
 
 ◊img["complex-IV.png" #:w 300]{Struktura komplexu IV}
 
@@ -2824,10 +2824,10 @@ Dle měření se zdá že proběhne přibližně ◊strong{100 otáček za sekun
         - objevil ho Krebs
     - ◊strong{protonofory} (FCCP, dinitrofenol)
         - hydrofobní molekuly, které se mohou protonovat
-        - mimo membránu se protonují, poté vstoupí do matrix a depronují se, čímž zničí protonový gradient
+        - mimo membránu se protonují, poté vstoupí do matrix a deprotonují se, čímž zničí protonový gradient
 }
 
-◊ls[#:t "Rozpřahovací proteiny"]{
+◊ls[#:t "Rozpřahující proteiny"]{
     - umí rozpřáhnout oxidaci a fosforylaci
     - používají se v experimentech, ale i v těle, kde mají podobu proteinů vnitřní ◊abr{mch} membrány fungujících jako kanál
         - vybíjejí protonový gradient -> netřesová termogeneze (termogenin v tabulce výše)
@@ -2906,7 +2906,7 @@ voda zde předává elektrony (v podobě vodíku) a redukuje ◊chem{CO2}.
 
 ◊ls[#:t "Chloroplasty"]{
     - v lamelách (membránách tylakoidů) jsou ◊abr{fs} pigmenty
-    - ve stromě je většina enzymů, které jsou potřeba k ◊abr{fs}
+    - ve stromatu je většina enzymů, které jsou potřeba k ◊abr{fs}
     - Robert Hill přišel na to, že po osvícení produkují výtažky z listů ◊chem{O2} a že redukují elektronový akceptor (◊em{Hillův reagens})
         - jeden z akceptorů při redukci měnil barvu, takže šla dobře sledovat
 }
@@ -3064,7 +3064,7 @@ z toho na ◊abr{FSII} (a analogicky na ◊abr{FSI}) probíhá reakce ◊$${\ce{
     - řadí se sem chloroplasty, proplastidy a amyloplastidy (nemají tylakoidy, zato mají granula plná škrobu)
     - většina biosyntetické aktivity, včetně asimilace ◊chem{CO2}, probíhá v plastidech
     - kódují některé své proteiny, většina je z jádra
-    - většina enzymů nutných k asimilaci ◊chem{CO2} je v chloroplastech ve stromě
+    - většina enzymů nutných k asimilaci ◊chem{CO2} je v chloroplastech ve stromatu
 }
 
 Temnostní fáze, neboli asimilace ◊chem{CO2}, probíhá ve třech fázích, které jsou znázorněny na obrázku níže. Všem třem dohromady se podle jejich objevitele říká ◊strong{Calvinův cyklus}.
@@ -3118,9 +3118,9 @@ Temnostní fáze, neboli asimilace ◊chem{CO2}, probíhá ve třech fázích, k
         - další osudy trióz jsou znázorněny a popsány na obrázku
     - podobná příslušným reakcím v glykolýze, ale naopak
         - redukčním kofaktorem je ale NADPH místo NADH
-        - stroma obsahuje všechny glykolytické enzymy (kromě fosfoglycerát-mutázy), jsou ale kódované jinými geny; jsou to tedy ◊strong{izozymy}
+        - stroma obsahuje všechny glykolytické enzymy (kromě fosfoglycerát-mutázy),     jsou ale kódované jinými geny; jsou to tedy ◊strong{izozymy}
     - detaily reakce (enzymy, intermediáty) viz červená šipka na obrázku
-    - reakce běží v tomto směru díky vysoké koncentraci NADPH ve stromě
+    - reakce běží v tomto směru díky vysoké koncentraci NADPH ve stromatu
 }
 
 ◊img["second-stage.png"]{Schematické znázornění druhé fáze}
@@ -4555,7 +4555,7 @@ a pokud bychom ji chtěli rozdělit na fáze, vypadal by průběh takto
         - heterocyklická sloučenina s aromatickým charakterem
         - je v ní mnoho delokalizovaných ◊|pi|-elektronů, které jsou v rovinách nad i pod rovinou kruhu
     - v průběhu první fáze reakce se mění na pyridoxamin-5-fosfát (PMP)
-        - v průběhu druhé fáze se pak ◊abr{PMP} mění steiným zpsobem zpět na ◊abr{PLP}
+        - v průběhu druhé fáze se pak ◊abr{PMP} mění stejným zpsobem zpět na ◊abr{PLP}
     - účastní se nejen transaminací, ale také racemací (prohození L-formy za D-formu a naopak) a dekarboxylací, viz obrázek
 }
 
@@ -4570,7 +4570,7 @@ Konkrétní průběh reakce viz obrázek a následující popis.
         - máme samotný enzym a poté ◊abr{PLP} přes Shiffovu bázi kovalentně navázané na substrát
     # delokalizované elektrony koenzymu destabilizují vazby na C◊|alpha| AK, které jsou mimo rovinu kruhu
         - je to taková elektronová jímka, která umožňuje štěpení vazeb kolmých na heterocyklus
-    # vazba ◊chem{C-NH} se štěpí, vzniká ◊abr{PLP} a z AK se stane jen ◊|alpha|-oxokyselina
+    # vazba ◊chem{C-NH} se štěpí, vzniká ◊abr{PMP} a z AK se stane jen ◊|alpha|-oxokyselina
 }
 
 Druhá fáze probíhá analogicky, ale od konce; ◊abr{PMP} se v jejím průběhu mění opět na ◊abr{PLP}.
@@ -4741,7 +4741,7 @@ Následuje výčet sedmi skupin, do kterých se AK podle svých koncových produ
         - ◊red{Thr} -> ◊green{Gly} + ◊blue{acetyl-CoA}
     }
 
-    Důležitým koenzymem je zde ◊abr{PLP}, opět dochází ke vzniku komplexu mezi ním a AK, prodobně jako v transaminaci.
+    Důležitým koenzymem je zde ◊abr{PLP}, opět dochází ke vzniku komplexu mezi ním a AK, podobně jako v transaminaci.
 }
 
 ◊box["oxoG"]{
@@ -4758,7 +4758,7 @@ Následuje výčet sedmi skupin, do kterých se AK podle svých koncových produ
 
 ◊box["oxoisoV [L, I, V]"]{
     ◊ls{
-        - ◊blue{Leu} -> ◊blue{text} + ◊blue{acetyl-CoA}
+        - ◊blue{Leu} -> ◊blue{acetoacetát} + ◊blue{acetyl-CoA}
         - ◊red{Ile} -> ◊green{sukcinyl-CoA} + ◊blue{acetyl-CoA}
         - ◊green{Val} -> ◊green{sukcinyl-CoA}
     }
@@ -4766,7 +4766,7 @@ Následuje výčet sedmi skupin, do kterých se AK podle svých koncových produ
     Klíčovou dráhu metabolismu katalyzuje ◊strong{oxo-izovalerátdehydrogenázový komplex}.
 
     ◊ls[#:t "Oxo-izovalerátdehydrogenázový komplex"]{
-        - podobný pyruvát-dehydrogenázovéhu komplexu a také oxoglutarát-dehydrogenázovému komplexu (z KC)
+        - podobný pyruvát-dehydrogenázovému komplexu a také oxoglutarát-dehydrogenázovému komplexu (z KC)
         - katalyzuje oxidativní dekarboxylaci pyruvátu
             - dochází k přenosu dvouhlíkatého zbytku na CoA
         - multienzymový komplex, tři hlavní enzymové aktivity
@@ -4850,7 +4850,7 @@ To byly tři největší skupiny. Následuje výčet těch zbývajících.
     - tato reakce přesahuje metabolismus AK
     - pomocí rozložení Gly a tetrahydrofolátu (dále jen THF) zásobuje organimus jednouhlíkatými zbytky
     - molekula Gly se rozebere na prvočinitele, amonný iont, oxid uhličitý, zbylý uhlík se ve formě methylenové skupiny ocitá jako součást ◊abr{THF}
-    - reakci katalzuje ◊strong{vícepodjednotkový systém}, ne však přímo komplex
+    - reakci katalyzuje ◊strong{vícepodjednotkový systém}, ne však přímo komplex
 }
 
 ◊img["glycine-cleavage.png" #:w 300]{Detaily štěpení Gly (není třeba vše umět). Enzym H je jedna podjednotka enzymu (další jsou P, T, L).}
@@ -4869,7 +4869,7 @@ To byly tři největší skupiny. Následuje výčet těch zbývajících.
     - derivát pteridinu, který ještě obsahuje kyselinu p-aminobenzovou a nějaké zbytky z Glu vázané izopeptidovou vazbou
     - metylace kofaktoru bude kromě štěpení Gly probíhat i během reakce Ser -> Gly, který katalyzuje ◊strong{hydroxymethyltransferáza}
     - z methylu-◊abr{THF} může být vyroben methylen-◊abr{THF} a z něj methenyl-◊abr{THF}
-        - methylen-◊abr{THF} -> methyl-◊abr{THF} nás stojí jedno NADH, je to redukční reakce
+        - methylen-◊abr{THF} -> methyl-◊abr{THF} nás stojí jedno NADPH, je to redukční reakce
         - methylen-◊abr{THF} -> methenyl-◊abr{THF} je naopak oxidace, dostáváme se tím do metabolismu purinu
 }
 
@@ -4948,7 +4948,7 @@ A proč potřebujeme nějaký přenašeč jednouhlíkové skupiny?
     - průběh
         # použití kyslíku a nehemového železa k tvorbě oxyfenylového aniontu
             - součástí je hydroxylace kofaktoru
-        # oxyfenolový aniont je použit ke torbě epoxidu, který se tvoří na původně aromatickém jádře
+        # oxyfenolový aniont je použit ke tvorbě epoxidu, který se tvoří na původně aromatickém jádře
         # oxyfenolový aniont se štěpí a výsledkem je tyrosin
             - důležitá je odlišná pozice substituentu --- došlo k migraci vodíku (viz barvy na obrázku níže)
     - průběh byl objeven v americkém NIH pomocí izotopového značení a nazván ◊strong{NIH přesmykem}
@@ -4966,12 +4966,12 @@ A proč potřebujeme nějaký přenašeč jednouhlíkové skupiny?
 ◊ls[#:t "Biologické aminy"]{
     - např. dopamin, adrenalin, epinefrin, melanin
     - jsou odvoditelné z Tyr a Phe prostřednictvím hydroxylačních a dekarboxylačních reakcí
-        - hydroxylační jsou závislé na pyridoxalfosfátu
+        - hydroxylační jsou závislé na ◊abr{PLP}
         - ty s kyslíkem používají NIH přesmyk
 }
 
 ◊note{
-    ◊ls[#:t "Zbrarvení siamské kočky"]{
+    ◊ls[#:t "Zbarvení siamské kočky"]{
         - způsobeno termosenzitivní mutací jednoho z enzymů syntézy melaninu
         - deriváty pokožky blíže k tělnímu jádru jej netvoří, jen na čumáčku a tlapkách už se tvoří, protože je tam víc zima
     }
@@ -5000,7 +5000,7 @@ A proč potřebujeme nějaký přenašeč jednouhlíkové skupiny?
     - ◊|gamma|-glutamyl-cysteinyl-glycin
     - vytvořen izopeptidovou vazbou mezi Glu (karboxylová skupina) a Cys (aminoskupina)
     - účastní se jednoho cyklu, u nějž je třetí reakce lokalizovaná na cytoplazmatické membráně (viz obrázek níže)
-        # aktivní centrum glutathiolu naváže AK se sírou z extrabuněčného prostoru
+        # aktivní centrum glutathiolu naváže AK se sírou z extracelulárního prostoru
         # přenese svůj náklad na Glu
         # AK se uvolní do buňky, s ní se uvolní i cysteinoglycin
         # glutathiol je resyntetizován
@@ -5038,7 +5038,7 @@ A proč potřebujeme nějaký přenašeč jednouhlíkové skupiny?
     - mají evolučně konzervované, společné dráhy
 }
 
-◊img["nuc-structure.png" #:w 300]{Obecné struktura nukleotidu (a), purin a pyrimidin (B)}
+◊img["nuc-structure.png" #:w 300]{(a) Obecné struktura nukleotidu, (b) purin a pyrimidin}
 
 ◊img["nuc-bases.png" #:w 300]{Základní nukleotidové báze}
 
@@ -5063,14 +5063,16 @@ Nukleotidy se mohou vyskytovat v ◊em{keto} a ◊em{enol} tautomerické formě.
     - produkt metabolismu purinových bazí, zejména vylučována ptáky a plazy
     - může být degradována až na močovinu a amoniak, různí živočichové ji vylučují v různých fázích této přeměny
         # kyselina močová
+            - plazi
         # alantoin
-            - zde končíme hlavně u některých druhů savců
+            - savci kromě primátů
         # kyselina alantolová
+            - kostnaté ryby
         # glyoxylová kyselina
         # močovina
-            - zde končíme u chrupavčitých ryb či obojživelníků
+            - chrupavčité ryby a obojživelníci
         # degradace močoviny na volný amoniak
-            - typicky jen bezobratlí, amoniak je jinak problematický
+            - mořští bezobratlí
     - dále může být tento dusíkatý odpad dále zpracován mikrobiomem
 }
 
@@ -5315,7 +5317,7 @@ Fosforylázové reakce (ty s PNP) jsou zajímavé, protože pokud v nich nějak�
 
 Výsledkem tohoto oxidativního metabolismu je kyselina močová (kyselina, protože odpovídající enolový tautomer slabě disociuje).
 
-◊img["pyrimidine-cata.png"]{Katabolismus pyrimidinů, konrétně thyminu. Detaily není třeba umět. (methyl)malonoyl-CoA je poté degradován až na sukcinyl-CoA.}
+◊img["pyrimidine-cata.png" #:w 400]{Katabolismus pyrimidinů, konkrétně thyminu. Detaily není třeba umět. (methyl)malonoyl-CoA je poté degradován až na sukcinyl-CoA.}
 
 ◊ls[#:t "Katabolismus pyrimidinů"]{
     # nukleosid je defosforylován na nukleosid-monofosát
